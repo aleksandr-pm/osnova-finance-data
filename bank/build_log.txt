@@ -3,13 +3,10 @@ WDI: стран 217
   wdi_ny_gdp_mktp_pp_cd_desc: 2025, стран 185
   wdi_ny_gdp_pcap_cd_desc: 2025, стран 151
   wdi_ny_gdp_mktp_kd_zg_desc: 2025, стран 151
-  wdi_fp_cpi_totl_zg_desc: 2025, стран 139
   wdi_sl_uem_totl_zs_desc: 2025, стран 154
   wdi_sl_uem_totl_zs_asc: 2025, стран 154
-  wdi_gc_dod_totl_gd_zs_desc: 2023, стран 34
   wdi_ny_gns_ictr_zs_desc: 2024, стран 129
   wdi_gc_tax_totl_gd_zs_desc: 2023, стран 97
-  wdi_fr_inr_lend_desc: 2022, стран 72
   wdi_fi_res_totl_cd_desc: 2025, стран 132
   wdi_cm_mkt_lcap_cd_desc: 2025, стран 68
   wdi_bx_klt_dinv_cd_wd_desc: 2025, стран 200
@@ -27,8 +24,6 @@ WDI: стран 217
   cis_bx_klt_dinv_cd_wd: 2025, стран 15
   cis_fi_res_totl_cd: 2025, стран 13
   cis_sl_uem_totl_zs: 2025, стран 14
-  cis_fr_inr_lend: 2019, стран 10
-  CIS GC.DOD.TOTL.GD.ZS: нет года
 FAO QCL: скачиваю https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_All_Data_(Normalized).zip
 FAO QCL: 32 МБ
 FAO QCL: строк после фильтра 35691
@@ -100,15 +95,12 @@ FAO QCL: строк после фильтра 35691
   fao_prod_1035: 2024, стран 171
 FAO TCL: скачиваю https://bulks-faostat.fao.org/production/Trade_CropsLivestock_E_All_Data_(Normalized).zip
 FAO TCL: 260 МБ
-FAO TCL: строк после фильтра 62212
+FAO TCL: строк после фильтра 55124
     товар 15: Wheat
     товар 31: Rice, milled
     товар 44: Barley
     товар 56: Maize (corn)
     товар 162: Raw cane or beet sugar (centrifugal only)
-    товар 221: Almonds, in shell
-    товар 223: Pistachios, in shell
-    товар 225: Hazelnuts, in shell
     товар 236: Soya beans
     товар 257: Palm oil
     товар 261: Olive oil
@@ -138,9 +130,6 @@ FAO TCL: строк после фильтра 62212
   fao_exp_486: 2024, стран 111
   fao_exp_515: 2024, стран 109
   fao_exp_572: 2024, стран 103
-  fao_exp_225: 2024, стран 55
-  fao_exp_223: 2024, стран 82
-  fao_exp_221: 2024, стран 75
   fao_exp_767: 2024, стран 119
   fao_exp_270: 2024, стран 63
   fao_imp_15: 2024, стран 176
@@ -159,11 +148,8 @@ FAO TCL: строк после фильтра 62212
   fao_imp_486: 2024, стран 149
   fao_imp_515: 2024, стран 193
   fao_imp_572: 2024, стран 153
-  fao_imp_225: 2024, стран 100
-  fao_imp_223: 2024, стран 169
-  fao_imp_221: 2024, стран 142
   fao_imp_767: 2024, стран 165
   fao_imp_270: 2024, стран 94
-Итого рейтингов: 104
-По блокам: agro 75, cis 9, economy 13, money 7
-exit=0 2026-11-04T19:21:03Z
+Итого рейтингов: 94
+По блокам: agro 69, cis 8, economy 11, money 6
+exit=0 2026-11-04T19:23:44Z
