@@ -296,8 +296,8 @@ def render_cover(r, photo_path, out_path):
     sd = ImageDraw.Draw(shade)
     for yy in range(H):
         k = yy / H
-        a = 0.42 + 0.50 * max(0.0, (k - 0.30) / 0.70) ** 1.3
-        sd.line([(0, yy), (W, yy)], fill=int(255 * min(a, 0.93)))
+        a = 0.50 + 0.46 * max(0.0, (k - 0.25) / 0.45) ** 1.1
+        sd.line([(0, yy), (W, yy)], fill=int(255 * min(a, 0.94)))
     dark = Image.new("RGB", (W, H), t["bg"])
     img = Image.composite(dark, ph, shade)
     d = ImageDraw.Draw(img)
