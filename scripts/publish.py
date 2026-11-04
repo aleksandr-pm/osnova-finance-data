@@ -215,7 +215,9 @@ def main():
         log("Threads: " + ("с картинкой" if with_img else "текстом"))
         pid = post_threads(token, text, images(r) if with_img else [])
     else:
-        pid = post_instagram(token, text, images(r))
+        carousel = n % 4 == 2  # из 4 постов в день 1 карусель (обложка + график), 3 одиночных
+        log("Instagram: " + ("карусель" if carousel else "одиночный пост с графиком"))
+        pid = post_instagram(token, text, images(r) if carousel else [image_url(r)])
     st["posted"].append({"id": r["id"], "block": r["block"], "type": r.get("type", "bars"),
                          "at": now().isoformat(), "post": pid})
     save_state(platform, st)
