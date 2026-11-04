@@ -125,8 +125,12 @@ def render_card(r, path, theme=0):
         d.rectangle([bar_x0, yy + 44, bar_x0 + max(bw, 4), yy + 56], fill=color)
 
     if cis_out:
-        s = ", ".join(f"{c['name']} на {c['rank']}-м месте" for c in cis_out) + "."
-        d.text((M, bottom + 10), s, font=font(26), fill=t["sub"])
+        parts = [f"{c['name']} на {c['rank']}-м" for c in cis_out]
+        s = parts[0] + " месте" + "".join(", " + p for p in parts[1:]) + "."
+        cf = font(26)
+        while text_w(d, s, cf) > W - 2 * M and cf.size > 18:
+            cf = font(cf.size - 1)
+        d.text((M, bottom + 10), s, font=cf, fill=t["sub"])
 
     # подвал
     d.rectangle([M, foot_top, W - M, foot_top], fill=t["line"])

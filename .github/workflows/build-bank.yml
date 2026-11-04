@@ -39,6 +39,7 @@ jobs:
 
       - name: Build
         run: |
+          rm -rf bank/cards
           mkdir -p bank
           set +e
           python scripts/build_bank.py 2>&1 | tee bank/build_log.txt

@@ -29,6 +29,7 @@ CACHE = os.path.join(ROOT, ".cache")
 os.makedirs(os.path.join(OUT, "cards"), exist_ok=True)
 os.makedirs(CACHE, exist_ok=True)
 
+MIN_YEAR = 2022  # старее данные в банк не берём
 UA = {"User-Agent": "osnova-finance-data-builder/1.0"}
 
 # ---------------------------------------------------------------- страны
@@ -42,7 +43,7 @@ OVERRIDE = {
     "BO": "Боливия", "VE": "Венесуэла", "MK": "Северная Македония",
     "MD": "Молдова", "PS": "Палестина", "DO": "Доминиканская Республика",
     "CF": "ЦАР", "SA": "Саудовская Аравия", "NZ": "Новая Зеландия",
-    "ZA": "ЮАР", "PG": "Папуа — Новая Гвинея".replace(" — ", "-"),
+    "ZA": "ЮАР", "PG": "Папуа-Новая Гвинея",
     "TL": "Восточный Тимор", "XK": "Косово", "CV": "Кабо-Верде",
     "SZ": "Эсватини", "TR": "Турция", "KG": "Киргизия", "BY": "Беларусь",
 }
@@ -122,13 +123,10 @@ WDI = [
     ("NY.GDP.MKTP.PP.CD", "economy", "Крупнейшие экономики по ВВП с учётом паритета покупательной способности", "usd", False, False),
     ("NY.GDP.PCAP.CD", "economy", "Самый высокий ВВП на душу населения", "usd_pc", False, True),
     ("NY.GDP.MKTP.KD.ZG", "economy", "Самый быстрый рост экономики", "pct", False, True),
-    ("FP.CPI.TOTL.ZG", "economy", "Самая высокая инфляция в мире", "pct", False, True),
     ("SL.UEM.TOTL.ZS", "economy", "Самая высокая безработица", "pct", False, True),
     ("SL.UEM.TOTL.ZS", "economy", "Самая низкая безработица", "pct", True, True),
-    ("GC.DOD.TOTL.GD.ZS", "economy", "Самый большой госдолг в % от ВВП", "pct", False, True),
     ("NY.GNS.ICTR.ZS", "economy", "Больше всех сберегают: валовые сбережения в % от ВВП", "pct", False, True),
     ("GC.TAX.TOTL.GD.ZS", "economy", "Самая высокая налоговая нагрузка: налоги в % от ВВП", "pct", False, True),
-    ("FR.INR.LEND", "money", "Самые высокие ставки по кредитам", "pct", False, True),
     ("FI.RES.TOTL.CD", "money", "Крупнейшие резервы страны, включая золото", "usd", False, False),
     ("CM.MKT.LCAP.CD", "money", "Крупнейшие фондовые рынки по капитализации компаний", "usd", False, False),
     ("BX.KLT.DINV.CD.WD", "money", "Больше всего прямых иностранных инвестиций", "usd", False, False),
@@ -148,8 +146,6 @@ WDI_CIS = [
     ("BX.KLT.DINV.CD.WD", "Страны бывшего СССР: прямые иностранные инвестиции", "usd"),
     ("FI.RES.TOTL.CD", "Страны бывшего СССР: резервы, включая золото", "usd"),
     ("SL.UEM.TOTL.ZS", "Страны бывшего СССР: безработица", "pct"),
-    ("FR.INR.LEND", "Страны бывшего СССР: ставки по кредитам", "pct"),
-    ("GC.DOD.TOTL.GD.ZS", "Страны бывшего СССР: госдолг в % от ВВП", "pct"),
 ]
 
 
@@ -187,8 +183,8 @@ def build_wdi():
     for code, block, title, unit, asc, popf in WDI:
         by_year = cache.setdefault(code, wdi_series(code, real))
         y = pick_year(by_year)
-        if not y:
-            log(f"  WDI {code}: нет года")
+        if not y or y < MIN_YEAR:
+            log(f"  WDI {code}: нет свежего года ({y})")
             continue
         vals = by_year[y]
         note = ""
@@ -208,8 +204,8 @@ def build_wdi():
             if sum(1 for k in EX_USSR if k in by_year[yy]) >= 10:
                 y = yy
                 break
-        if not y:
-            log(f"  CIS {code}: нет года")
+        if not y or y < MIN_YEAR:
+            log(f"  CIS {code}: нет свежего года ({y})")
             continue
         vals = {k: by_year[y][k] for k in EX_USSR if k in by_year[y]}
         rid = f"cis_{code}".replace(".", "_").lower()
@@ -236,8 +232,8 @@ FAO_TRADE = {
     15: "пшеницы", 56: "кукурузы", 31: "риса", 44: "ячменя", 236: "соевых бобов",
     656: "кофе", 661: "какао-бобов", 667: "чая", 162: "сахара-сырца",
     268: "подсолнечного масла", 257: "пальмового масла", 261: "оливкового масла",
-    564: "вина", 486: "бананов", 515: "яблок", 572: "авокадо", 225: "фундука",
-    223: "фисташек", 221: "миндаля", 767: "хлопка", 270: "рапса",
+    564: "вина", 486: "бананов", 515: "яблок", 572: "авокадо",
+    767: "хлопка", 270: "рапса",
 }
 FAO_FILES = {
     "QCL": "https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_All_Data_(Normalized).zip",
@@ -353,6 +349,11 @@ QUESTIONS = [
 ]
 
 
+def cis_line(items):
+    parts = [f"{c['name']} на {c['rank']}-м" for c in items]
+    return parts[0] + " месте" + "".join(", " + p for p in parts[1:]) + "."
+
+
 def threads_text(r, i):
     lines = [f"{r['title']} · {r['year']}", ""]
     for row in r["top"][:5]:
@@ -360,8 +361,7 @@ def threads_text(r, i):
     lines.append("")
     hook = [c for c in r["cis"] if c["rank"] > 5]
     if hook:
-        parts = [f"{c['name']} на {c['rank']}-м месте" for c in hook]
-        lines.append(", ".join(parts) + ".")
+        lines.append(cis_line(hook))
     lines.append(QUESTIONS[i % len(QUESTIONS)])
     lines.append("")
     lines.append("Полный топ-10 и график в Telegram, ссылка в ответе.")
