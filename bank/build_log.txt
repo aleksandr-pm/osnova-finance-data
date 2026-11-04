@@ -26,7 +26,7 @@ WDI: стран 217
   cis_sl_uem_totl_zs: 2025, стран 14
 FAO QCL: скачиваю https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_All_Data_(Normalized).zip
 FAO QCL: 32 МБ
-FAO QCL: строк после фильтра 35691
+FAO QCL: строк после фильтра 88531
     товар 15: Wheat
     товар 27: Rice
     товар 44: Barley
@@ -93,6 +93,16 @@ FAO QCL: строк после фильтра 35691
   fao_prod_223: 2024, стран 18
   fao_prod_268: 2023, стран 80
   fao_prod_1035: 2024, стран 171
+  line_agro_prod_15: 2000-2024
+  line_agro_prod_56: 2000-2024
+  line_agro_prod_27: 2000-2024
+  line_agro_prod_236: 2000-2024
+  line_agro_prod_656: 2000-2024
+  line_agro_prod_661: 2000-2024
+  line_agro_prod_257: 2000-2023
+  line_agro_prod_267: 2000-2024
+  line_agro_prod_1058: 2000-2024
+  line_agro_prod_572: 2000-2024
 FAO TCL: скачиваю https://bulks-faostat.fao.org/production/Trade_CropsLivestock_E_All_Data_(Normalized).zip
 FAO TCL: 260 МБ
 FAO TCL: строк после фильтра 55124
@@ -150,6 +160,27 @@ FAO TCL: строк после фильтра 55124
   fao_imp_572: 2024, стран 153
   fao_imp_767: 2024, стран 165
   fao_imp_270: 2024, стран 94
-Итого рейтингов: 94
-По блокам: agro 69, cis 8, economy 11, money 6
-exit=0 2026-11-04T20:30:39Z
+  share_exp_15: 2024, топ-5 61.4%
+  share_exp_56: 2024, топ-5 79.1%
+  share_exp_31: 2024, топ-5 82.8%
+  share_exp_236: 2024, топ-5 94.1%
+  share_exp_656: 2024, топ-5 63.9%
+  share_exp_661: 2024, топ-5 61.4%
+  share_exp_162: 2024, топ-5 87.5%
+  share_exp_268: 2024, топ-5 69.8%
+  share_exp_257: 2024, топ-5 88.1%
+  share_exp_564: 2024, топ-5 72.1%
+  share_exp_486: 2024, топ-5 56.6%
+  share_exp_572: 2024, топ-5 76.2%
+  share_exp_767: 2024, топ-5 80.4%
+  line_economy_ny_gdp_mktp_cd: 2005-2025, линий 5
+  line_economy_ne_exp_gnfs_cd: 2005-2025, линий 5
+  line_money_fi_res_totl_cd: 2005-2025, линий 5
+  line_money_bx_trf_pwkr_cd_dt: 2005-2025, линий 5
+  line_cis_ny_gdp_pcap_cd: 2005-2025, линий 7
+  line_cis_ny_gdp_mktp_cd: 2005-2025, линий 6
+  line_cis_bx_trf_pwkr_cd_dt: 2005-2025, линий 5
+  line_cis_fi_res_totl_cd: 2005-2025, линий 4
+Итого рейтингов: 125
+По блокам: agro 92, cis 12, economy 13, money 8
+exit=0 2026-11-04T20:58:21Z
