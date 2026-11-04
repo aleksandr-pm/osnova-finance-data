@@ -383,7 +383,13 @@ def build_fao():
 # ---------------------------------------------------------------- линии и доли
 def growth_text(ratio):
     if ratio >= 1.5:
-        return "в " + fmt_value(ratio, "num1") + " раза"
+        txt = fmt_value(ratio, "num1")
+        if "," in txt:
+            word = "раза"  # дробное: «в 8,4 раза»
+        else:
+            n = int(txt.replace("\u00a0", ""))
+            word = "раза" if n % 10 in (2, 3, 4) and n % 100 not in (12, 13, 14) else "раз"
+        return f"в {txt} {word}"
     return "на " + fmt_value((ratio - 1) * 100, "pct0")
 
 
