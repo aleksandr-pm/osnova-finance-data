@@ -157,7 +157,7 @@ def wdi_countries():
 
 def wdi_series(code, real):
     r = get(f"https://api.worldbank.org/v2/country/all/indicator/{code}"
-            f"?format=json&per_page=20000&date=2014:2025")
+            f"?format=json&per_page=20000&date=2000:2025")
     if r is None:
         return {}
     js = r.json()
@@ -172,6 +172,9 @@ def wdi_series(code, real):
     return by_year
 
 
+WDI_CACHE = {}
+
+
 def build_wdi():
     out = []
     real = wdi_countries()
@@ -179,7 +182,7 @@ def build_wdi():
     pop_y = wdi_series("SP.POP.TOTL", real)
     py = max(pop_y) if pop_y else None
     pop = pop_y.get(py, {})
-    cache = {}
+    cache = WDI_CACHE
     for code, block, title, unit, asc, popf in WDI:
         by_year = cache.setdefault(code, wdi_series(code, real))
         y = pick_year(by_year)
@@ -213,6 +216,9 @@ def build_wdi():
                                 "World Bank, World Development Indicators", vals,
                                 hook=False))
         log(f"  {rid}: {y}, стран {len(vals)}")
+    for code, *_ in WDI_TRENDS:
+        if code not in cache:
+            cache[code] = wdi_series(code, real)
     return out
 
 
@@ -267,7 +273,7 @@ def fao_url(code):
     return FAO_FILES[code]
 
 
-def fao_load(code, items, elements):
+def fao_load(code, items, elements, min_year=2015):
     path = os.path.join(CACHE, f"{code}.zip")
     if not os.path.exists(path):
         url = fao_url(code)
@@ -288,7 +294,7 @@ def fao_load(code, items, elements):
                           encoding="utf-8", encoding_errors="replace",
                           dtype={"Area Code (M49)": str}, low_memory=False):
         ch = ch[ch["Item Code"].isin(items) & ch["Element Code"].isin(elements)
-                & (ch["Year"] >= 2015) & (ch["Area Code"] < 5000)
+                & (ch["Year"] >= min_year) & (ch["Area Code"] < 5000)
                 & (ch["Area Code"] != 351)]
         parts.append(ch)
     df = pd.concat(parts)
@@ -297,6 +303,16 @@ def fao_load(code, items, elements):
     for k in sorted(names):
         log(f"    товар {k}: {names[k]}")
     return df
+
+
+def fao_by_year(df, item, element, mult):
+    d = df[(df["Item Code"] == item) & (df["Element Code"] == element) & (df["Value"] > 0)]
+    by_year = defaultdict(dict)
+    for m49, y, v in zip(d["Area Code (M49)"], d["Year"], d["Value"]):
+        iso = m49_to_iso2(m49)
+        if iso:
+            by_year[int(y)][iso] = by_year[int(y)].get(iso, 0) + float(v) * mult
+    return by_year
 
 
 def fao_rankings(df, element, mapping, kind, unit, mult):
@@ -331,8 +347,16 @@ def fao_rankings(df, element, mapping, kind, unit, mult):
 def build_fao():
     out = []
     try:
-        q = fao_load("QCL", list(FAO_PROD), [5510])
+        q = fao_load("QCL", list(FAO_PROD), [5510], min_year=2000)
         out += fao_rankings(q, 5510, FAO_PROD, "prod", "t", 1)
+        for item, gen in FAO_TRENDS.items():
+            t = make_trend(f"line_agro_prod_{item}", "agro",
+                           f"Производство {gen}: пять крупнейших производителей",
+                           f"{{G}}: производство {gen} выросло [v] с {{S}} года", "t",
+                           fao_by_year(q, item, 5510, 1), "FAOSTAT", "FAOSTAT, ФАО ООН", 2000)
+            if t:
+                out.append(t)
+                log(f"  line_agro_prod_{item}: {t['start']}-{t['year']}")
         del q
     except Exception as e:  # noqa: BLE001
         log(f"FAO QCL ошибка: {e}")
@@ -340,8 +364,141 @@ def build_fao():
         t = fao_load("TCL", list(FAO_TRADE), [5922, 5622])
         out += fao_rankings(t, 5922, FAO_TRADE, "exp", "usd", 1000)
         out += fao_rankings(t, 5622, FAO_TRADE, "imp", "usd", 1000)
+        for item, gen in FAO_SHARES.items():
+            by_year = fao_by_year(t, item, 5922, 1000)
+            y = pick_year(by_year)
+            if not y:
+                continue
+            sh = make_share(f"share_exp_{item}", "agro", f"Доли в мировом экспорте {gen}",
+                            f"Пять стран дают [v] мирового экспорта {gen}", "usd",
+                            by_year[y], y, "FAOSTAT", "FAOSTAT, ФАО ООН")
+            if sh:
+                out.append(sh)
+                log(f"  share_exp_{item}: {y}, топ-5 {sh['top_sum']:.1f}%")
     except Exception as e:  # noqa: BLE001
         log(f"FAO TCL ошибка: {e}")
+    return out
+
+
+# ---------------------------------------------------------------- линии и доли
+def growth_text(ratio):
+    if ratio >= 1.5:
+        return "в " + fmt_value(ratio, "num1") + " раза"
+    return "на " + fmt_value((ratio - 1) * 100, "pct0")
+
+
+def make_trend(rid, block, title, hook_tpl, unit, by_year, source, source_full,
+               start, isos=None, n=5, note=""):
+    """Линейный график: n стран за период start..последний полный год."""
+    y_end = pick_year(by_year) if isos is None else max(
+        (yy for yy in by_year if sum(1 for k in isos if k in by_year[yy]) >= max(3, len(isos) - 2)),
+        default=None)
+    if not y_end or y_end < MIN_YEAR:
+        return None
+    s0 = min((yy for yy in by_year if yy >= start), default=None)
+    if s0 is None:
+        return None
+    cand = isos or sorted(by_year[y_end], key=lambda k: by_year[y_end][k], reverse=True)[:n]
+    series = []
+    for k in cand:
+        if k not in by_year[y_end]:
+            continue
+        pts = [[yy, by_year[yy][k]] for yy in range(s0, y_end + 1) if k in by_year.get(yy, {})]
+        if len(pts) < 0.7 * (y_end - s0 + 1) or pts[0][0] > s0 + 2 or pts[0][1] <= 0:
+            continue
+        ratio = pts[-1][1] / pts[0][1]
+        series.append({"iso2": k, "name": ru_name(k), "flag": flag(k), "points": pts,
+                       "ratio": ratio, "start": pts[0][0],
+                       "value": pts[-1][1], "text": fmt_value(pts[-1][1], unit),
+                       "growth": growth_text(ratio) if ratio > 1 else ""})
+    if len(series) < 3:
+        return None
+    series.sort(key=lambda x: x["value"], reverse=True)
+    for i, r in enumerate(series, 1):
+        r["rank"] = i
+    g = max(series, key=lambda x: x["ratio"])
+    if g["ratio"] <= 1:
+        return None
+    g["hl"] = True
+    before, after = hook_tpl.replace("{G}", g["name"]).replace("{S}", str(g["start"])).split("[v]")
+    top = [dict(x, text=f"{x['text']}" + (f", рост {x['growth']}" if x["growth"] else "")) for x in series]
+    return {
+        "id": rid, "block": block, "type": "line", "title": title, "unit": unit,
+        "year": int(y_end), "start": int(s0), "source": source, "source_full": source_full,
+        "note": note, "countries": len(series), "series": series, "top": top, "cis": [],
+        "hook": [x for x in [[before.strip(), False], [g["growth"], True], [after.strip(), False]] if x[0]],
+        "hook_text": (before + g["growth"] + after).strip(),
+    }
+
+
+def make_share(rid, block, title, hook_tpl, unit, vals, year, source, source_full, n=5):
+    total = sum(vals.values())
+    if total <= 0 or len(vals) < 10:
+        return None
+    rows = sorted(vals.items(), key=lambda kv: kv[1], reverse=True)
+    top = []
+    for i, (k, v) in enumerate(rows[:n], 1):
+        sh = v / total * 100
+        top.append({"iso2": k, "name": ru_name(k), "flag": flag(k), "rank": i, "value": v,
+                    "share": sh, "text": fmt_value(sh, "pct")})
+    top_sum = sum(x["share"] for x in top)
+    rest = 100 - top_sum
+    hv = fmt_value(top_sum, "pct0")
+    before, after = hook_tpl.split("[v]")
+    return {
+        "id": rid, "block": block, "type": "donut", "title": title, "unit": unit,
+        "year": int(year), "source": source, "source_full": source_full, "note": "",
+        "countries": len(vals), "top": top, "rest": rest, "top_sum": top_sum, "cis": [],
+        "hook": [x for x in [[before.strip(), False], [hv, True], [after.strip(), False]] if x[0]],
+        "hook_text": (before + hv + after).strip(),
+    }
+
+
+WDI_TRENDS = [
+    # код, блок, заголовок, крючок, единица, страны (None = топ-5 по последнему году)
+    ("NY.GDP.MKTP.CD", "economy", "Как росли крупнейшие экономики мира, ВВП",
+     "{G}: экономика выросла [v] с {S} года", "usd", None),
+    ("NE.EXP.GNFS.CD", "economy", "Экспорт товаров и услуг: пять крупнейших экспортёров",
+     "{G}: экспорт вырос [v] с {S} года", "usd", None),
+    ("FI.RES.TOTL.CD", "money", "Резервы стран, включая золото: пятёрка лидеров",
+     "{G}: резервы выросли [v] с {S} года", "usd", None),
+    ("BX.TRF.PWKR.CD.DT", "money", "Переводы мигрантов: пять крупнейших получателей",
+     "{G}: переводы мигрантов выросли [v] с {S} года", "usd", None),
+    ("NY.GDP.PCAP.CD", "cis", "ВВП на душу населения: Россия, Казахстан и соседи",
+     "{G}: ВВП на человека вырос [v] с {S} года", "usd_pc", ["RU", "KZ", "BY", "AZ", "UZ", "AM", "GE"]),
+    ("NY.GDP.MKTP.CD", "cis", "Размер экономики: страны бывшего СССР без России",
+     "{G}: экономика выросла [v] с {S} года", "usd", ["KZ", "UZ", "BY", "AZ", "GE", "AM"]),
+    ("BX.TRF.PWKR.CD.DT", "cis", "Переводы мигрантов в страны Центральной Азии и Кавказа",
+     "{G}: переводы мигрантов выросли [v] с {S} года", "usd", ["UZ", "TJ", "KG", "AM", "GE", "AZ"]),
+    ("FI.RES.TOTL.CD", "cis", "Резервы, включая золото: Россия, Казахстан и соседи",
+     "{G}: резервы выросли [v] с {S} года", "usd", ["RU", "KZ", "UZ", "AZ", "BY", "GE"]),
+]
+FAO_TRENDS = {
+    15: "пшеницы", 56: "кукурузы", 27: "риса", 236: "соевых бобов", 656: "кофе",
+    661: "какао-бобов", 257: "пальмового масла", 267: "подсолнечника", 1058: "курятины",
+    572: "авокадо",
+}
+FAO_SHARES = {
+    15: "пшеницы", 56: "кукурузы", 31: "риса", 236: "соевых бобов", 656: "кофе",
+    661: "какао-бобов", 162: "сахара-сырца", 268: "подсолнечного масла",
+    257: "пальмового масла", 564: "вина", 486: "бананов", 572: "авокадо", 767: "хлопка",
+}
+
+
+def build_trends_wdi(cache):
+    out = []
+    for code, block, title, hook, unit, isos in WDI_TRENDS:
+        by_year = cache.get(code)
+        if not by_year:
+            continue
+        rid = f"line_{block}_{code}".replace(".", "_").lower()
+        t = make_trend(rid, block, title, hook, unit, by_year, "World Bank",
+                       "World Bank, World Development Indicators", 2005, isos=isos)
+        if t:
+            out.append(t)
+            log(f"  {rid}: {t['start']}-{t['year']}, линий {len(t['series'])}")
+        else:
+            log(f"  {rid}: мало данных")
     return out
 
 
@@ -377,6 +534,8 @@ HOOKS = {
 
 
 def make_hook(r):
+    if r.get("hook"):
+        return
     tpl = r.pop("hook_tpl", None) or HOOKS.get(r["id"]) or (r["title"] + ": №1 {L}, [v]")
     lead = r["top"][0]
     before, after = tpl.split("[v]")
@@ -401,7 +560,8 @@ def cis_line(items):
 
 
 def threads_text(r, i):
-    lines = [r["hook_text"] + ".", "", f"{r['title']} · {r['year']}"]
+    period = f"{r['start']}-{r['year']}" if r.get("type") == "line" else str(r["year"])
+    lines = [r["hook_text"] + ".", "", f"{r['title']} · {period}"]
     for row in r["top"][:5]:
         lines.append(f"{row['rank']}. {flag(row['iso2'])} {row['name']} · {row['text']}")
     lines.append("")
@@ -423,6 +583,7 @@ def main():
     rankings = []
     rankings += build_wdi()
     rankings += build_fao()
+    rankings += build_trends_wdi(WDI_CACHE)
     log(f"Итого рейтингов: {len(rankings)}")
     for i, r in enumerate(rankings):
         make_hook(r)

@@ -20,6 +20,7 @@ THEMES = [
         "lead": "#5C1A23", "lead_t": "#F2EFEA", "bar": "#E6E1D9", "bar_t": "#1E1B1C",
         "out_t": "#1E1B1C", "value": "#1E1B1C", "lead_v": "#5C1A23",
         "foot": "#6B6462", "line": "#DDD7CE", "cta": "#5C1A23",
+        "muted": "#B5ABA2", "slice": "#A9786A", "rest": "#DDD7CE",
     },
     {  # graphite
         "bg": "#17171A", "brand": "#F2EFEA", "hook": "#EFE4E0", "accent": "#E2B8A4",
@@ -27,6 +28,7 @@ THEMES = [
         "lead": "#E2B8A4", "lead_t": "#17171A", "bar": "#2A2527", "bar_t": "#EFE4E0",
         "out_t": "#EFE4E0", "value": "#D3B9B6", "lead_v": "#E2B8A4",
         "foot": "#AC8C8A", "line": "#3A3436", "cta": "#E2B8A4",
+        "muted": "#6B5A5C", "slice": "#7E3A44", "rest": "#3A3436",
     },
     {  # oxblood
         "bg": "#5C1A23", "brand": "#F2EFEA", "hook": "#EFE4E0", "accent": "#E2B8A4",
@@ -34,6 +36,7 @@ THEMES = [
         "lead": "#E2B8A4", "lead_t": "#17171A", "bar": "#6E2731", "bar_t": "#EFE4E0",
         "out_t": "#EFE4E0", "value": "#D3B9B6", "lead_v": "#E2B8A4",
         "foot": "#AC8C8A", "line": "#7E3A44", "cta": "#E2B8A4",
+        "muted": "#9A5A63", "slice": "#8E4550", "rest": "#6E2731",
     },
 ]
 
@@ -110,22 +113,30 @@ def draw_hook(d, y, segs, t):
     return y
 
 
-def render_card(r, path, theme=0):
-    t = THEMES[theme % len(THEMES)]
-    img = Image.new("RGB", (W, H), t["bg"])
-    d = ImageDraw.Draw(img)
-
+def header(d, r, t):
     ring(d, M + 16, 96, 16, t["brand"], t["bg"])
     spaced(d, M + 46, 85, "OSNOVA FINANCE", font(20, 500), t["brand"], 3)
-
     y = draw_hook(d, 170, r["hook"], t)
-    sub = f"{r['title']} · {r['year']}"
+    period = f"{r['start']}-{r['year']}" if r.get("type") == "line" else str(r["year"])
+    sub = f"{r['title']} · {period}"
     sf = font(28)
     while tw(d, sub, sf) > W - 2 * M and sf.size > 20:
         sf = font(sf.size - 1)
     d.text((M, y + 12), sub, font=sf, fill=t["sub"])
-    y += 100
+    return y + 100
 
+
+def footer(d, r, t):
+    foot = H - 150
+    d.rectangle([M, foot, W - M, foot], fill=t["line"])
+    d.text((M, foot + 30), f"Источник: {r['source_full']}", font=font(22), fill=t["foot"])
+    cf = font(30, 600)
+    cy = foot + 92
+    d.text((M, cy), "Рынки и данные 24/7 в Telegram @osnovafin", font=cf, fill=t["cta"], anchor="lm")
+    plane(d, W - M - 52, cy, 52, t["cta"], t["bg"])
+
+
+def body_bars(d, r, t, y):
     rows = r["top"][:ROWS]
     foot = H - 150
     row_h = (foot - 40 - y) / ROWS
@@ -155,13 +166,114 @@ def render_card(r, path, theme=0):
         d.text((W - M, cy), row["text"], font=vf,
                fill=t["lead_v"] if lead else t["value"], anchor="rm")
 
-    d.rectangle([M, foot, W - M, foot], fill=t["line"])
-    d.text((M, foot + 30), f"Источник: {r['source_full']}", font=font(22), fill=t["foot"])
-    cf = font(30, 600)
-    cta = "Рынки и данные 24/7 в Telegram @osnovafin"
-    cy = foot + 92
-    d.text((M, cy), cta, font=cf, fill=t["cta"], anchor="lm")
-    plane(d, W - M - 52, cy, 52, t["cta"], t["bg"])
+
+def body_line(d, r, t, y):
+    from fmt import fmt_value
+    series = r["series"]
+    lab_w = 250
+    x0, x1 = M + 4, W - M - lab_w
+    y0, y1 = y + 30, H - 150 - 80
+    xs0 = min(s["points"][0][0] for s in series)
+    xs1 = max(s["points"][-1][0] for s in series)
+    vmax = max(v for s in series for _, v in s["points"]) * 1.06
+
+    def px(yr):
+        return x0 + (x1 - x0) * (yr - xs0) / max(xs1 - xs0, 1)
+
+    def py(v):
+        return y1 - (y1 - y0) * v / vmax
+
+    # сетка: 3 горизонтальные линии с подписями
+    gf = font(22)
+    grid = []
+    for k in (1, 2, 3):
+        v = vmax / 1.06 * k / 3
+        yy = py(v)
+        d.line([x0, yy, x1, yy], fill=t["line"], width=1)
+        grid.append((yy, fmt_value(v, r["unit"])))
+    d.line([x0, y1, x1, y1], fill=t["line"], width=2)
+    d.text((x0, y1 + 14), str(xs0), font=font(24, 500), fill=t["num"], anchor="lt")
+    d.text((x1, y1 + 14), str(xs1), font=font(24, 500), fill=t["num"], anchor="rt")
+
+    order = sorted(series, key=lambda s: s.get("hl", False))  # выделенная поверх
+    for s in order:
+        pts = [(px(a), py(b)) for a, b in s["points"]]
+        hl = s.get("hl", False)
+        d.line(pts, fill=t["lead"] if hl else t["muted"], width=8 if hl else 4, joint="curve")
+        if hl:
+            ex, ey = pts[-1]
+            d.ellipse([ex - 9, ey - 9, ex + 9, ey + 9], fill=t["lead"])
+
+    for yy, txt in grid:  # подписи сетки поверх линий, на подложке цвета фона
+        bb = d.textbbox((x0, yy - 8), txt, font=gf, anchor="lb")
+        d.rectangle([bb[0] - 4, bb[1] - 3, bb[2] + 6, bb[3] + 3], fill=t["bg"])
+        d.text((x0, yy - 8), txt, font=gf, fill=t["foot"], anchor="lb")
+
+    # подписи на концах линий без наложения
+    labs = sorted(((py(s["points"][-1][1]), s) for s in series), key=lambda a: a[0])
+    placed, min_gap = [], 58
+    for yy, s in labs:
+        if placed and yy - placed[-1][0] < min_gap:
+            yy = placed[-1][0] + min_gap
+        placed.append((yy, s))
+    shift = max(0, placed[-1][0] - y1) if placed else 0
+    for yy, s in placed:
+        yy -= shift
+        hl = s.get("hl", False)
+        nf = font(26, 600 if hl else 500)
+        d.text((x1 + 22, yy - 14), s["name"], font=nf,
+               fill=t["lead_v"] if hl else t["out_t"], anchor="lm")
+        d.text((x1 + 22, yy + 16), s["text"], font=font(22), fill=t["sub"], anchor="lm")
+
+
+def body_donut(d, r, t, y):
+    top = r["top"]
+    cx, cy, R, Ri = W / 2, y + 230, 210, 132
+    slices = [(x["share"], t["lead"] if i == 0 else t["slice"]) for i, x in enumerate(top)]
+    slices.append((r["rest"], t["rest"]))
+    a = -90.0
+    for sh, col in slices:
+        span = 360 * sh / 100
+        d.pieslice([cx - R, cy - R, cx + R, cy + R], a, a + span, fill=col)
+        a += span
+    # разделители между долями цветом фона
+    import math
+    a = -90.0
+    for sh, _ in slices:
+        rad = math.radians(a)
+        d.line([cx, cy, cx + R * math.cos(rad), cy + R * math.sin(rad)], fill=t["bg"], width=6)
+        a += 360 * sh / 100
+    d.ellipse([cx - Ri, cy - Ri, cx + Ri, cy + Ri], fill=t["bg"])
+    from fmt import fmt_value
+    d.text((cx, cy - 10), fmt_value(r["top_sum"], "pct0"), font=font(64, 600), fill=t["lead_v"], anchor="mm")
+    d.text((cx, cy + 44), "пять стран", font=font(24, 500), fill=t["sub"], anchor="mm")
+
+    ly = cy + R + 44
+    rows = [(x["rank"], x["name"], x["text"], i == 0) for i, x in enumerate(top)]
+    rows.append(("", "Остальные страны", fmt_value(r["rest"], "pct"), False))
+    lh = min(46, (H - 150 - 20 - ly) / len(rows))
+    for i, (rk, name, val, lead) in enumerate(rows):
+        yy = ly + i * lh
+        sw = t["lead"] if lead else (t["rest"] if rk == "" else t["slice"])
+        d.rectangle([M, yy + 6, M + 22, yy + 28], fill=sw)
+        d.text((M + 40, yy + 17), f"{rk}  {name}" if rk else name, font=font(28, 600 if lead else 500),
+               fill=t["lead_v"] if lead else t["out_t"], anchor="lm")
+        d.text((W - M, yy + 17), val, font=font(28, 600), fill=t["lead_v"] if lead else t["value"], anchor="rm")
+
+
+def render_card(r, path, theme=0):
+    t = THEMES[theme % len(THEMES)]
+    img = Image.new("RGB", (W, H), t["bg"])
+    d = ImageDraw.Draw(img)
+    y = header(d, r, t)
+    kind = r.get("type", "bars")
+    if kind == "line":
+        body_line(d, r, t, y)
+    elif kind == "donut":
+        body_donut(d, r, t, y)
+    else:
+        body_bars(d, r, t, y)
+    footer(d, r, t)
     img.save(path, optimize=True)
     # Instagram API принимает только JPEG
     img.save(os.path.splitext(path)[0] + ".jpg", quality=92, optimize=True)

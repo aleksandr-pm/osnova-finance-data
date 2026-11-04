@@ -63,6 +63,7 @@ def pick(rankings, st):
     if not pool:
         return None
     last_block = st["posted"][-1]["block"] if st["posted"] else None
+    last_type = st["posted"][-1].get("type", "bars") if st["posted"] else None
     day_ago = now() - dt.timedelta(hours=24)
     per_block = {}
     for p in st["posted"]:
@@ -71,8 +72,8 @@ def pick(rankings, st):
 
     def score(r):
         h = int(hashlib.md5(r["id"].encode()).hexdigest(), 16) % 1000
-        return (r["block"] == last_block, per_block.get(r["block"], 0) >= 2,
-                per_block.get(r["block"], 0), h)
+        return (r["block"] == last_block, r.get("type", "bars") == last_type,
+                per_block.get(r["block"], 0) >= 2, per_block.get(r["block"], 0), h)
 
     return min(pool, key=score)
 
@@ -105,9 +106,11 @@ def check(resp, what):
 
 
 def post_threads(token, text, img):
-    c = check(requests.post(f"{THREADS}/me/threads", data={
-        "media_type": "IMAGE", "image_url": img, "text": text, "access_token": token,
-    }, timeout=60), "Threads контейнер")
+    """img=None: текстовый пост."""
+    data = {"media_type": "TEXT", "text": text, "access_token": token}
+    if img:
+        data.update(media_type="IMAGE", image_url=img)
+    c = check(requests.post(f"{THREADS}/me/threads", data=data, timeout=60), "Threads контейнер")
     time.sleep(35)
     p = check(requests.post(f"{THREADS}/me/threads_publish", data={
         "creation_id": c["id"], "access_token": token,
@@ -173,8 +176,14 @@ def main():
     if dry or not token:
         log("Публикации нет: " + ("dry-run" if dry else "токен не задан"))
         return 0
-    pid = post_threads(token, text, img) if platform == "threads" else post_instagram(token, text, img)
-    st["posted"].append({"id": r["id"], "block": r["block"], "at": now().isoformat(), "post": pid})
+    if platform == "threads":
+        with_img = n % 3 == 0  # картинка в каждом третьем посте, остальные текстом
+        log("Threads: " + ("с картинкой" if with_img else "текстом"))
+        pid = post_threads(token, text, img if with_img else None)
+    else:
+        pid = post_instagram(token, text, img)
+    st["posted"].append({"id": r["id"], "block": r["block"], "type": r.get("type", "bars"),
+                         "at": now().isoformat(), "post": pid})
     save_state(platform, st)
     left = len([x for x in rankings if x["id"] not in {p["id"] for p in st["posted"]}])
     log(f"Опубликовано: {pid}. Осталось новых рейтингов: {left}")

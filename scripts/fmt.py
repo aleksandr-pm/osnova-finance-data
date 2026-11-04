@@ -17,6 +17,10 @@ def _scaled(v):
 
 
 def fmt_value(v, unit):
+    if unit == "num1":
+        return _scaled(v)
+    if unit == "pct0":
+        return f"{_num(v, 0)}%"
     if unit == "pct":
         return f"{_num(v, 1)}%"
     if unit == "usd_pc":
