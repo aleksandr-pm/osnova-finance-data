@@ -283,3 +283,55 @@ def render_card(r, path, theme=0):
     img.save(path, optimize=True)
     # Instagram API принимает только JPEG
     img.save(os.path.splitext(path)[0] + ".jpg", quality=92, optimize=True)
+
+
+def render_cover(r, photo_path, out_path):
+    """Обложка карусели: стоковое фото, затемнение graphite, вывод крупно."""
+    from PIL import ImageOps
+    t = THEMES[1]
+    ph = Image.open(photo_path).convert("RGB")
+    ph = ImageOps.fit(ph, (W, H), method=Image.LANCZOS, centering=(0.5, 0.45))
+    # затемнение: ровный слой + усиление к низу (разрешено правилами для фото)
+    shade = Image.new("L", (W, H), 0)
+    sd = ImageDraw.Draw(shade)
+    for yy in range(H):
+        k = yy / H
+        a = 0.42 + 0.50 * max(0.0, (k - 0.30) / 0.70) ** 1.3
+        sd.line([(0, yy), (W, yy)], fill=int(255 * min(a, 0.93)))
+    dark = Image.new("RGB", (W, H), t["bg"])
+    img = Image.composite(dark, ph, shade)
+    d = ImageDraw.Draw(img)
+
+    d.ellipse([M, 80, M + 32, 112], outline="#F2EFEA", width=6)  # знак-кольцо поверх фото
+    spaced(d, M + 46, 85, "OSNOVA FINANCE", font(20, 500), "#F2EFEA", 3)
+
+    # вывод: снизу вверх, крупно
+    segs = r["hook"]
+    for size in (80, 72, 64, 58):
+        f = font(size, 600)
+        lines, space = layout(d, segs, f, W - 2 * M)
+        if len(lines) <= 4:
+            break
+    lh = int(size * 1.14)
+    cta_y = H - 120
+    sub_y = cta_y - 90
+    y = sub_y - 24 - lh * len(lines)
+    for line in lines:
+        x = M
+        for i, (tok, hl, w) in enumerate(line):
+            if i:
+                x += space
+            d.text((x, y), tok, font=f, fill="#E2B8A4" if hl else "#F2EFEA")
+            x += w
+        y += lh
+    period = f"{r['start']}-{r['year']}" if r.get("type") == "line" else str(r["year"])
+    sub = f"{r['title']} · {period}"
+    sf = font(28)
+    while tw(d, sub, sf) > W - 2 * M and sf.size > 20:
+        sf = font(sf.size - 1)
+    d.text((M, sub_y), sub, font=sf, fill="#D3B9B6")
+    d.rectangle([M, cta_y - 24, W - M, cta_y - 23], fill="#7E3A44")
+    d.text((M, cta_y + 30), "Рынки и данные 24/7 в Telegram @osnovafin", font=font(30, 600),
+           fill="#E2B8A4", anchor="lm")
+    plane(d, W - M - 52, cta_y + 30, 52, "#E2B8A4", "#17171A")
+    img.save(out_path, quality=88, optimize=True)

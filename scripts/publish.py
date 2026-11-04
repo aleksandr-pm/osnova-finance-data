@@ -78,9 +78,18 @@ def pick(rankings, st):
     return min(pool, key=score)
 
 
+def raw(path):
+    return f"https://raw.githubusercontent.com/{REPO}/{SHA}/bank/{path}"
+
+
 def image_url(r):
-    jpg = r["card"].replace(".png", ".jpg")
-    return f"https://raw.githubusercontent.com/{REPO}/{SHA}/bank/{jpg}"
+    return raw(r["card"].replace(".png", ".jpg"))
+
+
+def images(r):
+    """Карусель: обложка на фото + график, если обложка есть; иначе только график."""
+    out = [raw(r["cover"])] if r.get("cover") else []
+    return out + [image_url(r)]
 
 
 def ig_caption(r, i):
@@ -105,11 +114,20 @@ def check(resp, what):
     return js
 
 
-def post_threads(token, text, img):
-    """img=None: текстовый пост."""
+def post_threads(token, text, imgs):
+    """imgs: [] текстовый пост, [url] картинка, [url, url] карусель."""
     data = {"media_type": "TEXT", "text": text, "access_token": token}
-    if img:
-        data.update(media_type="IMAGE", image_url=img)
+    if len(imgs) == 1:
+        data.update(media_type="IMAGE", image_url=imgs[0])
+    elif len(imgs) > 1:
+        kids = []
+        for u in imgs:
+            k = check(requests.post(f"{THREADS}/me/threads", data={
+                "media_type": "IMAGE", "image_url": u, "is_carousel_item": "true",
+                "access_token": token}, timeout=60), "Threads слайд")
+            kids.append(k["id"])
+        time.sleep(20)
+        data.update(media_type="CAROUSEL", children=",".join(kids))
     c = check(requests.post(f"{THREADS}/me/threads", data=data, timeout=60), "Threads контейнер")
     time.sleep(35)
     p = check(requests.post(f"{THREADS}/me/threads_publish", data={
@@ -139,19 +157,35 @@ def ig_user_id(token):
     raise RuntimeError("Instagram: аккаунт osnova_finance не найден для этого ключа")
 
 
-def post_instagram(token, caption, img):
-    uid = ig_user_id(token)
-    c = check(requests.post(f"{IG}/{uid}/media", data={
-        "image_url": img, "caption": caption, "access_token": token,
-    }, timeout=60), "Instagram контейнер")
+def ig_wait(token, cid):
     for _ in range(12):
         time.sleep(5)
-        s = check(requests.get(f"{IG}/{c['id']}", params={
+        s = check(requests.get(f"{IG}/{cid}", params={
             "fields": "status_code", "access_token": token}, timeout=30), "Instagram статус")
         if s.get("status_code") == "FINISHED":
-            break
+            return
         if s.get("status_code") == "ERROR":
             raise RuntimeError(f"Instagram: контейнер с ошибкой {s}")
+
+
+def post_instagram(token, caption, imgs):
+    uid = ig_user_id(token)
+    if len(imgs) == 1:
+        c = check(requests.post(f"{IG}/{uid}/media", data={
+            "image_url": imgs[0], "caption": caption, "access_token": token,
+        }, timeout=60), "Instagram контейнер")
+    else:
+        kids = []
+        for u in imgs:
+            k = check(requests.post(f"{IG}/{uid}/media", data={
+                "image_url": u, "is_carousel_item": "true", "access_token": token,
+            }, timeout=60), "Instagram слайд")
+            ig_wait(token, k["id"])
+            kids.append(k["id"])
+        c = check(requests.post(f"{IG}/{uid}/media", data={
+            "media_type": "CAROUSEL", "children": ",".join(kids), "caption": caption,
+            "access_token": token}, timeout=60), "Instagram карусель")
+    ig_wait(token, c["id"])
     p = check(requests.post(f"{IG}/{uid}/media_publish", data={
         "creation_id": c["id"], "access_token": token,
     }, timeout=60), "Instagram публикация")
@@ -171,7 +205,7 @@ def main():
     img = image_url(r)
     n = len(st["posted"])
     text = r["threads"] if platform == "threads" else ig_caption(r, n)
-    log(f"{platform}: {r['id']} ({r['block']})\n{img}\n---\n{text}\n---")
+    log(f"{platform}: {r['id']} ({r['block']}, {r.get('type', 'bars')})\n" + "\n".join(images(r)) + f"\n---\n{text}\n---")
     token = os.environ.get("THREADS_TOKEN" if platform == "threads" else "IG_TOKEN", "")
     if dry or not token:
         log("Публикации нет: " + ("dry-run" if dry else "токен не задан"))
@@ -179,9 +213,9 @@ def main():
     if platform == "threads":
         with_img = n % 3 == 0  # картинка в каждом третьем посте, остальные текстом
         log("Threads: " + ("с картинкой" if with_img else "текстом"))
-        pid = post_threads(token, text, img if with_img else None)
+        pid = post_threads(token, text, images(r) if with_img else [])
     else:
-        pid = post_instagram(token, text, img)
+        pid = post_instagram(token, text, images(r))
     st["posted"].append({"id": r["id"], "block": r["block"], "type": r.get("type", "bars"),
                          "at": now().isoformat(), "post": pid})
     save_state(platform, st)

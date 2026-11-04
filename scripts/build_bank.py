@@ -21,7 +21,8 @@ from babel import Locale
 
 sys.path.insert(0, os.path.dirname(__file__))
 from fmt import fmt_value, flag  # noqa: E402
-from render import render_card  # noqa: E402
+from render import render_card, render_cover  # noqa: E402
+import photos  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "bank")
@@ -600,6 +601,24 @@ def main():
             render_card(r, os.path.join(OUT, r["card"]), theme=i % 3)
         except Exception as e:  # noqa: BLE001
             log(f"  карточка {r['id']}: {e}")
+    key = os.environ.get("PIXABAY_KEY", "")
+    if key:
+        pdir = os.path.join(CACHE, "photos")
+        os.makedirs(pdir, exist_ok=True)
+        os.makedirs(os.path.join(OUT, "covers"), exist_ok=True)
+        used, ok = set(), 0
+        for r in rankings:
+            try:
+                p = photos.fetch_photo(key, r, pdir, used, log)
+                if p:
+                    r["cover"] = f"covers/{r['id']}.jpg"
+                    render_cover(r, p, os.path.join(OUT, r["cover"]))
+                    ok += 1
+            except Exception as e:  # noqa: BLE001
+                log(f"  обложка {r['id']}: {e}")
+        log(f"Обложки: {ok} из {len(rankings)}")
+    else:
+        log("Обложки: PIXABAY_KEY не задан, пропускаю")
     with open(os.path.join(OUT, "rankings.json"), "w", encoding="utf-8") as f:
         json.dump(rankings, f, ensure_ascii=False, indent=1)
     with open(os.path.join(OUT, "threads.md"), "w", encoding="utf-8") as f:

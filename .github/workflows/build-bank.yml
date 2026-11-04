@@ -35,8 +35,10 @@ jobs:
         run: sudo apt-get install -y fonts-noto-color-emoji
 
       - name: Build
+        env:
+          PIXABAY_KEY: ${{ secrets.PIXABAY_KEY }}
         run: |
-          rm -rf bank/cards
+          rm -rf bank/cards bank/covers
           mkdir -p bank
           set +e
           python scripts/build_bank.py 2>&1 | tee bank/build_log.txt
