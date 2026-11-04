@@ -98,7 +98,7 @@ def make_ranking(rid, block, title, unit, year, source, source_full, values,
                  asc=False, note="", hook=True):
     """values: dict iso2 -> number (или name -> number при отсутствии iso)."""
     rows = sorted(values.items(), key=lambda kv: kv[1], reverse=not asc)
-    full = [{"iso2": k, "name": ru_name(k), "value": v,
+    full = [{"iso2": k, "name": ru_name(k), "value": v, "flag": flag(k),
              "text": fmt_value(v, unit)} for k, v in rows]
     for i, r in enumerate(full, 1):
         r["rank"] = i
@@ -318,8 +318,12 @@ def fao_rankings(df, element, mapping, kind, unit, mult):
         title = {"prod": f"Крупнейшие производители {gen}",
                  "exp": f"Крупнейшие экспортёры {gen}",
                  "imp": f"Крупнейшие импортёры {gen}"}[kind]
-        out.append(make_ranking(f"fao_{kind}_{item}", "agro", title, unit, y,
-                                "FAOSTAT", "FAOSTAT, ФАО ООН", by_year[y]))
+        rk = make_ranking(f"fao_{kind}_{item}", "agro", title, unit, y,
+                          "FAOSTAT", "FAOSTAT, ФАО ООН", by_year[y])
+        rk["hook_tpl"] = {"prod": f"{{L}} производит больше всех {gen}: [v]",
+                          "exp": f"{{L}} продаёт больше всех {gen}: [v]",
+                          "imp": f"{{L}} покупает больше всех {gen}: [v]"}[kind]
+        out.append(rk)
         log(f"  fao_{kind}_{item}: {y}, стран {len(by_year[y])}")
     return out
 
@@ -341,6 +345,48 @@ def build_fao():
     return out
 
 
+# ---------------------------------------------------------------- крючки
+# {L} страна №1, [v] выделенная цифра
+HOOKS = {
+    "wdi_ny_gdp_mktp_cd_desc": "{L}: ВВП [v], первое место в мире",
+    "wdi_ny_gdp_mktp_pp_cd_desc": "{L}: ВВП по паритету покупательной способности [v], №1 в мире",
+    "wdi_ny_gdp_pcap_cd_desc": "{L}: [v] ВВП на человека, больше всех в мире",
+    "wdi_ny_gdp_mktp_kd_zg_desc": "{L}: экономика выросла на [v] за год, быстрее всех",
+    "wdi_sl_uem_totl_zs_desc": "{L}: безработица [v], самая высокая в мире",
+    "wdi_sl_uem_totl_zs_asc": "{L}: безработица всего [v], самая низкая в мире",
+    "wdi_ny_gns_ictr_zs_desc": "{L} сберегает [v] ВВП, больше всех в мире",
+    "wdi_gc_tax_totl_gd_zs_desc": "{L}: налоги забирают [v] ВВП, больше всех в мире",
+    "wdi_fi_res_totl_cd_desc": "{L}: резервы [v], больше всех в мире",
+    "wdi_cm_mkt_lcap_cd_desc": "{L}: компании на бирже стоят [v], №1 в мире",
+    "wdi_bx_klt_dinv_cd_wd_desc": "{L}: [v] прямых иностранных инвестиций за год, №1 в мире",
+    "wdi_bx_trf_pwkr_cd_dt_desc": "{L}: мигранты прислали домой [v] за год, больше всех в мире",
+    "wdi_bm_trf_pwkr_cd_dt_desc": "{L}: мигранты отправили отсюда [v] за год, №1 в мире",
+    "wdi_bx_trf_pwkr_dt_gd_zs_desc": "{L}: переводы мигрантов равны [v] ВВП, больше всех в мире",
+    "wdi_ne_exp_gnfs_cd_desc": "{L}: экспорт [v] за год, №1 в мире",
+    "wdi_tx_val_tech_cd_desc": "{L}: экспорт высоких технологий [v], №1 в мире",
+    "wdi_bn_cab_xoka_gd_zs_desc": "{L}: профицит [v] ВВП, №1 в мире",
+    "cis_ny_gdp_pcap_cd": "{L}: [v] ВВП на человека, №1 среди стран бывшего СССР",
+    "cis_ny_gdp_mktp_cd": "{L}: ВВП [v], №1 среди стран бывшего СССР",
+    "cis_fp_cpi_totl_zg": "{L}: инфляция [v], самая высокая среди стран бывшего СССР",
+    "cis_ny_gdp_mktp_kd_zg": "{L}: рост экономики [v], быстрее всех среди стран бывшего СССР",
+    "cis_bx_trf_pwkr_dt_gd_zs": "{L}: переводы мигрантов равны [v] ВВП, больше всех среди стран бывшего СССР",
+    "cis_bx_klt_dinv_cd_wd": "{L}: [v] прямых иностранных инвестиций, №1 среди стран бывшего СССР",
+    "cis_fi_res_totl_cd": "{L}: резервы [v], №1 среди стран бывшего СССР",
+    "cis_sl_uem_totl_zs": "{L}: безработица [v], самая высокая среди стран бывшего СССР",
+}
+
+
+def make_hook(r):
+    tpl = r.pop("hook_tpl", None) or HOOKS.get(r["id"]) or (r["title"] + ": №1 {L}, [v]")
+    lead = r["top"][0]
+    before, after = tpl.split("[v]")
+    before = before.replace("{L}", lead["name"])
+    after = after.replace("{L}", lead["name"])
+    r["hook"] = [[before.strip(), False], [lead["text"], True], [after.strip(), False]]
+    r["hook"] = [x for x in r["hook"] if x[0]]
+    r["hook_text"] = (before + lead["text"] + after).strip()
+
+
 # ---------------------------------------------------------------- тексты
 QUESTIONS = [
     "Кто удивил в этом списке?",
@@ -355,7 +401,7 @@ def cis_line(items):
 
 
 def threads_text(r, i):
-    lines = [f"{r['title']} · {r['year']}", ""]
+    lines = [r["hook_text"] + ".", "", f"{r['title']} · {r['year']}"]
     for row in r["top"][:5]:
         lines.append(f"{row['rank']}. {flag(row['iso2'])} {row['name']} · {row['text']}")
     lines.append("")
@@ -379,6 +425,7 @@ def main():
     rankings += build_fao()
     log(f"Итого рейтингов: {len(rankings)}")
     for i, r in enumerate(rankings):
+        make_hook(r)
         r["threads"] = threads_text(r, i)
         r["threads_len"] = len(r["threads"])
         r["card"] = f"cards/{r['id']}.png"

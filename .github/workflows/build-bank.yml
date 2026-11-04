@@ -31,11 +31,8 @@ jobs:
       - name: Install
         run: pip install pandas requests pillow babel pycountry
 
-      - name: Font
-        run: |
-          mkdir -p fonts
-          curl -sSL -o fonts/Rubik.ttf "https://github.com/google/fonts/raw/main/ofl/rubik/Rubik%5Bwght%5D.ttf"
-          ls -la fonts
+      - name: Emoji font
+        run: sudo apt-get install -y fonts-noto-color-emoji
 
       - name: Build
         run: |
