@@ -163,3 +163,5 @@ def render_card(r, path, theme=0):
     d.text((M, cy), cta, font=cf, fill=t["cta"], anchor="lm")
     plane(d, W - M - 52, cy, 52, t["cta"], t["bg"])
     img.save(path, optimize=True)
+    # Instagram API принимает только JPEG
+    img.save(os.path.splitext(path)[0] + ".jpg", quality=92, optimize=True)

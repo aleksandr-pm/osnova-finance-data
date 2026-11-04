@@ -1,0 +1,72 @@
+name: publish
+
+# Время в cron по UTC. Дубай = UTC+4.
+on:
+  schedule:
+    # Threads, 12 в день: 08:37 09:37 10:37 11:37 14:37 17:37 20:37 01:37 (Дубай)
+    - cron: "37 4,5,6,7,10,13,16,21 * * *"
+    # Threads: 13:07 16:07 19:07 22:07 (Дубай)
+    - cron: "7 9,12,15,18 * * *"
+    # Instagram, 4 в день: 10:13 14:13 18:13 (Дубай)
+    - cron: "13 6,10,14 * * *"
+    # Instagram: 21:43 (Дубай)
+    - cron: "43 17 * * *"
+  workflow_dispatch:
+    inputs:
+      platform:
+        description: "threads или instagram"
+        required: true
+        default: threads
+      dry_run:
+        description: "yes = без публикации"
+        required: true
+        default: "yes"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-state
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: Platform
+        id: p
+        run: |
+          S="${{ github.event.schedule }}"
+          if [ -n "${{ inputs.platform }}" ]; then P="${{ inputs.platform }}";
+          elif [ "$S" = "13 6,10,14 * * *" ] || [ "$S" = "43 17 * * *" ]; then P=instagram;
+          else P=threads; fi
+          echo "platform=$P" >> "$GITHUB_OUTPUT"
+          if [ "${{ inputs.dry_run }}" = "yes" ]; then echo "flag=--dry-run" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Publish
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+        run: |
+          mkdir -p bank/logs
+          set +e
+          python scripts/publish.py ${{ steps.p.outputs.platform }} ${{ steps.p.outputs.flag }} 2>&1 | tee bank/logs/last_${{ steps.p.outputs.platform }}.txt
+          echo "exit=${PIPESTATUS[0]} $(date -u +%FT%TZ)" >> bank/logs/last_${{ steps.p.outputs.platform }}.txt
+
+      - name: Save state
+        run: |
+          git config user.name "osnova-bot"
+          git config user.email "osnova-bot@users.noreply.github.com"
+          git add bank/state_*.json bank/logs 2>/dev/null
+          git commit -m "publish: ${{ steps.p.outputs.platform }} [skip ci]" || echo "nothing to commit"
+          git pull --rebase origin main
+          git push
