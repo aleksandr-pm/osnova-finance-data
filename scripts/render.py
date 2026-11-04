@@ -186,8 +186,14 @@ def body_line(d, r, t, y):
     # сетка: 3 горизонтальные линии с подписями
     gf = font(22)
     grid = []
+    import math
+    raw = vmax / 1.06 / 3
+    mag = 10 ** math.floor(math.log10(raw))
+    step = next(m * mag for m in (1, 2, 2.5, 5, 10) if m * mag >= raw)
     for k in (1, 2, 3):
-        v = vmax / 1.06 * k / 3
+        v = step * k
+        if v > vmax:
+            break
         yy = py(v)
         d.line([x0, yy, x1, yy], fill=t["line"], width=1)
         grid.append((yy, fmt_value(v, r["unit"])))
