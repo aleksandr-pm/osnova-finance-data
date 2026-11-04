@@ -22,7 +22,9 @@ REPO = os.environ.get("GITHUB_REPOSITORY", "aleksandr-pm/osnova-finance-data")
 SHA = os.environ.get("GITHUB_SHA", "main")[:12]
 REPEAT_DAYS = 90
 THREADS = "https://graph.threads.net/v1.0"
-IG = "https://graph.instagram.com/v25.0"
+IG = "https://graph.facebook.com/v25.0"
+BUSINESS_ID = "167573054295268"  # бизнес-портфолио «Александр Максименко»
+IG_USERNAME = "osnova_finance"
 
 QUESTIONS = [
     "Кто удивил в этом списке?",
@@ -113,8 +115,30 @@ def post_threads(token, text, img):
     return p["id"]
 
 
+def ig_user_id(token):
+    """ID аккаунта Instagram: из IG_USER_ID или через бизнес-портфолио."""
+    if os.environ.get("IG_USER_ID"):
+        return os.environ["IG_USER_ID"]
+    for edge in ("owned_instagram_accounts", "instagram_accounts"):
+        r = requests.get(f"{IG}/{BUSINESS_ID}/{edge}", params={
+            "fields": "id,username", "access_token": token}, timeout=30)
+        if r.status_code == 200:
+            for a in r.json().get("data", []):
+                if a.get("username") == IG_USERNAME:
+                    return a["id"]
+    r = check(requests.get(f"{IG}/me/accounts", params={
+        "fields": "instagram_business_account{id,username}", "access_token": token}, timeout=30),
+        "Instagram аккаунт")
+    for p in r.get("data", []):
+        a = p.get("instagram_business_account") or {}
+        if a.get("username") == IG_USERNAME:
+            return a["id"]
+    raise RuntimeError("Instagram: аккаунт osnova_finance не найден для этого ключа")
+
+
 def post_instagram(token, caption, img):
-    c = check(requests.post(f"{IG}/me/media", data={
+    uid = ig_user_id(token)
+    c = check(requests.post(f"{IG}/{uid}/media", data={
         "image_url": img, "caption": caption, "access_token": token,
     }, timeout=60), "Instagram контейнер")
     for _ in range(12):
@@ -125,7 +149,7 @@ def post_instagram(token, caption, img):
             break
         if s.get("status_code") == "ERROR":
             raise RuntimeError(f"Instagram: контейнер с ошибкой {s}")
-    p = check(requests.post(f"{IG}/me/media_publish", data={
+    p = check(requests.post(f"{IG}/{uid}/media_publish", data={
         "creation_id": c["id"], "access_token": token,
     }, timeout=60), "Instagram публикация")
     return p["id"]
