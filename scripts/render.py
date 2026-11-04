@@ -158,7 +158,7 @@ def render_card(r, path, theme=0):
     d.rectangle([M, foot, W - M, foot], fill=t["line"])
     d.text((M, foot + 30), f"Источник: {r['source_full']}", font=font(22), fill=t["foot"])
     cf = font(30, 600)
-    cta = "Полный рейтинг в Telegram @osnovafin"
+    cta = "Рынки и данные 24/7 в Telegram @osnovafin"
     cy = foot + 92
     d.text((M, cy), cta, font=cf, fill=t["cta"], anchor="lm")
     plane(d, W - M - 52, cy, 52, t["cta"], t["bg"])

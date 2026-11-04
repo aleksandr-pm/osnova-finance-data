@@ -410,7 +410,7 @@ def threads_text(r, i):
         lines.append(cis_line(hook))
     lines.append(QUESTIONS[i % len(QUESTIONS)])
     lines.append("")
-    lines.append("Полный топ-10 и график в Telegram, ссылка в ответе.")
+    lines.append("Рынки и данные 24/7 в Telegram @osnovafin, ссылка в профиле.")
     lines.append(f"{r['source']} · #данные")
     text = "\n".join(lines)
     if len(text) > 500:
