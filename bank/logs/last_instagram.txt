@@ -1,12 +1,14 @@
-instagram: fao_prod_388 (agro)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/abde5857e454/bank/cards/fao_prod_388.jpg
+instagram: line_economy_ne_exp_gnfs_cd (economy, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/d42147eee595/bank/covers/line_economy_ne_exp_gnfs_cd.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/d42147eee595/bank/cards/line_economy_ne_exp_gnfs_cd.jpg
 ---
-Китай производит больше всех томатов: 61,6 млн т.
-Крупнейшие производители томатов · 2024. Источник: FAOSTAT.
+Китай: экспорт вырос в 5,3 раза с 2005 года.
+Экспорт товаров и услуг: пять крупнейших экспортёров · 2025. Источник: World Bank.
 
-Кто удивил в этом списке?
+Кого не хватает в топе, по-вашему?
 Рынки и данные 24/7 в Telegram @osnovafin, ссылка в профиле.
 Не является инвестиционной рекомендацией.
 ---
-Опубликовано: 17880694869632432. Осталось новых рейтингов: 93
-exit=0 2026-11-04T20:50:32Z
+Instagram: одиночный пост с графиком
+Опубликовано: 18120155513608553. Осталось новых рейтингов: 123
+exit=0 2026-11-05T07:22:20Z
