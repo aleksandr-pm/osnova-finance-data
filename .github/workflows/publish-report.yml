@@ -1,0 +1,25 @@
+name: publish-report
+on:
+  schedule:
+    - cron: "27 6 * * *"    # 10:27 по Дубаю
+    - cron: "27 15 * * *"   # 19:27 по Дубаю
+  workflow_dispatch:
+    inputs:
+      dry_run: { description: "yes = только нарисовать", default: "no" }
+permissions:
+  contents: write
+concurrency: { group: publish-report, cancel-in-progress: false }
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install pillow requests
+      - env:
+          THREADS_TOKEN_REPORT: ${{ secrets.THREADS_TOKEN_REPORT }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+        run: |
+          git config user.name "osnova-bot"; git config user.email "osnova-bot@users.noreply.github.com"
+          python scripts/publish_report.py
