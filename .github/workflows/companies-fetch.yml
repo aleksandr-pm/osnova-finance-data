@@ -1,0 +1,22 @@
+name: companies-fetch
+on:
+  workflow_dispatch:
+    inputs:
+      tickers:
+        description: "Тикеры через пробел (пусто = список по умолчанию)"
+        default: ""
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install yfinance
+      - run: python scripts/fetch_companies.py ${{ github.event.inputs.tickers }} 2>&1 | tee companies/fetch_log.txt
+      - run: |
+          git config user.name "osnova-bot"; git config user.email "osnova-bot@users.noreply.github.com"
+          git add companies; git commit -m "companies: data [skip ci]" || true
+          git pull --rebase origin main; git push
