@@ -1,0 +1,35 @@
+name: banners
+
+# Разовая выгрузка шапок инсайдов из старого воркера в репозиторий (worker/img)
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/banners.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download
+        run: |
+          mkdir -p worker/img
+          for n in insider funds; do
+            if [ ! -s worker/img/$n.png ]; then
+              curl -fsSL -A "Mozilla/5.0" -o worker/img/$n.png "https://osnova-finance-feed.maximenko-aleksander-p.workers.dev/img/$n.png"
+            fi
+            file worker/img/$n.png
+          done
+      - name: Commit
+        run: |
+          git config user.name "osnova-bot"
+          git config user.email "osnova-bot@users.noreply.github.com"
+          git add worker/img
+          git commit -m "worker: шапки инсайдов [skip ci]" || echo "nothing to commit"
+          git pull --rebase origin main
+          git push
