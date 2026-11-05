@@ -1,21 +1,20 @@
-threads: line_money_bx_trf_pwkr_cd_dt (money, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/dfe473428973/bank/covers/line_money_bx_trf_pwkr_cd_dt.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/dfe473428973/bank/cards/line_money_bx_trf_pwkr_cd_dt.jpg
+threads: share_exp_162 (agro, donut)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/7c8176fd874f/bank/covers/share_exp_162.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/7c8176fd874f/bank/cards/share_exp_162.jpg
 ---
-Египет: переводы мигрантов выросли в 8,3 раза с 2005 года.
-
-Переводы мигрантов: пять крупнейших получателей · 2005-2025
-1. 🇮🇳 Индия · $151 млрд, рост в 6,8 раза
-2. 🇲🇽 Мексика · $65,1 млрд, рост в 2,9 раза
-3. 🇫🇷 Франция · $44,5 млрд, рост в 3,1 раза
-4. 🇵🇭 Филиппины · $41,6 млрд, рост в 3 раза
-5. 🇪🇬 Египет · $41,5 млрд, рост в 8,3 раза
-
-Кто удивил в этом списке?
-
-Рынки и данные 24/7 в Telegram @osnovafin, ссылка в профиле.
-World Bank · #данные
+Доли в мировом экспорте сахара-сырца, 2024:
+1. 🇧🇷 Бразилия · 72,2%
+2. 🇦🇺 Австралия · 6,6%
+3. 🇹🇭 Таиланд · 4,1%
+4. 🇮🇳 Индия · 2,4%
+5. 🇸🇿 Эсватини · 2,2%
+6. 🇲🇽 Мексика · 1,4%
+7. 🇿🇦 ЮАР · 1,2%
+8. 🇬🇹 Гватемала · 1,2%
+9. 🇷🇺 Россия · 0,9%
+10. 🇸🇻 Сальвадор · 0,8%
+Больше в Telegram @osnovafin
 ---
-Threads: с картинкой
-Опубликовано: 18131604643837417. Осталось новых рейтингов: 121
-exit=0 2026-11-05T06:37:30Z
+Threads: текстом
+Опубликовано: 18252129988309761. Осталось новых рейтингов: 120
+exit=0 2026-11-05T07:55:52Z
