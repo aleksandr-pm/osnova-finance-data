@@ -92,15 +92,126 @@ def images(r):
     return out + [image_url(r)]
 
 
+TAG_ITEM = {
+    15: "пшеница", 56: "кукуруза", 27: "рис", 31: "рис", 44: "ячмень", 236: "соя",
+    656: "кофе", 661: "какао", 667: "чай", 156: "сахар", 162: "сахар", 116: "картофель",
+    515: "яблоки", 486: "бананы", 560: "виноград", 388: "томаты", 267: "подсолнечник",
+    270: "рапс", 257: "пальмовоемасло", 261: "оливковоемасло", 564: "вино", 867: "говядина",
+    1058: "курица", 882: "молоко", 1062: "яйца", 767: "хлопок", 572: "авокадо",
+    490: "апельсины", 1182: "мёд", 403: "лук", 221: "миндаль", 225: "фундук",
+    223: "фисташки", 268: "подсолнечноемасло", 1035: "свинина",
+}
+TAG_BLOCK = {
+    "agro": ["сельскоехозяйство", "агро", "экспорт", "продовольствие"],
+    "economy": ["экономика", "мироваяэкономика", "ввп", "макроэкономика"],
+    "money": ["деньги", "капитал", "финансоваяграмотность", "мироваяэкономика"],
+    "cis": ["снг", "экономикаснг", "казахстан", "узбекистан"],
+}
+TAG_BASE = ["инвестиции", "финансы", "статистика", "инфографика", "цифры", "рынки"]
+
+
+def tag(word):
+    return "#" + "".join(ch for ch in word.lower() if ch.isalnum())
+
+
+def hashtags(r):
+    tags = []
+    try:
+        code = int(r["id"].split("_")[-1])
+        if code in TAG_ITEM:
+            tags.append(TAG_ITEM[code])
+    except ValueError:
+        pass
+    tags += TAG_BLOCK.get(r["block"], [])
+    lead = next((s for s in r.get("series", []) if s.get("hl")), None) or r["top"][0]
+    tags.append(lead["name"])
+    tags += TAG_BASE
+    out, seen = [], set()
+    for t in tags:
+        h = tag(t)
+        if h not in seen and len(h) > 2:
+            seen.add(h)
+            out.append(h)
+    return " ".join(out[:14])
+
+
+def change(x):
+    """Рост или падение для линии: «в 2,4 раза», «на 41%», «−12%»."""
+    if x.get("growth"):
+        return x["growth"]
+    return f"−{(1 - x['ratio']) * 100:.0f}%" if x.get("ratio", 1) < 1 else ""
+
+
+def num1(v):
+    t = f"{v:.1f}".replace(".", ",")
+    return t[:-2] if t.endswith(",0") else t
+
+
+def period(r):
+    return f"{r['start']}-{r['year']}" if r.get("type") == "line" else str(r["year"])
+
+
+def threads_short(r):
+    """Короткий формат, как ручные посты: заголовок, список, одна строка вывода, CTA."""
+    kind = r.get("type", "bars")
+    lines = [f"{r['title']}, {period(r)}:"]
+    if kind == "line":
+        for x in r["series"]:
+            lines.append(f"{x['rank']}. {x['name']} · {x['text'].split(', рост')[0]}"
+                         + (f", {change(x)}" if change(x) else ""))
+    elif kind == "donut":
+        for x in r["top"]:
+            lines.append(f"{x['rank']}. {x['name']} · {x['text']}")
+    else:
+        for x in r["top"][:10]:
+            lines.append(f"{x['rank']}. {x['name']} · {x['text']}")
+    tail = r["hook_text"] + "."
+    if kind == "bars":
+        out = [c for c in r.get("cis", []) if c["rank"] > 10]
+        if out:
+            tail = ", ".join(f"{c['name']} на {c['rank']}-м" for c in out[:2]) + " месте."
+    elif kind == "donut":
+        tail = f"Остальной мир: {r['rest']:.0f}%."
+    lines += [tail, "Больше в Telegram @osnovafin"]
+    return "\n".join(lines)
+
+
 def ig_caption(r, i):
-    return "\n".join([
-        r["hook_text"] + ".",
-        f"{r['title']} · {r['year']}. Источник: {r['source']}.",
-        "",
+    """Развёрнутая подпись: вывод, контекст из данных, список, вопрос, CTA, хэштеги."""
+    kind = r.get("type", "bars")
+    top = r["top"]
+    para = []
+    if kind == "line":
+        ser = r["series"]
+        g = next(s for s in ser if s.get("hl"))
+        para.append(f"{r['title']}, {r['start']}-{r['year']}. "
+                    f"Самый быстрый рост: {g['name']}, {g['growth']}, до {g['text'].split(', рост')[0]}.")
+        para.append(f"Значения в {r['year']} году и изменение с {r['start']}:\n" + "\n".join(
+            f"{x['flag']} {x['name']}: {x['text'].split(', рост')[0]}" + (f", {change(x)}" if change(x) else "")
+            for x in ser))
+    elif kind == "donut":
+        para.append(f"{r['title']}, {r['year']} год. На пять крупнейших стран приходится "
+                    f"{r['top_sum']:.0f}% мирового экспорта, на все остальные {r['rest']:.0f}%. "
+                    f"Всего стран-экспортёров в данных: {r['countries']}.")
+        para.append("Доли лидеров:\n" + "\n".join(f"{x['flag']} {x['name']}: {x['text']}" for x in top))
+    else:
+        a, b = top[0], top[1]
+        ratio = a["value"] / b["value"] if b["value"] else 0
+        cmp_ = f" Разрыв первого места со вторым ({b['name']}): в {num1(ratio)} раза." \
+            if ratio >= 1.15 else f" Первое и второе место ({b['name']}) идут почти вровень."
+        para.append(f"{r['title']}, {r['year']} год, данные {r['source']}." + cmp_
+                    + (f" Учтены {r['note']}." if r.get("note") else ""))
+        para.append("Топ-5:\n" + "\n".join(f"{x['flag']} {x['name']}: {x['text']}" for x in top[:5]))
+        out = [c for c in r.get("cis", []) if c["rank"] > 5]
+        if out:
+            para.append(", ".join(f"{c['name']} на {c['rank']}-м" for c in out) + " месте.")
+    parts = [r["hook_text"] + "."] + para + [
         QUESTIONS[i % len(QUESTIONS)],
-        "Рынки и данные 24/7 в Telegram @osnovafin, ссылка в профиле.",
-        "Не является инвестиционной рекомендацией.",
-    ])
+        "Каждый день рынки, сделки инсайдеров из отчётов SEC и данные в Telegram @osnovafin, ссылка в профиле.",
+        f"Источник: {r['source_full']}. Не является инвестиционной рекомендацией.",
+        hashtags(r),
+    ]
+    return "\n\n".join(parts)
 
 
 def check(resp, what):
@@ -204,7 +315,7 @@ def main():
         return 1
     img = image_url(r)
     n = len(st["posted"])
-    text = r["threads"] if platform == "threads" else ig_caption(r, n)
+    text = threads_short(r) if platform == "threads" else ig_caption(r, n)
     log(f"{platform}: {r['id']} ({r['block']}, {r.get('type', 'bars')})\n" + "\n".join(images(r)) + f"\n---\n{text}\n---")
     token = os.environ.get("THREADS_TOKEN" if platform == "threads" else "IG_TOKEN", "")
     if dry or not token:
