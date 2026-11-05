@@ -1,21 +1,21 @@
-threads: share_exp_257 (agro, donut)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/b3da2f1cb302/bank/covers/share_exp_257.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/b3da2f1cb302/bank/cards/share_exp_257.jpg
+threads: line_cis_ny_gdp_pcap_cd (cis, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/4d2d5efa79bb/bank/covers/line_cis_ny_gdp_pcap_cd.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/4d2d5efa79bb/bank/cards/line_cis_ny_gdp_pcap_cd.jpg
 ---
-Доли в мировом экспорте пальмового масла, 2024:
-1. 🇮🇩 Индонезия · 48,5%
-2. 🇲🇾 Малайзия · 32,8%
-3. 🇳🇱 Нидерланды · 3,2%
-4. 🇹🇭 Таиланд · 2,1%
-5. 🇵🇬 Папуа-Новая Гвинея · 1,5%
-6. 🇬🇹 Гватемала · 1,3%
-7. 🇨🇴 Колумбия · 1,1%
-8. 🇭🇳 Гондурас · 1,0%
-9. 🇮🇹 Италия · 0,8%
-10. 🇨🇮 Кот-д’Ивуар · 0,8%
-Остальной мир: 12%.
+ВВП на душу населения: страны бывшего СССР, 2005-2025:
+1. 🇪🇪 Эстония · в 3,3 раза
+2. 🇱🇹 Литва · в 4,2 раза
+3. 🇱🇻 Латвия · в 3,6 раза
+4. 🇷🇺 Россия · в 3,3 раза
+5. 🇰🇿 Казахстан · в 4,1 раза
+6. 🇧🇾 Беларусь · в 3,3 раза
+7. 🇬🇪 Грузия · в 5,9 раза
+8. 🇦🇲 Армения · в 6,1 раза
+9. 🇦🇿 Азербайджан · в 4,7 раза
+10. 🇺🇿 Узбекистан · в 7,3 раза
+Узбекистан: ВВП на человека вырос в 7,3 раза с 2005 года.
 Больше в Telegram @osnovafin
 ---
-Threads: текстом
-Опубликовано: 17956070286269231. Осталось новых рейтингов: 116
-exit=0 2026-11-05T14:35:06Z
+Threads: с картинкой
+Опубликовано: 18032592401911399. Осталось новых рейтингов: 115
+exit=0 2026-11-05T15:57:33Z
