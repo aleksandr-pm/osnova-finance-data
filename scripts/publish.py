@@ -170,17 +170,24 @@ def ten(r):
 
 
 def threads_short(r):
-    """Как ручные посты: заголовок, 10 стран с флагами, «Больше в Telegram». Без выводов и процентов изменения."""
+    """Короткий формат, как ручные посты: заголовок, 10 мест с флагами, одна строка вывода, CTA."""
     kind = r.get("type", "bars")
-    lines = [f"{r['title']}, {r['year']}:"]
-    if kind == "line":
-        rows = [(x["rank"], x["flag"], x["name"], x["text"].split(", рост")[0])
-                for x in r.get("series_all", r["series"])]
-    else:
-        rows = ten(r)
-    lines += [f"{rk}. {fl} {nm} · {v}" for rk, fl, nm, v in rows[:10]]
-    lines.append("Больше в Telegram @osnovafin")
-    return "\n".join(lines)
+    lines = [f"{r['title']}, {period(r)}:"]
+    lines += [f"{rk}. {fl} {nm} · {v}" for rk, fl, nm, v in ten(r)]
+    tail = r["hook_text"] + "."
+    if kind == "bars":
+        out = [c for c in r.get("cis", []) if c["rank"] > 10]
+        if out:
+            tail = ", ".join(f"{c['name']} на {c['rank']}-м" for c in out[:2]) + " месте."
+    elif kind == "donut":
+        tail = f"Остальной мир: {r['rest']:.0f}%."
+    lines += [tail, "Больше в Telegram @osnovafin"]
+    text = "\n".join(lines)
+    if len(text) > 500 and kind == "line":  # лимит Threads: оставляем только изменение
+        rows = [f"{rk}. {fl} {nm} · {v.split(', ', 1)[1] if ', ' in v else v}"
+                for rk, fl, nm, v in ten(r)]
+        text = "\n".join([lines[0]] + rows + lines[-2:])
+    return text
 
 
 def ig_caption(r, i):
