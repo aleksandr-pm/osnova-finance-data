@@ -1,0 +1,47 @@
+{
+ "ticker": "TALABAT.AE",
+ "name": "Talabat Holding plc",
+ "currency": "USD",
+ "sector": "Consumer Cyclical",
+ "industry": "Internet Retail",
+ "summary": "Talabat Holding plc operates as an on-demand online food ordering, delivery, takeaway and groceries, and convenience retail marketplace in the United Arab Emirates, Kuwait, Qatar, Bahrain, Egypt, Oman, Jordan, Iraq, and internationally. The company's online food ordering offers customers to order food from partner restaurants; and groceries, pharmacy products, food and beverages, snacks, household items, and personal care products from various local partners, including grocery stores, pharmacies, and flower shops, as well as its own warehousing and distribution centers designed for the fulfilment of online and on-demand orders of convenience products and groceries. The company also offers logistics services, retail sales through the internet, structured financing, software development, and the operation of cloud kitchens and delivery-only stores. Talabat Holding plc was founded in 2004 and is headquartered in Dubai, the United Arab Emirates. Talabat Holding plc operates as a subsidiary of Delivery Hero MENA Holding GmbH.",
+ "market_cap": 25978376192,
+ "price": 1.12,
+ "dividend_yield": 5.38,
+ "employees": 8568,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2023": 1677520839.72998,
+  "2022": 1381230813.003703
+ },
+ "net_income": {
+  "2023": 295175171.212369,
+  "2022": 208847935.634938
+ },
+ "operating_income": {
+  "2023": 249961313.898416,
+  "2022": 162707522.598562
+ },
+ "ebitda": {
+  "2023": 327581752.40895,
+  "2022": 250722213.8423
+ },
+ "total_debt": {
+  "2025": 152795404.0,
+  "2024": 96529540.0,
+  "2023": 70804066.906201,
+  "2022": 170374911.511653
+ },
+ "cash": {
+  "2025": 773680921.0,
+  "2024": 418637477.0,
+  "2023": 290026348.739725,
+  "2022": 394907112.284905
+ },
+ "equity": {
+  "2025": 699928012.0,
+  "2024": 538399014.0,
+  "2023": 448381092.329468,
+  "2022": 431544215.58484
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "ticker": "DU.AE",
+ "name": "Emirates Integrated Telecommunications Company PJSC",
+ "currency": "AED",
+ "sector": "Communication Services",
+ "industry": "Telecom Services",
+ "summary": "Emirates Integrated Telecommunications Company PJSC, together with its subsidiaries, provides mobile, fixed services, broadband connectivity, and IPTV solutions to homes and businesses in the United Arab Emirates. It operates in four segments: Mobile, Fixed, Wholesale, and ICT and associated telecom. The Mobile segment offers mobile services, including mobile voice and data, mobile content, and mobile broadband Wi-Fi services to the enterprise and consumer markets. Its Fixed segment provides broadband, IPTV, home wireless, IP/VPN business internet, and telephony services. The Wholesale segment offers voice and SMS services, including termination of inbound international and national traffic and international roaming, and international hubbing to national and international carriers and operators. Its ICT and associated telecom segment provide broadcasting, data center co-location, multi-cloud, cybersecurity, IOT, international roaming, equipment, and site sharing services, etc., as well as sells handsets and other devices. It also offers software development, IT infrastructure, IT network, and computer systems housing; computer network and infrastructure installation, and project management; and outsourcing services. In addition, the company hosts digital wallet, retail payment, service provision brokerage and loyalty card services; and operates as a telecommunications reseller and third-party telecommunications providers. Emirates Integrated Telecommunications Company PJSC wa",
+ "market_cap": 57295933440,
+ "price": 12.64,
+ "dividend_yield": 5.08,
+ "employees": null,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 15905421000.0,
+  "2024": 14635917000.0,
+  "2023": 13636340000.0,
+  "2022": 12754492000.0
+ },
+ "net_income": {
+  "2025": 2905085000.0,
+  "2024": 2487547000.0,
+  "2023": 1667851000.0,
+  "2022": 1219561000.0
+ },
+ "operating_income": {
+  "2025": 5377365000.0,
+  "2024": 4579860000.0,
+  "2023": 2200284000.0,
+  "2022": 1725722000.0
+ },
+ "ebitda": {
+  "2025": 7412109000.0,
+  "2024": 6549511000.0,
+  "2023": 4458009000.0,
+  "2022": 3865593000.0
+ },
+ "total_debt": {
+  "2025": 1938819000.0,
+  "2024": 1998687000.0,
+  "2023": 2104959000.0,
+  "2022": 2059211000.0
+ },
+ "cash": {
+  "2025": 465700000.0,
+  "2024": 983969000.0,
+  "2023": 610036000.0,
+  "2022": 871081000.0
+ },
+ "equity": {
+  "2025": 10148291000.0,
+  "2024": 9878445000.0,
+  "2023": 9243213000.0,
+  "2022": 8770152000.0
+ }
+}

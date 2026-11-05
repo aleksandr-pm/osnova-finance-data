@@ -1,0 +1,45 @@
+{
+ "ticker": "GFH.AE",
+ "name": "GFH Bank B.S.C.",
+ "currency": "USD",
+ "sector": "Financial Services",
+ "industry": "Banks - Regional",
+ "summary": "GFH Bank B.S.C., an Islamic wholesale investment bank, provides investment advisory and transaction services in GCC countries, the Middle East and North Africa, Asia, North America, and internationally. The company operates through Wealth & Investment Management; Credit & Financing; and Treasury and Proprietary segments. The Wealth & Investment Management segment offers private equity and asset management services; and Islamic asset-backed and equity capital markets, Islamic financial advisory, and mid-sized mergers and acquisition transaction services. The Credit & Financing segment provides commercial, corporate, and retail banking services; and wealth management services, as well as structured investment products and project financing facilities. The Treasury and Proprietary segment offers treasury and residual investment asset services; and co-investment assets. It engages in the real estate development and investment, hospitality management, and education institution activities; and owns, manages, and leases real estate properties. GFH Bank B.S.C. was formerly known as GFH Financial Group BSC and changed its name to GFH Bank B.S.C. in April 2026. GFH Bank B.S.C. was incorporated in 1999 and is headquartered in Manama, the Kingdom of Bahrain.",
+ "market_cap": 5457696768,
+ "price": 1.58,
+ "dividend_yield": 5.1,
+ "employees": null,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 436075000.0,
+  "2024": 389927000.0,
+  "2023": 259278000.0,
+  "2022": 218434000.0
+ },
+ "net_income": {
+  "2025": 140110000.0,
+  "2024": 118504000.0,
+  "2023": 102863000.0,
+  "2022": 90253000.0
+ },
+ "operating_income": {},
+ "ebitda": {},
+ "total_debt": {
+  "2025": 2523516000.0,
+  "2024": 2149758000.0,
+  "2023": 2124307000.0,
+  "2022": 1942198000.0
+ },
+ "cash": {
+  "2025": 1330907000.0,
+  "2024": 1450632000.0,
+  "2023": 1835252000.0,
+  "2022": 1587789000.0
+ },
+ "equity": {
+  "2025": 1020768000.0,
+  "2024": 980936000.0,
+  "2023": 989541000.0,
+  "2022": 996600000.0
+ }
+}

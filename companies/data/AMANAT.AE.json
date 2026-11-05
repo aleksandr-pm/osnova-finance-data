@@ -1,0 +1,53 @@
+{
+ "ticker": "AMANAT.AE",
+ "name": "Amanat Holdings PJSC",
+ "currency": "AED",
+ "sector": "Financial Services",
+ "industry": "Asset Management",
+ "summary": "Amanat Holdings PJSC, together with its subsidiaries, engages in the investment in companies and enterprises in the fields of education and healthcare in the United Arab Emirates and internationally. The company engages in the development, operation, and management of companies and enterprises. It provides tertiary education and vocational services in the United Arab Emirates; and medical and healthcare services. The company also operates hospitals and healthcare facilities in Bahrain. Amanat Holdings PJSC was incorporated in 2014 and is headquartered in Dubai, the United Arab Emirates.",
+ "market_cap": 4006253312,
+ "price": 1.605,
+ "dividend_yield": 6.31,
+ "employees": null,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 931689000.0,
+  "2024": 796096000.0,
+  "2023": 751132000.0,
+  "2022": 568484000.0
+ },
+ "net_income": {
+  "2025": 176985000.0,
+  "2024": 115843000.0,
+  "2023": -53200000.0,
+  "2022": 114213000.0
+ },
+ "operating_income": {
+  "2025": 134092000.0,
+  "2024": 147770000.0
+ },
+ "ebitda": {
+  "2025": 400648000.0,
+  "2024": 320310000.0,
+  "2023": 305853000.0,
+  "2022": 197978000.0
+ },
+ "total_debt": {
+  "2025": 568523000.0,
+  "2024": 531512000.0,
+  "2023": 583311000.0,
+  "2022": 626556000.0
+ },
+ "cash": {
+  "2025": 1439562000.0,
+  "2024": 499338000.0,
+  "2023": 555301000.0,
+  "2022": 581433000.0
+ },
+ "equity": {
+  "2025": 2845372000.0,
+  "2024": 2583057000.0,
+  "2023": 2615221000.0,
+  "2022": 2712226000.0
+ }
+}

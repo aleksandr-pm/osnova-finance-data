@@ -1,0 +1,45 @@
+{
+ "ticker": "DIB.AE",
+ "name": "Dubai Islamic Bank P.J.S.C.",
+ "currency": "AED",
+ "sector": "Financial Services",
+ "industry": "Banks - Regional",
+ "summary": "Dubai Islamic Bank P.J.S.C., together with its subsidiaries, engages in the corporate, retail, and investment banking activities in the United Arab Emirates and internationally. It operates through Consumer Banking, Corporate Banking, Treasury, and Others segments. The Consumer Banking segment accepts deposits; and offers consumer murabahas, salam, home finance, ijarah, credit cards, and fund transfer facilities, as well as banking and wealth management services. The Corporate Banking segment provides current accounts, deposits, cash management, and risk management products, as well as financing and other credit facilities to corporate and institutional customers. The Treasury segment offers treasury services. It also offers brokerage, Islamic finance advisory, and labour services; real estate development services; printing and investment services; and business accounts, foreign exchange, trade, and debit card services, as well as online and treasury and institutional banking services. Dubai Islamic Bank P.J.S.C. was incorporated in 1975 and is headquartered in Dubai, the United Arab Emirates.",
+ "market_cap": 52974723072,
+ "price": 7.33,
+ "dividend_yield": 4.73,
+ "employees": null,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 12576275000.0,
+  "2024": 12268376000.0,
+  "2023": 11449980000.0,
+  "2022": 10341326000.0
+ },
+ "net_income": {
+  "2025": 7063918000.0,
+  "2024": 7510760000.0,
+  "2023": 6373253000.0,
+  "2022": 5049370000.0
+ },
+ "operating_income": {},
+ "ebitda": {},
+ "total_debt": {
+  "2025": 25567038000.0,
+  "2024": 24366152000.0,
+  "2023": 20609313000.0,
+  "2022": 22509929000.0
+ },
+ "cash": {
+  "2025": 78199770000.0,
+  "2024": 70738395000.0,
+  "2023": 71218295000.0,
+  "2022": 72564268000.0
+ },
+ "equity": {
+  "2025": 49907972000.0,
+  "2024": 49824798000.0,
+  "2023": 44557309000.0,
+  "2022": 41303712000.0
+ }
+}

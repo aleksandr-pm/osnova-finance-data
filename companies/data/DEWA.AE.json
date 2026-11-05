@@ -1,0 +1,55 @@
+{
+ "ticker": "DEWA.AE",
+ "name": "Dubai Electricity and Water Authority (PJSC)",
+ "currency": "AED",
+ "sector": "Utilities",
+ "industry": "Utilities - Diversified",
+ "summary": "Dubai Electricity and Water Authority (PJSC) generates, transmits, and distributes electricity for residential, commercial, industrial, and government customers primarily in Dubai. The company operates through four segments: DEWA, EMPOWER, IWPP, and Others. It is involved in the water desalination, transmission, and distribution business; provision of district cooling; maintenance of central cooling plants; manufacture and sale of insulated pipes; development, operation, and maintenance of power and water plants under the independent water and power producer (IWPP) model; and purification and sale of potable water. The company also provides information technology and infrastructure, networking, computer system housing, and data entry services; investment and management services for commercial, industrial, retail trade, and energy enterprises; communication equipment, software design, data classification and analysis, and data centre co-location services; information technology network services; air conditioning, ventilation, and air filtration system installation and maintenance services; project development consultant services; and parking management electronic systems installation and maintenance services. In addition, it implements energy efficiency measures in buildings; and manages and operates satellite. Further, the company provides satellite; wired and wireless communication system installation; energy projects engineering consultancy and carbon control systems tradin",
+ "market_cap": 135999995904,
+ "price": 2.72,
+ "dividend_yield": 4.56,
+ "employees": null,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 32841823000.0,
+  "2024": 30977351000.0,
+  "2023": 29178009000.0,
+  "2022": 27335534000.0
+ },
+ "net_income": {
+  "2025": 8346887000.0,
+  "2024": 7012660000.0,
+  "2023": 7700823000.0,
+  "2022": 7722834000.0
+ },
+ "operating_income": {
+  "2025": 9833825000.0,
+  "2024": 8702464000.0,
+  "2023": 8336066000.0,
+  "2022": 8069062000.0
+ },
+ "ebitda": {
+  "2025": 18282642000.0,
+  "2024": 16624991000.0,
+  "2023": 15562116000.0,
+  "2022": 14145564000.0
+ },
+ "total_debt": {
+  "2025": 38630356000.0,
+  "2024": 36216705000.0,
+  "2023": 38919813000.0,
+  "2022": 40726241000.0
+ },
+ "cash": {
+  "2025": 7233415000.0,
+  "2024": 4912223000.0,
+  "2023": 3973171000.0,
+  "2022": 3627415000.0
+ },
+ "equity": {
+  "2025": 91016516000.0,
+  "2024": 89349233000.0,
+  "2023": 89212243000.0,
+  "2022": 89427340000.0
+ }
+}

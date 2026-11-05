@@ -1,0 +1,54 @@
+{
+ "ticker": "PARKIN.AE",
+ "name": "Parkin Company P.J.S.C.",
+ "currency": "AED",
+ "sector": "Industrials",
+ "industry": "Infrastructure Operations",
+ "summary": "Parkin Company P.J.S.C. provides parking facilities in Dubai. The company engages in operating, monitoring, and enforcing parking services in public areas, such as on-street parking, off-street parking, multistorey car parks, and selected developer-owned parking facilities. Parkin Company P.J.S.C. was founded in 1995 and is based in Dubai, the United Arab Emirates.",
+ "market_cap": 19106414592,
+ "price": 6.37,
+ "dividend_yield": 3.63,
+ "employees": null,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 1308302000.0,
+  "2024": 915812000.0,
+  "2023": 779379000.0,
+  "2022": 686242000.0
+ },
+ "net_income": {
+  "2025": 625507000.0,
+  "2024": 423490000.0,
+  "2023": 394090000.0,
+  "2022": 315599000.0
+ },
+ "operating_income": {
+  "2025": 744581000.0,
+  "2024": 532339000.0,
+  "2023": 404233000.0,
+  "2022": 312716000.0
+ },
+ "ebitda": {
+  "2025": 798218000.0,
+  "2024": 577035000.0,
+  "2023": 414365000.0,
+  "2022": 336534000.0
+ },
+ "total_debt": {
+  "2025": 1146366000.0,
+  "2024": 1127823000.0,
+  "2023": 27181000.0,
+  "2022": 17320000.0
+ },
+ "cash": {
+  "2025": 220682000.0,
+  "2024": 42326000.0,
+  "2023": 0.0
+ },
+ "equity": {
+  "2025": 502812000.0,
+  "2024": 479961000.0,
+  "2023": 12608000.0,
+  "2022": 63019000.0
+ }
+}

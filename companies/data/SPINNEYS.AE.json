@@ -1,0 +1,55 @@
+{
+ "ticker": "SPINNEYS.AE",
+ "name": "Spinneys 1961 Holding plc",
+ "currency": "AED",
+ "sector": "Consumer Defensive",
+ "industry": "Grocery Stores",
+ "summary": "Spinneys 1961 Holding plc, through its subsidiaries, engages in the operation of supermarkets under the Spinneys, Waitrose, and Al Fair brands in the United Arab Emirates, the Sultanate of Oman, the Kingdom of Saudi Arabia, and internationally. It trades in and export foodstuffs, grocery, and non-food products; wholesale of food stuff, groceries, and consumer products; produces bakery products; and processes meat for supermarkets. The company also operates shopping centers, as well as engages in purchase of goods for export and related activities. It offers its products through online. The company was founded in 1961 and is based in Dubai, the United Arab Emirates. Spinneys 1961 Holding plc is a subsidiary of Al Seer Group LLC.",
+ "market_cap": 4356000256,
+ "price": 1.21,
+ "dividend_yield": 5.74,
+ "employees": null,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 3646759000.0,
+  "2024": 3225617000.0,
+  "2023": 2871164000.0,
+  "2022": 2630121000.0
+ },
+ "net_income": {
+  "2025": 341405000.0,
+  "2024": 304270000.0,
+  "2023": 256152000.0,
+  "2022": 214273000.0
+ },
+ "operating_income": {
+  "2025": 424640000.0,
+  "2024": 362336000.0,
+  "2023": 311034000.0,
+  "2022": 242415000.0
+ },
+ "ebitda": {
+  "2025": 752331000.0,
+  "2024": 637158000.0,
+  "2023": 536318000.0,
+  "2022": 501158000.0
+ },
+ "total_debt": {
+  "2025": 1035610000.0,
+  "2024": 1066651000.0,
+  "2023": 930274000.0,
+  "2022": 787466000.0
+ },
+ "cash": {
+  "2025": 776459000.0,
+  "2024": 536168000.0,
+  "2023": 354061000.0,
+  "2022": 39671000.0
+ },
+ "equity": {
+  "2025": 431812000.0,
+  "2024": 315535000.0,
+  "2023": 115369000.0,
+  "2022": 33904000.0
+ }
+}

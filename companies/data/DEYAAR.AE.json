@@ -1,0 +1,55 @@
+{
+ "ticker": "DEYAAR.AE",
+ "name": "Deyaar Development PJSC",
+ "currency": "AED",
+ "sector": "Real Estate",
+ "industry": "Real Estate - Development",
+ "summary": "Deyaar Development PJSC, together with its subsidiaries, provides property investment and development, leasing, facilities, property management, and hospitality-related services in the United Arab Emirates. It operates in three segments: Property Development, Properties and Facilities Management, and Hospitality Related Activities. The company offers property management services for residential, commercial, and mixed-use developments to property owners, investors, and tenants. It also engages in the sale and leasing of properties; asset management; brokerage and related services; real estate; owners association management; hotel management; investment in commercial/industrial enterprise and management; district cooling; hotel and hotel apartment rental; and leisure services. In addition, the company offers community management services, such as community online portal/E-services, legal advisory, procurement tendering, master community services, community establishment, financial management, value-added services, community association energy management, technical management, and utility management, as well as quality, health, and safety services. Further, it provides facilities management services, including total, hard, and soft facility management; energy management; and security, specialized, and home services. Deyaar Development PJSC was founded in 2001 and is headquartered in Dubai, the United Arab Emirates.",
+ "market_cap": 3102468864,
+ "price": 0.709,
+ "dividend_yield": 7.0,
+ "employees": null,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 1972114000.0,
+  "2024": 1512794000.0,
+  "2023": 1254288000.0,
+  "2022": 803409000.0
+ },
+ "net_income": {
+  "2025": 607541000.0,
+  "2024": 474022000.0,
+  "2023": 440714000.0,
+  "2022": 144238000.0
+ },
+ "operating_income": {
+  "2025": 390194000.0,
+  "2024": 310929000.0,
+  "2023": 214112000.0,
+  "2022": 133343000.0
+ },
+ "ebitda": {
+  "2025": 720776000.0,
+  "2024": 569252000.0,
+  "2023": 517635000.0,
+  "2022": 197045000.0
+ },
+ "total_debt": {
+  "2025": 434866000.0,
+  "2024": 480783000.0,
+  "2023": 644317000.0,
+  "2022": 937508000.0
+ },
+ "cash": {
+  "2025": 2211582000.0,
+  "2024": 1466075000.0,
+  "2023": 624438000.0,
+  "2022": 596407000.0
+ },
+ "equity": {
+  "2025": 5629457000.0,
+  "2024": 5237621000.0,
+  "2023": 4938245000.0,
+  "2022": 4502485000.0
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "ticker": "AMLAK.AE",
+ "name": "Amlak Finance PJSC",
+ "currency": "AED",
+ "sector": "Financial Services",
+ "industry": "Mortgage Finance",
+ "summary": "Amlak Finance PJSC, together with its subsidiaries, engages in real estate financing and investment activities in the Middle East. It operates through three segments: Real Estate Finance, Real Estate Investment, and Corporate Finance Investments. The company is involved in financing and investing activities based on various structures, such as Ijara, Murabaha, Mudaraba, Wakala, and Musharaka. It also provides Ijarah, a home finance product; Edaara, which includes landlord and property management services; Istithmari, a buy-to-let property finance product; Tatweer, financing solutions for under-construction properties; private construction finance; and property portfolio services. Amlak Finance PJSC was incorporated in 2000 and is based in Dubai, the United Arab Emirates.",
+ "market_cap": 1769999872,
+ "price": 1.18,
+ "dividend_yield": 39.68,
+ "employees": null,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 2993943000.0,
+  "2024": 104210000.0,
+  "2023": 209598000.0,
+  "2022": 108546000.0
+ },
+ "net_income": {
+  "2025": 1470353000.0,
+  "2024": 12488000.0,
+  "2023": 257868000.0,
+  "2022": 475468000.0
+ },
+ "operating_income": {},
+ "ebitda": {},
+ "total_debt": {
+  "2024": 160306000.0,
+  "2023": 201253000.0,
+  "2022": 166241000.0,
+  "2021": 273089000.0
+ },
+ "cash": {
+  "2025": 2813745000.0,
+  "2024": 243220000.0,
+  "2023": 126431000.0,
+  "2022": 515136000.0
+ },
+ "equity": {
+  "2025": 3121478000.0,
+  "2024": 1508703000.0,
+  "2023": 1614093000.0,
+  "2022": 1460763000.0
+ }
+}

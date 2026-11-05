@@ -1,0 +1,55 @@
+{
+ "ticker": "TECOM.AE",
+ "name": "TECOM Group PJSC",
+ "currency": "AED",
+ "sector": "Real Estate",
+ "industry": "Real Estate Services",
+ "summary": "TECOM Group PJSC, together with its subsidiaries, provides property leasing, development, and facilities management and services in the United Arab Emirates. The company operates through four segments: Commercial Leasing, Industrial Leasing, Land Leasing, and Services and Others. Its investment property portfolio comprises commercial offices and retail assets; industrial facilities, including warehouses and worker accommodation; and plots of land. The company also provides start-up incubation, venue management, and corporate and government services, including licensing and visas. In addition, it offers project management engineering feasibility studies. The company was founded in 1999 and is headquartered in Dubai, the United Arab Emirates. TECOM Group PJSC is a subsidiary of DHAM LLC.",
+ "market_cap": 16350000128,
+ "price": 3.27,
+ "dividend_yield": 5.5,
+ "employees": null,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 2857895000.0,
+  "2024": 2402002000.0,
+  "2023": 2173197000.0,
+  "2022": 1973368000.0
+ },
+ "net_income": {
+  "2025": 2086079000.0,
+  "2024": 1228451000.0,
+  "2023": 1078275000.0,
+  "2022": 725618000.0
+ },
+ "operating_income": {
+  "2025": 1731297000.0,
+  "2024": 1338676000.0,
+  "2023": 1244011000.0,
+  "2022": 949051000.0
+ },
+ "ebitda": {
+  "2025": 2970688000.0,
+  "2024": 2025474000.0,
+  "2023": 1798597000.0,
+  "2022": 1354281000.0
+ },
+ "total_debt": {
+  "2025": 4928863000.0,
+  "2024": 5213253000.0,
+  "2023": 4351767000.0,
+  "2022": 4341982000.0
+ },
+ "cash": {
+  "2025": 223595000.0,
+  "2024": 638361000.0,
+  "2023": 1535183000.0,
+  "2022": 1260514000.0
+ },
+ "equity": {
+  "2025": 7882799000.0,
+  "2024": 6707694000.0,
+  "2023": 6329007000.0,
+  "2022": 5968384000.0
+ }
+}

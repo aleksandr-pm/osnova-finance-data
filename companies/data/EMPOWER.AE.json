@@ -1,0 +1,55 @@
+{
+ "ticker": "EMPOWER.AE",
+ "name": "Emirates Central Cooling Systems Corporation",
+ "currency": "AED",
+ "sector": "Utilities",
+ "industry": "Utilities - Regulated Water",
+ "summary": "Emirates Central Cooling Systems Corporation provides district cooling services in the United Arab Emirates. The company operates through the Chilled Water and Pre-Insulated Pipe segments. It constructs, owns, assembles, installs, operates, and maintains cooling and conditioning systems; operates and maintains central cooling plants and related distribution networks; and distributes and sells chilled water for use in district cooling technologies. The company also offers pre-insulated pipes for district cooling services; air conditioning, ventilator, and refrigeration services; and repair and maintenance services. In addition, it engages in the installation and supply of air conditioning, ventilation, and air purification systems; and the provision of consultancy services for project development. The company was founded in 2003 and is headquartered in Dubai, United Arab Emirates. Emirates Central Cooling Systems Corporation is a subsidiary of Dubai Electricity and Water Authority (PJSC).",
+ "market_cap": 15549999104,
+ "price": 1.555,
+ "dividend_yield": 5.78,
+ "employees": null,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 3477611000.0,
+  "2024": 3319640000.0,
+  "2023": 3073914000.0,
+  "2022": 2811084000.0
+ },
+ "net_income": {
+  "2025": 993302000.0,
+  "2024": 896754000.0,
+  "2023": 952927000.0,
+  "2022": 1000567000.0
+ },
+ "operating_income": {
+  "2025": 1259718000.0,
+  "2024": 1196795000.0,
+  "2023": 1124512000.0,
+  "2022": 1056293000.0
+ },
+ "ebitda": {
+  "2025": 1697376000.0,
+  "2024": 1601129000.0,
+  "2023": 1508811000.0,
+  "2022": 1405796000.0
+ },
+ "total_debt": {
+  "2025": 5505304000.0,
+  "2024": 5503966000.0,
+  "2023": 4496519000.0,
+  "2022": 4492657000.0
+ },
+ "cash": {
+  "2025": 2255745000.0,
+  "2024": 1936627000.0,
+  "2023": 538780000.0,
+  "2022": 1473908000.0
+ },
+ "equity": {
+  "2025": 3310933000.0,
+  "2024": 3197590000.0,
+  "2023": 3144218000.0,
+  "2022": 3032617000.0
+ }
+}

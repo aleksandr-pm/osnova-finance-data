@@ -1,0 +1,45 @@
+{
+ "ticker": "EMIRATESNBD.AE",
+ "name": "Emirates NBD Bank PJSC",
+ "currency": "AED",
+ "sector": "Financial Services",
+ "industry": "Banks - Regional",
+ "summary": "Emirates NBD Bank PJSC, together with its subsidiaries, engages in the provision of corporate, institutional, retail, treasury, and Islamic banking services. The company offers current and savings accounts, customer deposits, overdrafts, trade finance and term loans for government, corporate customers, investment banking, and Islamic products, as well as structured financing services. It also provides retail loans and deposits, private banking and wealth management, equity broking services, asset management, and consumer financing services. In addition, the company offers call center management; real estate management; and trust administration services, as well as engages in medium term borrowing and money market transactions. The company was founded in 1963 and is headquartered in Dubai, the United Arab Emirates.",
+ "market_cap": 202510155776,
+ "price": 32.06,
+ "dividend_yield": 3.19,
+ "employees": 35000,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 49177000000.0,
+  "2024": 44090000000.0,
+  "2023": 42986000000.0,
+  "2022": 32478000000.0
+ },
+ "net_income": {
+  "2025": 23442000000.0,
+  "2024": 22462000000.0,
+  "2023": 20969000000.0,
+  "2022": 12492000000.0
+ },
+ "operating_income": {},
+ "ebitda": {},
+ "total_debt": {
+  "2025": 90287000000.0,
+  "2024": 79903000000.0,
+  "2023": 70789000000.0,
+  "2022": 57160000000.0
+ },
+ "cash": {
+  "2025": 262050000000.0,
+  "2024": 239251000000.0,
+  "2023": 189268000000.0,
+  "2022": 149154000000.0
+ },
+ "equity": {
+  "2025": 144582000000.0,
+  "2024": 125990000000.0,
+  "2023": 109799000000.0,
+  "2022": 93199000000.0
+ }
+}

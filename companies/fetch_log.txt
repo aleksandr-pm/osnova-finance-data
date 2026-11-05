@@ -1,0 +1,43 @@
+OK SALIK.AE Salik Company P.J.S.C. AED ['2022', '2023', '2024', '2025']
+OK EMPOWER.AE Emirates Central Cooling Systems Corporation AED ['2022', '2023', '2024', '2025']
+OK EMAAR.AE Emaar Properties PJSC AED ['2022', '2023', '2024', '2025']
+OK DEWA.AE Dubai Electricity and Water Authority (PJSC) AED ['2022', '2023', '2024', '2025']
+OK PARKIN.AE Parkin Company P.J.S.C. AED ['2022', '2023', '2024', '2025']
+OK TALABAT.AE Talabat Holding plc USD ['2022', '2023']
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: ADNOCGAS.AD"}}}
+EMPTY ADNOCGAS.AD None None []
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: ALDAR.AD"}}}
+EMPTY ALDAR.AD None None []
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: EAND.AD"}}}
+EMPTY EAND.AD None None []
+OK DU.AE Emirates Integrated Telecommunications Company PJSC AED ['2022', '2023', '2024', '2025']
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: ADPORTS.AD"}}}
+EMPTY ADPORTS.AD None None []
+OK AIRARABIA.AE Air Arabia PJSC AED ['2022', '2023', '2024', '2025']
+OK EMIRATESNBD.AE Emirates NBD Bank PJSC AED ['2022', '2023', '2024', '2025']
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: FAB.AD"}}}
+EMPTY FAB.AD None None []
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: ADNOCDIST.AD"}}}
+EMPTY ADNOCDIST.AD None None []
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: ADNOCDRILL.AD"}}}
+EMPTY ADNOCDRILL.AD None None []
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TAQA.AD"}}}
+EMPTY TAQA.AD None None []
+OK DEYAAR.AE Deyaar Development PJSC AED ['2022', '2023', '2024', '2025']
+OK SPINNEYS.AE Spinneys 1961 Holding plc AED ['2022', '2023', '2024', '2025']
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: ALPHADHABI.AD"}}}
+EMPTY ALPHADHABI.AD None None []
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: PUREHEALTH.AD"}}}
+EMPTY PUREHEALTH.AD None None []
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: BURJEEL.AD"}}}
+EMPTY BURJEEL.AD None None []
+OK AMANAT.AE Amanat Holdings PJSC AED ['2022', '2023', '2024', '2025']
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: ADIB.AD"}}}
+EMPTY ADIB.AD None None []
+OK DIB.AE Dubai Islamic Bank P.J.S.C. AED ['2022', '2023', '2024', '2025']
+OK GFH.AE GFH Bank B.S.C. USD ['2022', '2023', '2024', '2025']
+OK AMLAK.AE Amlak Finance PJSC AED ['2022', '2023', '2024', '2025']
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: ADNOCLS.AD"}}}
+EMPTY ADNOCLS.AD None None []
+OK TECOM.AE TECOM Group PJSC AED ['2022', '2023', '2024', '2025']
+OK DFM.AE Dubai Financial Market P.J.S.C. AED ['2022', '2023', '2024', '2025']

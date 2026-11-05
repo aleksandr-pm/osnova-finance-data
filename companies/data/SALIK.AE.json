@@ -1,0 +1,55 @@
+{
+ "ticker": "SALIK.AE",
+ "name": "Salik Company P.J.S.C.",
+ "currency": "AED",
+ "sector": "Industrials",
+ "industry": "Infrastructure Operations",
+ "summary": "Salik Company P.J.S.C. designs, constructs, operates, and maintains the toll gates in Dubai. The company offers civil, electrical, gantry design and manufacturing, system integration, testing, and commissioning services. It also engages in parking payment solutions. Salik Company P.J.S.C. was incorporated in 2022 and is based in Dubai, United Arab Emirates.",
+ "market_cap": 41475002368,
+ "price": 5.53,
+ "dividend_yield": 3.44,
+ "employees": null,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 3096913000.0,
+  "2024": 2291907000.0,
+  "2023": 2108593000.0,
+  "2022": 1892306000.0
+ },
+ "net_income": {
+  "2025": 1553362000.0,
+  "2024": 1164548000.0,
+  "2023": 1097967000.0,
+  "2022": 1325662000.0
+ },
+ "operating_income": {
+  "2025": 2019565000.0,
+  "2024": 1502147000.0,
+  "2023": 1318713000.0,
+  "2022": 1396987000.0
+ },
+ "ebitda": {
+  "2025": 2164709000.0,
+  "2024": 1627450000.0,
+  "2023": 1419971000.0,
+  "2022": 1442845000.0
+ },
+ "total_debt": {
+  "2025": 4000887000.0,
+  "2024": 3999972000.0,
+  "2023": 3996715000.0,
+  "2022": 3985573000.0
+ },
+ "cash": {
+  "2025": 512985000.0,
+  "2024": 963692000.0,
+  "2023": 266180000.0,
+  "2022": 822707000.0
+ },
+ "equity": {
+  "2025": 1218666000.0,
+  "2024": 1088009000.0,
+  "2023": 662547000.0,
+  "2022": 603914000.0
+ }
+}

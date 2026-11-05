@@ -1,0 +1,55 @@
+{
+ "ticker": "EMAAR.AE",
+ "name": "Emaar Properties PJSC",
+ "currency": "AED",
+ "sector": "Real Estate",
+ "industry": "Real Estate - Development",
+ "summary": "Emaar Properties PJSC, together with its subsidiaries, engages in the property investment, development, and development management business in the United Arab Emirates and internationally. It operates through three segments: Real Estate; Leasing, Retail and Related Activities; and Hospitality. The Real Estate segment develops, sells, and manages condominiums, villas, commercial units, and plots of land. The Leasing, Retail and Related Activities segment develops, leases, and manages malls, as well as retail, commercial, and residential spaces. The Hospitality segment develops, owns, and/or manages hotels and serviced apartments. This segment is also involved in leisure activities. The company also offers shopping malls and retail, hospitality, property management, and utility services, as well as invests in providers of financial services. In addition, it is engages in entertainment activities. Emaar Properties PJSC was incorporated in 1997 and is headquartered in Dubai, the United Arab Emirates.",
+ "market_cap": 110131322880,
+ "price": 12.46,
+ "dividend_yield": 8.13,
+ "employees": null,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 49557263000.0,
+  "2024": 35504920000.0,
+  "2023": 26749821000.0,
+  "2022": 24925674000.0
+ },
+ "net_income": {
+  "2025": 17599179000.0,
+  "2024": 13513938000.0,
+  "2023": 11629238000.0,
+  "2022": 6832049000.0
+ },
+ "operating_income": {
+  "2025": 22551938000.0,
+  "2024": 16136330000.0,
+  "2023": 13007783000.0,
+  "2022": 8056194000.0
+ },
+ "ebitda": {
+  "2025": 27837206000.0,
+  "2024": 21024300000.0,
+  "2023": 17260393000.0,
+  "2022": 10594340000.0
+ },
+ "total_debt": {
+  "2025": 10614989000.0,
+  "2024": 10447584000.0,
+  "2023": 13134220000.0,
+  "2022": 15478735000.0
+ },
+ "cash": {
+  "2025": 52632912000.0,
+  "2024": 38631997000.0,
+  "2023": 33619340000.0,
+  "2022": 18089118000.0
+ },
+ "equity": {
+  "2025": 94278017000.0,
+  "2024": 85428227000.0,
+  "2023": 77724133000.0,
+  "2022": 68998474000.0
+ }
+}

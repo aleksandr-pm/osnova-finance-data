@@ -1,0 +1,55 @@
+{
+ "ticker": "AIRARABIA.AE",
+ "name": "Air Arabia PJSC",
+ "currency": "AED",
+ "sector": "Industrials",
+ "industry": "Airlines",
+ "summary": "Air Arabia PJSC, together with its subsidiaries, provides air travel services. It operates through two segments: Airline and Other. The company offers international commercial air transportation, aircraft rental, passengers transport, and cargo services, as well as aviation training, and aircraft repairs and maintenance services. It also involved in the trading of aircraft and related spare parts. In addition, the company operates travel and tourist agencies, and airline companies' representative office services; manages lease contract; and provides documents transfer services, as well as IT services to aviation industry. Further, the company manages and operates restaurants and hotels; flight and retail catering services; and rents hotel apartments. Additionally, it provides commercial brokerage; office administrative and support; call center and computer programming; real estate development; ancillary; aircraft handling; software designing, development, and solutions; and backend support services, as well as act as an air cargo agent. The company provides its services to approximately 206 destinations in the Middle East, North Africa, Asia, and Europe. Air Arabia PJSC was founded in 2003 and is headquartered in Sharjah, the United Arab Emirates.",
+ "market_cap": 23520165888,
+ "price": 5.04,
+ "dividend_yield": 6.01,
+ "employees": null,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 7787581000.0,
+  "2024": 6765852000.0,
+  "2023": 5999750000.0,
+  "2022": 5241830000.0
+ },
+ "net_income": {
+  "2025": 1628475000.0,
+  "2024": 1466986000.0,
+  "2023": 1547132000.0,
+  "2022": 1221786000.0
+ },
+ "operating_income": {
+  "2025": 1269580000.0,
+  "2024": 1184100000.0,
+  "2023": 1239435000.0,
+  "2022": 1077052000.0
+ },
+ "ebitda": {
+  "2025": 2514282000.0,
+  "2024": 2334755000.0,
+  "2023": 2291802000.0,
+  "2022": 1965384000.0
+ },
+ "total_debt": {
+  "2025": 2781435000.0,
+  "2024": 2101441000.0,
+  "2023": 2278957000.0,
+  "2022": 2888208000.0
+ },
+ "cash": {
+  "2025": 1072692000.0,
+  "2024": 700229000.0,
+  "2023": 5246377000.0,
+  "2022": 4736251000.0
+ },
+ "equity": {
+  "2025": 8408904000.0,
+  "2024": 7950330000.0,
+  "2023": 7534006000.0,
+  "2022": 6995115000.0
+ }
+}
