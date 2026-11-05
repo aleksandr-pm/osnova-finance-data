@@ -1,20 +1,21 @@
-threads: share_exp_162 (agro, donut)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/7c8176fd874f/bank/covers/share_exp_162.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/7c8176fd874f/bank/cards/share_exp_162.jpg
+threads: wdi_ny_gdp_mktp_pp_cd_desc (economy, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/00a6d67acd40/bank/covers/wdi_ny_gdp_mktp_pp_cd_desc.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/00a6d67acd40/bank/cards/wdi_ny_gdp_mktp_pp_cd_desc.jpg
 ---
-Доли в мировом экспорте сахара-сырца, 2024:
-1. 🇧🇷 Бразилия · 72,2%
-2. 🇦🇺 Австралия · 6,6%
-3. 🇹🇭 Таиланд · 4,1%
-4. 🇮🇳 Индия · 2,4%
-5. 🇸🇿 Эсватини · 2,2%
-6. 🇲🇽 Мексика · 1,4%
-7. 🇿🇦 ЮАР · 1,2%
-8. 🇬🇹 Гватемала · 1,2%
-9. 🇷🇺 Россия · 0,9%
-10. 🇸🇻 Сальвадор · 0,8%
+Крупнейшие экономики по ВВП с учётом паритета покупательной способности, 2025:
+1. 🇨🇳 Китай · $41,3 трлн
+2. 🇺🇸 США · $30,8 трлн
+3. 🇮🇳 Индия · $17,2 трлн
+4. 🇷🇺 Россия · $7,2 трлн
+5. 🇯🇵 Япония · $6,8 трлн
+6. 🇩🇪 Германия · $6,3 трлн
+7. 🇮🇩 Индонезия · $5 трлн
+8. 🇧🇷 Бразилия · $5 трлн
+9. 🇬🇧 Великобритания · $4,5 трлн
+10. 🇫🇷 Франция · $4,4 трлн
+Казахстан на 36-м, Узбекистан на 51-м месте.
 Больше в Telegram @osnovafin
 ---
 Threads: текстом
-Опубликовано: 18252129988309761. Осталось новых рейтингов: 120
-exit=0 2026-11-05T07:55:52Z
+Опубликовано: 17933034222167845. Осталось новых рейтингов: 119
+exit=0 2026-11-05T09:59:08Z
