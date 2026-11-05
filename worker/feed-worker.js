@@ -9,6 +9,7 @@
 
 const DEFAULT_CHANNEL = '@osnovafin';
 const target = env => env.TARGET_CHAT || DEFAULT_CHANNEL;
+const V2_START = Date.UTC(2026, 10, 5, 8, 20); // 05.11.2026 12:20 по Дубаю
 const IMG_BASE = 'https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/worker/img/';
 
 // Google News отвечает Cloudflare ошибкой 503, поэтому поиск по новостям идёт через Bing News RSS (прямые ссылки на статьи)
@@ -68,7 +69,7 @@ const SOURCES = [
 
 const CFG = {
   model: 'claude-haiku-5-5',
-  dayCap: 120,          // потолок постов в сутки (переменная DAY_CAP); ориентир около 100
+  dayCap: 140,          // потолок постов в сутки (переменная DAY_CAP); объём задаёт интервал, около 100
   minGapMin: 9,         // обычные посты днём не чаще (переменная GAP_MIN)
   urgentGapMin: 3,      // срочные не чаще
   nightGapMin: 25,      // ночью только важность 4-5 и не чаще
@@ -568,8 +569,9 @@ async function publish(env, now) {
   if (!env.BOT_TOKEN) return { skipped: 'нет BOT_TOKEN' };
   if (!(await targetAllowed(env))) return { skipped: 'публичный канал заблокирован до лицензии' };
 
+  // Считаем только посты после выхода v2: старые (до 200 в сутки) иначе упирают потолок на сутки
   const day = await env.DB.prepare(`SELECT COUNT(*) AS n FROM items WHERE status='posted' AND posted > ?`)
-    .bind(now - 86_400_000).first();
+    .bind(Math.max(now - 86_400_000, V2_START)).first();
   if (day.n >= Number(env.DAY_CAP || CFG.dayCap)) return { skipped: 'потолок суток' };
   const minGap = Number(env.GAP_MIN || CFG.minGapMin);
 
