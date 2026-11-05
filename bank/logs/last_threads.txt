@@ -1,21 +1,21 @@
-threads: line_cis_ny_gdp_pcap_cd (cis, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/4d2d5efa79bb/bank/covers/line_cis_ny_gdp_pcap_cd.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/4d2d5efa79bb/bank/cards/line_cis_ny_gdp_pcap_cd.jpg
+threads: wdi_fi_res_totl_cd_desc (money, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/d2da36acd07f/bank/covers/wdi_fi_res_totl_cd_desc.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/d2da36acd07f/bank/cards/wdi_fi_res_totl_cd_desc.jpg
 ---
-ВВП на душу населения: страны бывшего СССР, 2005-2025:
-1. 🇪🇪 Эстония · в 3,3 раза
-2. 🇱🇹 Литва · в 4,2 раза
-3. 🇱🇻 Латвия · в 3,6 раза
-4. 🇷🇺 Россия · в 3,3 раза
-5. 🇰🇿 Казахстан · в 4,1 раза
-6. 🇧🇾 Беларусь · в 3,3 раза
-7. 🇬🇪 Грузия · в 5,9 раза
-8. 🇦🇲 Армения · в 6,1 раза
-9. 🇦🇿 Азербайджан · в 4,7 раза
-10. 🇺🇿 Узбекистан · в 7,3 раза
-Узбекистан: ВВП на человека вырос в 7,3 раза с 2005 года.
+Крупнейшие резервы страны, включая золото, 2025:
+1. 🇨🇳 Китай · $3,7 трлн
+2. 🇺🇸 США · $1,4 трлн
+3. 🇯🇵 Япония · $1,4 трлн
+4. 🇨🇭 Швейцария · $1,1 трлн
+5. 🇮🇳 Индия · $700 млрд
+6. 🇩🇪 Германия · $572 млрд
+7. 🇸🇦 Саудовская Аравия · $505 млрд
+8. 🇰🇷 Южная Корея · $437 млрд
+9. 🇮🇹 Италия · $434 млрд
+10. 🇸🇬 Сингапур · $432 млрд
+Казахстан на 39-м, Узбекистан на 40-м месте.
 Больше в Telegram @osnovafin
 ---
-Threads: с картинкой
-Опубликовано: 18032592401911399. Осталось новых рейтингов: 115
-exit=0 2026-11-05T15:57:33Z
+Threads: текстом
+Опубликовано: 18080991713534413. Осталось новых рейтингов: 114
+exit=0 2026-11-05T17:35:49Z
