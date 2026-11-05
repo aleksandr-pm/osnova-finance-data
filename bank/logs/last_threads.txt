@@ -1,21 +1,21 @@
-threads: line_economy_ny_gdp_mktp_cd (economy, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/dbb5bd4e360d/bank/covers/line_economy_ny_gdp_mktp_cd.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/dbb5bd4e360d/bank/cards/line_economy_ny_gdp_mktp_cd.jpg
+threads: fao_prod_403 (agro, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/ab9c2329a71e/bank/covers/fao_prod_403.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/ab9c2329a71e/bank/cards/fao_prod_403.jpg
 ---
-Как росли крупнейшие экономики мира, ВВП, 2005-2025:
-1. 🇺🇸 США · $30,8 трлн, в 2,4 раза
-2. 🇨🇳 Китай · $19,5 трлн, в 8,4 раза
-3. 🇩🇪 Германия · $5,1 трлн, в 1,7 раза
-4. 🇯🇵 Япония · $4,4 трлн, −9%
-5. 🇬🇧 Великобритания · $4 трлн, в 1,6 раза
-6. 🇮🇳 Индия · $4 трлн, в 4,8 раза
-7. 🇫🇷 Франция · $3,4 трлн, в 1,5 раза
-8. 🇷🇺 Россия · $2,6 трлн, в 3,4 раза
-9. 🇮🇹 Италия · $2,6 трлн, +37%
-10. 🇨🇦 Канада · $2,3 трлн, в 2 раза
-Китай: экономика выросла в 8,4 раза с 2005 года.
+Крупнейшие производители лука, 2024:
+1. 🇮🇳 Индия · 24,3 млн т
+2. 🇨🇳 Китай · 24,2 млн т
+3. 🇺🇸 США · 3,5 млн т
+4. 🇪🇬 Египет · 3,4 млн т
+5. 🇧🇩 Бангладеш · 2,9 млн т
+6. 🇹🇷 Турция · 2,6 млн т
+7. 🇳🇪 Нигер · 2,4 млн т
+8. 🇵🇰 Пакистан · 2,3 млн т
+9. 🇮🇷 Иран · 2,2 млн т
+10. 🇮🇩 Индонезия · 2,1 млн т
+Россия на 16-м, Узбекистан на 18-м месте.
 Больше в Telegram @osnovafin
 ---
-Threads: текстом
-Опубликовано: 18120720680098382. Осталось новых рейтингов: 113
-exit=0 2026-11-05T18:51:45Z
+Threads: с картинкой
+Опубликовано: 18111830762350837. Осталось новых рейтингов: 112
+exit=0 2026-11-05T22:25:04Z
