@@ -181,7 +181,12 @@ def threads_short(r):
     elif kind == "donut":
         tail = f"Остальной мир: {r['rest']:.0f}%."
     lines += [tail, "Больше в Telegram @osnovafin"]
-    return "\n".join(lines)
+    text = "\n".join(lines)
+    if len(text) > 500 and kind == "line":  # лимит Threads: оставляем только изменение
+        rows = [f"{rk}. {fl} {nm} · {v.split(', ', 1)[1] if ', ' in v else v}"
+                for rk, fl, nm, v in ten(r)]
+        text = "\n".join([lines[0]] + rows + lines[-2:])
+    return text
 
 
 def ig_caption(r, i):
