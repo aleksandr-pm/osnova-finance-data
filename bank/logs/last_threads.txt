@@ -1,21 +1,21 @@
-threads: line_economy_ne_exp_gnfs_cd (economy, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/320ed6095f3f/bank/covers/line_economy_ne_exp_gnfs_cd.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/320ed6095f3f/bank/cards/line_economy_ne_exp_gnfs_cd.jpg
+threads: cis_ny_gdp_pcap_cd (cis, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/917fb1dfd7a5/bank/covers/cis_ny_gdp_pcap_cd.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/917fb1dfd7a5/bank/cards/cis_ny_gdp_pcap_cd.jpg
 ---
-Китай: экспорт вырос в 5,3 раза с 2005 года.
+Эстония: $34 418 ВВП на человека, №1.
 
-Экспорт товаров и услуг: пять крупнейших экспортёров · 2005-2025
-1. 🇨🇳 Китай · $4,1 трлн, рост в 5,3 раза
-2. 🇩🇪 Германия · $2 трлн, рост в 2 раза
-3. 🇬🇧 Великобритания · $1,2 трлн, рост в 1,9 раза
-4. 🇫🇷 Франция · $1,1 трлн, рост в 1,8 раза
-5. 🇳🇱 Нидерланды · $1,1 трлн, рост в 2,4 раза
+Страны бывшего СССР: ВВП на душу населения · 2025
+1. 🇪🇪 Эстония · $34 418
+2. 🇱🇹 Литва · $32 959
+3. 🇱🇻 Латвия · $26 312
+4. 🇷🇺 Россия · $17 547
+5. 🇰🇿 Казахстан · $14 692
 
-Кого не хватает в топе, по-вашему?
+Кто поднимется выше через 5 лет?
 
 Рынки и данные 24/7 в Telegram @osnovafin, ссылка в профиле.
 World Bank · #данные
 ---
 Threads: текстом
-Опубликовано: 18373502068212098. Осталось новых рейтингов: 123
-exit=0 2026-11-04T22:24:32Z
+Опубликовано: 18119988556996670. Осталось новых рейтингов: 122
+exit=0 2026-11-05T05:34:48Z
