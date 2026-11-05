@@ -1,21 +1,21 @@
-threads: line_cis_ny_gdp_mktp_cd (cis, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/6994c9efe287/bank/covers/line_cis_ny_gdp_mktp_cd.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/6994c9efe287/bank/cards/line_cis_ny_gdp_mktp_cd.jpg
+threads: wdi_bx_klt_dinv_cd_wd_desc (money, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/8b0e0a8b6dbf/bank/covers/wdi_bx_klt_dinv_cd_wd_desc.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/8b0e0a8b6dbf/bank/cards/wdi_bx_klt_dinv_cd_wd_desc.jpg
 ---
-Размер экономики: страны бывшего СССР без России, 2005-2025:
-1. 🇰🇿 Казахстан · в 5,4 раза
-2. 🇺🇦 Украина · в 2,4 раза
-3. 🇺🇿 Узбекистан · в 10,3 раза
-4. 🇱🇹 Литва · в 3,6 раза
-5. 🇧🇾 Беларусь · в 3,1 раза
-6. 🇦🇿 Азербайджан · в 5,7 раза
-7. 🇹🇲 Туркменистан · в 6,1 раза
-8. 🇱🇻 Латвия · в 3 раза
-9. 🇬🇪 Грузия · в 5,9 раза
-10. 🇦🇲 Армения · в 6 раз
-Узбекистан: экономика выросла в 10,3 раза с 2005 года.
+Больше всего прямых иностранных инвестиций, 2025:
+1. 🇺🇸 США · $307 млрд
+2. 🇸🇬 Сингапур · $159 млрд
+3. 🇭🇰 Гонконг · $121 млрд
+4. 🇩🇪 Германия · $95,2 млрд
+5. 🇨🇳 Китай · $80 млрд
+6. 🇧🇷 Бразилия · $77,7 млрд
+7. 🇮🇪 Ирландия · $75 млрд
+8. 🇨🇦 Канада · $70,1 млрд
+9. 🇫🇷 Франция · $61,1 млрд
+10. 🇦🇪 ОАЭ · $48,2 млрд
+Россия на 37-м, Узбекистан на 50-м месте.
 Больше в Telegram @osnovafin
 ---
-Threads: с картинкой
-Опубликовано: 17940949497391126. Осталось новых рейтингов: 118
-exit=0 2026-11-05T11:30:02Z
+Threads: текстом
+Опубликовано: 18428043229151413. Осталось новых рейтингов: 117
+exit=0 2026-11-05T13:01:58Z
