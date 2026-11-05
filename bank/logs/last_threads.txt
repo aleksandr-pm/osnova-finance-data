@@ -1,21 +1,21 @@
-threads: wdi_ny_gdp_mktp_pp_cd_desc (economy, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/00a6d67acd40/bank/covers/wdi_ny_gdp_mktp_pp_cd_desc.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/00a6d67acd40/bank/cards/wdi_ny_gdp_mktp_pp_cd_desc.jpg
+threads: line_cis_ny_gdp_mktp_cd (cis, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/6994c9efe287/bank/covers/line_cis_ny_gdp_mktp_cd.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/6994c9efe287/bank/cards/line_cis_ny_gdp_mktp_cd.jpg
 ---
-Крупнейшие экономики по ВВП с учётом паритета покупательной способности, 2025:
-1. 🇨🇳 Китай · $41,3 трлн
-2. 🇺🇸 США · $30,8 трлн
-3. 🇮🇳 Индия · $17,2 трлн
-4. 🇷🇺 Россия · $7,2 трлн
-5. 🇯🇵 Япония · $6,8 трлн
-6. 🇩🇪 Германия · $6,3 трлн
-7. 🇮🇩 Индонезия · $5 трлн
-8. 🇧🇷 Бразилия · $5 трлн
-9. 🇬🇧 Великобритания · $4,5 трлн
-10. 🇫🇷 Франция · $4,4 трлн
-Казахстан на 36-м, Узбекистан на 51-м месте.
+Размер экономики: страны бывшего СССР без России, 2005-2025:
+1. 🇰🇿 Казахстан · в 5,4 раза
+2. 🇺🇦 Украина · в 2,4 раза
+3. 🇺🇿 Узбекистан · в 10,3 раза
+4. 🇱🇹 Литва · в 3,6 раза
+5. 🇧🇾 Беларусь · в 3,1 раза
+6. 🇦🇿 Азербайджан · в 5,7 раза
+7. 🇹🇲 Туркменистан · в 6,1 раза
+8. 🇱🇻 Латвия · в 3 раза
+9. 🇬🇪 Грузия · в 5,9 раза
+10. 🇦🇲 Армения · в 6 раз
+Узбекистан: экономика выросла в 10,3 раза с 2005 года.
 Больше в Telegram @osnovafin
 ---
-Threads: текстом
-Опубликовано: 17933034222167845. Осталось новых рейтингов: 119
-exit=0 2026-11-05T09:59:08Z
+Threads: с картинкой
+Опубликовано: 17940949497391126. Осталось новых рейтингов: 118
+exit=0 2026-11-05T11:30:02Z
