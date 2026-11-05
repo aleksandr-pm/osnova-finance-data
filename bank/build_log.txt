@@ -174,14 +174,14 @@ FAO TCL: строк после фильтра 55124
   share_exp_572: 2024, топ-5 76.2%
   share_exp_767: 2024, топ-5 80.4%
   line_economy_ny_gdp_mktp_cd: 2005-2025, линий 5
-  line_economy_ne_exp_gnfs_cd: 2005-2025, линий 5
+  line_economy_ne_exp_gnfs_cd: 2005-2025, линий 6
   line_money_fi_res_totl_cd: 2005-2025, линий 5
-  line_money_bx_trf_pwkr_cd_dt: 2005-2025, линий 5
-  line_cis_ny_gdp_pcap_cd: 2005-2025, линий 7
-  line_cis_ny_gdp_mktp_cd: 2005-2025, линий 6
+  line_money_bx_trf_pwkr_cd_dt: 2005-2025, линий 6
+  line_cis_ny_gdp_pcap_cd: 2005-2025, линий 6
+  line_cis_ny_gdp_mktp_cd: 2005-2025, линий 5
   line_cis_bx_trf_pwkr_cd_dt: 2005-2025, линий 5
-  line_cis_fi_res_totl_cd: 2005-2025, линий 4
+  line_cis_fi_res_totl_cd: 2005-2025, линий 5
 Итого рейтингов: 125
 Обложки: 125 из 125
 По блокам: agro 92, cis 12, economy 13, money 8
-exit=0 2026-11-04T21:19:21Z
+exit=0 2026-11-05T07:44:41Z
