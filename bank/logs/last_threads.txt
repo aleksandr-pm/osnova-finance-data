@@ -1,21 +1,21 @@
-threads: cis_ny_gdp_pcap_cd (cis, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/917fb1dfd7a5/bank/covers/cis_ny_gdp_pcap_cd.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/917fb1dfd7a5/bank/cards/cis_ny_gdp_pcap_cd.jpg
+threads: line_money_bx_trf_pwkr_cd_dt (money, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/dfe473428973/bank/covers/line_money_bx_trf_pwkr_cd_dt.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/dfe473428973/bank/cards/line_money_bx_trf_pwkr_cd_dt.jpg
 ---
-Эстония: $34 418 ВВП на человека, №1.
+Египет: переводы мигрантов выросли в 8,3 раза с 2005 года.
 
-Страны бывшего СССР: ВВП на душу населения · 2025
-1. 🇪🇪 Эстония · $34 418
-2. 🇱🇹 Литва · $32 959
-3. 🇱🇻 Латвия · $26 312
-4. 🇷🇺 Россия · $17 547
-5. 🇰🇿 Казахстан · $14 692
+Переводы мигрантов: пять крупнейших получателей · 2005-2025
+1. 🇮🇳 Индия · $151 млрд, рост в 6,8 раза
+2. 🇲🇽 Мексика · $65,1 млрд, рост в 2,9 раза
+3. 🇫🇷 Франция · $44,5 млрд, рост в 3,1 раза
+4. 🇵🇭 Филиппины · $41,6 млрд, рост в 3 раза
+5. 🇪🇬 Египет · $41,5 млрд, рост в 8,3 раза
 
-Кто поднимется выше через 5 лет?
+Кто удивил в этом списке?
 
 Рынки и данные 24/7 в Telegram @osnovafin, ссылка в профиле.
 World Bank · #данные
 ---
-Threads: текстом
-Опубликовано: 18119988556996670. Осталось новых рейтингов: 122
-exit=0 2026-11-05T05:34:48Z
+Threads: с картинкой
+Опубликовано: 18131604643837417. Осталось новых рейтингов: 121
+exit=0 2026-11-05T06:37:30Z
