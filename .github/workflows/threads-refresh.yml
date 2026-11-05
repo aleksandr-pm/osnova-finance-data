@@ -1,0 +1,39 @@
+name: threads-refresh
+# Продление токенов Threads: каждый токен живёт 60 дней, продление сдвигает срок ещё на 60.
+# Если Meta вернёт новый токен (не тот же), он записывается в секрет через GH_PAT (если задан).
+on:
+  schedule:
+    - cron: "41 5 1,15 * *"   # 1-го и 15-го числа, 09:41 по Дубаю
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        secret: [THREADS_TOKEN, THREADS_TOKEN_REPORT]
+    steps:
+      - name: Refresh
+        env:
+          TOKEN: ${{ secrets[matrix.secret] }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          NAME: ${{ matrix.secret }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -e
+          R=$(curl -s "https://graph.threads.net/refresh_access_token?grant_type=th_refresh_token&access_token=$TOKEN")
+          NEW=$(echo "$R" | python3 -c "import sys,json; print(json.load(sys.stdin).get('access_token',''))")
+          EXP=$(echo "$R" | python3 -c "import sys,json; print(json.load(sys.stdin).get('expires_in',''))")
+          if [ -z "$NEW" ]; then echo "$NAME: продление не удалось: $(echo "$R" | head -c 300)"; exit 1; fi
+          echo "::add-mask::$NEW"
+          echo "$NAME: продлён, срок $((EXP/86400)) дней"
+          if [ "$NEW" != "$TOKEN" ]; then
+            if [ -n "$GH_PAT" ]; then
+              echo "$NEW" | GH_TOKEN="$GH_PAT" gh secret set "$NAME" --repo "$REPO"
+              echo "$NAME: новый токен записан в секрет"
+            else
+              echo "$NAME: Meta выдала новый токен, а GH_PAT не задан, секрет не обновлён"; exit 1
+            fi
+          fi
