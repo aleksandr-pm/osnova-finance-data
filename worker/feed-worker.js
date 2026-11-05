@@ -419,7 +419,7 @@ const EDITOR_TOOL = {
 };
 
 // Жёсткие стоп-слова: срабатывают до ИИ, экономят токены и ловят то, что редактор пропустил
-const STOP_TITLE = /\b(LIV Golf|PGA|NFL|NBA|NHL|MLB|FIFA|UEFA|Premier League|Formula 1|F1 team|Super Bowl|Olympic|esports|Nintendo|Switch 2|PlayStation|Xbox|video game|box office|Netflix series|memecoin|meme coin|airdrop|Zcash|Dogecoin|Shiba Inu|Pepe coin|real estate|property|properties|housing|home sales|homebuilder|developer|Emaar|Aldar|Damac|Sobha|Nakheel|Meraas|Binghatti|Ellington|Deyaar|Union Properties)\b/i;
+const STOP_TITLE = /\b(LIV Golf|PGA|NFL|NBA|NHL|MLB|FIFA|UEFA|Premier League|Formula 1|F1 team|Super Bowl|Olympic|esports|Nintendo|Switch 2|PlayStation|Xbox|video game|box office|Netflix series|memecoin|meme coin|airdrop|Zcash|Dogecoin|Shiba Inu|Pepe coin|real estate|property|properties|housing|home sales|homebuilder|Emaar|Aldar|Damac|Sobha|Nakheel|Meraas|Binghatti|Ellington|Deyaar|Union Properties)\b/i;
 // Итоги торгов по индексам: в ленту не идут, их даёт вечерняя сводка
 const INDEX_CLOSE = /\b(Nikkei|Topix|Hang Seng|Kospi|Taiex|Sensex|Nifty|ASX 200|Shanghai Composite|CSI 300|FTSE 100|DAX|CAC 40|Stoxx 600|S&P 500|Nasdaq Composite|Dow Jones|Dow)\b[^.]{0,60}\b(closes?|closed|ends?|ended|finish(es|ed)?|settles?|settled)\b/i;
 
