@@ -405,9 +405,16 @@ def make_trend(rid, block, title, hook_tpl, unit, by_year, source, source_full,
     s0 = min((yy for yy in by_year if yy >= start), default=None)
     if s0 is None:
         return None
-    cand = isos or sorted(by_year[y_end], key=lambda k: by_year[y_end][k], reverse=True)[:n]
+    if isos:
+        pool = [k for k in EX_USSR if k not in isos and not ("без России" in title and k == "RU")]
+        pool.sort(key=lambda k: by_year[y_end].get(k, 0), reverse=True)
+        cand = list(isos) + pool
+    else:
+        cand = sorted(by_year[y_end], key=lambda k: by_year[y_end][k], reverse=True)[:14]
     series = []
     for k in cand:
+        if len(series) == 10:
+            break
         if k not in by_year[y_end]:
             continue
         pts = [[yy, by_year[yy][k]] for yy in range(s0, y_end + 1) if k in by_year.get(yy, {})]
@@ -427,12 +434,15 @@ def make_trend(rid, block, title, hook_tpl, unit, by_year, source, source_full,
     if g["ratio"] <= 1:
         return None
     g["hl"] = True
+    # на графике 5 крупнейших + самая быстрорастущая, в тексте все (до 10)
+    chart = series[:n] + ([g] if g not in series[:n] else [])
     before, after = hook_tpl.replace("{G}", g["name"]).replace("{S}", str(g["start"])).split("[v]")
     top = [dict(x, text=f"{x['text']}" + (f", рост {x['growth']}" if x["growth"] else "")) for x in series]
     return {
         "id": rid, "block": block, "type": "line", "title": title, "unit": unit,
         "year": int(y_end), "start": int(s0), "source": source, "source_full": source_full,
-        "note": note, "countries": len(series), "series": series, "top": top, "cis": [],
+        "note": note, "countries": len(series), "series": chart, "series_all": series,
+        "top": top, "cis": [],
         "hook": [x for x in [[before.strip(), False], [g["growth"], True], [after.strip(), False]] if x[0]],
         "hook_text": (before + g["growth"] + after).strip(),
     }
@@ -443,11 +453,12 @@ def make_share(rid, block, title, hook_tpl, unit, vals, year, source, source_ful
     if total <= 0 or len(vals) < 10:
         return None
     rows = sorted(vals.items(), key=lambda kv: kv[1], reverse=True)
-    top = []
-    for i, (k, v) in enumerate(rows[:n], 1):
+    top10 = []
+    for i, (k, v) in enumerate(rows[:10], 1):
         sh = v / total * 100
-        top.append({"iso2": k, "name": ru_name(k), "flag": flag(k), "rank": i, "value": v,
-                    "share": sh, "text": fmt_value(sh, "pct")})
+        top10.append({"iso2": k, "name": ru_name(k), "flag": flag(k), "rank": i, "value": v,
+                      "share": sh, "text": fmt_value(sh, "pct")})
+    top = top10[:n]
     top_sum = sum(x["share"] for x in top)
     rest = 100 - top_sum
     hv = fmt_value(top_sum, "pct0")
@@ -455,7 +466,7 @@ def make_share(rid, block, title, hook_tpl, unit, vals, year, source, source_ful
     return {
         "id": rid, "block": block, "type": "donut", "title": title, "unit": unit,
         "year": int(year), "source": source, "source_full": source_full, "note": "",
-        "countries": len(vals), "top": top, "rest": rest, "top_sum": top_sum, "cis": [],
+        "countries": len(vals), "top": top, "top10": top10, "rest": rest, "top_sum": top_sum, "cis": [],
         "hook": [x for x in [[before.strip(), False], [hv, True], [after.strip(), False]] if x[0]],
         "hook_text": (before + hv + after).strip(),
     }

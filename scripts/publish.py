@@ -151,20 +151,28 @@ def period(r):
     return f"{r['start']}-{r['year']}" if r.get("type") == "line" else str(r["year"])
 
 
-def threads_short(r):
-    """Короткий формат, как ручные посты: заголовок, список, одна строка вывода, CTA."""
+def ten(r):
+    """Список для текста: до 10 строк (флаг, страна, значение, изменение)."""
     kind = r.get("type", "bars")
-    lines = [f"{r['title']}, {period(r)}:"]
+    rows = []
     if kind == "line":
-        for x in r["series"]:
-            lines.append(f"{x['rank']}. {x['name']} · {x['text'].split(', рост')[0]}"
-                         + (f", {change(x)}" if change(x) else ""))
+        for x in r.get("series_all", r["series"]):
+            v = x["text"].split(", рост")[0]
+            rows.append((x["rank"], x["flag"], x["name"], v + (f", {change(x)}" if change(x) else "")))
     elif kind == "donut":
-        for x in r["top"]:
-            lines.append(f"{x['rank']}. {x['name']} · {x['text']}")
+        for x in r.get("top10", r["top"]):
+            rows.append((x["rank"], x["flag"], x["name"], x["text"]))
     else:
         for x in r["top"][:10]:
-            lines.append(f"{x['rank']}. {x['name']} · {x['text']}")
+            rows.append((x["rank"], x["flag"], x["name"], x["text"]))
+    return rows
+
+
+def threads_short(r):
+    """Короткий формат, как ручные посты: заголовок, 10 мест с флагами, одна строка вывода, CTA."""
+    kind = r.get("type", "bars")
+    lines = [f"{r['title']}, {period(r)}:"]
+    lines += [f"{rk}. {fl} {nm} · {v}" for rk, fl, nm, v in ten(r)]
     tail = r["hook_text"] + "."
     if kind == "bars":
         out = [c for c in r.get("cis", []) if c["rank"] > 10]
@@ -187,13 +195,12 @@ def ig_caption(r, i):
         para.append(f"{r['title']}, {r['start']}-{r['year']}. "
                     f"Самый быстрый рост: {g['name']}, {g['growth']}, до {g['text'].split(', рост')[0]}.")
         para.append(f"Значения в {r['year']} году и изменение с {r['start']}:\n" + "\n".join(
-            f"{x['flag']} {x['name']}: {x['text'].split(', рост')[0]}" + (f", {change(x)}" if change(x) else "")
-            for x in ser))
+            f"{rk}. {fl} {nm}: {v}" for rk, fl, nm, v in ten(r)))
     elif kind == "donut":
         para.append(f"{r['title']}, {r['year']} год. На пять крупнейших стран приходится "
                     f"{r['top_sum']:.0f}% мирового экспорта, на все остальные {r['rest']:.0f}%. "
                     f"Всего стран-экспортёров в данных: {r['countries']}.")
-        para.append("Доли лидеров:\n" + "\n".join(f"{x['flag']} {x['name']}: {x['text']}" for x in top))
+        para.append("Доли лидеров:\n" + "\n".join(f"{rk}. {fl} {nm}: {v}" for rk, fl, nm, v in ten(r)))
     else:
         a, b = top[0], top[1]
         ratio = a["value"] / b["value"] if b["value"] else 0
@@ -201,8 +208,8 @@ def ig_caption(r, i):
             if ratio >= 1.15 else f" Первое и второе место ({b['name']}) идут почти вровень."
         para.append(f"{r['title']}, {r['year']} год, данные {r['source']}." + cmp_
                     + (f" Учтены {r['note']}." if r.get("note") else ""))
-        para.append("Топ-5:\n" + "\n".join(f"{x['flag']} {x['name']}: {x['text']}" for x in top[:5]))
-        out = [c for c in r.get("cis", []) if c["rank"] > 5]
+        para.append("Топ-10:\n" + "\n".join(f"{rk}. {fl} {nm}: {v}" for rk, fl, nm, v in ten(r)))
+        out = [c for c in r.get("cis", []) if c["rank"] > 10]
         if out:
             para.append(", ".join(f"{c['name']} на {c['rank']}-м" for c in out) + " месте.")
     parts = [r["hook_text"] + "."] + para + [
