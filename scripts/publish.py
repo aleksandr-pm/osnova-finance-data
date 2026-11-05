@@ -138,7 +138,8 @@ def hashtags(r):
 def change(x):
     """Рост или падение для линии: «в 2,4 раза», «на 41%», «−12%»."""
     if x.get("growth"):
-        return x["growth"]
+        g = x["growth"]
+        return "+" + g[3:] if g.startswith("на ") else g
     return f"−{(1 - x['ratio']) * 100:.0f}%" if x.get("ratio", 1) < 1 else ""
 
 
