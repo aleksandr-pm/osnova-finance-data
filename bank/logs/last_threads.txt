@@ -1,21 +1,21 @@
-threads: wdi_fi_res_totl_cd_desc (money, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/d2da36acd07f/bank/covers/wdi_fi_res_totl_cd_desc.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/d2da36acd07f/bank/cards/wdi_fi_res_totl_cd_desc.jpg
+threads: line_economy_ny_gdp_mktp_cd (economy, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/dbb5bd4e360d/bank/covers/line_economy_ny_gdp_mktp_cd.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/dbb5bd4e360d/bank/cards/line_economy_ny_gdp_mktp_cd.jpg
 ---
-Крупнейшие резервы страны, включая золото, 2025:
-1. 🇨🇳 Китай · $3,7 трлн
-2. 🇺🇸 США · $1,4 трлн
-3. 🇯🇵 Япония · $1,4 трлн
-4. 🇨🇭 Швейцария · $1,1 трлн
-5. 🇮🇳 Индия · $700 млрд
-6. 🇩🇪 Германия · $572 млрд
-7. 🇸🇦 Саудовская Аравия · $505 млрд
-8. 🇰🇷 Южная Корея · $437 млрд
-9. 🇮🇹 Италия · $434 млрд
-10. 🇸🇬 Сингапур · $432 млрд
-Казахстан на 39-м, Узбекистан на 40-м месте.
+Как росли крупнейшие экономики мира, ВВП, 2005-2025:
+1. 🇺🇸 США · $30,8 трлн, в 2,4 раза
+2. 🇨🇳 Китай · $19,5 трлн, в 8,4 раза
+3. 🇩🇪 Германия · $5,1 трлн, в 1,7 раза
+4. 🇯🇵 Япония · $4,4 трлн, −9%
+5. 🇬🇧 Великобритания · $4 трлн, в 1,6 раза
+6. 🇮🇳 Индия · $4 трлн, в 4,8 раза
+7. 🇫🇷 Франция · $3,4 трлн, в 1,5 раза
+8. 🇷🇺 Россия · $2,6 трлн, в 3,4 раза
+9. 🇮🇹 Италия · $2,6 трлн, +37%
+10. 🇨🇦 Канада · $2,3 трлн, в 2 раза
+Китай: экономика выросла в 8,4 раза с 2005 года.
 Больше в Telegram @osnovafin
 ---
 Threads: текстом
-Опубликовано: 18080991713534413. Осталось новых рейтингов: 114
-exit=0 2026-11-05T17:35:49Z
+Опубликовано: 18120720680098382. Осталось новых рейтингов: 113
+exit=0 2026-11-05T18:51:45Z
