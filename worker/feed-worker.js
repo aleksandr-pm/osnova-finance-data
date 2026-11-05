@@ -1,4 +1,4 @@
-// OSNOVA Finance · лента v2 (05.11.2026)
+// OSNOVA Finance · лента v2.1 (05.11.2026): без недвижимости, проверка на английский текст
 // Cloudflare Worker: сбор новостей → ИИ-редактор → проверка цифр → очередь → Telegram.
 // Привязки: DB (D1). Секреты: BOT_TOKEN, ANTHROPIC_API_KEY, FINNHUB_KEY, ADMIN_KEY.
 // Переменные: TARGET_CHAT (по умолчанию @osnovafin), ALERT_CHAT (алерты сторожа), PUBLIC_BLOCK=yes, NEWS_OFF=yes, SEC_OFF=yes,
@@ -307,6 +307,7 @@ const EDITOR_PROMPT = `Ты редактор финансовой ленты OSN
 - «Nikkei закрылся ростом на 0,6%» → отклонить, итоги торгов по индексам выходят вечерней сводкой
 
 Всегда отклоняй:
+- недвижимость и всё о ней: застройщики (Emaar, Aldar, Damac и любые другие), цены и продажи жилья и офисов, ипотека, рынок недвижимости любой страны, REIT;
 - закрытия и итоги дня по биржевым индексам (S&P 500, Nasdaq, Dow, Nikkei, Hang Seng, Taiex, Kospi, DAX и др.), если движение меньше 3%. Их даёт вечерняя сводка;
 - спорт, киберспорт, кино, игры, игровые приставки и гаджеты, даже если это бизнес-новость про лигу, турнир или продажи устройства (LIV Golf, Nintendo Switch, новые смартфоны);
 - мелкие криптовалюты, мемкоины, обновления протоколов и форки. Из крипты берём биткоин, эфир, стейблкоины, крипто-ETF, регулирование, крупные биржи и компании (Coinbase, MicroStrategy, Binance), монеты из топ-10 по капитализации при движении от 10%;
@@ -360,7 +361,7 @@ async function claudeItems(env, model, system, payload, tool) {
 
 const REWRITE_PROMPT = `Ты выпускающий редактор русской биржевой ленты OSNOVA Finance. Тебе дают новость (заголовок и анонс из источника) и черновик поста от младшего редактора. Перепиши черновик в одну строку до 200 символов.
 
-Правила: простое живое предложение «кто, что сделал, цифра»; один факт; без канцелярита, калек с английского и деталей-картинок; только числа из заголовка или анонса, ничего не пересчитывай; числа по-русски (4,3%; 2 798; $1,2 млрд), диапазон через дефис ($131,4-131,9 млрд); одно ключевое место выдели **двойными звёздочками**; без длинных тире, восклицательных знаков, оценок и советов; без «сообщает FT», «пишет Bloomberg», «по данным Reuters»; без политических оценок. Если черновик уже хорош, верни его без изменений. Если в новости нет конкретного рыночного факта, это спорт, гаджеты, игры, мелкая монета или итог торгов по индексу меньше 3%, или она неинтересна русскоязычному инвестору, верни keep=false и причину в why.
+Правила: простое живое предложение «кто, что сделал, цифра»; один факт; без канцелярита, калек с английского и деталей-картинок; только числа из заголовка или анонса, ничего не пересчитывай; числа по-русски (4,3%; 2 798; $1,2 млрд), диапазон через дефис ($131,4-131,9 млрд); одно ключевое место выдели **двойными звёздочками**; без длинных тире, восклицательных знаков, оценок и советов; без «сообщает FT», «пишет Bloomberg», «по данным Reuters»; без политических оценок. Если черновик уже хорош, верни его без изменений. Если в новости нет конкретного рыночного факта, это недвижимость или застройщик, спорт, гаджеты, игры, мелкая монета или итог торгов по индексу меньше 3%, или она неинтересна русскоязычному инвестору, верни keep=false и причину в why.
 
 Пиши как выпускающий редактор Интерфакса или РБК: естественный русский язык, который не выдаёт перевод. Прочитай итог вслух: если звучит как подстрочник, перепиши.
 
@@ -418,7 +419,7 @@ const EDITOR_TOOL = {
 };
 
 // Жёсткие стоп-слова: срабатывают до ИИ, экономят токены и ловят то, что редактор пропустил
-const STOP_TITLE = /\b(LIV Golf|PGA|NFL|NBA|NHL|MLB|FIFA|UEFA|Premier League|Formula 1|F1 team|Super Bowl|Olympic|esports|Nintendo|Switch 2|PlayStation|Xbox|video game|box office|Netflix series|memecoin|meme coin|airdrop|Zcash|Dogecoin|Shiba Inu|Pepe coin)\b/i;
+const STOP_TITLE = /\b(LIV Golf|PGA|NFL|NBA|NHL|MLB|FIFA|UEFA|Premier League|Formula 1|F1 team|Super Bowl|Olympic|esports|Nintendo|Switch 2|PlayStation|Xbox|video game|box office|Netflix series|memecoin|meme coin|airdrop|Zcash|Dogecoin|Shiba Inu|Pepe coin|real estate|property|properties|housing|home sales|homebuilder|developer|Emaar|Aldar|Damac|Sobha|Nakheel|Meraas|Binghatti|Ellington|Deyaar|Union Properties)\b/i;
 // Итоги торгов по индексам: в ленту не идут, их даёт вечерняя сводка
 const INDEX_CLOSE = /\b(Nikkei|Topix|Hang Seng|Kospi|Taiex|Sensex|Nifty|ASX 200|Shanghai Composite|CSI 300|FTSE 100|DAX|CAC 40|Stoxx 600|S&P 500|Nasdaq Composite|Dow Jones|Dow)\b[^.]{0,60}\b(closes?|closed|ends?|ended|finish(es|ed)?|settles?|settled)\b/i;
 
@@ -474,7 +475,7 @@ async function edit(env, now) {
         if (p.keep === false) { d.keep = false; d.why = p.why || 'отклонено на редактуре'; }
         else if (p.text) d.text = p.text;
       }
-    } catch (e) { /* при сбое второго этапа выходит черновик Haiku */ }
+    } catch (e) { await failCount(env, 'rewrite', 3, 'Второй этап редактуры (Sonnet) не отвечает: ' + String(e.message || e).slice(0, 150)); }
   }
 
   const byId = new Map(items.map(i => [i.id, i]));
@@ -503,6 +504,10 @@ async function edit(env, now) {
     }
     const text = isEarn ? tidyLines(d.text) : tidy(d.text);
     const topic = TOPICS.includes(d.topic) ? d.topic : 'global';
+    if (notRussian(text)) {
+      stmts.push(env.DB.prepare(`UPDATE items SET status='rejected', text_ru=?, note='не на русском' WHERE id=?`).bind(text, it.id));
+      rejected++; continue;
+    }
     const miss = numbersMissing(text, it.title + ' ' + (it.summary || ''));
     if (miss.length) {
       stmts.push(env.DB.prepare(`UPDATE items SET status='bad_numbers', topic=?, text_ru=?, note=? WHERE id=?`)
@@ -539,6 +544,15 @@ export function tidy(t) {
     .replace(/\s+/g, ' ')
     .trim()
     .slice(0, 300);
+}
+
+// Пост должен быть на русском: английские служебные слова или кусок английской фразы = брак
+const EN_WORDS = /\b(the|of|in|and|more|than|after|first|months?|net|profit|revenue|to|for|with|its|has|have|had|will|would|plans?|planning|delist|shares?|said|says|year|quarter|billion|million|from|into|over|amid|as|by|on|at|is|are|was|were)\b/i;
+export function notRussian(t) {
+  const plain = String(t).replace(/\*\*/g, '');
+  if (EN_WORDS.test(plain)) return true;
+  const cyr = (plain.match(/[А-Яа-яЁё]/g) || []).length, lat = (plain.match(/[A-Za-z]/g) || []).length;
+  return cyr < lat;
 }
 
 // Каждое число в посте должно быть в заголовке или анонсе источника.
