@@ -1,0 +1,18 @@
+name: finnhub-check
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/finnhub-check.yml"]
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check key
+        env:
+          K: ${{ secrets.FINNHUB_KEY }}
+        run: |
+          F=$(date -u +%F); T=$(date -u -d '+3 day' +%F)
+          curl -s "https://finnhub.io/api/v1/calendar/earnings?from=$F&to=$T&token=$K" | python3 -c "import sys,json; d=json.load(sys.stdin); e=d.get('earningsCalendar',[]); print('earnings', len(e)); [print(x['symbol'], x['date'], x.get('hour'), x.get('epsEstimate'), x.get('revenueEstimate')) for x in sorted(e, key=lambda x:-(x.get('revenueEstimate') or 0))[:8]]"
+          curl -s "https://finnhub.io/api/v1/quote?symbol=SPY&token=$K" | head -c 200; echo
+          curl -s -o /dev/null -w "news %{http_code}\n" "https://finnhub.io/api/v1/news?category=general&token=$K"
