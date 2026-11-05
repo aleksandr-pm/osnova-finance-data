@@ -1,14 +1,31 @@
-instagram: line_economy_ne_exp_gnfs_cd (economy, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/d42147eee595/bank/covers/line_economy_ne_exp_gnfs_cd.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/d42147eee595/bank/cards/line_economy_ne_exp_gnfs_cd.jpg
+instagram: cis_ny_gdp_pcap_cd (cis, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/b75c9e01df1b/bank/covers/cis_ny_gdp_pcap_cd.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/b75c9e01df1b/bank/cards/cis_ny_gdp_pcap_cd.jpg
 ---
-Китай: экспорт вырос в 5,3 раза с 2005 года.
-Экспорт товаров и услуг: пять крупнейших экспортёров · 2025. Источник: World Bank.
+Эстония: $34 418 ВВП на человека, №1.
 
-Кого не хватает в топе, по-вашему?
-Рынки и данные 24/7 в Telegram @osnovafin, ссылка в профиле.
-Не является инвестиционной рекомендацией.
+Страны бывшего СССР: ВВП на душу населения, 2025 год, данные World Bank. Первое и второе место (Литва) идут почти вровень.
+
+Топ-10:
+1. 🇪🇪 Эстония: $34 418
+2. 🇱🇹 Литва: $32 959
+3. 🇱🇻 Латвия: $26 312
+4. 🇷🇺 Россия: $17 547
+5. 🇰🇿 Казахстан: $14 692
+6. 🇧🇾 Беларусь: $10 279
+7. 🇬🇪 Грузия: $9 692
+8. 🇦🇲 Армения: $9 474
+9. 🇲🇩 Молдова: $8 622
+10. 🇦🇿 Азербайджан: $7 411
+
+Кто поднимется выше через 5 лет?
+
+Каждый день рынки, сделки инсайдеров из отчётов SEC и данные в Telegram @osnovafin, ссылка в профиле.
+
+Источник: World Bank, World Development Indicators. Не является инвестиционной рекомендацией.
+
+#снг #экономикаснг #казахстан #узбекистан #эстония #инвестиции #финансы #статистика #инфографика #цифры #рынки
 ---
-Instagram: одиночный пост с графиком
-Опубликовано: 18120155513608553. Осталось новых рейтингов: 123
-exit=0 2026-11-05T07:22:20Z
+Instagram: карусель
+Опубликовано: 18114261296142323. Осталось новых рейтингов: 122
+exit=0 2026-11-05T11:09:02Z
