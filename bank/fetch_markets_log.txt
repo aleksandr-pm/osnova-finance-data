@@ -1,0 +1,27 @@
+cmc_all 200 786912 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Apple","AAPL","5
+cmc_revenue 200 779340 CSV "Rank","Name","Symbol","revenue_ttm","price (USD)","country" | "1","Amazon","AMZN"
+cmc_earnings 200 776556 CSV "Rank","Name","Symbol","earnings_ttm","price (USD)","country" | "1","Alphabet (Goo
+cmc_employees 200 716291 CSV "Rank","Name","Symbol","employees_count","price (USD)","country" | "1","Walmart","
+cmc_dividend 200 727842 CSV "Rank","Name","Symbol","dividend_yield_ttm","price (USD)","country" | "1","Elme Co
+cmc_pe 200 756451 CSV "Rank","Name","Symbol","pe_ratio_ttm","price (USD)","country" | "1","Stem, Inc","S
+cmc_tech 200 73265 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Apple","AAPL","5
+cmc_banks 200 51949 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","JPMorgan Chase",
+cmc_oil 200 29166 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Saudi Aramco","2
+cmc_semis 200 11352 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","NVIDIA","NVDA","
+cmc_pharma 200 51746 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Eli Lilly","LLY"
+cmc_auto 200 3786 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Tesla","TSLA","1
+cmc_airlines 200 4668 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Delta Air Lines"
+cmc_insurance 200 22097 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","UnitedHealth","U
+cmc_food 200 25667 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Nestlé","NESN.SW
+cmc_retail 200 25719 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Amazon","AMZN","
+cmc_telecom 200 14119 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","China Mobile","0
+cmc_mining 200 22308 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","BHP Group","BHP"
+cmc_luxury 404 32094 NOT CSV <!DOCTYPE html> | <html lang="en-US"> | <head> | <title>Error 404: Page not found</tit
+cmc_crypto 404 32094 NOT CSV <!DOCTYPE html> | <html lang="en-US"> | <head> | <title>Error 404: Page not found</tit
+cmc_ai 200 5255 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Apple","AAPL","5
+cmc_defense 404 32094 NOT CSV <!DOCTYPE html> | <html lang="en-US"> | <head> | <title>Error 404: Page not found</tit
+cmc_beverages 200 8273 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Coca-Cola","KO",
+cmc_sports 404 32093 NOT CSV <!DOCTYPE html> | <html lang="en-US"> | <head> | <title>Error 404: Page not found</tit
+cmc_gaming 200 14753 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Microsoft","MSFT
+bloomberg 403 427  {"appId": "PX8FCGYgk4", "jsClientSrc": "/8FCGYgk4/init.js", "firstPartyEnabled": true, "vid": "", "uuid": "b6adf526-da1
+forbes_rtb 200 191159 {"personList":{"personsLists":[{"uri":"elon-musk","rank":1,"finalWorth":837718.943,"finalWorthBillions":837.718943,"pers
