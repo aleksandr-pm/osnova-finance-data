@@ -1953,6 +1953,21 @@
   "ZTS": {
    "cap": 32942.19,
    "name": "Zoetis Inc"
+  },
+  "AWX": {
+   "cap": 9.787572258555134,
+   "name": "Avalon Holdings Corp",
+   "ind": "Commercial Services & Supplies"
+  },
+  "HE": {
+   "cap": 1457.8242931905882,
+   "name": "Hawaiian Electric Industries, Inc.",
+   "ind": "Utilities"
+  },
+  "SELF": {
+   "cap": 55.50810318367347,
+   "name": "Global Self Storage Inc",
+   "ind": "Real Estate"
   }
  },
  "earn_done": [
