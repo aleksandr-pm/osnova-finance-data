@@ -4,5 +4,15 @@
   "caption": "📊 Акции <b>AMD</b> выросли на 8,30% за день\nЗа полгода: +3,90%, цена $437,81\n\n#графикдня",
   "t": 1793987938,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-06-AMD.png"
+ },
+ {
+  "id": "alert-2026-11-06-AMD-u",
+  "caption": "⚡️🚀 <b>AMD</b> (AMD) +9,17% за день, $441,49\n\n#алерт",
+  "t": 1793990799
+ },
+ {
+  "id": "alert-2026-11-06-INTC-u",
+  "caption": "⚡️🚀 <b>Intel</b> (INTC) +7,97% за день, $56,42\n\n#алерт",
+  "t": 1793990799
  }
 ]
