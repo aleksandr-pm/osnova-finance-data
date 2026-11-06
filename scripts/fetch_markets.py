@@ -31,6 +31,7 @@ PAGES = {
     "cmc_beverages": "beverages/largest-beverage-companies-by-market-cap/?download=csv",
     "cmc_sports": "sports/largest-sports-companies-by-market-cap/?download=csv",
     "cmc_gaming": "video-games/largest-video-game-companies-by-market-cap/?download=csv",
+    "cmc_realestate": "real-estate/largest-real-estate-companies-by-market-cap/?download=csv",
 }
 for k, path in PAGES.items():
     try:
@@ -45,7 +46,7 @@ for k, path in PAGES.items():
 # миллиардеры
 for k, u in {
     "bloomberg": "https://www.bloomberg.com/billionaires/",
-    "forbes_rtb": "https://www.forbes.com/forbesapi/person/rtb/0/position/true.json?fields=rank,uri,personName,lastName,gender,source,industries,countryOfCitizenship,birthDate,finalWorth,date,timestamp&limit=600",
+    "forbes_rtb": "https://www.forbes.com/forbesapi/person/rtb/0/position/true.json?fields=rank,uri,personName,lastName,gender,source,industries,countryOfCitizenship,birthDate,finalWorth,date,timestamp&limit=3000",
 }.items():
     try:
         r = requests.get(u, headers=H, timeout=40)

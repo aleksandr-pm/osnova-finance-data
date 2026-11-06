@@ -54,6 +54,9 @@ def save_state(platform, st):
         json.dump(st, f, ensure_ascii=False, indent=1)
 
 
+NEW_BLOCKS = {"companies", "billionaires"}
+
+
 def pick(rankings, st):
     """Следующий рейтинг: не публиковался 90 дней, блок не как у прошлого поста,
     в сутки не больше 2 из одного блока, если есть выбор."""
@@ -72,7 +75,8 @@ def pick(rankings, st):
 
     def score(r):
         h = int(hashlib.md5(r["id"].encode()).hexdigest(), 16) % 1000
-        return (r["block"] == last_block, r.get("type", "bars") == last_type,
+        # чередуем: рейтинги компаний и миллиардеров через пост со старыми рейтингами стран
+        return ((r["block"] in NEW_BLOCKS) == (last_block in NEW_BLOCKS), r["block"] == last_block, r.get("type", "bars") == last_type,
                 per_block.get(r["block"], 0) >= 2, per_block.get(r["block"], 0), h)
 
     return min(pool, key=score)
@@ -106,6 +110,8 @@ TAG_BLOCK = {
     "economy": ["экономика", "мироваяэкономика", "ввп", "макроэкономика"],
     "money": ["деньги", "капитал", "финансоваяграмотность", "мироваяэкономика"],
     "cis": ["снг", "экономикаснг", "казахстан", "узбекистан"],
+    "companies": ["акции", "компании", "капитализация", "фондовыйрынок"],
+    "billionaires": ["миллиардеры", "forbes", "богатство", "бизнес"],
 }
 TAG_BASE = ["инвестиции", "финансы", "статистика", "инфографика", "цифры", "рынки"]
 
@@ -149,6 +155,8 @@ def num1(v):
 
 
 def period(r):
+    if r.get("period"):
+        return r["period"]
     return f"{r['start']}-{r['year']}" if r.get("type") == "line" else str(r["year"])
 
 
@@ -187,6 +195,9 @@ def threads_short(r):
         rows = [f"{rk}. {fl} {nm} · {v.split(', ', 1)[1] if ', ' in v else v}"
                 for rk, fl, nm, v in ten(r)]
         text = "\n".join([lines[0]] + rows + lines[-2:])
+    while len(text) > 500 and len(lines) > 6:   # длинные названия: убираем нижние места
+        lines.pop(len(lines) - 3)
+        text = "\n".join(lines)
     return text
 
 
@@ -321,6 +332,10 @@ def main():
     dry = "--dry-run" in sys.argv
     with open(os.path.join(BANK, "rankings.json"), encoding="utf-8") as f:
         rankings = json.load(f)
+    extra = os.path.join(BANK, "rankings_markets.json")
+    if os.path.exists(extra):
+        with open(extra, encoding="utf-8") as f:
+            rankings += json.load(f)
     st = load_state(platform)
     r = pick(rankings, st)
     if not r:
