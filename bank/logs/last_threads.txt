@@ -1,21 +1,21 @@
-threads: wdi_sl_uem_totl_zs_desc (economy, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/e03a708b9e9d/bank/covers/wdi_sl_uem_totl_zs_desc.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/e03a708b9e9d/bank/cards/wdi_sl_uem_totl_zs_desc.jpg
+threads: line_agro_prod_267 (agro, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/9d431787e5ac/bank/covers/line_agro_prod_267.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/9d431787e5ac/bank/cards/line_agro_prod_267.jpg
 ---
-Самая высокая безработица, 2025:
-1. 🇸🇿 Эсватини · 34,2%
-2. 🇿🇦 ЮАР · 32,4%
-3. 🇩🇯 Джибути · 26,0%
-4. 🇧🇼 Ботсвана · 24,5%
-5. 🇬🇦 Габон · 20,2%
-6. 🇨🇬 Республика Конго · 19,9%
-7. 🇳🇦 Намибия · 19,3%
-8. 🇸🇴 Сомали · 18,9%
-9. 🇱🇾 Ливия · 18,8%
-10. 🇾🇪 Йемен · 17,3%
-Армения на 19-м, Грузия на 21-м месте.
+Производство подсолнечника: крупнейшие производители, 2000-2024:
+1. 🇷🇺 Россия · в 4,4 раза
+2. 🇺🇦 Украина · в 3,2 раза
+3. 🇦🇷 Аргентина · −36%
+4. 🇨🇳 Китай · +20%
+5. 🇹🇷 Турция · в 2,7 раза
+6. 🇰🇿 Казахстан · в 17,5 раза
+7. 🇭🇺 Венгрия · в 3,7 раза
+8. 🇧🇬 Болгария · в 3,9 раза
+9. 🇷🇴 Румыния · в 2,1 раза
+10. 🇫🇷 Франция · −19%
+Казахстан: производство подсолнечника выросло в 17,5 раза с 2000 года.
 Больше в Telegram @osnovafin
 ---
-Threads: с картинкой
-Опубликовано: 18133632835683334. Осталось новых рейтингов: 106
-exit=0 2026-11-06T12:58:47Z
+Threads: текстом
+Опубликовано: 18100058576414074. Осталось новых рейтингов: 105
+exit=0 2026-11-06T14:32:57Z
