@@ -24,5 +24,11 @@
   "id": "alert-2026-11-07-INTC-u",
   "caption": "⚡️🚀 <b>Intel</b> (INTC) +8,78% за день, $56,83\n\n#алерт",
   "t": 1793996941
+ },
+ {
+  "id": "evening-2026-11-06",
+  "caption": "📈 <b>Итоги дня 6 ноября</b>\n\nS&P 500 +0,31%, Nasdaq +1,09%, Dow Jones −0,46%\nНефть Brent −0,44%, Золото −0,94%\n\n#итогидня",
+  "t": 1794002218,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-06.png"
  }
 ]
