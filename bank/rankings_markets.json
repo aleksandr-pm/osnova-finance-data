@@ -8,12 +8,12 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 11023,
+  "countries": 10618,
   "top": [
    {
     "iso2": "US",
     "name": "Apple",
-    "value": 5006074839040.0,
+    "value": 5002703667200.0,
     "flag": "🇺🇸",
     "text": "$5 трлн",
     "rank": 1
@@ -21,7 +21,7 @@
    {
     "iso2": "US",
     "name": "NVIDIA",
-    "value": 4513919401984.0,
+    "value": 4524181815296.0,
     "flag": "🇺🇸",
     "text": "$4,5 трлн",
     "rank": 2
@@ -29,7 +29,7 @@
    {
     "iso2": "US",
     "name": "Microsoft",
-    "value": 3959052828672.0,
+    "value": 3960538136576.0,
     "flag": "🇺🇸",
     "text": "$4 трлн",
     "rank": 3
@@ -37,7 +37,7 @@
    {
     "iso2": "US",
     "name": "Alphabet (Google)",
-    "value": 3501331054592.0,
+    "value": 3505388257280.0,
     "flag": "🇺🇸",
     "text": "$3,5 трлн",
     "rank": 4
@@ -45,7 +45,7 @@
    {
     "iso2": "US",
     "name": "Amazon",
-    "value": 2843639021568.0,
+    "value": 2842071138304.0,
     "flag": "🇺🇸",
     "text": "$2,8 трлн",
     "rank": 5
@@ -53,7 +53,7 @@
    {
     "iso2": "TW",
     "name": "TSMC",
-    "value": 1938133483520.0,
+    "value": 1941582512128.0,
     "flag": "🇹🇼",
     "text": "$1,9 трлн",
     "rank": 6
@@ -61,7 +61,7 @@
    {
     "iso2": "US",
     "name": "SpaceX",
-    "value": 1805330808832.0,
+    "value": 1798336544768.0,
     "flag": "🇺🇸",
     "text": "$1,8 трлн",
     "rank": 7
@@ -77,7 +77,7 @@
    {
     "iso2": "US",
     "name": "Meta Platforms (Facebook)",
-    "value": 1578793172992.0,
+    "value": 1580041240576.0,
     "flag": "🇺🇸",
     "text": "$1,6 трлн",
     "rank": 9
@@ -85,7 +85,7 @@
    {
     "iso2": "US",
     "name": "Tesla",
-    "value": 1421735886848.0,
+    "value": 1420818907136.0,
     "flag": "🇺🇸",
     "text": "$1,4 трлн",
     "rank": 10
@@ -94,13 +94,13 @@
   "cis": [
    {
     "name": "Sberbank (Россия)",
-    "rank": 310,
+    "rank": 307,
     "in_top10": false,
     "iso": "RU"
    },
    {
     "name": "Kaspi.kz (Казахстан)",
-    "rank": 1232,
+    "rank": 1216,
     "in_top10": false,
     "iso": "KZ"
    }
@@ -129,7 +129,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 10377,
+  "countries": 9978,
   "top": [
    {
     "iso2": "US",
@@ -215,7 +215,7 @@
   "cis": [
    {
     "name": "Kaspi.kz (Казахстан)",
-    "rank": 1411,
+    "rank": 1394,
     "in_top10": false,
     "iso": "KZ"
    }
@@ -248,7 +248,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 10769,
+  "countries": 10368,
   "top": [
    {
     "iso2": "US",
@@ -334,7 +334,7 @@
   "cis": [
    {
     "name": "Kaspi.kz (Казахстан)",
-    "rank": 568,
+    "rank": 566,
     "in_top10": false,
     "iso": "KZ"
    }
@@ -367,7 +367,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 9478,
+  "countries": 9141,
   "top": [
    {
     "iso2": "US",
@@ -459,7 +459,7 @@
    },
    {
     "name": "Kazatomprom (Казахстан)",
-    "rank": 1269,
+    "rank": 1252,
     "in_top10": false,
     "iso": "KZ"
    }
@@ -488,12 +488,12 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 3536,
+  "countries": 3421,
   "top": [
    {
     "iso2": "US",
     "name": "Apple",
-    "value": 5006074839040.0,
+    "value": 5002703667200.0,
     "flag": "🇺🇸",
     "text": "$5 трлн",
     "rank": 1
@@ -501,7 +501,7 @@
    {
     "iso2": "US",
     "name": "NVIDIA",
-    "value": 4513919401984.0,
+    "value": 4524181815296.0,
     "flag": "🇺🇸",
     "text": "$4,5 трлн",
     "rank": 2
@@ -509,7 +509,7 @@
    {
     "iso2": "US",
     "name": "Microsoft",
-    "value": 3959052828672.0,
+    "value": 3960538136576.0,
     "flag": "🇺🇸",
     "text": "$4 трлн",
     "rank": 3
@@ -517,7 +517,7 @@
    {
     "iso2": "US",
     "name": "Alphabet (Google)",
-    "value": 3501331054592.0,
+    "value": 3505388257280.0,
     "flag": "🇺🇸",
     "text": "$3,5 трлн",
     "rank": 4
@@ -525,7 +525,7 @@
    {
     "iso2": "US",
     "name": "Amazon",
-    "value": 2843639021568.0,
+    "value": 2842071138304.0,
     "flag": "🇺🇸",
     "text": "$2,8 трлн",
     "rank": 5
@@ -533,7 +533,7 @@
    {
     "iso2": "US",
     "name": "SpaceX",
-    "value": 1805330808832.0,
+    "value": 1798336544768.0,
     "flag": "🇺🇸",
     "text": "$1,8 трлн",
     "rank": 6
@@ -541,7 +541,7 @@
    {
     "iso2": "US",
     "name": "Meta Platforms (Facebook)",
-    "value": 1578793172992.0,
+    "value": 1580041240576.0,
     "flag": "🇺🇸",
     "text": "$1,6 трлн",
     "rank": 7
@@ -549,7 +549,7 @@
    {
     "iso2": "US",
     "name": "Tesla",
-    "value": 1421735886848.0,
+    "value": 1420818907136.0,
     "flag": "🇺🇸",
     "text": "$1,4 трлн",
     "rank": 8
@@ -557,7 +557,7 @@
    {
     "iso2": "US",
     "name": "Broadcom",
-    "value": 1389150208000.0,
+    "value": 1392754294784.0,
     "flag": "🇺🇸",
     "text": "$1,4 трлн",
     "rank": 9
@@ -565,7 +565,7 @@
    {
     "iso2": "US",
     "name": "Berkshire Hathaway",
-    "value": 1228018155520.0,
+    "value": 1229045760000.0,
     "flag": "🇺🇸",
     "text": "$1,2 трлн",
     "rank": 10
@@ -596,12 +596,12 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 494,
+  "countries": 488,
   "top": [
    {
     "iso2": "CN",
     "name": "Tencent",
-    "value": 484530120000.0,
+    "value": 485072100000.0,
     "flag": "🇨🇳",
     "text": "$485 млрд",
     "rank": 1
@@ -657,7 +657,7 @@
    {
     "iso2": "CN",
     "name": "Alibaba",
-    "value": 271860776960.0,
+    "value": 271853568000.0,
     "flag": "🇨🇳",
     "text": "$272 млрд",
     "rank": 8
@@ -704,12 +704,12 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 917,
+  "countries": 893,
   "top": [
    {
     "iso2": "JP",
     "name": "Toyota",
-    "value": 254092132352.0,
+    "value": 253974364160.0,
     "flag": "🇯🇵",
     "text": "$254 млрд",
     "rank": 1
@@ -717,15 +717,15 @@
    {
     "iso2": "JP",
     "name": "Mitsubishi UFJ Financial",
-    "value": 236482494464.0,
+    "value": 236652462080.0,
     "flag": "🇯🇵",
-    "text": "$236 млрд",
+    "text": "$237 млрд",
     "rank": 2
    },
    {
     "iso2": "JP",
     "name": "Sony",
-    "value": 157588242432.0,
+    "value": 157763436544.0,
     "flag": "🇯🇵",
     "text": "$158 млрд",
     "rank": 3
@@ -749,7 +749,7 @@
    {
     "iso2": "JP",
     "name": "Sumitomo Mitsui Financial Group",
-    "value": 147052429312.0,
+    "value": 147021070336.0,
     "flag": "🇯🇵",
     "text": "$147 млрд",
     "rank": 6
@@ -812,7 +812,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 587,
+  "countries": 576,
   "top": [
    {
     "iso2": "IN",
@@ -833,9 +833,9 @@
    {
     "iso2": "IN",
     "name": "HDFC Bank",
-    "value": 129451229184.0,
+    "value": 129502658560.0,
     "flag": "🇮🇳",
-    "text": "$129 млрд",
+    "text": "$130 млрд",
     "rank": 3
    },
    {
@@ -889,7 +889,7 @@
    {
     "iso2": "IN",
     "name": "Infosys",
-    "value": 50285424640.0,
+    "value": 50267193344.0,
     "flag": "🇮🇳",
     "text": "$50,3 млрд",
     "rank": 10
@@ -920,12 +920,12 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 476,
+  "countries": 457,
   "top": [
    {
     "iso2": "GB",
     "name": "HSBC",
-    "value": 297827893248.0,
+    "value": 298067296256.0,
     "flag": "🇬🇧",
     "text": "$298 млрд",
     "rank": 1
@@ -933,7 +933,7 @@
    {
     "iso2": "GB",
     "name": "AstraZeneca",
-    "value": 290068135936.0,
+    "value": 289975074816.0,
     "flag": "🇬🇧",
     "text": "$290 млрд",
     "rank": 2
@@ -941,7 +941,7 @@
    {
     "iso2": "GB",
     "name": "Shell",
-    "value": 281331138560.0,
+    "value": 281175293952.0,
     "flag": "🇬🇧",
     "text": "$281 млрд",
     "rank": 3
@@ -949,7 +949,7 @@
    {
     "iso2": "GB",
     "name": "Linde",
-    "value": 237977550848.0,
+    "value": 237943111680.0,
     "flag": "🇬🇧",
     "text": "$238 млрд",
     "rank": 4
@@ -957,7 +957,7 @@
    {
     "iso2": "GB",
     "name": "Arm Holdings",
-    "value": 184601739264.0,
+    "value": 184703516672.0,
     "flag": "🇬🇧",
     "text": "$185 млрд",
     "rank": 5
@@ -981,7 +981,7 @@
    {
     "iso2": "GB",
     "name": "Rio Tinto",
-    "value": 136853479424.0,
+    "value": 136804687872.0,
     "flag": "🇬🇧",
     "text": "$137 млрд",
     "rank": 8
@@ -989,7 +989,7 @@
    {
     "iso2": "GB",
     "name": "British American Tobacco",
-    "value": 131515465728.0,
+    "value": 131504726016.0,
     "flag": "🇬🇧",
     "text": "$132 млрд",
     "rank": 9
@@ -997,7 +997,7 @@
    {
     "iso2": "GB",
     "name": "BP",
-    "value": 114912722944.0,
+    "value": 114848325632.0,
     "flag": "🇬🇧",
     "text": "$115 млрд",
     "rank": 10
@@ -1028,12 +1028,12 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 377,
+  "countries": 363,
   "top": [
    {
     "iso2": "DE",
     "name": "SAP",
-    "value": 268958449664.0,
+    "value": 269068091392.0,
     "flag": "🇩🇪",
     "text": "$269 млрд",
     "rank": 1
@@ -1065,7 +1065,7 @@
    {
     "iso2": "DE",
     "name": "Siemens Energy",
-    "value": 112191195284.0,
+    "value": 111942692966.0,
     "flag": "🇩🇪",
     "text": "$112 млрд",
     "rank": 5
@@ -1105,7 +1105,7 @@
    {
     "iso2": "DE",
     "name": "Deutsche Bank",
-    "value": 65023287296.0,
+    "value": 65042014208.0,
     "flag": "🇩🇪",
     "text": "$65 млрд",
     "rank": 10
@@ -1136,7 +1136,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 337,
+  "countries": 313,
   "top": [
    {
     "iso2": "FR",
@@ -1157,7 +1157,7 @@
    {
     "iso2": "FR",
     "name": "TotalEnergies",
-    "value": 194106900480.0,
+    "value": 193984167936.0,
     "flag": "🇫🇷",
     "text": "$194 млрд",
     "rank": 3
@@ -1205,7 +1205,7 @@
    {
     "iso2": "FR",
     "name": "Sanofi",
-    "value": 112438747136.0,
+    "value": 112438984704.0,
     "flag": "🇫🇷",
     "text": "$112 млрд",
     "rank": 9
@@ -1244,7 +1244,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 213,
+  "countries": 202,
   "top": [
    {
     "iso2": "CH",
@@ -1257,9 +1257,9 @@
    {
     "iso2": "CH",
     "name": "Novartis",
-    "value": 307685097472.0,
+    "value": 307458473984.0,
     "flag": "🇨🇭",
-    "text": "$308 млрд",
+    "text": "$307 млрд",
     "rank": 2
    },
    {
@@ -1281,15 +1281,15 @@
    {
     "iso2": "CH",
     "name": "UBS",
-    "value": 145497735168.0,
+    "value": 145573789696.0,
     "flag": "🇨🇭",
-    "text": "$145 млрд",
+    "text": "$146 млрд",
     "rank": 5
    },
    {
     "iso2": "CH",
     "name": "Chubb",
-    "value": 139829542912.0,
+    "value": 139936514048.0,
     "flag": "🇨🇭",
     "text": "$140 млрд",
     "rank": 6
@@ -1321,7 +1321,7 @@
    {
     "iso2": "CH",
     "name": "TE Connectivity",
-    "value": 59403362304.0,
+    "value": 59414863872.0,
     "flag": "🇨🇭",
     "text": "$59,4 млрд",
     "rank": 10
@@ -1352,7 +1352,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 233,
+  "countries": 224,
   "top": [
    {
     "iso2": "SA",
@@ -1460,7 +1460,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 124,
+  "countries": 121,
   "top": [
    {
     "iso2": "AE",
@@ -1681,7 +1681,7 @@
    {
     "iso2": "TW",
     "name": "TSMC",
-    "value": 1938133483520.0,
+    "value": 1941582512128.0,
     "flag": "🇹🇼",
     "text": "$1,9 трлн",
     "rank": 1
@@ -1713,9 +1713,9 @@
    {
     "iso2": "TW",
     "name": "ASE Group",
-    "value": 69352693760.0,
+    "value": 69328855040.0,
     "flag": "🇹🇼",
-    "text": "$69,4 млрд",
+    "text": "$69,3 млрд",
     "rank": 5
    },
    {
@@ -1753,7 +1753,7 @@
    {
     "iso2": "TW",
     "name": "Chunghwa Telecom",
-    "value": 38763880448.0,
+    "value": 38802747392.0,
     "flag": "🇹🇼",
     "text": "$38,8 млрд",
     "rank": 10
@@ -1784,12 +1784,12 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 435,
+  "countries": 423,
   "top": [
    {
     "iso2": "CA",
     "name": "Royal Bank Of Canada",
-    "value": 280928485376.0,
+    "value": 280942346240.0,
     "flag": "🇨🇦",
     "text": "$281 млрд",
     "rank": 1
@@ -1797,7 +1797,7 @@
    {
     "iso2": "CA",
     "name": "Toronto Dominion Bank",
-    "value": 200714092544.0,
+    "value": 200893710336.0,
     "flag": "🇨🇦",
     "text": "$201 млрд",
     "rank": 2
@@ -1805,7 +1805,7 @@
    {
     "iso2": "CA",
     "name": "Shopify",
-    "value": 191852593152.0,
+    "value": 192309297152.0,
     "flag": "🇨🇦",
     "text": "$192 млрд",
     "rank": 3
@@ -1813,15 +1813,15 @@
    {
     "iso2": "CA",
     "name": "Bank of Montreal",
-    "value": 119340384256.0,
+    "value": 119597563904.0,
     "flag": "🇨🇦",
-    "text": "$119 млрд",
+    "text": "$120 млрд",
     "rank": 4
    },
    {
     "iso2": "CA",
     "name": "Scotiabank",
-    "value": 112327376896.0,
+    "value": 112345653248.0,
     "flag": "🇨🇦",
     "text": "$112 млрд",
     "rank": 5
@@ -1829,7 +1829,7 @@
    {
     "iso2": "CA",
     "name": "CIBC (Canadian Imperial Bank of Commerce)",
-    "value": 104984567808.0,
+    "value": 105002549248.0,
     "flag": "🇨🇦",
     "text": "$105 млрд",
     "rank": 6
@@ -1837,7 +1837,7 @@
    {
     "iso2": "CA",
     "name": "Enbridge",
-    "value": 104287592448.0,
+    "value": 104421318656.0,
     "flag": "🇨🇦",
     "text": "$104 млрд",
     "rank": 7
@@ -1845,7 +1845,7 @@
    {
     "iso2": "CA",
     "name": "Canadian Natural Resources",
-    "value": 100508434432.0,
+    "value": 100518739968.0,
     "flag": "🇨🇦",
     "text": "$101 млрд",
     "rank": 8
@@ -1853,17 +1853,17 @@
    {
     "iso2": "CA",
     "name": "Agnico Eagle Mines",
-    "value": 96149889024.0,
+    "value": 96387497984.0,
     "flag": "🇨🇦",
-    "text": "$96,1 млрд",
+    "text": "$96,4 млрд",
     "rank": 9
    },
    {
     "iso2": "CA",
     "name": "Brookfield",
-    "value": 92519809024.0,
+    "value": 92564455424.0,
     "flag": "🇨🇦",
-    "text": "$92,5 млрд",
+    "text": "$92,6 млрд",
     "rank": 10
    }
   ],
@@ -1892,12 +1892,12 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 95,
+  "countries": 92,
   "top": [
    {
     "iso2": "BR",
     "name": "Petrobras",
-    "value": 119735689216.0,
+    "value": 119832985600.0,
     "flag": "🇧🇷",
     "text": "$120 млрд",
     "rank": 1
@@ -1905,7 +1905,7 @@
    {
     "iso2": "BR",
     "name": "Itaú Unibanco",
-    "value": 81618100224.0,
+    "value": 81596055552.0,
     "flag": "🇧🇷",
     "text": "$81,6 млрд",
     "rank": 2
@@ -1913,9 +1913,9 @@
    {
     "iso2": "BR",
     "name": "Nu Holdings",
-    "value": 58305929216.0,
+    "value": 58209800192.0,
     "flag": "🇧🇷",
-    "text": "$58,3 млрд",
+    "text": "$58,2 млрд",
     "rank": 3
    },
    {
@@ -1929,7 +1929,7 @@
    {
     "iso2": "BR",
     "name": "Vale",
-    "value": 49430683648.0,
+    "value": 49409404928.0,
     "flag": "🇧🇷",
     "text": "$49,4 млрд",
     "rank": 5
@@ -1937,23 +1937,23 @@
    {
     "iso2": "BR",
     "name": "Ambev",
-    "value": 43320504320.0,
+    "value": 43243421696.0,
     "flag": "🇧🇷",
-    "text": "$43,3 млрд",
+    "text": "$43,2 млрд",
     "rank": 6
    },
    {
     "iso2": "BR",
     "name": "JBS",
-    "value": 40788107264.0,
+    "value": 40705875968.0,
     "flag": "🇧🇷",
-    "text": "$40,8 млрд",
+    "text": "$40,7 млрд",
     "rank": 7
    },
    {
     "iso2": "BR",
     "name": "WEG ON",
-    "value": 40174257954.0,
+    "value": 40224372720.0,
     "flag": "🇧🇷",
     "text": "$40,2 млрд",
     "rank": 8
@@ -2000,14 +2000,14 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 59,
+  "countries": 57,
   "top": [
    {
     "iso2": "NL",
     "name": "ASML",
-    "value": 547081191424.0,
+    "value": 547605381120.0,
     "flag": "🇳🇱",
-    "text": "$547 млрд",
+    "text": "$548 млрд",
     "rank": 1
    },
    {
@@ -2029,25 +2029,25 @@
    {
     "iso2": "NL",
     "name": "ING",
-    "value": 90599940096.0,
+    "value": 90656768000.0,
     "flag": "🇳🇱",
-    "text": "$90,6 млрд",
+    "text": "$90,7 млрд",
     "rank": 4
    },
    {
     "iso2": "NL",
     "name": "NXP Semiconductors",
-    "value": 62620045312.0,
+    "value": 62693138432.0,
     "flag": "🇳🇱",
-    "text": "$62,6 млрд",
+    "text": "$62,7 млрд",
     "rank": 5
    },
    {
     "iso2": "NL",
     "name": "Argenx",
-    "value": 57839464448.0,
+    "value": 57850785792.0,
     "flag": "🇳🇱",
-    "text": "$57,8 млрд",
+    "text": "$57,9 млрд",
     "rank": 6
    },
    {
@@ -2077,9 +2077,9 @@
    {
     "iso2": "NL",
     "name": "Nebius Group",
-    "value": 34963300352.0,
+    "value": 34887184384.0,
     "flag": "🇳🇱",
-    "text": "$35 млрд",
+    "text": "$34,9 млрд",
     "rank": 10
    }
   ],
@@ -2090,11 +2090,11 @@
     false
    ],
    [
-    "$547 млрд",
+    "$548 млрд",
     true
    ]
   ],
-  "hook_text": "№1: ASML, $547 млрд",
+  "hook_text": "№1: ASML, $548 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/mkt_country_cap_nl.png"
@@ -2108,7 +2108,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 161,
+  "countries": 159,
   "top": [
    {
     "iso2": "IT",
@@ -2137,9 +2137,9 @@
    {
     "iso2": "IT",
     "name": "ENI",
-    "value": 79041953792.0,
+    "value": 79089229824.0,
     "flag": "🇮🇹",
-    "text": "$79 млрд",
+    "text": "$79,1 млрд",
     "rank": 4
    },
    {
@@ -2153,7 +2153,7 @@
    {
     "iso2": "IT",
     "name": "Ferrari",
-    "value": 73309986816.0,
+    "value": 73295970304.0,
     "flag": "🇮🇹",
     "text": "$73,3 млрд",
     "rank": 6
@@ -2216,7 +2216,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 103,
+  "countries": 96,
   "top": [
    {
     "iso2": "ES",
@@ -2229,9 +2229,9 @@
    {
     "iso2": "ES",
     "name": "Santander",
-    "value": 170424418304.0,
+    "value": 170678190080.0,
     "flag": "🇪🇸",
-    "text": "$170 млрд",
+    "text": "$171 млрд",
     "rank": 2
    },
    {
@@ -2245,9 +2245,9 @@
    {
     "iso2": "ES",
     "name": "Banco Bilbao Vizcaya Argentaria",
-    "value": 138489577472.0,
+    "value": 138572070912.0,
     "flag": "🇪🇸",
-    "text": "$138 млрд",
+    "text": "$139 млрд",
     "rank": 4
    },
    {
@@ -2324,7 +2324,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 134,
+  "countries": 119,
   "top": [
    {
     "iso2": "HK",
@@ -2432,12 +2432,12 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 377,
+  "countries": 360,
   "top": [
    {
     "iso2": "AU",
     "name": "BHP Group",
-    "value": 204106006528.0,
+    "value": 204360171520.0,
     "flag": "🇦🇺",
     "text": "$204 млрд",
     "rank": 1
@@ -2500,18 +2500,18 @@
    },
    {
     "iso2": "AU",
-    "name": "Goodman Group",
-    "value": 40146231423.0,
+    "name": "Woodside Energy",
+    "value": 39847059456.0,
     "flag": "🇦🇺",
-    "text": "$40,1 млрд",
+    "text": "$39,8 млрд",
     "rank": 9
    },
    {
     "iso2": "AU",
-    "name": "Woodside Energy",
-    "value": 39809040384.0,
+    "name": "Telstra",
+    "value": 39535332694.0,
     "flag": "🇦🇺",
-    "text": "$39,8 млрд",
+    "text": "$39,5 млрд",
     "rank": 10
    }
   ],
@@ -2540,7 +2540,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 74,
+  "countries": 66,
   "top": [
    {
     "iso2": "SG",
@@ -2577,7 +2577,7 @@
    {
     "iso2": "SG",
     "name": "Sea",
-    "value": 46362017792.0,
+    "value": 46377328640.0,
     "flag": "🇸🇬",
     "text": "$46,4 млрд",
     "rank": 5
@@ -2585,9 +2585,9 @@
    {
     "iso2": "SG",
     "name": "Flex",
-    "value": 25322844160.0,
+    "value": 25407817728.0,
     "flag": "🇸🇬",
-    "text": "$25,3 млрд",
+    "text": "$25,4 млрд",
     "rank": 6
    },
    {
@@ -2648,7 +2648,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 52,
+  "countries": 49,
   "top": [
    {
     "iso2": "QA",
@@ -2692,19 +2692,11 @@
    },
    {
     "iso2": "QA",
-    "name": "Ezdan Holding Group",
-    "value": 5866098609.0,
-    "flag": "🇶🇦",
-    "text": "$5,9 млрд",
-    "rank": 6
-   },
-   {
-    "iso2": "QA",
     "name": "Masraf Al Rayan",
     "value": 5007692374.0,
     "flag": "🇶🇦",
     "text": "$5 млрд",
-    "rank": 7
+    "rank": 6
    },
    {
     "iso2": "QA",
@@ -2712,7 +2704,7 @@
     "value": 4906863823.0,
     "flag": "🇶🇦",
     "text": "$4,9 млрд",
-    "rank": 8
+    "rank": 7
    },
    {
     "iso2": "QA",
@@ -2720,7 +2712,7 @@
     "value": 4837229012.0,
     "flag": "🇶🇦",
     "text": "$4,8 млрд",
-    "rank": 9
+    "rank": 8
    },
    {
     "iso2": "QA",
@@ -2728,6 +2720,14 @@
     "value": 4781096372.0,
     "flag": "🇶🇦",
     "text": "$4,8 млрд",
+    "rank": 9
+   },
+   {
+    "iso2": "QA",
+    "name": "Qatar International Islamic Bank",
+    "value": 4603439692.0,
+    "flag": "🇶🇦",
+    "text": "$4,6 млрд",
     "rank": 10
    }
   ],
@@ -2756,7 +2756,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 107,
+  "countries": 99,
   "top": [
    {
     "iso2": "KW",
@@ -2792,19 +2792,11 @@
    },
    {
     "iso2": "KW",
-    "name": "Mabanee Company",
-    "value": 4821410199.0,
-    "flag": "🇰🇼",
-    "text": "$4,8 млрд",
-    "rank": 5
-   },
-   {
-    "iso2": "KW",
     "name": "Gulf Bank",
     "value": 4577432397.0,
     "flag": "🇰🇼",
     "text": "$4,6 млрд",
-    "rank": 6
+    "rank": 5
    },
    {
     "iso2": "KW",
@@ -2812,7 +2804,7 @@
     "value": 3942330427.0,
     "flag": "🇰🇼",
     "text": "$3,9 млрд",
-    "rank": 7
+    "rank": 6
    },
    {
     "iso2": "KW",
@@ -2820,7 +2812,7 @@
     "value": 3338989833.0,
     "flag": "🇰🇼",
     "text": "$3,3 млрд",
-    "rank": 8
+    "rank": 7
    },
    {
     "iso2": "KW",
@@ -2828,7 +2820,7 @@
     "value": 2684040796.0,
     "flag": "🇰🇼",
     "text": "$2,7 млрд",
-    "rank": 9
+    "rank": 8
    },
    {
     "iso2": "KW",
@@ -2836,6 +2828,14 @@
     "value": 2599124917.0,
     "flag": "🇰🇼",
     "text": "$2,6 млрд",
+    "rank": 9
+   },
+   {
+    "iso2": "KW",
+    "name": "Burgan Bank",
+    "value": 2420024073.0,
+    "flag": "🇰🇼",
+    "text": "$2,4 млрд",
     "rank": 10
    }
   ],
@@ -2972,7 +2972,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 49,
+  "countries": 47,
   "top": [
    {
     "iso2": "ID",
@@ -3033,7 +3033,7 @@
    {
     "iso2": "ID",
     "name": "Telkom Indonesia",
-    "value": 10984087552.0,
+    "value": 10979164160.0,
     "flag": "🇮🇩",
     "text": "$11 млрд",
     "rank": 8
@@ -3093,9 +3093,9 @@
    {
     "iso2": "MX",
     "name": "America Movil",
-    "value": 76745490432.0,
+    "value": 76790276096.0,
     "flag": "🇲🇽",
-    "text": "$76,7 млрд",
+    "text": "$76,8 млрд",
     "rank": 2
    },
    {
@@ -3109,17 +3109,17 @@
    {
     "iso2": "MX",
     "name": "FEMSA",
-    "value": 46041085410.0,
+    "value": 46080445940.0,
     "flag": "🇲🇽",
-    "text": "$46 млрд",
+    "text": "$46,1 млрд",
     "rank": 4
    },
    {
     "iso2": "MX",
     "name": "Banorte",
-    "value": 31142803463.0,
+    "value": 31163579258.0,
     "flag": "🇲🇽",
-    "text": "$31,1 млрд",
+    "text": "$31,2 млрд",
     "rank": 5
    },
    {
@@ -3133,15 +3133,15 @@
    {
     "iso2": "MX",
     "name": "Coca-Cola FEMSA",
-    "value": 23739404288.0,
+    "value": 23789824000.0,
     "flag": "🇲🇽",
-    "text": "$23,7 млрд",
+    "text": "$23,8 млрд",
     "rank": 7
    },
    {
     "iso2": "MX",
     "name": "Arca Continental",
-    "value": 21252653335.0,
+    "value": 21273527194.0,
     "flag": "🇲🇽",
     "text": "$21,3 млрд",
     "rank": 8
@@ -3149,7 +3149,7 @@
    {
     "iso2": "MX",
     "name": "Grupo Carso",
-    "value": 20291708059.0,
+    "value": 20302540752.0,
     "flag": "🇲🇽",
     "text": "$20,3 млрд",
     "rank": 9
@@ -3157,7 +3157,7 @@
    {
     "iso2": "MX",
     "name": "Industrias Peñoles",
-    "value": 17246478159.0,
+    "value": 17162362811.0,
     "flag": "🇲🇽",
     "text": "$17,2 млрд",
     "rank": 10
@@ -3188,7 +3188,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 222,
+  "countries": 199,
   "top": [
    {
     "iso2": "SE",
@@ -3201,7 +3201,7 @@
    {
     "iso2": "SE",
     "name": "Spotify",
-    "value": 124294160384.0,
+    "value": 124363128832.0,
     "flag": "🇸🇪",
     "text": "$124 млрд",
     "rank": 2
@@ -3265,7 +3265,7 @@
    {
     "iso2": "SE",
     "name": "Ericsson",
-    "value": 33311680512.0,
+    "value": 33295478784.0,
     "flag": "🇸🇪",
     "text": "$33,3 млрд",
     "rank": 10
@@ -3296,12 +3296,12 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 63,
+  "countries": 61,
   "top": [
    {
     "iso2": "DK",
     "name": "Novo Nordisk",
-    "value": 178398052352.0,
+    "value": 178430246912.0,
     "flag": "🇩🇰",
     "text": "$178 млрд",
     "rank": 1
@@ -3333,7 +3333,7 @@
    {
     "iso2": "DK",
     "name": "Genmab",
-    "value": 33161693184.0,
+    "value": 33186289664.0,
     "flag": "🇩🇰",
     "text": "$33,2 млрд",
     "rank": 5
@@ -3404,12 +3404,12 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 111,
+  "countries": 109,
   "top": [
    {
     "iso2": "NO",
     "name": "Equinor",
-    "value": 99503972352.0,
+    "value": 99545620480.0,
     "flag": "🇳🇴",
     "text": "$99,5 млрд",
     "rank": 1
@@ -3641,9 +3641,9 @@
    {
     "iso2": "KZ",
     "name": "Freedom Holding",
-    "value": 11578736640.0,
+    "value": 11545567232.0,
     "flag": "🇰🇿",
-    "text": "$11,6 млрд",
+    "text": "$11,5 млрд",
     "rank": 3
    },
    {
@@ -3688,12 +3688,12 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 182,
+  "countries": 163,
   "top": [
    {
     "iso2": "IL",
     "name": "Teva Pharmaceutical Industries",
-    "value": 49496788992.0,
+    "value": 49543462912.0,
     "flag": "🇮🇱",
     "text": "$49,5 млрд",
     "rank": 1
@@ -3733,7 +3733,7 @@
    {
     "iso2": "IL",
     "name": "Tower Semiconductor",
-    "value": 15397535744.0,
+    "value": 15379373056.0,
     "flag": "🇮🇱",
     "text": "$15,4 млрд",
     "rank": 6
@@ -3741,18 +3741,10 @@
    {
     "iso2": "IL",
     "name": "Check Point Software",
-    "value": 14870956032.0,
+    "value": 14891377664.0,
     "flag": "🇮🇱",
     "text": "$14,9 млрд",
     "rank": 7
-   },
-   {
-    "iso2": "IL",
-    "name": "Azrieli Group",
-    "value": 13995094149.0,
-    "flag": "🇮🇱",
-    "text": "$14 млрд",
-    "rank": 8
    },
    {
     "iso2": "IL",
@@ -3760,7 +3752,7 @@
     "value": 13233538581.0,
     "flag": "🇮🇱",
     "text": "$13,2 млрд",
-    "rank": 9
+    "rank": 8
    },
    {
     "iso2": "IL",
@@ -3768,6 +3760,14 @@
     "value": 13222749305.0,
     "flag": "🇮🇱",
     "text": "$13,2 млрд",
+    "rank": 9
+   },
+   {
+    "iso2": "IL",
+    "name": "Harel Group",
+    "value": 11672678901.0,
+    "flag": "🇮🇱",
+    "text": "$11,7 млрд",
     "rank": 10
    }
   ],
@@ -3801,15 +3801,15 @@
    {
     "iso2": "ZA",
     "name": "AngloGold Ashanti",
-    "value": 46717906944.0,
+    "value": 46773542912.0,
     "flag": "🇿🇦",
-    "text": "$46,7 млрд",
+    "text": "$46,8 млрд",
     "rank": 1
    },
    {
     "iso2": "ZA",
     "name": "Gold Fields",
-    "value": 34682601472.0,
+    "value": 34744963072.0,
     "flag": "🇿🇦",
     "text": "$34,7 млрд",
     "rank": 2
@@ -3886,11 +3886,11 @@
     false
    ],
    [
-    "$46,7 млрд",
+    "$46,8 млрд",
     true
    ]
   ],
-  "hook_text": "№1: AngloGold Ashanti, $46,7 млрд",
+  "hook_text": "№1: AngloGold Ashanti, $46,8 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/mkt_country_cap_za.png"
@@ -3904,7 +3904,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 113,
+  "countries": 105,
   "top": [
    {
     "iso2": "PL",
@@ -4012,7 +4012,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 89,
+  "countries": 86,
   "top": [
    {
     "iso2": "FI",
@@ -4025,7 +4025,7 @@
    {
     "iso2": "FI",
     "name": "Nokia",
-    "value": 43404038144.0,
+    "value": 43375742976.0,
     "flag": "🇫🇮",
     "text": "$43,4 млрд",
     "rank": 2
@@ -4065,9 +4065,9 @@
    {
     "iso2": "FI",
     "name": "Amer Sports",
-    "value": 18536849408.0,
+    "value": 18571759616.0,
     "flag": "🇫🇮",
-    "text": "$18,5 млрд",
+    "text": "$18,6 млрд",
     "rank": 7
    },
    {
@@ -4120,12 +4120,12 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 77,
+  "countries": 65,
   "top": [
    {
     "iso2": "BE",
     "name": "Anheuser-Busch Inbev",
-    "value": 166135398400.0,
+    "value": 166184615936.0,
     "flag": "🇧🇪",
     "text": "$166 млрд",
     "rank": 1
@@ -4228,7 +4228,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 56,
+  "countries": 54,
   "top": [
    {
     "iso2": "TH",
@@ -4444,7 +4444,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 57,
+  "countries": 52,
   "top": [
    {
     "iso2": "AT",
@@ -4552,7 +4552,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 3525,
+  "countries": 3410,
   "top": [
    {
     "iso2": "US",
@@ -4664,7 +4664,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 494,
+  "countries": 488,
   "top": [
    {
     "iso2": "CN",
@@ -4776,7 +4776,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 587,
+  "countries": 576,
   "top": [
    {
     "iso2": "IN",
@@ -4888,7 +4888,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 233,
+  "countries": 224,
   "top": [
    {
     "iso2": "SA",
@@ -5000,7 +5000,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 46,
+  "countries": 45,
   "top": [
    {
     "iso2": "AE",
@@ -5112,7 +5112,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 919,
+  "countries": 895,
   "top": [
    {
     "iso2": "JP",
@@ -5224,7 +5224,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 474,
+  "countries": 455,
   "top": [
    {
     "iso2": "GB",
@@ -5336,7 +5336,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 376,
+  "countries": 362,
   "top": [
    {
     "iso2": "DE",
@@ -5632,7 +5632,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 213,
+  "countries": 202,
   "top": [
    {
     "iso2": "CH",
@@ -5744,7 +5744,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 336,
+  "countries": 312,
   "top": [
    {
     "iso2": "FR",
@@ -5856,7 +5856,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 95,
+  "countries": 92,
   "top": [
    {
     "iso2": "BR",
@@ -5968,7 +5968,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 435,
+  "countries": 423,
   "top": [
    {
     "iso2": "CA",
@@ -6080,12 +6080,12 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 1147,
+  "countries": 1140,
   "top": [
    {
     "iso2": "US",
     "name": "Apple",
-    "value": 5004897812480.0,
+    "value": 5004156993536.0,
     "flag": "🇺🇸",
     "text": "$5 трлн",
     "rank": 1
@@ -6093,7 +6093,7 @@
    {
     "iso2": "US",
     "name": "NVIDIA",
-    "value": 4515003629568.0,
+    "value": 4524396773376.0,
     "flag": "🇺🇸",
     "text": "$4,5 трлн",
     "rank": 2
@@ -6101,7 +6101,7 @@
    {
     "iso2": "US",
     "name": "Microsoft",
-    "value": 3959127015424.0,
+    "value": 3960389500928.0,
     "flag": "🇺🇸",
     "text": "$4 трлн",
     "rank": 3
@@ -6109,7 +6109,7 @@
    {
     "iso2": "US",
     "name": "Alphabet (Google)",
-    "value": 3502068465664.0,
+    "value": 3505572282368.0,
     "flag": "🇺🇸",
     "text": "$3,5 трлн",
     "rank": 4
@@ -6117,7 +6117,7 @@
    {
     "iso2": "US",
     "name": "Amazon",
-    "value": 2844071297024.0,
+    "value": 2841963134976.0,
     "flag": "🇺🇸",
     "text": "$2,8 трлн",
     "rank": 5
@@ -6125,7 +6125,7 @@
    {
     "iso2": "TW",
     "name": "TSMC",
-    "value": 1938315018240.0,
+    "value": 1942101032960.0,
     "flag": "🇹🇼",
     "text": "$1,9 трлн",
     "rank": 6
@@ -6133,7 +6133,7 @@
    {
     "iso2": "US",
     "name": "SpaceX",
-    "value": 1803429478400.0,
+    "value": 1800440381440.0,
     "flag": "🇺🇸",
     "text": "$1,8 трлн",
     "rank": 7
@@ -6141,7 +6141,7 @@
    {
     "iso2": "US",
     "name": "Meta Platforms (Facebook)",
-    "value": 1578614259712.0,
+    "value": 1579764809728.0,
     "flag": "🇺🇸",
     "text": "$1,6 трлн",
     "rank": 8
@@ -6149,7 +6149,7 @@
    {
     "iso2": "US",
     "name": "Tesla",
-    "value": 1421708230656.0,
+    "value": 1420542214144.0,
     "flag": "🇺🇸",
     "text": "$1,4 трлн",
     "rank": 9
@@ -6157,7 +6157,7 @@
    {
     "iso2": "US",
     "name": "Broadcom",
-    "value": 1388839960576.0,
+    "value": 1393136107520.0,
     "flag": "🇺🇸",
     "text": "$1,4 трлн",
     "rank": 10
@@ -6166,7 +6166,7 @@
   "cis": [
    {
     "name": "Kaspi.kz (Казахстан)",
-    "rank": 173,
+    "rank": 172,
     "in_top10": false,
     "iso": "KZ"
    }
@@ -6200,9 +6200,9 @@
    {
     "iso2": "US",
     "name": "JPMorgan Chase",
-    "value": 895059951616.0,
+    "value": 895551275008.0,
     "flag": "🇺🇸",
-    "text": "$895 млрд",
+    "text": "$896 млрд",
     "rank": 1
    },
    {
@@ -6232,7 +6232,7 @@
    {
     "iso2": "US",
     "name": "Bank of America",
-    "value": 344561942528.0,
+    "value": 344527437824.0,
     "flag": "🇺🇸",
     "text": "$345 млрд",
     "rank": 5
@@ -6248,7 +6248,7 @@
    {
     "iso2": "GB",
     "name": "HSBC",
-    "value": 297827893248.0,
+    "value": 298118578176.0,
     "flag": "🇬🇧",
     "text": "$298 млрд",
     "rank": 7
@@ -6256,7 +6256,7 @@
    {
     "iso2": "US",
     "name": "Morgan Stanley",
-    "value": 286739300352.0,
+    "value": 286684512256.0,
     "flag": "🇺🇸",
     "text": "$287 млрд",
     "rank": 8
@@ -6264,7 +6264,7 @@
    {
     "iso2": "CA",
     "name": "Royal Bank Of Canada",
-    "value": 280845451264.0,
+    "value": 280942346240.0,
     "flag": "🇨🇦",
     "text": "$281 млрд",
     "rank": 9
@@ -6272,9 +6272,9 @@
    {
     "iso2": "US",
     "name": "Wells Fargo",
-    "value": 252455616512.0,
+    "value": 252515663872.0,
     "flag": "🇺🇸",
-    "text": "$252 млрд",
+    "text": "$253 млрд",
     "rank": 10
    }
   ],
@@ -6298,11 +6298,11 @@
     false
    ],
    [
-    "$895 млрд",
+    "$896 млрд",
     true
    ]
   ],
-  "hook_text": "№1: JPMorgan Chase, $895 млрд",
+  "hook_text": "№1: JPMorgan Chase, $896 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/mkt_sector_banks.png"
@@ -6329,15 +6329,15 @@
    {
     "iso2": "US",
     "name": "Exxon Mobil",
-    "value": 677538496512.0,
+    "value": 677395693568.0,
     "flag": "🇺🇸",
-    "text": "$678 млрд",
+    "text": "$677 млрд",
     "rank": 2
    },
    {
     "iso2": "US",
     "name": "Chevron",
-    "value": 417065304064.0,
+    "value": 416879935488.0,
     "flag": "🇺🇸",
     "text": "$417 млрд",
     "rank": 3
@@ -6345,7 +6345,7 @@
    {
     "iso2": "GB",
     "name": "Shell",
-    "value": 281302794240.0,
+    "value": 281175293952.0,
     "flag": "🇬🇧",
     "text": "$281 млрд",
     "rank": 4
@@ -6361,7 +6361,7 @@
    {
     "iso2": "FR",
     "name": "TotalEnergies",
-    "value": 194106900480.0,
+    "value": 193887338496.0,
     "flag": "🇫🇷",
     "text": "$194 млрд",
     "rank": 6
@@ -6369,7 +6369,7 @@
    {
     "iso2": "US",
     "name": "ConocoPhillips",
-    "value": 164367007744.0,
+    "value": 164187029504.0,
     "flag": "🇺🇸",
     "text": "$164 млрд",
     "rank": 7
@@ -6385,7 +6385,7 @@
    {
     "iso2": "BR",
     "name": "Petrobras",
-    "value": 119735689216.0,
+    "value": 119832985600.0,
     "flag": "🇧🇷",
     "text": "$120 млрд",
     "rank": 9
@@ -6393,7 +6393,7 @@
    {
     "iso2": "GB",
     "name": "BP",
-    "value": 114912722944.0,
+    "value": 114848325632.0,
     "flag": "🇬🇧",
     "text": "$115 млрд",
     "rank": 10
@@ -6436,7 +6436,7 @@
    {
     "iso2": "US",
     "name": "NVIDIA",
-    "value": 4514281684992.0,
+    "value": 4522607378432.0,
     "flag": "🇺🇸",
     "text": "$4,5 трлн",
     "rank": 1
@@ -6444,7 +6444,7 @@
    {
     "iso2": "TW",
     "name": "TSMC",
-    "value": 1938055626752.0,
+    "value": 1941556559872.0,
     "flag": "🇹🇼",
     "text": "$1,9 трлн",
     "rank": 2
@@ -6452,7 +6452,7 @@
    {
     "iso2": "US",
     "name": "Broadcom",
-    "value": 1388696698880.0,
+    "value": 1392739483648.0,
     "flag": "🇺🇸",
     "text": "$1,4 трлн",
     "rank": 3
@@ -6468,17 +6468,17 @@
    {
     "iso2": "US",
     "name": "Micron Technology",
-    "value": 776111194112.0,
+    "value": 779844583424.0,
     "flag": "🇺🇸",
-    "text": "$776 млрд",
+    "text": "$780 млрд",
     "rank": 5
    },
    {
     "iso2": "US",
     "name": "AMD",
-    "value": 721783554048.0,
+    "value": 723893551104.0,
     "flag": "🇺🇸",
-    "text": "$722 млрд",
+    "text": "$724 млрд",
     "rank": 6
    },
    {
@@ -6492,9 +6492,9 @@
    {
     "iso2": "NL",
     "name": "ASML",
-    "value": 547150561280.0,
+    "value": 547574513664.0,
     "flag": "🇳🇱",
-    "text": "$547 млрд",
+    "text": "$548 млрд",
     "rank": 8
    },
    {
@@ -6508,9 +6508,9 @@
    {
     "iso2": "US",
     "name": "Intel",
-    "value": 299107450880.0,
+    "value": 300232114176.0,
     "flag": "🇺🇸",
-    "text": "$299 млрд",
+    "text": "$300 млрд",
     "rank": 10
    }
   ],
@@ -6544,7 +6544,7 @@
    {
     "iso2": "US",
     "name": "Eli Lilly",
-    "value": 1219661529088.0,
+    "value": 1217929019392.0,
     "flag": "🇺🇸",
     "text": "$1,2 трлн",
     "rank": 1
@@ -6560,9 +6560,9 @@
    {
     "iso2": "US",
     "name": "AbbVie",
-    "value": 514791702528.0,
+    "value": 514075820032.0,
     "flag": "🇺🇸",
-    "text": "$515 млрд",
+    "text": "$514 млрд",
     "rank": 3
    },
    {
@@ -6576,23 +6576,23 @@
    {
     "iso2": "US",
     "name": "Merck",
-    "value": 362662297600.0,
+    "value": 362415751168.0,
     "flag": "🇺🇸",
-    "text": "$363 млрд",
+    "text": "$362 млрд",
     "rank": 5
    },
    {
     "iso2": "CH",
     "name": "Novartis",
-    "value": 307685097472.0,
+    "value": 307458473984.0,
     "flag": "🇨🇭",
-    "text": "$308 млрд",
+    "text": "$307 млрд",
     "rank": 6
    },
    {
     "iso2": "GB",
     "name": "AstraZeneca",
-    "value": 290099134464.0,
+    "value": 289944043520.0,
     "flag": "🇬🇧",
     "text": "$290 млрд",
     "rank": 7
@@ -6600,7 +6600,7 @@
    {
     "iso2": "US",
     "name": "Amgen",
-    "value": 249484607488.0,
+    "value": 249475842048.0,
     "flag": "🇺🇸",
     "text": "$249 млрд",
     "rank": 8
@@ -6608,7 +6608,7 @@
    {
     "iso2": "US",
     "name": "Gilead Sciences",
-    "value": 208947445760.0,
+    "value": 208717971456.0,
     "flag": "🇺🇸",
     "text": "$209 млрд",
     "rank": 9
@@ -6616,7 +6616,7 @@
    {
     "iso2": "DK",
     "name": "Novo Nordisk",
-    "value": 178398052352.0,
+    "value": 178430246912.0,
     "flag": "🇩🇰",
     "text": "$178 млрд",
     "rank": 10
@@ -6652,7 +6652,7 @@
    {
     "iso2": "US",
     "name": "Tesla",
-    "value": 1421056409600.0,
+    "value": 1420502630400.0,
     "flag": "🇺🇸",
     "text": "$1,4 трлн",
     "rank": 1
@@ -6660,7 +6660,7 @@
    {
     "iso2": "JP",
     "name": "Toyota",
-    "value": 254092132352.0,
+    "value": 254080352256.0,
     "flag": "🇯🇵",
     "text": "$254 млрд",
     "rank": 2
@@ -6684,7 +6684,7 @@
    {
     "iso2": "US",
     "name": "General Motors",
-    "value": 74461544448.0,
+    "value": 74482769920.0,
     "flag": "🇺🇸",
     "text": "$74,5 млрд",
     "rank": 5
@@ -6692,7 +6692,7 @@
    {
     "iso2": "IT",
     "name": "Ferrari",
-    "value": 73309986816.0,
+    "value": 73295970304.0,
     "flag": "🇮🇹",
     "text": "$73,3 млрд",
     "rank": 6
@@ -6708,9 +6708,9 @@
    {
     "iso2": "US",
     "name": "Ford",
-    "value": 50134847488.0,
+    "value": 50174775296.0,
     "flag": "🇺🇸",
-    "text": "$50,1 млрд",
+    "text": "$50,2 млрд",
     "rank": 8
    },
    {
@@ -6724,7 +6724,7 @@
    {
     "iso2": "JP",
     "name": "Honda",
-    "value": 46654173184.0,
+    "value": 46690246656.0,
     "flag": "🇯🇵",
     "text": "$46,7 млрд",
     "rank": 10
@@ -6760,23 +6760,23 @@
    {
     "iso2": "US",
     "name": "Delta Air Lines",
-    "value": 57139691520.0,
+    "value": 57212059648.0,
     "flag": "🇺🇸",
-    "text": "$57,1 млрд",
+    "text": "$57,2 млрд",
     "rank": 1
    },
    {
     "iso2": "US",
     "name": "United Airlines Holdings",
-    "value": 36404416512.0,
+    "value": 36466143232.0,
     "flag": "🇺🇸",
-    "text": "$36,4 млрд",
+    "text": "$36,5 млрд",
     "rank": 2
    },
    {
     "iso2": "IE",
     "name": "Ryanair",
-    "value": 30686990336.0,
+    "value": 30692169728.0,
     "flag": "🇮🇪",
     "text": "$30,7 млрд",
     "rank": 3
@@ -6800,7 +6800,7 @@
    {
     "iso2": "US",
     "name": "Southwest Airlines",
-    "value": 21754775552.0,
+    "value": 21784145920.0,
     "flag": "🇺🇸",
     "text": "$21,8 млрд",
     "rank": 6
@@ -6832,7 +6832,7 @@
    {
     "iso2": "CL",
     "name": "LATAM Airlines",
-    "value": 13601371136.0,
+    "value": 13599944704.0,
     "flag": "🇨🇱",
     "text": "$13,6 млрд",
     "rank": 10
@@ -6852,11 +6852,11 @@
     false
    ],
    [
-    "$57,1 млрд",
+    "$57,2 млрд",
     true
    ]
   ],
-  "hook_text": "№1: Delta Air Lines, $57,1 млрд",
+  "hook_text": "№1: Delta Air Lines, $57,2 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/mkt_sector_airlines.png"
@@ -6875,7 +6875,7 @@
    {
     "iso2": "US",
     "name": "UnitedHealth",
-    "value": 353718370304.0,
+    "value": 354087075840.0,
     "flag": "🇺🇸",
     "text": "$354 млрд",
     "rank": 1
@@ -6907,7 +6907,7 @@
    {
     "iso2": "CH",
     "name": "Chubb",
-    "value": 139829542912.0,
+    "value": 139936514048.0,
     "flag": "🇨🇭",
     "text": "$140 млрд",
     "rank": 5
@@ -6915,7 +6915,7 @@
    {
     "iso2": "US",
     "name": "Progressive",
-    "value": 133114249216.0,
+    "value": 133215641600.0,
     "flag": "🇺🇸",
     "text": "$133 млрд",
     "rank": 6
@@ -6978,7 +6978,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 372,
+  "countries": 371,
   "top": [
    {
     "iso2": "CH",
@@ -6991,7 +6991,7 @@
    {
     "iso2": "US",
     "name": "McDonald",
-    "value": 196618207232.0,
+    "value": 196848173056.0,
     "flag": "🇺🇸",
     "text": "$197 млрд",
     "rank": 2
@@ -7007,7 +7007,7 @@
    {
     "iso2": "US",
     "name": "Mondelez International",
-    "value": 84089643008.0,
+    "value": 84114956288.0,
     "flag": "🇺🇸",
     "text": "$84,1 млрд",
     "rank": 4
@@ -7015,7 +7015,7 @@
    {
     "iso2": "US",
     "name": "DoorDash",
-    "value": 78004879360.0,
+    "value": 77998342144.0,
     "flag": "🇺🇸",
     "text": "$78 млрд",
     "rank": 5
@@ -7047,15 +7047,15 @@
    {
     "iso2": "US",
     "name": "Chipotle Mexican Grill",
-    "value": 43869331456.0,
+    "value": 43964207104.0,
     "flag": "🇺🇸",
-    "text": "$43,9 млрд",
+    "text": "$44 млрд",
     "rank": 9
    },
    {
     "iso2": "US",
     "name": "Yum! Brands",
-    "value": 43865833472.0,
+    "value": 43860451328.0,
     "flag": "🇺🇸",
     "text": "$43,9 млрд",
     "rank": 10
@@ -7086,12 +7086,12 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 381,
+  "countries": 380,
   "top": [
    {
     "iso2": "US",
     "name": "Amazon",
-    "value": 2843855290368.0,
+    "value": 2840665260032.0,
     "flag": "🇺🇸",
     "text": "$2,8 трлн",
     "rank": 1
@@ -7099,7 +7099,7 @@
    {
     "iso2": "US",
     "name": "Walmart",
-    "value": 1000921432064.0,
+    "value": 1001119744000.0,
     "flag": "🇺🇸",
     "text": "$1 трлн",
     "rank": 2
@@ -7107,7 +7107,7 @@
    {
     "iso2": "US",
     "name": "Costco",
-    "value": 470093758464.0,
+    "value": 470315302912.0,
     "flag": "🇺🇸",
     "text": "$470 млрд",
     "rank": 3
@@ -7115,7 +7115,7 @@
    {
     "iso2": "US",
     "name": "Home Depot",
-    "value": 343364861952.0,
+    "value": 343494557696.0,
     "flag": "🇺🇸",
     "text": "$343 млрд",
     "rank": 4
@@ -7123,7 +7123,7 @@
    {
     "iso2": "CN",
     "name": "Alibaba",
-    "value": 271984918528.0,
+    "value": 271835889664.0,
     "flag": "🇨🇳",
     "text": "$272 млрд",
     "rank": 5
@@ -7147,7 +7147,7 @@
    {
     "iso2": "US",
     "name": "TJX Companies",
-    "value": 150635954176.0,
+    "value": 150597451776.0,
     "flag": "🇺🇸",
     "text": "$151 млрд",
     "rank": 8
@@ -7155,15 +7155,15 @@
    {
     "iso2": "US",
     "name": "Lowe's Companies",
-    "value": 126478401536.0,
+    "value": 126601838592.0,
     "flag": "🇺🇸",
-    "text": "$126 млрд",
+    "text": "$127 млрд",
     "rank": 9
    },
    {
     "iso2": "US",
     "name": "CVS Health",
-    "value": 107130380288.0,
+    "value": 107117576192.0,
     "flag": "🇺🇸",
     "text": "$107 млрд",
     "rank": 10
@@ -7194,7 +7194,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 209,
+  "countries": 203,
   "top": [
    {
     "iso2": "CN",
@@ -7207,7 +7207,7 @@
    {
     "iso2": "US",
     "name": "Verizon",
-    "value": 190257774592.0,
+    "value": 190092001280.0,
     "flag": "🇺🇸",
     "text": "$190 млрд",
     "rank": 2
@@ -7215,7 +7215,7 @@
    {
     "iso2": "US",
     "name": "T-Mobile US",
-    "value": 169801498624.0,
+    "value": 169727148032.0,
     "flag": "🇺🇸",
     "text": "$170 млрд",
     "rank": 3
@@ -7223,7 +7223,7 @@
    {
     "iso2": "US",
     "name": "AT&T",
-    "value": 146282528768.0,
+    "value": 146147786752.0,
     "flag": "🇺🇸",
     "text": "$146 млрд",
     "rank": 4
@@ -7254,19 +7254,11 @@
    },
    {
     "iso2": "US",
-    "name": "American Tower",
-    "value": 89666363392.0,
-    "flag": "🇺🇸",
-    "text": "$89,7 млрд",
-    "rank": 8
-   },
-   {
-    "iso2": "US",
     "name": "Comcast",
-    "value": 87443529728.0,
+    "value": 87425777664.0,
     "flag": "🇺🇸",
     "text": "$87,4 млрд",
-    "rank": 9
+    "rank": 8
    },
    {
     "iso2": "JP",
@@ -7274,13 +7266,21 @@
     "value": 81861333231.0,
     "flag": "🇯🇵",
     "text": "$81,9 млрд",
+    "rank": 9
+   },
+   {
+    "iso2": "MX",
+    "name": "America Movil",
+    "value": 76790276096.0,
+    "flag": "🇲🇽",
+    "text": "$76,8 млрд",
     "rank": 10
    }
   ],
   "cis": [
    {
     "name": "Mobile TeleSystems (Россия)",
-    "rank": 93,
+    "rank": 90,
     "in_top10": false,
     "iso": "RU"
    }
@@ -7314,7 +7314,7 @@
    {
     "iso2": "AU",
     "name": "BHP Group",
-    "value": 204156846080.0,
+    "value": 204182241280.0,
     "flag": "🇦🇺",
     "text": "$204 млрд",
     "rank": 1
@@ -7330,7 +7330,7 @@
    {
     "iso2": "US",
     "name": "Southern Copper",
-    "value": 142999158784.0,
+    "value": 143319154688.0,
     "flag": "🇺🇸",
     "text": "$143 млрд",
     "rank": 3
@@ -7338,7 +7338,7 @@
    {
     "iso2": "GB",
     "name": "Rio Tinto",
-    "value": 136853479424.0,
+    "value": 136796561408.0,
     "flag": "🇬🇧",
     "text": "$137 млрд",
     "rank": 4
@@ -7346,9 +7346,9 @@
    {
     "iso2": "US",
     "name": "Newmont",
-    "value": 126334722048.0,
+    "value": 126552948736.0,
     "flag": "🇺🇸",
-    "text": "$126 млрд",
+    "text": "$127 млрд",
     "rank": 5
    },
    {
@@ -7362,9 +7362,9 @@
    {
     "iso2": "CA",
     "name": "Agnico Eagle Mines",
-    "value": 96149889024.0,
+    "value": 96399728640.0,
     "flag": "🇨🇦",
-    "text": "$96,1 млрд",
+    "text": "$96,4 млрд",
     "rank": 7
    },
    {
@@ -7378,9 +7378,9 @@
    {
     "iso2": "US",
     "name": "Freeport-McMoRan",
-    "value": 86448259072.0,
+    "value": 86577496064.0,
     "flag": "🇺🇸",
-    "text": "$86,4 млрд",
+    "text": "$86,6 млрд",
     "rank": 9
    },
    {
@@ -7430,12 +7430,12 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 84,
+  "countries": 83,
   "top": [
    {
     "iso2": "US",
     "name": "Apple",
-    "value": 5005101760512.0,
+    "value": 5006140899328.0,
     "flag": "🇺🇸",
     "text": "$5 трлн",
     "rank": 1
@@ -7443,7 +7443,7 @@
    {
     "iso2": "US",
     "name": "NVIDIA",
-    "value": 4514281684992.0,
+    "value": 4524181815296.0,
     "flag": "🇺🇸",
     "text": "$4,5 трлн",
     "rank": 2
@@ -7451,7 +7451,7 @@
    {
     "iso2": "US",
     "name": "Microsoft",
-    "value": 3958458548224.0,
+    "value": 3959721295872.0,
     "flag": "🇺🇸",
     "text": "$4 трлн",
     "rank": 3
@@ -7459,7 +7459,7 @@
    {
     "iso2": "US",
     "name": "Alphabet (Google)",
-    "value": 3501576945664.0,
+    "value": 3504773267456.0,
     "flag": "🇺🇸",
     "text": "$3,5 трлн",
     "rank": 4
@@ -7467,7 +7467,7 @@
    {
     "iso2": "US",
     "name": "SpaceX",
-    "value": 1801256566784.0,
+    "value": 1797908856832.0,
     "flag": "🇺🇸",
     "text": "$1,8 трлн",
     "rank": 5
@@ -7475,7 +7475,7 @@
    {
     "iso2": "US",
     "name": "Meta Platforms (Facebook)",
-    "value": 1578358538240.0,
+    "value": 1579237638144.0,
     "flag": "🇺🇸",
     "text": "$1,6 трлн",
     "rank": 6
@@ -7483,7 +7483,7 @@
    {
     "iso2": "US",
     "name": "Tesla",
-    "value": 1421214089216.0,
+    "value": 1420443385856.0,
     "flag": "🇺🇸",
     "text": "$1,4 трлн",
     "rank": 7
@@ -7491,7 +7491,7 @@
    {
     "iso2": "US",
     "name": "Palantir",
-    "value": 385917157376.0,
+    "value": 386073788416.0,
     "flag": "🇺🇸",
     "text": "$386 млрд",
     "rank": 8
@@ -7499,15 +7499,15 @@
    {
     "iso2": "US",
     "name": "Oracle",
-    "value": 356385193984.0,
+    "value": 358006718464.0,
     "flag": "🇺🇸",
-    "text": "$356 млрд",
+    "text": "$358 млрд",
     "rank": 9
    },
    {
     "iso2": "CN",
     "name": "Alibaba",
-    "value": 271984918528.0,
+    "value": 271835889664.0,
     "flag": "🇨🇳",
     "text": "$272 млрд",
     "rank": 10
@@ -7543,7 +7543,7 @@
    {
     "iso2": "US",
     "name": "Coca-Cola",
-    "value": 413886021632.0,
+    "value": 413767729152.0,
     "flag": "🇺🇸",
     "text": "$414 млрд",
     "rank": 1
@@ -7559,7 +7559,7 @@
    {
     "iso2": "US",
     "name": "Pepsico",
-    "value": 192759726080.0,
+    "value": 192848314368.0,
     "flag": "🇺🇸",
     "text": "$193 млрд",
     "rank": 3
@@ -7567,7 +7567,7 @@
    {
     "iso2": "BE",
     "name": "Anheuser-Busch Inbev",
-    "value": 166135398400.0,
+    "value": 166155091968.0,
     "flag": "🇧🇪",
     "text": "$166 млрд",
     "rank": 4
@@ -7575,7 +7575,7 @@
    {
     "iso2": "US",
     "name": "Starbucks",
-    "value": 120594079744.0,
+    "value": 120782192640.0,
     "flag": "🇺🇸",
     "text": "$121 млрд",
     "rank": 5
@@ -7583,9 +7583,9 @@
    {
     "iso2": "US",
     "name": "Monster Beverage",
-    "value": 90880409600.0,
+    "value": 90811842560.0,
     "flag": "🇺🇸",
-    "text": "$90,9 млрд",
+    "text": "$90,8 млрд",
     "rank": 6
    },
    {
@@ -7599,7 +7599,7 @@
    {
     "iso2": "GB",
     "name": "Diageo",
-    "value": 55798321152.0,
+    "value": 55809441792.0,
     "flag": "🇬🇧",
     "text": "$55,8 млрд",
     "rank": 8
@@ -7615,7 +7615,7 @@
    {
     "iso2": "GB",
     "name": "Coca-Cola European Partners",
-    "value": 51305529344.0,
+    "value": 51320893440.0,
     "flag": "🇬🇧",
     "text": "$51,3 млрд",
     "rank": 10
@@ -7651,7 +7651,7 @@
    {
     "iso2": "US",
     "name": "Microsoft",
-    "value": 3958310174720.0,
+    "value": 3960315052032.0,
     "flag": "🇺🇸",
     "text": "$4 трлн",
     "rank": 1
@@ -7659,7 +7659,7 @@
    {
     "iso2": "CN",
     "name": "Tencent",
-    "value": 484530120000.0,
+    "value": 485072100000.0,
     "flag": "🇨🇳",
     "text": "$485 млрд",
     "rank": 2
@@ -7667,7 +7667,7 @@
    {
     "iso2": "JP",
     "name": "Sony",
-    "value": 157588242432.0,
+    "value": 157734240256.0,
     "flag": "🇯🇵",
     "text": "$158 млрд",
     "rank": 3
@@ -7675,9 +7675,9 @@
    {
     "iso2": "CN",
     "name": "NetEase",
-    "value": 83110166528.0,
+    "value": 83225411584.0,
     "flag": "🇨🇳",
-    "text": "$83,1 млрд",
+    "text": "$83,2 млрд",
     "rank": 4
    },
    {
@@ -7691,7 +7691,7 @@
    {
     "iso2": "SG",
     "name": "Sea",
-    "value": 46362017792.0,
+    "value": 46392643584.0,
     "flag": "🇸🇬",
     "text": "$46,4 млрд",
     "rank": 6
@@ -7699,17 +7699,17 @@
    {
     "iso2": "US",
     "name": "Take-Two Interactive",
-    "value": 40340094976.0,
+    "value": 40414887936.0,
     "flag": "🇺🇸",
-    "text": "$40,3 млрд",
+    "text": "$40,4 млрд",
     "rank": 7
    },
    {
     "iso2": "US",
     "name": "Roblox",
-    "value": 34615476224.0,
+    "value": 34661998592.0,
     "flag": "🇺🇸",
-    "text": "$34,6 млрд",
+    "text": "$34,7 млрд",
     "rank": 8
    },
    {
@@ -7754,7 +7754,7 @@
   "source": "CompaniesMarketCap",
   "source_full": "companiesmarketcap.com",
   "note": "на 6 ноября 2026",
-  "countries": 63,
+  "countries": 62,
   "top": [
    {
     "iso2": "US",
@@ -7866,28 +7866,28 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 574,
+  "countries": 2813,
   "top": [
    {
     "iso2": "US",
     "name": "Elon Musk",
-    "value": 837718943000.0,
+    "value": 839008657000.0,
     "flag": "🇺🇸",
-    "text": "$838 млрд",
+    "text": "$839 млрд",
     "rank": 1
    },
    {
     "iso2": "US",
     "name": "Jeff Bezos",
-    "value": 380362316000.0,
+    "value": 380671859000.0,
     "flag": "🇺🇸",
-    "text": "$380 млрд",
+    "text": "$381 млрд",
     "rank": 2
    },
    {
     "iso2": "US",
     "name": "Larry Page",
-    "value": 237250559000.0,
+    "value": 237389647000.0,
     "flag": "🇺🇸",
     "text": "$237 млрд",
     "rank": 3
@@ -7895,15 +7895,15 @@
    {
     "iso2": "US",
     "name": "Sergey Brin",
-    "value": 218420855000.0,
+    "value": 218548584000.0,
     "flag": "🇺🇸",
-    "text": "$218 млрд",
+    "text": "$219 млрд",
     "rank": 4
    },
    {
     "iso2": "US",
     "name": "Mark Zuckerberg",
-    "value": 212112189000.0,
+    "value": 212311833000.0,
     "flag": "🇺🇸",
     "text": "$212 млрд",
     "rank": 5
@@ -7911,7 +7911,7 @@
    {
     "iso2": "US",
     "name": "Michael Dell",
-    "value": 193587157000.0,
+    "value": 193670213000.0,
     "flag": "🇺🇸",
     "text": "$194 млрд",
     "rank": 6
@@ -7919,9 +7919,9 @@
    {
     "iso2": "US",
     "name": "Steve Ballmer",
-    "value": 164411696000.0,
+    "value": 164507767000.0,
     "flag": "🇺🇸",
-    "text": "$164 млрд",
+    "text": "$165 млрд",
     "rank": 7
    },
    {
@@ -7935,7 +7935,7 @@
    {
     "iso2": "US",
     "name": "Jensen Huang",
-    "value": 161556938000.0,
+    "value": 161855057000.0,
     "flag": "🇺🇸",
     "text": "$162 млрд",
     "rank": 9
@@ -7943,7 +7943,7 @@
    {
     "iso2": "US",
     "name": "Larry Ellison",
-    "value": 152153368000.0,
+    "value": 152337248000.0,
     "flag": "🇺🇸",
     "text": "$152 млрд",
     "rank": 10
@@ -7952,7 +7952,7 @@
   "cis": [
    {
     "name": "Alexey Mordashov с семьёй (Россия)",
-    "rank": 59,
+    "rank": 60,
     "in_top10": false,
     "iso": "RU"
    },
@@ -7969,11 +7969,11 @@
     false
    ],
    [
-    "$838 млрд",
+    "$839 млрд",
     true
    ]
   ],
-  "hook_text": "№1 в мире: Elon Musk, $838 млрд",
+  "hook_text": "№1 в мире: Elon Musk, $839 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_world.png"
@@ -7987,28 +7987,28 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 242,
+  "countries": 862,
   "top": [
    {
     "iso2": "US",
     "name": "Elon Musk",
-    "value": 837718943000.0,
+    "value": 839008657000.0,
     "flag": "🇺🇸",
-    "text": "$838 млрд",
+    "text": "$839 млрд",
     "rank": 1
    },
    {
     "iso2": "US",
     "name": "Jeff Bezos",
-    "value": 380362316000.0,
+    "value": 380671859000.0,
     "flag": "🇺🇸",
-    "text": "$380 млрд",
+    "text": "$381 млрд",
     "rank": 2
    },
    {
     "iso2": "US",
     "name": "Larry Page",
-    "value": 237250559000.0,
+    "value": 237389647000.0,
     "flag": "🇺🇸",
     "text": "$237 млрд",
     "rank": 3
@@ -8016,15 +8016,15 @@
    {
     "iso2": "US",
     "name": "Sergey Brin",
-    "value": 218420855000.0,
+    "value": 218548584000.0,
     "flag": "🇺🇸",
-    "text": "$218 млрд",
+    "text": "$219 млрд",
     "rank": 4
    },
    {
     "iso2": "US",
     "name": "Mark Zuckerberg",
-    "value": 212112189000.0,
+    "value": 212311833000.0,
     "flag": "🇺🇸",
     "text": "$212 млрд",
     "rank": 5
@@ -8032,7 +8032,7 @@
    {
     "iso2": "US",
     "name": "Michael Dell",
-    "value": 193587157000.0,
+    "value": 193670213000.0,
     "flag": "🇺🇸",
     "text": "$194 млрд",
     "rank": 6
@@ -8040,9 +8040,9 @@
    {
     "iso2": "US",
     "name": "Steve Ballmer",
-    "value": 164411696000.0,
+    "value": 164507767000.0,
     "flag": "🇺🇸",
-    "text": "$164 млрд",
+    "text": "$165 млрд",
     "rank": 7
    },
    {
@@ -8056,7 +8056,7 @@
    {
     "iso2": "US",
     "name": "Jensen Huang",
-    "value": 161556938000.0,
+    "value": 161855057000.0,
     "flag": "🇺🇸",
     "text": "$162 млрд",
     "rank": 9
@@ -8064,7 +8064,7 @@
    {
     "iso2": "US",
     "name": "Larry Ellison",
-    "value": 152153368000.0,
+    "value": 152337248000.0,
     "flag": "🇺🇸",
     "text": "$152 млрд",
     "rank": 10
@@ -8077,11 +8077,11 @@
     false
    ],
    [
-    "$838 млрд",
+    "$839 млрд",
     true
    ]
   ],
-  "hook_text": "№1: Elon Musk, $838 млрд",
+  "hook_text": "№1: Elon Musk, $839 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_country_us.png"
@@ -8095,7 +8095,7 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 53,
+  "countries": 405,
   "top": [
    {
     "iso2": "CN",
@@ -8132,7 +8132,7 @@
    {
     "iso2": "CN",
     "name": "William Ding",
-    "value": 43349584000.0,
+    "value": 43323475000.0,
     "flag": "🇨🇳",
     "text": "$43,3 млрд",
     "rank": 5
@@ -8148,15 +8148,15 @@
    {
     "iso2": "CN",
     "name": "Colin Huang",
-    "value": 29438979000.0,
+    "value": 29456601000.0,
     "flag": "🇨🇳",
-    "text": "$29,4 млрд",
+    "text": "$29,5 млрд",
     "rank": 7
    },
    {
     "iso2": "CN",
     "name": "Jack Ma",
-    "value": 26066901000.0,
+    "value": 26059138000.0,
     "flag": "🇨🇳",
     "text": "$26,1 млрд",
     "rank": 8
@@ -8164,7 +8164,7 @@
    {
     "iso2": "CN",
     "name": "Lei Jun",
-    "value": 24400982000.0,
+    "value": 24400369000.0,
     "flag": "🇨🇳",
     "text": "$24,4 млрд",
     "rank": 9
@@ -8203,7 +8203,7 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 25,
+  "countries": 196,
   "top": [
    {
     "iso2": "IN",
@@ -8311,7 +8311,7 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 26,
+  "countries": 123,
   "top": [
    {
     "iso2": "RU",
@@ -8380,7 +8380,7 @@
    {
     "iso2": "RU",
     "name": "Mikhail Fridman",
-    "value": 16853038000.0,
+    "value": 16858161000.0,
     "flag": "🇷🇺",
     "text": "$16,9 млрд",
     "rank": 9
@@ -8419,7 +8419,7 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 22,
+  "countries": 179,
   "top": [
    {
     "iso2": "DE",
@@ -8432,7 +8432,7 @@
    {
     "iso2": "DE",
     "name": "Andreas von Bechtolsheim с семьёй",
-    "value": 34302692000.000004,
+    "value": 34346641000.000004,
     "flag": "🇩🇪",
     "text": "$34,3 млрд",
     "rank": 2
@@ -8527,12 +8527,12 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 19,
+  "countries": 52,
   "top": [
    {
     "iso2": "FR",
     "name": "Bernard Arnault с семьёй",
-    "value": 124189542000.0,
+    "value": 124188921000.0,
     "flag": "🇫🇷",
     "text": "$124 млрд",
     "rank": 1
@@ -8580,7 +8580,7 @@
    {
     "iso2": "FR",
     "name": "Xavier Niel с семьёй",
-    "value": 14397286000.0,
+    "value": 14409184000.0,
     "flag": "🇫🇷",
     "text": "$14,4 млрд",
     "rank": 7
@@ -8635,7 +8635,7 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 14,
+  "countries": 49,
   "top": [
    {
     "iso2": "GB",
@@ -8735,6 +8735,150 @@
   "card": "cards_markets/bil_country_gb.png"
  },
  {
+  "id": "bil_country_ae",
+  "block": "billionaires",
+  "title": "Самые богатые люди ОАЭ",
+  "unit": "usd",
+  "year": 2026,
+  "source": "Forbes",
+  "source_full": "Forbes Real-Time Billionaires",
+  "note": "на 6 ноября 2026",
+  "countries": 4,
+  "top": [
+   {
+    "iso2": "AE",
+    "name": "Pavel Durov",
+    "value": 6620000000.0,
+    "flag": "🇦🇪",
+    "text": "$6,6 млрд",
+    "rank": 1
+   },
+   {
+    "iso2": "AE",
+    "name": "Abdulla bin Ahmad Al Ghurair с семьёй",
+    "value": 5175907000.0,
+    "flag": "🇦🇪",
+    "text": "$5,2 млрд",
+    "rank": 2
+   },
+   {
+    "iso2": "AE",
+    "name": "Abdulla Al Futtaim с семьёй",
+    "value": 4647114000.0,
+    "flag": "🇦🇪",
+    "text": "$4,6 млрд",
+    "rank": 3
+   },
+   {
+    "iso2": "AE",
+    "name": "Mohamed Alabbar",
+    "value": 3360376000.0,
+    "flag": "🇦🇪",
+    "text": "$3,4 млрд",
+    "rank": 4
+   }
+  ],
+  "cis": [],
+  "hook": [
+   [
+    "№1: Pavel Durov,",
+    false
+   ],
+   [
+    "$6,6 млрд",
+    true
+   ]
+  ],
+  "hook_text": "№1: Pavel Durov, $6,6 млрд",
+  "type": "bars",
+  "period": "ноябрь 2026",
+  "card": "cards_markets/bil_country_ae.png"
+ },
+ {
+  "id": "bil_country_kz",
+  "block": "billionaires",
+  "title": "Самые богатые люди Казахстана",
+  "unit": "usd",
+  "year": 2026,
+  "source": "Forbes",
+  "source_full": "Forbes Real-Time Billionaires",
+  "note": "на 6 ноября 2026",
+  "countries": 7,
+  "top": [
+   {
+    "iso2": "KZ",
+    "name": "Vyacheslav Kim",
+    "value": 7814218000.0,
+    "flag": "🇰🇿",
+    "text": "$7,8 млрд",
+    "rank": 1
+   },
+   {
+    "iso2": "KZ",
+    "name": "Timur Turlov",
+    "value": 7718078000.0,
+    "flag": "🇰🇿",
+    "text": "$7,7 млрд",
+    "rank": 2
+   },
+   {
+    "iso2": "KZ",
+    "name": "Vladimir Kim",
+    "value": 5947000000.0,
+    "flag": "🇰🇿",
+    "text": "$5,9 млрд",
+    "rank": 3
+   },
+   {
+    "iso2": "KZ",
+    "name": "Dinara Kulibayeva",
+    "value": 5445480000.0,
+    "flag": "🇰🇿",
+    "text": "$5,4 млрд",
+    "rank": 4
+   },
+   {
+    "iso2": "KZ",
+    "name": "Timur Kulibayev",
+    "value": 5445480000.0,
+    "flag": "🇰🇿",
+    "text": "$5,4 млрд",
+    "rank": 5
+   },
+   {
+    "iso2": "KZ",
+    "name": "Bulat Utemuratov",
+    "value": 5398000000.0,
+    "flag": "🇰🇿",
+    "text": "$5,4 млрд",
+    "rank": 6
+   },
+   {
+    "iso2": "KZ",
+    "name": "Smagulov Nurlan",
+    "value": 1401697000.0,
+    "flag": "🇰🇿",
+    "text": "$1,4 млрд",
+    "rank": 7
+   }
+  ],
+  "cis": [],
+  "hook": [
+   [
+    "№1: Vyacheslav Kim,",
+    false
+   ],
+   [
+    "$7,8 млрд",
+    true
+   ]
+  ],
+  "hook_text": "№1: Vyacheslav Kim, $7,8 млрд",
+  "type": "bars",
+  "period": "ноябрь 2026",
+  "card": "cards_markets/bil_country_kz.png"
+ },
+ {
   "id": "bil_country_ca",
   "block": "billionaires",
   "title": "Самые богатые люди Канады",
@@ -8743,7 +8887,7 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 18,
+  "countries": 69,
   "top": [
    {
     "iso2": "CA",
@@ -8772,7 +8916,7 @@
    {
     "iso2": "CA",
     "name": "Tobi Lutke",
-    "value": 12948862000.0,
+    "value": 12939726000.0,
     "flag": "🇨🇦",
     "text": "$12,9 млрд",
     "rank": 4
@@ -8780,7 +8924,7 @@
    {
     "iso2": "CA",
     "name": "Sherry Brydson",
-    "value": 12612035000.0,
+    "value": 12615255000.0,
     "flag": "🇨🇦",
     "text": "$12,6 млрд",
     "rank": 5
@@ -8796,7 +8940,7 @@
    {
     "iso2": "CA",
     "name": "Jim Pattison",
-    "value": 11956154000.0,
+    "value": 11956181000.0,
     "flag": "🇨🇦",
     "text": "$12 млрд",
     "rank": 7
@@ -8804,7 +8948,7 @@
    {
     "iso2": "CA",
     "name": "David Cheriton",
-    "value": 10170356000.0,
+    "value": 10172605000.0,
     "flag": "🇨🇦",
     "text": "$10,2 млрд",
     "rank": 8
@@ -8812,7 +8956,7 @@
    {
     "iso2": "CA",
     "name": "Alain Bouchard",
-    "value": 7751215000.0,
+    "value": 7753857000.0,
     "flag": "🇨🇦",
     "text": "$7,8 млрд",
     "rank": 9
@@ -8820,7 +8964,7 @@
    {
     "iso2": "CA",
     "name": "David Thomson",
-    "value": 7676463000.0,
+    "value": 7678423000.0,
     "flag": "🇨🇦",
     "text": "$7,7 млрд",
     "rank": 10
@@ -8851,14 +8995,14 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 11,
+  "countries": 44,
   "top": [
    {
     "iso2": "HK",
     "name": "Li Ka-shing",
-    "value": 48856941000.0,
+    "value": 48844917000.0,
     "flag": "🇭🇰",
-    "text": "$48,9 млрд",
+    "text": "$48,8 млрд",
     "rank": 1
    },
    {
@@ -8941,11 +9085,11 @@
     false
    ],
    [
-    "$48,9 млрд",
+    "$48,8 млрд",
     true
    ]
   ],
-  "hook_text": "№1: Li Ka-shing, $48,9 млрд",
+  "hook_text": "№1: Li Ka-shing, $48,8 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_country_hk.png"
@@ -8959,7 +9103,7 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 13,
+  "countries": 50,
   "top": [
    {
     "iso2": "TW",
@@ -9059,6 +9203,546 @@
   "card": "cards_markets/bil_country_tw.png"
  },
  {
+  "id": "bil_country_it",
+  "block": "billionaires",
+  "title": "Самые богатые люди Италии",
+  "unit": "usd",
+  "year": 2026,
+  "source": "Forbes",
+  "source_full": "Forbes Real-Time Billionaires",
+  "note": "на 6 ноября 2026",
+  "countries": 76,
+  "top": [
+   {
+    "iso2": "IT",
+    "name": "Giancarlo Devasini",
+    "value": 89300000000.0,
+    "flag": "🇮🇹",
+    "text": "$89,3 млрд",
+    "rank": 1
+   },
+   {
+    "iso2": "IT",
+    "name": "Giovanni Ferrero",
+    "value": 46360166000.0,
+    "flag": "🇮🇹",
+    "text": "$46,4 млрд",
+    "rank": 2
+   },
+   {
+    "iso2": "IT",
+    "name": "Andrea Pignataro",
+    "value": 40532727000.0,
+    "flag": "🇮🇹",
+    "text": "$40,5 млрд",
+    "rank": 3
+   },
+   {
+    "iso2": "IT",
+    "name": "Paolo Ardoino",
+    "value": 38000000000.0,
+    "flag": "🇮🇹",
+    "text": "$38 млрд",
+    "rank": 4
+   },
+   {
+    "iso2": "IT",
+    "name": "Francesco Gaetano Caltagirone",
+    "value": 12323848000.0,
+    "flag": "🇮🇹",
+    "text": "$12,3 млрд",
+    "rank": 5
+   },
+   {
+    "iso2": "IT",
+    "name": "Massimiliana Landini Aleotti с семьёй",
+    "value": 8632472000.0,
+    "flag": "🇮🇹",
+    "text": "$8,6 млрд",
+    "rank": 6
+   },
+   {
+    "iso2": "IT",
+    "name": "Piero Ferrari с семьёй",
+    "value": 8594032000.0,
+    "flag": "🇮🇹",
+    "text": "$8,6 млрд",
+    "rank": 7
+   },
+   {
+    "iso2": "IT",
+    "name": "Paolo Rocca",
+    "value": 7796651000.0,
+    "flag": "🇮🇹",
+    "text": "$7,8 млрд",
+    "rank": 8
+   },
+   {
+    "iso2": "IT",
+    "name": "Gianfelice Rocca",
+    "value": 7796401000.0,
+    "flag": "🇮🇹",
+    "text": "$7,8 млрд",
+    "rank": 9
+   },
+   {
+    "iso2": "IT",
+    "name": "Giuseppe De'Longhi с семьёй",
+    "value": 6530404000.0,
+    "flag": "🇮🇹",
+    "text": "$6,5 млрд",
+    "rank": 10
+   }
+  ],
+  "cis": [],
+  "hook": [
+   [
+    "№1: Giancarlo Devasini,",
+    false
+   ],
+   [
+    "$89,3 млрд",
+    true
+   ]
+  ],
+  "hook_text": "№1: Giancarlo Devasini, $89,3 млрд",
+  "type": "bars",
+  "period": "ноябрь 2026",
+  "card": "cards_markets/bil_country_it.png"
+ },
+ {
+  "id": "bil_country_br",
+  "block": "billionaires",
+  "title": "Самые богатые люди Бразилии",
+  "unit": "usd",
+  "year": 2026,
+  "source": "Forbes",
+  "source_full": "Forbes Real-Time Billionaires",
+  "note": "на 6 ноября 2026",
+  "countries": 59,
+  "top": [
+   {
+    "iso2": "BR",
+    "name": "Eduardo Saverin",
+    "value": 34353891000.000004,
+    "flag": "🇧🇷",
+    "text": "$34,4 млрд",
+    "rank": 1
+   },
+   {
+    "iso2": "BR",
+    "name": "Jorge Paulo Lemann с семьёй",
+    "value": 20591722000.0,
+    "flag": "🇧🇷",
+    "text": "$20,6 млрд",
+    "rank": 2
+   },
+   {
+    "iso2": "BR",
+    "name": "Andre Esteves",
+    "value": 10823815000.0,
+    "flag": "🇧🇷",
+    "text": "$10,8 млрд",
+    "rank": 3
+   },
+   {
+    "iso2": "BR",
+    "name": "Fernando Roberto Moreira Salles",
+    "value": 9437460000.0,
+    "flag": "🇧🇷",
+    "text": "$9,4 млрд",
+    "rank": 4
+   },
+   {
+    "iso2": "BR",
+    "name": "Pedro Moreira Salles",
+    "value": 8719091000.0,
+    "flag": "🇧🇷",
+    "text": "$8,7 млрд",
+    "rank": 5
+   },
+   {
+    "iso2": "BR",
+    "name": "Max Van Hoegaerden Herrmann Telles",
+    "value": 7749402000.0,
+    "flag": "🇧🇷",
+    "text": "$7,7 млрд",
+    "rank": 6
+   },
+   {
+    "iso2": "BR",
+    "name": "Carlos Alberto Sicupira с семьёй",
+    "value": 7187102000.0,
+    "flag": "🇧🇷",
+    "text": "$7,2 млрд",
+    "rank": 7
+   },
+   {
+    "iso2": "BR",
+    "name": "Ricardo Faria",
+    "value": 6800000000.0,
+    "flag": "🇧🇷",
+    "text": "$6,8 млрд",
+    "rank": 8
+   },
+   {
+    "iso2": "BR",
+    "name": "Miguel Krigsner",
+    "value": 6388844000.0,
+    "flag": "🇧🇷",
+    "text": "$6,4 млрд",
+    "rank": 9
+   },
+   {
+    "iso2": "BR",
+    "name": "Alex Behring",
+    "value": 5937896000.0,
+    "flag": "🇧🇷",
+    "text": "$5,9 млрд",
+    "rank": 10
+   }
+  ],
+  "cis": [],
+  "hook": [
+   [
+    "№1: Eduardo Saverin,",
+    false
+   ],
+   [
+    "$34,4 млрд",
+    true
+   ]
+  ],
+  "hook_text": "№1: Eduardo Saverin, $34,4 млрд",
+  "type": "bars",
+  "period": "ноябрь 2026",
+  "card": "cards_markets/bil_country_br.png"
+ },
+ {
+  "id": "bil_country_se",
+  "block": "billionaires",
+  "title": "Самые богатые люди Швеции",
+  "unit": "usd",
+  "year": 2026,
+  "source": "Forbes",
+  "source_full": "Forbes Real-Time Billionaires",
+  "note": "на 6 ноября 2026",
+  "countries": 40,
+  "top": [
+   {
+    "iso2": "SE",
+    "name": "Stefan Persson",
+    "value": 21925492000.0,
+    "flag": "🇸🇪",
+    "text": "$21,9 млрд",
+    "rank": 1
+   },
+   {
+    "iso2": "SE",
+    "name": "Daniel Ek",
+    "value": 13581383000.0,
+    "flag": "🇸🇪",
+    "text": "$13,6 млрд",
+    "rank": 2
+   },
+   {
+    "iso2": "SE",
+    "name": "Antonia Ax:son Johnson с семьёй",
+    "value": 13043258000.0,
+    "flag": "🇸🇪",
+    "text": "$13 млрд",
+    "rank": 3
+   },
+   {
+    "iso2": "SE",
+    "name": "Martin Lorentzon",
+    "value": 12916498000.0,
+    "flag": "🇸🇪",
+    "text": "$12,9 млрд",
+    "rank": 4
+   },
+   {
+    "iso2": "SE",
+    "name": "Finn Rausing",
+    "value": 11513036000.0,
+    "flag": "🇸🇪",
+    "text": "$11,5 млрд",
+    "rank": 5
+   },
+   {
+    "iso2": "SE",
+    "name": "Jorn Rausing",
+    "value": 11505005000.0,
+    "flag": "🇸🇪",
+    "text": "$11,5 млрд",
+    "rank": 6
+   },
+   {
+    "iso2": "SE",
+    "name": "Kirsten Rausing",
+    "value": 11505005000.0,
+    "flag": "🇸🇪",
+    "text": "$11,5 млрд",
+    "rank": 7
+   },
+   {
+    "iso2": "SE",
+    "name": "Carl Bennet",
+    "value": 9362742000.0,
+    "flag": "🇸🇪",
+    "text": "$9,4 млрд",
+    "rank": 8
+   },
+   {
+    "iso2": "SE",
+    "name": "Frederik Paulsen",
+    "value": 7579069000.0,
+    "flag": "🇸🇪",
+    "text": "$7,6 млрд",
+    "rank": 9
+   },
+   {
+    "iso2": "SE",
+    "name": "Carl Douglas",
+    "value": 6308243000.0,
+    "flag": "🇸🇪",
+    "text": "$6,3 млрд",
+    "rank": 10
+   }
+  ],
+  "cis": [],
+  "hook": [
+   [
+    "№1: Stefan Persson,",
+    false
+   ],
+   [
+    "$21,9 млрд",
+    true
+   ]
+  ],
+  "hook_text": "№1: Stefan Persson, $21,9 млрд",
+  "type": "bars",
+  "period": "ноябрь 2026",
+  "card": "cards_markets/bil_country_se.png"
+ },
+ {
+  "id": "bil_country_ch",
+  "block": "billionaires",
+  "title": "Самые богатые люди Швейцарии",
+  "unit": "usd",
+  "year": 2026,
+  "source": "Forbes",
+  "source_full": "Forbes Real-Time Billionaires",
+  "note": "на 6 ноября 2026",
+  "countries": 40,
+  "top": [
+   {
+    "iso2": "CH",
+    "name": "Gianluigi Aponte",
+    "value": 45525753000.0,
+    "flag": "🇨🇭",
+    "text": "$45,5 млрд",
+    "rank": 1
+   },
+   {
+    "iso2": "CH",
+    "name": "Rafaela Aponte-Diamant",
+    "value": 45525753000.0,
+    "flag": "🇨🇭",
+    "text": "$45,5 млрд",
+    "rank": 2
+   },
+   {
+    "iso2": "CH",
+    "name": "Ivan Glasenberg",
+    "value": 12808615000.0,
+    "flag": "🇨🇭",
+    "text": "$12,8 млрд",
+    "rank": 3
+   },
+   {
+    "iso2": "CH",
+    "name": "Magdalena Martullo-Blocher",
+    "value": 11512010000.0,
+    "flag": "🇨🇭",
+    "text": "$11,5 млрд",
+    "rank": 4
+   },
+   {
+    "iso2": "CH",
+    "name": "Ernesto Bertarelli",
+    "value": 11483198000.0,
+    "flag": "🇨🇭",
+    "text": "$11,5 млрд",
+    "rank": 5
+   },
+   {
+    "iso2": "CH",
+    "name": "Thomas Schmidheiny",
+    "value": 10129509000.0,
+    "flag": "🇨🇭",
+    "text": "$10,1 млрд",
+    "rank": 6
+   },
+   {
+    "iso2": "CH",
+    "name": "Rahel Blocher",
+    "value": 9092120000.0,
+    "flag": "🇨🇭",
+    "text": "$9,1 млрд",
+    "rank": 7
+   },
+   {
+    "iso2": "CH",
+    "name": "Guillaume Pousaz",
+    "value": 7823000000.0,
+    "flag": "🇨🇭",
+    "text": "$7,8 млрд",
+    "rank": 8
+   },
+   {
+    "iso2": "CH",
+    "name": "Dona Bertarelli",
+    "value": 7420693000.0,
+    "flag": "🇨🇭",
+    "text": "$7,4 млрд",
+    "rank": 9
+   },
+   {
+    "iso2": "CH",
+    "name": "Rudolf Maag",
+    "value": 6572885000.0,
+    "flag": "🇨🇭",
+    "text": "$6,6 млрд",
+    "rank": 10
+   }
+  ],
+  "cis": [],
+  "hook": [
+   [
+    "№1: Gianluigi Aponte,",
+    false
+   ],
+   [
+    "$45,5 млрд",
+    true
+   ]
+  ],
+  "hook_text": "№1: Gianluigi Aponte, $45,5 млрд",
+  "type": "bars",
+  "period": "ноябрь 2026",
+  "card": "cards_markets/bil_country_ch.png"
+ },
+ {
+  "id": "bil_country_jp",
+  "block": "billionaires",
+  "title": "Самые богатые люди Японии",
+  "unit": "usd",
+  "year": 2026,
+  "source": "Forbes",
+  "source_full": "Forbes Real-Time Billionaires",
+  "note": "на 6 ноября 2026",
+  "countries": 30,
+  "top": [
+   {
+    "iso2": "JP",
+    "name": "Tadashi Yanai с семьёй",
+    "value": 67294072000.0,
+    "flag": "🇯🇵",
+    "text": "$67,3 млрд",
+    "rank": 1
+   },
+   {
+    "iso2": "JP",
+    "name": "Masayoshi Son",
+    "value": 44924582000.0,
+    "flag": "🇯🇵",
+    "text": "$44,9 млрд",
+    "rank": 2
+   },
+   {
+    "iso2": "JP",
+    "name": "Takemitsu Takizaki",
+    "value": 21132401000.0,
+    "flag": "🇯🇵",
+    "text": "$21,1 млрд",
+    "rank": 3
+   },
+   {
+    "iso2": "JP",
+    "name": "Yasumitsu Shigeta",
+    "value": 5910581000.0,
+    "flag": "🇯🇵",
+    "text": "$5,9 млрд",
+    "rank": 4
+   },
+   {
+    "iso2": "JP",
+    "name": "Masahiro Noda",
+    "value": 4664543000.0,
+    "flag": "🇯🇵",
+    "text": "$4,7 млрд",
+    "rank": 5
+   },
+   {
+    "iso2": "JP",
+    "name": "Kagemasa Kozuki",
+    "value": 4293684000.0,
+    "flag": "🇯🇵",
+    "text": "$4,3 млрд",
+    "rank": 6
+   },
+   {
+    "iso2": "JP",
+    "name": "Masahiro Miki",
+    "value": 4245291000.0,
+    "flag": "🇯🇵",
+    "text": "$4,2 млрд",
+    "rank": 7
+   },
+   {
+    "iso2": "JP",
+    "name": "Takao Yasuda",
+    "value": 4187064000.0000005,
+    "flag": "🇯🇵",
+    "text": "$4,2 млрд",
+    "rank": 8
+   },
+   {
+    "iso2": "JP",
+    "name": "Takahisa Takahara",
+    "value": 4043142000.0,
+    "flag": "🇯🇵",
+    "text": "$4 млрд",
+    "rank": 9
+   },
+   {
+    "iso2": "JP",
+    "name": "Yuji Otsuka",
+    "value": 3559275000.0,
+    "flag": "🇯🇵",
+    "text": "$3,6 млрд",
+    "rank": 10
+   }
+  ],
+  "cis": [],
+  "hook": [
+   [
+    "№1: Tadashi Yanai с семьёй,",
+    false
+   ],
+   [
+    "$67,3 млрд",
+    true
+   ]
+  ],
+  "hook_text": "№1: Tadashi Yanai с семьёй, $67,3 млрд",
+  "type": "bars",
+  "period": "ноябрь 2026",
+  "card": "cards_markets/bil_country_jp.png"
+ },
+ {
   "id": "bil_country_au",
   "block": "billionaires",
   "title": "Самые богатые люди Австралии",
@@ -9067,7 +9751,7 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 10,
+  "countries": 47,
   "top": [
    {
     "iso2": "AU",
@@ -9096,7 +9780,7 @@
    {
     "iso2": "AU",
     "name": "Mike Cannon-Brookes",
-    "value": 11180002000.0,
+    "value": 11181662000.0,
     "flag": "🇦🇺",
     "text": "$11,2 млрд",
     "rank": 4
@@ -9104,7 +9788,7 @@
    {
     "iso2": "AU",
     "name": "Scott Farquhar",
-    "value": 10827700000.0,
+    "value": 10829360000.0,
     "flag": "🇦🇺",
     "text": "$10,8 млрд",
     "rank": 5
@@ -9167,6 +9851,330 @@
   "card": "cards_markets/bil_country_au.png"
  },
  {
+  "id": "bil_country_il",
+  "block": "billionaires",
+  "title": "Самые богатые люди Израиля",
+  "unit": "usd",
+  "year": 2026,
+  "source": "Forbes",
+  "source_full": "Forbes Real-Time Billionaires",
+  "note": "на 6 ноября 2026",
+  "countries": 35,
+  "top": [
+   {
+    "iso2": "IL",
+    "name": "Idan Ofer",
+    "value": 34222385000.000004,
+    "flag": "🇮🇱",
+    "text": "$34,2 млрд",
+    "rank": 1
+   },
+   {
+    "iso2": "IL",
+    "name": "Eyal Ofer",
+    "value": 33528277000.0,
+    "flag": "🇮🇱",
+    "text": "$33,5 млрд",
+    "rank": 2
+   },
+   {
+    "iso2": "IL",
+    "name": "Michael Federmann с семьёй",
+    "value": 8796763000.0,
+    "flag": "🇮🇱",
+    "text": "$8,8 млрд",
+    "rank": 3
+   },
+   {
+    "iso2": "IL",
+    "name": "Yuri Milner",
+    "value": 8689600000.0,
+    "flag": "🇮🇱",
+    "text": "$8,7 млрд",
+    "rank": 4
+   },
+   {
+    "iso2": "IL",
+    "name": "Teddy Sagi",
+    "value": 7082692000.0,
+    "flag": "🇮🇱",
+    "text": "$7,1 млрд",
+    "rank": 5
+   },
+   {
+    "iso2": "IL",
+    "name": "Arnon Milchan",
+    "value": 6498879000.0,
+    "flag": "🇮🇱",
+    "text": "$6,5 млрд",
+    "rank": 6
+   },
+   {
+    "iso2": "IL",
+    "name": "Shari Arison",
+    "value": 5964810000.0,
+    "flag": "🇮🇱",
+    "text": "$6 млрд",
+    "rank": 7
+   },
+   {
+    "iso2": "IL",
+    "name": "Shaul Shani",
+    "value": 5151213000.0,
+    "flag": "🇮🇱",
+    "text": "$5,2 млрд",
+    "rank": 8
+   },
+   {
+    "iso2": "IL",
+    "name": "Gil Shwed",
+    "value": 4333300000.0,
+    "flag": "🇮🇱",
+    "text": "$4,3 млрд",
+    "rank": 9
+   },
+   {
+    "iso2": "IL",
+    "name": "Arkady Volozh",
+    "value": 4328624000.0,
+    "flag": "🇮🇱",
+    "text": "$4,3 млрд",
+    "rank": 10
+   }
+  ],
+  "cis": [],
+  "hook": [
+   [
+    "№1: Idan Ofer,",
+    false
+   ],
+   [
+    "$34,2 млрд",
+    true
+   ]
+  ],
+  "hook_text": "№1: Idan Ofer, $34,2 млрд",
+  "type": "bars",
+  "period": "ноябрь 2026",
+  "card": "cards_markets/bil_country_il.png"
+ },
+ {
+  "id": "bil_country_sa",
+  "block": "billionaires",
+  "title": "Самые богатые люди Саудовской Аравии",
+  "unit": "usd",
+  "year": 2026,
+  "source": "Forbes",
+  "source_full": "Forbes Real-Time Billionaires",
+  "note": "на 6 ноября 2026",
+  "countries": 10,
+  "top": [
+   {
+    "iso2": "SA",
+    "name": "Prince Alwaleed Bin Talal Alsaud",
+    "value": 23498053000.0,
+    "flag": "🇸🇦",
+    "text": "$23,5 млрд",
+    "rank": 1
+   },
+   {
+    "iso2": "SA",
+    "name": "Sulaiman Al Habib",
+    "value": 9625765000.0,
+    "flag": "🇸🇦",
+    "text": "$9,6 млрд",
+    "rank": 2
+   },
+   {
+    "iso2": "SA",
+    "name": "Abdullah bin Sulaiman Al Rajhi",
+    "value": 2438797000.0,
+    "flag": "🇸🇦",
+    "text": "$2,4 млрд",
+    "rank": 3
+   },
+   {
+    "iso2": "SA",
+    "name": "Emad Al Muhaidib",
+    "value": 2339320000.0,
+    "flag": "🇸🇦",
+    "text": "$2,3 млрд",
+    "rank": 4
+   },
+   {
+    "iso2": "SA",
+    "name": "Essam Al Muhaidib",
+    "value": 2183259000.0,
+    "flag": "🇸🇦",
+    "text": "$2,2 млрд",
+    "rank": 5
+   },
+   {
+    "iso2": "SA",
+    "name": "Sulaiman Al Muhaidib",
+    "value": 2183259000.0,
+    "flag": "🇸🇦",
+    "text": "$2,2 млрд",
+    "rank": 6
+   },
+   {
+    "iso2": "SA",
+    "name": "Abdullah Al Othaim",
+    "value": 2040743000.0,
+    "flag": "🇸🇦",
+    "text": "$2 млрд",
+    "rank": 7
+   },
+   {
+    "iso2": "SA",
+    "name": "Abdullah Amer Al Nahdi",
+    "value": 1928029000.0,
+    "flag": "🇸🇦",
+    "text": "$1,9 млрд",
+    "rank": 8
+   },
+   {
+    "iso2": "SA",
+    "name": "Mohammad Abunayyan",
+    "value": 1473582000.0,
+    "flag": "🇸🇦",
+    "text": "$1,5 млрд",
+    "rank": 9
+   },
+   {
+    "iso2": "SA",
+    "name": "Ajlan bin Abdulaziz Al-Ajlan",
+    "value": 1318611000.0,
+    "flag": "🇸🇦",
+    "text": "$1,3 млрд",
+    "rank": 10
+   }
+  ],
+  "cis": [],
+  "hook": [
+   [
+    "№1: Prince Alwaleed Bin Talal Alsaud,",
+    false
+   ],
+   [
+    "$23,5 млрд",
+    true
+   ]
+  ],
+  "hook_text": "№1: Prince Alwaleed Bin Talal Alsaud, $23,5 млрд",
+  "type": "bars",
+  "period": "ноябрь 2026",
+  "card": "cards_markets/bil_country_sa.png"
+ },
+ {
+  "id": "bil_country_kr",
+  "block": "billionaires",
+  "title": "Самые богатые люди Южной Кореи",
+  "unit": "usd",
+  "year": 2026,
+  "source": "Forbes",
+  "source_full": "Forbes Real-Time Billionaires",
+  "note": "на 6 ноября 2026",
+  "countries": 37,
+  "top": [
+   {
+    "iso2": "KR",
+    "name": "Jay Y. Lee",
+    "value": 25455180000.0,
+    "flag": "🇰🇷",
+    "text": "$25,5 млрд",
+    "rank": 1
+   },
+   {
+    "iso2": "KR",
+    "name": "Cho Jung-ho",
+    "value": 10136713000.0,
+    "flag": "🇰🇷",
+    "text": "$10,1 млрд",
+    "rank": 2
+   },
+   {
+    "iso2": "KR",
+    "name": "Seo Jung-jin",
+    "value": 9856600000.0,
+    "flag": "🇰🇷",
+    "text": "$9,9 млрд",
+    "rank": 3
+   },
+   {
+    "iso2": "KR",
+    "name": "Lee Boo-jin",
+    "value": 9290162000.0,
+    "flag": "🇰🇷",
+    "text": "$9,3 млрд",
+    "rank": 4
+   },
+   {
+    "iso2": "KR",
+    "name": "Hong Ra-hee",
+    "value": 8828898000.0,
+    "flag": "🇰🇷",
+    "text": "$8,8 млрд",
+    "rank": 5
+   },
+   {
+    "iso2": "KR",
+    "name": "Lee Seo-hyun",
+    "value": 8751014000.0,
+    "flag": "🇰🇷",
+    "text": "$8,8 млрд",
+    "rank": 6
+   },
+   {
+    "iso2": "KR",
+    "name": "Mong-Koo Chung",
+    "value": 5963206000.0,
+    "flag": "🇰🇷",
+    "text": "$6 млрд",
+    "rank": 7
+   },
+   {
+    "iso2": "KR",
+    "name": "Euisun Chung",
+    "value": 5294935000.0,
+    "flag": "🇰🇷",
+    "text": "$5,3 млрд",
+    "rank": 8
+   },
+   {
+    "iso2": "KR",
+    "name": "Chey Tae-won",
+    "value": 4194657000.0,
+    "flag": "🇰🇷",
+    "text": "$4,2 млрд",
+    "rank": 9
+   },
+   {
+    "iso2": "KR",
+    "name": "Kwak Dong-shin",
+    "value": 3740888000.0,
+    "flag": "🇰🇷",
+    "text": "$3,7 млрд",
+    "rank": 10
+   }
+  ],
+  "cis": [],
+  "hook": [
+   [
+    "№1: Jay Y. Lee,",
+    false
+   ],
+   [
+    "$25,5 млрд",
+    true
+   ]
+  ],
+  "hook_text": "№1: Jay Y. Lee, $25,5 млрд",
+  "type": "bars",
+  "period": "ноябрь 2026",
+  "card": "cards_markets/bil_country_kr.png"
+ },
+ {
   "id": "bil_ind_technology",
   "block": "billionaires",
   "title": "Самые богатые люди из сферы технологий",
@@ -9175,28 +10183,28 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 108,
+  "countries": 446,
   "top": [
    {
     "iso2": "US",
     "name": "Elon Musk",
-    "value": 837718943000.0,
+    "value": 839008657000.0,
     "flag": "🇺🇸",
-    "text": "$838 млрд",
+    "text": "$839 млрд",
     "rank": 1
    },
    {
     "iso2": "US",
     "name": "Jeff Bezos",
-    "value": 380362316000.0,
+    "value": 380671859000.0,
     "flag": "🇺🇸",
-    "text": "$380 млрд",
+    "text": "$381 млрд",
     "rank": 2
    },
    {
     "iso2": "US",
     "name": "Larry Page",
-    "value": 237250559000.0,
+    "value": 237389647000.0,
     "flag": "🇺🇸",
     "text": "$237 млрд",
     "rank": 3
@@ -9204,15 +10212,15 @@
    {
     "iso2": "US",
     "name": "Sergey Brin",
-    "value": 218420855000.0,
+    "value": 218548584000.0,
     "flag": "🇺🇸",
-    "text": "$218 млрд",
+    "text": "$219 млрд",
     "rank": 4
    },
    {
     "iso2": "US",
     "name": "Mark Zuckerberg",
-    "value": 212112189000.0,
+    "value": 212311833000.0,
     "flag": "🇺🇸",
     "text": "$212 млрд",
     "rank": 5
@@ -9220,7 +10228,7 @@
    {
     "iso2": "US",
     "name": "Michael Dell",
-    "value": 193587157000.0,
+    "value": 193670213000.0,
     "flag": "🇺🇸",
     "text": "$194 млрд",
     "rank": 6
@@ -9228,15 +10236,15 @@
    {
     "iso2": "US",
     "name": "Steve Ballmer",
-    "value": 164411696000.0,
+    "value": 164507767000.0,
     "flag": "🇺🇸",
-    "text": "$164 млрд",
+    "text": "$165 млрд",
     "rank": 7
    },
    {
     "iso2": "US",
     "name": "Jensen Huang",
-    "value": 161556938000.0,
+    "value": 161855057000.0,
     "flag": "🇺🇸",
     "text": "$162 млрд",
     "rank": 8
@@ -9244,7 +10252,7 @@
    {
     "iso2": "US",
     "name": "Larry Ellison",
-    "value": 152153368000.0,
+    "value": 152337248000.0,
     "flag": "🇺🇸",
     "text": "$152 млрд",
     "rank": 9
@@ -9252,24 +10260,31 @@
    {
     "iso2": "US",
     "name": "Bill Gates",
-    "value": 121250107000.0,
+    "value": 121258648000.0,
     "flag": "🇺🇸",
     "text": "$121 млрд",
     "rank": 10
    }
   ],
-  "cis": [],
+  "cis": [
+   {
+    "name": "Eugene Kaspersky (Россия)",
+    "rank": 309,
+    "in_top10": false,
+    "iso": "RU"
+   }
+  ],
   "hook": [
    [
     "№1: Elon Musk,",
     false
    ],
    [
-    "$838 млрд",
+    "$839 млрд",
     true
    ]
   ],
-  "hook_text": "№1: Elon Musk, $838 млрд",
+  "hook_text": "№1: Elon Musk, $839 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_ind_technology.png"
@@ -9283,7 +10298,7 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 128,
+  "countries": 474,
   "top": [
    {
     "iso2": "US",
@@ -9320,9 +10335,9 @@
    {
     "iso2": "US",
     "name": "Thomas Peterffy",
-    "value": 88726423000.0,
+    "value": 88767905000.0,
     "flag": "🇺🇸",
-    "text": "$88,7 млрд",
+    "text": "$88,8 млрд",
     "rank": 5
    },
    {
@@ -9352,7 +10367,7 @@
    {
     "iso2": "US",
     "name": "Stephen Schwarzman",
-    "value": 42459391000.0,
+    "value": 42469115000.0,
     "flag": "🇺🇸",
     "text": "$42,5 млрд",
     "rank": 9
@@ -9404,7 +10419,7 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 43,
+  "countries": 274,
   "top": [
    {
     "iso2": "ES",
@@ -9417,7 +10432,7 @@
    {
     "iso2": "US",
     "name": "Rob Walton с семьёй",
-    "value": 148748127000.0,
+    "value": 148838491000.0,
     "flag": "🇺🇸",
     "text": "$149 млрд",
     "rank": 2
@@ -9425,7 +10440,7 @@
    {
     "iso2": "US",
     "name": "Jim Walton с семьёй",
-    "value": 145519110000.0,
+    "value": 145609263000.0,
     "flag": "🇺🇸",
     "text": "$146 млрд",
     "rank": 3
@@ -9433,7 +10448,7 @@
    {
     "iso2": "US",
     "name": "Alice Walton",
-    "value": 134939810999.99998,
+    "value": 135027847000.00002,
     "flag": "🇺🇸",
     "text": "$135 млрд",
     "rank": 4
@@ -9441,7 +10456,7 @@
    {
     "iso2": "FR",
     "name": "Bernard Arnault с семьёй",
-    "value": 124189542000.0,
+    "value": 124188921000.0,
     "flag": "🇫🇷",
     "text": "$124 млрд",
     "rank": 5
@@ -9473,7 +10488,7 @@
    {
     "iso2": "US",
     "name": "Lukas Walton",
-    "value": 49911090000.0,
+    "value": 49941043000.0,
     "flag": "🇺🇸",
     "text": "$49,9 млрд",
     "rank": 9
@@ -9519,7 +10534,7 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 43,
+  "countries": 208,
   "top": [
    {
     "iso2": "CN",
@@ -9580,7 +10595,7 @@
    {
     "iso2": "BR",
     "name": "Jorge Paulo Lemann с семьёй",
-    "value": 20592463000.0,
+    "value": 20591722000.0,
     "flag": "🇧🇷",
     "text": "$20,6 млрд",
     "rank": 8
@@ -9602,7 +10617,14 @@
     "rank": 10
    }
   ],
-  "cis": [],
+  "cis": [
+   {
+    "name": "Alexander Tkachev (Россия)",
+    "rank": 157,
+    "in_top10": false,
+    "iso": "RU"
+   }
+  ],
   "hook": [
    [
     "№1: Zhong Shanshan,",
@@ -9627,7 +10649,7 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 35,
+  "countries": 98,
   "top": [
    {
     "iso2": "HK",
@@ -9648,7 +10670,7 @@
    {
     "iso2": "US",
     "name": "Lyndal Stephens Greth с семьёй",
-    "value": 28640849000.0,
+    "value": 28622340000.0,
     "flag": "🇺🇸",
     "text": "$28,6 млрд",
     "rank": 3
@@ -9688,7 +10710,7 @@
    {
     "iso2": "RU",
     "name": "Mikhail Fridman",
-    "value": 16853038000.0,
+    "value": 16858161000.0,
     "flag": "🇷🇺",
     "text": "$16,9 млрд",
     "rank": 8
@@ -9704,7 +10726,7 @@
    {
     "iso2": "US",
     "name": "George Kaiser",
-    "value": 15781866000.0,
+    "value": 15802523000.0,
     "flag": "🇺🇸",
     "text": "$15,8 млрд",
     "rank": 10
@@ -9742,14 +10764,14 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 31,
+  "countries": 225,
   "top": [
    {
     "iso2": "US",
     "name": "Thomas Frist Jr с семьёй",
-    "value": 40018911000.0,
+    "value": 40055282000.0,
     "flag": "🇺🇸",
-    "text": "$40 млрд",
+    "text": "$40,1 млрд",
     "rank": 1
    },
    {
@@ -9787,7 +10809,7 @@
    {
     "iso2": "US",
     "name": "Robert Duggan",
-    "value": 12281583000.0,
+    "value": 12326052000.0,
     "flag": "🇺🇸",
     "text": "$12,3 млрд",
     "rank": 6
@@ -9839,11 +10861,11 @@
     false
    ],
    [
-    "$40 млрд",
+    "$40,1 млрд",
     true
    ]
   ],
-  "hook_text": "№1: Thomas Frist Jr с семьёй, $40 млрд",
+  "hook_text": "№1: Thomas Frist Jr с семьёй, $40,1 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_ind_healthcare.png"
@@ -9857,12 +10879,12 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 23,
+  "countries": 79,
   "top": [
    {
     "iso2": "MX",
     "name": "Germán Larrea Mota Velasco с семьёй",
-    "value": 61617268000.0,
+    "value": 61612351000.0,
     "flag": "🇲🇽",
     "text": "$61,6 млрд",
     "rank": 1
@@ -9946,6 +10968,12 @@
     "rank": 13,
     "in_top10": false,
     "iso": "RU"
+   },
+   {
+    "name": "Vladimir Kim (Казахстан)",
+    "rank": 24,
+    "in_top10": false,
+    "iso": "KZ"
    }
   ],
   "hook": [
@@ -9972,12 +11000,12 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 17,
+  "countries": 96,
   "top": [
    {
     "iso2": "US",
     "name": "Rupert Murdoch с семьёй",
-    "value": 25415397000.0,
+    "value": 25420479000.0,
     "flag": "🇺🇸",
     "text": "$25,4 млрд",
     "rank": 1
@@ -10001,7 +11029,7 @@
    {
     "iso2": "US",
     "name": "Charles Ergen",
-    "value": 12963348000.0,
+    "value": 12954628000.0,
     "flag": "🇺🇸",
     "text": "$13 млрд",
     "rank": 4
@@ -10009,7 +11037,7 @@
    {
     "iso2": "CA",
     "name": "Sherry Brydson",
-    "value": 12612035000.0,
+    "value": 12615255000.0,
     "flag": "🇨🇦",
     "text": "$12,6 млрд",
     "rank": 5
@@ -10025,9 +11053,9 @@
    {
     "iso2": "US",
     "name": "John Malone",
-    "value": 11450124000.0,
+    "value": 11448345000.0,
     "flag": "🇺🇸",
-    "text": "$11,5 млрд",
+    "text": "$11,4 млрд",
     "rank": 7
    },
    {
@@ -10041,7 +11069,7 @@
    {
     "iso2": "US",
     "name": "David Geffen",
-    "value": 9684800000.0,
+    "value": 9685070000.0,
     "flag": "🇺🇸",
     "text": "$9,7 млрд",
     "rank": 9
@@ -10080,7 +11108,7 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 17,
+  "countries": 67,
   "top": [
    {
     "iso2": "DE",
@@ -10093,9 +11121,9 @@
    {
     "iso2": "US",
     "name": "Ernest Garcia II",
-    "value": 24132727000.0,
+    "value": 24168802000.0,
     "flag": "🇺🇸",
-    "text": "$24,1 млрд",
+    "text": "$24,2 млрд",
     "rank": 2
    },
    {
@@ -10133,7 +11161,7 @@
    {
     "iso2": "CN",
     "name": "Eric Li",
-    "value": 15177627000.0,
+    "value": 15178306000.0,
     "flag": "🇨🇳",
     "text": "$15,2 млрд",
     "rank": 7
@@ -10163,7 +11191,14 @@
     "rank": 10
    }
   ],
-  "cis": [],
+  "cis": [
+   {
+    "name": "Smagulov Nurlan (Казахстан)",
+    "rank": 63,
+    "in_top10": false,
+    "iso": "KZ"
+   }
+  ],
   "hook": [
    [
     "№1: Susanne Klatten,",
@@ -10188,7 +11223,7 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 13,
+  "countries": 57,
   "top": [
    {
     "iso2": "CH",
@@ -10209,7 +11244,7 @@
    {
     "iso2": "CY",
     "name": "John Fredriksen",
-    "value": 21906769000.0,
+    "value": 21908072000.0,
     "flag": "🇨🇾",
     "text": "$21,9 млрд",
     "rank": 3
@@ -10225,7 +11260,7 @@
    {
     "iso2": "US",
     "name": "Brad Jacobs",
-    "value": 12541937000.0,
+    "value": 12549836000.0,
     "flag": "🇺🇸",
     "text": "$12,5 млрд",
     "rank": 5
@@ -10271,7 +11306,14 @@
     "rank": 10
    }
   ],
-  "cis": [],
+  "cis": [
+   {
+    "name": "Roman Trotsenko (Россия)",
+    "rank": 24,
+    "in_top10": false,
+    "iso": "RU"
+   }
+  ],
   "hook": [
    [
     "№1: Gianluigi Aponte,",
@@ -10296,7 +11338,7 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 10,
+  "countries": 55,
   "top": [
    {
     "iso2": "US",
@@ -10309,7 +11351,7 @@
    {
     "iso2": "US",
     "name": "Jerry Jones с семьёй",
-    "value": 23162935000.0,
+    "value": 23167101000.0,
     "flag": "🇺🇸",
     "text": "$23,2 млрд",
     "rank": 2
@@ -10325,7 +11367,7 @@
    {
     "iso2": "US",
     "name": "Arthur Blank",
-    "value": 13507818000.0,
+    "value": 13511193000.0,
     "flag": "🇺🇸",
     "text": "$13,5 млрд",
     "rank": 4
@@ -10396,6 +11438,229 @@
   "card": "cards_markets/bil_ind_sports.png"
  },
  {
+  "id": "bil_ind_telecom",
+  "block": "billionaires",
+  "title": "Самые богатые люди из сферы телекома",
+  "unit": "usd",
+  "year": 2026,
+  "source": "Forbes",
+  "source_full": "Forbes Real-Time Billionaires",
+  "note": "на 6 ноября 2026",
+  "countries": 30,
+  "top": [
+   {
+    "iso2": "MX",
+    "name": "Carlos Slim Helu с семьёй",
+    "value": 125692567000.0,
+    "flag": "🇲🇽",
+    "text": "$126 млрд",
+    "rank": 1
+   },
+   {
+    "iso2": "IN",
+    "name": "Sunil Mittal",
+    "value": 14968986000.0,
+    "flag": "🇮🇳",
+    "text": "$15 млрд",
+    "rank": 2
+   },
+   {
+    "iso2": "FR",
+    "name": "Xavier Niel с семьёй",
+    "value": 14409184000.0,
+    "flag": "🇫🇷",
+    "text": "$14,4 млрд",
+    "rank": 3
+   },
+   {
+    "iso2": "IN",
+    "name": "Rajan Mittal",
+    "value": 9793453000.0,
+    "flag": "🇮🇳",
+    "text": "$9,8 млрд",
+    "rank": 4
+   },
+   {
+    "iso2": "IN",
+    "name": "Rakesh Mittal",
+    "value": 9769992000.0,
+    "flag": "🇮🇳",
+    "text": "$9,8 млрд",
+    "rank": 5
+   },
+   {
+    "iso2": "FR",
+    "name": "Patrick Drahi",
+    "value": 8076206000.0,
+    "flag": "🇫🇷",
+    "text": "$8,1 млрд",
+    "rank": 6
+   },
+   {
+    "iso2": "US",
+    "name": "Robert Hale Jr",
+    "value": 6473000000.0,
+    "flag": "🇺🇸",
+    "text": "$6,5 млрд",
+    "rank": 7
+   },
+   {
+    "iso2": "JP",
+    "name": "Yasumitsu Shigeta",
+    "value": 5910581000.0,
+    "flag": "🇯🇵",
+    "text": "$5,9 млрд",
+    "rank": 8
+   },
+   {
+    "iso2": "EG",
+    "name": "Naguib Sawiris",
+    "value": 5603092000.0,
+    "flag": "🇪🇬",
+    "text": "$5,6 млрд",
+    "rank": 9
+   },
+   {
+    "iso2": "US",
+    "name": "Catherine Commisso с семьёй",
+    "value": 5198636000.0,
+    "flag": "🇺🇸",
+    "text": "$5,2 млрд",
+    "rank": 10
+   }
+  ],
+  "cis": [
+   {
+    "name": "Vladimir Yevtushenkov (Россия)",
+    "rank": 24,
+    "in_top10": false,
+    "iso": "RU"
+   }
+  ],
+  "hook": [
+   [
+    "№1: Carlos Slim Helu с семьёй,",
+    false
+   ],
+   [
+    "$126 млрд",
+    true
+   ]
+  ],
+  "hook_text": "№1: Carlos Slim Helu с семьёй, $126 млрд",
+  "type": "bars",
+  "period": "ноябрь 2026",
+  "card": "cards_markets/bil_ind_telecom.png"
+ },
+ {
+  "id": "bil_ind_gambling",
+  "block": "billionaires",
+  "title": "Самые богатые люди из сферы казино и ставок",
+  "unit": "usd",
+  "year": 2026,
+  "source": "Forbes",
+  "source_full": "Forbes Real-Time Billionaires",
+  "note": "на 6 ноября 2026",
+  "countries": 21,
+  "top": [
+   {
+    "iso2": "US",
+    "name": "Miriam Adelson с семьёй",
+    "value": 32112979000.0,
+    "flag": "🇺🇸",
+    "text": "$32,1 млрд",
+    "rank": 1
+   },
+   {
+    "iso2": "AT",
+    "name": "Johann Graf",
+    "value": 10447892000.0,
+    "flag": "🇦🇹",
+    "text": "$10,4 млрд",
+    "rank": 2
+   },
+   {
+    "iso2": "CZ",
+    "name": "Karel Komarek",
+    "value": 9792021000.0,
+    "flag": "🇨🇿",
+    "text": "$9,8 млрд",
+    "rank": 3
+   },
+   {
+    "iso2": "GB",
+    "name": "Denise Coates",
+    "value": 8090846000.0,
+    "flag": "🇬🇧",
+    "text": "$8,1 млрд",
+    "rank": 4
+   },
+   {
+    "iso2": "IL",
+    "name": "Teddy Sagi",
+    "value": 7082692000.0,
+    "flag": "🇮🇱",
+    "text": "$7,1 млрд",
+    "rank": 5
+   },
+   {
+    "iso2": "CA",
+    "name": "Mark Scheinberg",
+    "value": 6564309000.0,
+    "flag": "🇨🇦",
+    "text": "$6,6 млрд",
+    "rank": 6
+   },
+   {
+    "iso2": "US",
+    "name": "Jon Yarbrough",
+    "value": 6495425000.0,
+    "flag": "🇺🇸",
+    "text": "$6,5 млрд",
+    "rank": 7
+   },
+   {
+    "iso2": "US",
+    "name": "Steve Wynn",
+    "value": 4349314000.0,
+    "flag": "🇺🇸",
+    "text": "$4,3 млрд",
+    "rank": 8
+   },
+   {
+    "iso2": "HK",
+    "name": "Pansy Ho",
+    "value": 4165533000.0000005,
+    "flag": "🇭🇰",
+    "text": "$4,2 млрд",
+    "rank": 9
+   },
+   {
+    "iso2": "DE",
+    "name": "Paul Gauselmann с семьёй",
+    "value": 3928371000.0,
+    "flag": "🇩🇪",
+    "text": "$3,9 млрд",
+    "rank": 10
+   }
+  ],
+  "cis": [],
+  "hook": [
+   [
+    "№1: Miriam Adelson с семьёй,",
+    false
+   ],
+   [
+    "$32,1 млрд",
+    true
+   ]
+  ],
+  "hook_text": "№1: Miriam Adelson с семьёй, $32,1 млрд",
+  "type": "bars",
+  "period": "ноябрь 2026",
+  "card": "cards_markets/bil_ind_gambling.png"
+ },
+ {
   "id": "bil_ind_manufacturing",
   "block": "billionaires",
   "title": "Самые богатые люди из сферы промышленности",
@@ -10404,7 +11669,7 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 42,
+  "countries": 373,
   "top": [
    {
     "iso2": "NG",
@@ -10519,7 +11784,7 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 36,
+  "countries": 204,
   "top": [
    {
     "iso2": "IN",
@@ -10556,23 +11821,23 @@
    {
     "iso2": "HK",
     "name": "Li Ka-shing",
-    "value": 48856941000.0,
+    "value": 48844917000.0,
     "flag": "🇭🇰",
-    "text": "$48,9 млрд",
+    "text": "$48,8 млрд",
     "rank": 5
    },
    {
     "iso2": "VN",
     "name": "Pham Nhat Vuong",
-    "value": 36945675000.0,
+    "value": 36956311000.0,
     "flag": "🇻🇳",
-    "text": "$36,9 млрд",
+    "text": "$37 млрд",
     "rank": 6
    },
    {
     "iso2": "US",
     "name": "Len Blavatnik",
-    "value": 34860600000.0,
+    "value": 34876673000.0,
     "flag": "🇺🇸",
     "text": "$34,9 млрд",
     "rank": 7
@@ -10588,7 +11853,7 @@
    {
     "iso2": "IL",
     "name": "Eyal Ofer",
-    "value": 33526042000.0,
+    "value": 33528277000.0,
     "flag": "🇮🇱",
     "text": "$33,5 млрд",
     "rank": 9
