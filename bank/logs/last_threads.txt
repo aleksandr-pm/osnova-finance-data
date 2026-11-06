@@ -1,21 +1,20 @@
-threads: line_agro_prod_257 (agro, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/1ba2443bc9c9/bank/covers/line_agro_prod_257.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/1ba2443bc9c9/bank/cards/line_agro_prod_257.jpg
+threads: bil_country_jp (billionaires, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/25c45f21f30b/bank/cards_markets/bil_country_jp.jpg
 ---
-Производство пальмового масла: крупнейшие производители, 2000-2023:
-1. 🇮🇩 Индонезия · в 6,7 раза
-2. 🇲🇾 Малайзия · в 1,7 раза
-3. 🇹🇭 Таиланд · в 5,7 раза
-4. 🇨🇴 Колумбия · в 3,5 раза
-5. 🇳🇬 Нигерия · в 1,6 раза
-6. 🇬🇹 Гватемала · в 14,4 раза
-7. 🇵🇬 Папуа-Новая Гвинея · в 2,3 раза
-8. 🇭🇳 Гондурас · в 6,9 раза
-9. 🇧🇷 Бразилия · в 5,9 раза
-10. 🇨🇮 Кот-д’Ивуар · в 2,1 раза
-Гватемала: производство пальмового масла выросло в 14,4 раза с 2000 года.
+Самые богатые люди Японии, ноябрь 2026:
+1. 🇯🇵 Tadashi Yanai с семьёй · $67,3 млрд
+2. 🇯🇵 Masayoshi Son · $44,9 млрд
+3. 🇯🇵 Takemitsu Takizaki · $21,1 млрд
+4. 🇯🇵 Yasumitsu Shigeta · $5,9 млрд
+5. 🇯🇵 Masahiro Noda · $4,7 млрд
+6. 🇯🇵 Kagemasa Kozuki · $4,3 млрд
+7. 🇯🇵 Masahiro Miki · $4,2 млрд
+8. 🇯🇵 Takao Yasuda · $4,2 млрд
+9. 🇯🇵 Takahisa Takahara · $4 млрд
+10. 🇯🇵 Yuji Otsuka · $3,6 млрд
+№1: Tadashi Yanai с семьёй, $67,3 млрд.
 Больше в Telegram @osnovafin
 ---
-Threads: с картинкой
-Опубликовано: 18649159459031855. Осталось новых рейтингов: 103
-exit=0 2026-11-06T17:27:08Z
+Threads: текстом
+Опубликовано: 18145614787563993. Осталось новых рейтингов: 211
+exit=0 2026-11-06T18:49:59Z
