@@ -404,7 +404,7 @@ def chart():
     p, c, _ = last_change(data[pick])
     half = (float(hist.iloc[-1]) / float(hist.iloc[0]) - 1) * 100
     name = NAMES.get(pick, pick)
-    tick = "" if pick in ("BTC-USD", "GC=F", "BZ=F", "SI=F") else f" ({pick})"
+    tick = "" if pick in ("BTC-USD", "GC=F", "BZ=F", "SI=F") or name == pick else f" ({pick})"
     im, d = canvas(name + tick, f"Цена за 6 месяцев · за день {pct(c)}, за полгода {pct(half)}")
     # линия
     x0, x1, y0, y1 = M, W - M - 120, 330, H - 260
