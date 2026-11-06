@@ -1,4 +1,4 @@
-// OSNOVA Finance · лента v2.1 (05.11.2026): без недвижимости, проверка на английский текст
+// OSNOVA Finance · лента v2.2 (06.11.2026): Sonnet без принудительного tool_choice, рыночные посты из GitHub; v2.1: без недвижимости, проверка на английский текст
 // Cloudflare Worker: сбор новостей → ИИ-редактор → проверка цифр → очередь → Telegram.
 // Привязки: DB (D1). Секреты: BOT_TOKEN, ANTHROPIC_API_KEY, FINNHUB_KEY, ADMIN_KEY.
 // Переменные: TARGET_CHAT (по умолчанию @osnovafin), ALERT_CHAT (алерты сторожа), PUBLIC_BLOCK=yes, NEWS_OFF=yes, SEC_OFF=yes,
@@ -142,6 +142,7 @@ async function cycle(env, opts = {}) {
   try {
     // Сначала публикуем из готовой очереди, потом собираем и редактируем новое
     report.published = await publish(env, now);
+    try { report.outbox = await outbox(env, now); } catch (e) { report.outbox = { error: String(e.message || e) }; }
     if (env.NEWS_OFF !== 'yes') {
       report.collected = await collect(env, now);
       report.edited = await edit(env, now);
@@ -341,18 +342,24 @@ kind: earnings для отчёта, news для всего остального.
 [{"id":1,"keep":true,"topic":"us","importance":3,"urgent":false,"direction":"up","country":"US","company":"NVDA","text":"..."},{"id":2,"keep":false,"why":"спорт"}]`;
 
 // Ответ редактора через инструмент: API гарантирует валидный JSON по схеме
+// Некоторые модели (Sonnet 5.5) не принимают принудительный tool_choice: тогда повторяем с auto
 async function claudeItems(env, model, system, payload, tool) {
-  const r = await fetch('https://api.anthropic.com/v1/messages', {
+  const call1 = choice => fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
     headers: { 'x-api-key': env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
     body: JSON.stringify({
       model, max_tokens: 6000,
-      system: [{ type: 'text', text: system, cache_control: { type: 'ephemeral' } }],
+      system: [{ type: 'text', text: system + (choice.type === 'auto' ? '\n\nОбязательно ответь вызовом инструмента ' + tool.name + ', без текста вне него.' : ''), cache_control: { type: 'ephemeral' } }],
       messages: [{ role: 'user', content: JSON.stringify(payload) }],
-      tools: [tool], tool_choice: { type: 'tool', name: tool.name },
+      tools: [tool], tool_choice: choice,
     }),
   });
-  const data = await r.json();
+  let r = await call1({ type: 'tool', name: tool.name });
+  let data = await r.json();
+  if (!r.ok && /tool_choice/.test((data.error && data.error.message) || '')) {
+    r = await call1({ type: 'auto' });
+    data = await r.json();
+  }
   if (!r.ok) throw new Error((data.error && data.error.message) || 'HTTP ' + r.status);
   const call = (data.content || []).find(c => c.type === 'tool_use' && c.input && Array.isArray(c.input.items));
   if (!call) throw new Error('пустой ответ модели');
@@ -697,6 +704,29 @@ async function topicShare(env, now) {
     `SELECT topic, COUNT(*) AS n FROM items WHERE status='posted' AND posted > ? GROUP BY topic`).bind(now - 86_400_000).all();
   const total = results.reduce((a, r) => a + r.n, 0) || 1;
   return Object.fromEntries(results.map(r => [r.topic, r.n / total]));
+}
+
+// ───────── 3a. рыночные посты из GitHub (итоги дня, календарь, график дня, алерты) ─────────
+// Их рисует GitHub Actions (scripts/market.py) и кладёт в tg/outbox.json, воркер только отправляет.
+const OUTBOX_URL = 'https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/outbox.json';
+async function outbox(env, now) {
+  if (!env.BOT_TOKEN || !(await targetAllowed(env))) return { skipped: true };
+  const r = await fetch(OUTBOX_URL, { signal: AbortSignal.timeout(8000), cf: { cacheTtl: 30 } });
+  if (!r.ok) return { error: 'HTTP ' + r.status };
+  const box = await r.json();
+  const done = JSON.parse(await meta(env, 'outbox_done') || '[]');
+  const fresh = box.filter(x => !done.includes(x.id) && now / 1000 - (x.t || 0) < 6 * 3600);
+  let sent = 0;
+  for (const x of fresh.slice(0, 2)) {
+    const res = x.photo
+      ? await tg(env, 'sendPhoto', { chat_id: target(env), photo: x.photo, caption: x.caption, parse_mode: 'HTML' })
+      : await tg(env, 'sendMessage', { chat_id: target(env), text: x.caption, parse_mode: 'HTML', link_preview_options: { is_disabled: true } });
+    if (res.ok || /wrong|failed to get|too long|parse/i.test(res.description || '')) done.push(x.id);
+    if (res.ok) sent++;
+    else await alert(env, 'outbox', 'Рыночный пост ' + x.id + ' не ушёл: ' + res.description);
+  }
+  await setMeta(env, 'outbox_done', JSON.stringify(done.slice(-200)));
+  return { fresh: fresh.length, sent };
 }
 
 // ───────── 3b. SEC: сделки инсайдеров (Form 4) и портфели фондов (13F) ─────────

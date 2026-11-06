@@ -1,0 +1,44 @@
+name: market
+# Рыночные посты в Telegram: итоги дня, календарь, график дня, алерты (публикует воркер через tg/outbox.json)
+on:
+  schedule:
+    - cron: "5 4 * * 1-5"        # 08:05 Дубай, календарь
+    - cron: "15 12 * * 1-5"      # 16:15 Дубай, график дня
+    - cron: "45 16 * * 1-5"      # 20:45 Дубай, график дня
+    - cron: "*/10 13-20 * * 1-5" # 17:00-00:50 Дубай, алерты
+    - cron: "20 21 * * 1-5"      # 01:20 Дубай, итоги дня
+  workflow_dispatch:
+    inputs:
+      mode: { description: "evening / calendar / chart / alerts", default: "evening" }
+      dry_run: { description: "yes = только нарисовать", default: "no" }
+permissions:
+  contents: write
+concurrency: { group: tg-outbox, cancel-in-progress: false }
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install yfinance pillow requests
+      - run: sudo apt-get install -y fonts-noto-color-emoji >/dev/null
+      - name: Mode
+        id: m
+        run: |
+          M="${{ github.event.inputs.mode }}"
+          if [ -z "$M" ]; then
+            case "${{ github.event.schedule }}" in
+              "5 4 * * 1-5") M=calendar;; "15 12 * * 1-5"|"45 16 * * 1-5") M=chart;;
+              "20 21 * * 1-5") M=evening;; *) M=alerts;;
+            esac
+          fi
+          echo "mode=$M" >> $GITHUB_OUTPUT
+      - env:
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+        run: python scripts/market.py ${{ steps.m.outputs.mode }}
+      - run: |
+          git config user.name "osnova-bot"; git config user.email "osnova-bot@users.noreply.github.com"
+          git add tg; git commit -m "tg: ${{ steps.m.outputs.mode }} [skip ci]" || exit 0
+          for i in 1 2 3; do git pull --rebase origin main && git push && break; sleep 5; done
