@@ -1,0 +1,23 @@
+name: build-markets
+# Рейтинги компаний (companiesmarketcap.com) и миллиардеров для банка соцсетей
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "33 2 * * 1"   # по понедельникам 06:33 по Дубаю
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install requests pillow pandas
+      - run: sudo apt-get install -y fonts-noto-color-emoji >/dev/null
+      - run: python scripts/fetch_markets.py 2>&1 | tee bank/fetch_markets_log.txt
+      - run: if [ -f scripts/build_markets.py ]; then python scripts/build_markets.py; fi
+      - run: |
+          git config user.name "osnova-bot"; git config user.email "osnova-bot@users.noreply.github.com"
+          git add bank; git commit -m "bank: markets [skip ci]" || exit 0
+          for i in 1 2 3; do git pull --rebase origin main && git push && break; sleep 5; done
