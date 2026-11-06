@@ -55,8 +55,8 @@ NAMES = {"AAPL": "Apple", "MSFT": "Microsoft", "NVDA": "Nvidia", "AMZN": "Amazon
          "NOW": "ServiceNow", "TSM": "TSMC", "ASML": "ASML", "BABA": "Alibaba", "PDD": "PDD (Temu)",
          "BTC-USD": "Биткоин", "GC=F": "Золото", "BZ=F": "Нефть Brent", "SI=F": "Серебро", "^GSPC": "S&P 500", "^IXIC": "Nasdaq"}
 
-OUTBOX = "tg/outbox.json"
-STATE = "tg/state.json"
+OUTBOX = os.environ.get("OUTBOX_FILE", "tg/outbox.json")
+STATE = os.environ.get("STATE_FILE", "tg/state.json")
 
 
 # ───────── форматирование ─────────
@@ -489,7 +489,98 @@ def alerts():
     return out > 0
 
 
+# ───────── 5. отчёты компаний: факт против прогноза ─────────
+
+def money(v):
+    a = abs(v)
+    if a >= 1e9:
+        return "$" + num(v / 1e9, 2) + NB + "млрд"
+    if a >= 1e6:
+        return "$" + num(v / 1e6, 0 if a >= 1e8 else 1) + NB + "млн"
+    return "$" + num(v, 2)
+
+
+def beat(act, est):
+    if act is None or not est:
+        return None
+    return (act / est - 1) * 100 if est > 0 else ((act - est) / abs(est)) * 100
+
+
+def earnings():
+    key = os.environ["FINNHUB_KEY"]
+    today = dt.datetime.now(dt.timezone.utc).date()
+    frm = (today - dt.timedelta(days=1)).isoformat()
+    cal = requests.get("https://finnhub.io/api/v1/calendar/earnings", params={"from": frm, "to": today.isoformat(), "token": key}, timeout=30).json()
+    st = load(STATE, {})
+    caps = st.get("caps", {})
+    done = st.get("earn_done", [])
+    out = 0
+    for e in cal.get("earningsCalendar", []):
+        sym = e.get("symbol") or ""
+        if e.get("epsActual") is None or not re.fullmatch(r"[A-Z.]{1,6}", sym):
+            continue
+        uid = f"{sym}-{e.get('year')}Q{e.get('quarter')}"
+        if uid in done:
+            continue
+        if sym not in caps:
+            pr = requests.get("https://finnhub.io/api/v1/stock/profile2", params={"symbol": sym, "token": key}, timeout=20).json()
+            caps[sym] = {"cap": pr.get("marketCapitalization") or 0, "name": pr.get("name") or sym}
+            time.sleep(1.1)
+        if caps[sym]["cap"] < 20000:   # только компании от $20 млрд
+            continue
+        # выручка: ждём факт до 2 часов после EPS, иначе публикуем без неё
+        first = st.setdefault("earn_seen", {}).setdefault(uid, int(time.time()))
+        if e.get("revenueActual") is None and time.time() - first < 2 * 3600:
+            continue
+        name = NAMES.get(sym) or re.sub(r",? (Inc|Corp|Corporation|Co|Ltd|Holdings|Group|PLC|N\.V\.|SA)\.?$", "", caps[sym]["name"])
+        q = f"{e.get('quarter')} кв. {e.get('year')} фин. года"
+        rows_ = []
+        if e.get("revenueActual") is not None:
+            rows_.append(("Выручка", money(e["revenueActual"]), money(e["revenueEstimate"]) if e.get("revenueEstimate") else "", beat(e["revenueActual"], e.get("revenueEstimate"))))
+        rows_.append(("Прибыль на акцию", "$" + num(e["epsActual"], 2), ("$" + num(e["epsEstimate"], 2)) if e.get("epsEstimate") is not None else "", beat(e["epsActual"], e.get("epsEstimate"))))
+        # карточка
+        im, d = canvas(name, f"{sym} · отчёт за {q}")
+        y = 330
+        for lab, act, est, b in rows_:
+            d.text((M, y), lab.upper(), font=font(24, 600), fill=T["sub"])
+            d.text((M, y + 44), act, font=font(84, 700), fill=T["head"])
+            if est:
+                d.text((M, y + 150), "Прогноз аналитиков: " + est, font=font(30), fill=T["muted"])
+            if b is not None:
+                verdict = "лучше прогноза" if b > 0.5 else "хуже прогноза" if b < -0.5 else "в рамках прогноза"
+                c = T["up"] if b > 0.5 else T["down"] if b < -0.5 else T["flat"]
+                txt = f"{pct(b)} · {verdict}"
+                f = font(30, 600)
+                bw = tw(d, txt, f) + 36
+                d.rectangle([W - M - bw, y + 66, W - M, y + 118], fill=c)
+                d.text((W - M - bw / 2, y + 92), txt, font=f, fill=T["bg"], anchor="mm")
+            y += 240
+            d.rectangle([M, y - 30, W - M, y - 30], fill=T["line"])
+        when = {"bmo": "до открытия торгов", "amc": "после закрытия торгов"}.get(e.get("hour"), "")
+        if when:
+            d.text((M, y), "Отчёт вышел " + when, font=font(28), fill=T["muted"])
+        footer(d, "Finnhub, отчётность компании и консенсус аналитиков")
+        os.makedirs("tg/img", exist_ok=True)
+        item = f"earn-{uid}"
+        path = f"tg/img/{item}.png"
+        im.save(path)
+        mark = lambda b: "" if b is None else (" ✅" if b > 0.5 else " ❌" if b < -0.5 else " ➖")
+        cap = f"📊 <b>{name}</b> ({sym}), отчёт за {q}\n\n"
+        for lab, act, est, b in rows_:
+            cap += f"{lab}: {act}" + (f" · прогноз {est}" if est else "") + mark(b) + "\n"
+        cap += "\n#отчёт"
+        if push_out(item, path, cap):
+            out += 1
+        done.append(uid)
+    st["caps"] = caps
+    st["earn_done"] = done[-500:]
+    st["earn_seen"] = {k: v for k, v in st.get("earn_seen", {}).items() if time.time() - v < 3 * 86400}
+    json.dump(st, open(STATE, "w"), ensure_ascii=False, indent=1)
+    print("отчётов в очередь:", out)
+    return out > 0
+
+
 if __name__ == "__main__":
     mode = sys.argv[1]
-    ok = {"evening": evening, "calendar": calendar, "chart": chart, "alerts": alerts}[mode]()
+    ok = {"evening": evening, "calendar": calendar, "chart": chart, "alerts": alerts, "earnings": earnings}[mode]()
     print("готово:", mode, ok)

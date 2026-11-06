@@ -1,0 +1,31 @@
+name: earnings
+# Отчёты компаний от $20 млрд: факт против прогноза, карточка в Telegram (через tg/outbox_earnings.json)
+on:
+  schedule:
+    - cron: "*/15 10-14 * * 1-5"   # 14:00-18:59 Дубай, отчёты до открытия США
+    - cron: "*/15 21-23 * * 1-5"   # 01:00-03:59 Дубай, отчёты после закрытия США
+  workflow_dispatch:
+    inputs:
+      dry_run: { description: "yes = только нарисовать", default: "no" }
+permissions:
+  contents: write
+concurrency: { group: tg-earnings, cancel-in-progress: false }
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install pillow requests
+      - env:
+          FINNHUB_KEY: ${{ secrets.FINNHUB_KEY }}
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+          OUTBOX_FILE: tg/outbox_earnings.json
+          STATE_FILE: tg/state_earnings.json
+        run: python scripts/market.py earnings
+      - run: |
+          git config user.name "osnova-bot"; git config user.email "osnova-bot@users.noreply.github.com"
+          git add tg; git commit -m "tg: earnings [skip ci]" || exit 0
+          for i in 1 2 3; do git pull --rebase origin main && git push && break; sleep 5; done

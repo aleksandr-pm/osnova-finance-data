@@ -1,4 +1,4 @@
-// OSNOVA Finance · лента v2.2 (06.11.2026): Sonnet без принудительного tool_choice, рыночные посты из GitHub; v2.1: без недвижимости, проверка на английский текст
+// OSNOVA Finance · лента v2.3 (06.11.2026): отчёты только карточкой Finnhub; v2.2: Sonnet без принудительного tool_choice, рыночные посты из GitHub; v2.1: без недвижимости, проверка на английский текст
 // Cloudflare Worker: сбор новостей → ИИ-редактор → проверка цифр → очередь → Telegram.
 // Привязки: DB (D1). Секреты: BOT_TOKEN, ANTHROPIC_API_KEY, FINNHUB_KEY, ADMIN_KEY.
 // Переменные: TARGET_CHAT (по умолчанию @osnovafin), ALERT_CHAT (алерты сторожа), PUBLIC_BLOCK=yes, NEWS_OFF=yes, SEC_OFF=yes,
@@ -498,6 +498,10 @@ async function edit(env, now) {
       rejected++; continue;
     }
     const isEarn = d.kind === 'earnings';
+    if (isEarn) {
+      stmts.push(env.DB.prepare(`UPDATE items SET status='rejected', note='отчёт публикует карточка Finnhub' WHERE id=?`).bind(it.id));
+      rejected++; continue;
+    }
     const company = String(d.company || '').toUpperCase().replace(/[^A-Z0-9.]/g, '').slice(0, 20);
     // Один отчёт компании = один пост: всё остальное по этому отчёту за 72 часа отсекаем
     if ((isEarn || d.earnings_related) && company) {
@@ -711,9 +715,10 @@ async function topicShare(env, now) {
 const OUTBOX_URL = 'https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/outbox.json';
 async function outbox(env, now) {
   if (!env.BOT_TOKEN || !(await targetAllowed(env))) return { skipped: true };
-  const r = await fetch(OUTBOX_URL, { signal: AbortSignal.timeout(8000), cf: { cacheTtl: 30 } });
-  if (!r.ok) return { error: 'HTTP ' + r.status };
-  const box = await r.json();
+  const box = [];
+  for (const u of [OUTBOX_URL, OUTBOX_URL.replace('outbox.json', 'outbox_earnings.json')]) {
+    try { const r = await fetch(u, { signal: AbortSignal.timeout(8000), cf: { cacheTtl: 30 } }); if (r.ok) box.push(...(await r.json())); } catch (e) { /* файла может не быть */ }
+  }
   const done = JSON.parse(await meta(env, 'outbox_done') || '[]');
   const fresh = box.filter(x => !done.includes(x.id) && now / 1000 - (x.t || 0) < 6 * 3600);
   let sent = 0;
