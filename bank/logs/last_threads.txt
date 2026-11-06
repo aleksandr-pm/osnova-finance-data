@@ -1,21 +1,21 @@
-threads: fao_prod_27 (agro, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/f6740ce012f6/bank/covers/fao_prod_27.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/f6740ce012f6/bank/cards/fao_prod_27.jpg
+threads: line_cis_fi_res_totl_cd (cis, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/a296ab4c11c6/bank/covers/line_cis_fi_res_totl_cd.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/a296ab4c11c6/bank/cards/line_cis_fi_res_totl_cd.jpg
 ---
-Крупнейшие производители риса, 2024:
-1. 🇮🇳 Индия · 218 млн т
-2. 🇨🇳 Китай · 208 млн т
-3. 🇧🇩 Бангладеш · 60,6 млн т
-4. 🇮🇩 Индонезия · 53,1 млн т
-5. 🇻🇳 Вьетнам · 43,5 млн т
-6. 🇹🇭 Таиланд · 33,6 млн т
-7. 🇲🇲 Мьянма · 27,6 млн т
-8. 🇵🇭 Филиппины · 19,1 млн т
-9. 🇵🇰 Пакистан · 14,6 млн т
-10. 🇰🇭 Камбоджа · 14,2 млн т
-Россия на 39-м, Казахстан на 49-м месте.
+Резервы, включая золото: страны бывшего СССР, 2005-2025:
+1. 🇰🇿 Казахстан · в 9,3 раза
+2. 🇺🇦 Украина · в 3 раза
+3. 🇧🇾 Беларусь · в 10,8 раза
+4. 🇦🇿 Азербайджан · в 11,5 раза
+5. 🇰🇬 Киргизия · в 14 раз
+6. 🇱🇹 Литва · в 1,9 раза
+7. 🇬🇪 Грузия · в 12,9 раза
+8. 🇱🇻 Латвия · в 2,6 раза
+9. 🇲🇩 Молдова · в 10,1 раза
+10. 🇦🇲 Армения · в 7,6 раза
+Киргизия: резервы выросли в 14 раз с 2005 года.
 Больше в Telegram @osnovafin
 ---
 Threads: текстом
-Опубликовано: 18182283205438872. Осталось новых рейтингов: 108
-exit=0 2026-11-06T09:59:14Z
+Опубликовано: 17935203375408656. Осталось новых рейтингов: 107
+exit=0 2026-11-06T11:28:32Z
