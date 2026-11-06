@@ -1,21 +1,21 @@
-threads: line_money_fi_res_totl_cd (money, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/7c081bb19586/bank/covers/line_money_fi_res_totl_cd.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/7c081bb19586/bank/cards/line_money_fi_res_totl_cd.jpg
+threads: fao_prod_27 (agro, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/f6740ce012f6/bank/covers/fao_prod_27.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/f6740ce012f6/bank/cards/fao_prod_27.jpg
 ---
-Резервы стран, включая золото: лидеры, 2005-2025:
-1. 🇨🇳 Китай · в 4,5 раза
-2. 🇺🇸 США · в 7,4 раза
-3. 🇯🇵 Япония · в 1,6 раза
-4. 🇨🇭 Швейцария · в 18,7 раза
-5. 🇮🇳 Индия · в 5,1 раза
-6. 🇩🇪 Германия · в 5,6 раза
-7. 🇸🇦 Саудовская Аравия · в 3,2 раза
-8. 🇰🇷 Южная Корея · в 2,1 раза
-9. 🇮🇹 Италия · в 6,6 раза
-10. 🇸🇬 Сингапур · в 3,7 раза
-Швейцария: резервы выросли в 18,7 раза с 2005 года.
+Крупнейшие производители риса, 2024:
+1. 🇮🇳 Индия · 218 млн т
+2. 🇨🇳 Китай · 208 млн т
+3. 🇧🇩 Бангладеш · 60,6 млн т
+4. 🇮🇩 Индонезия · 53,1 млн т
+5. 🇻🇳 Вьетнам · 43,5 млн т
+6. 🇹🇭 Таиланд · 33,6 млн т
+7. 🇲🇲 Мьянма · 27,6 млн т
+8. 🇵🇭 Филиппины · 19,1 млн т
+9. 🇵🇰 Пакистан · 14,6 млн т
+10. 🇰🇭 Камбоджа · 14,2 млн т
+Россия на 39-м, Казахстан на 49-м месте.
 Больше в Telegram @osnovafin
 ---
-Threads: с картинкой
-Опубликовано: 18360877153170507. Осталось новых рейтингов: 109
-exit=0 2026-11-06T07:52:56Z
+Threads: текстом
+Опубликовано: 18182283205438872. Осталось новых рейтингов: 108
+exit=0 2026-11-06T09:59:14Z
