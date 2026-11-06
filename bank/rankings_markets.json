@@ -7866,7 +7866,7 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 2813,
+  "countries": 2812,
   "top": [
    {
     "iso2": "US",
@@ -8743,7 +8743,7 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 4,
+  "countries": 3,
   "top": [
    {
     "iso2": "AE",
@@ -8768,14 +8768,6 @@
     "flag": "🇦🇪",
     "text": "$4,6 млрд",
     "rank": 3
-   },
-   {
-    "iso2": "AE",
-    "name": "Mohamed Alabbar",
-    "value": 3360376000.0,
-    "flag": "🇦🇪",
-    "text": "$3,4 млрд",
-    "rank": 4
    }
   ],
   "cis": [],
@@ -11784,7 +11776,7 @@
   "source": "Forbes",
   "source_full": "Forbes Real-Time Billionaires",
   "note": "на 6 ноября 2026",
-  "countries": 204,
+  "countries": 203,
   "top": [
    {
     "iso2": "IN",

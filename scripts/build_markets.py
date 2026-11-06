@@ -180,7 +180,8 @@ def billionaires():
     people = json.load(open(p))["personList"]["personsLists"]
     rows_all = []
     for x in people:
-        if not x.get("finalWorth") or "Real Estate" in (x.get("industries") or []):
+        if not x.get("finalWorth") or "Real Estate" in (x.get("industries") or []) or \
+                re.search(r"Alabbar|Sajwani|Emaar|Damac|Sobha", (x.get("personName") or "") + " " + (x.get("source") or "")):
             continue
         rows_all.append((x["personName"].replace(" & family", " с семьёй"), iso(x.get("countryOfCitizenship", "")),
                          x["finalWorth"] * 1e6, x.get("industries") or []))
