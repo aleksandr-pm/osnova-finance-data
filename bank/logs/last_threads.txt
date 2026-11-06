@@ -1,20 +1,21 @@
-threads: bil_country_jp (billionaires, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/25c45f21f30b/bank/cards_markets/bil_country_jp.jpg
+threads: share_exp_661 (agro, donut)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/293dd0d5070c/bank/covers/share_exp_661.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/293dd0d5070c/bank/cards/share_exp_661.jpg
 ---
-Самые богатые люди Японии, ноябрь 2026:
-1. 🇯🇵 Tadashi Yanai с семьёй · $67,3 млрд
-2. 🇯🇵 Masayoshi Son · $44,9 млрд
-3. 🇯🇵 Takemitsu Takizaki · $21,1 млрд
-4. 🇯🇵 Yasumitsu Shigeta · $5,9 млрд
-5. 🇯🇵 Masahiro Noda · $4,7 млрд
-6. 🇯🇵 Kagemasa Kozuki · $4,3 млрд
-7. 🇯🇵 Masahiro Miki · $4,2 млрд
-8. 🇯🇵 Takao Yasuda · $4,2 млрд
-9. 🇯🇵 Takahisa Takahara · $4 млрд
-10. 🇯🇵 Yuji Otsuka · $3,6 млрд
-№1: Tadashi Yanai с семьёй, $67,3 млрд.
+Доли в мировом экспорте какао-бобов, 2024:
+1. 🇨🇮 Кот-д’Ивуар · 20,5%
+2. 🇪🇨 Эквадор · 16,0%
+3. 🇳🇬 Нигерия · 10,7%
+4. 🇬🇭 Гана · 7,3%
+5. 🇳🇱 Нидерланды · 7,0%
+6. 🇧🇪 Бельгия · 6,1%
+7. 🇨🇲 Камерун · 6,0%
+8. 🇵🇪 Перу · 4,1%
+9. 🇲🇾 Малайзия · 3,6%
+10. 🇺🇸 США · 3,4%
+Остальной мир: 39%.
 Больше в Telegram @osnovafin
 ---
 Threads: текстом
-Опубликовано: 18145614787563993. Осталось новых рейтингов: 211
-exit=0 2026-11-06T18:49:59Z
+Опубликовано: 18572876551079256. Осталось новых рейтингов: 210
+exit=0 2026-11-06T22:17:15Z
