@@ -522,22 +522,29 @@ def earnings():
         uid = f"{sym}-{e.get('year')}Q{e.get('quarter')}"
         if uid in done:
             continue
-        if sym not in caps:
+        if sym not in caps or ("ind" not in caps[sym] and caps[sym]["cap"] >= 50000):
             pr = requests.get("https://finnhub.io/api/v1/stock/profile2", params={"symbol": sym, "token": key}, timeout=20).json()
-            caps[sym] = {"cap": pr.get("marketCapitalization") or 0, "name": pr.get("name") or sym}
+            caps[sym] = {"cap": pr.get("marketCapitalization") or 0, "name": pr.get("name") or sym, "ind": pr.get("finnhubIndustry") or ""}
             time.sleep(1.1)
-        if caps[sym]["cap"] < 20000:   # только компании от $20 млрд
+        if caps[sym]["cap"] < 50000:   # только компании от $50 млрд
+            continue
+        if re.search(r"Real Estate|REIT", caps[sym].get("ind", "")):   # недвижимость не публикуем
             continue
         # выручка: ждём факт до 2 часов после EPS, иначе публикуем без неё
         first = st.setdefault("earn_seen", {}).setdefault(uid, int(time.time()))
         if e.get("revenueActual") is None and time.time() - first < 2 * 3600:
             continue
-        name = NAMES.get(sym) or re.sub(r",? (Inc|Corp|Corporation|Co|Ltd|Holdings|Group|PLC|N\.V\.|SA)\.?$", "", caps[sym]["name"])
+        raw = caps[sym]["name"]
+        if raw.isupper():
+            raw = " ".join(w if len(w) <= 3 else w.capitalize() for w in raw.split())
+        name = NAMES.get(sym) or re.sub(r",? (Inc|INC|Corp|Corporation|Co|Ltd|LTD|Holdings|Group|PLC|N\.V\.|SA)\.?$", "", raw)
+        tick = "" if name.upper() == sym else f" ({sym})"
         q = f"{e.get('quarter')} кв. {e.get('year')} фин. года"
         rows_ = []
         if e.get("revenueActual") is not None:
             rows_.append(("Выручка", money(e["revenueActual"]), money(e["revenueEstimate"]) if e.get("revenueEstimate") else "", beat(e["revenueActual"], e.get("revenueEstimate"))))
-        rows_.append(("Прибыль на акцию", "$" + num(e["epsActual"], 2), ("$" + num(e["epsEstimate"], 2)) if e.get("epsEstimate") is not None else "", beat(e["epsActual"], e.get("epsEstimate"))))
+        usd = lambda v: (MINUS if v < 0 else "") + "$" + f"{abs(v):.2f}".replace(".", ",")
+        rows_.append(("Прибыль на акцию", usd(e["epsActual"]), usd(e["epsEstimate"]) if e.get("epsEstimate") is not None else "", beat(e["epsActual"], e.get("epsEstimate"))))
         # карточка
         im, d = canvas(name, f"{sym} · отчёт за {q}")
         y = 330
@@ -565,13 +572,14 @@ def earnings():
         path = f"tg/img/{item}.png"
         im.save(path)
         mark = lambda b: "" if b is None else (" ✅" if b > 0.5 else " ❌" if b < -0.5 else " ➖")
-        cap = f"📊 <b>{name}</b> ({sym}), отчёт за {q}\n\n"
+        cap = f"📊 <b>{name}</b>{tick}, отчёт за {q}\n\n"
         for lab, act, est, b in rows_:
             cap += f"{lab}: {act}" + (f" · прогноз {est}" if est else "") + mark(b) + "\n"
         cap += "\n#отчёт"
         if push_out(item, path, cap):
             out += 1
-        done.append(uid)
+        if os.environ.get("DRY_RUN") != "yes":
+            done.append(uid)
     st["caps"] = caps
     st["earn_done"] = done[-500:]
     st["earn_seen"] = {k: v for k, v in st.get("earn_seen", {}).items() if time.time() - v < 3 * 86400}
