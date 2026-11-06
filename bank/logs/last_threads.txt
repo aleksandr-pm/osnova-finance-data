@@ -1,21 +1,21 @@
-threads: fao_prod_403 (agro, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/ab9c2329a71e/bank/covers/fao_prod_403.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/ab9c2329a71e/bank/cards/fao_prod_403.jpg
+threads: line_cis_bx_trf_pwkr_cd_dt (cis, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/dafd62b3ba25/bank/covers/line_cis_bx_trf_pwkr_cd_dt.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/dafd62b3ba25/bank/cards/line_cis_bx_trf_pwkr_cd_dt.jpg
 ---
-Крупнейшие производители лука, 2024:
-1. 🇮🇳 Индия · 24,3 млн т
-2. 🇨🇳 Китай · 24,2 млн т
-3. 🇺🇸 США · 3,5 млн т
-4. 🇪🇬 Египет · 3,4 млн т
-5. 🇧🇩 Бангладеш · 2,9 млн т
-6. 🇹🇷 Турция · 2,6 млн т
-7. 🇳🇪 Нигер · 2,4 млн т
-8. 🇵🇰 Пакистан · 2,3 млн т
-9. 🇮🇷 Иран · 2,2 млн т
-10. 🇮🇩 Индонезия · 2,1 млн т
-Россия на 16-м, Узбекистан на 18-м месте.
+Переводы мигрантов: страны бывшего СССР, 2005-2025:
+1. 🇺🇿 Узбекистан · в 20,6 раза
+2. 🇹🇯 Таджикистан · в 18 раз
+3. 🇺🇦 Украина · в 4,1 раза
+4. 🇬🇪 Грузия · в 9,6 раза
+5. 🇧🇾 Беларусь · в 11,9 раза
+6. 🇲🇩 Молдова · в 2,1 раза
+7. 🇷🇺 Россия · −53%
+8. 🇦🇲 Армения · в 1,7 раза
+9. 🇦🇿 Азербайджан · в 2,4 раза
+10. 🇱🇻 Латвия · в 3,8 раза
+Узбекистан: переводы мигрантов выросли в 20,6 раза с 2005 года.
 Больше в Telegram @osnovafin
 ---
-Threads: с картинкой
-Опубликовано: 18111830762350837. Осталось новых рейтингов: 112
-exit=0 2026-11-05T22:25:04Z
+Threads: текстом
+Опубликовано: 18219436336352513. Осталось новых рейтингов: 111
+exit=0 2026-11-06T05:32:36Z
