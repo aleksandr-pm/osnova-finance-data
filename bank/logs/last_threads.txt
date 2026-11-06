@@ -1,21 +1,21 @@
-threads: line_cis_fi_res_totl_cd (cis, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/a296ab4c11c6/bank/covers/line_cis_fi_res_totl_cd.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/a296ab4c11c6/bank/cards/line_cis_fi_res_totl_cd.jpg
+threads: wdi_sl_uem_totl_zs_desc (economy, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/e03a708b9e9d/bank/covers/wdi_sl_uem_totl_zs_desc.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/e03a708b9e9d/bank/cards/wdi_sl_uem_totl_zs_desc.jpg
 ---
-Резервы, включая золото: страны бывшего СССР, 2005-2025:
-1. 🇰🇿 Казахстан · в 9,3 раза
-2. 🇺🇦 Украина · в 3 раза
-3. 🇧🇾 Беларусь · в 10,8 раза
-4. 🇦🇿 Азербайджан · в 11,5 раза
-5. 🇰🇬 Киргизия · в 14 раз
-6. 🇱🇹 Литва · в 1,9 раза
-7. 🇬🇪 Грузия · в 12,9 раза
-8. 🇱🇻 Латвия · в 2,6 раза
-9. 🇲🇩 Молдова · в 10,1 раза
-10. 🇦🇲 Армения · в 7,6 раза
-Киргизия: резервы выросли в 14 раз с 2005 года.
+Самая высокая безработица, 2025:
+1. 🇸🇿 Эсватини · 34,2%
+2. 🇿🇦 ЮАР · 32,4%
+3. 🇩🇯 Джибути · 26,0%
+4. 🇧🇼 Ботсвана · 24,5%
+5. 🇬🇦 Габон · 20,2%
+6. 🇨🇬 Республика Конго · 19,9%
+7. 🇳🇦 Намибия · 19,3%
+8. 🇸🇴 Сомали · 18,9%
+9. 🇱🇾 Ливия · 18,8%
+10. 🇾🇪 Йемен · 17,3%
+Армения на 19-м, Грузия на 21-м месте.
 Больше в Telegram @osnovafin
 ---
-Threads: текстом
-Опубликовано: 17935203375408656. Осталось новых рейтингов: 107
-exit=0 2026-11-06T11:28:32Z
+Threads: с картинкой
+Опубликовано: 18133632835683334. Осталось новых рейтингов: 106
+exit=0 2026-11-06T12:58:47Z
