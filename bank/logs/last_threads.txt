@@ -1,21 +1,21 @@
-threads: line_cis_bx_trf_pwkr_cd_dt (cis, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/dafd62b3ba25/bank/covers/line_cis_bx_trf_pwkr_cd_dt.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/dafd62b3ba25/bank/cards/line_cis_bx_trf_pwkr_cd_dt.jpg
+threads: wdi_ny_gdp_mktp_cd_desc (economy, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/5aae2a05ca7d/bank/covers/wdi_ny_gdp_mktp_cd_desc.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/5aae2a05ca7d/bank/cards/wdi_ny_gdp_mktp_cd_desc.jpg
 ---
-Переводы мигрантов: страны бывшего СССР, 2005-2025:
-1. 🇺🇿 Узбекистан · в 20,6 раза
-2. 🇹🇯 Таджикистан · в 18 раз
-3. 🇺🇦 Украина · в 4,1 раза
-4. 🇬🇪 Грузия · в 9,6 раза
-5. 🇧🇾 Беларусь · в 11,9 раза
-6. 🇲🇩 Молдова · в 2,1 раза
-7. 🇷🇺 Россия · −53%
-8. 🇦🇲 Армения · в 1,7 раза
-9. 🇦🇿 Азербайджан · в 2,4 раза
-10. 🇱🇻 Латвия · в 3,8 раза
-Узбекистан: переводы мигрантов выросли в 20,6 раза с 2005 года.
+Крупнейшие экономики мира по ВВП, 2025:
+1. 🇺🇸 США · $30,8 трлн
+2. 🇨🇳 Китай · $19,5 трлн
+3. 🇩🇪 Германия · $5,1 трлн
+4. 🇯🇵 Япония · $4,4 трлн
+5. 🇬🇧 Великобритания · $4 трлн
+6. 🇮🇳 Индия · $4 трлн
+7. 🇫🇷 Франция · $3,4 трлн
+8. 🇷🇺 Россия · $2,6 трлн
+9. 🇮🇹 Италия · $2,6 трлн
+10. 🇨🇦 Канада · $2,3 трлн
+Казахстан на 48-м, Узбекистан на 60-м месте.
 Больше в Telegram @osnovafin
 ---
 Threads: текстом
-Опубликовано: 18219436336352513. Осталось новых рейтингов: 111
-exit=0 2026-11-06T05:32:36Z
+Опубликовано: 17916836952536894. Осталось новых рейтингов: 110
+exit=0 2026-11-06T06:35:40Z
