@@ -307,6 +307,14 @@ def tr(title):
     return None
 
 
+def ru_val(v):
+    """6.5% → 6,5%; 65K → 65 тыс.; 1.2M → 1,2 млн; −0.3% остаётся числом с минусом"""
+    if not v:
+        return ""
+    v = v.replace(".", ",").replace("-", MINUS)
+    return re.sub(r"(\d)([KMBT])$", lambda m: m.group(1) + NB + {"K": "тыс.", "M": "млн", "B": "млрд", "T": "трлн"}[m.group(2)], v)
+
+
 def calendar():
     r = requests.get("https://nfs.faireconomy.media/ff_calendar_thisweek.json", timeout=30,
                      headers={"User-Agent": "Mozilla/5.0 (compatible; OSNOVAFinance/1.0)"})
@@ -330,7 +338,7 @@ def calendar():
         if not name:
             skipped.append(e["title"])
             continue
-        rows.append((t, e["country"], name, e.get("impact"), e.get("forecast") or "", e.get("previous") or ""))
+        rows.append((t, e["country"], name, e.get("impact"), ru_val(e.get("forecast") or ""), ru_val(e.get("previous") or "")))
     print("без перевода, пропущено:", skipped)
     if not rows:
         print("важных событий сегодня нет")
