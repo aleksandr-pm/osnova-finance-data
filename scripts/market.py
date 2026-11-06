@@ -36,8 +36,7 @@ WD = ["понедельник", "вторник", "среда", "четверг"
 INDICES = [("^GSPC", "S&P 500", "🇺🇸"), ("^IXIC", "Nasdaq", "🇺🇸"), ("^DJI", "Dow Jones", "🇺🇸"),
            ("^GDAXI", "DAX", "🇩🇪"), ("^FTSE", "FTSE 100", "🇬🇧"), ("^N225", "Nikkei 225", "🇯🇵"),
            ("^HSI", "Hang Seng", "🇭🇰"), ("000001.SS", "Шанхай", "🇨🇳")]
-COMMOD = [("BZ=F", "Нефть Brent", "$"), ("CL=F", "Нефть WTI", "$"), ("GC=F", "Золото", "$"),
-          ("SI=F", "Серебро", "$"), ("HG=F", "Медь", "$"), ("NG=F", "Газ (США)", "$")]
+COMMOD = [("BZ=F", "Нефть Brent", "$"), ("GC=F", "Золото", "$"), ("SI=F", "Серебро", "$"), ("HG=F", "Медь", "$")]
 OTHER = [("BTC-USD", "Биткоин", "$"), ("^TNX", "UST 10 лет", "%")]
 # Крупнейшие бумаги США для графика дня и алертов
 BIG = ("AAPL MSFT NVDA AMZN GOOGL META TSLA AVGO BRK-B LLY JPM V MA UNH XOM WMT JNJ PG HD COST ORCL ABBV BAC KO "
@@ -90,7 +89,7 @@ def day_ru(d):
 
 def closes(tickers, period="10d"):
     import yfinance as yf
-    df = yf.download(tickers, period=period, interval="1d", progress=False, auto_adjust=False, group_by="ticker", threads=True)
+    df = yf.download(tickers, period=period, interval="1d", progress=False, auto_adjust=False, group_by="ticker", threads=False)
     out = {}
     for t in tickers:
         try:
@@ -111,6 +110,7 @@ def last_change(s):
 
 def canvas(title, subtitle):
     im = Image.new("RGB", (W, H), T["bg"])
+    _IM["im"] = im
     d = ImageDraw.Draw(im)
     ring(d, M + 16, 96, 16, T["brand"], T["bg"])
     spaced(d, M + 46, 85, "OSNOVA FINANCE", font(20, 500), T["brand"], 4)
@@ -129,21 +129,42 @@ def footer(d, source):
 
 
 def section(d, y, name):
-    spaced(d, M, y, name.upper(), font(22, 600), T["sub"], 3)
-    return y + 44
+    spaced(d, M, y, name.upper(), font(21, 600), T["sub"], 3)
+    return y + 40
+
+
+EMOJI_FONT = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
+_IM = {}
+
+
+def emoji(d, x, y, ch, size=34):
+    """Цветной эмодзи (флаг): Noto Color Emoji рисуется только в 109 px, затем масштабируется."""
+    from PIL import ImageFont
+    im = _IM.get("im")
+    if im is None or not os.path.exists(EMOJI_FONT):
+        return
+    tile = Image.new("RGBA", (136, 128), (0, 0, 0, 0))
+    ImageDraw.Draw(tile).text((0, 0), ch, font=ImageFont.truetype(EMOJI_FONT, 109), embedded_color=True)
+    bb = tile.getbbox()
+    if not bb:
+        return
+    tile = tile.crop(bb)
+    k = size / tile.height
+    tile = tile.resize((max(1, int(tile.width * k)), size), Image.LANCZOS)
+    im.paste(tile, (int(x), int(y)), tile)
 
 
 def row(d, y, label, value, change, change_txt=None, flag=""):
-    f, fv = font(32, 500), font(32, 500)
+    f = font(30, 500)
     if flag:
-        d.text((M, y), flag, font=font(30), fill=T["text"], embedded_color=True)
+        emoji(d, M, y + 3, flag, 30)
         d.text((M + 52, y), label, font=f, fill=T["text"])
     else:
         d.text((M, y), label, font=f, fill=T["text"])
-    d.text((W - M - 230, y), value, font=fv, fill=T["muted"], anchor="ra")
-    d.text((W - M, y), change_txt or pct(change), font=font(32, 600), fill=col(change), anchor="ra")
-    d.rectangle([M, y + 52, W - M, y + 52], fill=T["line"])
-    return y + 62
+    d.text((W - M - 230, y), value, font=f, fill=T["muted"], anchor="ra")
+    d.text((W - M, y), change_txt or pct(change), font=font(30, 600), fill=col(change), anchor="ra")
+    d.rectangle([M, y + 46, W - M, y + 46], fill=T["line"])
+    return y + 54
 
 
 # ───────── outbox ─────────
@@ -182,7 +203,7 @@ def evening():
     now = dt.datetime.now(DXB)
     us_day = (now - dt.timedelta(hours=12)).date()  # торговый день США, закрытие около 01:00 по Дубаю
     im, d = canvas("Итоги дня", f"{day_ru(us_day)}, {WD[us_day.weekday()]} · изменение к прошлому закрытию")
-    y = 300
+    y = 290
     y = section(d, y, "Индексы")
     lines = []
     for t, name, fl in INDICES:
@@ -191,7 +212,7 @@ def evening():
             y = row(d, y, name, price(p), c, flag=fl)
             if t in ("^GSPC", "^IXIC", "^DJI"):
                 lines.append(f"{name} {pct(c)}")
-    y += 18
+    y += 12
     y = section(d, y, "Сырьё")
     com = []
     for t, name, _ in COMMOD:
@@ -199,8 +220,8 @@ def evening():
             p, c, _ = last_change(data[t])
             y = row(d, y, name, "$" + price(p), c)
             if t in ("BZ=F", "GC=F"):
-                com.append(f"{name.lower().replace('нефть brent', 'нефть Brent')} {pct(c)}")
-    y += 18
+                com.append(f"{name} {pct(c)}")
+    y += 12
     y = section(d, y, "Биткоин и облигации")
     for t, name, unit in OTHER:
         if t in data:
@@ -217,7 +238,7 @@ def evening():
     im.save(path)
     cap = f"📈 <b>Итоги дня {day_ru(us_day)}</b>\n\n" + ", ".join(lines)
     if com:
-        cap += "\n" + ", ".join(com).capitalize()
+        cap += "\n" + ", ".join(com)
     cap += "\n\n#итогидня"
     return push_out(item, path, cap)
 
@@ -328,7 +349,7 @@ def calendar():
         flag, _ = FLAGS[c]
         tf = font(30, 600 if imp == "High" else 500)
         d.text((M, y), t.strftime("%H:%M"), font=tf, fill=T["cta"] if imp == "High" else T["text"])
-        d.text((M + 120, y - 2), flag, font=font(28), embedded_color=True)
+        emoji(d, M + 120, y + 2, flag, 28)
         nf = font(27, 600 if imp == "High" else 400)
         words, linesn, cur = name.split(), [], ""
         for w_ in words:
@@ -420,7 +441,7 @@ def chart():
     if pick in ("BTC-USD", "GC=F", "BZ=F", "SI=F"):
         head = f"<b>{name}</b> {pct(c)} за день"
     else:
-        head = f"Акция <b>{name}</b> {word} на {pct(abs(c))[0:] if c > 0 else pct(abs(c))} за день"
+        head = f"Акции <b>{name}</b> {'выросли' if c > 0 else 'упали'} на {pct(abs(c)).lstrip('+')} за день"
     cap = f"📊 {head}\nЗа полгода: {pct(half)}, цена ${price(vals[-1])}\n\n#графикдня"
     ok = push_out(item, path, cap)
     st["chart_used"] = (used + [pick])[-20:]
