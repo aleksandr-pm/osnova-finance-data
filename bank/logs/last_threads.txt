@@ -1,21 +1,21 @@
-threads: wdi_bm_trf_pwkr_cd_dt_desc (money, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/654eb87a85e6/bank/covers/wdi_bm_trf_pwkr_cd_dt_desc.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/654eb87a85e6/bank/cards/wdi_bm_trf_pwkr_cd_dt_desc.jpg
+threads: line_agro_prod_257 (agro, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/1ba2443bc9c9/bank/covers/line_agro_prod_257.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/1ba2443bc9c9/bank/cards/line_agro_prod_257.jpg
 ---
-Больше всего денег мигранты отправляют из этих стран, 2025:
-1. 🇺🇸 США · $107 млрд
-2. 🇦🇪 ОАЭ · $62,1 млрд
-3. 🇸🇦 Саудовская Аравия · $58,7 млрд
-4. 🇨🇭 Швейцария · $42,7 млрд
-5. 🇩🇪 Германия · $26,7 млрд
-6. 🇫🇷 Франция · $22,7 млрд
-7. 🇳🇱 Нидерланды · $20,2 млрд
-8. 🇱🇺 Люксембург · $20 млрд
-9. 🇰🇼 Кувейт · $16,7 млрд
-10. 🇦🇺 Австралия · $16 млрд
-Россия на 24-м, Казахстан на 33-м месте.
+Производство пальмового масла: крупнейшие производители, 2000-2023:
+1. 🇮🇩 Индонезия · в 6,7 раза
+2. 🇲🇾 Малайзия · в 1,7 раза
+3. 🇹🇭 Таиланд · в 5,7 раза
+4. 🇨🇴 Колумбия · в 3,5 раза
+5. 🇳🇬 Нигерия · в 1,6 раза
+6. 🇬🇹 Гватемала · в 14,4 раза
+7. 🇵🇬 Папуа-Новая Гвинея · в 2,3 раза
+8. 🇭🇳 Гондурас · в 6,9 раза
+9. 🇧🇷 Бразилия · в 5,9 раза
+10. 🇨🇮 Кот-д’Ивуар · в 2,1 раза
+Гватемала: производство пальмового масла выросло в 14,4 раза с 2000 года.
 Больше в Telegram @osnovafin
 ---
-Threads: текстом
-Опубликовано: 18060401576559454. Осталось новых рейтингов: 104
-exit=0 2026-11-06T15:47:48Z
+Threads: с картинкой
+Опубликовано: 18649159459031855. Осталось новых рейтингов: 103
+exit=0 2026-11-06T17:27:08Z
