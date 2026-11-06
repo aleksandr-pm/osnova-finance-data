@@ -1,21 +1,21 @@
-threads: line_agro_prod_267 (agro, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/9d431787e5ac/bank/covers/line_agro_prod_267.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/9d431787e5ac/bank/cards/line_agro_prod_267.jpg
+threads: wdi_bm_trf_pwkr_cd_dt_desc (money, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/654eb87a85e6/bank/covers/wdi_bm_trf_pwkr_cd_dt_desc.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/654eb87a85e6/bank/cards/wdi_bm_trf_pwkr_cd_dt_desc.jpg
 ---
-Производство подсолнечника: крупнейшие производители, 2000-2024:
-1. 🇷🇺 Россия · в 4,4 раза
-2. 🇺🇦 Украина · в 3,2 раза
-3. 🇦🇷 Аргентина · −36%
-4. 🇨🇳 Китай · +20%
-5. 🇹🇷 Турция · в 2,7 раза
-6. 🇰🇿 Казахстан · в 17,5 раза
-7. 🇭🇺 Венгрия · в 3,7 раза
-8. 🇧🇬 Болгария · в 3,9 раза
-9. 🇷🇴 Румыния · в 2,1 раза
-10. 🇫🇷 Франция · −19%
-Казахстан: производство подсолнечника выросло в 17,5 раза с 2000 года.
+Больше всего денег мигранты отправляют из этих стран, 2025:
+1. 🇺🇸 США · $107 млрд
+2. 🇦🇪 ОАЭ · $62,1 млрд
+3. 🇸🇦 Саудовская Аравия · $58,7 млрд
+4. 🇨🇭 Швейцария · $42,7 млрд
+5. 🇩🇪 Германия · $26,7 млрд
+6. 🇫🇷 Франция · $22,7 млрд
+7. 🇳🇱 Нидерланды · $20,2 млрд
+8. 🇱🇺 Люксембург · $20 млрд
+9. 🇰🇼 Кувейт · $16,7 млрд
+10. 🇦🇺 Австралия · $16 млрд
+Россия на 24-м, Казахстан на 33-м месте.
 Больше в Telegram @osnovafin
 ---
 Threads: текстом
-Опубликовано: 18100058576414074. Осталось новых рейтингов: 105
-exit=0 2026-11-06T14:32:57Z
+Опубликовано: 18060401576559454. Осталось новых рейтингов: 104
+exit=0 2026-11-06T15:47:48Z
