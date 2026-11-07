@@ -1,20 +1,21 @@
-threads: bil_ind_logistics (billionaires, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/e44228e12f79/bank/cards_markets/bil_ind_logistics.jpg
+threads: line_agro_prod_572 (agro, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/a2eb77fa58e3/bank/covers/line_agro_prod_572.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/a2eb77fa58e3/bank/cards/line_agro_prod_572.jpg
 ---
-Самые богатые люди из сферы логистики, ноябрь 2026:
-1. 🇨🇭 Gianluigi Aponte · $45,5 млрд
-2. 🇨🇭 Rafaela Aponte-Diamant · $45,5 млрд
-3. 🇨🇾 John Fredriksen · $21,9 млрд
-4. 🇵🇭 Enrique Razon Jr. · $18,6 млрд
-5. 🇺🇸 Brad Jacobs · $12,5 млрд
-6. 🇨🇳 Yang Shaopeng · $9,4 млрд
-7. 🇺🇸 Dennis Washington · $8,8 млрд
-8. 🇳🇴 Kjell Inge Rokke · $8,7 млрд
-9. 🇫🇷 Jacques Saadé Jr · $7,9 млрд
-10. 🇫🇷 Rodolphe Saadé · $7,9 млрд
-Roman Trotsenko (Россия) на 24-м месте.
+Производство авокадо: крупнейшие производители, 2000-2024:
+1. 🇲🇽 Мексика · в 3 раза
+2. 🇨🇴 Колумбия · в 9,6 раза
+3. 🇩🇴 Доминиканская Республика · в 15 раз
+4. 🇵🇪 Перу · в 11 раз
+5. 🇮🇩 Индонезия · в 6,3 раза
+6. 🇰🇪 Кения · в 11,2 раза
+7. 🇧🇷 Бразилия · в 5 раз
+8. 🇮🇱 Израиль · в 3 раза
+9. 🇪🇹 Эфиопия · в 2,6 раза
+10. 🇭🇹 Гаити · в 4,4 раза
+Доминиканская Республика: производство авокадо выросло в 15 раз с 2000 года.
 Больше в Telegram @osnovafin
 ---
-Threads: текстом
-Опубликовано: 17936243607409786. Осталось новых рейтингов: 207
-exit=0 2026-11-07T07:39:36Z
+Threads: с картинкой
+Опубликовано: 17868138963676223. Осталось новых рейтингов: 206
+exit=0 2026-11-07T09:45:06Z
