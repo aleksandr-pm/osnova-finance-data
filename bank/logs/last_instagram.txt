@@ -1,33 +1,30 @@
-instagram: wdi_bx_klt_dinv_cd_wd_desc (money, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/fe2b1c3a3638/bank/covers/wdi_bx_klt_dinv_cd_wd_desc.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/fe2b1c3a3638/bank/cards/wdi_bx_klt_dinv_cd_wd_desc.jpg
+instagram: bil_country_jp (billionaires, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/cbade9393626/bank/cards_markets/bil_country_jp.jpg
 ---
-США: $307 млрд прямых иностранных инвестиций за год, №1 в мире.
+№1: Tadashi Yanai с семьёй, $67,3 млрд.
 
-Больше всего прямых иностранных инвестиций, 2025 год, данные World Bank. Разрыв первого места со вторым (Сингапур): в 1,9 раза.
+Самые богатые люди Японии, 2026 год, данные Forbes. Разрыв первого места со вторым (Masayoshi Son): в 1,5 раза. Учтены на 6 ноября 2026.
 
 Топ-10:
-1. 🇺🇸 США: $307 млрд
-2. 🇸🇬 Сингапур: $159 млрд
-3. 🇭🇰 Гонконг: $121 млрд
-4. 🇩🇪 Германия: $95,2 млрд
-5. 🇨🇳 Китай: $80 млрд
-6. 🇧🇷 Бразилия: $77,7 млрд
-7. 🇮🇪 Ирландия: $75 млрд
-8. 🇨🇦 Канада: $70,1 млрд
-9. 🇫🇷 Франция: $61,1 млрд
-10. 🇦🇪 ОАЭ: $48,2 млрд
+1. 🇯🇵 Tadashi Yanai с семьёй: $67,3 млрд
+2. 🇯🇵 Masayoshi Son: $44,9 млрд
+3. 🇯🇵 Takemitsu Takizaki: $21,1 млрд
+4. 🇯🇵 Yasumitsu Shigeta: $5,9 млрд
+5. 🇯🇵 Masahiro Noda: $4,7 млрд
+6. 🇯🇵 Kagemasa Kozuki: $4,3 млрд
+7. 🇯🇵 Masahiro Miki: $4,2 млрд
+8. 🇯🇵 Takao Yasuda: $4,2 млрд
+9. 🇯🇵 Takahisa Takahara: $4 млрд
+10. 🇯🇵 Yuji Otsuka: $3,6 млрд
 
-Россия на 37-м, Узбекистан на 50-м месте.
-
-Кто поднимется выше через 5 лет?
+Кто удивил в этом списке?
 
 Каждый день рынки, сделки инсайдеров из отчётов SEC и данные в Telegram @osnovafin, ссылка в профиле.
 
-Источник: World Bank, World Development Indicators. Не является инвестиционной рекомендацией.
+Источник: Forbes Real-Time Billionaires. Не является инвестиционной рекомендацией.
 
-#деньги #капитал #финансоваяграмотность #мироваяэкономика #сша #инвестиции #финансы #статистика #инфографика #цифры #рынки
+#миллиардеры #forbes #богатство #бизнес #tadashiyanaiссемьёй #инвестиции #финансы #статистика #инфографика #цифры #рынки
 ---
 Instagram: одиночный пост с графиком
-Опубликовано: 18093048728502674. Осталось новых рейтингов: 116
-exit=0 2026-11-06T18:30:49Z
+Опубликовано: 18443336722196913. Осталось новых рейтингов: 224
+exit=0 2026-11-07T06:59:20Z
