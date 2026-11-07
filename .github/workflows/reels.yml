@@ -53,7 +53,7 @@ jobs:
           python scripts/reel.py $ARGS 2>&1 | tee bank/logs/last_reels.txt
           CODE=${PIPESTATUS[0]}
           echo "exit=$CODE $(date -u +%FT%TZ)" >> bank/logs/last_reels.txt
-          exit 0
+          echo "$CODE" > /tmp/reel_exit
 
       - uses: actions/upload-artifact@v4
         with:
@@ -69,3 +69,6 @@ jobs:
           git add bank/state_reels.json bank/logs assets/logos 2>/dev/null
           git commit -m "reels: publish [skip ci]" || echo "nothing to commit"
           for i in 1 2 3; do git pull --rebase origin main && git push && break; sleep 5; done
+
+      - name: Result
+        run: exit $(cat /tmp/reel_exit)

@@ -1011,7 +1011,7 @@ def make_frames_compare(r):
             x0 = LX
             for i in range(shown):
                 w_ = BW * others[i]["value"] / v0 * (ease(part) if i == shown - 1 else 1)
-                d.rectangle([int(x0), y2 + 60, int(x0 + w_) - 3, y2 + 140], fill=C["seg"][1 + i % 4])
+                d.rectangle([int(x0), y2 + 60, max(int(x0), int(x0 + w_) - 3), y2 + 140], fill=C["seg"][1 + i % 4])
                 x0 += w_
             d.rectangle([LX, y2 + 60, W - LX, y2 + 140], outline=C["line"], width=2)
             ly = y2 + 180
@@ -1158,7 +1158,20 @@ def main():
         log("Нет рейтинга для ролика: " + (f"{want} не найден" if want else "все публиковались за 90 дней"))
         return 1
     n = len([p for p in st["posted"] if p.get("block") != "manual"])
-    music = render(r, out, n, theme)
+    for attempt in range(3):  # ошибка сборки не должна блокировать очередь
+        try:
+            music = render(r, out, n, theme)
+            break
+        except Exception as e:  # noqa: BLE001
+            log(f"Ошибка сборки {r['id']}: {e!r}")
+            if want or attempt == 2:
+                raise
+            st["posted"].append({"id": r["id"], "block": r["block"], "fmt": r["fmt"], "post": "failed",
+                                 "at": dt.datetime.now(dt.timezone.utc).isoformat()})
+            save_state(st)
+            r = pick(rankings, st)
+            if not r:
+                return 1
     cap = caption(r, n)
     log(f"reels: {r['id']} ({r['block']}, {r['fmt']})\n---\n{cap}\n---")
     token = os.environ.get("IG_TOKEN", "")
