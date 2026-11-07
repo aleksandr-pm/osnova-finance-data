@@ -489,9 +489,15 @@ def story(r):
     return dict(stat=stat, what=what, punch=punch)
 
 
+METRIC = (("bil_", "Состояние"), ("_rev", "Выручка за 12 мес."), ("_earn", "Прибыль за 12 мес."),
+          ("_emp", "Сотрудники"), ("mkt_", "Капитализация"))
+
+
 def sub_line(r):
     if r["block"] in ("companies", "billionaires"):
-        return f"{r['source']} · {r.get('note', '')}"
+        i = r["id"].removeprefix("cmp_")
+        m = next((v for k, v in METRIC if k in i), "")
+        return f"{m} · {r['source']} · {r.get('note', '')}".lstrip(" ·")
     return f"{r['source']} · {r['year']} год"
 
 
@@ -534,8 +540,7 @@ def caption_bars(r, n):
             seen.add(h)
             tags.append(h)
     return "\n\n".join([
-        hook, rows, q,
-        "Каждый день рынки, сделки инсайдеров из отчётов SEC и данные в Telegram @osnovafin, ссылка в профиле.",
+        hook, CTA_TOP, rows, q, CTA_TEXT,
         f"Источник: {r['source_full']}" + (f", {r['note']}" if r["block"] in ("companies", "billionaires") else f", {r['year']} год")
         + ". Не индивидуальная инвестиционная рекомендация.",
         " ".join(tags[:12]),
@@ -543,8 +548,10 @@ def caption_bars(r, n):
 
 
 # ---------- кадр ----------
-T_COV, T_EX = int(2.0 * FPS), int(1.6 * FPS)
+# Короткое начало: обложка 1,2 с, без отдельного экрана пояснений.
+T_COV, T_EX = int(1.2 * FPS), 0
 T_IT, T_FIN, T_END = int(3.9 * FPS), int(7.5 * FPS), int(3.5 * FPS)
+BOTTOM = 1280  # низ контента; ниже источник и плашка Telegram
 
 
 def chrome(im, d, n, total, src):
@@ -567,16 +574,77 @@ def chrome(im, d, n, total, src):
 
 
 def end_card(im, d, a):
-    d.rectangle([0, 340, W, CONTENT_BOTTOM], fill=hexa(C["bone"], a))
-    d.rectangle([LX, 420, W - LX, 1240], fill=hexa(C["graphite"], a))
-    im.alpha_composite(fade(ICON["tg_huge"], a), ((W - 220) // 2, 480))
-    d.text((W / 2, 790), "@osnovafin", font=F(110, 600), fill=hexa(C["bone"], a), anchor="mm")
-    d.text((W / 2, 880), "Telegram · OSNOVA Finance", font=F(36, 400), fill=hexa(C["blush"], a), anchor="mm")
+    d.rectangle([0, 330, W, CONTENT_BOTTOM], fill=hexa(C["bone"], a))
+    d.rectangle([LX, 360, W - LX, 1270], fill=hexa(C["graphite"], a))
+    im.alpha_composite(fade(ICON["tg_huge"], a), ((W - 220) // 2, 450))
+    d.text((W / 2, 780), "@osnovafin", font=F(120, 600), fill=hexa(C["bone"], a), anchor="mm")
+    d.text((W / 2, 880), "Telegram · OSNOVA Finance", font=F(38, 400), fill=hexa(C["blush"], a), anchor="mm")
     for i, l in enumerate(["Больше в Telegram", "Рейтинги, сделки инсайдеров,", "новости рынков каждый день"]):
-        d.text((W / 2, 980 + i * 60), l, font=F(42, 600 if i < 2 else 400),
+        d.text((W / 2, 1000 + i * 66), l, font=F(46, 600 if i < 2 else 400),
                fill=hexa(C["bone"] if i < 2 else C["blush"], a), anchor="mm")
 
 
+def draw_header(d, r, kick=None, sub=None, title=None):
+    """Заголовок экрана; возвращает y, с которого начинается контент."""
+    label(d, (LX, 348), kick or kicker(r), 24, C["smoke"])
+    title = title or r["title"]
+    f = F(54, 600)
+    lines = wrap(d, title, f, W - 2 * LX)
+    if len(lines) > 1:
+        f = F(46, 600)
+        lines = wrap(d, title, f, W - 2 * LX)[:2]
+    y = 382
+    for l in lines:
+        d.text((LX, y), l, font=f, fill=C["ink"])
+        y += int(f.size * 1.16)
+    d.text((LX, y + 4), sub or sub_line(r), font=F(30, 400), fill=C["smoke"])
+    return y + 52
+
+
+def cover(im, d, a, kick, big, text, tail=None):
+    label(d, (LX, 370), kick, 28, hexa(C["smoke"], a))
+    fs = 260
+    while d.textlength(big, font=F(fs, 600)) > W - 2 * LX:
+        fs -= 6
+    d.text((LX - 6, 420), big, font=F(fs, 600), fill=hexa(C["graphite"], a))
+    y = 420 + int(fs * 1.2)
+    for l in wrap(d, text, F(72, 600), W - 2 * LX)[:4]:
+        d.text((LX, y), l, font=F(72, 600), fill=hexa(C["ink"], a))
+        y += 86
+    if tail:
+        d.text((LX, y + 28), tail, font=F(44, 400), fill=hexa(C["smoke"], a))
+
+
+def punch_box(d, a, lines, y=1164):
+    d.rectangle([LX, y, W - LX, BOTTOM], fill=hexa(C["graphite"], a))
+    for j, l in enumerate(lines[:2]):
+        fl = fit(d, l, 32, 400, W - 2 * LX - 52) if j == 0 else fit(d, l, 38, 600, W - 2 * LX - 52)
+        d.text((LX + 26, y + 18 + j * 48), l, font=fl, fill=hexa(C["bone"], a))
+
+
+def short(v, unit):
+    """Подписи осей и бегущие значения."""
+    if unit == "usd_pc":
+        return "$" + f"{v:,.0f}".replace(",", NB)
+    if unit == "pct":
+        return num1(v) + "%"
+    return fmt(v, unit)
+
+
+def src_line(r):
+    if r["block"] in ("companies", "billionaires"):
+        return f"Источник: {r['source_full']}, {r['note']}."
+    if r["fmt"] in ("line", "race"):
+        return f"Источник: {r['source_full']}, {r['start']}-{r['year']}."
+    return f"Источник: {r['source_full']}, {r['year']} год."
+
+
+def end_phase(im, d, r, f, total, kick=None):
+    draw_header(d, r, kick=kick)
+    end_card(im, d, ease((f - (total - T_END)) / 8))
+
+
+# ---------- рейтинг: обратный отсчёт ----------
 def make_frames(r):
     top = r["top"]
     n = len(top)
@@ -585,25 +653,9 @@ def make_frames(r):
     asc = is_asc(r)
     vals = [abs(x["value"]) for x in top]
     vmax = max(vals) or 1
-    total = T_COV + T_EX + n * T_IT + T_FIN + T_END
-    src = f"Источник: {r['source_full']}" + (f", {r['note']}." if r["block"] in ("companies", "billionaires")
-                                             else f", {r['year']} год.")
-    title = r["title"]
-    ttl_f = F(50, 500)
-
-    def header(d):
-        label(d, (LX, 362), kicker(r), 24, C["smoke"])
-        f = ttl_f
-        lines = wrap(d, title, f, W - 2 * LX)
-        if len(lines) > 1:
-            f = F(42, 500)
-            lines = wrap(d, title, f, W - 2 * LX)[:2]
-        y = 396
-        for l in lines:
-            d.text((LX, y), l, font=f, fill=C["ink"])
-            y += int(f.size * 1.18)
-        d.text((LX, y + 6), sub_line(r), font=F(28, 400), fill=C["smoke"])
-        return y + 50
+    total = T_COV + n * T_IT + T_FIN + T_END
+    MROW = 40  # строка мини-таблицы
+    VIS = {"company": (380, 160), "country": (248, 186), "person": (186, 186)}[kind]
 
     def compare(i):
         if i == 0:
@@ -620,172 +672,80 @@ def make_frames(r):
         im = Image.new("RGBA", (W, H), C["bone"])
         d = ImageDraw.Draw(im)
         if f < T_COV:  # обложка: цифра №1 и тема, имя №1 скрыто до конца отсчёта
-            a = ease(f / 6)
-            label(d, (LX, 380), kicker(r), 26, hexa(C["smoke"], a))
-            big = top[0]["text"]
-            fs = 240
-            while d.textlength(big, font=F(fs, 600)) > W - 2 * LX:
-                fs -= 6
-            d.text((LX - 6, 430), big, font=F(fs, 600), fill=hexa(C["graphite"], a))
-            y = 430 + int(fs * 1.2)
-            for l in wrap(d, title, F(64, 600), W - 2 * LX)[:3]:
-                d.text((LX, y), l, font=F(64, 600), fill=hexa(C["ink"], a))
-                y += 78
-            d.text((LX, y + 24), "Кто №1? Смотрите до конца", font=F(40, 400), fill=hexa(C["smoke"], a))
-        elif f < T_COV + T_EX:  # короткое пояснение
-            a = ease((f - T_COV) / 5)
-            d.rectangle([LX, 470, LX + 10, 480], fill=hexa(C["graphite"], a))
-            label(d, (LX + 26, 462), "ЧТО ЭТО ЗНАЧИТ", 26, hexa(C["smoke"], a))
-            y = 530
-            for l in wrap(d, st["what"], F(54, 500), W - 2 * LX)[:5]:
-                d.text((LX, y), l, font=F(54, 500), fill=hexa(C["ink"], a))
-                y += 70
-        elif f < T_COV + T_EX + n * T_IT:  # обратный отсчёт
-            k = (f - T_COV - T_EX) // T_IT
-            m = (f - T_COV - T_EX) % T_IT
+            cover(im, d, ease(f / 4), kicker(r), top[0]["text"], r["title"], "Кто №1? Смотрите до конца")
+        elif f < T_COV + n * T_IT:  # обратный отсчёт
+            k = (f - T_COV) // T_IT
+            m = (f - T_COV) % T_IT
             idx = n - 1 - k
             x = top[idx]
             a = ease(m / 8)
-            y0 = header(d) + 20
-            nf = F(44, 600)
+            y0 = draw_header(d, r) + 14
+            nf = F(64, 600)
             ns = f"№{NB}{idx + 1}"
             d.text((LX, y0), ns, font=nf, fill=hexa(C["smoke"], a))
-            nx = LX + d.textlength(ns, font=nf) + 24
-            d.text((nx, y0), x["name"], font=fit(d, x["name"], 44, 600, W - LX - nx), fill=hexa(C["ink"], a))
-            ty = y0 + 70
-            if kind == "company":
-                t = tile(kind, x["name"], x["iso2"], W - 2 * LX, 130)
-                im.alpha_composite(fade(t, a), (LX, ty))
-                vy = ty + 146
-            else:
-                t = tile(kind, x["name"], x["iso2"], 200, 150)
-                im.alpha_composite(fade(t, a), (LX, ty))
-                vy = ty + 166
-            if kind == "country":
-                vx, vyy = LX + 230, ty + 10
-            else:
-                vx, vyy = (LX + 190, ty + 10) if kind == "person" else (LX, vy)
+            nx = LX + d.textlength(ns, font=nf) + 26
+            d.text((nx, y0 + 4), x["name"], font=fit(d, x["name"], 60, 600, W - LX - nx), fill=hexa(C["ink"], a))
+            ty = y0 + 92
+            vw, vh = VIS
+            im.alpha_composite(fade(tile(kind, x["name"], x["iso2"], vw, vh), a), (LX, ty))
+            vx = LX + vw + 34
             sl = ease((m - 3) / 14)
-            vf = fit(d, x["text"], 110, 600, W - LX - vx)
-            d.text((vx - int(40 * (1 - sl)), vyy), x["text"], font=vf, fill=hexa(C["graphite"], a * sl))
-            dy = max(vy, vyy + 130) if kind != "company" else vy + 130
+            vf = fit(d, x["text"], 150, 600, W - LX - vx)
+            d.text((vx - int(40 * (1 - sl)), ty + vh / 2), x["text"], font=vf,
+                   fill=hexa(C["graphite"], a * sl), anchor="lm")
             info = []
             if kind != "country":
                 info.append(country_ru(x["iso2"]))
             c = compare(idx)
             if c:
                 info.append(c)
+            iy = ty + vh + 22
             if info:
-                im.alpha_composite(fade(flag(x["iso2"], 30), a), (LX, dy + 4)) if kind != "country" else None
-                ix = LX + (56 if kind != "country" else 0)
-                for j, l in enumerate(wrap(d, " · ".join(info), F(32, 400), W - LX - ix)[:2]):
-                    d.text((ix, dy + j * 42), l, font=F(32, 400), fill=hexa(C["ink"], a))
-            # мини-таблица уже показанных мест
-            ly = 1286 - n * 40 - 10
+                ix = LX
+                if kind != "country":
+                    im.alpha_composite(fade(flag(x["iso2"], 34), a), (LX, iy + 4))
+                    ix = LX + 62
+                for j, l in enumerate(wrap(d, " · ".join(info), F(38, 400), W - LX - ix)[:2]):
+                    d.text((ix, iy + j * 48), l, font=F(38, 400), fill=hexa(C["ink"], a))
+            # мини-таблица уже показанных мест, растёт снизу
+            ly = BOTTOM - n * MROW
             for j in range(idx, n):
                 al = 1.0 if j > idx else (ease((m - 34) / 14) if m > 34 else 0)
                 if al <= 0:
                     continue
                 xx = top[j]
-                y = ly + j * 40
-                d.text((LX + 14, y + 16), str(j + 1), font=F(24, 600), fill=hexa(C["smoke"], al), anchor="mm")
-                im.alpha_composite(fade(tile(kind, xx["name"], xx["iso2"], 80 if kind == "company" else 42, 32), al), (LX + 36, y))
-                nm_x = LX + (130 if kind == "company" else 92)
-                d.text((nm_x, y + 16), xx["name"], font=fit(d, xx["name"], 24, 500, LX + 400 - nm_x - 10, 14),
+                y = ly + j * MROW
+                d.text((LX + 14, y + 18), str(j + 1), font=F(26, 600), fill=hexa(C["smoke"], al), anchor="mm")
+                tw = 84 if kind == "company" else 46
+                im.alpha_composite(fade(tile(kind, xx["name"], xx["iso2"], tw, 32), al), (LX + 38, y + 2))
+                nm_x = LX + 38 + tw + 14
+                d.text((nm_x, y + 18), xx["name"], font=fit(d, xx["name"], 26, 500, LX + 430 - nm_x - 10, 14),
                        fill=hexa(C["ink"], al), anchor="lm")
-                bw = int(300 * vals[j] / vmax * ease(al))
-                d.rectangle([LX + 400, y + 6, LX + 400 + max(bw, 3), y + 28], fill=hexa(C["bar"], al))
-                d.text((LX + 400 + max(bw, 3) + 12, y + 17), xx["text"], font=F(24, 600), fill=hexa(C["ink"], al), anchor="lm")
-        elif f < T_COV + T_EX + n * T_IT + T_FIN:  # итоговая таблица
-            m = f - T_COV - T_EX - n * T_IT
-            y0 = header(d) + 14
-            step = min(62, (1150 - y0) // n)
+                bw = int(310 * vals[j] / vmax * ease(al))
+                d.rectangle([LX + 430, y + 6, LX + 430 + max(bw, 3), y + 32], fill=hexa(C["bar"], al))
+                d.text((LX + 430 + max(bw, 3) + 12, y + 19), xx["text"], font=F(26, 600), fill=hexa(C["ink"], al), anchor="lm")
+        elif f < T_COV + n * T_IT + T_FIN:  # итоговая таблица
+            m = f - T_COV - n * T_IT
+            y0 = draw_header(d, r) + 6
+            step = min(74, (1150 - y0) // n)
+            th = step - 18
             for i, xx in enumerate(top):
                 al = ease((m - i * 2) / 10)
                 y = y0 + i * step
-                d.text((LX, y + 22), str(i + 1), font=F(28, 600), fill=hexa(C["smoke"], al), anchor="lm")
-                tw = 110 if kind == "company" else 58
-                im.alpha_composite(fade(tile(kind, xx["name"], xx["iso2"], tw, 44), al), (LX + 44, y))
-                tx = LX + 44 + tw + 16
-                d.text((tx, y + 2), xx["name"], font=fit(d, xx["name"], 24, 500, W - LX - tx, 14), fill=hexa(C["ink"], al), anchor="lt")
-                bw = int(480 * vals[i] / vmax * ease((m - i * 2) / 18))
-                d.rectangle([tx, y + 34, tx + max(bw, 3), y + 52], fill=hexa(C["graphite"] if i == 0 else C["bar"], al))
-                d.text((tx + max(bw, 3) + 14, y + 43), xx["text"], font=F(24, 600), fill=hexa(C["ink"], al), anchor="lm")
-            b = ease((m - 45) / 10)
-            d.rectangle([LX, 1166, W - LX, 1282], fill=hexa(C["graphite"], b))
-            for j, l in enumerate(st["punch"]):
-                fl = F(28, 400) if j == 0 else fit(d, l, 32, 600, W - 2 * LX - 52)
-                d.text((LX + 26, 1184 + j * 44), l, font=fl, fill=hexa(C["bone"], b))
+                d.text((LX, y + th / 2), str(i + 1), font=F(32, 600), fill=hexa(C["smoke"], al), anchor="lm")
+                tw = int(th * 2.4) if kind == "company" else int(th * 1.33)
+                im.alpha_composite(fade(tile(kind, xx["name"], xx["iso2"], tw, th), al), (LX + 50, y))
+                tx = LX + 50 + tw + 18
+                d.text((tx, y - 2), xx["name"], font=fit(d, xx["name"], 28, 500, W - LX - tx, 14), fill=hexa(C["ink"], al), anchor="lt")
+                bw = int((W - LX - tx - 170) * vals[i] / vmax * ease((m - i * 2) / 18))
+                d.rectangle([tx, y + 32, tx + max(bw, 3), y + th], fill=hexa(C["graphite"] if i == 0 else C["bar"], al))
+                d.text((tx + max(bw, 3) + 14, y + 32 + (th - 32) / 2), xx["text"], font=F(28, 600), fill=hexa(C["ink"], al), anchor="lm")
+            punch_box(d, ease((m - 45) / 10), st["punch"])
         else:
-            header(d)
-            end_card(im, d, ease((f - (total - T_END)) / 8))
-        chrome(im, d, f, total, src)
+            end_phase(im, d, r, f, total)
+        chrome(im, d, f, total, src_line(r))
         return im.convert("RGB")
     return total, frame
-
-
-# ---------- общие части новых форматов ----------
-def draw_header(d, r, kick=None, sub=None, title=None):
-    label(d, (LX, 362), kick or kicker(r), 24, C["smoke"])
-    title = title or r["title"]
-    f = F(50, 500)
-    lines = wrap(d, title, f, W - 2 * LX)
-    if len(lines) > 1:
-        f = F(42, 500)
-        lines = wrap(d, title, f, W - 2 * LX)[:2]
-    y = 396
-    for l in lines:
-        d.text((LX, y), l, font=f, fill=C["ink"])
-        y += int(f.size * 1.18)
-    d.text((LX, y + 6), sub or sub_line(r), font=F(28, 400), fill=C["smoke"])
-    return y + 50
-
-
-def cover(im, d, a, kick, big, text, tail=None):
-    label(d, (LX, 380), kick, 26, hexa(C["smoke"], a))
-    fs = 240
-    while d.textlength(big, font=F(fs, 600)) > W - 2 * LX:
-        fs -= 6
-    d.text((LX - 6, 430), big, font=F(fs, 600), fill=hexa(C["graphite"], a))
-    y = 430 + int(fs * 1.2)
-    for l in wrap(d, text, F(64, 600), W - 2 * LX)[:4]:
-        d.text((LX, y), l, font=F(64, 600), fill=hexa(C["ink"], a))
-        y += 78
-    if tail:
-        d.text((LX, y + 24), tail, font=F(40, 400), fill=hexa(C["smoke"], a))
-
-
-def explain(d, a, text):
-    d.rectangle([LX, 470, LX + 10, 480], fill=hexa(C["graphite"], a))
-    label(d, (LX + 26, 462), "ЧТО ЭТО ЗНАЧИТ", 26, hexa(C["smoke"], a))
-    y = 530
-    for l in wrap(d, text, F(54, 500), W - 2 * LX)[:6]:
-        d.text((LX, y), l, font=F(54, 500), fill=hexa(C["ink"], a))
-        y += 70
-
-
-def punch_box(d, a, lines, y=1166):
-    d.rectangle([LX, y, W - LX, y + 116], fill=hexa(C["graphite"], a))
-    for j, l in enumerate(lines[:2]):
-        fl = F(28, 400) if j == 0 else fit(d, l, 32, 600, W - 2 * LX - 52)
-        d.text((LX + 26, y + 18 + j * 44), l, font=fl, fill=hexa(C["bone"], a))
-
-
-def short(v, unit):
-    """Подпись оси и бегущие значения."""
-    if unit == "usd_pc":
-        return "$" + f"{v:,.0f}".replace(",", NB)
-    if unit == "pct":
-        return num1(v) + "%"
-    return fmt(v, unit)
-
-
-def src_line(r):
-    if r["block"] in ("companies", "billionaires"):
-        return f"Источник: {r['source_full']}, {r['note']}."
-    if r["fmt"] in ("line", "race"):
-        return f"Источник: {r['source_full']}, {r['start']}-{r['year']}."
-    return f"Источник: {r['source_full']}, {r['year']} год."
 
 
 # ---------- линии: как менялись лидеры ----------
@@ -797,24 +757,17 @@ def make_frames_line(r):
     y0r, y1r = r["start"], r["year"]
     vmax = max(v for x in ser for _, v in x["points"]) * 1.08
     T_D, T_TB = int(22 * FPS), int(8.5 * FPS)
-    total = T_COV + T_EX + T_D + T_TB + T_END
-    cx0, cx1, cy0, cy1 = LX + 110, W - LX - 250, 640, 1180
+    total = T_COV + T_D + T_TB + T_END
     order = sorted(range(len(ser)), key=lambda i: -ser[i]["value"])
     col = {i: (C["graphite"] if ser[i] is hl else C["seg"][1 + (k % 4)]) for k, i in enumerate(order)}
+    sub = f"{r['source']} · {y0r}-{y1r}"
 
-    def X(yr):
-        return cx0 + (cx1 - cx0) * (yr - y0r) / max(1, y1r - y0r)
-
-    def Y(v):
-        return cy1 - (cy1 - cy0) * max(0, v) / vmax
-
-    def upto(pts, t):
+    def upto(pts, t, X, Y):
         out = [(X(a), Y(b)) for a, b in pts if a <= t]
         nxt = next(((a, b) for a, b in pts if a > t), None)
         if out and nxt:
             a0, b0 = next((a, b) for a, b in reversed(pts) if a <= t)
-            u = (t - a0) / (nxt[0] - a0)
-            v = b0 + (nxt[1] - b0) * u
+            v = b0 + (nxt[1] - b0) * (t - a0) / (nxt[0] - a0)
             out.append((X(t), Y(v)))
             return out, v
         return out, (pts[-1][1] if out else None)
@@ -823,59 +776,71 @@ def make_frames_line(r):
         im = Image.new("RGBA", (W, H), C["bone"])
         d = ImageDraw.Draw(im)
         if f < T_COV:
-            cover(im, d, ease(f / 6), f"{y0r}-{y1r} · {kicker(r).split(' · ')[1]}",
+            cover(im, d, ease(f / 4), f"{y0r}-{y1r} · {kicker(r).split(' · ')[1]}",
                   f"×{num1(hl['ratio'])}", r["hook_text"])
-        elif f < T_COV + T_EX:
-            explain(d, ease((f - T_COV) / 5), f"{r['title']}, {y0r}-{y1r}. Данные: {r['source_full']}.")
-        elif f < T_COV + T_EX + T_D:
-            m = f - T_COV - T_EX
-            draw_header(d, r, sub=f"{r['source']} · {y0r}-{y1r}")
+        elif f < T_COV + T_D:
+            m = f - T_COV
+            hy0 = draw_header(d, r, sub=sub)
+            # легенда: цвет, флаг, страна; 2 колонки
+            for k, i in enumerate(order):
+                lx = LX + (k % 2) * ((W - 2 * LX) // 2)
+                ly = hy0 + (k // 2) * 44
+                d.rectangle([lx, ly + 16, lx + 30, ly + 24], fill=col[i])
+                im.alpha_composite(flag(ser[i]["iso2"], 26), (lx + 42, ly + 4))
+                d.text((lx + 88, ly + 20), ser[i]["name"], font=fit(d, ser[i]["name"], 28, 500, (W - 2 * LX) // 2 - 100, 14),
+                       fill=C["ink"], anchor="lm")
+            cx0, cx1 = LX, W - LX - 200
+            cy0, cy1 = hy0 + ((len(ser) + 1) // 2) * 44 + 40, 1226
+
+            def X(yr):
+                return cx0 + (cx1 - cx0) * (yr - y0r) / max(1, y1r - y0r)
+
+            def Y(v):
+                return cy1 - (cy1 - cy0) * max(0, v) / vmax
             p = ease(min(1, m / (T_D - 2 * FPS)) ** 0.9) if m < T_D - 2 * FPS else 1
             t = y0r + (y1r - y0r) * p
-            for k in range(5):  # сетка
+            for k in range(5):  # сетка, подпись над линией слева
                 v = vmax / 1.08 * k / 4
                 y = Y(v)
-                d.line([cx0, y, cx1, y], fill=C["line"], width=2)
-                d.text((cx0 - 14, y), short(v, unit) if k else "0", font=F(22, 400), fill=C["smoke"], anchor="rm")
+                d.line([cx0, y, W - LX, y], fill=C["line"], width=2)
+                if k:
+                    d.text((cx0, y - 6), short(v, unit), font=F(24, 400), fill=C["smoke"], anchor="lb")
             for yr in (y0r, (y0r + y1r) // 2, y1r):
-                d.text((X(yr), cy1 + 16), str(yr), font=F(24, 500), fill=C["smoke"], anchor="mt")
-            d.text((cx1, cy0 - 70), str(int(t)), font=F(64, 600), fill=hexa(C["smoke"], 0.6), anchor="rt")
+                d.text((X(yr), cy1 + 12), str(yr), font=F(26, 500), fill=C["smoke"], anchor="mt")
+            d.text((cx0 + 4, cy0 - 4), str(int(t)), font=F(96, 600), fill=hexa(C["smoke"], 0.45), anchor="lt")
             heads = []
             for i in sorted(range(len(ser)), key=lambda i: ser[i] is hl):
-                pts, v = upto(ser[i]["points"], t)
+                pts, v = upto(ser[i]["points"], t, X, Y)
                 if len(pts) >= 2:
-                    d.line(pts, fill=col[i], width=8 if ser[i] is hl else 5, joint="curve")
+                    d.line(pts, fill=col[i], width=10 if ser[i] is hl else 6, joint="curve")
                 if pts:
                     hx, hy = pts[-1]
-                    d.ellipse([hx - 8, hy - 8, hx + 8, hy + 8], fill=col[i])
+                    d.ellipse([hx - 10, hy - 10, hx + 10, hy + 10], fill=col[i])
                     heads.append([hy, i, v, hx])
             heads.sort()
             for j in range(1, len(heads)):  # подписи не наезжают друг на друга
-                heads[j][0] = max(heads[j][0], heads[j - 1][0] + 58)
+                heads[j][0] = max(heads[j][0], heads[j - 1][0] + 42)
             for ly, i, v, hx in heads:
-                lx = min(hx + 18, cx1 + 18)
-                im.alpha_composite(flag(ser[i]["iso2"], 24), (int(lx), int(ly - 26)))
-                d.text((lx + 42, ly - 14), ser[i]["name"], font=fit(d, ser[i]["name"], 22, 500, W - lx - 50, 14),
-                       fill=C["ink"], anchor="lm")
-                d.text((lx, ly + 14), short(v, unit), font=F(24, 600), fill=col[i] if ser[i] is hl else C["ink"], anchor="lm")
-        elif f < T_COV + T_EX + T_D + T_TB:
-            m = f - T_COV - T_EX - T_D
-            yy = draw_header(d, r, sub=f"{y1r} год и рост с {y0r}") + 10
-            step = min(64, (1140 - yy) // len(allr))
+                lx = hx + 18
+                im.alpha_composite(flag(ser[i]["iso2"], 26), (int(lx), int(ly - 15)))
+                d.text((lx + 44, ly), short(v, unit), font=F(28, 600), fill=C["ink"], anchor="lm")
+        elif f < T_COV + T_D + T_TB:
+            m = f - T_COV - T_D
+            yy = draw_header(d, r, sub=f"{y1r} год и рост с {y0r}") + 4
+            step = min(74, (1150 - yy) // len(allr))
             for i, x in enumerate(allr):
                 al = ease((m - i * 2) / 10)
-                y = yy + i * step
-                d.text((LX, y + 20), str(i + 1), font=F(28, 600), fill=hexa(C["smoke"], al), anchor="lm")
-                im.alpha_composite(fade(flag(x["iso2"], 32), al), (LX + 44, y + 2))
-                d.text((LX + 104, y + 20), x["name"], font=fit(d, x["name"], 28, 500, 380, 14), fill=hexa(C["ink"], al), anchor="lm")
-                d.text((LX + 520, y + 20), x["text"], font=F(28, 600), fill=hexa(C["ink"], al), anchor="lm")
+                y = yy + i * step + step / 2 - 8
+                d.text((LX, y), str(i + 1), font=F(32, 600), fill=hexa(C["smoke"], al), anchor="lm")
+                im.alpha_composite(fade(flag(x["iso2"], 38), al), (LX + 50, int(y - 21)))
+                d.text((LX + 124, y), x["name"], font=fit(d, x["name"], 32, 500, 360, 14), fill=hexa(C["ink"], al), anchor="lm")
+                d.text((LX + 500, y), x["text"], font=F(32, 600), fill=hexa(C["ink"], al), anchor="lm")
                 g = x.get("growth") or (f"−{(1 - x['ratio']) * 100:.0f}%" if x.get("ratio", 1) < 1 else "")
-                d.text((W - LX, y + 20), g, font=F(26, 600 if x.get("hl") else 400),
+                d.text((W - LX, y), g, font=F(30, 600 if x.get("hl") else 400),
                        fill=hexa(C["graphite"] if x.get("hl") else C["smoke"], al), anchor="rm")
             punch_box(d, ease((m - 40) / 10), ["Главное:", r["hook_text"]])
         else:
-            draw_header(d, r)
-            end_card(im, d, ease((f - (total - T_END)) / 8))
+            end_phase(im, d, r, f, total)
         chrome(im, d, f, total, src_line(r))
         return im.convert("RGB")
     return total, frame
@@ -887,12 +852,11 @@ def make_frames_donut(r):
     t10 = r.get("top10", r["top"])
     shares = [x["share"] for x in segs] + [r["rest"]]
     T_S, T_TB = int(3.2 * FPS), int(7 * FPS)
-    total = T_COV + T_EX + len(segs) * T_S + int(2 * FPS) + T_TB + T_END
-    R, RI, CXd, CYd = 270, 158, W // 2, 790
+    total = T_COV + len(segs) * T_S + int(2 * FPS) + T_TB + T_END
+    R, RI = 300, 170
     SS = 2
 
     def donut(prog):
-        """prog: сколько сегментов показано (дробное)."""
         S = (2 * R + 8) * SS
         img = Image.new("RGBA", (S, S), (0, 0, 0, 0))
         dd = ImageDraw.Draw(img)
@@ -902,69 +866,67 @@ def make_frames_donut(r):
             u = max(0, min(1, prog - i))
             if u <= 0:
                 break
-            sweep = 360 * sh / 100 * ease(u)
-            colr = C["rest"] if i == len(segs) else C["seg"][i % 5]
-            dd.pieslice(box, a0, a0 + sweep, fill=colr)
+            dd.pieslice(box, a0, a0 + 360 * sh / 100 * ease(u),
+                        fill=C["rest"] if i == len(segs) else C["seg"][i % 5])
             a0 += 360 * sh / 100
         c = S / 2
         dd.ellipse([c - RI * SS, c - RI * SS, c + RI * SS, c + RI * SS], fill=C["bone"])
         return img.resize((S // SS, S // SS), Image.LANCZOS)
 
-    def legend(d, im, upto, y0):
-        for i in range(upto):
-            x = segs[i]
-            y = y0 + i * 38
-            d.rectangle([LX, y + 8, LX + 22, y + 30], fill=C["seg"][i % 5])
-            im.alpha_composite(flag(x["iso2"], 24), (LX + 36, y + 6))
-            d.text((LX + 82, y + 19), x["name"], font=F(26, 500), fill=C["ink"], anchor="lm")
-            d.text((W - LX, y + 19), x["text"], font=F(26, 600), fill=C["ink"], anchor="rm")
-
     def frame(f):
         im = Image.new("RGBA", (W, H), C["bone"])
         d = ImageDraw.Draw(im)
         if f < T_COV:
-            cover(im, d, ease(f / 6), kicker(r).replace("ТОП-", "ДОЛИ · ТОП-"), f"{num1(r['top_sum'])}%", r["hook_text"],
-                  "Чья доля больше? Смотрите до конца")
-        elif f < T_COV + T_EX:
-            explain(d, ease((f - T_COV) / 5),
-                    f"Доля страны в мировом экспорте по стоимости, {r['year']} год. Данные: {r['source_full']}.")
+            cover(im, d, ease(f / 4), kicker(r).replace("ТОП-", "ДОЛИ · ТОП-"), f"{num1(r['top_sum'])}%", r["hook_text"],
+                  "Чья доля больше?")
         elif f < total - T_TB - T_END:
-            m = f - T_COV - T_EX
-            draw_header(d, r)
+            m = f - T_COV
+            hy = draw_header(d, r)
+            CX, CY = W // 2, hy + 10 + R
             k = min(len(segs), m // T_S)
             u = (m - k * T_S) / (0.6 * T_S)
             prog = k + min(1, u) if k < len(segs) else len(segs) + min(1, (m - len(segs) * T_S) / FPS)
             dn = donut(prog)
-            im.alpha_composite(dn, (CXd - dn.width // 2, CYd - dn.height // 2))
+            im.alpha_composite(dn, (CX - dn.width // 2, CY - dn.height // 2))
             if k < len(segs):
                 x = segs[k]
                 a = ease(u)
-                im.alpha_composite(fade(flag(x["iso2"], 60), a), (CXd - 42, CYd - 110))
-                d.text((CXd, CYd + 10), x["text"], font=F(76, 600), fill=hexa(C["graphite"], a), anchor="mm")
-                d.text((CXd, CYd + 72), x["name"], font=fit(d, x["name"], 30, 500, 2 * RI - 40), fill=hexa(C["ink"], a), anchor="mm")
+                im.alpha_composite(fade(flag(x["iso2"], 66), a), (CX - 46, CY - 128))
+                d.text((CX, CY + 6), x["text"], font=F(92, 600), fill=hexa(C["graphite"], a), anchor="mm")
+                d.text((CX, CY + 80), x["name"], font=fit(d, x["name"], 34, 500, 2 * RI - 40), fill=hexa(C["ink"], a), anchor="mm")
             else:
-                d.text((CXd, CYd - 20), f"{num1(r['rest'])}%", font=F(76, 600), fill=C["graphite"], anchor="mm")
-                d.text((CXd, CYd + 44), "все остальные", font=F(30, 500), fill=C["ink"], anchor="mm")
-                d.text((CXd, CYd + 82), f"{r['countries'] - len(segs)} стран", font=F(30, 400), fill=C["smoke"], anchor="mm")
-            legend(d, im, min(k, len(segs)), CYd + R + 30)
+                d.text((CX, CY - 24), f"{num1(r['rest'])}%", font=F(92, 600), fill=C["graphite"], anchor="mm")
+                d.text((CX, CY + 46), "все остальные", font=F(34, 500), fill=C["ink"], anchor="mm")
+                d.text((CX, CY + 88), f"{r['countries'] - len(segs)} стран", font=F(32, 400), fill=C["smoke"], anchor="mm")
+            ly0 = CY + R + 22
+            for i in range(min(k, len(segs))):  # легенда в две колонки
+                x = segs[i]
+                cx = LX + (i % 2) * ((W - 2 * LX) // 2 + 10)
+                y = ly0 + (i // 2) * 46
+                d.rectangle([cx, y + 9, cx + 24, y + 33], fill=C["seg"][i % 5])
+                im.alpha_composite(flag(x["iso2"], 26), (cx + 36, y + 5))
+                d.text((cx + 82, y + 21), x["name"], font=fit(d, x["name"], 28, 500, 230, 14), fill=C["ink"], anchor="lm")
+                d.text((cx + (W - 2 * LX) // 2 - 20, y + 21), x["text"], font=F(28, 600), fill=C["ink"], anchor="rm")
         elif f < total - T_END:
             m = f - (total - T_TB - T_END)
-            yy = draw_header(d, r, sub=f"Топ-{len(t10)} экспортёров · {r['year']} год") + 10
+            yy = draw_header(d, r, sub=f"Топ-{len(t10)} экспортёров · {r['year']} год") + 6
+            step = min(74, (1150 - yy) // len(t10))
+            th = step - 18
             mx = t10[0]["share"]
             for i, x in enumerate(t10):
                 al = ease((m - i * 2) / 10)
-                y = yy + i * 62
-                d.text((LX, y + 22), str(i + 1), font=F(28, 600), fill=hexa(C["smoke"], al), anchor="lm")
-                im.alpha_composite(fade(flag(x["iso2"], 32), al), (LX + 44, y + 6))
-                d.text((LX + 104, y + 2), x["name"], font=F(24, 500), fill=hexa(C["ink"], al), anchor="lt")
-                bw = int(520 * x["share"] / mx * ease((m - i * 2) / 18))
-                d.rectangle([LX + 104, y + 34, LX + 104 + max(bw, 3), y + 52], fill=hexa(C["graphite"] if i == 0 else C["bar"], al))
-                d.text((LX + 104 + max(bw, 3) + 14, y + 43), x["text"], font=F(24, 600), fill=hexa(C["ink"], al), anchor="lm")
+                y = yy + i * step
+                d.text((LX, y + th / 2), str(i + 1), font=F(32, 600), fill=hexa(C["smoke"], al), anchor="lm")
+                im.alpha_composite(fade(flag(x["iso2"], th - 8), al), (LX + 50, y + 2))
+                tx = LX + 50 + int((th - 8) * 4 / 3) + 22
+                d.text((tx, y - 2), x["name"], font=F(28, 500), fill=hexa(C["ink"], al), anchor="lt")
+                bw = int((W - LX - tx - 130) * x["share"] / mx * ease((m - i * 2) / 18))
+                d.rectangle([tx, y + 32, tx + max(bw, 3), y + th], fill=hexa(C["graphite"] if i == 0 else C["bar"], al))
+                d.text((tx + max(bw, 3) + 14, y + 32 + (th - 32) / 2), x["text"], font=F(28, 600), fill=hexa(C["ink"], al), anchor="lm")
             punch_box(d, ease((m - 40) / 10), [f"Топ-5 вместе: {num1(r['top_sum'])}%",
                                                f"Остальные {r['countries'] - len(segs)} стран: {num1(r['rest'])}%"])
         else:
-            draw_header(d, r)
-            end_card(im, d, ease((f - (total - T_END)) / 8))
+            end_phase(im, d, r, f, total)
         chrome(im, d, f, total, src_line(r))
         return im.convert("RGB")
     return total, frame
@@ -980,64 +942,66 @@ def make_frames_compare(r):
     unit = r["unit"]
     kind = kind_of(r)
     rng = f"№2–№{k + 1}"
-    T_B = int((1.5 + 2.2 * k) * FPS)
+    STEP = int(2.2 * FPS)
+    T_B = int(1.5 * FPS) + k * STEP
     T_R = int(6.5 * FPS)
-    total = T_COV + T_EX + T_B + T_R + T_END
+    total = T_COV + T_B + T_R + T_END
     BW = W - 2 * LX
+    kick = "СРАВНЕНИЕ · " + kicker(r).split(" · ")[1]
 
     def frame(f):
         im = Image.new("RGBA", (W, H), C["bone"])
         d = ImageDraw.Draw(im)
         if f < T_COV:
-            cover(im, d, ease(f / 6), "СРАВНЕНИЕ · " + kicker(r).split(" · ")[1], top[0]["text"],
+            cover(im, d, ease(f / 4), kick, top[0]["text"],
                   f"{r['title']}: №1 против {k} следующих вместе", "Кто больше?")
-        elif f < T_COV + T_EX:
-            explain(d, ease((f - T_COV) / 5), story(r)["what"])
         elif f < total - T_END:
-            m = f - T_COV - T_EX
-            y = draw_header(d, r, kick="СРАВНЕНИЕ · " + kicker(r).split(" · ")[1]) + 30
+            m = f - T_COV
+            y = draw_header(d, r, kick=kick) + 20
             a = ease(m / 10)
-            tw = 110 if kind == "company" else 52
-            im.alpha_composite(fade(tile(kind, top[0]["name"], top[0]["iso2"], tw, 44), a), (LX, y))
-            d.text((LX + tw + 16, y + 22), f"№1 {top[0]['name']}", font=fit(d, f"№1 {top[0]['name']}", 34, 600, 560),
+            tw = 140 if kind == "company" else 66
+            im.alpha_composite(fade(tile(kind, top[0]["name"], top[0]["iso2"], tw, 56), a), (LX, y))
+            d.text((LX + tw + 18, y + 28), f"№1 {top[0]['name']}", font=fit(d, f"№1 {top[0]['name']}", 40, 600, 520),
                    fill=hexa(C["ink"], a), anchor="lm")
-            d.text((W - LX, y + 22), top[0]["text"], font=F(34, 600), fill=hexa(C["ink"], a), anchor="rm")
+            d.text((W - LX, y + 28), top[0]["text"], font=F(42, 600), fill=hexa(C["ink"], a), anchor="rm")
             bw = int(BW * ease(m / 30))
-            d.rectangle([LX, y + 60, LX + max(bw, 3), y + 140], fill=C["graphite"])
-            y2 = y + 190
-            shown = min(k, max(0, (m - int(1.5 * FPS)) // int(2.2 * FPS) + 1)) if m >= int(1.5 * FPS) else 0
-            part = (m - int(1.5 * FPS) - (shown - 1) * int(2.2 * FPS)) / 14 if shown else 0
+            d.rectangle([LX, y + 70, LX + max(bw, 3), y + 170], fill=C["graphite"])
+            y2 = y + 205
+            t0 = int(1.5 * FPS)
+            shown = min(k, (m - t0) // STEP + 1) if m >= t0 else 0
+            part = (m - t0 - (shown - 1) * STEP) / 14 if shown else 0
             cur = sum(x["value"] for x in others[:max(0, shown - 1)]) + (others[shown - 1]["value"] * ease(part) if shown else 0)
-            d.text((LX, y2 + 22), f"{rng} вместе", font=F(34, 600), fill=C["ink"], anchor="lm")
-            d.text((W - LX, y2 + 22), short(cur, unit) if shown else "", font=F(34, 600), fill=C["ink"], anchor="rm")
+            d.text((LX, y2 + 28), f"{rng} вместе", font=F(40, 600), fill=C["ink"], anchor="lm")
+            d.text((W - LX, y2 + 28), short(cur, unit) if shown else "", font=F(42, 600), fill=C["ink"], anchor="rm")
             x0 = LX
             for i in range(shown):
                 w_ = BW * others[i]["value"] / v0 * (ease(part) if i == shown - 1 else 1)
-                d.rectangle([int(x0), y2 + 60, max(int(x0), int(x0 + w_) - 3), y2 + 140], fill=C["seg"][1 + i % 4])
+                d.rectangle([int(x0), y2 + 70, max(int(x0), int(x0 + w_) - 3), y2 + 170], fill=C["seg"][1 + i % 4])
                 x0 += w_
-            d.rectangle([LX, y2 + 60, W - LX, y2 + 140], outline=C["line"], width=2)
-            ly = y2 + 180
+            d.rectangle([LX, y2 + 70, W - LX, y2 + 170], outline=C["line"], width=3)
+            ly = y2 + 205
             if m < T_B:
+                row = min(70, (BOTTOM - ly) // max(1, k))
                 for i in range(shown):
                     x = others[i]
-                    yy = ly + i * 52
-                    d.rectangle([LX, yy + 10, LX + 22, yy + 32], fill=C["seg"][1 + i % 4])
-                    im.alpha_composite(tile(kind, x["name"], x["iso2"], 80 if kind == "company" else 40, 30), (LX + 36, yy + 6))
-                    nx = LX + (130 if kind == "company" else 90)
-                    d.text((nx, yy + 21), f"№{i + 2} {x['name']}", font=fit(d, f"№{i + 2} {x['name']}", 28, 500, W - LX - nx - 200),
+                    yy = ly + i * row
+                    d.rectangle([LX, yy + 12, LX + 28, yy + 40], fill=C["seg"][1 + i % 4])
+                    tw2 = 96 if kind == "company" else 52
+                    im.alpha_composite(tile(kind, x["name"], x["iso2"], tw2, 40), (LX + 44, yy + 6))
+                    nx = LX + 44 + tw2 + 16
+                    d.text((nx, yy + 26), f"№{i + 2} {x['name']}", font=fit(d, f"№{i + 2} {x['name']}", 34, 500, W - LX - nx - 210),
                            fill=C["ink"], anchor="lm")
-                    d.text((W - LX, yy + 21), x["text"], font=F(28, 600), fill=C["ink"], anchor="rm")
+                    d.text((W - LX, yy + 26), x["text"], font=F(34, 600), fill=C["ink"], anchor="rm")
             else:
                 b = ease((m - T_B) / 10)
                 diff = v0 - acc
-                d.text((LX, ly + 10), f"{top[0]['name']} больше,", font=fit(d, f"{top[0]['name']} больше,", 64, 600, BW),
+                d.text((LX, ly + 6), f"{top[0]['name']} больше,", font=fit(d, f"{top[0]['name']} больше,", 76, 600, BW),
                        fill=hexa(C["graphite"], b))
-                d.text((LX, ly + 90), f"чем {rng} вместе", font=F(64, 600), fill=hexa(C["graphite"], b))
-                d.text((LX, ly + 190), f"Разница: {short(diff, unit)}", font=F(44, 500), fill=hexa(C["ink"], b))
-                d.text((LX, ly + 250), f"{rng} вместе: {short(acc, unit)}", font=F(34, 400), fill=hexa(C["smoke"], b))
+                d.text((LX, ly + 96), f"чем {rng} вместе", font=F(76, 600), fill=hexa(C["graphite"], b))
+                d.text((LX, ly + 210), f"Разница: {short(diff, unit)}", font=F(50, 500), fill=hexa(C["ink"], b))
+                d.text((LX, ly + 276), f"{rng} вместе: {short(acc, unit)}", font=F(38, 400), fill=hexa(C["smoke"], b))
         else:
-            draw_header(d, r)
-            end_card(im, d, ease((f - (total - T_END)) / 8))
+            end_phase(im, d, r, f, total, kick=kick)
         chrome(im, d, f, total, src_line(r))
         return im.convert("RGB")
     return total, frame
@@ -1051,8 +1015,10 @@ def make_frames_race(r):
     nyrs = y1r - y0r
     PER = min(1.25, 28.0 / max(1, nyrs))
     T_RUN, T_HOLD, T_RES = int(nyrs * PER * FPS), int(1.5 * FPS), int(5.5 * FPS)
-    total = T_COV + T_EX + T_RUN + T_HOLD + T_RES + T_END
+    total = T_COV + T_RUN + T_HOLD + T_RES + T_END
     hl = next((x for x in ents if x.get("hl")), None)
+    kick = f"ГОНКА · {y0r}-{y1r}"
+    sub = f"{r['source']} · нынешняя десятка"
 
     def val(e, t):
         pts = e["points"]
@@ -1070,50 +1036,45 @@ def make_frames_race(r):
     RK = {yr: ranks(yr) for yr in range(y0r, y1r + 1)}
     leader0 = ents[min(RK[y0r], key=RK[y0r].get)]
     leader1 = ents[min(RK[y1r], key=RK[y1r].get)]
-    NX, BX0, BX1 = LX, LX + 300, W - LX - 170
 
-    def board(im, d, t, top_y):
-        ROW = min(64, (1150 - top_y) // 10)
+    def board(im, d, t, top_y, bottom):
+        ROW = (bottom - top_y) // len(ents)
+        bh = ROW - 16
+        NX, BX0, BX1 = LX, LX + 290, W - LX - 175
         yr = int(min(t, y1r - 1)) if t < y1r else y1r
         u = ease((t - yr) / 0.6) if t < y1r else 0
         ra, rb = RK[yr], RK[min(yr + 1, y1r)]
         vals = [val(e, t) for e in ents]
-        vmax = max(vals) * 1.05 or 1
+        vmax = max(vals) * 1.03 or 1
+        d.text((W - LX, bottom - 8), str(int(min(t, y1r))), font=F(150, 600), fill=hexa(C["smoke"], 0.5), anchor="rb")
         for i, e in enumerate(ents):
             pos = ra[i] + (rb[i] - ra[i]) * u
             y = top_y + pos * ROW
-            im.alpha_composite(flag(e["iso2"], 30), (NX, int(y + 8)))
-            d.text((NX + 56, y + 24), e["name"], font=fit(d, e["name"], 26, 500, BX0 - NX - 66, 14), fill=C["ink"], anchor="lm")
+            im.alpha_composite(flag(e["iso2"], 34), (NX, int(y + bh / 2 - 17)))
+            d.text((NX + 60, y + bh / 2), e["name"], font=fit(d, e["name"], 30, 500, BX0 - NX - 70, 14), fill=C["ink"], anchor="lm")
             bw = int((BX1 - BX0) * vals[i] / vmax)
             colr = C["graphite"] if (e is hl or (hl is None and ra[i] == 0)) else C["bar"]
-            d.rectangle([BX0, int(y + 6), BX0 + max(bw, 3), int(y + 44)], fill=colr)
-            d.text((BX0 + max(bw, 3) + 12, y + 25), short(vals[i], unit), font=F(24, 600), fill=C["ink"], anchor="lm")
-        d.text((W - LX, top_y + 10 * ROW - 10), str(int(min(t, y1r))), font=F(130, 600),
-               fill=hexa(C["smoke"], 0.55), anchor="rb")
+            d.rectangle([BX0, int(y), BX0 + max(bw, 3), int(y + bh)], fill=colr)
+            d.text((BX0 + max(bw, 3) + 12, y + bh / 2), short(vals[i], unit), font=F(28, 600), fill=C["ink"], anchor="lm")
 
     def frame(f):
         im = Image.new("RGBA", (W, H), C["bone"])
         d = ImageDraw.Draw(im)
         if f < T_COV:
-            cover(im, d, ease(f / 6), f"ГОНКА · {y0r}-{y1r}", f"{y0r}-{y1r}", r["title"],
-                  "Кто выйдет на первое место?")
-        elif f < T_COV + T_EX:
-            explain(d, ease((f - T_COV) / 5),
-                    f"Нынешняя десятка лидеров и как менялись их места с {y0r} года. Данные: {r['source_full']}.")
-        elif f < T_COV + T_EX + T_RUN + T_HOLD:
-            m = f - T_COV - T_EX
-            ty = draw_header(d, r, kick=f"ГОНКА · {y0r}-{y1r}", sub=f"{r['source']} · нынешняя десятка")
-            board(im, d, y0r + min(1, m / T_RUN) * nyrs, ty + 10)
+            cover(im, d, ease(f / 4), kick, f"{y0r}-{y1r}", r["title"], "Кто выйдет на первое место?")
+        elif f < T_COV + T_RUN + T_HOLD:
+            m = f - T_COV
+            ty = draw_header(d, r, kick=kick, sub=sub)
+            board(im, d, y0r + min(1, m / T_RUN) * nyrs, ty + 6, BOTTOM)
         elif f < total - T_END:
-            m = f - T_COV - T_EX - T_RUN - T_HOLD
-            ty = draw_header(d, r, kick=f"ГОНКА · {y0r}-{y1r}", sub=f"{r['source']} · нынешняя десятка")
-            board(im, d, y1r, ty + 10)
+            m = f - T_COV - T_RUN - T_HOLD
+            ty = draw_header(d, r, kick=kick, sub=sub)
+            board(im, d, y1r, ty + 6, 1150)
             first = (f"Лидер весь период: {leader1['name']}" if leader0 is leader1
                      else f"Лидер в {y0r}: {leader0['name']}, в {y1r}: {leader1['name']}")
             punch_box(d, ease(m / 10), [first, r["hook_text"]])
         else:
-            draw_header(d, r, kick=f"ГОНКА · {y0r}-{y1r}")
-            end_card(im, d, ease((f - (total - T_END)) / 8))
+            end_phase(im, d, r, f, total, kick=kick)
         chrome(im, d, f, total, src_line(r))
         return im.convert("RGB")
     return total, frame
@@ -1130,6 +1091,7 @@ def tags_for(r, lead):
     return " ".join(tags[:12])
 
 
+CTA_TOP = "Новые рейтинги каждый день в Telegram @osnovafin, ссылка в профиле."
 CTA_TEXT = "Каждый день рынки, сделки инсайдеров из отчётов SEC и данные в Telegram @osnovafin, ссылка в профиле."
 
 
@@ -1157,7 +1119,7 @@ def caption(r, n):
         lead = top[0]["name"]
         q = "Кто, по-вашему, догонит №1?"
     src = src_line(r).replace("Источник: ", "Источник: ", 1)
-    return "\n\n".join([hook, rows, q, CTA_TEXT, src + " Не индивидуальная инвестиционная рекомендация.",
+    return "\n\n".join([hook, CTA_TOP, rows, q, CTA_TEXT, src + " Не индивидуальная инвестиционная рекомендация.",
                         tags_for(r, lead)]).replace(NB, " ")
 
 
