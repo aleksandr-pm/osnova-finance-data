@@ -1,20 +1,21 @@
-threads: mkt_sector_oil (companies, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/43ce54dd4cbb/bank/cards_markets/mkt_sector_oil.jpg
+threads: share_exp_56 (agro, donut)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/b5b22152c791/bank/covers/share_exp_56.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/b5b22152c791/bank/cards/share_exp_56.jpg
 ---
-Крупнейшие нефтегазовые компании по капитализации, ноябрь 2026:
-1. 🇸🇦 Saudi Aramco · $1,7 трлн
-2. 🇺🇸 Exxon Mobil · $677 млрд
-3. 🇺🇸 Chevron · $417 млрд
-4. 🇬🇧 Shell · $281 млрд
-5. 🇨🇳 PetroChina · $242 млрд
-6. 🇫🇷 TotalEnergies · $194 млрд
-7. 🇺🇸 ConocoPhillips · $164 млрд
-8. 🇨🇳 CNOOC · $142 млрд
-9. 🇧🇷 Petrobras · $120 млрд
-10. 🇬🇧 BP · $115 млрд
-Lukoil (Россия) на 38-м месте.
+Доли в мировом экспорте кукурузы, 2024:
+1. 🇺🇸 США · 31,5%
+2. 🇧🇷 Бразилия · 18,0%
+3. 🇦🇷 Аргентина · 14,4%
+4. 🇺🇦 Украина · 11,1%
+5. 🇫🇷 Франция · 4,1%
+6. 🇷🇴 Румыния · 2,0%
+7. 🇿🇦 ЮАР · 1,9%
+8. 🇵🇱 Польша · 1,7%
+9. 🇭🇺 Венгрия · 1,7%
+10. 🇲🇲 Мьянма · 1,5%
+Остальной мир: 21%.
 Больше в Telegram @osnovafin
 ---
-Threads: с картинкой
-Опубликовано: 18110168585194609. Осталось новых рейтингов: 209
-exit=0 2026-11-07T05:25:18Z
+Threads: текстом
+Опубликовано: 17893476582458813. Осталось новых рейтингов: 208
+exit=0 2026-11-07T06:24:23Z
