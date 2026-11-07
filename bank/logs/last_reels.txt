@@ -1,17 +1,27 @@
-Рендер cmp_mkt_sector_oil: 23.9 с, тема light, музыка hot_dope-epic-4-625768.mp3
-Traceback (most recent call last):
-  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1178, in <module>
-    sys.exit(main())
-             ^^^^^^
-  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1161, in main
-    music = render(r, out, n, theme)
-            ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1110, in render
-    p.stdin.write(frame(k).tobytes())
-                  ^^^^^^^^
-  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1014, in frame
-    d.rectangle([int(x0), y2 + 60, int(x0 + w_) - 3, y2 + 140], fill=C["seg"][1 + i % 4])
-  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/PIL/ImageDraw.py", line 390, in rectangle
-    self.draw.draw_rectangle(xy, fill_ink, 1)
-ValueError: x1 must be greater than or equal to x0
-exit=1 2026-11-07T08:06:18Z
+Рендер share_exp_656: 32.1 с, тема light, музыка hot_dope-epic-4-625768.mp3
+reels: share_exp_656 (agro, donut)
+---
+Пять стран дают 64% мирового экспорта кофе. На остальные 139 стран приходится 36,1%.
+
+Доли лидеров:
+1. 🇧🇷 Бразилия: 33,5%
+2. 🇻🇳 Вьетнам: 10,7%
+3. 🇨🇴 Колумбия: 10,2%
+4. 🇮🇩 Индонезия: 4,8%
+5. 🇩🇪 Германия: 4,8%
+6. 🇺🇬 Уганда: 4,6%
+7. 🇭🇳 Гондурас: 3,7%
+8. 🇪🇹 Эфиопия: 3,7%
+9. 🇮🇳 Индия: 3,3%
+10. 🇵🇪 Перу: 3,3%
+
+Какая страна удивила?
+
+Каждый день рынки, сделки инсайдеров из отчётов SEC и данные в Telegram @osnovafin, ссылка в профиле.
+
+Источник: FAOSTAT, ФАО ООН, 2024 год. Не индивидуальная инвестиционная рекомендация.
+
+#сельскоехозяйство #агро #экспорт #продовольствие #бразилия #инвестиции #финансы #статистика #рейтинг #топ10 #рилс
+---
+Публикации нет: dry-run
+exit=0 2026-11-07T08:08:41Z
