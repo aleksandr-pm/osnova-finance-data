@@ -1,20 +1,21 @@
-threads: mkt_country_cap_de (companies, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/27707e9237c4/bank/cards_markets/mkt_country_cap_de.jpg
+threads: share_exp_656 (agro, donut)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/c0e3db334fc4/bank/covers/share_exp_656.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/c0e3db334fc4/bank/cards/share_exp_656.jpg
 ---
-Самые дорогие компании Германии, ноябрь 2026:
-1. 🇩🇪 SAP · $269 млрд
-2. 🇩🇪 Siemens · $226 млрд
-3. 🇩🇪 Allianz · $192 млрд
-4. 🇩🇪 Deutsche Telekom · $139 млрд
-5. 🇩🇪 Siemens Energy · $112 млрд
-6. 🇩🇪 Munich Re · $80,4 млрд
-7. 🇩🇪 Merck KGaA · $72,7 млрд
-8. 🇩🇪 DHL Group · $72,3 млрд
-9. 🇩🇪 Infineon · $66,8 млрд
-10. 🇩🇪 Deutsche Bank · $64,6 млрд
-№1: SAP, $269 млрд.
+Доли в мировом экспорте кофе, 2024:
+1. 🇧🇷 Бразилия · 33,5%
+2. 🇻🇳 Вьетнам · 10,7%
+3. 🇨🇴 Колумбия · 10,2%
+4. 🇮🇩 Индонезия · 4,8%
+5. 🇩🇪 Германия · 4,8%
+6. 🇺🇬 Уганда · 4,6%
+7. 🇭🇳 Гондурас · 3,7%
+8. 🇪🇹 Эфиопия · 3,7%
+9. 🇮🇳 Индия · 3,3%
+10. 🇵🇪 Перу · 3,3%
+Остальной мир: 36%.
 Больше в Telegram @osnovafin
 ---
-Threads: текстом
-Опубликовано: 18225669067339725. Осталось новых рейтингов: 201
-exit=0 2026-11-07T17:13:33Z
+Threads: с картинкой
+Опубликовано: 18178293235458034. Осталось новых рейтингов: 200
+exit=0 2026-11-07T18:41:17Z
