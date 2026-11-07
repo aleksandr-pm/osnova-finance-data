@@ -1,4 +1,4 @@
-// OSNOVA Finance · лента v2.3 (06.11.2026): отчёты только карточкой Finnhub; v2.2: Sonnet без принудительного tool_choice, рыночные посты из GitHub; v2.1: без недвижимости, проверка на английский текст
+// OSNOVA Finance · лента v2.4 (07.11.2026): ссылки с отслеживанием /go, вступления по источникам, описание и закреп, «Главное за ночь»; v2.3 (06.11.2026): отчёты только карточкой Finnhub; v2.2: Sonnet без принудительного tool_choice, рыночные посты из GitHub; v2.1: без недвижимости, проверка на английский текст
 // Cloudflare Worker: сбор новостей → ИИ-редактор → проверка цифр → очередь → Telegram.
 // Привязки: DB (D1). Секреты: BOT_TOKEN, ANTHROPIC_API_KEY, FINNHUB_KEY, ADMIN_KEY.
 // Переменные: TARGET_CHAT (по умолчанию @osnovafin), ALERT_CHAT (алерты сторожа), PUBLIC_BLOCK=yes, NEWS_OFF=yes, SEC_OFF=yes,
@@ -114,11 +114,15 @@ export default {
       const r = await fetch(IMG_BASE + url.pathname.slice(5), { cf: { cacheTtl: 86400 } });
       return new Response(r.body, { status: r.status, headers: { 'content-type': 'image/png', 'cache-control': 'public, max-age=86400' } });
     }
+    const go = url.pathname.match(/^\/go\/([a-z]+)$/);
+    if (go) return await goLink(env, go[1]);
     if (!env.ADMIN_KEY || (url.searchParams.get('key') || req.headers.get('x-key')) !== env.ADMIN_KEY) {
       return new Response('OSNOVA Finance feed', { status: 200 });
     }
     await ensureSchema(env);
     if (url.pathname === '/status') return json(await status(env));
+    if (url.pathname === '/links') return json(await linkStats(env));
+    if (url.pathname === '/setup') return json(await channelSetup(env, url.searchParams.get('pin') === '1'));
     if (url.pathname === '/chats') return json(await chats(env));
     if (url.pathname === '/run') return json(await cycle(env, { force: true }));
     if (url.pathname === '/tgcheck') return json(await tgcheck(env));
@@ -149,6 +153,14 @@ async function cycle(env, opts = {}) {
     }
     if (env.SEC_OFF !== 'yes') report.sec = await secModule(env, now);
     if (!report.published.posted) report.published2 = await publish(env, Date.now());
+    try { report.joins = await joins(env, now); } catch (e) { report.joins = { error: String(e.message || e) }; }
+    try { report.digest = await morningDigest(env, now); } catch (e) { report.digest = { error: String(e.message || e) }; }
+    // разовая упаковка канала: описание, закреп, пригласительные ссылки
+    if (env.BOT_TOKEN && !(await meta(env, 'setup_v1'))) {
+      await setMeta(env, 'setup_v1', now);
+      try { const s = await channelSetup(env, true); await alert(env, 'setup', 'Упаковка канала: описание ' + (s.description.ok ? 'ок' : s.description.description) + ', закреп ' + (s.pin && s.pin.ok ? 'ок' : JSON.stringify(s.pin || s.post))); } catch (e) { /* не критично */ }
+    }
+    try { await weeklyLinks(env, now); } catch (e) { /* не критично */ }
     await watchdog(env, now);
     await cleanup(env, now);
   } finally {
@@ -658,6 +670,137 @@ export function previewFor(i, env = {}) {
 
 const isSec = i => String(i.source || '').startsWith('sec');
 const PUBLIC_URL = 'https://osnova-finance-feed.maximenko-aleksander-p.workers.dev';
+
+// ───────── 3c. ссылки с отслеживанием, вступления, упаковка канала, дайджест ─────────
+// Своя пригласительная ссылка Telegram на каждый источник + короткий адрес /go/<код> для подсчёта кликов.
+const LINKS = { ig: 'Instagram', th: 'Threads', rp: 'Threads разборы', rl: 'Reels', tt: 'TikTok', yt: 'YouTube', ad: 'Telegram Ads', x: 'Прочее' };
+
+async function inviteLink(env, src) {
+  let link = await meta(env, 'link_' + src);
+  if (link) return link;
+  const r = await tg(env, 'createChatInviteLink', { chat_id: target(env), name: LINKS[src] });
+  if (!r.ok) return null;
+  await setMeta(env, 'link_' + src, r.result.invite_link);
+  return r.result.invite_link;
+}
+
+async function bump(env, key, n = 1) {
+  await env.DB.prepare(`INSERT INTO meta (k, v) VALUES (?, ?) ON CONFLICT(k) DO UPDATE SET v=CAST(v AS INTEGER)+?`).bind(key, String(n), n).run();
+}
+
+async function goLink(env, src) {
+  await ensureSchema(env);
+  if (!LINKS[src]) src = 'x';
+  const day = new Date(Date.now() + 4 * 3_600_000).toISOString().slice(0, 10);
+  await bump(env, `clicks_${src}`); await bump(env, `clicks_${src}_${day}`);
+  const link = (await inviteLink(env, src)) || 'https://t.me/' + String(target(env)).replace('@', '');
+  return Response.redirect(link, 302);
+}
+
+// Кто вступил по какой ссылке: обновления chat_member через getUpdates (раз в 5 минут)
+async function joins(env, now) {
+  if (!env.BOT_TOKEN) return null;
+  if (now - Number(await meta(env, 'joins_t') || 0) < 5 * 60_000) return { skipped: true };
+  await setMeta(env, 'joins_t', now);
+  const offset = Number(await meta(env, 'upd_offset') || 0);
+  const r = await tg(env, 'getUpdates', { offset, limit: 100, timeout: 0, allowed_updates: ['chat_member'] });
+  if (!r.ok) return { error: r.description };
+  let n = 0, last = offset - 1;
+  const names = Object.fromEntries(Object.entries(LINKS).map(([k, v]) => [v, k]));
+  for (const u of r.result) {
+    last = Math.max(last, u.update_id);
+    const cm = u.chat_member;
+    if (!cm) continue;
+    const was = cm.old_chat_member.status, is = cm.new_chat_member.status;
+    const day = new Date(cm.date * 1000 + 4 * 3_600_000).toISOString().slice(0, 10);
+    if (['left', 'kicked'].includes(was) && ['member', 'restricted'].includes(is)) {
+      const src = (cm.invite_link && names[cm.invite_link.name]) || 'organic';
+      await bump(env, `joins_${src}`); await bump(env, `joins_${src}_${day}`); await bump(env, `joins_all_${day}`);
+      n++;
+    } else if (['member', 'restricted'].includes(was) && ['left', 'kicked'].includes(is)) {
+      await bump(env, `leaves_${day}`);
+    }
+  }
+  if (r.result.length) await setMeta(env, 'upd_offset', last + 1);
+  return { updates: r.result.length, joins: n };
+}
+
+async function linkStats(env) {
+  const out = {};
+  for (const src of Object.keys(LINKS)) {
+    out[src] = { name: LINKS[src], go: `${PUBLIC_URL}/go/${src}`, invite: await inviteLink(env, src),
+      clicks: Number(await meta(env, 'clicks_' + src) || 0), joins: Number(await meta(env, 'joins_' + src) || 0) };
+  }
+  out.organic = { joins: Number(await meta(env, 'joins_organic') || 0) };
+  const { results } = await env.DB.prepare(`SELECT k, v FROM meta WHERE k LIKE 'joins_all_%' OR k LIKE 'leaves_%' ORDER BY k DESC LIMIT 60`).all();
+  out.by_day = Object.fromEntries(results.map(r => [r.k, Number(r.v)]));
+  return out;
+}
+
+const CHANNEL_DESCRIPTION = 'Рынки 24/7 на русском: США, крипта, облигации, ОАЭ, Китай. Отчёты компаний, сделки инсайдеров, календарь и итоги дня. Не является инвестиционной рекомендацией.';
+const PINNED = `📌 <b>OSNOVA Finance: рынки 24/7 на русском</b>
+
+Что выходит каждый день (время по Дубаю):
+🗓 08:05 Экономический календарь · #календарь
+☀️ 08:30 Главное за ночь · #главное
+📊 Отчёты компаний: факт против прогноза · #отчёт
+🔍 Сделки инсайдеров США · #инсайдер
+🏦 Портфели крупных фондов · #фонды
+📉 График дня · #графикдня
+⚡️ Резкие движения от 5% · #алерт
+📈 01:20 Итоги дня: индексы, сырьё, биткоин · #итогидня
+
+Между ними лента новостей: США, крипта, облигации, ОАЭ, Китай.
+Нажмите на хэштег, чтобы увидеть все посты рубрики.
+
+Информация не является индивидуальной инвестиционной рекомендацией.`;
+
+async function channelSetup(env, pin) {
+  const out = {};
+  out.description = await tg(env, 'setChatDescription', { chat_id: target(env), description: CHANNEL_DESCRIPTION });
+  if (pin) {
+    const m = await tg(env, 'sendMessage', { chat_id: target(env), text: PINNED, parse_mode: 'HTML', link_preview_options: { is_disabled: true } });
+    out.post = m.ok ? m.result.message_id : m.description;
+    if (m.ok) out.pin = await tg(env, 'pinChatMessage', { chat_id: target(env), message_id: m.result.message_id, disable_notification: true });
+  }
+  for (const src of Object.keys(LINKS)) out['link_' + src] = await inviteLink(env, src);
+  return out;
+}
+
+// Понедельник 09:00 по Дубаю: сводка кликов и вступлений по источникам в личку (ALERT_CHAT)
+async function weeklyLinks(env, now) {
+  const d = new Date(now + 4 * 3_600_000);
+  const wk = d.toISOString().slice(0, 10);
+  if (!env.ALERT_CHAT || d.getUTCDay() !== 1 || d.getUTCHours() !== 9 || (await meta(env, 'weekly_links')) === wk) return;
+  await setMeta(env, 'weekly_links', wk);
+  const st = await linkStats(env);
+  const days = [...Array(7)].map((_, i) => new Date(now + 4 * 3_600_000 - (i + 1) * 86_400_000).toISOString().slice(0, 10));
+  const sum = pre => days.reduce((a, dd) => a + (st.by_day[pre + dd] || 0), 0);
+  const rows = Object.entries(LINKS).map(([k, v]) => `${v}: клики ${st[k].clicks}, вступили ${st[k].joins}`).join('\n');
+  await tg(env, 'sendMessage', { chat_id: env.ALERT_CHAT, text: `📊 OSNOVA Finance · неделя\nВступили: ${sum('joins_all_')}, вышли: ${sum('leaves_')}\n\nВсего по источникам:\n${rows}\nБез ссылки (поиск, репосты): ${st.organic.joins}` });
+}
+
+// 08:30 по Дубаю: 6 главных постов за ночь ссылками на сами посты
+async function morningDigest(env, now) {
+  const d = new Date(now + 4 * 3_600_000);
+  const day = d.toISOString().slice(0, 10);
+  if (d.getUTCHours() !== 8 || d.getUTCMinutes() < 30 || (await meta(env, 'digest_day')) === day) return null;
+  await setMeta(env, 'digest_day', day);
+  const { results } = await env.DB.prepare(`SELECT text_ru, msg_id, importance, source FROM items WHERE status='posted' AND posted > ? AND msg_id IS NOT NULL
+    ORDER BY importance DESC, posted DESC LIMIT 6`).bind(now - 14 * 3_600_000).all();
+  if (results.length < 3) return { skipped: 'мало постов' };
+  const ch = String(target(env)).replace('@', '');
+  const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  const line = i => {
+    let t = String(i.text_ru || '').split('\n')[0].replace(/\*\*/g, '');
+    if (i.source === 'sec_f4') t = 'Сделка инсайдера: ' + t;
+    if (t.length > 140) t = t.slice(0, 137).replace(/\s+\S*$/, '') + '…';
+    return `• <a href="https://t.me/${ch}/${i.msg_id}">${esc(t)}</a>`;
+  };
+  const text = `☀️ <b>Главное за ночь</b>\n\n${results.map(line).join('\n\n')}\n\n#главное`;
+  const r = await tg(env, 'sendMessage', { chat_id: target(env), text, parse_mode: 'HTML', link_preview_options: { is_disabled: true } });
+  return { sent: r.ok, n: results.length };
+}
 
 // Инсайды выходят фото-постом: фирменная шапка + текст в подписи. file_id шапки кешируется после первой отправки.
 async function sendSec(env, item) {
