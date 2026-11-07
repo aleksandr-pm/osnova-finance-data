@@ -1,18 +1,18 @@
-Рендер mkt_world_div: 53.6 с, тема light, музыка hot_dope-epic-4-625768.mp3
-reels: mkt_world_div (companies)
+Рендер mkt_sector_tech: 53.6 с, тема light, музыка hot_dope-epic-4-625768.mp3
+reels: mkt_sector_tech (companies)
 ---
-Самая высокая дивидендная доходность среди компаний дороже $10 млрд: №1 Teradyne, 24,0%.
+Крупнейшие технологические компании по капитализации: №1 Apple, $5 трлн. В 3,6 раза больше, чем у №10.
 
-1. 🇺🇸 Teradyne: 24,0%
-2. 🇮🇳 Apollo Hospitals: 23,6%
-3. 🇨🇳 Shanghai Electric Group: 23,4%
-4. 🇺🇸 Apple: 23,2%
-5. 🇺🇸 Curtiss-Wright: 23,0%
-6. 🇰🇷 Kakao: 22,9%
-7. 🇺🇸 Loews: 22,7%
-8. 🇹🇼 Nan Ya PCB: 22,6%
-9. 🇺🇸 West Pharmaceutical Services: 22,4%
-10. 🇨🇦 Dollarama: 21,4%
+1. 🇺🇸 Apple: $5 трлн
+2. 🇺🇸 NVIDIA: $4,5 трлн
+3. 🇺🇸 Microsoft: $4 трлн
+4. 🇺🇸 Alphabet (Google): $3,5 трлн
+5. 🇺🇸 Amazon: $2,8 трлн
+6. 🇹🇼 TSMC: $1,9 трлн
+7. 🇺🇸 SpaceX: $1,8 трлн
+8. 🇺🇸 Meta Platforms (Facebook): $1,6 трлн
+9. 🇺🇸 Tesla: $1,4 трлн
+10. 🇺🇸 Broadcom: $1,4 трлн
 
 Какую компанию вы ожидали увидеть выше?
 
@@ -20,7 +20,7 @@ reels: mkt_world_div (companies)
 
 Источник: companiesmarketcap.com, на 6 ноября 2026. Не индивидуальная инвестиционная рекомендация.
 
-#акции #компании #капитализация #фондовыйрынок #бизнес #teradyne #инвестиции #финансы #статистика #рейтинг #топ10 #рилс
+#акции #компании #капитализация #фондовыйрынок #бизнес #apple #инвестиции #финансы #статистика #рейтинг #топ10 #рилс
 ---
 Публикации нет: dry-run
-exit=0 2026-11-07T07:51:50Z
+exit=0 2026-11-07T07:53:40Z
