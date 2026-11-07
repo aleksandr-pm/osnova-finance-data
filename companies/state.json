@@ -3,7 +3,8 @@
   "salik",
   "parkin",
   "du",
-  "airarabia"
+  "airarabia",
+  "spinneys"
  ],
  "log": [
   {
@@ -25,6 +26,11 @@
    "id": "airarabia",
    "post": "18217364233361546",
    "t": "2026-11-06 16:14"
+  },
+  {
+   "id": "spinneys",
+   "post": "18474884077138319",
+   "t": "2026-11-07 07:33"
   }
  ]
 }
