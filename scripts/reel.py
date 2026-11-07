@@ -1163,6 +1163,12 @@ def main():
     out = args[args.index("--out") + 1] if "--out" in args else os.path.join(ROOT, "reel.mp4")
     rankings = load_rankings()
     st = load_state()
+    auto = [p for p in st["posted"] if p.get("block") != "manual" and p.get("post") != "failed"]
+    if auto and not dry and not want and "--force" not in args:
+        gap = dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(auto[-1]["at"])
+        if gap < dt.timedelta(minutes=150):  # GitHub иногда запускает расписание с опозданием
+            log(f"Пропуск: прошлый ролик вышел {int(gap.total_seconds() // 60)} мин назад")
+            return 0
     r = next((x for x in variants(rankings) if x["id"] == want), None) if want else pick(rankings, st)
     if not r:
         log("Нет рейтинга для ролика: " + (f"{want} не найден" if want else "все публиковались за 90 дней"))
