@@ -1,0 +1,94 @@
+{
+ "posted": [
+  {
+   "id": "mkt_sector_semis",
+   "block": "manual",
+   "at": "2026-11-07T07:48:54.584722+00:00",
+   "post": "manual"
+  },
+  {
+   "id": "mkt_sector_pharma",
+   "block": "manual",
+   "at": "2026-11-07T07:48:54.584722+00:00",
+   "post": "manual"
+  },
+  {
+   "id": "mkt_sector_airlines",
+   "block": "manual",
+   "at": "2026-11-07T07:48:54.584722+00:00",
+   "post": "manual"
+  },
+  {
+   "id": "mkt_sector_banks",
+   "block": "manual",
+   "at": "2026-11-07T07:48:54.584722+00:00",
+   "post": "manual"
+  },
+  {
+   "id": "mkt_sector_auto",
+   "block": "manual",
+   "at": "2026-11-07T07:48:54.584722+00:00",
+   "post": "manual"
+  },
+  {
+   "id": "mkt_world_cap",
+   "block": "manual",
+   "at": "2026-11-07T07:48:54.584722+00:00",
+   "post": "manual"
+  },
+  {
+   "id": "mkt_world_rev",
+   "block": "manual",
+   "at": "2026-11-07T07:48:54.584722+00:00",
+   "post": "manual"
+  },
+  {
+   "id": "mkt_world_earn",
+   "block": "manual",
+   "at": "2026-11-07T07:48:54.584722+00:00",
+   "post": "manual"
+  },
+  {
+   "id": "mkt_world_emp",
+   "block": "manual",
+   "at": "2026-11-07T07:48:54.584722+00:00",
+   "post": "manual"
+  },
+  {
+   "id": "bil_world",
+   "block": "manual",
+   "at": "2026-11-07T07:48:54.584722+00:00",
+   "post": "manual"
+  },
+  {
+   "id": "bil_country_ru",
+   "block": "manual",
+   "at": "2026-11-07T07:48:54.584722+00:00",
+   "post": "manual"
+  },
+  {
+   "id": "wdi_fi_res_totl_cd_desc",
+   "block": "manual",
+   "at": "2026-11-07T07:48:54.584722+00:00",
+   "post": "manual"
+  },
+  {
+   "id": "wdi_sl_uem_totl_zs_asc",
+   "block": "manual",
+   "at": "2026-11-07T07:48:54.584722+00:00",
+   "post": "manual"
+  },
+  {
+   "id": "wdi_ny_gdp_mktp_cd_desc",
+   "block": "manual",
+   "at": "2026-11-07T07:48:54.584722+00:00",
+   "post": "manual"
+  },
+  {
+   "id": "cis_fp_cpi_totl_zg",
+   "block": "manual",
+   "at": "2026-11-07T07:48:54.584722+00:00",
+   "post": "manual"
+  }
+ ]
+}

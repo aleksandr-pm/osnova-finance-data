@@ -1,0 +1,71 @@
+name: reels
+
+# Reels в Instagram, 3 в день. Время в cron по UTC, Дубай = UTC+4.
+on:
+  schedule:
+    # 12:47 и 16:47 по Дубаю
+    - cron: "47 8,12 * * *"
+    # 20:17 по Дубаю
+    - cron: "17 16 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "yes = только собрать ролик, без публикации"
+        required: true
+        default: "yes"
+      id:
+        description: "id рейтинга (пусто = следующий по очереди)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-state
+  cancel-in-progress: false
+
+jobs:
+  reel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests pillow babel
+
+      - run: which ffmpeg || (sudo apt-get update -q && sudo apt-get install -y -q ffmpeg)
+
+      - name: Render and publish
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: |
+          mkdir -p bank/logs
+          ARGS=""
+          if [ "${{ inputs.dry_run }}" = "yes" ]; then ARGS="--dry-run"; fi
+          if [ -n "${{ inputs.id }}" ]; then ARGS="$ARGS --id ${{ inputs.id }}"; fi
+          set +e
+          python scripts/reel.py $ARGS 2>&1 | tee bank/logs/last_reels.txt
+          CODE=${PIPESTATUS[0]}
+          echo "exit=$CODE $(date -u +%FT%TZ)" >> bank/logs/last_reels.txt
+          exit 0
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reel
+          path: reel.mp4
+          retention-days: 7
+          if-no-files-found: ignore
+
+      - name: Save state
+        run: |
+          git config user.name "osnova-bot"
+          git config user.email "osnova-bot@users.noreply.github.com"
+          git add bank/state_reels.json bank/logs assets/logos 2>/dev/null
+          git commit -m "reels: publish [skip ci]" || echo "nothing to commit"
+          for i in 1 2 3; do git pull --rebase origin main && git push && break; sleep 5; done
