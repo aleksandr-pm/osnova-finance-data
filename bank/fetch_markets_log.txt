@@ -1,28 +1,28 @@
-cmc_all 200 786801 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Apple","AAPL","5
-cmc_revenue 200 779225 CSV "Rank","Name","Symbol","revenue_ttm","price (USD)","country" | "1","Amazon","AMZN"
-cmc_earnings 200 776440 CSV "Rank","Name","Symbol","earnings_ttm","price (USD)","country" | "1","Alphabet (Goo
-cmc_employees 200 716165 CSV "Rank","Name","Symbol","employees_count","price (USD)","country" | "1","Walmart","
-cmc_dividend 200 727714 CSV "Rank","Name","Symbol","dividend_yield_ttm","price (USD)","country" | "1","Elme Co
-cmc_pe 200 756323 CSV "Rank","Name","Symbol","pe_ratio_ttm","price (USD)","country" | "1","Stem, Inc","S
-cmc_tech 200 73203 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Apple","AAPL","5
-cmc_banks 200 51969 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","JPMorgan Chase",
-cmc_oil 200 29164 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Saudi Aramco","2
-cmc_semis 200 11352 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","NVIDIA","NVDA","
-cmc_pharma 200 51719 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Eli Lilly","LLY"
-cmc_auto 200 3775 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Tesla","TSLA","1
-cmc_airlines 200 4665 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Delta Air Lines"
-cmc_insurance 200 22095 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","UnitedHealth","U
-cmc_food 200 25669 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Nestlé","NESN.SW
-cmc_retail 200 25726 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Amazon","AMZN","
-cmc_telecom 200 14116 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","China Mobile","0
-cmc_mining 200 22305 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","BHP Group","BHP"
-cmc_luxury 404 32094 NOT CSV <!DOCTYPE html> | <html lang="en-US"> | <head> | <title>Error 404: Page not found</tit
-cmc_crypto 404 32093 NOT CSV <!DOCTYPE html> | <html lang="en-US"> | <head> | <title>Error 404: Page not found</tit
-cmc_ai 200 5241 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Apple","AAPL","5
+cmc_all 200 785063 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Apple","AAPL","4
+cmc_revenue 200 777483 CSV "Rank","Name","Symbol","revenue_ttm","price (USD)","country" | "1","Amazon","AMZN"
+cmc_earnings 200 774698 CSV "Rank","Name","Symbol","earnings_ttm","price (USD)","country" | "1","Alphabet (Goo
+cmc_employees 200 714433 CSV "Rank","Name","Symbol","employees_count","price (USD)","country" | "1","Walmart","
+cmc_dividend 200 726021 CSV "Rank","Name","Symbol","dividend_yield_ttm","price (USD)","country" | "1","Elme Co
+cmc_pe 200 754752 CSV "Rank","Name","Symbol","pe_ratio_ttm","price (USD)","country" | "1","Stem, Inc","S
+cmc_tech 200 72968 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Apple","AAPL","4
+cmc_banks 200 51884 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","JPMorgan Chase",
+cmc_oil 200 29082 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Saudi Aramco","2
+cmc_semis 200 11318 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","NVIDIA","NVDA","
+cmc_pharma 200 51509 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Eli Lilly","LLY"
+cmc_auto 200 3770 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Tesla","TSLA","1
+cmc_airlines 200 4658 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Delta Air Lines"
+cmc_insurance 200 22052 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","UnitedHealth","U
+cmc_food 200 25629 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Nestlé","NESN.SW
+cmc_retail 200 25669 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Amazon","AMZN","
+cmc_telecom 200 14075 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","China Mobile","0
+cmc_mining 200 22229 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","BHP Group","BHP"
+cmc_luxury 404 32093 NOT CSV <!DOCTYPE html> | <html lang="en-US"> | <head> | <title>Error 404: Page not found</tit
+cmc_crypto 404 32091 NOT CSV <!DOCTYPE html> | <html lang="en-US"> | <head> | <title>Error 404: Page not found</tit
+cmc_ai 200 5221 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Apple","AAPL","4
 cmc_defense 404 32094 NOT CSV <!DOCTYPE html> | <html lang="en-US"> | <head> | <title>Error 404: Page not found</tit
-cmc_beverages 200 8277 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Coca-Cola","KO",
-cmc_sports 404 32093 NOT CSV <!DOCTYPE html> | <html lang="en-US"> | <head> | <title>Error 404: Page not found</tit
-cmc_gaming 200 14744 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Microsoft","MSFT
-cmc_realestate 200 49538 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Welltower","WELL
-bloomberg 403 427  {"appId": "PX8FCGYgk4", "jsClientSrc": "/8FCGYgk4/init.js", "firstPartyEnabled": true, "vid": "", "uuid": "a5b5bf06-da1
-forbes_rtb 200 949899 {"personList":{"personsLists":[{"uri":"elon-musk","rank":1,"finalWorth":839008.657,"finalWorthBillions":839.008657,"pers
+cmc_beverages 200 8265 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Coca-Cola","KO",
+cmc_sports 404 32094 NOT CSV <!DOCTYPE html> | <html lang="en-US"> | <head> | <title>Error 404: Page not found</tit
+cmc_gaming 200 14736 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Microsoft","MSFT
+cmc_realestate 200 49426 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Welltower","WELL
+bloomberg 403 427  {"appId": "PX8FCGYgk4", "jsClientSrc": "/8FCGYgk4/init.js", "firstPartyEnabled": true, "vid": "", "uuid": "93a8b09f-da8
+forbes_rtb 200 949884 {"personList":{"personsLists":[{"uri":"elon-musk","rank":1,"finalWorth":849734.216,"finalWorthBillions":849.734216000000
