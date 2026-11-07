@@ -9,6 +9,7 @@ import datetime as dt
 import json
 import os
 import sys
+import time
 
 import pycountry
 
@@ -95,7 +96,7 @@ def record(rid, block, title, rows, unit, source, source_full, hook_tpl, note=""
     before, after = hook_tpl.split("[v]")
     before, after = before.replace("{L}", lead["name"]), after.replace("{L}", lead["name"])
     hook = [x for x in [[before.strip(), False], [lead["text"], True], [after.strip(), False]] if x[0]]
-    return {"id": rid, "block": block, "title": title, "unit": unit, "year": TODAY.year, "source": source,
+    return {"hook_tpl": hook_tpl, "id": rid, "block": block, "title": title, "unit": unit, "year": TODAY.year, "source": source,
             "source_full": source_full, "note": note or ASOF, "countries": len(rows), "top": top, "cis": cis,
             "hook": hook, "hook_text": (before + lead["text"] + after).strip(), "type": "bars",
             "period": f"{MON_N[TODAY.month - 1]} {TODAY.year}",
@@ -205,8 +206,84 @@ def billionaires():
     return recs
 
 
+# ───────── русские названия: Wikidata (метка ru), кеш bank/raw_markets/ru_names.json ─────────
+RU_CACHE = os.path.join(RAW, "ru_names.json")
+PERSON = re.compile(r"business|entrepreneur|investor|billionaire|executive|heir|founder|magnate|oligarch|engineer|philanthrop|banker|industrialist|manager|CEO", re.I)
+COMPANY = re.compile(r"company|bank|corporation|manufacturer|conglomerate|operator|airline|enterprise|group|firm|insurer|retailer|producer|holding|brand|maker|chain|developer of|software|semiconductor|telecom|pharmaceutical|exchange|carrier|utility|automaker", re.I)
+CYR = re.compile(r"[А-Яа-яЁё]")
+
+
+def wikidata_ru(name, person):
+    import requests
+    H = {"User-Agent": "OSNOVA-Finance-ranking/1.0 (data bank; contact via github aleksandr-pm)"}
+    try:
+        r = requests.get("https://www.wikidata.org/w/api.php", params={"action": "wbsearchentities", "search": name, "language": "en",
+                         "type": "item", "limit": 5, "format": "json"}, headers=H, timeout=20).json()
+        for hit in r.get("search", []):
+            desc = hit.get("description", "")
+            if not (PERSON if person else COMPANY).search(desc):
+                continue
+            e = requests.get("https://www.wikidata.org/w/api.php", params={"action": "wbgetentities", "ids": hit["id"], "props": "labels",
+                             "languages": "ru", "format": "json"}, headers=H, timeout=20).json()
+            lab = e["entities"][hit["id"]].get("labels", {}).get("ru", {}).get("value", "")
+            return lab if CYR.search(lab) else ""
+    except Exception:
+        return None
+    return ""
+
+
+def russify(recs):
+    try:
+        cache = json.load(open(RU_CACHE, encoding="utf-8"))
+    except Exception:
+        cache = {}
+    online = os.environ.get("GITHUB_ACTIONS") == "true"
+    asked = 0
+    for r in recs:
+        person = r["block"] == "billionaires"
+        for row in r["top"] + r.get("cis", []):
+            base, fam = row["name"], ""
+            m = re.match(r"^(.*?)( с семьёй)$", base)
+            if m:
+                base, fam = m.group(1), m.group(2)
+            m2 = re.match(r"^(.*) \(([^)]+)\)$", base) if not person else None   # «Sberbank (Россия)» из строки СНГ
+            tail = ""
+            if m2 and m2.group(2) in CIS.values():
+                base, tail = m2.group(1), f" ({m2.group(2)})"
+            key = ("p:" if person else "c:") + base
+            if key not in cache and online and asked < 1500:
+                v = wikidata_ru(base, person)
+                asked += 1
+                if v is not None:
+                    cache[key] = v
+                time.sleep(0.2)
+            ru = cache.get(key) or ""
+            if ru:
+                ru = re.sub(r"\s*\(.*?\)$", "", ru).strip()          # «Тинькофф (банк)» → «Тинькофф»
+                if person:   # «Маск, Илон» → «Илон Маск»
+                    if "," in ru:
+                        a, b = [x.strip() for x in ru.split(",", 1)]
+                        ru = f"{b} {a}"
+                    ru = " ".join(ru.split()[:3])
+                row["name"] = ru + fam + tail
+    json.dump(cache, open(RU_CACHE, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+    for r in recs:   # вывод в карточке и тексте под новое имя лидера
+        lead = r["top"][0]
+        r["hook"] = [[seg[0].replace(seg[0], seg[0]), seg[1]] for seg in r["hook"]]
+        r["hook_text"] = r["hook_text"]
+    print("Wikidata запросов:", asked, "· в кеше:", len(cache))
+
+
 def main():
     recs = companies() + billionaires()
+    russify(recs)
+    for r in recs:   # хук пересобираем с русским именем лидера
+        tpl = r.pop("hook_tpl")
+        lead = r["top"][0]
+        before, after = tpl.split("[v]")
+        before, after = before.replace("{L}", lead["name"]), after.replace("{L}", lead["name"])
+        r["hook"] = [x for x in [[before.strip(), False], [lead["text"], True], [after.strip(), False]] if x[0]]
+        r["hook_text"] = (before + lead["text"] + after).strip()
     os.makedirs(os.path.join(OUT, CARDS), exist_ok=True)
     for i, r in enumerate(recs):
         p = os.path.join(OUT, r["card"])
