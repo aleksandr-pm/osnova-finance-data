@@ -1,21 +1,20 @@
-threads: line_agro_prod_1058 (agro, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/f36713c7cd79/bank/covers/line_agro_prod_1058.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/f36713c7cd79/bank/cards/line_agro_prod_1058.jpg
+threads: mkt_country_cap_de (companies, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/27707e9237c4/bank/cards_markets/mkt_country_cap_de.jpg
 ---
-Производство курятины: крупнейшие производители, 2000-2024:
-1. 🇺🇸 США · +43%
-2. 🇨🇳 Китай · в 1,8 раза
-3. 🇧🇷 Бразилия · в 2,3 раза
-4. 🇷🇺 Россия · в 7,2 раза
-5. 🇮🇳 Индия · в 5,8 раза
-6. 🇮🇩 Индонезия · в 5,2 раза
-7. 🇲🇽 Мексика · в 2,2 раза
-8. 🇪🇬 Египет · в 5,1 раза
-9. 🇹🇷 Турция · в 3,9 раза
-10. 🇯🇵 Япония · в 2,1 раза
-Россия: производство курятины выросло в 7,2 раза с 2000 года.
+Самые дорогие компании Германии, ноябрь 2026:
+1. 🇩🇪 SAP · $269 млрд
+2. 🇩🇪 Siemens · $226 млрд
+3. 🇩🇪 Allianz · $192 млрд
+4. 🇩🇪 Deutsche Telekom · $139 млрд
+5. 🇩🇪 Siemens Energy · $112 млрд
+6. 🇩🇪 Munich Re · $80,4 млрд
+7. 🇩🇪 Merck KGaA · $72,7 млрд
+8. 🇩🇪 DHL Group · $72,3 млрд
+9. 🇩🇪 Infineon · $66,8 млрд
+10. 🇩🇪 Deutsche Bank · $64,6 млрд
+№1: SAP, $269 млрд.
 Больше в Telegram @osnovafin
 ---
 Threads: текстом
-Опубликовано: 18112374959524234. Осталось новых рейтингов: 202
-exit=0 2026-11-07T15:35:52Z
+Опубликовано: 18225669067339725. Осталось новых рейтингов: 201
+exit=0 2026-11-07T17:13:33Z
