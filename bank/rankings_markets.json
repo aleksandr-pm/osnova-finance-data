@@ -76,7 +76,7 @@
    },
    {
     "iso2": "US",
-    "name": "Meta Platforms (Facebook)",
+    "name": "Meta",
     "value": 1560051712000.0,
     "flag": "🇺🇸",
     "text": "$1,6 трлн",
@@ -93,7 +93,7 @@
   ],
   "cis": [
    {
-    "name": "Sberbank (Россия)",
+    "name": "Сбербанк (Россия)",
     "rank": 306,
     "in_top10": false,
     "iso": "RU"
@@ -403,7 +403,7 @@
    },
    {
     "iso2": "TW",
-    "name": "Foxconn (Hon Hai Precision Industry)",
+    "name": "Foxconn",
     "value": 826608.0,
     "flag": "🇹🇼",
     "text": "827 тыс. чел.",
@@ -435,7 +435,7 @@
    },
    {
     "iso2": "DE",
-    "name": "DHL Group (Deutsche Post)",
+    "name": "DHL Group",
     "value": 594879.0,
     "flag": "🇩🇪",
     "text": "595 тыс. чел.",
@@ -452,13 +452,13 @@
   ],
   "cis": [
    {
-    "name": "Gazprom (Россия)",
+    "name": "Газпром (Россия)",
     "rank": 13,
     "in_top10": false,
     "iso": "RU"
    },
    {
-    "name": "Kazatomprom (Казахстан)",
+    "name": "Казатомпром (Казахстан)",
     "rank": 1252,
     "in_top10": false,
     "iso": "KZ"
@@ -540,7 +540,7 @@
    },
    {
     "iso2": "US",
-    "name": "Meta Platforms (Facebook)",
+    "name": "Meta",
     "value": 1560051712000.0,
     "flag": "🇺🇸",
     "text": "$1,6 трлн",
@@ -608,7 +608,7 @@
    },
    {
     "iso2": "CN",
-    "name": "China Construction Bank",
+    "name": "Строительный банк Китая",
     "value": 466779586369.0,
     "flag": "🇨🇳",
     "text": "$467 млрд",
@@ -624,7 +624,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Agricultural Bank of China",
+    "name": "Сельскохозяйственный банк Китая",
     "value": 381715805313.0,
     "flag": "🇨🇳",
     "text": "$382 млрд",
@@ -640,7 +640,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Bank of China",
+    "name": "Банк Китая",
     "value": 330669831182.0,
     "flag": "🇨🇳",
     "text": "$331 млрд",
@@ -848,7 +848,7 @@
    },
    {
     "iso2": "IN",
-    "name": "State Bank of India",
+    "name": "Государственный банк Индии",
     "value": 99538208809.0,
     "flag": "🇮🇳",
     "text": "$99,5 млрд",
@@ -872,7 +872,7 @@
    },
    {
     "iso2": "IN",
-    "name": "Larsen &amp; Toubro",
+    "name": "Larsen & Toubro",
     "value": 59984027934.0,
     "flag": "🇮🇳",
     "text": "$60 млрд",
@@ -1072,7 +1072,7 @@
    },
    {
     "iso2": "DE",
-    "name": "Munich RE (Münchener Rück)",
+    "name": "Munich Re",
     "value": 80446634609.0,
     "flag": "🇩🇪",
     "text": "$80,4 млрд",
@@ -1088,7 +1088,7 @@
    },
    {
     "iso2": "DE",
-    "name": "DHL Group (Deutsche Post)",
+    "name": "DHL Group",
     "value": 72345761808.0,
     "flag": "🇩🇪",
     "text": "$72,3 млрд",
@@ -1364,7 +1364,7 @@
    },
    {
     "iso2": "SA",
-    "name": "Al Rajhi Bank",
+    "name": "Аль-Раджхи Банк",
     "value": 99176196370.0,
     "flag": "🇸🇦",
     "text": "$99,2 млрд",
@@ -1380,7 +1380,7 @@
    },
    {
     "iso2": "SA",
-    "name": "The Saudi National Bank",
+    "name": "Национальный банк Саудовской Аравии",
     "value": 60285130410.0,
     "flag": "🇸🇦",
     "text": "$60,3 млрд",
@@ -1388,7 +1388,7 @@
    },
    {
     "iso2": "SA",
-    "name": "Saudi Telecom Company",
+    "name": "Saudi Telecom (STC)",
     "value": 55307895854.0,
     "flag": "🇸🇦",
     "text": "$55,3 млрд",
@@ -1404,7 +1404,7 @@
    },
    {
     "iso2": "SA",
-    "name": "ACWA POWER Company",
+    "name": "ACWA Power",
     "value": 31412767457.0,
     "flag": "🇸🇦",
     "text": "$31,4 млрд",
@@ -1420,7 +1420,7 @@
    },
    {
     "iso2": "SA",
-    "name": "Dr. Sulaiman Al Habib Medical Services Group Company",
+    "name": "Dr. Sulaiman Al Habib",
     "value": 20136501060.0,
     "flag": "🇸🇦",
     "text": "$20,1 млрд",
@@ -1528,7 +1528,7 @@
    },
    {
     "iso2": "AE",
-    "name": "ADNOC Drilling Company",
+    "name": "ADNOC Drilling",
     "value": 25093938688.0,
     "flag": "🇦🇪",
     "text": "$25,1 млрд",
@@ -1696,7 +1696,7 @@
    },
    {
     "iso2": "TW",
-    "name": "Foxconn (Hon Hai Precision Industry)",
+    "name": "Foxconn",
     "value": 97250602110.0,
     "flag": "🇹🇼",
     "text": "$97,3 млрд",
@@ -3516,7 +3516,7 @@
   "top": [
    {
     "iso2": "RU",
-    "name": "Sberbank",
+    "name": "Сбербанк",
     "value": 77404428386.0,
     "flag": "🇷🇺",
     "text": "$77,4 млрд",
@@ -3524,7 +3524,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Lukoil",
+    "name": "Лукойл",
     "value": 51205895555.0,
     "flag": "🇷🇺",
     "text": "$51,2 млрд",
@@ -3532,7 +3532,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Rosneft",
+    "name": "Роснефть",
     "value": 46751909588.0,
     "flag": "🇷🇺",
     "text": "$46,8 млрд",
@@ -3540,7 +3540,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Novatek",
+    "name": "Новатэк",
     "value": 42221272829.0,
     "flag": "🇷🇺",
     "text": "$42,2 млрд",
@@ -3548,7 +3548,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Gazprom",
+    "name": "Газпром",
     "value": 32768838278.0,
     "flag": "🇷🇺",
     "text": "$32,8 млрд",
@@ -3556,7 +3556,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Nornickel",
+    "name": "Норникель",
     "value": 21676318272.0,
     "flag": "🇷🇺",
     "text": "$21,7 млрд",
@@ -3564,7 +3564,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Polyus",
+    "name": "Полюс",
     "value": 17660131194.0,
     "flag": "🇷🇺",
     "text": "$17,7 млрд",
@@ -3572,7 +3572,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Tatneft",
+    "name": "Татнефть",
     "value": 16138745219.0,
     "flag": "🇷🇺",
     "text": "$16,1 млрд",
@@ -3580,7 +3580,7 @@
    },
    {
     "iso2": "RU",
-    "name": "PhosAgro",
+    "name": "ФосАгро",
     "value": 8242475868.0,
     "flag": "🇷🇺",
     "text": "$8,2 млрд",
@@ -3588,7 +3588,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Surgutneftegas",
+    "name": "Сургутнефтегаз",
     "value": 7677099835.0,
     "flag": "🇷🇺",
     "text": "$7,7 млрд",
@@ -3598,7 +3598,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Sberbank,",
+    "№1: Сбербанк,",
     false
    ],
    [
@@ -3606,7 +3606,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Sberbank, $77,4 млрд",
+  "hook_text": "№1: Сбербанк, $77,4 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/mkt_country_cap_ru.png"
@@ -3632,7 +3632,7 @@
    },
    {
     "iso2": "KZ",
-    "name": "Kazatomprom",
+    "name": "Казатомпром",
     "value": 15441361775.0,
     "flag": "🇰🇿",
     "text": "$15,4 млрд",
@@ -3648,7 +3648,7 @@
    },
    {
     "iso2": "KZ",
-    "name": "Halyk Bank",
+    "name": "Халык Банк",
     "value": 8884843020.0,
     "flag": "🇰🇿",
     "text": "$8,9 млрд",
@@ -3656,7 +3656,7 @@
    },
    {
     "iso2": "KZ",
-    "name": "Air Astana",
+    "name": "Эйр Астана",
     "value": 501266977.0,
     "flag": "🇰🇿",
     "text": "$501 млн",
@@ -4620,7 +4620,7 @@
    },
    {
     "iso2": "US",
-    "name": "Meta Platforms (Facebook)",
+    "name": "Meta",
     "value": 81641000000.0,
     "flag": "🇺🇸",
     "text": "$81,6 млрд",
@@ -4676,7 +4676,7 @@
    },
    {
     "iso2": "CN",
-    "name": "China Construction Bank",
+    "name": "Строительный банк Китая",
     "value": 54347000000.0,
     "flag": "🇨🇳",
     "text": "$54,3 млрд",
@@ -4684,7 +4684,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Agricultural Bank of China",
+    "name": "Сельскохозяйственный банк Китая",
     "value": 49687900000.0,
     "flag": "🇨🇳",
     "text": "$49,7 млрд",
@@ -4692,7 +4692,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Bank of China",
+    "name": "Банк Китая",
     "value": 44833900000.0,
     "flag": "🇨🇳",
     "text": "$44,8 млрд",
@@ -4740,7 +4740,7 @@
    },
    {
     "iso2": "CN",
-    "name": "China Life Insurance",
+    "name": "China Life",
     "value": 22024500000.0,
     "flag": "🇨🇳",
     "text": "$22 млрд",
@@ -4788,7 +4788,7 @@
    },
    {
     "iso2": "IN",
-    "name": "State Bank of India",
+    "name": "Государственный банк Индии",
     "value": 13013100000.0,
     "flag": "🇮🇳",
     "text": "$13 млрд",
@@ -4820,7 +4820,7 @@
    },
    {
     "iso2": "IN",
-    "name": "Oil &amp; Natural Gas",
+    "name": "Oil & Natural Gas",
     "value": 7851950000.0,
     "flag": "🇮🇳",
     "text": "$7,9 млрд",
@@ -4900,7 +4900,7 @@
    },
    {
     "iso2": "SA",
-    "name": "The Saudi National Bank",
+    "name": "Национальный банк Саудовской Аравии",
     "value": 7851040000.0,
     "flag": "🇸🇦",
     "text": "$7,9 млрд",
@@ -4908,7 +4908,7 @@
    },
    {
     "iso2": "SA",
-    "name": "Al Rajhi Bank",
+    "name": "Аль-Раджхи Банк",
     "value": 7803560000.0,
     "flag": "🇸🇦",
     "text": "$7,8 млрд",
@@ -4916,7 +4916,7 @@
    },
    {
     "iso2": "SA",
-    "name": "Saudi Telecom Company",
+    "name": "Saudi Telecom (STC)",
     "value": 4465090000.0,
     "flag": "🇸🇦",
     "text": "$4,5 млрд",
@@ -5044,7 +5044,7 @@
    },
    {
     "iso2": "AE",
-    "name": "Emirates Integrated Telecommunications Company",
+    "name": "du",
     "value": 1542780000.0,
     "flag": "🇦🇪",
     "text": "$1,5 млрд",
@@ -5076,7 +5076,7 @@
    },
    {
     "iso2": "AE",
-    "name": "Salik Company",
+    "name": "Salik",
     "value": 525361000.0,
     "flag": "🇦🇪",
     "text": "$525 млн",
@@ -5140,7 +5140,7 @@
    },
    {
     "iso2": "JP",
-    "name": "NTT (Nippon Telegraph &amp; Telephone)",
+    "name": "NTT",
     "value": 13557400000.0,
     "flag": "🇯🇵",
     "text": "$13,6 млрд",
@@ -5156,7 +5156,7 @@
    },
    {
     "iso2": "JP",
-    "name": "Bank of Japan",
+    "name": "Банк Японии",
     "value": 12441800000.0,
     "flag": "🇯🇵",
     "text": "$12,4 млрд",
@@ -5380,7 +5380,7 @@
    },
    {
     "iso2": "DE",
-    "name": "Munich RE (Münchener Rück)",
+    "name": "Munich Re",
     "value": 11187800000.0,
     "flag": "🇩🇪",
     "text": "$11,2 млрд",
@@ -5404,7 +5404,7 @@
    },
    {
     "iso2": "DE",
-    "name": "DHL Group (Deutsche Post)",
+    "name": "DHL Group",
     "value": 7988450000.0,
     "flag": "🇩🇪",
     "text": "$8 млрд",
@@ -5460,7 +5460,7 @@
    },
    {
     "iso2": "KZ",
-    "name": "Halyk Bank",
+    "name": "Халык Банк",
     "value": 2412820000.0,
     "flag": "🇰🇿",
     "text": "$2,4 млрд",
@@ -5468,7 +5468,7 @@
    },
    {
     "iso2": "KZ",
-    "name": "Kazatomprom",
+    "name": "Казатомпром",
     "value": 1982310000.0,
     "flag": "🇰🇿",
     "text": "$2 млрд",
@@ -5484,7 +5484,7 @@
    },
    {
     "iso2": "KZ",
-    "name": "Air Astana",
+    "name": "Эйр Астана",
     "value": -10042.1,
     "flag": "🇰🇿",
     "text": "$-10 тыс.",
@@ -5644,7 +5644,7 @@
    },
    {
     "iso2": "CH",
-    "name": "Schweizerische Nationalbank",
+    "name": "Национальный банк Швейцарии",
     "value": 20457900000.0,
     "flag": "🇨🇭",
     "text": "$20,5 млрд",
@@ -6140,7 +6140,7 @@
    },
    {
     "iso2": "US",
-    "name": "Meta Platforms (Facebook)",
+    "name": "Meta",
     "value": 1560051712000.0,
     "flag": "🇺🇸",
     "text": "$1,6 трлн",
@@ -6207,7 +6207,7 @@
    },
    {
     "iso2": "CN",
-    "name": "China Construction Bank",
+    "name": "Строительный банк Китая",
     "value": 466779586369.0,
     "flag": "🇨🇳",
     "text": "$467 млрд",
@@ -6215,7 +6215,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Agricultural Bank of China",
+    "name": "Сельскохозяйственный банк Китая",
     "value": 381715805313.0,
     "flag": "🇨🇳",
     "text": "$382 млрд",
@@ -6239,7 +6239,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Bank of China",
+    "name": "Банк Китая",
     "value": 330669831182.0,
     "flag": "🇨🇳",
     "text": "$331 млрд",
@@ -6280,13 +6280,13 @@
   ],
   "cis": [
    {
-    "name": "Sberbank (Россия)",
+    "name": "Сбербанк (Россия)",
     "rank": 47,
     "in_top10": false,
     "iso": "RU"
    },
    {
-    "name": "Halyk Bank (Казахстан)",
+    "name": "Халык Банк (Казахстан)",
     "rank": 221,
     "in_top10": false,
     "iso": "KZ"
@@ -6401,7 +6401,7 @@
   ],
   "cis": [
    {
-    "name": "Lukoil (Россия)",
+    "name": "Лукойл (Россия)",
     "rank": 37,
     "in_top10": false,
     "iso": "RU"
@@ -6840,7 +6840,7 @@
   ],
   "cis": [
    {
-    "name": "Air Astana (Казахстан)",
+    "name": "Эйр Астана (Казахстан)",
     "rank": 56,
     "in_top10": false,
     "iso": "KZ"
@@ -6890,7 +6890,7 @@
    },
    {
     "iso2": "CN",
-    "name": "China Life Insurance",
+    "name": "China Life",
     "value": 150368489291.0,
     "flag": "🇨🇳",
     "text": "$150 млрд",
@@ -7262,7 +7262,7 @@
    },
    {
     "iso2": "JP",
-    "name": "NTT (Nippon Telegraph &amp; Telephone)",
+    "name": "NTT",
     "value": 81861333231.0,
     "flag": "🇯🇵",
     "text": "$81,9 млрд",
@@ -7279,7 +7279,7 @@
   ],
   "cis": [
    {
-    "name": "Mobile TeleSystems (Россия)",
+    "name": "МТС (Россия)",
     "rank": 90,
     "in_top10": false,
     "iso": "RU"
@@ -7394,13 +7394,13 @@
   ],
   "cis": [
    {
-    "name": "Nornickel (Россия)",
+    "name": "Норникель (Россия)",
     "rank": 33,
     "in_top10": false,
     "iso": "RU"
    },
    {
-    "name": "Kazatomprom (Казахстан)",
+    "name": "Казатомпром (Казахстан)",
     "rank": 47,
     "in_top10": false,
     "iso": "KZ"
@@ -7474,7 +7474,7 @@
    },
    {
     "iso2": "US",
-    "name": "Meta Platforms (Facebook)",
+    "name": "Meta",
     "value": 1560051712000.0,
     "flag": "🇺🇸",
     "text": "$1,6 трлн",
@@ -7870,7 +7870,7 @@
   "top": [
    {
     "iso2": "US",
-    "name": "Elon Musk",
+    "name": "Илон Маск",
     "value": 849734216000.0,
     "flag": "🇺🇸",
     "text": "$850 млрд",
@@ -7878,7 +7878,7 @@
    },
    {
     "iso2": "US",
-    "name": "Jeff Bezos",
+    "name": "Джефф Безос",
     "value": 378071692000.0,
     "flag": "🇺🇸",
     "text": "$378 млрд",
@@ -7886,7 +7886,7 @@
    },
    {
     "iso2": "US",
-    "name": "Larry Page",
+    "name": "Ларри Пейдж",
     "value": 236891779000.0,
     "flag": "🇺🇸",
     "text": "$237 млрд",
@@ -7894,7 +7894,7 @@
    },
    {
     "iso2": "US",
-    "name": "Sergey Brin",
+    "name": "Сергей Брин",
     "value": 218091294000.0,
     "flag": "🇺🇸",
     "text": "$218 млрд",
@@ -7902,7 +7902,7 @@
    },
    {
     "iso2": "US",
-    "name": "Mark Zuckerberg",
+    "name": "Марк Цукерберг",
     "value": 209743529000.0,
     "flag": "🇺🇸",
     "text": "$210 млрд",
@@ -7910,7 +7910,7 @@
    },
    {
     "iso2": "US",
-    "name": "Michael Dell",
+    "name": "Майкл Делл",
     "value": 194896106000.0,
     "flag": "🇺🇸",
     "text": "$195 млрд",
@@ -7918,7 +7918,7 @@
    },
    {
     "iso2": "US",
-    "name": "Steve Ballmer",
+    "name": "Стив Балмер",
     "value": 163892155000.0,
     "flag": "🇺🇸",
     "text": "$164 млрд",
@@ -7926,7 +7926,7 @@
    },
    {
     "iso2": "US",
-    "name": "Jensen Huang",
+    "name": "Дженсен Хуанг",
     "value": 162161695000.0,
     "flag": "🇺🇸",
     "text": "$162 млрд",
@@ -7934,7 +7934,7 @@
    },
    {
     "iso2": "US",
-    "name": "Warren Buffett",
+    "name": "Уоррен Баффетт",
     "value": 162147637000.0,
     "flag": "🇺🇸",
     "text": "$162 млрд",
@@ -7942,7 +7942,7 @@
    },
    {
     "iso2": "US",
-    "name": "Larry Ellison",
+    "name": "Ларри Эллисон",
     "value": 154881682000.0,
     "flag": "🇺🇸",
     "text": "$155 млрд",
@@ -7951,13 +7951,13 @@
   ],
   "cis": [
    {
-    "name": "Alexey Mordashov с семьёй (Россия)",
+    "name": "Алексей Мордашов с семьёй (Россия)",
     "rank": 60,
     "in_top10": false,
     "iso": "RU"
    },
    {
-    "name": "Vyacheslav Kim (Казахстан)",
+    "name": "Вячеслав Ким (Казахстан)",
     "rank": 482,
     "in_top10": false,
     "iso": "KZ"
@@ -7965,7 +7965,7 @@
   ],
   "hook": [
    [
-    "№1 в мире: Elon Musk,",
+    "№1 в мире: Илон Маск,",
     false
    ],
    [
@@ -7973,7 +7973,7 @@
     true
    ]
   ],
-  "hook_text": "№1 в мире: Elon Musk, $850 млрд",
+  "hook_text": "№1 в мире: Илон Маск, $850 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_world.png"
@@ -7991,7 +7991,7 @@
   "top": [
    {
     "iso2": "US",
-    "name": "Elon Musk",
+    "name": "Илон Маск",
     "value": 849734216000.0,
     "flag": "🇺🇸",
     "text": "$850 млрд",
@@ -7999,7 +7999,7 @@
    },
    {
     "iso2": "US",
-    "name": "Jeff Bezos",
+    "name": "Джефф Безос",
     "value": 378071692000.0,
     "flag": "🇺🇸",
     "text": "$378 млрд",
@@ -8007,7 +8007,7 @@
    },
    {
     "iso2": "US",
-    "name": "Larry Page",
+    "name": "Ларри Пейдж",
     "value": 236891779000.0,
     "flag": "🇺🇸",
     "text": "$237 млрд",
@@ -8015,7 +8015,7 @@
    },
    {
     "iso2": "US",
-    "name": "Sergey Brin",
+    "name": "Сергей Брин",
     "value": 218091294000.0,
     "flag": "🇺🇸",
     "text": "$218 млрд",
@@ -8023,7 +8023,7 @@
    },
    {
     "iso2": "US",
-    "name": "Mark Zuckerberg",
+    "name": "Марк Цукерберг",
     "value": 209743529000.0,
     "flag": "🇺🇸",
     "text": "$210 млрд",
@@ -8031,7 +8031,7 @@
    },
    {
     "iso2": "US",
-    "name": "Michael Dell",
+    "name": "Майкл Делл",
     "value": 194896106000.0,
     "flag": "🇺🇸",
     "text": "$195 млрд",
@@ -8039,7 +8039,7 @@
    },
    {
     "iso2": "US",
-    "name": "Steve Ballmer",
+    "name": "Стив Балмер",
     "value": 163892155000.0,
     "flag": "🇺🇸",
     "text": "$164 млрд",
@@ -8047,7 +8047,7 @@
    },
    {
     "iso2": "US",
-    "name": "Jensen Huang",
+    "name": "Дженсен Хуанг",
     "value": 162161695000.0,
     "flag": "🇺🇸",
     "text": "$162 млрд",
@@ -8055,7 +8055,7 @@
    },
    {
     "iso2": "US",
-    "name": "Warren Buffett",
+    "name": "Уоррен Баффетт",
     "value": 162147637000.0,
     "flag": "🇺🇸",
     "text": "$162 млрд",
@@ -8063,7 +8063,7 @@
    },
    {
     "iso2": "US",
-    "name": "Larry Ellison",
+    "name": "Ларри Эллисон",
     "value": 154881682000.0,
     "flag": "🇺🇸",
     "text": "$155 млрд",
@@ -8073,7 +8073,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Elon Musk,",
+    "№1: Илон Маск,",
     false
    ],
    [
@@ -8081,7 +8081,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Elon Musk, $850 млрд",
+  "hook_text": "№1: Илон Маск, $850 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_country_us.png"
@@ -8099,7 +8099,7 @@
   "top": [
    {
     "iso2": "CN",
-    "name": "Zhang Yiming",
+    "name": "Чжан Имин",
     "value": 84000000000.0,
     "flag": "🇨🇳",
     "text": "$84 млрд",
@@ -8107,7 +8107,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Zhong Shanshan",
+    "name": "Чжун Шаньшань",
     "value": 65079063000.0,
     "flag": "🇨🇳",
     "text": "$65,1 млрд",
@@ -8115,7 +8115,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Liang Wenfeng",
+    "name": "Лян Вэньфэн",
     "value": 46142581000.0,
     "flag": "🇨🇳",
     "text": "$46,1 млрд",
@@ -8123,7 +8123,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Ma Huateng",
+    "name": "Ма Хуатэн",
     "value": 45562232000.0,
     "flag": "🇨🇳",
     "text": "$45,6 млрд",
@@ -8131,7 +8131,7 @@
    },
    {
     "iso2": "CN",
-    "name": "William Ding",
+    "name": "Уильям Дин",
     "value": 43236445000.0,
     "flag": "🇨🇳",
     "text": "$43,2 млрд",
@@ -8139,7 +8139,7 @@
    },
    {
     "iso2": "CN",
-    "name": "He Xiangjian с семьёй",
+    "name": "Хэ Сянцзянь с семьёй",
     "value": 38823105000.0,
     "flag": "🇨🇳",
     "text": "$38,8 млрд",
@@ -8147,7 +8147,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Colin Huang",
+    "name": "Колин Хуан",
     "value": 29262761000.0,
     "flag": "🇨🇳",
     "text": "$29,3 млрд",
@@ -8155,7 +8155,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Jack Ma",
+    "name": "Джек Ма",
     "value": 26083397000.0,
     "flag": "🇨🇳",
     "text": "$26,1 млрд",
@@ -8163,7 +8163,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Lei Jun",
+    "name": "Лэй Цзюнь",
     "value": 24395950000.0,
     "flag": "🇨🇳",
     "text": "$24,4 млрд",
@@ -8171,7 +8171,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Zheng Shuliang с семьёй",
+    "name": "Чжэн Шулян с семьёй",
     "value": 23708155000.0,
     "flag": "🇨🇳",
     "text": "$23,7 млрд",
@@ -8181,7 +8181,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Zhang Yiming,",
+    "№1: Чжан Имин,",
     false
    ],
    [
@@ -8189,7 +8189,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Zhang Yiming, $84 млрд",
+  "hook_text": "№1: Чжан Имин, $84 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_country_cn.png"
@@ -8207,7 +8207,7 @@
   "top": [
    {
     "iso2": "IN",
-    "name": "Mukesh Ambani",
+    "name": "Мукеш Амбани",
     "value": 90985526000.0,
     "flag": "🇮🇳",
     "text": "$91 млрд",
@@ -8215,7 +8215,7 @@
    },
    {
     "iso2": "IN",
-    "name": "Gautam Adani",
+    "name": "Гаутам Адани",
     "value": 83709756000.0,
     "flag": "🇮🇳",
     "text": "$83,7 млрд",
@@ -8223,7 +8223,7 @@
    },
    {
     "iso2": "IN",
-    "name": "Savitri Jindal с семьёй",
+    "name": "Савитри Джиндал с семьёй",
     "value": 40919329000.0,
     "flag": "🇮🇳",
     "text": "$40,9 млрд",
@@ -8231,7 +8231,7 @@
    },
    {
     "iso2": "IN",
-    "name": "Shiv Nadar",
+    "name": "Шив Надар",
     "value": 31694843000.0,
     "flag": "🇮🇳",
     "text": "$31,7 млрд",
@@ -8239,7 +8239,7 @@
    },
    {
     "iso2": "IN",
-    "name": "Lakshmi Mittal",
+    "name": "Лакшми Миттал",
     "value": 29790204000.0,
     "flag": "🇮🇳",
     "text": "$29,8 млрд",
@@ -8247,7 +8247,7 @@
    },
    {
     "iso2": "IN",
-    "name": "Cyrus Poonawalla",
+    "name": "Сайрус Пунавалла",
     "value": 29008182000.0,
     "flag": "🇮🇳",
     "text": "$29 млрд",
@@ -8255,7 +8255,7 @@
    },
    {
     "iso2": "IN",
-    "name": "Dilip Shanghvi",
+    "name": "Дилип Шангви",
     "value": 26462186000.0,
     "flag": "🇮🇳",
     "text": "$26,5 млрд",
@@ -8263,7 +8263,7 @@
    },
    {
     "iso2": "IN",
-    "name": "Kumar Birla",
+    "name": "Кумар Бирла",
     "value": 22860658000.0,
     "flag": "🇮🇳",
     "text": "$22,9 млрд",
@@ -8271,7 +8271,7 @@
    },
    {
     "iso2": "IN",
-    "name": "Uday Kotak",
+    "name": "Удай Котак",
     "value": 15805875000.0,
     "flag": "🇮🇳",
     "text": "$15,8 млрд",
@@ -8279,7 +8279,7 @@
    },
    {
     "iso2": "IN",
-    "name": "Murali Divi с семьёй",
+    "name": "Мурали Диви с семьёй",
     "value": 15389325000.0,
     "flag": "🇮🇳",
     "text": "$15,4 млрд",
@@ -8289,7 +8289,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Mukesh Ambani,",
+    "№1: Мукеш Амбани,",
     false
    ],
    [
@@ -8297,7 +8297,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Mukesh Ambani, $91 млрд",
+  "hook_text": "№1: Мукеш Амбани, $91 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_country_in.png"
@@ -8315,7 +8315,7 @@
   "top": [
    {
     "iso2": "RU",
-    "name": "Alexey Mordashov с семьёй",
+    "name": "Алексей Мордашов с семьёй",
     "value": 36946550000.0,
     "flag": "🇷🇺",
     "text": "$36,9 млрд",
@@ -8323,7 +8323,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Vladimir Potanin",
+    "name": "Владимир Потанин",
     "value": 29740299000.0,
     "flag": "🇷🇺",
     "text": "$29,7 млрд",
@@ -8331,7 +8331,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Vagit Alekperov",
+    "name": "Вагит Алекперов",
     "value": 29475064000.0,
     "flag": "🇷🇺",
     "text": "$29,5 млрд",
@@ -8339,7 +8339,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Leonid Mikhelson с семьёй",
+    "name": "Леонид Михельсон с семьёй",
     "value": 28301370000.0,
     "flag": "🇷🇺",
     "text": "$28,3 млрд",
@@ -8347,7 +8347,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Suleiman Kerimov с семьёй",
+    "name": "Сулейман Керимов с семьёй",
     "value": 25662204000.0,
     "flag": "🇷🇺",
     "text": "$25,7 млрд",
@@ -8355,7 +8355,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Vladimir Lisin",
+    "name": "Владимир Лисин",
     "value": 25532466000.0,
     "flag": "🇷🇺",
     "text": "$25,5 млрд",
@@ -8363,7 +8363,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Gennady Timchenko",
+    "name": "Геннадий Тимченко",
     "value": 24165649000.0,
     "flag": "🇷🇺",
     "text": "$24,2 млрд",
@@ -8371,7 +8371,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Andrey Melnichenko с семьёй",
+    "name": "Андрей Мельниченко с семьёй",
     "value": 20422087000.0,
     "flag": "🇷🇺",
     "text": "$20,4 млрд",
@@ -8379,7 +8379,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Mikhail Fridman",
+    "name": "Михаил Фридман",
     "value": 16799720000.000002,
     "flag": "🇷🇺",
     "text": "$16,8 млрд",
@@ -8387,7 +8387,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Alisher Usmanov",
+    "name": "Алишер Усманов",
     "value": 14240180000.0,
     "flag": "🇷🇺",
     "text": "$14,2 млрд",
@@ -8397,7 +8397,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Alexey Mordashov с семьёй,",
+    "№1: Алексей Мордашов с семьёй,",
     false
    ],
    [
@@ -8405,7 +8405,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Alexey Mordashov с семьёй, $36,9 млрд",
+  "hook_text": "№1: Алексей Мордашов с семьёй, $36,9 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_country_ru.png"
@@ -8423,7 +8423,7 @@
   "top": [
    {
     "iso2": "DE",
-    "name": "Dieter Schwarz",
+    "name": "Дитер Шварц",
     "value": 62331408000.0,
     "flag": "🇩🇪",
     "text": "$62,3 млрд",
@@ -8431,7 +8431,7 @@
    },
    {
     "iso2": "DE",
-    "name": "Andreas von Bechtolsheim с семьёй",
+    "name": "Андреас фон Бехтольсхайм с семьёй",
     "value": 34702188000.0,
     "flag": "🇩🇪",
     "text": "$34,7 млрд",
@@ -8439,7 +8439,7 @@
    },
    {
     "iso2": "DE",
-    "name": "Reinhold Wuerth с семьёй",
+    "name": "Райнхольд Вюрт с семьёй",
     "value": 29602128000.0,
     "flag": "🇩🇪",
     "text": "$29,6 млрд",
@@ -8447,7 +8447,7 @@
    },
    {
     "iso2": "DE",
-    "name": "Susanne Klatten",
+    "name": "Сюзанне Клаттен",
     "value": 24365103000.0,
     "flag": "🇩🇪",
     "text": "$24,4 млрд",
@@ -8455,7 +8455,7 @@
    },
    {
     "iso2": "DE",
-    "name": "Stefan Quandt",
+    "name": "Штефан Квандт",
     "value": 23421582000.0,
     "flag": "🇩🇪",
     "text": "$23,4 млрд",
@@ -8463,7 +8463,7 @@
    },
    {
     "iso2": "DE",
-    "name": "Beate Heister",
+    "name": "Беате Хайстер",
     "value": 18773810000.0,
     "flag": "🇩🇪",
     "text": "$18,8 млрд",
@@ -8471,7 +8471,7 @@
    },
    {
     "iso2": "DE",
-    "name": "Karl Albrecht Jr. с семьёй",
+    "name": "Карл Альбрехт-младший с семьёй",
     "value": 18773810000.0,
     "flag": "🇩🇪",
     "text": "$18,8 млрд",
@@ -8479,7 +8479,7 @@
    },
    {
     "iso2": "DE",
-    "name": "Theo Albrecht Jr с семьёй",
+    "name": "Тео Альбрехт-младший с семьёй",
     "value": 17835506000.0,
     "flag": "🇩🇪",
     "text": "$17,8 млрд",
@@ -8487,7 +8487,7 @@
    },
    {
     "iso2": "DE",
-    "name": "Ludwig Merckle",
+    "name": "Людвиг Меркле",
     "value": 16466075000.0,
     "flag": "🇩🇪",
     "text": "$16,5 млрд",
@@ -8495,7 +8495,7 @@
    },
    {
     "iso2": "DE",
-    "name": "Georg Schaeffler",
+    "name": "Георг Шеффлер",
     "value": 14959206000.0,
     "flag": "🇩🇪",
     "text": "$15 млрд",
@@ -8505,7 +8505,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Dieter Schwarz,",
+    "№1: Дитер Шварц,",
     false
    ],
    [
@@ -8513,7 +8513,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Dieter Schwarz, $62,3 млрд",
+  "hook_text": "№1: Дитер Шварц, $62,3 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_country_de.png"
@@ -8531,7 +8531,7 @@
   "top": [
    {
     "iso2": "FR",
-    "name": "Bernard Arnault с семьёй",
+    "name": "Бернар Арно с семьёй",
     "value": 124189232000.0,
     "flag": "🇫🇷",
     "text": "$124 млрд",
@@ -8539,7 +8539,7 @@
    },
    {
     "iso2": "FR",
-    "name": "Francoise Bettencourt Meyers с семьёй",
+    "name": "Франсуаза Беттанкур-Майерс с семьёй",
     "value": 106151363000.0,
     "flag": "🇫🇷",
     "text": "$106 млрд",
@@ -8547,7 +8547,7 @@
    },
    {
     "iso2": "FR",
-    "name": "Alain Wertheimer",
+    "name": "Ален Вертхаймер",
     "value": 39400356000.0,
     "flag": "🇫🇷",
     "text": "$39,4 млрд",
@@ -8555,7 +8555,7 @@
    },
    {
     "iso2": "FR",
-    "name": "Gerard Wertheimer",
+    "name": "Жерар Вертхаймер",
     "value": 39400356000.0,
     "flag": "🇫🇷",
     "text": "$39,4 млрд",
@@ -8563,7 +8563,7 @@
    },
    {
     "iso2": "FR",
-    "name": "Emmanuel Besnier",
+    "name": "Эмманюэль Беснье",
     "value": 26404959000.0,
     "flag": "🇫🇷",
     "text": "$26,4 млрд",
@@ -8571,7 +8571,7 @@
    },
    {
     "iso2": "FR",
-    "name": "François Pinault с семьёй",
+    "name": "Франсуа Пино с семьёй",
     "value": 22863613000.0,
     "flag": "🇫🇷",
     "text": "$22,9 млрд",
@@ -8579,7 +8579,7 @@
    },
    {
     "iso2": "FR",
-    "name": "Xavier Niel с семьёй",
+    "name": "Ксавье Ниль с семьёй",
     "value": 14442158000.0,
     "flag": "🇫🇷",
     "text": "$14,4 млрд",
@@ -8587,7 +8587,7 @@
    },
    {
     "iso2": "FR",
-    "name": "Carrie Perrodo с семьёй",
+    "name": "Кэрри Перродо с семьёй",
     "value": 11293689000.0,
     "flag": "🇫🇷",
     "text": "$11,3 млрд",
@@ -8595,7 +8595,7 @@
    },
    {
     "iso2": "FR",
-    "name": "Jean-Michel Besnier",
+    "name": "Жан-Мишель Беснье",
     "value": 9231269000.0,
     "flag": "🇫🇷",
     "text": "$9,2 млрд",
@@ -8603,7 +8603,7 @@
    },
    {
     "iso2": "FR",
-    "name": "Marie Besnier Beauvalot",
+    "name": "Мари Беснье Бовало",
     "value": 9231269000.0,
     "flag": "🇫🇷",
     "text": "$9,2 млрд",
@@ -8613,7 +8613,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Bernard Arnault с семьёй,",
+    "№1: Бернар Арно с семьёй,",
     false
    ],
    [
@@ -8621,7 +8621,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Bernard Arnault с семьёй, $124 млрд",
+  "hook_text": "№1: Бернар Арно с семьёй, $124 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_country_fr.png"
@@ -8639,7 +8639,7 @@
   "top": [
    {
     "iso2": "GB",
-    "name": "Michael Platt",
+    "name": "Майкл Платт",
     "value": 20901000000.0,
     "flag": "🇬🇧",
     "text": "$20,9 млрд",
@@ -8647,7 +8647,7 @@
    },
    {
     "iso2": "GB",
-    "name": "Nik Storonsky",
+    "name": "Николай Сторонский",
     "value": 18750000000.0,
     "flag": "🇬🇧",
     "text": "$18,8 млрд",
@@ -8655,7 +8655,7 @@
    },
    {
     "iso2": "GB",
-    "name": "James Ratcliffe",
+    "name": "Джим Рэтклифф",
     "value": 17517331000.0,
     "flag": "🇬🇧",
     "text": "$17,5 млрд",
@@ -8663,7 +8663,7 @@
    },
    {
     "iso2": "GB",
-    "name": "James Dyson",
+    "name": "Джеймс Дайсон",
     "value": 14994030000.0,
     "flag": "🇬🇧",
     "text": "$15 млрд",
@@ -8671,7 +8671,7 @@
    },
    {
     "iso2": "GB",
-    "name": "Dmitri Bukhman",
+    "name": "Дмитрий Бухман",
     "value": 13542050000.0,
     "flag": "🇬🇧",
     "text": "$13,5 млрд",
@@ -8679,7 +8679,7 @@
    },
    {
     "iso2": "GB",
-    "name": "Igor Bukhman",
+    "name": "Игорь Бухман",
     "value": 13542050000.0,
     "flag": "🇬🇧",
     "text": "$13,5 млрд",
@@ -8687,7 +8687,7 @@
    },
    {
     "iso2": "GB",
-    "name": "Simon Reuben",
+    "name": "Саймон Рубен",
     "value": 13303467000.0,
     "flag": "🇬🇧",
     "text": "$13,3 млрд",
@@ -8695,7 +8695,7 @@
    },
    {
     "iso2": "GB",
-    "name": "Alexander Gerko",
+    "name": "Александр Герко",
     "value": 11998652000.0,
     "flag": "🇬🇧",
     "text": "$12 млрд",
@@ -8703,7 +8703,7 @@
    },
    {
     "iso2": "GB",
-    "name": "Christopher Hohn",
+    "name": "Кристофер Хон",
     "value": 11830000000.0,
     "flag": "🇬🇧",
     "text": "$11,8 млрд",
@@ -8711,7 +8711,7 @@
    },
    {
     "iso2": "GB",
-    "name": "Anthony Bamford с семьёй",
+    "name": "Энтони Бэмфорд с семьёй",
     "value": 8452046000.0,
     "flag": "🇬🇧",
     "text": "$8,5 млрд",
@@ -8721,7 +8721,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Michael Platt,",
+    "№1: Майкл Платт,",
     false
    ],
    [
@@ -8729,7 +8729,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Michael Platt, $20,9 млрд",
+  "hook_text": "№1: Майкл Платт, $20,9 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_country_gb.png"
@@ -8747,7 +8747,7 @@
   "top": [
    {
     "iso2": "AE",
-    "name": "Pavel Durov",
+    "name": "Павел Дуров",
     "value": 6620000000.0,
     "flag": "🇦🇪",
     "text": "$6,6 млрд",
@@ -8755,7 +8755,7 @@
    },
    {
     "iso2": "AE",
-    "name": "Abdulla bin Ahmad Al Ghurair с семьёй",
+    "name": "Абдулла аль-Гурейр с семьёй",
     "value": 5175907000.0,
     "flag": "🇦🇪",
     "text": "$5,2 млрд",
@@ -8763,7 +8763,7 @@
    },
    {
     "iso2": "AE",
-    "name": "Abdulla Al Futtaim с семьёй",
+    "name": "Абдулла Аль-Футтаим с семьёй",
     "value": 4647114000.0,
     "flag": "🇦🇪",
     "text": "$4,6 млрд",
@@ -8773,7 +8773,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Pavel Durov,",
+    "№1: Павел Дуров,",
     false
    ],
    [
@@ -8781,7 +8781,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Pavel Durov, $6,6 млрд",
+  "hook_text": "№1: Павел Дуров, $6,6 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_country_ae.png"
@@ -8799,7 +8799,7 @@
   "top": [
    {
     "iso2": "KZ",
-    "name": "Vyacheslav Kim",
+    "name": "Вячеслав Ким",
     "value": 7814218000.0,
     "flag": "🇰🇿",
     "text": "$7,8 млрд",
@@ -8807,7 +8807,7 @@
    },
    {
     "iso2": "KZ",
-    "name": "Timur Turlov",
+    "name": "Тимур Турлов",
     "value": 7638674000.0,
     "flag": "🇰🇿",
     "text": "$7,6 млрд",
@@ -8815,7 +8815,7 @@
    },
    {
     "iso2": "KZ",
-    "name": "Vladimir Kim",
+    "name": "Владимир Ким",
     "value": 5947000000.0,
     "flag": "🇰🇿",
     "text": "$5,9 млрд",
@@ -8823,7 +8823,7 @@
    },
    {
     "iso2": "KZ",
-    "name": "Dinara Kulibayeva",
+    "name": "Динара Кулибаева",
     "value": 5445480000.0,
     "flag": "🇰🇿",
     "text": "$5,4 млрд",
@@ -8831,7 +8831,7 @@
    },
    {
     "iso2": "KZ",
-    "name": "Timur Kulibayev",
+    "name": "Тимур Кулибаев",
     "value": 5445480000.0,
     "flag": "🇰🇿",
     "text": "$5,4 млрд",
@@ -8839,7 +8839,7 @@
    },
    {
     "iso2": "KZ",
-    "name": "Bulat Utemuratov",
+    "name": "Булат Утемуратов",
     "value": 5398000000.0,
     "flag": "🇰🇿",
     "text": "$5,4 млрд",
@@ -8847,7 +8847,7 @@
    },
    {
     "iso2": "KZ",
-    "name": "Smagulov Nurlan",
+    "name": "Нурлан Смагулов",
     "value": 1401697000.0,
     "flag": "🇰🇿",
     "text": "$1,4 млрд",
@@ -8857,7 +8857,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Vyacheslav Kim,",
+    "№1: Вячеслав Ким,",
     false
    ],
    [
@@ -8865,7 +8865,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Vyacheslav Kim, $7,8 млрд",
+  "hook_text": "№1: Вячеслав Ким, $7,8 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_country_kz.png"
@@ -8891,7 +8891,7 @@
    },
    {
     "iso2": "CA",
-    "name": "Stuart Hoegner",
+    "name": "Стюарт Хегнер",
     "value": 24700000000.0,
     "flag": "🇨🇦",
     "text": "$24,7 млрд",
@@ -8899,7 +8899,7 @@
    },
    {
     "iso2": "CA",
-    "name": "Christopher Olah",
+    "name": "Кристофер Ола",
     "value": 13800000000.0,
     "flag": "🇨🇦",
     "text": "$13,8 млрд",
@@ -8907,7 +8907,7 @@
    },
    {
     "iso2": "CA",
-    "name": "Tobi Lutke",
+    "name": "Тоби Лютке",
     "value": 12922550000.0,
     "flag": "🇨🇦",
     "text": "$12,9 млрд",
@@ -8915,7 +8915,7 @@
    },
    {
     "iso2": "CA",
-    "name": "Sherry Brydson",
+    "name": "Шерри Брайдсон",
     "value": 12554784000.0,
     "flag": "🇨🇦",
     "text": "$12,6 млрд",
@@ -8923,7 +8923,7 @@
    },
    {
     "iso2": "CA",
-    "name": "Joseph Tsai",
+    "name": "Джозеф Цай",
     "value": 12060558000.0,
     "flag": "🇨🇦",
     "text": "$12,1 млрд",
@@ -8931,7 +8931,7 @@
    },
    {
     "iso2": "CA",
-    "name": "Jim Pattison",
+    "name": "Джим Паттисон",
     "value": 11971684000.0,
     "flag": "🇨🇦",
     "text": "$12 млрд",
@@ -8939,7 +8939,7 @@
    },
    {
     "iso2": "CA",
-    "name": "David Cheriton",
+    "name": "Дэвид Черитон",
     "value": 10191214000.0,
     "flag": "🇨🇦",
     "text": "$10,2 млрд",
@@ -8947,7 +8947,7 @@
    },
    {
     "iso2": "CA",
-    "name": "Alain Bouchard",
+    "name": "Ален Бушар",
     "value": 7736246000.0,
     "flag": "🇨🇦",
     "text": "$7,7 млрд",
@@ -8955,7 +8955,7 @@
    },
    {
     "iso2": "CA",
-    "name": "David Thomson",
+    "name": "Дэвид Томсон",
     "value": 7641615000.0,
     "flag": "🇨🇦",
     "text": "$7,6 млрд",
@@ -8991,7 +8991,7 @@
   "top": [
    {
     "iso2": "HK",
-    "name": "Li Ka-shing",
+    "name": "Ли Кашин",
     "value": 48834754000.0,
     "flag": "🇭🇰",
     "text": "$48,8 млрд",
@@ -8999,7 +8999,7 @@
    },
    {
     "iso2": "HK",
-    "name": "Robin Zeng",
+    "name": "Робин Цзэн",
     "value": 42434406000.0,
     "flag": "🇭🇰",
     "text": "$42,4 млрд",
@@ -9015,7 +9015,7 @@
    },
    {
     "iso2": "HK",
-    "name": "Gong Hongjia с семьёй",
+    "name": "Гун Хунцзя с семьёй",
     "value": 13399244000.0,
     "flag": "🇭🇰",
     "text": "$13,4 млрд",
@@ -9023,7 +9023,7 @@
    },
    {
     "iso2": "HK",
-    "name": "Wang Laisheng",
+    "name": "Ван Лайшэн",
     "value": 12106417000.0,
     "flag": "🇭🇰",
     "text": "$12,1 млрд",
@@ -9031,7 +9031,7 @@
    },
    {
     "iso2": "HK",
-    "name": "Wang Laichun",
+    "name": "Ван Лайчунь",
     "value": 11877690000.0,
     "flag": "🇭🇰",
     "text": "$11,9 млрд",
@@ -9039,7 +9039,7 @@
    },
    {
     "iso2": "HK",
-    "name": "Li Ping",
+    "name": "Ли Пин",
     "value": 8170738000.0,
     "flag": "🇭🇰",
     "text": "$8,2 млрд",
@@ -9047,7 +9047,7 @@
    },
    {
     "iso2": "HK",
-    "name": "Zeng Fangqin",
+    "name": "Цзэн Фанцинь",
     "value": 7851134000.0,
     "flag": "🇭🇰",
     "text": "$7,9 млрд",
@@ -9055,7 +9055,7 @@
    },
    {
     "iso2": "HK",
-    "name": "Michael Kadoorie",
+    "name": "Майкл Кадури",
     "value": 7850496000.0,
     "flag": "🇭🇰",
     "text": "$7,9 млрд",
@@ -9063,7 +9063,7 @@
    },
    {
     "iso2": "HK",
-    "name": "Xu Hang",
+    "name": "Сюй Хан",
     "value": 7789836000.0,
     "flag": "🇭🇰",
     "text": "$7,8 млрд",
@@ -9073,7 +9073,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Li Ka-shing,",
+    "№1: Ли Кашин,",
     false
    ],
    [
@@ -9081,7 +9081,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Li Ka-shing, $48,8 млрд",
+  "hook_text": "№1: Ли Кашин, $48,8 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_country_hk.png"
@@ -9099,7 +9099,7 @@
   "top": [
    {
     "iso2": "TW",
-    "name": "Terry Gou",
+    "name": "Терри Гоу",
     "value": 13606893000.0,
     "flag": "🇹🇼",
     "text": "$13,6 млрд",
@@ -9107,7 +9107,7 @@
    },
    {
     "iso2": "TW",
-    "name": "Barry Lam",
+    "name": "Барри Лам",
     "value": 13477168000.0,
     "flag": "🇹🇼",
     "text": "$13,5 млрд",
@@ -9115,7 +9115,7 @@
    },
    {
     "iso2": "TW",
-    "name": "Pierre Chen",
+    "name": "Пьер Чэнь",
     "value": 11774592000.0,
     "flag": "🇹🇼",
     "text": "$11,8 млрд",
@@ -9123,7 +9123,7 @@
    },
    {
     "iso2": "TW",
-    "name": "Daniel Tsai",
+    "name": "Дэниел Цай",
     "value": 10951154000.0,
     "flag": "🇹🇼",
     "text": "$11 млрд",
@@ -9131,7 +9131,7 @@
    },
    {
     "iso2": "TW",
-    "name": "Lin Tsung-Chi",
+    "name": "Линь Цзунци",
     "value": 10464776000.0,
     "flag": "🇹🇼",
     "text": "$10,5 млрд",
@@ -9139,7 +9139,7 @@
    },
    {
     "iso2": "TW",
-    "name": "Richard Tsai",
+    "name": "Ричард Цай",
     "value": 10414737000.0,
     "flag": "🇹🇼",
     "text": "$10,4 млрд",
@@ -9147,7 +9147,7 @@
    },
    {
     "iso2": "TW",
-    "name": "Tsai Ming-kai",
+    "name": "Цай Минкай",
     "value": 9240114000.0,
     "flag": "🇹🇼",
     "text": "$9,2 млрд",
@@ -9155,7 +9155,7 @@
    },
    {
     "iso2": "TW",
-    "name": "Morris Chang",
+    "name": "Моррис Чанг",
     "value": 8533942999.999999,
     "flag": "🇹🇼",
     "text": "$8,5 млрд",
@@ -9163,7 +9163,7 @@
    },
    {
     "iso2": "TW",
-    "name": "Tsai Hong-tu",
+    "name": "Цай Хунту",
     "value": 8427496999.999999,
     "flag": "🇹🇼",
     "text": "$8,4 млрд",
@@ -9171,7 +9171,7 @@
    },
    {
     "iso2": "TW",
-    "name": "Tsai Cheng-ta",
+    "name": "Цай Чэнда",
     "value": 8274874000.0,
     "flag": "🇹🇼",
     "text": "$8,3 млрд",
@@ -9181,7 +9181,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Terry Gou,",
+    "№1: Терри Гоу,",
     false
    ],
    [
@@ -9189,7 +9189,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Terry Gou, $13,6 млрд",
+  "hook_text": "№1: Терри Гоу, $13,6 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_country_tw.png"
@@ -9207,7 +9207,7 @@
   "top": [
    {
     "iso2": "IT",
-    "name": "Giancarlo Devasini",
+    "name": "Джанкарло Девазини",
     "value": 89300000000.0,
     "flag": "🇮🇹",
     "text": "$89,3 млрд",
@@ -9215,7 +9215,7 @@
    },
    {
     "iso2": "IT",
-    "name": "Giovanni Ferrero",
+    "name": "Джованни Ферреро",
     "value": 46360166000.0,
     "flag": "🇮🇹",
     "text": "$46,4 млрд",
@@ -9223,7 +9223,7 @@
    },
    {
     "iso2": "IT",
-    "name": "Andrea Pignataro",
+    "name": "Андреа Пиньятаро",
     "value": 40532727000.0,
     "flag": "🇮🇹",
     "text": "$40,5 млрд",
@@ -9231,7 +9231,7 @@
    },
    {
     "iso2": "IT",
-    "name": "Paolo Ardoino",
+    "name": "Паоло Ардоино",
     "value": 38000000000.0,
     "flag": "🇮🇹",
     "text": "$38 млрд",
@@ -9239,7 +9239,7 @@
    },
    {
     "iso2": "IT",
-    "name": "Francesco Gaetano Caltagirone",
+    "name": "Франческо Кальтаджироне",
     "value": 12323848000.0,
     "flag": "🇮🇹",
     "text": "$12,3 млрд",
@@ -9247,7 +9247,7 @@
    },
    {
     "iso2": "IT",
-    "name": "Massimiliana Landini Aleotti с семьёй",
+    "name": "Массимилиана Ландини Алеотти с семьёй",
     "value": 8632472000.0,
     "flag": "🇮🇹",
     "text": "$8,6 млрд",
@@ -9255,7 +9255,7 @@
    },
    {
     "iso2": "IT",
-    "name": "Piero Ferrari с семьёй",
+    "name": "Пьеро Феррари с семьёй",
     "value": 8551331000.0,
     "flag": "🇮🇹",
     "text": "$8,6 млрд",
@@ -9263,7 +9263,7 @@
    },
    {
     "iso2": "IT",
-    "name": "Paolo Rocca",
+    "name": "Паоло Рокка",
     "value": 7763458000.0,
     "flag": "🇮🇹",
     "text": "$7,8 млрд",
@@ -9271,7 +9271,7 @@
    },
    {
     "iso2": "IT",
-    "name": "Gianfelice Rocca",
+    "name": "Джанфеличе Рокка",
     "value": 7763208000.0,
     "flag": "🇮🇹",
     "text": "$7,8 млрд",
@@ -9279,7 +9279,7 @@
    },
    {
     "iso2": "IT",
-    "name": "Giuseppe De'Longhi с семьёй",
+    "name": "Джузеппе Де Лонги с семьёй",
     "value": 6530404000.0,
     "flag": "🇮🇹",
     "text": "$6,5 млрд",
@@ -9289,7 +9289,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Giancarlo Devasini,",
+    "№1: Джанкарло Девазини,",
     false
    ],
    [
@@ -9297,7 +9297,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Giancarlo Devasini, $89,3 млрд",
+  "hook_text": "№1: Джанкарло Девазини, $89,3 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_country_it.png"
@@ -9315,7 +9315,7 @@
   "top": [
    {
     "iso2": "BR",
-    "name": "Eduardo Saverin",
+    "name": "Эдуардо Саверин",
     "value": 33948106000.0,
     "flag": "🇧🇷",
     "text": "$33,9 млрд",
@@ -9323,7 +9323,7 @@
    },
    {
     "iso2": "BR",
-    "name": "Jorge Paulo Lemann с семьёй",
+    "name": "Жорже Пауло Леманн с семьёй",
     "value": 20581305000.0,
     "flag": "🇧🇷",
     "text": "$20,6 млрд",
@@ -9331,7 +9331,7 @@
    },
    {
     "iso2": "BR",
-    "name": "Andre Esteves",
+    "name": "Андре Эстевес",
     "value": 10730177000.0,
     "flag": "🇧🇷",
     "text": "$10,7 млрд",
@@ -9339,7 +9339,7 @@
    },
    {
     "iso2": "BR",
-    "name": "Fernando Roberto Moreira Salles",
+    "name": "Фернанду Морейра Саллес",
     "value": 9398714000.0,
     "flag": "🇧🇷",
     "text": "$9,4 млрд",
@@ -9347,7 +9347,7 @@
    },
    {
     "iso2": "BR",
-    "name": "Pedro Moreira Salles",
+    "name": "Педру Морейра Саллес",
     "value": 8684752000.0,
     "flag": "🇧🇷",
     "text": "$8,7 млрд",
@@ -9355,7 +9355,7 @@
    },
    {
     "iso2": "BR",
-    "name": "Max Van Hoegaerden Herrmann Telles",
+    "name": "Макс Теллес",
     "value": 7749823000.0,
     "flag": "🇧🇷",
     "text": "$7,7 млрд",
@@ -9363,7 +9363,7 @@
    },
    {
     "iso2": "BR",
-    "name": "Carlos Alberto Sicupira с семьёй",
+    "name": "Карлус Сикупира с семьёй",
     "value": 7174732000.0,
     "flag": "🇧🇷",
     "text": "$7,2 млрд",
@@ -9371,7 +9371,7 @@
    },
    {
     "iso2": "BR",
-    "name": "Ricardo Faria",
+    "name": "Рикарду Фария",
     "value": 6800000000.0,
     "flag": "🇧🇷",
     "text": "$6,8 млрд",
@@ -9379,7 +9379,7 @@
    },
    {
     "iso2": "BR",
-    "name": "Miguel Krigsner",
+    "name": "Мигел Кригснер",
     "value": 6388844000.0,
     "flag": "🇧🇷",
     "text": "$6,4 млрд",
@@ -9387,7 +9387,7 @@
    },
    {
     "iso2": "BR",
-    "name": "Alex Behring",
+    "name": "Алекс Беринг",
     "value": 5923783000.0,
     "flag": "🇧🇷",
     "text": "$5,9 млрд",
@@ -9397,7 +9397,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Eduardo Saverin,",
+    "№1: Эдуардо Саверин,",
     false
    ],
    [
@@ -9405,7 +9405,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Eduardo Saverin, $33,9 млрд",
+  "hook_text": "№1: Эдуардо Саверин, $33,9 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_country_br.png"
@@ -9423,7 +9423,7 @@
   "top": [
    {
     "iso2": "SE",
-    "name": "Stefan Persson",
+    "name": "Стефан Перссон",
     "value": 21925492000.0,
     "flag": "🇸🇪",
     "text": "$21,9 млрд",
@@ -9431,7 +9431,7 @@
    },
    {
     "iso2": "SE",
-    "name": "Daniel Ek",
+    "name": "Даниэль Эк",
     "value": 13546663000.0,
     "flag": "🇸🇪",
     "text": "$13,5 млрд",
@@ -9439,7 +9439,7 @@
    },
    {
     "iso2": "SE",
-    "name": "Antonia Ax:son Johnson с семьёй",
+    "name": "Антония Аксон Юнсон с семьёй",
     "value": 13043258000.0,
     "flag": "🇸🇪",
     "text": "$13 млрд",
@@ -9447,7 +9447,7 @@
    },
    {
     "iso2": "SE",
-    "name": "Martin Lorentzon",
+    "name": "Мартин Лоренцон",
     "value": 12861476000.0,
     "flag": "🇸🇪",
     "text": "$12,9 млрд",
@@ -9455,7 +9455,7 @@
    },
    {
     "iso2": "SE",
-    "name": "Finn Rausing",
+    "name": "Финн Раусинг",
     "value": 11499534000.0,
     "flag": "🇸🇪",
     "text": "$11,5 млрд",
@@ -9463,7 +9463,7 @@
    },
    {
     "iso2": "SE",
-    "name": "Jorn Rausing",
+    "name": "Йорн Раусинг",
     "value": 11491503000.0,
     "flag": "🇸🇪",
     "text": "$11,5 млрд",
@@ -9471,7 +9471,7 @@
    },
    {
     "iso2": "SE",
-    "name": "Kirsten Rausing",
+    "name": "Кирстен Раусинг",
     "value": 11491503000.0,
     "flag": "🇸🇪",
     "text": "$11,5 млрд",
@@ -9479,7 +9479,7 @@
    },
    {
     "iso2": "SE",
-    "name": "Carl Bennet",
+    "name": "Карл Беннет",
     "value": 9362742000.0,
     "flag": "🇸🇪",
     "text": "$9,4 млрд",
@@ -9487,7 +9487,7 @@
    },
    {
     "iso2": "SE",
-    "name": "Frederik Paulsen",
+    "name": "Фредрик Паульсен",
     "value": 7579069000.0,
     "flag": "🇸🇪",
     "text": "$7,6 млрд",
@@ -9495,7 +9495,7 @@
    },
    {
     "iso2": "SE",
-    "name": "Carl Douglas",
+    "name": "Карл Дуглас",
     "value": 6308243000.0,
     "flag": "🇸🇪",
     "text": "$6,3 млрд",
@@ -9505,7 +9505,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Stefan Persson,",
+    "№1: Стефан Перссон,",
     false
    ],
    [
@@ -9513,7 +9513,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Stefan Persson, $21,9 млрд",
+  "hook_text": "№1: Стефан Перссон, $21,9 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_country_se.png"
@@ -9531,7 +9531,7 @@
   "top": [
    {
     "iso2": "CH",
-    "name": "Gianluigi Aponte",
+    "name": "Джанлуиджи Апонте",
     "value": 45521225000.0,
     "flag": "🇨🇭",
     "text": "$45,5 млрд",
@@ -9539,7 +9539,7 @@
    },
    {
     "iso2": "CH",
-    "name": "Rafaela Aponte-Diamant",
+    "name": "Рафаэла Апонте-Диамант",
     "value": 45521225000.0,
     "flag": "🇨🇭",
     "text": "$45,5 млрд",
@@ -9547,7 +9547,7 @@
    },
    {
     "iso2": "CH",
-    "name": "Ivan Glasenberg",
+    "name": "Иван Глазенберг",
     "value": 12808615000.0,
     "flag": "🇨🇭",
     "text": "$12,8 млрд",
@@ -9555,7 +9555,7 @@
    },
    {
     "iso2": "CH",
-    "name": "Magdalena Martullo-Blocher",
+    "name": "Магдалена Мартулло-Блохер",
     "value": 11512010000.0,
     "flag": "🇨🇭",
     "text": "$11,5 млрд",
@@ -9563,7 +9563,7 @@
    },
    {
     "iso2": "CH",
-    "name": "Ernesto Bertarelli",
+    "name": "Эрнесто Бертарелли",
     "value": 11483198000.0,
     "flag": "🇨🇭",
     "text": "$11,5 млрд",
@@ -9571,7 +9571,7 @@
    },
    {
     "iso2": "CH",
-    "name": "Thomas Schmidheiny",
+    "name": "Томас Шмидхайни",
     "value": 10115293000.0,
     "flag": "🇨🇭",
     "text": "$10,1 млрд",
@@ -9579,7 +9579,7 @@
    },
    {
     "iso2": "CH",
-    "name": "Rahel Blocher",
+    "name": "Рахель Блохер",
     "value": 9092120000.0,
     "flag": "🇨🇭",
     "text": "$9,1 млрд",
@@ -9587,7 +9587,7 @@
    },
    {
     "iso2": "CH",
-    "name": "Guillaume Pousaz",
+    "name": "Гийом Пуза",
     "value": 7823000000.0,
     "flag": "🇨🇭",
     "text": "$7,8 млрд",
@@ -9595,7 +9595,7 @@
    },
    {
     "iso2": "CH",
-    "name": "Dona Bertarelli",
+    "name": "Дона Бертарелли",
     "value": 7420693000.0,
     "flag": "🇨🇭",
     "text": "$7,4 млрд",
@@ -9603,7 +9603,7 @@
    },
    {
     "iso2": "CH",
-    "name": "Rudolf Maag",
+    "name": "Рудольф Маг",
     "value": 6573005000.0,
     "flag": "🇨🇭",
     "text": "$6,6 млрд",
@@ -9613,7 +9613,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Gianluigi Aponte,",
+    "№1: Джанлуиджи Апонте,",
     false
    ],
    [
@@ -9621,7 +9621,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Gianluigi Aponte, $45,5 млрд",
+  "hook_text": "№1: Джанлуиджи Апонте, $45,5 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_country_ch.png"
@@ -9639,7 +9639,7 @@
   "top": [
    {
     "iso2": "JP",
-    "name": "Tadashi Yanai с семьёй",
+    "name": "Тадаси Янаи с семьёй",
     "value": 67294072000.0,
     "flag": "🇯🇵",
     "text": "$67,3 млрд",
@@ -9647,7 +9647,7 @@
    },
    {
     "iso2": "JP",
-    "name": "Masayoshi Son",
+    "name": "Масаёси Сон",
     "value": 44924582000.0,
     "flag": "🇯🇵",
     "text": "$44,9 млрд",
@@ -9655,7 +9655,7 @@
    },
    {
     "iso2": "JP",
-    "name": "Takemitsu Takizaki",
+    "name": "Такэмицу Такидзаки",
     "value": 21132401000.0,
     "flag": "🇯🇵",
     "text": "$21,1 млрд",
@@ -9663,7 +9663,7 @@
    },
    {
     "iso2": "JP",
-    "name": "Yasumitsu Shigeta",
+    "name": "Ясумицу Сигэта",
     "value": 5910581000.0,
     "flag": "🇯🇵",
     "text": "$5,9 млрд",
@@ -9671,7 +9671,7 @@
    },
    {
     "iso2": "JP",
-    "name": "Masahiro Noda",
+    "name": "Масахиро Нода",
     "value": 4664543000.0,
     "flag": "🇯🇵",
     "text": "$4,7 млрд",
@@ -9679,7 +9679,7 @@
    },
    {
     "iso2": "JP",
-    "name": "Kagemasa Kozuki",
+    "name": "Кагэмаса Кодзуки",
     "value": 4293684000.0,
     "flag": "🇯🇵",
     "text": "$4,3 млрд",
@@ -9687,7 +9687,7 @@
    },
    {
     "iso2": "JP",
-    "name": "Masahiro Miki",
+    "name": "Масахиро Мики",
     "value": 4245291000.0,
     "flag": "🇯🇵",
     "text": "$4,2 млрд",
@@ -9695,7 +9695,7 @@
    },
    {
     "iso2": "JP",
-    "name": "Takao Yasuda",
+    "name": "Такао Ясуда",
     "value": 4187064000.0000005,
     "flag": "🇯🇵",
     "text": "$4,2 млрд",
@@ -9703,7 +9703,7 @@
    },
    {
     "iso2": "JP",
-    "name": "Takahisa Takahara",
+    "name": "Такахиса Такахара",
     "value": 4043142000.0,
     "flag": "🇯🇵",
     "text": "$4 млрд",
@@ -9711,7 +9711,7 @@
    },
    {
     "iso2": "JP",
-    "name": "Yuji Otsuka",
+    "name": "Юдзи Оцука",
     "value": 3559275000.0,
     "flag": "🇯🇵",
     "text": "$3,6 млрд",
@@ -9721,7 +9721,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Tadashi Yanai с семьёй,",
+    "№1: Тадаси Янаи с семьёй,",
     false
    ],
    [
@@ -9729,7 +9729,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Tadashi Yanai с семьёй, $67,3 млрд",
+  "hook_text": "№1: Тадаси Янаи с семьёй, $67,3 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_country_jp.png"
@@ -9747,7 +9747,7 @@
   "top": [
    {
     "iso2": "AU",
-    "name": "Gina Rinehart",
+    "name": "Джина Райнхарт",
     "value": 24875176000.0,
     "flag": "🇦🇺",
     "text": "$24,9 млрд",
@@ -9755,7 +9755,7 @@
    },
    {
     "iso2": "AU",
-    "name": "Andrew Forrest с семьёй",
+    "name": "Эндрю Форрест с семьёй",
     "value": 16182453000.0,
     "flag": "🇦🇺",
     "text": "$16,2 млрд",
@@ -9763,7 +9763,7 @@
    },
    {
     "iso2": "AU",
-    "name": "Anthony Pratt",
+    "name": "Энтони Пратт",
     "value": 11722653000.0,
     "flag": "🇦🇺",
     "text": "$11,7 млрд",
@@ -9771,7 +9771,7 @@
    },
    {
     "iso2": "AU",
-    "name": "Mike Cannon-Brookes",
+    "name": "Майк Кэннон-Брукс",
     "value": 11045784000.0,
     "flag": "🇦🇺",
     "text": "$11 млрд",
@@ -9779,7 +9779,7 @@
    },
    {
     "iso2": "AU",
-    "name": "Scott Farquhar",
+    "name": "Скотт Фаркуар",
     "value": 10693481000.0,
     "flag": "🇦🇺",
     "text": "$10,7 млрд",
@@ -9787,7 +9787,7 @@
    },
    {
     "iso2": "AU",
-    "name": "Frank Lowy",
+    "name": "Фрэнк Лоуи",
     "value": 8750642000.0,
     "flag": "🇦🇺",
     "text": "$8,8 млрд",
@@ -9795,7 +9795,7 @@
    },
    {
     "iso2": "AU",
-    "name": "Vivek Chaand Sehgal",
+    "name": "Вивек Сегал",
     "value": 8548812000.0,
     "flag": "🇦🇺",
     "text": "$8,5 млрд",
@@ -9803,7 +9803,7 @@
    },
    {
     "iso2": "AU",
-    "name": "Cliff Obrecht",
+    "name": "Клифф Обрехт",
     "value": 7560000000.0,
     "flag": "🇦🇺",
     "text": "$7,6 млрд",
@@ -9811,7 +9811,7 @@
    },
    {
     "iso2": "AU",
-    "name": "Melanie Perkins",
+    "name": "Мелани Перкинс",
     "value": 7560000000.0,
     "flag": "🇦🇺",
     "text": "$7,6 млрд",
@@ -9819,7 +9819,7 @@
    },
    {
     "iso2": "AU",
-    "name": "Kerry Stokes",
+    "name": "Керри Стоукс",
     "value": 7407315000.0,
     "flag": "🇦🇺",
     "text": "$7,4 млрд",
@@ -9829,7 +9829,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Gina Rinehart,",
+    "№1: Джина Райнхарт,",
     false
    ],
    [
@@ -9837,7 +9837,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Gina Rinehart, $24,9 млрд",
+  "hook_text": "№1: Джина Райнхарт, $24,9 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_country_au.png"
@@ -9855,7 +9855,7 @@
   "top": [
    {
     "iso2": "IL",
-    "name": "Idan Ofer",
+    "name": "Идан Офер",
     "value": 34222385000.000004,
     "flag": "🇮🇱",
     "text": "$34,2 млрд",
@@ -9863,7 +9863,7 @@
    },
    {
     "iso2": "IL",
-    "name": "Eyal Ofer",
+    "name": "Эяль Офер",
     "value": 33526516000.000004,
     "flag": "🇮🇱",
     "text": "$33,5 млрд",
@@ -9871,7 +9871,7 @@
    },
    {
     "iso2": "IL",
-    "name": "Michael Federmann с семьёй",
+    "name": "Майкл Федерман с семьёй",
     "value": 8796763000.0,
     "flag": "🇮🇱",
     "text": "$8,8 млрд",
@@ -9879,7 +9879,7 @@
    },
    {
     "iso2": "IL",
-    "name": "Yuri Milner",
+    "name": "Юрий Мильнер",
     "value": 8689600000.0,
     "flag": "🇮🇱",
     "text": "$8,7 млрд",
@@ -9887,7 +9887,7 @@
    },
    {
     "iso2": "IL",
-    "name": "Teddy Sagi",
+    "name": "Тедди Саги",
     "value": 7082692000.0,
     "flag": "🇮🇱",
     "text": "$7,1 млрд",
@@ -9895,7 +9895,7 @@
    },
    {
     "iso2": "IL",
-    "name": "Arnon Milchan",
+    "name": "Арнон Милчен",
     "value": 6498879000.0,
     "flag": "🇮🇱",
     "text": "$6,5 млрд",
@@ -9903,7 +9903,7 @@
    },
    {
     "iso2": "IL",
-    "name": "Shari Arison",
+    "name": "Шари Арисон",
     "value": 5964810000.0,
     "flag": "🇮🇱",
     "text": "$6 млрд",
@@ -9911,7 +9911,7 @@
    },
    {
     "iso2": "IL",
-    "name": "Shaul Shani",
+    "name": "Шауль Шани",
     "value": 5150934000.0,
     "flag": "🇮🇱",
     "text": "$5,2 млрд",
@@ -9919,7 +9919,7 @@
    },
    {
     "iso2": "IL",
-    "name": "Arkady Volozh",
+    "name": "Аркадий Волож",
     "value": 4393652000.0,
     "flag": "🇮🇱",
     "text": "$4,4 млрд",
@@ -9927,7 +9927,7 @@
    },
    {
     "iso2": "IL",
-    "name": "Gil Shwed",
+    "name": "Гиль Шведь",
     "value": 4286145000.0000005,
     "flag": "🇮🇱",
     "text": "$4,3 млрд",
@@ -9937,7 +9937,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Idan Ofer,",
+    "№1: Идан Офер,",
     false
    ],
    [
@@ -9945,7 +9945,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Idan Ofer, $34,2 млрд",
+  "hook_text": "№1: Идан Офер, $34,2 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_country_il.png"
@@ -9963,7 +9963,7 @@
   "top": [
    {
     "iso2": "SA",
-    "name": "Prince Alwaleed Bin Talal Alsaud",
+    "name": "Принц аль-Валид бин Талал",
     "value": 23580337000.0,
     "flag": "🇸🇦",
     "text": "$23,6 млрд",
@@ -9971,7 +9971,7 @@
    },
    {
     "iso2": "SA",
-    "name": "Sulaiman Al Habib",
+    "name": "Сулейман аль-Хабиб",
     "value": 9625765000.0,
     "flag": "🇸🇦",
     "text": "$9,6 млрд",
@@ -9979,7 +9979,7 @@
    },
    {
     "iso2": "SA",
-    "name": "Abdullah bin Sulaiman Al Rajhi",
+    "name": "Абдулла аль-Раджхи",
     "value": 2438797000.0,
     "flag": "🇸🇦",
     "text": "$2,4 млрд",
@@ -9987,7 +9987,7 @@
    },
    {
     "iso2": "SA",
-    "name": "Emad Al Muhaidib",
+    "name": "Имад аль-Мухайдиб",
     "value": 2339320000.0,
     "flag": "🇸🇦",
     "text": "$2,3 млрд",
@@ -9995,7 +9995,7 @@
    },
    {
     "iso2": "SA",
-    "name": "Essam Al Muhaidib",
+    "name": "Иссам аль-Мухайдиб",
     "value": 2183259000.0,
     "flag": "🇸🇦",
     "text": "$2,2 млрд",
@@ -10003,7 +10003,7 @@
    },
    {
     "iso2": "SA",
-    "name": "Sulaiman Al Muhaidib",
+    "name": "Сулейман аль-Мухайдиб",
     "value": 2183259000.0,
     "flag": "🇸🇦",
     "text": "$2,2 млрд",
@@ -10011,7 +10011,7 @@
    },
    {
     "iso2": "SA",
-    "name": "Abdullah Al Othaim",
+    "name": "Абдулла аль-Отайм",
     "value": 2040743000.0,
     "flag": "🇸🇦",
     "text": "$2 млрд",
@@ -10019,7 +10019,7 @@
    },
    {
     "iso2": "SA",
-    "name": "Abdullah Amer Al Nahdi",
+    "name": "Абдулла аль-Нахди",
     "value": 1928029000.0,
     "flag": "🇸🇦",
     "text": "$1,9 млрд",
@@ -10027,7 +10027,7 @@
    },
    {
     "iso2": "SA",
-    "name": "Mohammad Abunayyan",
+    "name": "Мохаммад Абунайян",
     "value": 1473582000.0,
     "flag": "🇸🇦",
     "text": "$1,5 млрд",
@@ -10035,7 +10035,7 @@
    },
    {
     "iso2": "SA",
-    "name": "Ajlan bin Abdulaziz Al-Ajlan",
+    "name": "Аджлан аль-Аджлан",
     "value": 1318611000.0,
     "flag": "🇸🇦",
     "text": "$1,3 млрд",
@@ -10045,7 +10045,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Prince Alwaleed Bin Talal Alsaud,",
+    "№1: Принц аль-Валид бин Талал,",
     false
    ],
    [
@@ -10053,7 +10053,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Prince Alwaleed Bin Talal Alsaud, $23,6 млрд",
+  "hook_text": "№1: Принц аль-Валид бин Талал, $23,6 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_country_sa.png"
@@ -10071,7 +10071,7 @@
   "top": [
    {
     "iso2": "KR",
-    "name": "Jay Y. Lee",
+    "name": "Ли Джэён",
     "value": 25455180000.0,
     "flag": "🇰🇷",
     "text": "$25,5 млрд",
@@ -10079,7 +10079,7 @@
    },
    {
     "iso2": "KR",
-    "name": "Cho Jung-ho",
+    "name": "Чо Чжонхо",
     "value": 10136713000.0,
     "flag": "🇰🇷",
     "text": "$10,1 млрд",
@@ -10087,7 +10087,7 @@
    },
    {
     "iso2": "KR",
-    "name": "Seo Jung-jin",
+    "name": "Со Джонджин",
     "value": 9856600000.0,
     "flag": "🇰🇷",
     "text": "$9,9 млрд",
@@ -10095,7 +10095,7 @@
    },
    {
     "iso2": "KR",
-    "name": "Lee Boo-jin",
+    "name": "Ли Буджин",
     "value": 9290162000.0,
     "flag": "🇰🇷",
     "text": "$9,3 млрд",
@@ -10103,7 +10103,7 @@
    },
    {
     "iso2": "KR",
-    "name": "Hong Ra-hee",
+    "name": "Хон Рахи",
     "value": 8828898000.0,
     "flag": "🇰🇷",
     "text": "$8,8 млрд",
@@ -10111,7 +10111,7 @@
    },
    {
     "iso2": "KR",
-    "name": "Lee Seo-hyun",
+    "name": "Ли Сохён",
     "value": 8751014000.0,
     "flag": "🇰🇷",
     "text": "$8,8 млрд",
@@ -10119,7 +10119,7 @@
    },
    {
     "iso2": "KR",
-    "name": "Mong-Koo Chung",
+    "name": "Чон Монгу",
     "value": 5963206000.0,
     "flag": "🇰🇷",
     "text": "$6 млрд",
@@ -10127,7 +10127,7 @@
    },
    {
     "iso2": "KR",
-    "name": "Euisun Chung",
+    "name": "Чон Ыйсон",
     "value": 5294935000.0,
     "flag": "🇰🇷",
     "text": "$5,3 млрд",
@@ -10135,7 +10135,7 @@
    },
    {
     "iso2": "KR",
-    "name": "Chey Tae-won",
+    "name": "Чхве Тхэвон",
     "value": 4194657000.0,
     "flag": "🇰🇷",
     "text": "$4,2 млрд",
@@ -10143,7 +10143,7 @@
    },
    {
     "iso2": "KR",
-    "name": "Kwak Dong-shin",
+    "name": "Квак Донсин",
     "value": 3740888000.0,
     "flag": "🇰🇷",
     "text": "$3,7 млрд",
@@ -10153,7 +10153,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Jay Y. Lee,",
+    "№1: Ли Джэён,",
     false
    ],
    [
@@ -10161,7 +10161,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Jay Y. Lee, $25,5 млрд",
+  "hook_text": "№1: Ли Джэён, $25,5 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_country_kr.png"
@@ -10179,7 +10179,7 @@
   "top": [
    {
     "iso2": "US",
-    "name": "Elon Musk",
+    "name": "Илон Маск",
     "value": 849734216000.0,
     "flag": "🇺🇸",
     "text": "$850 млрд",
@@ -10187,7 +10187,7 @@
    },
    {
     "iso2": "US",
-    "name": "Jeff Bezos",
+    "name": "Джефф Безос",
     "value": 378071692000.0,
     "flag": "🇺🇸",
     "text": "$378 млрд",
@@ -10195,7 +10195,7 @@
    },
    {
     "iso2": "US",
-    "name": "Larry Page",
+    "name": "Ларри Пейдж",
     "value": 236891779000.0,
     "flag": "🇺🇸",
     "text": "$237 млрд",
@@ -10203,7 +10203,7 @@
    },
    {
     "iso2": "US",
-    "name": "Sergey Brin",
+    "name": "Сергей Брин",
     "value": 218091294000.0,
     "flag": "🇺🇸",
     "text": "$218 млрд",
@@ -10211,7 +10211,7 @@
    },
    {
     "iso2": "US",
-    "name": "Mark Zuckerberg",
+    "name": "Марк Цукерберг",
     "value": 209743529000.0,
     "flag": "🇺🇸",
     "text": "$210 млрд",
@@ -10219,7 +10219,7 @@
    },
    {
     "iso2": "US",
-    "name": "Michael Dell",
+    "name": "Майкл Делл",
     "value": 194896106000.0,
     "flag": "🇺🇸",
     "text": "$195 млрд",
@@ -10227,7 +10227,7 @@
    },
    {
     "iso2": "US",
-    "name": "Steve Ballmer",
+    "name": "Стив Балмер",
     "value": 163892155000.0,
     "flag": "🇺🇸",
     "text": "$164 млрд",
@@ -10235,7 +10235,7 @@
    },
    {
     "iso2": "US",
-    "name": "Jensen Huang",
+    "name": "Дженсен Хуанг",
     "value": 162161695000.0,
     "flag": "🇺🇸",
     "text": "$162 млрд",
@@ -10243,7 +10243,7 @@
    },
    {
     "iso2": "US",
-    "name": "Larry Ellison",
+    "name": "Ларри Эллисон",
     "value": 154881682000.0,
     "flag": "🇺🇸",
     "text": "$155 млрд",
@@ -10251,7 +10251,7 @@
    },
    {
     "iso2": "US",
-    "name": "Bill Gates",
+    "name": "Билл Гейтс",
     "value": 121257838000.0,
     "flag": "🇺🇸",
     "text": "$121 млрд",
@@ -10260,7 +10260,7 @@
   ],
   "cis": [
    {
-    "name": "Eugene Kaspersky (Россия)",
+    "name": "Евгений Касперский (Россия)",
     "rank": 310,
     "in_top10": false,
     "iso": "RU"
@@ -10268,7 +10268,7 @@
   ],
   "hook": [
    [
-    "№1: Elon Musk,",
+    "№1: Илон Маск,",
     false
    ],
    [
@@ -10276,7 +10276,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Elon Musk, $850 млрд",
+  "hook_text": "№1: Илон Маск, $850 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_ind_technology.png"
@@ -10294,7 +10294,7 @@
   "top": [
    {
     "iso2": "US",
-    "name": "Warren Buffett",
+    "name": "Уоррен Баффетт",
     "value": 162147637000.0,
     "flag": "🇺🇸",
     "text": "$162 млрд",
@@ -10310,7 +10310,7 @@
    },
    {
     "iso2": "US",
-    "name": "Michael Bloomberg",
+    "name": "Майкл Блумберг",
     "value": 94920000000.0,
     "flag": "🇺🇸",
     "text": "$94,9 млрд",
@@ -10318,7 +10318,7 @@
    },
    {
     "iso2": "IT",
-    "name": "Giancarlo Devasini",
+    "name": "Джанкарло Девазини",
     "value": 89300000000.0,
     "flag": "🇮🇹",
     "text": "$89,3 млрд",
@@ -10326,7 +10326,7 @@
    },
    {
     "iso2": "US",
-    "name": "Thomas Peterffy",
+    "name": "Томас Петерффи",
     "value": 88791495000.0,
     "flag": "🇺🇸",
     "text": "$88,8 млрд",
@@ -10334,7 +10334,7 @@
    },
    {
     "iso2": "US",
-    "name": "Jeff Yass",
+    "name": "Джефф Ясс",
     "value": 77790000000.0,
     "flag": "🇺🇸",
     "text": "$77,8 млрд",
@@ -10342,7 +10342,7 @@
    },
    {
     "iso2": "US",
-    "name": "Ken Griffin",
+    "name": "Кен Гриффин",
     "value": 56689638000.0,
     "flag": "🇺🇸",
     "text": "$56,7 млрд",
@@ -10350,7 +10350,7 @@
    },
    {
     "iso2": "JP",
-    "name": "Masayoshi Son",
+    "name": "Масаёси Сон",
     "value": 44924582000.0,
     "flag": "🇯🇵",
     "text": "$44,9 млрд",
@@ -10358,7 +10358,7 @@
    },
    {
     "iso2": "US",
-    "name": "Stephen Schwarzman",
+    "name": "Стивен Шварцман",
     "value": 42348186000.0,
     "flag": "🇺🇸",
     "text": "$42,3 млрд",
@@ -10366,7 +10366,7 @@
    },
    {
     "iso2": "US",
-    "name": "Abigail Johnson",
+    "name": "Эбигейл Джонсон",
     "value": 41635256000.0,
     "flag": "🇺🇸",
     "text": "$41,6 млрд",
@@ -10375,13 +10375,13 @@
   ],
   "cis": [
    {
-    "name": "Suleiman Kerimov с семьёй (Россия)",
+    "name": "Сулейман Керимов с семьёй (Россия)",
     "rank": 19,
     "in_top10": false,
     "iso": "RU"
    },
    {
-    "name": "Vyacheslav Kim (Казахстан)",
+    "name": "Вячеслав Ким (Казахстан)",
     "rank": 113,
     "in_top10": false,
     "iso": "KZ"
@@ -10389,7 +10389,7 @@
   ],
   "hook": [
    [
-    "№1: Warren Buffett,",
+    "№1: Уоррен Баффетт,",
     false
    ],
    [
@@ -10397,7 +10397,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Warren Buffett, $162 млрд",
+  "hook_text": "№1: Уоррен Баффетт, $162 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_ind_finance.png"
@@ -10415,7 +10415,7 @@
   "top": [
    {
     "iso2": "ES",
-    "name": "Amancio Ortega",
+    "name": "Амансио Ортега",
     "value": 151710787000.0,
     "flag": "🇪🇸",
     "text": "$152 млрд",
@@ -10423,7 +10423,7 @@
    },
    {
     "iso2": "US",
-    "name": "Rob Walton с семьёй",
+    "name": "Роб Уолтон с семьёй",
     "value": 148187872000.0,
     "flag": "🇺🇸",
     "text": "$148 млрд",
@@ -10431,7 +10431,7 @@
    },
    {
     "iso2": "US",
-    "name": "Jim Walton с семьёй",
+    "name": "Джим Уолтон с семьёй",
     "value": 144960159000.0,
     "flag": "🇺🇸",
     "text": "$145 млрд",
@@ -10439,7 +10439,7 @@
    },
    {
     "iso2": "US",
-    "name": "Alice Walton",
+    "name": "Элис Уолтон",
     "value": 134393989000.0,
     "flag": "🇺🇸",
     "text": "$134 млрд",
@@ -10447,7 +10447,7 @@
    },
    {
     "iso2": "FR",
-    "name": "Bernard Arnault с семьёй",
+    "name": "Бернар Арно с семьёй",
     "value": 124189232000.0,
     "flag": "🇫🇷",
     "text": "$124 млрд",
@@ -10455,7 +10455,7 @@
    },
    {
     "iso2": "FR",
-    "name": "Francoise Bettencourt Meyers с семьёй",
+    "name": "Франсуаза Беттанкур-Майерс с семьёй",
     "value": 106151363000.0,
     "flag": "🇫🇷",
     "text": "$106 млрд",
@@ -10463,7 +10463,7 @@
    },
    {
     "iso2": "JP",
-    "name": "Tadashi Yanai с семьёй",
+    "name": "Тадаси Янаи с семьёй",
     "value": 67294072000.0,
     "flag": "🇯🇵",
     "text": "$67,3 млрд",
@@ -10471,7 +10471,7 @@
    },
    {
     "iso2": "DE",
-    "name": "Dieter Schwarz",
+    "name": "Дитер Шварц",
     "value": 62331408000.0,
     "flag": "🇩🇪",
     "text": "$62,3 млрд",
@@ -10479,7 +10479,7 @@
    },
    {
     "iso2": "US",
-    "name": "Lukas Walton",
+    "name": "Лукас Уолтон",
     "value": 49731369000.0,
     "flag": "🇺🇸",
     "text": "$49,7 млрд",
@@ -10487,7 +10487,7 @@
    },
    {
     "iso2": "FR",
-    "name": "Alain Wertheimer",
+    "name": "Ален Вертхаймер",
     "value": 39400356000.0,
     "flag": "🇫🇷",
     "text": "$39,4 млрд",
@@ -10496,7 +10496,7 @@
   ],
   "cis": [
    {
-    "name": "Tatyana Kim (Россия)",
+    "name": "Татьяна Ким (Россия)",
     "rank": 37,
     "in_top10": false,
     "iso": "RU"
@@ -10504,7 +10504,7 @@
   ],
   "hook": [
    [
-    "№1: Amancio Ortega,",
+    "№1: Амансио Ортега,",
     false
    ],
    [
@@ -10512,7 +10512,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Amancio Ortega, $152 млрд",
+  "hook_text": "№1: Амансио Ортега, $152 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_ind_fashion.png"
@@ -10530,7 +10530,7 @@
   "top": [
    {
     "iso2": "CN",
-    "name": "Zhong Shanshan",
+    "name": "Чжун Шаньшань",
     "value": 65079063000.0,
     "flag": "🇨🇳",
     "text": "$65,1 млрд",
@@ -10538,7 +10538,7 @@
    },
    {
     "iso2": "US",
-    "name": "Jacqueline Mars",
+    "name": "Жаклин Марс",
     "value": 50348000000.0,
     "flag": "🇺🇸",
     "text": "$50,3 млрд",
@@ -10546,7 +10546,7 @@
    },
    {
     "iso2": "US",
-    "name": "John Mars",
+    "name": "Джон Марс",
     "value": 50348000000.0,
     "flag": "🇺🇸",
     "text": "$50,3 млрд",
@@ -10554,7 +10554,7 @@
    },
    {
     "iso2": "IT",
-    "name": "Giovanni Ferrero",
+    "name": "Джованни Ферреро",
     "value": 46360166000.0,
     "flag": "🇮🇹",
     "text": "$46,4 млрд",
@@ -10562,7 +10562,7 @@
    },
    {
     "iso2": "AT",
-    "name": "Mark Mateschitz",
+    "name": "Марк Матешиц",
     "value": 43539912000.0,
     "flag": "🇦🇹",
     "text": "$43,5 млрд",
@@ -10570,7 +10570,7 @@
    },
    {
     "iso2": "FR",
-    "name": "Emmanuel Besnier",
+    "name": "Эмманюэль Беснье",
     "value": 26404959000.0,
     "flag": "🇫🇷",
     "text": "$26,4 млрд",
@@ -10578,7 +10578,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Qin Yinglin",
+    "name": "Цинь Инлинь",
     "value": 21121414000.0,
     "flag": "🇨🇳",
     "text": "$21,1 млрд",
@@ -10586,7 +10586,7 @@
    },
    {
     "iso2": "BR",
-    "name": "Jorge Paulo Lemann с семьёй",
+    "name": "Жорже Пауло Леманн с семьёй",
     "value": 20581305000.0,
     "flag": "🇧🇷",
     "text": "$20,6 млрд",
@@ -10594,7 +10594,7 @@
    },
    {
     "iso2": "US",
-    "name": "Todd Graves",
+    "name": "Тодд Грейвс",
     "value": 19951000000.0,
     "flag": "🇺🇸",
     "text": "$20 млрд",
@@ -10602,7 +10602,7 @@
    },
    {
     "iso2": "NL",
-    "name": "Charlene de Carvalho-Heineken с семьёй",
+    "name": "Шарлен де Карвалью-Хейнекен с семьёй",
     "value": 18025142000.0,
     "flag": "🇳🇱",
     "text": "$18 млрд",
@@ -10611,7 +10611,7 @@
   ],
   "cis": [
    {
-    "name": "Alexander Tkachev (Россия)",
+    "name": "Александр Ткачёв (Россия)",
     "rank": 157,
     "in_top10": false,
     "iso": "RU"
@@ -10619,7 +10619,7 @@
   ],
   "hook": [
    [
-    "№1: Zhong Shanshan,",
+    "№1: Чжун Шаньшань,",
     false
    ],
    [
@@ -10627,7 +10627,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Zhong Shanshan, $65,1 млрд",
+  "hook_text": "№1: Чжун Шаньшань, $65,1 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_ind_food.png"
@@ -10645,7 +10645,7 @@
   "top": [
    {
     "iso2": "HK",
-    "name": "Robin Zeng",
+    "name": "Робин Цзэн",
     "value": 42434406000.0,
     "flag": "🇭🇰",
     "text": "$42,4 млрд",
@@ -10653,7 +10653,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Vagit Alekperov",
+    "name": "Вагит Алекперов",
     "value": 29475064000.0,
     "flag": "🇷🇺",
     "text": "$29,5 млрд",
@@ -10661,7 +10661,7 @@
    },
    {
     "iso2": "US",
-    "name": "Lyndal Stephens Greth с семьёй",
+    "name": "Линдал Стивенс Грет с семьёй",
     "value": 28505362000.0,
     "flag": "🇺🇸",
     "text": "$28,5 млрд",
@@ -10669,7 +10669,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Leonid Mikhelson с семьёй",
+    "name": "Леонид Михельсон с семьёй",
     "value": 28301370000.0,
     "flag": "🇷🇺",
     "text": "$28,3 млрд",
@@ -10677,7 +10677,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Gennady Timchenko",
+    "name": "Геннадий Тимченко",
     "value": 24165649000.0,
     "flag": "🇷🇺",
     "text": "$24,2 млрд",
@@ -10685,7 +10685,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Huang Shilin",
+    "name": "Хуан Шилинь",
     "value": 20146865000.0,
     "flag": "🇨🇳",
     "text": "$20,1 млрд",
@@ -10693,7 +10693,7 @@
    },
    {
     "iso2": "US",
-    "name": "Harold Hamm с семьёй",
+    "name": "Гарольд Хэмм с семьёй",
     "value": 19000000000.0,
     "flag": "🇺🇸",
     "text": "$19 млрд",
@@ -10701,7 +10701,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Mikhail Fridman",
+    "name": "Михаил Фридман",
     "value": 16799720000.000002,
     "flag": "🇷🇺",
     "text": "$16,8 млрд",
@@ -10709,7 +10709,7 @@
    },
    {
     "iso2": "TH",
-    "name": "Sarath Ratanavadi",
+    "name": "Сарат Ратанавади",
     "value": 16668544999.999998,
     "flag": "🇹🇭",
     "text": "$16,7 млрд",
@@ -10717,7 +10717,7 @@
    },
    {
     "iso2": "US",
-    "name": "George Kaiser",
+    "name": "Джордж Кайзер",
     "value": 15769397000.0,
     "flag": "🇺🇸",
     "text": "$15,8 млрд",
@@ -10726,7 +10726,7 @@
   ],
   "cis": [
    {
-    "name": "German Khan (Россия)",
+    "name": "Герман Хан (Россия)",
     "rank": 22,
     "in_top10": false,
     "iso": "RU"
@@ -10734,7 +10734,7 @@
   ],
   "hook": [
    [
-    "№1: Robin Zeng,",
+    "№1: Робин Цзэн,",
     false
    ],
    [
@@ -10742,7 +10742,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Robin Zeng, $42,4 млрд",
+  "hook_text": "№1: Робин Цзэн, $42,4 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_ind_energy.png"
@@ -10760,7 +10760,7 @@
   "top": [
    {
     "iso2": "US",
-    "name": "Thomas Frist Jr с семьёй",
+    "name": "Томас Фрист-младший с семьёй",
     "value": 39936376000.0,
     "flag": "🇺🇸",
     "text": "$39,9 млрд",
@@ -10768,7 +10768,7 @@
    },
    {
     "iso2": "IN",
-    "name": "Cyrus Poonawalla",
+    "name": "Сайрус Пунавалла",
     "value": 29008182000.0,
     "flag": "🇮🇳",
     "text": "$29 млрд",
@@ -10776,7 +10776,7 @@
    },
    {
     "iso2": "IN",
-    "name": "Dilip Shanghvi",
+    "name": "Дилип Шангви",
     "value": 26462186000.0,
     "flag": "🇮🇳",
     "text": "$26,5 млрд",
@@ -10784,7 +10784,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Zhong Huijuan",
+    "name": "Чжун Хуэйцзюань",
     "value": 18779819000.0,
     "flag": "🇨🇳",
     "text": "$18,8 млрд",
@@ -10792,7 +10792,7 @@
    },
    {
     "iso2": "IN",
-    "name": "Murali Divi с семьёй",
+    "name": "Мурали Диви с семьёй",
     "value": 15389325000.0,
     "flag": "🇮🇳",
     "text": "$15,4 млрд",
@@ -10800,7 +10800,7 @@
    },
    {
     "iso2": "US",
-    "name": "Robert Duggan",
+    "name": "Роберт Дагган",
     "value": 12676549000.0,
     "flag": "🇺🇸",
     "text": "$12,7 млрд",
@@ -10808,7 +10808,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Zhu Yi",
+    "name": "Чжу И",
     "value": 11868947000.0,
     "flag": "🇨🇳",
     "text": "$11,9 млрд",
@@ -10816,7 +10816,7 @@
    },
    {
     "iso2": "SG",
-    "name": "Li Xiting",
+    "name": "Ли Ситин",
     "value": 11794384000.0,
     "flag": "🇸🇬",
     "text": "$11,8 млрд",
@@ -10824,7 +10824,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Sun Piaoyang",
+    "name": "Сунь Пяоян",
     "value": 11584114000.0,
     "flag": "🇨🇳",
     "text": "$11,6 млрд",
@@ -10832,7 +10832,7 @@
    },
    {
     "iso2": "CH",
-    "name": "Ernesto Bertarelli",
+    "name": "Эрнесто Бертарелли",
     "value": 11483198000.0,
     "flag": "🇨🇭",
     "text": "$11,5 млрд",
@@ -10841,7 +10841,7 @@
   ],
   "cis": [
    {
-    "name": "Viktor Kharitonin (Россия)",
+    "name": "Виктор Харитонин (Россия)",
     "rank": 25,
     "in_top10": false,
     "iso": "RU"
@@ -10849,7 +10849,7 @@
   ],
   "hook": [
    [
-    "№1: Thomas Frist Jr с семьёй,",
+    "№1: Томас Фрист-младший с семьёй,",
     false
    ],
    [
@@ -10857,7 +10857,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Thomas Frist Jr с семьёй, $39,9 млрд",
+  "hook_text": "№1: Томас Фрист-младший с семьёй, $39,9 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_ind_healthcare.png"
@@ -10875,7 +10875,7 @@
   "top": [
    {
     "iso2": "MX",
-    "name": "Germán Larrea Mota Velasco с семьёй",
+    "name": "Херман Ларреа с семьёй",
     "value": 61592276000.0,
     "flag": "🇲🇽",
     "text": "$61,6 млрд",
@@ -10883,7 +10883,7 @@
    },
    {
     "iso2": "CL",
-    "name": "Iris Fontbona с семьёй",
+    "name": "Ирис Фонтбона с семьёй",
     "value": 41975662000.0,
     "flag": "🇨🇱",
     "text": "$42 млрд",
@@ -10891,7 +10891,7 @@
    },
    {
     "iso2": "IN",
-    "name": "Savitri Jindal с семьёй",
+    "name": "Савитри Джиндал с семьёй",
     "value": 40919329000.0,
     "flag": "🇮🇳",
     "text": "$40,9 млрд",
@@ -10899,7 +10899,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Alexey Mordashov с семьёй",
+    "name": "Алексей Мордашов с семьёй",
     "value": 36946550000.0,
     "flag": "🇷🇺",
     "text": "$36,9 млрд",
@@ -10907,7 +10907,7 @@
    },
    {
     "iso2": "IN",
-    "name": "Lakshmi Mittal",
+    "name": "Лакшми Миттал",
     "value": 29790204000.0,
     "flag": "🇮🇳",
     "text": "$29,8 млрд",
@@ -10915,7 +10915,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Vladimir Potanin",
+    "name": "Владимир Потанин",
     "value": 29740299000.0,
     "flag": "🇷🇺",
     "text": "$29,7 млрд",
@@ -10923,7 +10923,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Vladimir Lisin",
+    "name": "Владимир Лисин",
     "value": 25532466000.0,
     "flag": "🇷🇺",
     "text": "$25,5 млрд",
@@ -10931,7 +10931,7 @@
    },
    {
     "iso2": "AU",
-    "name": "Gina Rinehart",
+    "name": "Джина Райнхарт",
     "value": 24875176000.0,
     "flag": "🇦🇺",
     "text": "$24,9 млрд",
@@ -10939,7 +10939,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Zheng Shuliang с семьёй",
+    "name": "Чжэн Шулян с семьёй",
     "value": 23708155000.0,
     "flag": "🇨🇳",
     "text": "$23,7 млрд",
@@ -10947,7 +10947,7 @@
    },
    {
     "iso2": "RU",
-    "name": "Andrey Melnichenko с семьёй",
+    "name": "Андрей Мельниченко с семьёй",
     "value": 20422087000.0,
     "flag": "🇷🇺",
     "text": "$20,4 млрд",
@@ -10956,13 +10956,13 @@
   ],
   "cis": [
    {
-    "name": "Alisher Usmanov (Россия)",
+    "name": "Алишер Усманов (Россия)",
     "rank": 13,
     "in_top10": false,
     "iso": "RU"
    },
    {
-    "name": "Vladimir Kim (Казахстан)",
+    "name": "Владимир Ким (Казахстан)",
     "rank": 24,
     "in_top10": false,
     "iso": "KZ"
@@ -10970,7 +10970,7 @@
   ],
   "hook": [
    [
-    "№1: Germán Larrea Mota Velasco с семьёй,",
+    "№1: Херман Ларреа с семьёй,",
     false
    ],
    [
@@ -10978,7 +10978,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Germán Larrea Mota Velasco с семьёй, $61,6 млрд",
+  "hook_text": "№1: Херман Ларреа с семьёй, $61,6 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_ind_metals.png"
@@ -10996,7 +10996,7 @@
   "top": [
    {
     "iso2": "US",
-    "name": "Rupert Murdoch с семьёй",
+    "name": "Руперт Мердок с семьёй",
     "value": 25315614000.0,
     "flag": "🇺🇸",
     "text": "$25,3 млрд",
@@ -11004,7 +11004,7 @@
    },
    {
     "iso2": "GB",
-    "name": "Dmitri Bukhman",
+    "name": "Дмитрий Бухман",
     "value": 13542050000.0,
     "flag": "🇬🇧",
     "text": "$13,5 млрд",
@@ -11012,7 +11012,7 @@
    },
    {
     "iso2": "GB",
-    "name": "Igor Bukhman",
+    "name": "Игорь Бухман",
     "value": 13542050000.0,
     "flag": "🇬🇧",
     "text": "$13,5 млрд",
@@ -11020,7 +11020,7 @@
    },
    {
     "iso2": "US",
-    "name": "Charles Ergen",
+    "name": "Чарли Эрген",
     "value": 13049099000.0,
     "flag": "🇺🇸",
     "text": "$13 млрд",
@@ -11028,7 +11028,7 @@
    },
    {
     "iso2": "CA",
-    "name": "Sherry Brydson",
+    "name": "Шерри Брайдсон",
     "value": 12554784000.0,
     "flag": "🇨🇦",
     "text": "$12,6 млрд",
@@ -11036,7 +11036,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Wang Ning с семьёй",
+    "name": "Ван Нин с семьёй",
     "value": 11683938000.0,
     "flag": "🇨🇳",
     "text": "$11,7 млрд",
@@ -11044,7 +11044,7 @@
    },
    {
     "iso2": "US",
-    "name": "John Malone",
+    "name": "Джон Мэлоун",
     "value": 11445762000.0,
     "flag": "🇺🇸",
     "text": "$11,4 млрд",
@@ -11052,7 +11052,7 @@
    },
    {
     "iso2": "US",
-    "name": "Gabe Newell",
+    "name": "Гейб Ньюэлл",
     "value": 10161305000.0,
     "flag": "🇺🇸",
     "text": "$10,2 млрд",
@@ -11060,7 +11060,7 @@
    },
    {
     "iso2": "US",
-    "name": "David Geffen",
+    "name": "Дэвид Геффен",
     "value": 9683540000.0,
     "flag": "🇺🇸",
     "text": "$9,7 млрд",
@@ -11068,7 +11068,7 @@
    },
    {
     "iso2": "US",
-    "name": "Steven Spielberg",
+    "name": "Стивен Спилберг",
     "value": 7921900000.0,
     "flag": "🇺🇸",
     "text": "$7,9 млрд",
@@ -11078,7 +11078,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Rupert Murdoch с семьёй,",
+    "№1: Руперт Мердок с семьёй,",
     false
    ],
    [
@@ -11086,7 +11086,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Rupert Murdoch с семьёй, $25,3 млрд",
+  "hook_text": "№1: Руперт Мердок с семьёй, $25,3 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_ind_media.png"
@@ -11104,7 +11104,7 @@
   "top": [
    {
     "iso2": "DE",
-    "name": "Susanne Klatten",
+    "name": "Сюзанне Клаттен",
     "value": 24365103000.0,
     "flag": "🇩🇪",
     "text": "$24,4 млрд",
@@ -11112,7 +11112,7 @@
    },
    {
     "iso2": "US",
-    "name": "Ernest Garcia II",
+    "name": "Эрнест Гарсия",
     "value": 24092406000.0,
     "flag": "🇺🇸",
     "text": "$24,1 млрд",
@@ -11120,7 +11120,7 @@
    },
    {
     "iso2": "DE",
-    "name": "Stefan Quandt",
+    "name": "Штефан Квандт",
     "value": 23421582000.0,
     "flag": "🇩🇪",
     "text": "$23,4 млрд",
@@ -11128,7 +11128,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Wang Chuanfu",
+    "name": "Ван Чуаньфу",
     "value": 21354518000.0,
     "flag": "🇨🇳",
     "text": "$21,4 млрд",
@@ -11136,7 +11136,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Lu Xiangyang",
+    "name": "Лу Сянъян",
     "value": 16669898000.000002,
     "flag": "🇨🇳",
     "text": "$16,7 млрд",
@@ -11144,7 +11144,7 @@
    },
    {
     "iso2": "US",
-    "name": "Shahid Khan",
+    "name": "Шахид Хан",
     "value": 16150256000.0,
     "flag": "🇺🇸",
     "text": "$16,2 млрд",
@@ -11152,7 +11152,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Eric Li",
+    "name": "Эрик Ли",
     "value": 15183152000.0,
     "flag": "🇨🇳",
     "text": "$15,2 млрд",
@@ -11160,7 +11160,7 @@
    },
    {
     "iso2": "DE",
-    "name": "Georg Schaeffler",
+    "name": "Георг Шеффлер",
     "value": 14959206000.0,
     "flag": "🇩🇪",
     "text": "$15 млрд",
@@ -11168,7 +11168,7 @@
    },
    {
     "iso2": "US",
-    "name": "Dan Friedkin",
+    "name": "Дэн Фридкин",
     "value": 12799505000.0,
     "flag": "🇺🇸",
     "text": "$12,8 млрд",
@@ -11176,7 +11176,7 @@
    },
    {
     "iso2": "IN",
-    "name": "Vikram Lal с семьёй",
+    "name": "Викрам Лал с семьёй",
     "value": 11718137000.0,
     "flag": "🇮🇳",
     "text": "$11,7 млрд",
@@ -11185,7 +11185,7 @@
   ],
   "cis": [
    {
-    "name": "Smagulov Nurlan (Казахстан)",
+    "name": "Нурлан Смагулов (Казахстан)",
     "rank": 63,
     "in_top10": false,
     "iso": "KZ"
@@ -11193,7 +11193,7 @@
   ],
   "hook": [
    [
-    "№1: Susanne Klatten,",
+    "№1: Сюзанне Клаттен,",
     false
    ],
    [
@@ -11201,7 +11201,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Susanne Klatten, $24,4 млрд",
+  "hook_text": "№1: Сюзанне Клаттен, $24,4 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_ind_automotive.png"
@@ -11219,7 +11219,7 @@
   "top": [
    {
     "iso2": "CH",
-    "name": "Gianluigi Aponte",
+    "name": "Джанлуиджи Апонте",
     "value": 45521225000.0,
     "flag": "🇨🇭",
     "text": "$45,5 млрд",
@@ -11227,7 +11227,7 @@
    },
    {
     "iso2": "CH",
-    "name": "Rafaela Aponte-Diamant",
+    "name": "Рафаэла Апонте-Диамант",
     "value": 45521225000.0,
     "flag": "🇨🇭",
     "text": "$45,5 млрд",
@@ -11235,7 +11235,7 @@
    },
    {
     "iso2": "CY",
-    "name": "John Fredriksen",
+    "name": "Джон Фредриксен",
     "value": 21904023000.0,
     "flag": "🇨🇾",
     "text": "$21,9 млрд",
@@ -11243,7 +11243,7 @@
    },
    {
     "iso2": "PH",
-    "name": "Enrique Razon Jr.",
+    "name": "Энрике Разон",
     "value": 18603259000.0,
     "flag": "🇵🇭",
     "text": "$18,6 млрд",
@@ -11251,7 +11251,7 @@
    },
    {
     "iso2": "US",
-    "name": "Brad Jacobs",
+    "name": "Брэд Джейкобс",
     "value": 12629250000.0,
     "flag": "🇺🇸",
     "text": "$12,6 млрд",
@@ -11259,7 +11259,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Yang Shaopeng",
+    "name": "Ян Шаопэн",
     "value": 9367877000.0,
     "flag": "🇨🇳",
     "text": "$9,4 млрд",
@@ -11267,7 +11267,7 @@
    },
    {
     "iso2": "US",
-    "name": "Dennis Washington",
+    "name": "Деннис Вашингтон",
     "value": 8848862000.0,
     "flag": "🇺🇸",
     "text": "$8,8 млрд",
@@ -11275,7 +11275,7 @@
    },
    {
     "iso2": "NO",
-    "name": "Kjell Inge Rokke",
+    "name": "Кьелль Инге Рёкке",
     "value": 8703355000.0,
     "flag": "🇳🇴",
     "text": "$8,7 млрд",
@@ -11283,7 +11283,7 @@
    },
    {
     "iso2": "FR",
-    "name": "Jacques Saadé Jr",
+    "name": "Жак Сааде-младший",
     "value": 7925743000.0,
     "flag": "🇫🇷",
     "text": "$7,9 млрд",
@@ -11291,7 +11291,7 @@
    },
    {
     "iso2": "FR",
-    "name": "Rodolphe Saadé",
+    "name": "Родольф Сааде",
     "value": 7925743000.0,
     "flag": "🇫🇷",
     "text": "$7,9 млрд",
@@ -11300,7 +11300,7 @@
   ],
   "cis": [
    {
-    "name": "Roman Trotsenko (Россия)",
+    "name": "Роман Троценко (Россия)",
     "rank": 24,
     "in_top10": false,
     "iso": "RU"
@@ -11308,7 +11308,7 @@
   ],
   "hook": [
    [
-    "№1: Gianluigi Aponte,",
+    "№1: Джанлуиджи Апонте,",
     false
    ],
    [
@@ -11316,7 +11316,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Gianluigi Aponte, $45,5 млрд",
+  "hook_text": "№1: Джанлуиджи Апонте, $45,5 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_ind_logistics.png"
@@ -11334,7 +11334,7 @@
   "top": [
    {
     "iso2": "US",
-    "name": "Stanley Kroenke",
+    "name": "Стэн Кронке",
     "value": 27588800000.0,
     "flag": "🇺🇸",
     "text": "$27,6 млрд",
@@ -11342,7 +11342,7 @@
    },
    {
     "iso2": "US",
-    "name": "Jerry Jones с семьёй",
+    "name": "Джерри Джонс с семьёй",
     "value": 23106694000.0,
     "flag": "🇺🇸",
     "text": "$23,1 млрд",
@@ -11350,7 +11350,7 @@
    },
    {
     "iso2": "US",
-    "name": "Robert Kraft",
+    "name": "Роберт Крафт",
     "value": 15233479000.0,
     "flag": "🇺🇸",
     "text": "$15,2 млрд",
@@ -11358,7 +11358,7 @@
    },
    {
     "iso2": "US",
-    "name": "Arthur Blank",
+    "name": "Артур Бланк",
     "value": 13495803000.0,
     "flag": "🇺🇸",
     "text": "$13,5 млрд",
@@ -11366,7 +11366,7 @@
    },
    {
     "iso2": "US",
-    "name": "Gayle Benson",
+    "name": "Гейл Бенсон",
     "value": 11199371000.0,
     "flag": "🇺🇸",
     "text": "$11,2 млрд",
@@ -11374,7 +11374,7 @@
    },
    {
     "iso2": "US",
-    "name": "Stephen Bisciotti",
+    "name": "Стив Бишотти",
     "value": 10731292000.0,
     "flag": "🇺🇸",
     "text": "$10,7 млрд",
@@ -11382,7 +11382,7 @@
    },
    {
     "iso2": "US",
-    "name": "Denise York с семьёй",
+    "name": "Дениз Йорк с семьёй",
     "value": 10021800000.0,
     "flag": "🇺🇸",
     "text": "$10 млрд",
@@ -11390,7 +11390,7 @@
    },
    {
     "iso2": "US",
-    "name": "Jeffrey Lurie",
+    "name": "Джеффри Лури",
     "value": 8841000000.0,
     "flag": "🇺🇸",
     "text": "$8,8 млрд",
@@ -11398,7 +11398,7 @@
    },
    {
     "iso2": "US",
-    "name": "Cal McNair",
+    "name": "Кэл Макнэр",
     "value": 7734000000.0,
     "flag": "🇺🇸",
     "text": "$7,7 млрд",
@@ -11406,7 +11406,7 @@
    },
    {
     "iso2": "US",
-    "name": "Mike Brown с семьёй",
+    "name": "Майк Браун с семьёй",
     "value": 7637500000.0,
     "flag": "🇺🇸",
     "text": "$7,6 млрд",
@@ -11416,7 +11416,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Stanley Kroenke,",
+    "№1: Стэн Кронке,",
     false
    ],
    [
@@ -11424,7 +11424,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Stanley Kroenke, $27,6 млрд",
+  "hook_text": "№1: Стэн Кронке, $27,6 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_ind_sports.png"
@@ -11442,7 +11442,7 @@
   "top": [
    {
     "iso2": "MX",
-    "name": "Carlos Slim Helu с семьёй",
+    "name": "Карлос Слим с семьёй",
     "value": 125350838000.0,
     "flag": "🇲🇽",
     "text": "$125 млрд",
@@ -11450,7 +11450,7 @@
    },
    {
     "iso2": "IN",
-    "name": "Sunil Mittal",
+    "name": "Сунил Миттал",
     "value": 14968986000.0,
     "flag": "🇮🇳",
     "text": "$15 млрд",
@@ -11458,7 +11458,7 @@
    },
    {
     "iso2": "FR",
-    "name": "Xavier Niel с семьёй",
+    "name": "Ксавье Ниль с семьёй",
     "value": 14442158000.0,
     "flag": "🇫🇷",
     "text": "$14,4 млрд",
@@ -11466,7 +11466,7 @@
    },
    {
     "iso2": "IN",
-    "name": "Rajan Mittal",
+    "name": "Раджан Миттал",
     "value": 9793453000.0,
     "flag": "🇮🇳",
     "text": "$9,8 млрд",
@@ -11474,7 +11474,7 @@
    },
    {
     "iso2": "IN",
-    "name": "Rakesh Mittal",
+    "name": "Ракеш Миттал",
     "value": 9769992000.0,
     "flag": "🇮🇳",
     "text": "$9,8 млрд",
@@ -11482,7 +11482,7 @@
    },
    {
     "iso2": "FR",
-    "name": "Patrick Drahi",
+    "name": "Патрик Драи",
     "value": 8080342000.0,
     "flag": "🇫🇷",
     "text": "$8,1 млрд",
@@ -11490,7 +11490,7 @@
    },
    {
     "iso2": "US",
-    "name": "Robert Hale Jr",
+    "name": "Роберт Хейл-младший",
     "value": 6473000000.0,
     "flag": "🇺🇸",
     "text": "$6,5 млрд",
@@ -11498,7 +11498,7 @@
    },
    {
     "iso2": "JP",
-    "name": "Yasumitsu Shigeta",
+    "name": "Ясумицу Сигэта",
     "value": 5910581000.0,
     "flag": "🇯🇵",
     "text": "$5,9 млрд",
@@ -11506,7 +11506,7 @@
    },
    {
     "iso2": "EG",
-    "name": "Naguib Sawiris",
+    "name": "Нагиб Савирис",
     "value": 5603092000.0,
     "flag": "🇪🇬",
     "text": "$5,6 млрд",
@@ -11514,7 +11514,7 @@
    },
    {
     "iso2": "US",
-    "name": "Catherine Commisso с семьёй",
+    "name": "Кэтрин Коммиссо с семьёй",
     "value": 5198636000.0,
     "flag": "🇺🇸",
     "text": "$5,2 млрд",
@@ -11523,7 +11523,7 @@
   ],
   "cis": [
    {
-    "name": "Vladimir Yevtushenkov (Россия)",
+    "name": "Владимир Евтушенков (Россия)",
     "rank": 24,
     "in_top10": false,
     "iso": "RU"
@@ -11531,7 +11531,7 @@
   ],
   "hook": [
    [
-    "№1: Carlos Slim Helu с семьёй,",
+    "№1: Карлос Слим с семьёй,",
     false
    ],
    [
@@ -11539,7 +11539,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Carlos Slim Helu с семьёй, $125 млрд",
+  "hook_text": "№1: Карлос Слим с семьёй, $125 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_ind_telecom.png"
@@ -11557,7 +11557,7 @@
   "top": [
    {
     "iso2": "US",
-    "name": "Miriam Adelson с семьёй",
+    "name": "Мириам Адельсон с семьёй",
     "value": 32087752000.0,
     "flag": "🇺🇸",
     "text": "$32,1 млрд",
@@ -11565,7 +11565,7 @@
    },
    {
     "iso2": "AT",
-    "name": "Johann Graf",
+    "name": "Иоганн Граф",
     "value": 10447892000.0,
     "flag": "🇦🇹",
     "text": "$10,4 млрд",
@@ -11573,7 +11573,7 @@
    },
    {
     "iso2": "CZ",
-    "name": "Karel Komarek",
+    "name": "Карел Комарек",
     "value": 9792021000.0,
     "flag": "🇨🇿",
     "text": "$9,8 млрд",
@@ -11581,7 +11581,7 @@
    },
    {
     "iso2": "GB",
-    "name": "Denise Coates",
+    "name": "Дениз Коутс",
     "value": 8090846000.0,
     "flag": "🇬🇧",
     "text": "$8,1 млрд",
@@ -11589,7 +11589,7 @@
    },
    {
     "iso2": "IL",
-    "name": "Teddy Sagi",
+    "name": "Тедди Саги",
     "value": 7082692000.0,
     "flag": "🇮🇱",
     "text": "$7,1 млрд",
@@ -11597,7 +11597,7 @@
    },
    {
     "iso2": "CA",
-    "name": "Mark Scheinberg",
+    "name": "Марк Шайнберг",
     "value": 6564309000.0,
     "flag": "🇨🇦",
     "text": "$6,6 млрд",
@@ -11605,7 +11605,7 @@
    },
    {
     "iso2": "US",
-    "name": "Jon Yarbrough",
+    "name": "Джон Ярбро",
     "value": 6495425000.0,
     "flag": "🇺🇸",
     "text": "$6,5 млрд",
@@ -11613,7 +11613,7 @@
    },
    {
     "iso2": "US",
-    "name": "Steve Wynn",
+    "name": "Стив Уинн",
     "value": 4349314000.0,
     "flag": "🇺🇸",
     "text": "$4,3 млрд",
@@ -11621,7 +11621,7 @@
    },
    {
     "iso2": "HK",
-    "name": "Pansy Ho",
+    "name": "Пэнси Хо",
     "value": 4166054000.0,
     "flag": "🇭🇰",
     "text": "$4,2 млрд",
@@ -11629,7 +11629,7 @@
    },
    {
     "iso2": "DE",
-    "name": "Paul Gauselmann с семьёй",
+    "name": "Пауль Гаузельман с семьёй",
     "value": 3928371000.0,
     "flag": "🇩🇪",
     "text": "$3,9 млрд",
@@ -11639,7 +11639,7 @@
   "cis": [],
   "hook": [
    [
-    "№1: Miriam Adelson с семьёй,",
+    "№1: Мириам Адельсон с семьёй,",
     false
    ],
    [
@@ -11647,7 +11647,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Miriam Adelson с семьёй, $32,1 млрд",
+  "hook_text": "№1: Мириам Адельсон с семьёй, $32,1 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_ind_gambling.png"
@@ -11665,7 +11665,7 @@
   "top": [
    {
     "iso2": "NG",
-    "name": "Aliko Dangote",
+    "name": "Алико Данготе",
     "value": 54513272000.0,
     "flag": "🇳🇬",
     "text": "$54,5 млрд",
@@ -11673,7 +11673,7 @@
    },
    {
     "iso2": "CN",
-    "name": "He Xiangjian с семьёй",
+    "name": "Хэ Сянцзянь с семьёй",
     "value": 38823105000.0,
     "flag": "🇨🇳",
     "text": "$38,8 млрд",
@@ -11681,7 +11681,7 @@
    },
    {
     "iso2": "DE",
-    "name": "Reinhold Wuerth с семьёй",
+    "name": "Райнхольд Вюрт с семьёй",
     "value": 29602128000.0,
     "flag": "🇩🇪",
     "text": "$29,6 млрд",
@@ -11689,7 +11689,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Chen Jianhua",
+    "name": "Чэнь Цзяньхуа",
     "value": 21830077000.0,
     "flag": "🇨🇳",
     "text": "$21,8 млрд",
@@ -11697,7 +11697,7 @@
    },
    {
     "iso2": "JP",
-    "name": "Takemitsu Takizaki",
+    "name": "Такэмицу Такидзаки",
     "value": 21132401000.0,
     "flag": "🇯🇵",
     "text": "$21,1 млрд",
@@ -11705,7 +11705,7 @@
    },
    {
     "iso2": "SG",
-    "name": "Jason Chang",
+    "name": "Джейсон Чанг",
     "value": 17614123000.0,
     "flag": "🇸🇬",
     "text": "$17,6 млрд",
@@ -11713,7 +11713,7 @@
    },
    {
     "iso2": "GB",
-    "name": "James Ratcliffe",
+    "name": "Джим Рэтклифф",
     "value": 17517331000.0,
     "flag": "🇬🇧",
     "text": "$17,5 млрд",
@@ -11721,7 +11721,7 @@
    },
    {
     "iso2": "GB",
-    "name": "James Dyson",
+    "name": "Джеймс Дайсон",
     "value": 14994030000.0,
     "flag": "🇬🇧",
     "text": "$15 млрд",
@@ -11729,7 +11729,7 @@
    },
    {
     "iso2": "DE",
-    "name": "Friedhelm Loh",
+    "name": "Фридхельм Ло",
     "value": 14694061000.0,
     "flag": "🇩🇪",
     "text": "$14,7 млрд",
@@ -11737,7 +11737,7 @@
    },
    {
     "iso2": "CN",
-    "name": "Li Shuirong с семьёй",
+    "name": "Ли Шуйжун с семьёй",
     "value": 14146467000.0,
     "flag": "🇨🇳",
     "text": "$14,1 млрд",
@@ -11746,7 +11746,7 @@
   ],
   "cis": [
    {
-    "name": "Viatcheslav Kantor (Россия)",
+    "name": "Вячеслав Кантор (Россия)",
     "rank": 13,
     "in_top10": false,
     "iso": "RU"
@@ -11754,7 +11754,7 @@
   ],
   "hook": [
    [
-    "№1: Aliko Dangote,",
+    "№1: Алико Данготе,",
     false
    ],
    [
@@ -11762,7 +11762,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Aliko Dangote, $54,5 млрд",
+  "hook_text": "№1: Алико Данготе, $54,5 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_ind_manufacturing.png"
@@ -11780,7 +11780,7 @@
   "top": [
    {
     "iso2": "IN",
-    "name": "Mukesh Ambani",
+    "name": "Мукеш Амбани",
     "value": 90985526000.0,
     "flag": "🇮🇳",
     "text": "$91 млрд",
@@ -11788,7 +11788,7 @@
    },
    {
     "iso2": "US",
-    "name": "Julia Koch с семьёй",
+    "name": "Джулия Кох с семьёй",
     "value": 84627000000.0,
     "flag": "🇺🇸",
     "text": "$84,6 млрд",
@@ -11796,7 +11796,7 @@
    },
    {
     "iso2": "IN",
-    "name": "Gautam Adani",
+    "name": "Гаутам Адани",
     "value": 83709756000.0,
     "flag": "🇮🇳",
     "text": "$83,7 млрд",
@@ -11804,7 +11804,7 @@
    },
    {
     "iso2": "US",
-    "name": "Charles Koch с семьёй",
+    "name": "Чарльз Кох с семьёй",
     "value": 76942000000.0,
     "flag": "🇺🇸",
     "text": "$76,9 млрд",
@@ -11812,7 +11812,7 @@
    },
    {
     "iso2": "HK",
-    "name": "Li Ka-shing",
+    "name": "Ли Кашин",
     "value": 48834754000.0,
     "flag": "🇭🇰",
     "text": "$48,8 млрд",
@@ -11820,7 +11820,7 @@
    },
    {
     "iso2": "VN",
-    "name": "Pham Nhat Vuong",
+    "name": "Фам Ньят Выонг",
     "value": 36972266000.0,
     "flag": "🇻🇳",
     "text": "$37 млрд",
@@ -11828,7 +11828,7 @@
    },
    {
     "iso2": "US",
-    "name": "Len Blavatnik",
+    "name": "Леонард Блаватник",
     "value": 34763017000.0,
     "flag": "🇺🇸",
     "text": "$34,8 млрд",
@@ -11836,7 +11836,7 @@
    },
    {
     "iso2": "IL",
-    "name": "Idan Ofer",
+    "name": "Идан Офер",
     "value": 34222385000.000004,
     "flag": "🇮🇱",
     "text": "$34,2 млрд",
@@ -11844,7 +11844,7 @@
    },
    {
     "iso2": "IL",
-    "name": "Eyal Ofer",
+    "name": "Эяль Офер",
     "value": 33526516000.000004,
     "flag": "🇮🇱",
     "text": "$33,5 млрд",
@@ -11852,7 +11852,7 @@
    },
    {
     "iso2": "US",
-    "name": "Elaine Marshall с семьёй",
+    "name": "Элейн Маршалл с семьёй",
     "value": 32239000000.0,
     "flag": "🇺🇸",
     "text": "$32,2 млрд",
@@ -11861,7 +11861,7 @@
   ],
   "cis": [
    {
-    "name": "Viktor Vekselberg (Россия)",
+    "name": "Виктор Вексельберг (Россия)",
     "rank": 21,
     "in_top10": false,
     "iso": "RU"
@@ -11869,7 +11869,7 @@
   ],
   "hook": [
    [
-    "№1: Mukesh Ambani,",
+    "№1: Мукеш Амбани,",
     false
    ],
    [
@@ -11877,7 +11877,7 @@
     true
    ]
   ],
-  "hook_text": "№1: Mukesh Ambani, $91 млрд",
+  "hook_text": "№1: Мукеш Амбани, $91 млрд",
   "type": "bars",
   "period": "ноябрь 2026",
   "card": "cards_markets/bil_ind_diversified.png"

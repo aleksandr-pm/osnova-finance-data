@@ -58,6 +58,8 @@ REAL_ESTATE_WORDS = re.compile(r"Propert|Real Estate|REIT|Realty|Land\b|Estate|E
 
 
 def short(name):
+    import html
+    name = html.unescape(name)
     m = re.match(r"^(.{3,}?)\s*\(([^)]{2,24})\)$", name)
     if m and len(name) > 26:
         name = m.group(2) if len(m.group(2)) >= 3 else m.group(1)
@@ -237,19 +239,19 @@ def russify(recs):
         cache = json.load(open(RU_CACHE, encoding="utf-8"))
     except Exception:
         cache = {}
-    online = os.environ.get("GITHUB_ACTIONS") == "true"
+    from ru_names import PEOPLE, COMPANIES
+    online = os.environ.get("WIKIDATA") == "yes"   # Wikidata из GitHub Actions режет запросы, по умолчанию выключено
     asked = 0
     for r in recs:
         person = r["block"] == "billionaires"
         for row in r["top"] + r.get("cis", []):
-            base, fam = row["name"], ""
+            base, fam, tail = row["name"], "", ""
+            m2 = re.match(r"^(.*) \(([^)]+)\)$", base)   # «Sberbank (Россия)» из строки СНГ
+            if m2 and m2.group(2) in CIS.values():
+                base, tail = m2.group(1), f" ({m2.group(2)})"
             m = re.match(r"^(.*?)( с семьёй)$", base)
             if m:
                 base, fam = m.group(1), m.group(2)
-            m2 = re.match(r"^(.*) \(([^)]+)\)$", base) if not person else None   # «Sberbank (Россия)» из строки СНГ
-            tail = ""
-            if m2 and m2.group(2) in CIS.values():
-                base, tail = m2.group(1), f" ({m2.group(2)})"
             key = ("p:" if person else "c:") + base
             if key not in cache and online and asked < 1500:
                 v = wikidata_ru(base, person)
@@ -257,14 +259,16 @@ def russify(recs):
                 if v is not None:
                     cache[key] = v
                 time.sleep(0.2)
-            ru = cache.get(key) or ""
-            if ru:
-                ru = re.sub(r"\s*\(.*?\)$", "", ru).strip()          # «Тинькофф (банк)» → «Тинькофф»
-                if person:   # «Маск, Илон» → «Илон Маск»
-                    if "," in ru:
-                        a, b = [x.strip() for x in ru.split(",", 1)]
-                        ru = f"{b} {a}"
+            known = (PEOPLE if person else COMPANIES).get(base)
+            ru = known or cache.get(key) or ""
+            if ru and not known:   # метки Wikidata: «Маск, Илон», «Тинькофф (банк)»
+                ru = re.sub(r"\s*\(.*?\)$", "", ru).strip()
+                if person and "," in ru:
+                    a, b = [x.strip() for x in ru.split(",", 1)]
+                    ru = f"{b} {a}"
+                if person:
                     ru = " ".join(ru.split()[:3])
+            if ru:
                 row["name"] = ru + fam + tail
     json.dump(cache, open(RU_CACHE, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
     for r in recs:   # вывод в карточке и тексте под новое имя лидера
