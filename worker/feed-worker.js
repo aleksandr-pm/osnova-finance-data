@@ -520,7 +520,7 @@ async function edit(env, now) {
         if (p.keep === false) { d.keep = false; d.why = p.why || 'отклонено на редактуре'; }
         else if (p.text) d.text = p.text;
       }
-    } catch (e) { await failCount(env, 'rewrite', 3, 'Второй этап редактуры (Sonnet) не отвечает: ' + String(e.message || e).slice(0, 150)); }
+    } catch (e) { await setMeta(env, 'rewrite_err', new Date(now).toISOString() + ' ' + String(e.message || e).slice(0, 300)); await failCount(env, 'rewrite', 3, 'Второй этап редактуры (Sonnet) не отвечает: ' + String(e.message || e).slice(0, 150)); }
   }
 
   const byId = new Map(items.map(i => [i.id, i]));
@@ -940,7 +940,7 @@ async function macro(env, now) {
             if (!evNums.some(v => [1, 1000, 1e6, 1e9, 0.001].some(k => Math.abs(v - a * k) < 1e-9 * Math.max(1, v)))) continue;
             found[r.event] = { actual: r.actual, link: n.id };
           }
-        } catch (e) { out.push({ key, error: String(e.message || e).slice(0, 100) }); }
+        } catch (e) { out.push({ key, error: String(e.message || e).slice(0, 100) }); await setMeta(env, 'macro_err', new Date(now).toISOString() + ' ' + String(e.message || e).slice(0, 300)); }
       }
       await setMeta(env, 'macro_found', JSON.stringify(found));
     }
