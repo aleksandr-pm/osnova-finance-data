@@ -1,20 +1,21 @@
-threads: mkt_world_cap (companies, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/fb036aa2a041/bank/cards_markets/mkt_world_cap.jpg
+threads: line_agro_prod_656 (agro, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/a85f2da6f928/bank/covers/line_agro_prod_656.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/a85f2da6f928/bank/cards/line_agro_prod_656.jpg
 ---
-Самые дорогие компании мира по капитализации, ноябрь 2026:
-1. 🇺🇸 Apple · $5 трлн
-2. 🇺🇸 NVIDIA · $4,5 трлн
-3. 🇺🇸 Microsoft · $3,9 трлн
-4. 🇺🇸 Alphabet (Google) · $3,5 трлн
-5. 🇺🇸 Amazon · $2,8 трлн
-6. 🇹🇼 TSMC · $1,9 трлн
-7. 🇺🇸 SpaceX · $1,8 трлн
-8. 🇸🇦 Saudi Aramco · $1,7 трлн
-9. 🇺🇸 Meta · $1,6 трлн
-10. 🇺🇸 Tesla · $1,4 трлн
-Сбербанк (Россия) на 306-м, Kaspi.kz (Казахстан) на 1218-м месте.
+Производство кофе: крупнейшие производители, 2000-2024:
+1. 🇧🇷 Бразилия · в 1,8 раза
+2. 🇻🇳 Вьетнам · в 2,5 раза
+3. 🇨🇴 Колумбия · +32%
+4. 🇮🇩 Индонезия · +46%
+5. 🇪🇹 Эфиопия · в 2,5 раза
+6. 🇺🇬 Уганда · в 2,8 раза
+7. 🇮🇳 Индия · +24%
+8. 🇵🇪 Перу · в 1,9 раза
+9. 🇨🇫 ЦАР · в 25,2 раза
+10. 🇭🇳 Гондурас · в 1,7 раза
+ЦАР: производство кофе выросло в 25,2 раза с 2000 года.
 Больше в Telegram @osnovafin
 ---
 Threads: текстом
-Опубликовано: 18106850645297934. Осталось новых рейтингов: 205
-exit=0 2026-11-07T11:15:02Z
+Опубликовано: 18131882683778978. Осталось новых рейтингов: 204
+exit=0 2026-11-07T12:46:07Z
