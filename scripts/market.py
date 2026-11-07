@@ -11,6 +11,7 @@
 Данные: Yahoo Finance (yfinance), календарь: ForexFactory (faireconomy.media).
 """
 import datetime as dt
+from zoneinfo import ZoneInfo
 import json
 import os
 import re
@@ -247,6 +248,8 @@ def evening():
 
 FLAGS = {"USD": ("🇺🇸", "США"), "EUR": ("🇪🇺", "Еврозона"), "GBP": ("🇬🇧", "Британия"), "CNY": ("🇨🇳", "Китай"),
          "JPY": ("🇯🇵", "Япония"), "CAD": ("🇨🇦", "Канада"), "AUD": ("🇦🇺", "Австралия"), "CHF": ("🇨🇭", "Швейцария")}
+MACRO_SKIP = re.compile(r"Speaks|Press Conference|Statement|Minutes|Projections|Auction|Report|Testifies", re.I)
+MACRO_FILE = os.environ.get("MACRO_FILE", "tg/macro_today.json")
 SKIP = re.compile(r"Home|Housing|Building Permits|Mortgage|HPI|House|Construction", re.I)
 TR = [
     (r"^Core CPI m/m", "Базовая инфляция (CPI), м/м"), (r"^Core CPI y/y", "Базовая инфляция (CPI), г/г"),
@@ -320,7 +323,7 @@ def calendar():
                      headers={"User-Agent": "Mozilla/5.0 (compatible; OSNOVAFinance/1.0)"})
     r.raise_for_status()
     today = dt.datetime.now(DXB).date()
-    rows, skipped = [], []
+    rows, skipped, macro = [], [], []
     for e in r.json():
         if e.get("impact") not in ("High", "Medium") or e.get("country") not in FLAGS:
             continue
@@ -339,6 +342,15 @@ def calendar():
             skipped.append(e["title"])
             continue
         rows.append((t, e["country"], name, e.get("impact"), ru_val(e.get("forecast") or ""), ru_val(e.get("previous") or "")))
+        # для постов «факт против прогноза» (воркер, #макро): только главные события с числом
+        if e.get("impact") == "High" and (e.get("forecast") or e.get("previous")) and not MACRO_SKIP.search(e["title"]):
+            macro.append({"id": f"{t.date().isoformat()}-{e['country']}-{e['title']}", "t": int(t.timestamp()),
+                          "country": e["country"], "flag": FLAGS[e["country"]][0], "title": e["title"], "name_ru": name,
+                          "forecast": e.get("forecast") or "", "previous": e.get("previous") or "",
+                          "forecast_ru": ru_val(e.get("forecast") or ""), "previous_ru": ru_val(e.get("previous") or "")})
+    os.makedirs("tg", exist_ok=True)
+    json.dump(macro, open(MACRO_FILE, "w"), ensure_ascii=False, indent=1)
+    print("макро-событий на сегодня:", len(macro))
     print("без перевода, пропущено:", skipped)
     if not rows:
         print("важных событий сегодня нет")
@@ -462,7 +474,8 @@ def chart():
 def alerts():
     idx = [t for t, _, _ in INDICES]
     data = closes(idx + BIG, period="5d")
-    today = dt.datetime.now(DXB).date().isoformat()
+    # торговый день по Нью-Йорку: в полночь по Дубаю день не меняется, алерт по бумаге выходит один раз
+    today = dt.datetime.now(ZoneInfo("America/New_York")).date().isoformat()
     st = load(STATE, {})
     sent = st.get("alerts", {})
     sent = {k: v for k, v in sent.items() if v == today}
