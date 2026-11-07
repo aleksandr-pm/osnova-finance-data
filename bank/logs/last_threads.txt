@@ -1,21 +1,20 @@
-threads: line_agro_prod_572 (agro, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/a2eb77fa58e3/bank/covers/line_agro_prod_572.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/a2eb77fa58e3/bank/cards/line_agro_prod_572.jpg
+threads: mkt_world_cap (companies, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/fb036aa2a041/bank/cards_markets/mkt_world_cap.jpg
 ---
-Производство авокадо: крупнейшие производители, 2000-2024:
-1. 🇲🇽 Мексика · в 3 раза
-2. 🇨🇴 Колумбия · в 9,6 раза
-3. 🇩🇴 Доминиканская Республика · в 15 раз
-4. 🇵🇪 Перу · в 11 раз
-5. 🇮🇩 Индонезия · в 6,3 раза
-6. 🇰🇪 Кения · в 11,2 раза
-7. 🇧🇷 Бразилия · в 5 раз
-8. 🇮🇱 Израиль · в 3 раза
-9. 🇪🇹 Эфиопия · в 2,6 раза
-10. 🇭🇹 Гаити · в 4,4 раза
-Доминиканская Республика: производство авокадо выросло в 15 раз с 2000 года.
+Самые дорогие компании мира по капитализации, ноябрь 2026:
+1. 🇺🇸 Apple · $5 трлн
+2. 🇺🇸 NVIDIA · $4,5 трлн
+3. 🇺🇸 Microsoft · $3,9 трлн
+4. 🇺🇸 Alphabet (Google) · $3,5 трлн
+5. 🇺🇸 Amazon · $2,8 трлн
+6. 🇹🇼 TSMC · $1,9 трлн
+7. 🇺🇸 SpaceX · $1,8 трлн
+8. 🇸🇦 Saudi Aramco · $1,7 трлн
+9. 🇺🇸 Meta · $1,6 трлн
+10. 🇺🇸 Tesla · $1,4 трлн
+Сбербанк (Россия) на 306-м, Kaspi.kz (Казахстан) на 1218-м месте.
 Больше в Telegram @osnovafin
 ---
-Threads: с картинкой
-Опубликовано: 17868138963676223. Осталось новых рейтингов: 206
-exit=0 2026-11-07T09:45:06Z
+Threads: текстом
+Опубликовано: 18106850645297934. Осталось новых рейтингов: 205
+exit=0 2026-11-07T11:15:02Z
