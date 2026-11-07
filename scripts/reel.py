@@ -13,6 +13,7 @@ import csv
 import datetime as dt
 import functools
 import glob
+import html
 import io
 import json
 import os
@@ -316,6 +317,11 @@ DONE_BY_HAND = [  # уже вышли роликами вручную до за�
     "wdi_fi_res_totl_cd_desc", "wdi_sl_uem_totl_zs_asc", "wdi_ny_gdp_mktp_cd_desc", "cis_fp_cpi_totl_zg",
 ]
 BANNED = ("недвиж", "real estate", "realestate")
+BAD_DATA = {  # ошибки или дубли в источнике
+    "mkt_world_div",       # доходности 20%+ у Apple и др.: в выгрузке не дивиденды
+    "mkt_sector_ai",       # совпадает с технологическими компаниями
+    "mkt_sector_gaming",   # Microsoft целиком на первом месте
+}
 
 
 def load_rankings():
@@ -328,8 +334,10 @@ def load_rankings():
             for r in json.load(f):
                 if r.get("type", "bars") != "bars" or len(r.get("top", [])) < 5:
                     continue
-                if any(b in (r["id"] + r["title"]).lower() for b in BANNED):
+                if r["id"] in BAD_DATA or any(b in (r["id"] + r["title"]).lower() for b in BANNED):
                     continue
+                for x in r["top"]:
+                    x["name"] = html.unescape(x["name"])
                 out.append(r)
     return out
 
