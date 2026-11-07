@@ -89,6 +89,14 @@
    "block": "manual",
    "at": "2026-11-07T07:48:54.584722+00:00",
    "post": "manual"
+  },
+  {
+   "id": "mkt_sector_tech",
+   "block": "companies",
+   "fmt": "bars",
+   "at": "2026-11-07T09:08:07.790204+00:00",
+   "post": "18034116311885764",
+   "music": "hot_dope-epic-4-625768.mp3"
   }
  ]
 }
