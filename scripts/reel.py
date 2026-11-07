@@ -374,7 +374,7 @@ def save_state(st):
 
 
 ORDER = ["companies", "billionaires", "economy", "companies", "agro", "billionaires", "cis", "companies", "money"]
-FORMATS = ["bars", "line", "bars", "compare", "bars", "donut"]  # чередование видов роликов
+FORMATS = ["bars", "line", "bars", "compare", "bars", "race", "bars", "donut"]  # чередование видов роликов
 
 
 def compare_k(r):
@@ -396,6 +396,8 @@ def variants(rankings):
     for r in rankings:
         if compare_k(r) >= 2:
             out.append(dict(r, id="cmp_" + r["id"], fmt="compare"))
+        if r["fmt"] == "line" and all(len(x.get("points", [])) >= 5 for x in r.get("series_all", [])) and len(r.get("series_all", [])) >= 6:
+            out.append(dict(r, id="race_" + r["id"], fmt="race"))
     return out
 
 
@@ -410,10 +412,10 @@ def pick(rankings, st):
         if at > now - dt.timedelta(days=REPEAT_DAYS):
             recent.add(p["id"])
         if at > now - dt.timedelta(days=14):
-            near.add(p["id"].removeprefix("cmp_"))
+            near.add(p["id"].removeprefix("cmp_").removeprefix("race_"))
     allv = variants(rankings)
     order = {r["id"]: i for i, r in enumerate(allv)}
-    pool = [r for r in allv if r["id"] not in recent and r["id"].removeprefix("cmp_") not in near]
+    pool = [r for r in allv if r["id"] not in recent and r["id"].removeprefix("cmp_").removeprefix("race_") not in near]
     if not pool:
         return None
     n = len([p for p in st["posted"] if p.get("block") != "manual"])
@@ -430,7 +432,7 @@ def pick(rankings, st):
     pri = {"mkt_world": 0, "mkt_sector": 1, "bil_ind": 1, "bil_country": 2, "mkt_country_cap": 2, "wdi": 0, "cis": 0}
 
     def score(r):
-        b = r["id"].removeprefix("cmp_")
+        b = r["id"].removeprefix("cmp_").removeprefix("race_").removeprefix("line_")
         return (next((v for k, v in pri.items() if b.startswith(k)), 3), order[r["id"]])
     return min(cand, key=score)
 
@@ -781,7 +783,7 @@ def short(v, unit):
 def src_line(r):
     if r["block"] in ("companies", "billionaires"):
         return f"Источник: {r['source_full']}, {r['note']}."
-    if r["fmt"] == "line":
+    if r["fmt"] in ("line", "race"):
         return f"Источник: {r['source_full']}, {r['start']}-{r['year']}."
     return f"Источник: {r['source_full']}, {r['year']} год."
 
@@ -1041,6 +1043,82 @@ def make_frames_compare(r):
     return total, frame
 
 
+# ---------- гонка: как менялись места по годам ----------
+def make_frames_race(r):
+    ents = r["series_all"][:10]
+    unit = r["unit"]
+    y0r, y1r = r["start"], r["year"]
+    nyrs = y1r - y0r
+    PER = min(1.25, 28.0 / max(1, nyrs))
+    T_RUN, T_HOLD, T_RES = int(nyrs * PER * FPS), int(1.5 * FPS), int(5.5 * FPS)
+    total = T_COV + T_EX + T_RUN + T_HOLD + T_RES + T_END
+    hl = next((x for x in ents if x.get("hl")), None)
+
+    def val(e, t):
+        pts = e["points"]
+        if t <= pts[0][0]:
+            return pts[0][1] if t >= pts[0][0] - 0.01 else 0.0
+        for (a, b), (c, d_) in zip(pts, pts[1:]):
+            if a <= t <= c:
+                return b + (d_ - b) * (t - a) / (c - a)
+        return pts[-1][1]
+
+    def ranks(yr):
+        order = sorted(range(len(ents)), key=lambda i: -val(ents[i], yr))
+        return {i: k for k, i in enumerate(order)}
+
+    RK = {yr: ranks(yr) for yr in range(y0r, y1r + 1)}
+    leader0 = ents[min(RK[y0r], key=RK[y0r].get)]
+    leader1 = ents[min(RK[y1r], key=RK[y1r].get)]
+    NX, BX0, BX1 = LX, LX + 300, W - LX - 170
+
+    def board(im, d, t, top_y):
+        ROW = min(64, (1150 - top_y) // 10)
+        yr = int(min(t, y1r - 1)) if t < y1r else y1r
+        u = ease((t - yr) / 0.6) if t < y1r else 0
+        ra, rb = RK[yr], RK[min(yr + 1, y1r)]
+        vals = [val(e, t) for e in ents]
+        vmax = max(vals) * 1.05 or 1
+        for i, e in enumerate(ents):
+            pos = ra[i] + (rb[i] - ra[i]) * u
+            y = top_y + pos * ROW
+            im.alpha_composite(flag(e["iso2"], 30), (NX, int(y + 8)))
+            d.text((NX + 56, y + 24), e["name"], font=fit(d, e["name"], 26, 500, BX0 - NX - 66, 14), fill=C["ink"], anchor="lm")
+            bw = int((BX1 - BX0) * vals[i] / vmax)
+            colr = C["graphite"] if (e is hl or (hl is None and ra[i] == 0)) else C["bar"]
+            d.rectangle([BX0, int(y + 6), BX0 + max(bw, 3), int(y + 44)], fill=colr)
+            d.text((BX0 + max(bw, 3) + 12, y + 25), short(vals[i], unit), font=F(24, 600), fill=C["ink"], anchor="lm")
+        d.text((W - LX, top_y + 10 * ROW - 10), str(int(min(t, y1r))), font=F(130, 600),
+               fill=hexa(C["smoke"], 0.55), anchor="rb")
+
+    def frame(f):
+        im = Image.new("RGBA", (W, H), C["bone"])
+        d = ImageDraw.Draw(im)
+        if f < T_COV:
+            cover(im, d, ease(f / 6), f"ГОНКА · {y0r}-{y1r}", f"{y0r}-{y1r}", r["title"],
+                  "Кто выйдет на первое место?")
+        elif f < T_COV + T_EX:
+            explain(d, ease((f - T_COV) / 5),
+                    f"Нынешняя десятка лидеров и как менялись их места с {y0r} года. Данные: {r['source_full']}.")
+        elif f < T_COV + T_EX + T_RUN + T_HOLD:
+            m = f - T_COV - T_EX
+            ty = draw_header(d, r, kick=f"ГОНКА · {y0r}-{y1r}", sub=f"{r['source']} · нынешняя десятка")
+            board(im, d, y0r + min(1, m / T_RUN) * nyrs, ty + 10)
+        elif f < total - T_END:
+            m = f - T_COV - T_EX - T_RUN - T_HOLD
+            ty = draw_header(d, r, kick=f"ГОНКА · {y0r}-{y1r}", sub=f"{r['source']} · нынешняя десятка")
+            board(im, d, y1r, ty + 10)
+            first = (f"Лидер весь период: {leader1['name']}" if leader0 is leader1
+                     else f"Лидер в {y0r}: {leader0['name']}, в {y1r}: {leader1['name']}")
+            punch_box(d, ease(m / 10), [first, r["hook_text"]])
+        else:
+            draw_header(d, r, kick=f"ГОНКА · {y0r}-{y1r}")
+            end_card(im, d, ease((f - (total - T_END)) / 8))
+        chrome(im, d, f, total, src_line(r))
+        return im.convert("RGB")
+    return total, frame
+
+
 # ---------- подписи ----------
 def tags_for(r, lead):
     tags, seen = [], set()
@@ -1059,7 +1137,7 @@ def caption(r, n):
     if r["fmt"] == "bars":
         return caption_bars(r, n)
     q = (QUESTIONS.get(r["block"]) or Q_DEFAULT)[n % 3]
-    if r["fmt"] == "line":
+    if r["fmt"] in ("line", "race"):
         hook = r["hook_text"] + "."
         rows = f"{r['title']}, {r['year']} год и рост с {r['start']}:\n" + "\n".join(
             f"{i + 1}. {x['flag']} {x['name']}: {x['text']}" + (f", рост {x['growth']}" if x.get("growth") else "")
@@ -1093,7 +1171,7 @@ def tracks():
 def render(r, out, n, theme=None):
     set_theme(theme or ("dark" if n % 5 in (1, 3) else "light"))  # bone и oxblood примерно 3:2
     total, frame = {"bars": make_frames, "line": make_frames_line, "donut": make_frames_donut,
-                    "compare": make_frames_compare}[r.get("fmt", "bars")](r)
+                    "compare": make_frames_compare, "race": make_frames_race}[r.get("fmt", "bars")](r)
     dur = total / FPS
     music = tracks()[n % len(tracks())]
     log(f"Рендер {r['id']}: {dur:.1f} с, тема {'dark' if C['bone'] == DARK['bone'] else 'light'}, музыка {os.path.basename(music)}")
