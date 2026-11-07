@@ -1,30 +1,31 @@
-instagram: bil_country_jp (billionaires, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/cbade9393626/bank/cards_markets/bil_country_jp.jpg
+instagram: line_economy_ny_gdp_mktp_cd (economy, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/563eb0f820e8/bank/covers/line_economy_ny_gdp_mktp_cd.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/563eb0f820e8/bank/cards/line_economy_ny_gdp_mktp_cd.jpg
 ---
-№1: Tadashi Yanai с семьёй, $67,3 млрд.
+Китай: экономика выросла в 8,4 раза с 2005 года.
 
-Самые богатые люди Японии, 2026 год, данные Forbes. Разрыв первого места со вторым (Masayoshi Son): в 1,5 раза. Учтены на 6 ноября 2026.
+Как росли крупнейшие экономики мира, ВВП, 2005-2025. Самый быстрый рост: Китай, в 8,4 раза, до $19,5 трлн.
 
-Топ-10:
-1. 🇯🇵 Tadashi Yanai с семьёй: $67,3 млрд
-2. 🇯🇵 Masayoshi Son: $44,9 млрд
-3. 🇯🇵 Takemitsu Takizaki: $21,1 млрд
-4. 🇯🇵 Yasumitsu Shigeta: $5,9 млрд
-5. 🇯🇵 Masahiro Noda: $4,7 млрд
-6. 🇯🇵 Kagemasa Kozuki: $4,3 млрд
-7. 🇯🇵 Masahiro Miki: $4,2 млрд
-8. 🇯🇵 Takao Yasuda: $4,2 млрд
-9. 🇯🇵 Takahisa Takahara: $4 млрд
-10. 🇯🇵 Yuji Otsuka: $3,6 млрд
+Значения в 2025 году и изменение с 2005:
+1. 🇺🇸 США: $30,8 трлн, в 2,4 раза
+2. 🇨🇳 Китай: $19,5 трлн, в 8,4 раза
+3. 🇩🇪 Германия: $5,1 трлн, в 1,7 раза
+4. 🇯🇵 Япония: $4,4 трлн, −9%
+5. 🇬🇧 Великобритания: $4 трлн, в 1,6 раза
+6. 🇮🇳 Индия: $4 трлн, в 4,8 раза
+7. 🇫🇷 Франция: $3,4 трлн, в 1,5 раза
+8. 🇷🇺 Россия: $2,6 трлн, в 3,4 раза
+9. 🇮🇹 Италия: $2,6 трлн, +37%
+10. 🇨🇦 Канада: $2,3 трлн, в 2 раза
 
-Кто удивил в этом списке?
+Кого не хватает в топе, по-вашему?
 
 Каждый день рынки, сделки инсайдеров из отчётов SEC и данные в Telegram @osnovafin, ссылка в профиле.
 
-Источник: Forbes Real-Time Billionaires. Не является инвестиционной рекомендацией.
+Источник: World Bank, World Development Indicators. Не является инвестиционной рекомендацией.
 
-#миллиардеры #forbes #богатство #бизнес #tadashiyanaiссемьёй #инвестиции #финансы #статистика #инфографика #цифры #рынки
+#экономика #мироваяэкономика #ввп #макроэкономика #китай #инвестиции #финансы #статистика #инфографика #цифры #рынки
 ---
-Instagram: одиночный пост с графиком
-Опубликовано: 18443336722196913. Осталось новых рейтингов: 224
-exit=0 2026-11-07T06:59:20Z
+Instagram: карусель
+Опубликовано: 18119437201797649. Осталось новых рейтингов: 223
+exit=0 2026-11-07T10:47:53Z
