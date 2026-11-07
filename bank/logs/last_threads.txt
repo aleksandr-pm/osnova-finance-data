@@ -1,21 +1,20 @@
-threads: share_exp_661 (agro, donut)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/293dd0d5070c/bank/covers/share_exp_661.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/293dd0d5070c/bank/cards/share_exp_661.jpg
+threads: mkt_sector_oil (companies, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/43ce54dd4cbb/bank/cards_markets/mkt_sector_oil.jpg
 ---
-Доли в мировом экспорте какао-бобов, 2024:
-1. 🇨🇮 Кот-д’Ивуар · 20,5%
-2. 🇪🇨 Эквадор · 16,0%
-3. 🇳🇬 Нигерия · 10,7%
-4. 🇬🇭 Гана · 7,3%
-5. 🇳🇱 Нидерланды · 7,0%
-6. 🇧🇪 Бельгия · 6,1%
-7. 🇨🇲 Камерун · 6,0%
-8. 🇵🇪 Перу · 4,1%
-9. 🇲🇾 Малайзия · 3,6%
-10. 🇺🇸 США · 3,4%
-Остальной мир: 39%.
+Крупнейшие нефтегазовые компании по капитализации, ноябрь 2026:
+1. 🇸🇦 Saudi Aramco · $1,7 трлн
+2. 🇺🇸 Exxon Mobil · $677 млрд
+3. 🇺🇸 Chevron · $417 млрд
+4. 🇬🇧 Shell · $281 млрд
+5. 🇨🇳 PetroChina · $242 млрд
+6. 🇫🇷 TotalEnergies · $194 млрд
+7. 🇺🇸 ConocoPhillips · $164 млрд
+8. 🇨🇳 CNOOC · $142 млрд
+9. 🇧🇷 Petrobras · $120 млрд
+10. 🇬🇧 BP · $115 млрд
+Lukoil (Россия) на 38-м месте.
 Больше в Telegram @osnovafin
 ---
-Threads: текстом
-Опубликовано: 18572876551079256. Осталось новых рейтингов: 210
-exit=0 2026-11-06T22:17:15Z
+Threads: с картинкой
+Опубликовано: 18110168585194609. Осталось новых рейтингов: 209
+exit=0 2026-11-07T05:25:18Z
