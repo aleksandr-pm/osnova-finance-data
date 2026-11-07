@@ -171,6 +171,9 @@ ICON = {}
 
 def set_theme(name):
     C.update(DARK if name == "dark" else LIGHT)
+    C["seg"] = (["#F2EFEA", "#E2B8A4", "#C08A80", "#A2646C", "#D3B9B6"] if name == "dark"
+                else ["#17171A", "#5C1A23", "#A9786A", "#6B6462", "#C9C1B6"])
+    C["rest"] = "#7E3A44" if name == "dark" else "#DDD7CE"
     ICON.update(ring=ring(48, C["graphite"]), tg_m=tg(60, C["bone"], C["graphite"]),
                 tg_cta=tg(72, C["bone"], C["graphite"]), tg_huge=tg(220, C["bone"], C["graphite"]))
     flag.cache_clear()
@@ -332,12 +335,18 @@ def load_rankings():
             continue
         with open(p, encoding="utf-8") as f:
             for r in json.load(f):
-                if r.get("type", "bars") != "bars" or len(r.get("top", [])) < 5:
+                t = r.get("type", "bars")
+                if t not in ("bars", "line", "donut"):
+                    continue
+                if t == "line" and len(r.get("series", [])) < 3:
+                    continue
+                if t != "line" and len(r.get("top", [])) < 5:
                     continue
                 if r["id"] in BAD_DATA or any(b in (r["id"] + r["title"]).lower() for b in BANNED):
                     continue
-                for x in r["top"]:
+                for x in r.get("top", []) + r.get("top10", []) + r.get("series", []) + r.get("series_all", []):
                     x["name"] = html.unescape(x["name"])
+                r["fmt"] = t
                 out.append(r)
     return out
 
@@ -365,32 +374,64 @@ def save_state(st):
 
 
 ORDER = ["companies", "billionaires", "economy", "companies", "agro", "billionaires", "cis", "companies", "money"]
+FORMATS = ["bars", "line", "bars", "compare", "bars", "donut"]  # чередование видов роликов
+
+
+def compare_k(r):
+    """Сколько следующих мест №1 перекрывает в одиночку (для ролика-сравнения)."""
+    if r.get("type", "bars") != "bars" or r["unit"] not in ("usd", "t", "num") or is_asc(r):
+        return 0
+    v = [x["value"] for x in r["top"]]
+    k, acc = 0, 0.0
+    for x in v[1:7]:
+        if acc + x >= v[0]:
+            break
+        acc += x
+        k += 1
+    return k
+
+
+def variants(rankings):
+    out = list(rankings)
+    for r in rankings:
+        if compare_k(r) >= 2:
+            out.append(dict(r, id="cmp_" + r["id"], fmt="compare"))
+    return out
 
 
 def pick(rankings, st):
-    """Ротация блоков: компании и миллиардеры чаще, макро и агро между ними.
-    Рейтинг не повторяется 90 дней."""
+    """Вид ролика по кругу (рейтинг, линии, рейтинг, сравнение, рейтинг, доли),
+    внутри вида ротация блоков. Тема не повторяется 90 дней, рейтинг и сравнение
+    по одним данным не ближе 14 дней."""
     now = dt.datetime.now(dt.timezone.utc)
-    cutoff = now - dt.timedelta(days=REPEAT_DAYS)
-    recent = {p["id"] for p in st["posted"] if dt.datetime.fromisoformat(p["at"]) > cutoff}
-    pool = [r for r in rankings if r["id"] not in recent]
+    recent, near = set(), set()
+    for p in st["posted"]:
+        at = dt.datetime.fromisoformat(p["at"])
+        if at > now - dt.timedelta(days=REPEAT_DAYS):
+            recent.add(p["id"])
+        if at > now - dt.timedelta(days=14):
+            near.add(p["id"].removeprefix("cmp_"))
+    allv = variants(rankings)
+    order = {r["id"]: i for i, r in enumerate(allv)}
+    pool = [r for r in allv if r["id"] not in recent and r["id"].removeprefix("cmp_") not in near]
     if not pool:
         return None
-    auto = [p for p in st["posted"] if p.get("block") != "manual"]
-    n = len(auto)
+    n = len([p for p in st["posted"] if p.get("block") != "manual"])
+    for j in range(len(FORMATS)):
+        fp = [r for r in pool if r["fmt"] == FORMATS[(n + j) % len(FORMATS)]]
+        if fp:
+            break
     for k in range(len(ORDER)):
-        want = ORDER[(n + k) % len(ORDER)]
-        cand = [r for r in pool if r["block"] == want]
+        cand = [r for r in fp if r["block"] == ORDER[(n + k) % len(ORDER)]]
         if cand:
             break
     else:
-        cand = pool
-    # внутри блока: сначала мировые рейтинги и крупные страны, порядок стабильный
+        cand = fp
     pri = {"mkt_world": 0, "mkt_sector": 1, "bil_ind": 1, "bil_country": 2, "mkt_country_cap": 2, "wdi": 0, "cis": 0}
 
     def score(r):
-        p = next((v for k, v in pri.items() if r["id"].startswith(k)), 3)
-        return (p, rankings.index(r))
+        b = r["id"].removeprefix("cmp_")
+        return (next((v for k, v in pri.items() if b.startswith(k)), 3), order[r["id"]])
     return min(cand, key=score)
 
 
@@ -413,7 +454,7 @@ def story(r):
     elif not asc and v[-1] > 0 and v[0] / v[-1] >= 1.3:
         stat = f"{times(v[0] / v[-1]).capitalize()} больше, чем у №{len(v)}"
     # пояснение метрики
-    i = r["id"]
+    i = r["id"].removeprefix("cmp_")
     if i.startswith("bil_"):
         what = f"Состояние по оценке Forbes в реальном времени, {r.get('note', '')}."
     elif "_rev" in i:
@@ -476,7 +517,7 @@ TAGS = {
 TAG_BASE = ["инвестиции", "финансы", "статистика", "рейтинг", "топ10", "рилс"]
 
 
-def caption(r, n):
+def caption_bars(r, n):
     s = story(r)
     top = r["top"]
     hook = f"{r['title']}: №1 {top[0]['name']}, {top[0]['text']}."
@@ -681,6 +722,369 @@ def make_frames(r):
     return total, frame
 
 
+# ---------- общие части новых форматов ----------
+def draw_header(d, r, kick=None, sub=None, title=None):
+    label(d, (LX, 362), kick or kicker(r), 24, C["smoke"])
+    title = title or r["title"]
+    f = F(50, 500)
+    lines = wrap(d, title, f, W - 2 * LX)
+    if len(lines) > 1:
+        f = F(42, 500)
+        lines = wrap(d, title, f, W - 2 * LX)[:2]
+    y = 396
+    for l in lines:
+        d.text((LX, y), l, font=f, fill=C["ink"])
+        y += int(f.size * 1.18)
+    d.text((LX, y + 6), sub or sub_line(r), font=F(28, 400), fill=C["smoke"])
+    return y + 50
+
+
+def cover(im, d, a, kick, big, text, tail=None):
+    label(d, (LX, 380), kick, 26, hexa(C["smoke"], a))
+    fs = 240
+    while d.textlength(big, font=F(fs, 600)) > W - 2 * LX:
+        fs -= 6
+    d.text((LX - 6, 430), big, font=F(fs, 600), fill=hexa(C["graphite"], a))
+    y = 430 + int(fs * 1.2)
+    for l in wrap(d, text, F(64, 600), W - 2 * LX)[:4]:
+        d.text((LX, y), l, font=F(64, 600), fill=hexa(C["ink"], a))
+        y += 78
+    if tail:
+        d.text((LX, y + 24), tail, font=F(40, 400), fill=hexa(C["smoke"], a))
+
+
+def explain(d, a, text):
+    d.rectangle([LX, 470, LX + 10, 480], fill=hexa(C["graphite"], a))
+    label(d, (LX + 26, 462), "ЧТО ЭТО ЗНАЧИТ", 26, hexa(C["smoke"], a))
+    y = 530
+    for l in wrap(d, text, F(54, 500), W - 2 * LX)[:6]:
+        d.text((LX, y), l, font=F(54, 500), fill=hexa(C["ink"], a))
+        y += 70
+
+
+def punch_box(d, a, lines, y=1166):
+    d.rectangle([LX, y, W - LX, y + 116], fill=hexa(C["graphite"], a))
+    for j, l in enumerate(lines[:2]):
+        fl = F(28, 400) if j == 0 else fit(d, l, 32, 600, W - 2 * LX - 52)
+        d.text((LX + 26, y + 18 + j * 44), l, font=fl, fill=hexa(C["bone"], a))
+
+
+def short(v, unit):
+    """Подпись оси и бегущие значения."""
+    if unit == "usd_pc":
+        return "$" + f"{v:,.0f}".replace(",", NB)
+    if unit == "pct":
+        return num1(v) + "%"
+    return fmt(v, unit)
+
+
+def src_line(r):
+    if r["block"] in ("companies", "billionaires"):
+        return f"Источник: {r['source_full']}, {r['note']}."
+    if r["fmt"] == "line":
+        return f"Источник: {r['source_full']}, {r['start']}-{r['year']}."
+    return f"Источник: {r['source_full']}, {r['year']} год."
+
+
+# ---------- линии: как менялись лидеры ----------
+def make_frames_line(r):
+    ser = r["series"][:5]
+    allr = r.get("series_all", ser)
+    unit = r["unit"]
+    hl = next((x for x in ser if x.get("hl")), ser[0])
+    y0r, y1r = r["start"], r["year"]
+    vmax = max(v for x in ser for _, v in x["points"]) * 1.08
+    T_D, T_TB = int(22 * FPS), int(8.5 * FPS)
+    total = T_COV + T_EX + T_D + T_TB + T_END
+    cx0, cx1, cy0, cy1 = LX + 110, W - LX - 250, 640, 1180
+    order = sorted(range(len(ser)), key=lambda i: -ser[i]["value"])
+    col = {i: (C["graphite"] if ser[i] is hl else C["seg"][1 + (k % 4)]) for k, i in enumerate(order)}
+
+    def X(yr):
+        return cx0 + (cx1 - cx0) * (yr - y0r) / max(1, y1r - y0r)
+
+    def Y(v):
+        return cy1 - (cy1 - cy0) * max(0, v) / vmax
+
+    def upto(pts, t):
+        out = [(X(a), Y(b)) for a, b in pts if a <= t]
+        nxt = next(((a, b) for a, b in pts if a > t), None)
+        if out and nxt:
+            a0, b0 = next((a, b) for a, b in reversed(pts) if a <= t)
+            u = (t - a0) / (nxt[0] - a0)
+            v = b0 + (nxt[1] - b0) * u
+            out.append((X(t), Y(v)))
+            return out, v
+        return out, (pts[-1][1] if out else None)
+
+    def frame(f):
+        im = Image.new("RGBA", (W, H), C["bone"])
+        d = ImageDraw.Draw(im)
+        if f < T_COV:
+            cover(im, d, ease(f / 6), f"{y0r}-{y1r} · {kicker(r).split(' · ')[1]}",
+                  f"×{num1(hl['ratio'])}", r["hook_text"])
+        elif f < T_COV + T_EX:
+            explain(d, ease((f - T_COV) / 5), f"{r['title']}, {y0r}-{y1r}. Данные: {r['source_full']}.")
+        elif f < T_COV + T_EX + T_D:
+            m = f - T_COV - T_EX
+            draw_header(d, r, sub=f"{r['source']} · {y0r}-{y1r}")
+            p = ease(min(1, m / (T_D - 2 * FPS)) ** 0.9) if m < T_D - 2 * FPS else 1
+            t = y0r + (y1r - y0r) * p
+            for k in range(5):  # сетка
+                v = vmax / 1.08 * k / 4
+                y = Y(v)
+                d.line([cx0, y, cx1, y], fill=C["line"], width=2)
+                d.text((cx0 - 14, y), short(v, unit) if k else "0", font=F(22, 400), fill=C["smoke"], anchor="rm")
+            for yr in (y0r, (y0r + y1r) // 2, y1r):
+                d.text((X(yr), cy1 + 16), str(yr), font=F(24, 500), fill=C["smoke"], anchor="mt")
+            d.text((cx1, cy0 - 70), str(int(t)), font=F(64, 600), fill=hexa(C["smoke"], 0.6), anchor="rt")
+            heads = []
+            for i in sorted(range(len(ser)), key=lambda i: ser[i] is hl):
+                pts, v = upto(ser[i]["points"], t)
+                if len(pts) >= 2:
+                    d.line(pts, fill=col[i], width=8 if ser[i] is hl else 5, joint="curve")
+                if pts:
+                    hx, hy = pts[-1]
+                    d.ellipse([hx - 8, hy - 8, hx + 8, hy + 8], fill=col[i])
+                    heads.append([hy, i, v, hx])
+            heads.sort()
+            for j in range(1, len(heads)):  # подписи не наезжают друг на друга
+                heads[j][0] = max(heads[j][0], heads[j - 1][0] + 58)
+            for ly, i, v, hx in heads:
+                lx = min(hx + 18, cx1 + 18)
+                im.alpha_composite(flag(ser[i]["iso2"], 24), (int(lx), int(ly - 26)))
+                d.text((lx + 42, ly - 14), ser[i]["name"], font=fit(d, ser[i]["name"], 22, 500, W - lx - 50, 14),
+                       fill=C["ink"], anchor="lm")
+                d.text((lx, ly + 14), short(v, unit), font=F(24, 600), fill=col[i] if ser[i] is hl else C["ink"], anchor="lm")
+        elif f < T_COV + T_EX + T_D + T_TB:
+            m = f - T_COV - T_EX - T_D
+            yy = draw_header(d, r, sub=f"{y1r} год и рост с {y0r}") + 10
+            step = min(64, (1140 - yy) // len(allr))
+            for i, x in enumerate(allr):
+                al = ease((m - i * 2) / 10)
+                y = yy + i * step
+                d.text((LX, y + 20), str(i + 1), font=F(28, 600), fill=hexa(C["smoke"], al), anchor="lm")
+                im.alpha_composite(fade(flag(x["iso2"], 32), al), (LX + 44, y + 2))
+                d.text((LX + 104, y + 20), x["name"], font=fit(d, x["name"], 28, 500, 380, 14), fill=hexa(C["ink"], al), anchor="lm")
+                d.text((LX + 520, y + 20), x["text"], font=F(28, 600), fill=hexa(C["ink"], al), anchor="lm")
+                g = x.get("growth") or (f"−{(1 - x['ratio']) * 100:.0f}%" if x.get("ratio", 1) < 1 else "")
+                d.text((W - LX, y + 20), g, font=F(26, 600 if x.get("hl") else 400),
+                       fill=hexa(C["graphite"] if x.get("hl") else C["smoke"], al), anchor="rm")
+            punch_box(d, ease((m - 40) / 10), ["Главное:", r["hook_text"]])
+        else:
+            draw_header(d, r)
+            end_card(im, d, ease((f - (total - T_END)) / 8))
+        chrome(im, d, f, total, src_line(r))
+        return im.convert("RGB")
+    return total, frame
+
+
+# ---------- доли: круговая диаграмма ----------
+def make_frames_donut(r):
+    segs = r["top"][:5]
+    t10 = r.get("top10", r["top"])
+    shares = [x["share"] for x in segs] + [r["rest"]]
+    T_S, T_TB = int(3.2 * FPS), int(7 * FPS)
+    total = T_COV + T_EX + len(segs) * T_S + int(2 * FPS) + T_TB + T_END
+    R, RI, CXd, CYd = 270, 158, W // 2, 790
+    SS = 2
+
+    def donut(prog):
+        """prog: сколько сегментов показано (дробное)."""
+        S = (2 * R + 8) * SS
+        img = Image.new("RGBA", (S, S), (0, 0, 0, 0))
+        dd = ImageDraw.Draw(img)
+        a0 = -90.0
+        box = [4 * SS, 4 * SS, S - 4 * SS, S - 4 * SS]
+        for i, sh in enumerate(shares):
+            u = max(0, min(1, prog - i))
+            if u <= 0:
+                break
+            sweep = 360 * sh / 100 * ease(u)
+            colr = C["rest"] if i == len(segs) else C["seg"][i % 5]
+            dd.pieslice(box, a0, a0 + sweep, fill=colr)
+            a0 += 360 * sh / 100
+        c = S / 2
+        dd.ellipse([c - RI * SS, c - RI * SS, c + RI * SS, c + RI * SS], fill=C["bone"])
+        return img.resize((S // SS, S // SS), Image.LANCZOS)
+
+    def legend(d, im, upto, y0):
+        for i in range(upto):
+            x = segs[i]
+            y = y0 + i * 38
+            d.rectangle([LX, y + 8, LX + 22, y + 30], fill=C["seg"][i % 5])
+            im.alpha_composite(flag(x["iso2"], 24), (LX + 36, y + 6))
+            d.text((LX + 82, y + 19), x["name"], font=F(26, 500), fill=C["ink"], anchor="lm")
+            d.text((W - LX, y + 19), x["text"], font=F(26, 600), fill=C["ink"], anchor="rm")
+
+    def frame(f):
+        im = Image.new("RGBA", (W, H), C["bone"])
+        d = ImageDraw.Draw(im)
+        if f < T_COV:
+            cover(im, d, ease(f / 6), kicker(r).replace("ТОП-", "ДОЛИ · ТОП-"), f"{num1(r['top_sum'])}%", r["hook_text"],
+                  "Чья доля больше? Смотрите до конца")
+        elif f < T_COV + T_EX:
+            explain(d, ease((f - T_COV) / 5),
+                    f"Доля страны в мировом экспорте по стоимости, {r['year']} год. Данные: {r['source_full']}.")
+        elif f < total - T_TB - T_END:
+            m = f - T_COV - T_EX
+            draw_header(d, r)
+            k = min(len(segs), m // T_S)
+            u = (m - k * T_S) / (0.6 * T_S)
+            prog = k + min(1, u) if k < len(segs) else len(segs) + min(1, (m - len(segs) * T_S) / FPS)
+            dn = donut(prog)
+            im.alpha_composite(dn, (CXd - dn.width // 2, CYd - dn.height // 2))
+            if k < len(segs):
+                x = segs[k]
+                a = ease(u)
+                im.alpha_composite(fade(flag(x["iso2"], 60), a), (CXd - 42, CYd - 110))
+                d.text((CXd, CYd + 10), x["text"], font=F(76, 600), fill=hexa(C["graphite"], a), anchor="mm")
+                d.text((CXd, CYd + 72), x["name"], font=fit(d, x["name"], 30, 500, 2 * RI - 40), fill=hexa(C["ink"], a), anchor="mm")
+            else:
+                d.text((CXd, CYd - 20), f"{num1(r['rest'])}%", font=F(76, 600), fill=C["graphite"], anchor="mm")
+                d.text((CXd, CYd + 44), "все остальные", font=F(30, 500), fill=C["ink"], anchor="mm")
+                d.text((CXd, CYd + 82), f"{r['countries'] - len(segs)} стран", font=F(30, 400), fill=C["smoke"], anchor="mm")
+            legend(d, im, min(k, len(segs)), CYd + R + 30)
+        elif f < total - T_END:
+            m = f - (total - T_TB - T_END)
+            yy = draw_header(d, r, sub=f"Топ-{len(t10)} экспортёров · {r['year']} год") + 10
+            mx = t10[0]["share"]
+            for i, x in enumerate(t10):
+                al = ease((m - i * 2) / 10)
+                y = yy + i * 62
+                d.text((LX, y + 22), str(i + 1), font=F(28, 600), fill=hexa(C["smoke"], al), anchor="lm")
+                im.alpha_composite(fade(flag(x["iso2"], 32), al), (LX + 44, y + 6))
+                d.text((LX + 104, y + 2), x["name"], font=F(24, 500), fill=hexa(C["ink"], al), anchor="lt")
+                bw = int(520 * x["share"] / mx * ease((m - i * 2) / 18))
+                d.rectangle([LX + 104, y + 34, LX + 104 + max(bw, 3), y + 52], fill=hexa(C["graphite"] if i == 0 else C["bar"], al))
+                d.text((LX + 104 + max(bw, 3) + 14, y + 43), x["text"], font=F(24, 600), fill=hexa(C["ink"], al), anchor="lm")
+            punch_box(d, ease((m - 40) / 10), [f"Топ-5 вместе: {num1(r['top_sum'])}%",
+                                               f"Остальные {r['countries'] - len(segs)} стран: {num1(r['rest'])}%"])
+        else:
+            draw_header(d, r)
+            end_card(im, d, ease((f - (total - T_END)) / 8))
+        chrome(im, d, f, total, src_line(r))
+        return im.convert("RGB")
+    return total, frame
+
+
+# ---------- сравнение: №1 против следующих вместе ----------
+def make_frames_compare(r):
+    top = r["top"]
+    k = compare_k(r)
+    others = top[1:1 + k]
+    v0 = top[0]["value"]
+    acc = sum(x["value"] for x in others)
+    unit = r["unit"]
+    kind = kind_of(r)
+    rng = f"№2–№{k + 1}"
+    T_B = int((1.5 + 2.2 * k) * FPS)
+    T_R = int(6.5 * FPS)
+    total = T_COV + T_EX + T_B + T_R + T_END
+    BW = W - 2 * LX
+
+    def frame(f):
+        im = Image.new("RGBA", (W, H), C["bone"])
+        d = ImageDraw.Draw(im)
+        if f < T_COV:
+            cover(im, d, ease(f / 6), "СРАВНЕНИЕ · " + kicker(r).split(" · ")[1], top[0]["text"],
+                  f"{r['title']}: №1 против {k} следующих вместе", "Кто больше?")
+        elif f < T_COV + T_EX:
+            explain(d, ease((f - T_COV) / 5), story(r)["what"])
+        elif f < total - T_END:
+            m = f - T_COV - T_EX
+            y = draw_header(d, r, kick="СРАВНЕНИЕ · " + kicker(r).split(" · ")[1]) + 30
+            a = ease(m / 10)
+            tw = 110 if kind == "company" else 52
+            im.alpha_composite(fade(tile(kind, top[0]["name"], top[0]["iso2"], tw, 44), a), (LX, y))
+            d.text((LX + tw + 16, y + 22), f"№1 {top[0]['name']}", font=fit(d, f"№1 {top[0]['name']}", 34, 600, 560),
+                   fill=hexa(C["ink"], a), anchor="lm")
+            d.text((W - LX, y + 22), top[0]["text"], font=F(34, 600), fill=hexa(C["ink"], a), anchor="rm")
+            bw = int(BW * ease(m / 30))
+            d.rectangle([LX, y + 60, LX + max(bw, 3), y + 140], fill=C["graphite"])
+            y2 = y + 190
+            shown = min(k, max(0, (m - int(1.5 * FPS)) // int(2.2 * FPS) + 1)) if m >= int(1.5 * FPS) else 0
+            part = (m - int(1.5 * FPS) - (shown - 1) * int(2.2 * FPS)) / 14 if shown else 0
+            cur = sum(x["value"] for x in others[:max(0, shown - 1)]) + (others[shown - 1]["value"] * ease(part) if shown else 0)
+            d.text((LX, y2 + 22), f"{rng} вместе", font=F(34, 600), fill=C["ink"], anchor="lm")
+            d.text((W - LX, y2 + 22), short(cur, unit) if shown else "", font=F(34, 600), fill=C["ink"], anchor="rm")
+            x0 = LX
+            for i in range(shown):
+                w_ = BW * others[i]["value"] / v0 * (ease(part) if i == shown - 1 else 1)
+                d.rectangle([int(x0), y2 + 60, int(x0 + w_) - 3, y2 + 140], fill=C["seg"][1 + i % 4])
+                x0 += w_
+            d.rectangle([LX, y2 + 60, W - LX, y2 + 140], outline=C["line"], width=2)
+            ly = y2 + 180
+            if m < T_B:
+                for i in range(shown):
+                    x = others[i]
+                    yy = ly + i * 52
+                    d.rectangle([LX, yy + 10, LX + 22, yy + 32], fill=C["seg"][1 + i % 4])
+                    im.alpha_composite(tile(kind, x["name"], x["iso2"], 80 if kind == "company" else 40, 30), (LX + 36, yy + 6))
+                    nx = LX + (130 if kind == "company" else 90)
+                    d.text((nx, yy + 21), f"№{i + 2} {x['name']}", font=fit(d, f"№{i + 2} {x['name']}", 28, 500, W - LX - nx - 200),
+                           fill=C["ink"], anchor="lm")
+                    d.text((W - LX, yy + 21), x["text"], font=F(28, 600), fill=C["ink"], anchor="rm")
+            else:
+                b = ease((m - T_B) / 10)
+                diff = v0 - acc
+                d.text((LX, ly + 10), f"{top[0]['name']} больше,", font=fit(d, f"{top[0]['name']} больше,", 64, 600, BW),
+                       fill=hexa(C["graphite"], b))
+                d.text((LX, ly + 90), f"чем {rng} вместе", font=F(64, 600), fill=hexa(C["graphite"], b))
+                d.text((LX, ly + 190), f"Разница: {short(diff, unit)}", font=F(44, 500), fill=hexa(C["ink"], b))
+                d.text((LX, ly + 250), f"{rng} вместе: {short(acc, unit)}", font=F(34, 400), fill=hexa(C["smoke"], b))
+        else:
+            draw_header(d, r)
+            end_card(im, d, ease((f - (total - T_END)) / 8))
+        chrome(im, d, f, total, src_line(r))
+        return im.convert("RGB")
+    return total, frame
+
+
+# ---------- подписи ----------
+def tags_for(r, lead):
+    tags, seen = [], set()
+    for t in TAGS.get(r["block"], []) + [lead] + TAG_BASE:
+        h = tag(t)
+        if len(h) > 2 and h not in seen:
+            seen.add(h)
+            tags.append(h)
+    return " ".join(tags[:12])
+
+
+CTA_TEXT = "Каждый день рынки, сделки инсайдеров из отчётов SEC и данные в Telegram @osnovafin, ссылка в профиле."
+
+
+def caption(r, n):
+    if r["fmt"] == "bars":
+        return caption_bars(r, n)
+    q = (QUESTIONS.get(r["block"]) or Q_DEFAULT)[n % 3]
+    if r["fmt"] == "line":
+        hook = r["hook_text"] + "."
+        rows = f"{r['title']}, {r['year']} год и рост с {r['start']}:\n" + "\n".join(
+            f"{i + 1}. {x['flag']} {x['name']}: {x['text']}" + (f", рост {x['growth']}" if x.get("growth") else "")
+            for i, x in enumerate(r.get("series_all", r["series"])))
+        lead = next((x for x in r["series"] if x.get("hl")), r["series"][0])["name"]
+    elif r["fmt"] == "donut":
+        hook = r["hook_text"] + f". На остальные {r['countries'] - 5} стран приходится {num1(r['rest'])}%."
+        rows = "Доли лидеров:\n" + "\n".join(f"{x['rank']}. {x['flag']} {x['name']}: {x['text']}" for x in r.get("top10", r["top"]))
+        lead = r["top"][0]["name"]
+    else:
+        k = compare_k(r)
+        top = r["top"]
+        acc = sum(x["value"] for x in top[1:1 + k])
+        hook = (f"{r['title']}: №1 {top[0]['name']}, {top[0]['text']}. Это больше, чем №2–№{k + 1} вместе "
+                f"({short(acc, r['unit'])}), разница {short(top[0]['value'] - acc, r['unit'])}.")
+        rows = "Топ-10:\n" + "\n".join(f"{x['rank']}. {x['flag']} {x['name']}: {x['text']}" for x in top)
+        lead = top[0]["name"]
+        q = "Кто, по-вашему, догонит №1?"
+    src = src_line(r).replace("Источник: ", "Источник: ", 1)
+    return "\n\n".join([hook, rows, q, CTA_TEXT, src + " Не индивидуальная инвестиционная рекомендация.",
+                        tags_for(r, lead)]).replace(NB, " ")
+
+
+
+
 # ---------- видео ----------
 def tracks():
     return sorted(glob.glob(os.path.join(ASSETS, "music", "*.mp3")))
@@ -688,7 +1092,8 @@ def tracks():
 
 def render(r, out, n, theme=None):
     set_theme(theme or ("dark" if n % 5 in (1, 3) else "light"))  # bone и oxblood примерно 3:2
-    total, frame = make_frames(r)
+    total, frame = {"bars": make_frames, "line": make_frames_line, "donut": make_frames_donut,
+                    "compare": make_frames_compare}[r.get("fmt", "bars")](r)
     dur = total / FPS
     music = tracks()[n % len(tracks())]
     log(f"Рендер {r['id']}: {dur:.1f} с, тема {'dark' if C['bone'] == DARK['bone'] else 'light'}, музыка {os.path.basename(music)}")
@@ -748,21 +1153,21 @@ def main():
     out = args[args.index("--out") + 1] if "--out" in args else os.path.join(ROOT, "reel.mp4")
     rankings = load_rankings()
     st = load_state()
-    r = next((x for x in rankings if x["id"] == want), None) if want else pick(rankings, st)
+    r = next((x for x in variants(rankings) if x["id"] == want), None) if want else pick(rankings, st)
     if not r:
         log("Нет рейтинга для ролика: " + (f"{want} не найден" if want else "все публиковались за 90 дней"))
         return 1
     n = len([p for p in st["posted"] if p.get("block") != "manual"])
     music = render(r, out, n, theme)
     cap = caption(r, n)
-    log(f"reels: {r['id']} ({r['block']})\n---\n{cap}\n---")
+    log(f"reels: {r['id']} ({r['block']}, {r['fmt']})\n---\n{cap}\n---")
     token = os.environ.get("IG_TOKEN", "")
     if dry or not token:
         log("Публикации нет: " + ("dry-run" if dry else "токен не задан"))
         save_state(st) if not os.path.exists(STATE) else None
         return 0
     pid = publish_reel(token, out, cap)
-    st["posted"].append({"id": r["id"], "block": r["block"], "at": dt.datetime.now(dt.timezone.utc).isoformat(),
+    st["posted"].append({"id": r["id"], "block": r["block"], "fmt": r["fmt"], "at": dt.datetime.now(dt.timezone.utc).isoformat(),
                          "post": pid, "music": music})
     save_state(st)
     log(f"Опубликовано: {pid}")
