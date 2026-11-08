@@ -1195,7 +1195,29 @@ def main():
         log("Публикации нет: " + ("dry-run" if dry else "токен не задан"))
         save_state(st) if not os.path.exists(STATE) else None
         return 0
-    pid = publish_reel(token, out, cap)
+    # 08.11: Instagram дважды отклонил один и тот же ролик (ProcessingFailedError), очередь встала.
+    # Теперь: одна повторная загрузка, затем ролик помечается failed и публикуется следующий рейтинг.
+    pid = None
+    for attempt in range(3):
+        try:
+            pid = publish_reel(token, out, cap)
+            break
+        except RuntimeError as e:
+            log(f"Ошибка публикации {r['id']} (попытка {attempt + 1}): {e}")
+            if want or attempt == 2:
+                raise
+            if attempt == 0:
+                time.sleep(30)
+                continue
+            st["posted"].append({"id": r["id"], "block": r["block"], "fmt": r["fmt"], "post": "failed",
+                                 "at": dt.datetime.now(dt.timezone.utc).isoformat()})
+            save_state(st)
+            r = pick(rankings, st)
+            if not r:
+                raise
+            music = render(r, out, n, theme)
+            cap = caption(r, n)
+            log(f"reels (замена): {r['id']} ({r['block']}, {r['fmt']})")
     st["posted"].append({"id": r["id"], "block": r["block"], "fmt": r["fmt"], "at": dt.datetime.now(dt.timezone.utc).isoformat(),
                          "post": pid, "music": music})
     save_state(st)
