@@ -1,4 +1,4 @@
-"""Автопостинг разборов компаний в Threads @osnova_report: 2 поста в день. v1
+"""Автопостинг разборов компаний в Threads @osnova_report: 2 поста в день. v2 (08.11: годы по данным компании, пустой или почти пустой банк = ошибка запуска, GitHub присылает письмо)
 Берёт следующий неопубликованный пост из companies/posts.json, рисует карточку, кладёт её в репозиторий
 и публикует картинку с текстом. Состояние: companies/state.json. Секрет: THREADS_TOKEN_REPORT."""
 import json, os, subprocess, sys, time
@@ -24,7 +24,8 @@ def card_for(p):
         a, b, an, bn, sub = d["total_debt"], d["equity"], "Долг", "Собственный капитал", "Долг и собственный капитал"
     else:
         a, b, an, bn, sub = d["revenue"], d["net_income"], "Выручка", "Чистая прибыль", "Выручка и чистая прибыль"
-    return dict(hook=[tuple(x) for x in p["hook"]], sub=sub, years=Y, a=[a[y] for y in Y], b=[b[y] for y in Y],
+    ys = sorted(set(a) & set(b))[-4:]  # у NVIDIA, Costco, Nike финансовый год не совпадает с календарным
+    return dict(hook=[tuple(x) for x in p["hook"]], sub=sub, years=ys, a=[a[y] for y in ys], b=[b[y] for y in ys],
                 a_name=an, b_name=bn, cur=d["currency"] or "AED", source="Yahoo Finance, отчётность компании")
 
 def main():
@@ -32,7 +33,7 @@ def main():
     st = json.load(open("companies/state.json")) if os.path.exists("companies/state.json") else {"done": []}
     todo = [p for p in posts if p["id"] not in st["done"]]
     if not todo:
-        print("банк постов пуст"); return
+        sys.exit("банк постов пуст: нужно пополнить companies/posts.json")
     p = todo[0]
     os.makedirs("companies/cards", exist_ok=True)
     path = f"companies/cards/{p['id']}.jpg"
@@ -59,6 +60,8 @@ def main():
     subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=True)
     subprocess.run(["git", "push"], check=True)
     print("опубликовано:", r["id"])
+    if len(todo) - 1 < 3:
+        sys.exit(f"в банке осталось {len(todo) - 1} поста: пополнить companies/posts.json")
 
 if __name__ == "__main__":
     main()
