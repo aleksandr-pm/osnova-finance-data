@@ -24,7 +24,7 @@ def card_for(p):
         a, b, an, bn, sub = d["total_debt"], d["equity"], "Долг", "Собственный капитал", "Долг и собственный капитал"
     else:
         a, b, an, bn, sub = d["revenue"], d["net_income"], "Выручка", "Чистая прибыль", "Выручка и чистая прибыль"
-    ys = sorted(set(a) & set(b))[-4:]  # у NVIDIA, Costco, Nike финансовый год не совпадает с календарным
+    ys = p.get("years") or sorted(set(a) & set(b))[-4:]  # у NVIDIA, Costco, Nike финансовый год не совпадает с календарным
     return dict(hook=[tuple(x) for x in p["hook"]], sub=sub, years=ys, a=[a[y] for y in ys], b=[b[y] for y in ys],
                 a_name=an, b_name=bn, cur=d["currency"] or "AED", source="Yahoo Finance, отчётность компании")
 
