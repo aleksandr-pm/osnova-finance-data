@@ -1,20 +1,21 @@
-threads: mkt_country_cap_tr (companies, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/cc420e1cdc5e/bank/cards_markets/mkt_country_cap_tr.jpg
+threads: line_agro_prod_661 (agro, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/3530584a6b4f/bank/covers/line_agro_prod_661.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/3530584a6b4f/bank/cards/line_agro_prod_661.jpg
 ---
-Самые дорогие компании Турции, ноябрь 2026:
-1. 🇹🇷 Aselsan · $30,5 млрд
-2. 🇹🇷 QNB Finansbank · $17,5 млрд
-3. 🇹🇷 Türkiye Petrol Rafinerileri · $13,1 млрд
-4. 🇹🇷 GarantiBank · $12,2 млрд
-5. 🇹🇷 Koç Holding · $10,5 млрд
-6. 🇹🇷 ENKA · $9,6 млрд
-7. 🇹🇷 BİM Birleşik Mağazalar · $8,9 млрд
-8. 🇹🇷 Turkish Airlines · $8,3 млрд
-9. 🇹🇷 Akbank · $7,2 млрд
-10. 🇹🇷 Türkiye Is Bankasi · $6,7 млрд
-№1: Aselsan, $30,5 млрд.
+Производство какао-бобов: крупнейшие производители, 2000-2024:
+1. 🇨🇮 Кот-д’Ивуар · +35%
+2. 🇮🇩 Индонезия · в 1,5 раза
+3. 🇬🇭 Гана · +21%
+4. 🇪🇨 Эквадор · в 6,2 раза
+5. 🇳🇬 Нигерия · +4%
+6. 🇨🇲 Камерун · в 2,6 раза
+7. 🇧🇷 Бразилия · в 1,5 раза
+8. 🇵🇪 Перу · в 6,3 раза
+9. 🇸🇱 Сьерра-Леоне · в 7,8 раза
+10. 🇨🇴 Колумбия · в 1,8 раза
+Сьерра-Леоне: производство какао-бобов выросло в 7,8 раза с 2000 года.
 Больше в Telegram @osnovafin
 ---
-Threads: с картинкой
-Опубликовано: 18099115010447967. Осталось новых рейтингов: 197
-exit=0 2026-11-08T06:25:22Z
+Threads: текстом
+Опубликовано: 18136872748663593. Осталось новых рейтингов: 196
+exit=0 2026-11-08T07:39:28Z
