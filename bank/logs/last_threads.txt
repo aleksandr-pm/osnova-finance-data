@@ -1,21 +1,20 @@
-threads: line_agro_prod_56 (agro, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/d55c041596d0/bank/covers/line_agro_prod_56.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/d55c041596d0/bank/cards/line_agro_prod_56.jpg
+threads: mkt_sector_beverages (companies, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/6ddf8c25e21c/bank/cards_markets/mkt_sector_beverages.jpg
 ---
-Производство кукурузы: крупнейшие производители, 2000-2024:
-1. 🇺🇸 США · +50%
-2. 🇨🇳 Китай · в 2,8 раза
-3. 🇧🇷 Бразилия · в 3,6 раза
-4. 🇦🇷 Аргентина · в 3,4 раза
-5. 🇮🇳 Индия · в 3,3 раза
-6. 🇺🇦 Украина · в 7 раз
-7. 🇲🇽 Мексика · +39%
-8. 🇨🇦 Канада · в 2,2 раза
-9. 🇮🇩 Индонезия · в 1,6 раза
-10. 🇫🇷 Франция · −8%
-Украина: производство кукурузы выросло в 7 раз с 2000 года.
+Крупнейшие производители напитков по капитализации, ноябрь 2026:
+1. 🇺🇸 Coca-Cola · $412 млрд
+2. 🇨🇳 Kweichow Moutai · $272 млрд
+3. 🇺🇸 Pepsico · $193 млрд
+4. 🇧🇪 Anheuser-Busch Inbev · $165 млрд
+5. 🇺🇸 Starbucks · $120 млрд
+6. 🇺🇸 Monster Beverage · $89,6 млрд
+7. 🇨🇳 Nongfu Spring · $64,8 млрд
+8. 🇬🇧 Diageo · $55,5 млрд
+9. 🇳🇱 Heineken · $52,4 млрд
+10. 🇬🇧 Coca-Cola European Partners · $51 млрд
+№1: Coca-Cola, $412 млрд.
 Больше в Telegram @osnovafin
 ---
-Threads: с картинкой
-Опубликовано: 18064509221562723. Осталось новых рейтингов: 194
-exit=0 2026-11-08T11:16:04Z
+Threads: текстом
+Опубликовано: 17865538857696711. Осталось новых рейтингов: 193
+exit=0 2026-11-08T12:45:44Z
