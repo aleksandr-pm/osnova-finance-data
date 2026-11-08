@@ -24,16 +24,5 @@ reels: bil_ind_technology (billionaires, bars)
 
 #миллиардеры #forbes #богатство #бизнес #успех #илонмаск #инвестиции #финансы #статистика #рейтинг #топ10 #рилс
 ---
-Traceback (most recent call last):
-  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1207, in <module>
-    sys.exit(main())
-             ^^^^^^
-  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1198, in main
-    pid = publish_reel(token, out, cap)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1142, in publish_reel
-    check(up, "Instagram загрузка видео")
-  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/publish.py", line 248, in check
-    raise RuntimeError(f"{what}: HTTP {resp.status_code} {json.dumps(err, ensure_ascii=False)[:400]}")
-RuntimeError: Instagram загрузка видео: HTTP 400 {"debug_info": {"retriable": false, "type": "ProcessingFailedError", "message": "Request processing failed"}}
-exit=1 2026-11-08T16:52:48Z
+Опубликовано: 18104672513048496
+exit=0 2026-11-08T19:26:22Z
