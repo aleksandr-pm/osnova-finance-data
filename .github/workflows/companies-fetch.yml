@@ -16,6 +16,10 @@ jobs:
         with: { python-version: "3.12" }
       - run: pip install yfinance
       - run: mkdir -p companies && python scripts/fetch_companies.py ${{ github.event.inputs.tickers }} 2>&1 | tee companies/fetch_log.txt
+      - name: Сверка с SEC (компании США)
+        run: |
+          US=$(for t in ${{ github.event.inputs.tickers }}; do case $t in *.*) ;; *) echo -n "$t ";; esac; done)
+          [ -n "$US" ] && pip install requests >/dev/null && python scripts/check_sec.py $US 2>&1 | tee companies/sec_check.txt || true
       - run: |
           git config user.name "osnova-bot"; git config user.email "osnova-bot@users.noreply.github.com"
           git add companies; git commit -m "companies: data [skip ci]" || true
