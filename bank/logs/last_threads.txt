@@ -1,20 +1,21 @@
-threads: mkt_country_cap_jp (companies, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/68c5692bad98/bank/cards_markets/mkt_country_cap_jp.jpg
+threads: line_agro_prod_15 (agro, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/bbae806acc6c/bank/covers/line_agro_prod_15.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/bbae806acc6c/bank/cards/line_agro_prod_15.jpg
 ---
-Самые дорогие компании Японии, ноябрь 2026:
-1. 🇯🇵 Toyota · $255 млрд
-2. 🇯🇵 Mitsubishi UFJ Financial · $236 млрд
-3. 🇯🇵 Sony · $158 млрд
-4. 🇯🇵 Fast Retailing · $151 млрд
-5. 🇯🇵 Recruit · $149 млрд
-6. 🇯🇵 Sumitomo Mitsui Financial Group · $146 млрд
-7. 🇯🇵 Hitachi · $128 млрд
-8. 🇯🇵 Advantest · $128 млрд
-9. 🇯🇵 SoftBank Group · $128 млрд
-10. 🇯🇵 Tokyo Electron · $118 млрд
-№1: Toyota, $255 млрд.
+Производство пшеницы: крупнейшие производители, 2000-2024:
+1. 🇨🇳 Китай · 140 млн т, +41%
+2. 🇮🇳 Индия · 113 млн т, +48%
+3. 🇷🇺 Россия · 82,6 млн т, в 2,4 раза
+4. 🇺🇸 США · 53,7 млн т, −12%
+5. 🇨🇦 Канада · 35,9 млн т, +35%
+6. 🇦🇺 Австралия · 34,1 млн т, в 1,5 раза
+7. 🇵🇰 Пакистан · 31,8 млн т, в 1,5 раза
+8. 🇫🇷 Франция · 26,6 млн т, −29%
+9. 🇺🇦 Украина · 22,4 млн т, в 2,2 раза
+10. 🇹🇷 Турция · 20,8 млн т, −1%
+Россия: производство пшеницы выросло в 2,4 раза с 2000 года.
 Больше в Telegram @osnovafin
 ---
-Threads: текстом
-Опубликовано: 18126303557298964. Осталось новых рейтингов: 189
-exit=0 2026-11-08T18:40:06Z
+Threads: с картинкой
+Опубликовано: 18346728214261340. Осталось новых рейтингов: 188
+exit=0 2026-11-08T22:13:23Z
