@@ -934,10 +934,10 @@
   "card": "cards/wdi_ny_gns_ictr_zs_desc.png",
   "photo": {
    "source": "Pixabay",
-   "pixabay_id": 8650941,
+   "pixabay_id": 647400,
    "query": "city skyline night",
-   "page": "https://pixabay.com/photos/tokyo-japan-buildings-city-8650941/",
-   "author": "LoboStudioHamburg"
+   "page": "https://pixabay.com/photos/buildings-skyline-city-lights-647400/",
+   "author": "zephylwer0"
   },
   "cover": "covers/wdi_ny_gns_ictr_zs_desc.jpg"
  },
@@ -1070,10 +1070,10 @@
   "card": "cards/wdi_gc_tax_totl_gd_zs_desc.png",
   "photo": {
    "source": "Pixabay",
-   "pixabay_id": 647400,
+   "pixabay_id": 8650941,
    "query": "city skyline night",
-   "page": "https://pixabay.com/photos/buildings-skyline-city-lights-647400/",
-   "author": "zephylwer0"
+   "page": "https://pixabay.com/photos/tokyo-japan-buildings-city-8650941/",
+   "author": "LoboStudioHamburg"
   },
   "cover": "covers/wdi_gc_tax_totl_gd_zs_desc.jpg"
  },
@@ -37134,10 +37134,10 @@
   "card": "cards/fao_exp_56.png",
   "photo": {
    "source": "Pixabay",
-   "pixabay_id": 9064747,
+   "pixabay_id": 8147823,
    "query": "corn field",
-   "page": "https://pixabay.com/photos/corn-cornfield-agriculture-plant-9064747/",
-   "author": "GoranH"
+   "page": "https://pixabay.com/photos/poppy-poppy-flowers-flower-nature-8147823/",
+   "author": "BernhardJaeck"
   },
   "cover": "covers/fao_exp_56.jpg"
  },
@@ -39417,10 +39417,10 @@
   "card": "cards/fao_imp_56.png",
   "photo": {
    "source": "Pixabay",
-   "pixabay_id": 8147823,
+   "pixabay_id": 9064747,
    "query": "corn field",
-   "page": "https://pixabay.com/photos/poppy-poppy-flowers-flower-nature-8147823/",
-   "author": "BernhardJaeck"
+   "page": "https://pixabay.com/photos/corn-cornfield-agriculture-plant-9064747/",
+   "author": "GoranH"
   },
   "cover": "covers/fao_imp_56.jpg"
  },
@@ -40194,10 +40194,10 @@
   "card": "cards/fao_imp_667.png",
   "photo": {
    "source": "Pixabay",
-   "pixabay_id": 7947055,
+   "pixabay_id": 1850217,
    "query": "tea plantation",
-   "page": "https://pixabay.com/photos/camping-picnic-lunch-dining-travel-7947055/",
-   "author": "xuanduongvan87"
+   "page": "https://pixabay.com/photos/tea-plantation-plantation-field-1850217/",
+   "author": "Pexels"
   },
   "cover": "covers/fao_imp_667.jpg"
  },
@@ -43654,10 +43654,10 @@
   "card": "cards/share_exp_572.png",
   "photo": {
    "source": "Pixabay",
-   "pixabay_id": 6325066,
+   "pixabay_id": 945418,
    "query": "avocado",
-   "page": "https://pixabay.com/photos/fruits-avocados-halves-6325066/",
-   "author": "dahliane"
+   "page": "https://pixabay.com/photos/avocados-fruit-healthy-tree-growth-945418/",
+   "author": "sandid"
   },
   "cover": "covers/share_exp_572.jpg"
  },
@@ -56495,9 +56495,9 @@
   "card": "cards/line_cis_ny_gdp_pcap_cd.png",
   "photo": {
    "source": "Pixabay",
-   "pixabay_id": 4580848,
+   "pixabay_id": 4580845,
    "query": "tashkent city",
-   "page": "https://pixabay.com/photos/uzbekistan-tashkent-capital-city-4580848/",
+   "page": "https://pixabay.com/photos/uzbekistan-tashkent-capital-city-4580845/",
    "author": "falco"
   },
   "cover": "covers/line_cis_ny_gdp_pcap_cd.jpg"
@@ -58969,9 +58969,9 @@
   "card": "cards/line_cis_ny_gdp_mktp_cd.png",
   "photo": {
    "source": "Pixabay",
-   "pixabay_id": 4580845,
+   "pixabay_id": 4580848,
    "query": "tashkent city",
-   "page": "https://pixabay.com/photos/uzbekistan-tashkent-capital-city-4580845/",
+   "page": "https://pixabay.com/photos/uzbekistan-tashkent-capital-city-4580848/",
    "author": "falco"
   },
   "cover": "covers/line_cis_ny_gdp_mktp_cd.jpg"
