@@ -1,0 +1,55 @@
+{
+ "ticker": "CPRT",
+ "name": "Copart, Inc.",
+ "currency": "USD",
+ "sector": "Industrials",
+ "industry": "Specialty Business Services",
+ "summary": "Copart, Inc. provides online auctions and vehicle remarketing services in the United States, the United Kingdom, Germany, Brazil, Canada, the United Arab Emirates, Spain, Finland, Oman, the Republic of Ireland, and Bahrain. The company provides a range of services to process and sell vehicles over the internet through its virtual bidding third generation internet auction-style sales technology. It offers services, such as online seller access; salvage estimation; estimating; end-of-life vehicle processing; transportation; vehicle inspection stations; on-demand reporting; title processing and express; loan payoff; flexible vehicle processing programs; buy it now and make an offer; sales process; and dealer services. In addition, the company provides IntelliSeller, an automated tool that leverages its vehicle and sales data to assist its sellers in making vital auction decisions; BluCar to sell vehicles of financial institutions, fleet, and rental car companies; CashForCars.com, CashForCars.ca, CashForCars.de, CashForCars.co.uk, and Cash-for-cars.ie; and national powersport auctions services, which include services through live and online auction platforms to dealers, financial institutions, and original equipment manufacturers. Further, it offers wholesale construction, agriculture, and fleet remarketing services through no-reserve online auctions under Purple Wave brand name; Copart Recycling services; and Copart 360, a technology that captures clear 360-degree views of inter",
+ "market_cap": 29596258304,
+ "price": 31.95,
+ "dividend_yield": 0.0,
+ "employees": 21000,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2026": 4666209000.0,
+  "2025": 4646958000.0,
+  "2024": 4236823000.0,
+  "2023": 3869518000.0
+ },
+ "net_income": {
+  "2026": 1484270000.0,
+  "2025": 1552449000.0,
+  "2024": 1363020000.0,
+  "2023": 1237741000.0
+ },
+ "operating_income": {
+  "2026": 1652590000.0,
+  "2025": 1696714000.0,
+  "2024": 1572023000.0,
+  "2023": 1486569000.0
+ },
+ "ebitda": {
+  "2026": 1891056000.0,
+  "2025": 1914498000.0,
+  "2024": 1762279000.0,
+  "2023": 1646253000.0
+ },
+ "total_debt": {
+  "2026": 88367000.0,
+  "2025": 103739000.0,
+  "2024": 118733000.0,
+  "2023": 120453000.0
+ },
+ "cash": {
+  "2026": 1907901000.0,
+  "2025": 2780531000.0,
+  "2024": 1514111000.0,
+  "2023": 957395000.0
+ },
+ "equity": {
+  "2026": 9097295000.0,
+  "2025": 9187033000.0,
+  "2024": 7524011000.0,
+  "2023": 5987440000.0
+ }
+}

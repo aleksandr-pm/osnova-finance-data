@@ -1,0 +1,55 @@
+{
+ "ticker": "CROX",
+ "name": "Crocs, Inc.",
+ "currency": "USD",
+ "sector": "Consumer Cyclical",
+ "industry": "Footwear & Accessories",
+ "summary": "Crocs, Inc. together with its subsidiaries, designs, develops, manufactures, markets, distributes, and sells casual lifestyle footwear and accessories for men, women, and kids under the Crocs and HEYDUDE Brands in the United States and internationally. The company offers various footwear products, including clogs, sandals, loafers, classics, fuzz, platforms, boots, sandals, slides, slippers, sneakers, flip flops, and flats, as well as totes, backpacks, belt bags, socks, bag charms, cases, attachments, cartoon characters products, and touchland and other accessories. It sells its products through wholesalers, retail stores, e-commerce sites, third-party marketplaces, outlet stores, and kiosks/store-in-store locations. Crocs, Inc. was founded in 1999 and is headquartered in Broomfield, Colorado.",
+ "market_cap": 6943804416,
+ "price": 151.86,
+ "dividend_yield": 0.0,
+ "employees": 8010,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 4040647000.0,
+  "2024": 4102108000.0,
+  "2023": 3962347000.0,
+  "2022": 3554985000.0
+ },
+ "net_income": {
+  "2025": -81198000.0,
+  "2024": 950071000.0,
+  "2023": 792566000.0,
+  "2022": 540159000.0
+ },
+ "operating_income": {
+  "2025": 887630000.0,
+  "2024": 1045993000.0,
+  "2023": 1046070000.0,
+  "2022": 850756000.0
+ },
+ "ebitda": {
+  "2025": 240547000.0,
+  "2024": 1089689000.0,
+  "2023": 1091927000.0,
+  "2022": 893895000.0
+ },
+ "total_debt": {
+  "2025": 1613849000.0,
+  "2024": 1701296000.0,
+  "2023": 1996360000.0,
+  "2022": 2594964000.0
+ },
+ "cash": {
+  "2025": 130354000.0,
+  "2024": 180485000.0,
+  "2023": 149288000.0,
+  "2022": 191629000.0
+ },
+ "equity": {
+  "2025": 1293283000.0,
+  "2024": 1835732000.0,
+  "2023": 1453923000.0,
+  "2022": 817931000.0
+ }
+}

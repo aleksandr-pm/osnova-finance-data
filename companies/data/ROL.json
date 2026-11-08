@@ -1,0 +1,55 @@
+{
+ "ticker": "ROL",
+ "name": "Rollins, Inc.",
+ "currency": "USD",
+ "sector": "Consumer Cyclical",
+ "industry": "Personal Services",
+ "summary": "Rollins, Inc., through its subsidiaries, provides pest and wildlife control services and protection to residential and commercial customers in the United States and internationally. The company offers pest control services to residential properties protecting from common pests, including rodents, insects, and wildlife. It also provides workplace pest control solutions for customers across various end markets, such as healthcare, food service, and logistics. In addition, the company offers termite protection and ancillary services for both residential and commercial customers. It serves clients directly, as well as through franchisee operations. The company was formerly known as Rollins Broadcasting, Inc and changed its name to Rollins, Inc. in 1965. Rollins, Inc. was founded in 1901 and is headquartered in Atlanta, Georgia.",
+ "market_cap": 18259468288,
+ "price": 37.95,
+ "dividend_yield": 2.11,
+ "employees": 22000,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 3761050000.0,
+  "2024": 3388708000.0,
+  "2023": 3073278000.0,
+  "2022": 2695823000.0
+ },
+ "net_income": {
+  "2025": 526705000.0,
+  "2024": 466379000.0,
+  "2023": 434957000.0,
+  "2022": 368599000.0
+ },
+ "operating_income": {
+  "2025": 726068000.0,
+  "2024": 657224000.0,
+  "2023": 588422000.0,
+  "2022": 493388000.0
+ },
+ "ebitda": {
+  "2025": 854228000.0,
+  "2024": 771127000.0,
+  "2023": 705064000.0,
+  "2022": 592881000.0
+ },
+ "total_debt": {
+  "2025": 1038022000.0,
+  "2024": 812528000.0,
+  "2023": 816348000.0,
+  "2022": 336329000.0
+ },
+ "cash": {
+  "2025": 100004000.0,
+  "2024": 89630000.0,
+  "2023": 103825000.0,
+  "2022": 95346000.0
+ },
+ "equity": {
+  "2025": 1374321000.0,
+  "2024": 1330593000.0,
+  "2023": 1155567000.0,
+  "2022": 1267197000.0
+ }
+}

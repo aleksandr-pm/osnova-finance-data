@@ -1,0 +1,55 @@
+{
+ "ticker": "LULU",
+ "name": "lululemon athletica inc.",
+ "currency": "USD",
+ "sector": "Consumer Cyclical",
+ "industry": "Apparel Retail",
+ "summary": "lululemon athletica inc., together with its subsidiaries, designs, distributes, and retails technical athletic apparel, footwear, and accessories for women and men under the lululemon brand in the United States, Canada, Mexico, China, Hong Kong, Taiwan, Macau, Greece, and internationally. It offers pants, shorts, tops, and jackets for athletic activities, such as yoga, running, training, and other activities. The company also provides fitness-inspired accessories. It sells its products through company-operated stores; seasonal stores, pop-ups, university campus retailers, and yoga and fitness studios; outlets; Like New, a re-commerce program; and its e-commerce website. The company was founded in 1998 and is based in Vancouver, Canada.",
+ "market_cap": 12832360448,
+ "price": 110.79,
+ "dividend_yield": 0.0,
+ "employees": 39000,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2026": 11102600000.0,
+  "2025": 10588126000.0,
+  "2024": 9619278000.0,
+  "2023": 8110518000.0
+ },
+ "net_income": {
+  "2026": 1579183000.0,
+  "2025": 1814616000.0,
+  "2024": 1550190000.0,
+  "2023": 854800000.0
+ },
+ "operating_income": {
+  "2026": 2210615000.0,
+  "2025": 2505697000.0,
+  "2024": 2207177000.0,
+  "2023": 1726141000.0
+ },
+ "ebitda": {
+  "2026": 2706843000.0,
+  "2025": 2952221000.0,
+  "2024": 2586561000.0,
+  "2023": 2017932000.0
+ },
+ "total_debt": {
+  "2026": 1798441000.0,
+  "2025": 1575791000.0,
+  "2024": 1403282000.0,
+  "2023": 1070334000.0
+ },
+ "cash": {
+  "2026": 1807202000.0,
+  "2025": 1984336000.0,
+  "2024": 2243971000.0,
+  "2023": 1154867000.0
+ },
+ "equity": {
+  "2026": 4961840000.0,
+  "2025": 4324047000.0,
+  "2024": 4232081000.0,
+  "2023": 3148799000.0
+ }
+}

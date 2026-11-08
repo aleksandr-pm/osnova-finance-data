@@ -1,0 +1,55 @@
+{
+ "ticker": "HAS",
+ "name": "Hasbro, Inc.",
+ "currency": "USD",
+ "sector": "Consumer Cyclical",
+ "industry": "Leisure",
+ "summary": "Hasbro, Inc. operates as a toy and game company in the United States, Europe, Canada, Mexico, Latin America, Australia, China, and Hong Kong. The company offers trading cards and collectibles, action figures, arts and crafts and creative play products, dolls, play sets, preschool toys, plush products, vehicles and toy-related specialty products, sports action products and accessories, and other consumer products; and licensed products, such as apparel, publishing products, home goods and electronics, and toy products. It also engages in the sourcing, marketing, and sale of toy and game products; and promotes its brands through the out-licensing of trademarks, characters, and other brand and intellectual property rights to third parties through the sale of branded consumer products, such as toys and apparel. In addition, the company is involved in the promotion of its brands through the development of trading cards, role-playing, and digital game experiences based on Hasbro and Wizards of the Coast games; and license certain brands to other third-party digital game developers who transform Hasbro brand-based characters and other intellectual properties, into digital gaming experiences. Further, it develops and produces of Hasbro-branded entertainment content, including film, television, children's programming, digital content, and live entertainment. The company sells its products to retailers, distributors, wholesalers, discount stores, specialty hobby stores, drug stores, ma",
+ "market_cap": 16631061504,
+ "price": 118.91,
+ "dividend_yield": 2.35,
+ "employees": 4520,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 4701300000.0,
+  "2024": 4135500000.0,
+  "2023": 5003300000.0,
+  "2022": 5856700000.0
+ },
+ "net_income": {
+  "2025": -322400000.0,
+  "2024": 385600000.0,
+  "2023": -1489300000.0,
+  "2022": 203500000.0
+ },
+ "operating_income": {
+  "2025": 1058000000.0,
+  "2024": 727400000.0,
+  "2023": 191400000.0,
+  "2022": 429800000.0
+ },
+ "ebitda": {
+  "2025": 232700000.0,
+  "2024": 880500000.0,
+  "2023": -863200000.0,
+  "2022": 1220600000.0
+ },
+ "total_debt": {
+  "2025": 3295500000.0,
+  "2024": 3410600000.0,
+  "2023": 3496300000.0,
+  "2022": 4006400000.0
+ },
+ "cash": {
+  "2025": 776200000.0,
+  "2024": 694700000.0,
+  "2023": 544800000.0,
+  "2022": 498600000.0
+ },
+ "equity": {
+  "2025": 538500000.0,
+  "2024": 1157600000.0,
+  "2023": 1061900000.0,
+  "2022": 2832800000.0
+ }
+}

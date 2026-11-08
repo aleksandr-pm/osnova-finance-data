@@ -1,0 +1,55 @@
+{
+ "ticker": "RBLX",
+ "name": "Roblox Corporation",
+ "currency": "USD",
+ "sector": "Communication Services",
+ "industry": "Electronic Gaming & Multimedia",
+ "summary": "Roblox Corporation operates an immersive platform for connection and communication in the United States and internationally. It offers Roblox Client, an application that allows users to explore immersive experience; Roblox Studio, a free toolset that allows developers and creators to build, publish, and operate immersive experiences and other content; and Roblox Cloud, which provides services and infrastructure that power the platform. Roblox Corporation was incorporated in 2004 and is headquartered in San Mateo, California.",
+ "market_cap": 35284668416,
+ "price": 49.3,
+ "dividend_yield": 0.0,
+ "employees": 3065,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 4890551000.0,
+  "2024": 3601979000.0,
+  "2023": 2799274000.0,
+  "2022": 2225052000.0
+ },
+ "net_income": {
+  "2025": -1065057000.0,
+  "2024": -935384000.0,
+  "2023": -1151946000.0,
+  "2022": -924366000.0
+ },
+ "operating_income": {
+  "2025": -1232342000.0,
+  "2024": -1063317000.0,
+  "2023": -1259067000.0,
+  "2022": -923784000.0
+ },
+ "ebitda": {
+  "2025": -802175000.0,
+  "2024": -670250000.0,
+  "2023": -910950000.0,
+  "2022": -761864000.0
+ },
+ "total_debt": {
+  "2025": 1802704000.0,
+  "2024": 1805279000.0,
+  "2023": 1762799000.0,
+  "2022": 1556809000.0
+ },
+ "cash": {
+  "2025": 1205319000.0,
+  "2024": 711683000.0,
+  "2023": 678466000.0,
+  "2022": 2977474000.0
+ },
+ "equity": {
+  "2025": 394484000.0,
+  "2024": 221446000.0,
+  "2023": 76290000.0,
+  "2022": 306026000.0
+ }
+}

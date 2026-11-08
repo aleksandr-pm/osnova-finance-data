@@ -1,0 +1,55 @@
+{
+ "ticker": "HOG",
+ "name": "Harley-Davidson, Inc.",
+ "currency": "USD",
+ "sector": "Consumer Cyclical",
+ "industry": "Recreational Vehicles",
+ "summary": "Harley-Davidson, Inc. manufactures and sells motorcycles in the United States and internationally. The company operates in three segments: Harley-Davidson Motor Company, LiveWire, and Harley-Davidson Financial Services. The Harley-Davidson Motor Company segment designs, manufactures, and sells motorcycles, including cruiser, trike, Grand American touring, standard, sportbike, adventure touring, and dual sport, as well as motorcycle parts, accessories, and apparel, as well as licenses its trademarks and related services. This segment sells its products to retail customers through a network of independent dealers, as well as e-commerce channels. The LiveWire segment sells electric motorcycles, balance bikes for kids, electric bikes, parts and accessories, apparel, and related parts and services. The Harley-Davidson Financial Services segment provides wholesale financing services, such as floorplan and open-account financing of motorcycles, and parts and accessories; and retail financing services, such as installment lending for the purchase of new and used Harley-Davidson motorcycles, as well as point-of-sale insurance and voluntary protection products. This segment also licenses third-party financial institutions that issue credit cards bearing the Harley-Davidson brand. Harley-Davidson, Inc. was founded in 1903 and is based in Milwaukee, Wisconsin.",
+ "market_cap": 3298410240,
+ "price": 32.66,
+ "dividend_yield": 2.3,
+ "employees": 5500,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 4473175000.0,
+  "2024": 5186802000.0,
+  "2023": 5836478000.0,
+  "2022": 5755130000.0
+ },
+ "net_income": {
+  "2025": 338738000.0,
+  "2024": 455357000.0,
+  "2023": 706586000.0,
+  "2022": 741408000.0
+ },
+ "operating_income": {
+  "2025": 386635000.0,
+  "2024": 416627000.0,
+  "2023": 779084000.0,
+  "2022": 909278000.0
+ },
+ "ebitda": {
+  "2025": 664546000.0,
+  "2024": 708559000.0,
+  "2023": 1055775000.0,
+  "2022": 1114410000.0
+ },
+ "total_debt": {
+  "2025": 3053696000.0,
+  "2024": 7026460000.0,
+  "2023": 7196053000.0,
+  "2022": 6955287000.0
+ },
+ "cash": {
+  "2025": 3091744000.0,
+  "2024": 1589608000.0,
+  "2023": 1533806000.0,
+  "2022": 1433175000.0
+ },
+ "equity": {
+  "2025": 3140668000.0,
+  "2024": 3166047000.0,
+  "2023": 3252808000.0,
+  "2022": 2903519000.0
+ }
+}

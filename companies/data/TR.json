@@ -1,0 +1,55 @@
+{
+ "ticker": "TR",
+ "name": "Tootsie Roll Industries, Inc.",
+ "currency": "USD",
+ "sector": "Consumer Defensive",
+ "industry": "Confectioners",
+ "summary": "Tootsie Roll Industries, Inc., together with its subsidiaries, manufactures and sells confectionery products in the United States, Canada, Mexico, and internationally. The company sells its products under the Tootsie Roll, Tootsie Fruit Roll, Tootsie Pops, Tootsie Mini Pops, Child's Play, Caramel Apple Pops, Charms, Blow-Pop, Charms Mini Pops, Cella's, Dots, Junior Mints, Charleston Chew, Sugar Daddy, Sugar Babies, Andes, Fluffy Stuff, Dubble Bubble, Razzles, Cry Baby, Nik-L-Nip, And Tutsi Pop trademarks. It sells its products directly to wholesale distributors of candy, food and groceries, supermarkets, variety stores, dollar stores, chain grocers, drug chains, discount chains, cooperative grocery associations, mass merchandisers, warehouse and membership club stores, vending machine operators, e-commerce merchants, on-line marketplaces, the U.S. military and fund-raising charitable organizations, as well as through food and grocery brokers. Tootsie Roll Industries, Inc. was founded in 1896 and is headquartered in Chicago, Illinois.",
+ "market_cap": 2929104384,
+ "price": 38.97,
+ "dividend_yield": 0.92,
+ "employees": 2100,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 732524000.0,
+  "2024": 723217000.0,
+  "2023": 769365000.0,
+  "2022": 686970000.0
+ },
+ "net_income": {
+  "2025": 100052000.0,
+  "2024": 86827000.0,
+  "2023": 91912000.0,
+  "2022": 75937000.0
+ },
+ "operating_income": {
+  "2025": 100939000.0,
+  "2024": 100505000.0,
+  "2023": 101828000.0,
+  "2022": 110755000.0
+ },
+ "ebitda": {
+  "2025": 156750000.0,
+  "2024": 145556000.0,
+  "2023": 138474000.0,
+  "2022": 115913000.0
+ },
+ "total_debt": {
+  "2025": 13885000.0,
+  "2024": 14790000.0,
+  "2023": 15895000.0,
+  "2022": 13294000.0
+ },
+ "cash": {
+  "2025": 127165000.0,
+  "2024": 138841000.0,
+  "2023": 75915000.0,
+  "2022": 53270000.0
+ },
+ "equity": {
+  "2025": 940972000.0,
+  "2024": 870743000.0,
+  "2023": 823422000.0,
+  "2022": 783171000.0
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "ticker": "HSY",
+ "name": "The Hershey Company",
+ "currency": "USD",
+ "sector": "Consumer Defensive",
+ "industry": "Confectioners",
+ "summary": "The Hershey Company, together with its subsidiaries, engages in the manufacture and sale of confectionery products and pantry items in the United States and internationally. It operates through three segments: North America Confectionery, North America Salty Snacks, and International. The company offers chocolate and non-chocolate confectionery products; gum and mint refreshment products, including mints, chewing gums, and bubble gums; protein bars; pantry items, such as baking ingredients, toppings, beverages, and sundae syrups; and snack items comprising spreads, bars, snack bites, mixes, popcorn, and pretzels. It provides its products primarily under the Hershey's, Reese's, Kisses, Jolly Rancher, Almond Joy, Brookside, barkTHINS, Cadbury, Good & Plenty, Heath, Kit Kat, Payday, Rolo, Twizzlers, Sour Strips, Whoppers, York, Ice Breakers, Breath Savers, Bubble Yum, Lily's, SkinnyPop, Pirates Booty, Dot's Homestyle Pretzels, and ONE Bar brands, as well as under the Pelon Pelo Rico, IO-IO, and Sofit brands. The company markets and sells its products to wholesale distributors, chain grocery stores, mass merchandisers, chain drug stores, vending companies, wholesale clubs, convenience stores, dollar stores, concessionaires, and department stores. It exports its products in approximately 65 countries worldwide. The Hershey Company was founded in 1894 and is based in Hershey, Pennsylvania.",
+ "market_cap": 35790585856,
+ "price": 178.08,
+ "dividend_yield": 3.26,
+ "employees": 17550,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 11692576000.0,
+  "2024": 11202263000.0,
+  "2023": 11164992000.0,
+  "2022": 10419294000.0
+ },
+ "net_income": {
+  "2025": 883259000.0,
+  "2024": 2221239000.0,
+  "2023": 1861787000.0,
+  "2022": 1644817000.0
+ },
+ "operating_income": {
+  "2025": 1462122000.0,
+  "2024": 2927267000.0,
+  "2023": 2561308000.0,
+  "2022": 2262776000.0
+ },
+ "ebitda": {
+  "2025": 1942715000.0,
+  "2024": 3103508000.0,
+  "2023": 2753190000.0,
+  "2022": 2436125000.0
+ },
+ "total_debt": {
+  "2025": 5738575000.0,
+  "2024": 5447554000.0,
+  "2023": 5125612000.0,
+  "2022": 5117981000.0
+ },
+ "cash": {
+  "2025": 925859000.0,
+  "2024": 730746000.0,
+  "2023": 401902000.0,
+  "2022": 463889000.0
+ },
+ "equity": {
+  "2025": 4636750000.0,
+  "2024": 4714654000.0,
+  "2023": 4099086000.0,
+  "2022": 3299544000.0
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "ticker": "MAT",
+ "name": "Mattel, Inc.",
+ "currency": "USD",
+ "sector": "Consumer Cyclical",
+ "industry": "Leisure",
+ "summary": "Mattel, Inc., a play and family entertainment company, designs, manufactures, markets, and sells toys, games, and other products in North America, Europe, the Middle East, Africa, Latin America, and the Asia Pacific. The company offers dolls and accessories, books, content, and lifestyle products for children under the Barbie, American Girl, Disney Princess, Disney Frozen, Monster High, Polly Pocket, and KPop Demon Hunters brands; die-cast vehicles, tracks, playsets, and accessories for kids, adults, and collectors under the Hot Wheels, Hot Wheels Monster Trucks, Hot Wheels RC, Matchbox, and Matchbox, and Cars brands; and infant, toddler, and preschool products comprising toys, content, live events, and other consumer products under the Fisher-Price, Little People, Thomas & Friends, and Power Wheels brands. It also provides action figures, building sets, games, and other products under the Masters of the Universe, Mattel Brick Shop, MEGA, UNO, Jurassic World, Minecraft, WWE, Toy Story, Star Wars, Pictionary, Skip-Bo, Phase 10, and Blokus brands; and licensor partner brands, including Disney Pixar, Microsoft, NBCUniversal, and WWE. The company sells its products to retailers, including omnichannel retailers, discount and free-standing toy stores, chain stores, department stores, and other retail outlets; wholesalers; and directly to consumers through retail spaces, boutique stores, agents and distributors, and its e-commerce platforms and third-party e-commerce channels. Matte",
+ "market_cap": 4385495040,
+ "price": 15.35,
+ "dividend_yield": 0.0,
+ "employees": 31000,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 5347623000.0,
+  "2024": 5379546000.0,
+  "2023": 5441219000.0,
+  "2022": 5434687000.0
+ },
+ "net_income": {
+  "2025": 397584000.0,
+  "2024": 541817000.0,
+  "2023": 214352000.0,
+  "2022": 393913000.0
+ },
+ "operating_income": {
+  "2025": 546424000.0,
+  "2024": 694282000.0,
+  "2023": 561659000.0,
+  "2022": 675515000.0
+ },
+ "ebitda": {
+  "2025": 796401000.0,
+  "2024": 987228000.0,
+  "2023": 818371000.0,
+  "2022": 875369000.0
+ },
+ "total_debt": {
+  "2025": 2683268000.0,
+  "2024": 2687280000.0,
+  "2023": 2666788000.0,
+  "2022": 2597062000.0
+ },
+ "cash": {
+  "2025": 1242927000.0,
+  "2024": 1387908000.0,
+  "2023": 1261363000.0,
+  "2022": 761235000.0
+ },
+ "equity": {
+  "2025": 2233048000.0,
+  "2024": 2264125000.0,
+  "2023": 2149213000.0,
+  "2022": 2056269000.0
+ }
+}

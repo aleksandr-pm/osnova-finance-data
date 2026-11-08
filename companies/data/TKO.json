@@ -1,0 +1,55 @@
+{
+ "ticker": "TKO",
+ "name": "TKO Group Holdings, Inc.",
+ "currency": "USD",
+ "sector": "Communication Services",
+ "industry": "Entertainment",
+ "summary": "TKO Group Holdings, Inc. operates as a sports and entertainment company. The company operates through three segments: UFC, WWE and IMG. The UFC segment distributes programming content; ticket sales and site fees associated with the business's global live events; partnerships and marketing; and consumer products licensing agreements of UFC-branded products. The WWE segment consists of media rights fees associated with the distribution of its programming content; ticket sales and site fees associated with the business's global live events; partnerships and marketing; and consumer products licensing agreements of WWE-branded products. The IMG segment specializing in media rights management and sales, multi-channel content production and distribution, brand partnerships, strategic consulting, digital services, and event management. This segment also offers hospitality business, offering ticketing, curated guest experiences, live event production and travel management services. It is also involved in the merchandising of video games, apparel, equipment, trading cards, memorabilia, digital goods, and toys. In addition, the company engages in the sponsorships and advertising business, which offers sale of in-venue and in-broadcast advertising assets, content product integration, and digital impressions. The company was incorporated in 2023 and is based in New York, New York. TKO Group Holdings, Inc. is a subsidiary of WME Group, Inc.",
+ "market_cap": 36022378496,
+ "price": 191.0,
+ "dividend_yield": 1.65,
+ "employees": 4000,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 4735151000.0,
+  "2024": 4884241000.0,
+  "2023": 3224796000.0,
+  "2022": 1140147000.0
+ },
+ "net_income": {
+  "2025": 195403000.0,
+  "2024": 9408000.0,
+  "2023": -35227000.0,
+  "2022": 0.0
+ },
+ "operating_income": {
+  "2025": 835015000.0,
+  "2024": 30946000.0,
+  "2023": 397309000.0,
+  "2022": 544387000.0
+ },
+ "ebitda": {
+  "2025": 1320595000.0,
+  "2024": 511034000.0,
+  "2023": 645611000.0,
+  "2022": 603148000.0
+ },
+ "total_debt": {
+  "2025": 4063035000.0,
+  "2024": 3083317000.0,
+  "2023": 3026895000.0,
+  "2022": 2783385000.0
+ },
+ "cash": {
+  "2025": 831100000.0,
+  "2024": 619787000.0,
+  "2023": 235839000.0,
+  "2022": 180574000.0
+ },
+ "equity": {
+  "2025": 3737381000.0,
+  "2024": 4091023000.0,
+  "2023": 4108980000.0,
+  "2022": 568916000.0
+ }
+}

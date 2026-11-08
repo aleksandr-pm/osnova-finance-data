@@ -1,0 +1,55 @@
+{
+ "ticker": "LYV",
+ "name": "Live Nation Entertainment, Inc.",
+ "currency": "USD",
+ "sector": "Communication Services",
+ "industry": "Entertainment",
+ "summary": "Live Nation Entertainment, Inc. operates as a live entertainment company worldwide. The company operates through Concerts, Ticketing, and Sponsorship & Advertising segments. Its Concerts segment promotes live music events in its owned or operated venues, and in rented third-party venues. This segment operates and manages music venues; produces music festivals; creates associated content; and offers management and other services to artists. The Ticketing segment manages the ticketing operations, including the provision of ticketing software and services to consumers with marketplace for tickets and event information through mobile apps, other websites, and retail outlets, as well as its websites, such as livenation.com and ticketmaster.com; and provides ticket resale services. This segment offers ticketing services for arenas, stadiums, amphitheaters, music clubs, concert promoters, professional sports franchises and leagues, college sports teams, performing arts venues, museums, and theaters. Its Sponsorship & Advertising segment sells international, national, and local sponsorships and placement of advertising, including signage, online advertising, and promotional programs; rich media offering, including advertising related with live streaming and music-related content; and ads through distribution network of venues, events, and websites. This segment also manages the development of strategic sponsorship programs, as well as develops, books, and produces custom events or pr",
+ "market_cap": 41305821184,
+ "price": 175.25,
+ "dividend_yield": 0.0,
+ "employees": 17700,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 25201406000.0,
+  "2024": 23155625000.0,
+  "2023": 22726317000.0,
+  "2022": 16681254000.0
+ },
+ "net_income": {
+  "2025": -54829000.0,
+  "2024": 638211000.0,
+  "2023": 309455000.0,
+  "2022": 119670000.0
+ },
+ "operating_income": {
+  "2025": 1232689000.0,
+  "2024": 813495000.0,
+  "2023": 1071006000.0,
+  "2022": 689949000.0
+ },
+ "ebitda": {
+  "2025": 1985432000.0,
+  "2024": 1615323000.0,
+  "2023": 1780315000.0,
+  "2022": 1218983000.0
+ },
+ "total_debt": {
+  "2025": 10404386000.0,
+  "2024": 8271741000.0,
+  "2023": 8437924000.0,
+  "2022": 7698256000.0
+ },
+ "cash": {
+  "2025": 7094200000.0,
+  "2024": 6095424000.0,
+  "2023": 6231866000.0,
+  "2022": 5606457000.0
+ },
+ "equity": {
+  "2025": 271007000.0,
+  "2024": 173263000.0,
+  "2023": -52305000.0,
+  "2022": -367569000.0
+ }
+}

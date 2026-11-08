@@ -1,0 +1,55 @@
+{
+ "ticker": "WDFC",
+ "name": "WD-40 Company",
+ "currency": "USD",
+ "sector": "Basic Materials",
+ "industry": "Specialty Chemicals",
+ "summary": "WD-40 Company engages in the provision of maintenance products, and homecare and cleaning products in North America, Central and South America, Asia, Australia, Europe, India, the Middle East, and Africa. The company offers multi-purpose maintenance products and specialty maintenance products, including WD-40 Multi-Use Product, an aerosol spray with various unique delivery systems, a non-aerosol trigger spray, a precision pen, and in liquid-bulk used for household, marine, automotive, construction, repair, sporting goods, and gardening applications; and WD-40 Specialist product line which includes penetrants, degreasers, corrosion inhibitors, greases, lubricants, and rust removers. It also provides multi-purpose drip and specialty oil lubricant; professional-grade aerosol specialty maintenance products, such as 3-IN-ONE RVcare products, 3-IN-ONE garage door lubricant, and 3-IN-ONE lock dry lube; and spray maintenance products and lubricants under the GT85 brand. In addition, the company offers automatic toilet bowl cleaners under the 2000 Flushes brand; aerosol and a liquid trigger carpet stain and odor eliminator under the Spot Shot brand; room and rug deodorizers sold as powder and aerosol quick-dry foam products under the Carpet Fresh brand; and heavy-duty hand cleaner, automatic toilet bowl cleaners, aerosol foaming carpet, fabric sanitizers, deodorizers, spot stain cleaners, and hand cleaner products under the Lava, X-14, no vac, and Solvol brands. It sells its products ",
+ "market_cap": 2967506432,
+ "price": 221.58,
+ "dividend_yield": 1.84,
+ "employees": 753,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2026": 687993000.0,
+  "2025": 619985000.0,
+  "2024": 590557000.0,
+  "2023": 537255000.0
+ },
+ "net_income": {
+  "2026": 82118000.0,
+  "2025": 90734000.0,
+  "2024": 69398000.0,
+  "2023": 65721000.0
+ },
+ "operating_income": {
+  "2026": 108937000.0,
+  "2025": 103793000.0,
+  "2024": 96351000.0,
+  "2023": 89724000.0
+ },
+ "ebitda": {
+  "2026": 119644000.0,
+  "2025": 113258000.0,
+  "2024": 105251000.0,
+  "2023": 98928000.0
+ },
+ "total_debt": {
+  "2026": 100555000.0,
+  "2025": 97700000.0,
+  "2024": 102834000.0,
+  "2023": 128519000.0
+ },
+ "cash": {
+  "2026": 70607000.0,
+  "2025": 58130000.0,
+  "2024": 46699000.0,
+  "2023": 48143000.0
+ },
+ "equity": {
+  "2026": 272973000.0,
+  "2025": 268152000.0,
+  "2024": 230526000.0,
+  "2023": 210178000.0
+ }
+}

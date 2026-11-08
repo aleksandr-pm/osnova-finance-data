@@ -1,0 +1,55 @@
+{
+ "ticker": "DUOL",
+ "name": "Duolingo, Inc.",
+ "currency": "USD",
+ "sector": "Technology",
+ "industry": "Software - Application",
+ "summary": "Duolingo, Inc. operates as a mobile learning platform in the United States, the United Kingdom, and internationally. The company offers 250 language courses, including Spanish, English, French, German, Italian, Portuguese, Japanese, and Chinese through its Duolingo app. It also provides a digital English language proficiency assessment exam. The company was incorporated in 2011 and is headquartered in Pittsburgh, Pennsylvania.",
+ "market_cap": 7568336384,
+ "price": 160.42,
+ "dividend_yield": 0.0,
+ "employees": 900,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 1037589000.0,
+  "2024": 748024000.0,
+  "2023": 531109000.0,
+  "2022": 369495000.0
+ },
+ "net_income": {
+  "2025": 414065000.0,
+  "2024": 88574000.0,
+  "2023": 16067000.0,
+  "2022": -59574000.0
+ },
+ "operating_income": {
+  "2025": 135570000.0,
+  "2024": 62595000.0,
+  "2023": -13259000.0,
+  "2022": -65195000.0
+ },
+ "ebitda": {
+  "2025": 149961000.0,
+  "2024": 73449000.0,
+  "2023": -6164000.0,
+  "2022": -60325000.0
+ },
+ "total_debt": {
+  "2025": 93779000.0,
+  "2024": 54656000.0,
+  "2023": 21094000.0,
+  "2022": 28406000.0
+ },
+ "cash": {
+  "2025": 1036389000.0,
+  "2024": 785791000.0,
+  "2023": 747610000.0,
+  "2022": 608180000.0
+ },
+ "equity": {
+  "2025": 1347006000.0,
+  "2024": 824550000.0,
+  "2023": 655501000.0,
+  "2022": 542078000.0
+ }
+}

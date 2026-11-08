@@ -1,0 +1,55 @@
+{
+ "ticker": "NATH",
+ "name": "Nathan's Famous Inc",
+ "currency": "USD",
+ "sector": "Consumer Cyclical",
+ "industry": "Restaurants",
+ "summary": "Nathan's Famous, Inc., along with its subsidiaries, operates in the foodservice industry both in the United States and internationally. It operates through three segments: Branded Product Program; Product licensing; and Restaurant operations. The company owns and franchises restaurants under the Nathan's Famous brand name. It also has license agreements for the manufacture, distribution, marketing, and sale of Nathan's Famous branded beef hot dogs, crinkle-cut french fries, and sausages in refrigerated consumer packages, which are resold through retail channels such as supermarkets, grocery stores, mass merchandisers, and club stores. In addition, the company has license agreements to manufacture Nathan's Famous branded hot dog and sausage products in bulk for use in the foodservice industry, supply Nathan's Famous natural casing and skinless hot dogs in bulk for use in the Nathan's Famous restaurant system, as well as manufacture proprietary spices; produce and distribute pickles; and produce and sell french fries and onion rings for retail sale. Further, the company produces and sells miniature bagel dogs, franks-in-a-blanket, mozzarella sticks, corn dog nuggets, other hors d'oeuvres, and bottled mustard through club stores, supermarkets, and other retail food stores. Additionally, it sells Nathan's products directly to foodservice operators or various foodservice distributors, and provides Fish-n-Chips under the Arthur Treacher's brand name. Nathan's Famous, Inc. was found",
+ "market_cap": 418166304,
+ "price": 102.05,
+ "dividend_yield": 0.0196,
+ "employees": 129,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2026": 162063000.0,
+  "2025": 148182000.0,
+  "2024": 138610000.0,
+  "2023": 130785000.0
+ },
+ "net_income": {
+  "2026": 20020000.0,
+  "2025": 24026000.0,
+  "2024": 19616000.0,
+  "2023": 19623000.0
+ },
+ "operating_income": {
+  "2026": 30102000.0,
+  "2025": 36497000.0,
+  "2024": 32506000.0,
+  "2023": 34445000.0
+ },
+ "ebitda": {
+  "2026": 31972000.0,
+  "2025": 37824000.0,
+  "2024": 33941000.0,
+  "2023": 35681000.0
+ },
+ "total_debt": {
+  "2026": 52086000.0,
+  "2025": 55924000.0,
+  "2024": 66386000.0,
+  "2023": 86236000.0
+ },
+ "cash": {
+  "2026": 24404000.0,
+  "2025": 27802000.0,
+  "2024": 21027000.0,
+  "2023": 29861000.0
+ },
+ "equity": {
+  "2026": -14223000.0,
+  "2025": -16513000.0,
+  "2024": -32923000.0,
+  "2023": -44562000.0
+ }
+}

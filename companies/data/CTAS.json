@@ -1,0 +1,55 @@
+{
+ "ticker": "CTAS",
+ "name": "Cintas Corporation",
+ "currency": "USD",
+ "sector": "Industrials",
+ "industry": "Specialty Business Services",
+ "summary": "Cintas Corporation provides corporate identity uniforms and other garments in the United States, Canada, and Latin America. It operates through Uniform Rental and Facility Services, First Aid and Safety Services, and All Other segments. The company offers rental and servicing of uniforms and other garments, including flame resistant clothing, mats, mops and shop towels, and other ancillary items. It also provides restroom cleaning services and supplies; and sells uniforms from catalogs. In addition, the company offers first aid and safety products and services; workplace water services; and fire protection products and services. Further, it provides automated external defibrillators; eye-wash stations; safety training; fire extinguishers; sprinkler systems; and alarm services. The company sells its products and services through its distribution network and local delivery routes, or local representatives to small service and manufacturing companies, as well as major corporations. It serves gaming, hospitality, healthcare, automotive, government, education, pharmaceutical, manufacturing, skilled trades, and food processing industries. The company was founded in 1929 and is based in Cincinnati, Ohio.",
+ "market_cap": 88293621760,
+ "price": 222.36,
+ "dividend_yield": 0.94,
+ "employees": 48100,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2026": 11264761000.0,
+  "2025": 10340181000.0,
+  "2024": 9596615000.0,
+  "2023": 8815769000.0
+ },
+ "net_income": {
+  "2026": 1993656000.0,
+  "2025": 1805930000.0,
+  "2024": 1565664000.0,
+  "2023": 1342547000.0
+ },
+ "operating_income": {
+  "2026": 2621648000.0,
+  "2025": 2359726000.0,
+  "2024": 2068633000.0,
+  "2023": 1802664000.0
+ },
+ "ebitda": {
+  "2026": 3124465000.0,
+  "2025": 2859493000.0,
+  "2024": 2531245000.0,
+  "2023": 2223724000.0
+ },
+ "total_debt": {
+  "2026": 2705957000.0,
+  "2025": 2654481000.0,
+  "2024": 2668080000.0,
+  "2023": 2668393000.0
+ },
+ "cash": {
+  "2026": 289018000.0,
+  "2025": 263973000.0,
+  "2024": 342015000.0,
+  "2023": 124149000.0
+ },
+ "equity": {
+  "2026": 5139887000.0,
+  "2025": 4684481000.0,
+  "2024": 4316372000.0,
+  "2023": 3863986000.0
+ }
+}

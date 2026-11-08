@@ -1,0 +1,55 @@
+{
+ "ticker": "DNUT",
+ "name": "Krispy Kreme, Inc.",
+ "currency": "USD",
+ "sector": "Consumer Defensive",
+ "industry": "Grocery Stores",
+ "summary": "Krispy Kreme, Inc., together with its subsidiaries, produces doughnuts in the United States, the United Kingdom, Ireland, Australia, New Zealand, Mexico, Canada, Japan, and internationally. It operates in three segments: U.S., International, and Market Development. The company offers doughnut experiences through hot light theater and fresh shops, delivers fresh daily branded cabinets and merchandising units within grocery and convenience stores, quick service restaurants, club memberships, drug stores, and digital channels, including delivery apps. It also operates Krispy Kreme company-owned shops and franchise shops. The company was formerly known as Krispy Kreme Doughnuts, Inc. and changed its name to Krispy Kreme, Inc. in May 2021. Krispy Kreme, Inc. was founded in 1937 and is based in Charlotte, North Carolina.",
+ "market_cap": 723495040,
+ "price": 4.17,
+ "dividend_yield": 0.0,
+ "employees": 17000,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 1522616000.0,
+  "2024": 1665397000.0,
+  "2023": 1686104000.0,
+  "2022": 1529898000.0
+ },
+ "net_income": {
+  "2025": -520057000.0,
+  "2024": 3095000.0,
+  "2023": -37925000.0,
+  "2022": -15996000.0
+ },
+ "operating_income": {
+  "2025": -33272000.0,
+  "2024": -860000.0,
+  "2023": 42174000.0,
+  "2022": 33202000.0
+ },
+ "ebitda": {
+  "2025": -341730000.0,
+  "2024": 213432000.0,
+  "2023": 135241000.0,
+  "2022": 136200000.0
+ },
+ "total_debt": {
+  "2025": 1424937000.0,
+  "2024": 1352889000.0,
+  "2023": 1396194000.0,
+  "2022": 1235005000.0
+ },
+ "cash": {
+  "2025": 42390000.0,
+  "2024": 28962000.0,
+  "2023": 38185000.0,
+  "2022": 35371000.0
+ },
+ "equity": {
+  "2025": 650123000.0,
+  "2024": 1134537000.0,
+  "2023": 1169683000.0,
+  "2022": 1196332000.0
+ }
+}

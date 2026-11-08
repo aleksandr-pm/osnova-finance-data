@@ -1,0 +1,55 @@
+{
+ "ticker": "DPZ",
+ "name": "Domino's Pizza, Inc.",
+ "currency": "USD",
+ "sector": "Consumer Cyclical",
+ "industry": "Restaurants",
+ "summary": "Domino's Pizza, Inc. operates as a pizza company worldwide. The company operates through three segments: U.S. Stores, International Franchise, and Supply Chain. It offers pizzas under the Domino's brand name through company-owned and franchised stores. The company also provides bread products, wings, boneless chicken, pastas, oven-baked sandwiches, soft drink products and desserts. In addition, it offers parmesan stuffed crust pizza; spicy chicken bacon ranch specialty pizza; and garlic, and cinnamon bread bites, as well as croissant, chocolate volcano, and chicken burst pizzas. Domino's Pizza, Inc. was founded in 1960 and is based in Ann Arbor, Michigan.",
+ "market_cap": 10996493312,
+ "price": 334.28,
+ "dividend_yield": 2.38,
+ "employees": 6200,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 4939994000.0,
+  "2024": 4706416000.0,
+  "2023": 4479358000.0,
+  "2022": 4537158000.0
+ },
+ "net_income": {
+  "2025": 601704000.0,
+  "2024": 584170000.0,
+  "2023": 519118000.0,
+  "2022": 452263000.0
+ },
+ "operating_income": {
+  "2025": 949946000.0,
+  "2024": 879157000.0,
+  "2023": 819668000.0,
+  "2022": 746752000.0
+ },
+ "ebitda": {
+  "2025": 1055137000.0,
+  "2024": 1005817000.0,
+  "2023": 929555000.0,
+  "2022": 851338000.0
+ },
+ "total_debt": {
+  "2025": 5048284000.0,
+  "2024": 5197241000.0,
+  "2023": 5209306000.0,
+  "2022": 5252354000.0
+ },
+ "cash": {
+  "2025": 125675000.0,
+  "2024": 186126000.0,
+  "2023": 114098000.0,
+  "2022": 60356000.0
+ },
+ "equity": {
+  "2025": -3901142000.0,
+  "2024": -3962291000.0,
+  "2023": -4070367000.0,
+  "2022": -4189065000.0
+ }
+}

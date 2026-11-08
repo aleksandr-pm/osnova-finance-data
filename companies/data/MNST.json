@@ -1,0 +1,52 @@
+{
+ "ticker": "MNST",
+ "name": "Monster Beverage Corporation",
+ "currency": "USD",
+ "sector": "Consumer Defensive",
+ "industry": "Beverages - Non-Alcoholic",
+ "summary": "Monster Beverage Corporation, through its subsidiaries, engages in development, marketing, sale, and distribution of energy drink beverages and concentrates in the United States and internationally. The company operates through four segments: Monster Energy Drinks, Strategic Brands, Alcohol Brands, and Other. It offers carbonated non-carbonated energy drinks, ready-to-drink iced teas, lemonades, juice cocktails, single-serve juices and fruit beverages, ready-to-drink dairy and coffee drinks, energy drinks, sports drinks and single-serve still waters, and sodas that are considered natural, sparkling juices, and flavored sparkling beverages. In addition, the company provides its products under the Monster Energy, Monster Energy Ultra, Rehab Monster, Monster Energy Nitro, Java Monster, Punch Monster, Juice Monster, Monster Tour Water, Reign Total Body Fuel, Reign Storm, Bang Energy, NOS, Full Throttle, Burn, Mother, Nalu, Ultra Energy, Play and Power Play, Relentless, BPM, BU, Samurai, Live+, Predator, and Fury brands. Further, it offers craft beers, flavored malt beverages,and hard seltzers under the Jai Alai IPA, Florida Man IPA, Dale's Pale Ale, Wild Basin Hard Seltzers, Dallas Blonde, Deep Ellum IPA, Perrin Brewing Company Black Ale, Hop Rising Double IPA, Wasatch Apricot Hefeweizen, The Beast, and Beast Tea, Blind Lemon, and Blinder Lemon brands. The company engages in the concentrates and/or beverage bases to authorized bottling, and canning operations. It sells its produc",
+ "market_cap": 89497444352,
+ "price": 45.72,
+ "dividend_yield": 0.0,
+ "employees": 5773,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 8294343000.0,
+  "2024": 7492709000.0,
+  "2023": 7140027000.0,
+  "2022": 6311050000.0
+ },
+ "net_income": {
+  "2025": 1905432000.0,
+  "2024": 1509048000.0,
+  "2023": 1630988000.0,
+  "2022": 1191624000.0
+ },
+ "operating_income": {
+  "2025": 2419354000.0,
+  "2024": 1930294000.0,
+  "2023": 1953355000.0,
+  "2022": 1584721000.0
+ },
+ "ebitda": {
+  "2025": 2533795000.0,
+  "2024": 2010728000.0,
+  "2023": 2022253000.0,
+  "2022": 1645962000.0
+ },
+ "total_debt": {
+  "2024": 373951000.0
+ },
+ "cash": {
+  "2025": 2088117000.0,
+  "2024": 1533287000.0,
+  "2023": 2297675000.0,
+  "2022": 1307141000.0
+ },
+ "equity": {
+  "2025": 8254108000.0,
+  "2024": 5957718000.0,
+  "2023": 8228744000.0,
+  "2022": 7025041000.0
+ }
+}
