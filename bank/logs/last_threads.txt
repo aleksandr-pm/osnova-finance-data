@@ -1,20 +1,21 @@
-threads: mkt_sector_beverages (companies, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/6ddf8c25e21c/bank/cards_markets/mkt_sector_beverages.jpg
+threads: share_exp_486 (agro, donut)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/da9d01a05e48/bank/covers/share_exp_486.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/da9d01a05e48/bank/cards/share_exp_486.jpg
 ---
-Крупнейшие производители напитков по капитализации, ноябрь 2026:
-1. 🇺🇸 Coca-Cola · $412 млрд
-2. 🇨🇳 Kweichow Moutai · $272 млрд
-3. 🇺🇸 Pepsico · $193 млрд
-4. 🇧🇪 Anheuser-Busch Inbev · $165 млрд
-5. 🇺🇸 Starbucks · $120 млрд
-6. 🇺🇸 Monster Beverage · $89,6 млрд
-7. 🇨🇳 Nongfu Spring · $64,8 млрд
-8. 🇬🇧 Diageo · $55,5 млрд
-9. 🇳🇱 Heineken · $52,4 млрд
-10. 🇬🇧 Coca-Cola European Partners · $51 млрд
-№1: Coca-Cola, $412 млрд.
+Доли в мировом экспорте бананов, 2024:
+1. 🇪🇨 Эквадор · 24,1%
+2. 🇵🇭 Филиппины · 8,8%
+3. 🇨🇷 Коста-Рика · 8,6%
+4. 🇨🇴 Колумбия · 7,8%
+5. 🇳🇱 Нидерланды · 7,3%
+6. 🇬🇹 Гватемала · 7,3%
+7. 🇧🇪 Бельгия · 5,8%
+8. 🇺🇸 США · 3,6%
+9. 🇻🇳 Вьетнам · 2,6%
+10. 🇮🇳 Индия · 2,5%
+Остальной мир: 43%.
 Больше в Telegram @osnovafin
 ---
 Threads: текстом
-Опубликовано: 17865538857696711. Осталось новых рейтингов: 193
-exit=0 2026-11-08T12:45:44Z
+Опубликовано: 17895703242615942. Осталось новых рейтингов: 192
+exit=0 2026-11-08T14:18:23Z
