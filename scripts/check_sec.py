@@ -31,6 +31,7 @@ for t in sys.argv[1:]:
         y = json.load(open(f"companies/data/{t}.json"))
         f = requests.get(f"https://data.sec.gov/api/xbrl/companyfacts/CIK{cik[t]}.json", headers=UA, timeout=30).json()["facts"]
         r, n = annual(f, REV), annual(f, NI)
+        print(t, "SEC выручка", {k: round(v/1e6) for k, v in sorted(r.items())[-5:]}, "прибыль", {k: round(v/1e6) for k, v in sorted(n.items())[-5:]}, flush=True)
         line = []
         for k, sec, yh in (("выручка", r, y["revenue"]), ("прибыль", n, y["net_income"])):
             for yr in sorted(yh)[-4:]:
