@@ -1,0 +1,55 @@
+{
+ "ticker": "NFLX",
+ "name": "Netflix, Inc.",
+ "currency": "USD",
+ "sector": "Communication Services",
+ "industry": "Entertainment",
+ "summary": "Netflix, Inc. provides entertainment services worldwide. The company offers television (TV) series, documentaries, feature films, games, and live programming across various genres and languages. It also provides members the ability to receive streaming content through a host of internet-connected devices, including TVs, digital video players, TV set-top boxes, and mobile devices. Netflix, Inc. was incorporated in 1997 and is headquartered in Los Gatos, California.",
+ "market_cap": 260382130176,
+ "price": 63.41,
+ "dividend_yield": 0.0,
+ "employees": 16000,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 45183036000.0,
+  "2024": 39000966000.0,
+  "2023": 33723297000.0,
+  "2022": 31615550000.0
+ },
+ "net_income": {
+  "2025": 10981201000.0,
+  "2024": 8711631000.0,
+  "2023": 5407990000.0,
+  "2022": 4491924000.0
+ },
+ "operating_income": {
+  "2025": 13326603000.0,
+  "2024": 10417614000.0,
+  "2023": 6954003000.0,
+  "2022": 5632831000.0
+ },
+ "ebitda": {
+  "2025": 30254617000.0,
+  "2024": 26314821000.0,
+  "2023": 21508387000.0,
+  "2022": 20332955000.0
+ },
+ "total_debt": {
+  "2025": 14462836000.0,
+  "2024": 15582804000.0,
+  "2023": 14543261000.0,
+  "2022": 14353076000.0
+ },
+ "cash": {
+  "2025": 9033681000.0,
+  "2024": 7804733000.0,
+  "2023": 7116913000.0,
+  "2022": 5147176000.0
+ },
+ "equity": {
+  "2025": 26615488000.0,
+  "2024": 24743567000.0,
+  "2023": 20588313000.0,
+  "2022": 20777401000.0
+ }
+}

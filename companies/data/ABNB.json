@@ -1,0 +1,55 @@
+{
+ "ticker": "ABNB",
+ "name": "Airbnb, Inc.",
+ "currency": "USD",
+ "sector": "Consumer Cyclical",
+ "industry": "Travel Services",
+ "summary": "Airbnb, Inc., together with its subsidiaries, operates a platform for stays, experiences, and services worldwide. The company's marketplace connects hosts and guests online or through mobile devices to book spaces, experiences, and services. It also offers gift cards. The company was formerly known as AirBed & Breakfast, Inc. and changed its name to Airbnb, Inc. in November 2010. Airbnb, Inc. was founded in 2007 and is headquartered in San Francisco, California.",
+ "market_cap": 113375051776,
+ "price": 189.99,
+ "dividend_yield": 0.0,
+ "employees": 8200,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 12241000000.0,
+  "2024": 11102000000.0,
+  "2023": 9917000000.0,
+  "2022": 8399000000.0
+ },
+ "net_income": {
+  "2025": 2511000000.0,
+  "2024": 2648000000.0,
+  "2023": 4792000000.0,
+  "2022": 1893000000.0
+ },
+ "operating_income": {
+  "2025": 2544000000.0,
+  "2024": 2553000000.0,
+  "2023": 1518000000.0,
+  "2022": 1891000000.0
+ },
+ "ebitda": {
+  "2025": 2544000000.0,
+  "2024": 2553000000.0,
+  "2023": 1518000000.0,
+  "2022": 1972000000.0
+ },
+ "total_debt": {
+  "2025": 2067000000.0,
+  "2024": 2058000000.0,
+  "2023": 2304000000.0,
+  "2022": 2341000000.0
+ },
+ "cash": {
+  "2025": 6560000000.0,
+  "2024": 6864000000.0,
+  "2023": 6874000000.0,
+  "2022": 7378000000.0
+ },
+ "equity": {
+  "2025": 8199000000.0,
+  "2024": 8412000000.0,
+  "2023": 8165000000.0,
+  "2022": 5560000000.0
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "ticker": "V",
+ "name": "Visa Inc.",
+ "currency": "USD",
+ "sector": "Financial Services",
+ "industry": "Credit Services",
+ "summary": "Visa Inc. operates as a payments technology company in the United States and internationally. It operates VisaNet, a transaction processing network that enables authorization, clearing, and settlement of payment transactions. The company also offers credit, debit, and prepaid card products; tap to pay, tokenization, and click to pay services; Visa Direct, a platform which facilitates money movement, enabling clients to collect, hold, convert, and send funds across its network; and issuing solutions, such as airport lounge access, dining reservations, shopping experiences, event tickets, and seller offers. In addition, it provides acceptance solutions, an omnichannel payment integration with e-commerce platforms; risk detection and prevention solutions; and advisory and other services comprising consulting practice, proprietary analytics models, data scientists and economists, marketing services, and managed services. The company provides its services under the Visa, Visa Electron, V PAY, Interlink, and PLUS brands. It serves consumers, sellers, financial institutions, and government entities. Visa Inc. was founded in 1958 and is headquartered in San Francisco, California.",
+ "market_cap": 788580401152,
+ "price": 422.65,
+ "dividend_yield": 0.74,
+ "employees": 34800,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 40000000000.0,
+  "2024": 35926000000.0,
+  "2023": 32653000000.0,
+  "2022": 29310000000.0
+ },
+ "net_income": {
+  "2025": 19853000000.0,
+  "2024": 19457000000.0,
+  "2023": 16989000000.0,
+  "2022": 14630000000.0
+ },
+ "operating_income": {
+  "2025": 26556000000.0,
+  "2024": 24057000000.0,
+  "2023": 21927000000.0,
+  "2022": 19681000000.0
+ },
+ "ebitda": {
+  "2025": 26003000000.0,
+  "2024": 25591000000.0,
+  "2023": 22624000000.0,
+  "2022": 19535000000.0
+ },
+ "total_debt": {
+  "2025": 25171000000.0,
+  "2024": 20836000000.0,
+  "2023": 20463000000.0,
+  "2022": 22450000000.0
+ },
+ "cash": {
+  "2025": 17164000000.0,
+  "2024": 11975000000.0,
+  "2023": 16286000000.0,
+  "2022": 15689000000.0
+ },
+ "equity": {
+  "2025": 37909000000.0,
+  "2024": 39137000000.0,
+  "2023": 38733000000.0,
+  "2022": 35581000000.0
+ }
+}

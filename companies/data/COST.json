@@ -1,0 +1,55 @@
+{
+ "ticker": "COST",
+ "name": "Costco Wholesale Corporation",
+ "currency": "USD",
+ "sector": "Consumer Defensive",
+ "industry": "Discount Stores",
+ "summary": "Costco Wholesale Corporation, together with its subsidiaries, engages in the operation of membership warehouses in the United States, Puerto Rico, Canada, Mexico, Japan, the United Kingdom, Korea, Australia, Taiwan, China, Spain, France, Sweden, Iceland, and New Zealand. It offers merchandise, including sundries, dry groceries, candies, coolers, freezers, liquor, and tobacco; non-food merchandise comprising consumer electronics, appliances, small electrics, health and beauty aids, hardware, lawn and garden, sporting goods, tires, toys and seasonal, automotive, stamps, tickets, apparel, furniture, domestics, housewares, special order kiosks, and jewelry; and fresh food, such as meat, produce, deli, and bakery products. The company is also involved in warehouse ancillary operations, which include gasoline, pharmacies, food courts, optical, hearing aids, and tire installation centers. In addition, it engages in e-commerce, business centers, travel, and other businesses. Further, the company operates e-commerce sites; and offers branded and private-label products in various categories. The company was formerly known as Costco Companies, Inc. and changed its name to Costco Wholesale Corporation in August 1999. Costco Wholesale Corporation was founded in 1976 and is based in Issaquah, Washington.",
+ "market_cap": 466863390720,
+ "price": 1053.56,
+ "dividend_yield": 0.56,
+ "employees": 355000,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2026": 303154000000.0,
+  "2025": 275235000000.0,
+  "2024": 254453000000.0,
+  "2023": 242290000000.0
+ },
+ "net_income": {
+  "2026": 9226000000.0,
+  "2025": 8099000000.0,
+  "2024": 7367000000.0,
+  "2023": 6292000000.0
+ },
+ "operating_income": {
+  "2026": 11685000000.0,
+  "2025": 10383000000.0,
+  "2024": 9285000000.0,
+  "2023": 8114000000.0
+ },
+ "ebitda": {
+  "2026": 15070000000.0,
+  "2025": 13398000000.0,
+  "2024": 12146000000.0,
+  "2023": 10724000000.0
+ },
+ "total_debt": {
+  "2026": 8576000000.0,
+  "2025": 8248000000.0,
+  "2024": 8169000000.0,
+  "2023": 8884000000.0
+ },
+ "cash": {
+  "2026": 20207000000.0,
+  "2025": 14161000000.0,
+  "2024": 9906000000.0,
+  "2023": 13700000000.0
+ },
+ "equity": {
+  "2026": 35803000000.0,
+  "2025": 29164000000.0,
+  "2024": 23622000000.0,
+  "2023": 25058000000.0
+ }
+}

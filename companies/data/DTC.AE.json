@@ -1,0 +1,55 @@
+{
+ "ticker": "DTC.AE",
+ "name": "Dubai Taxi Company P.J.S.C.",
+ "currency": "AED",
+ "sector": "Industrials",
+ "industry": "Railroads",
+ "summary": "Dubai Taxi Company P.J.S.C., a taxi company, provides passenger transportation services for individuals and businesses in the United Arab Emirates. It operates through three segments: Regular Taxis, Limousine Service, and Bus Transport Service segments. The company offers taxi, VIP limousine, commercial and school bus, and last mile delivery bike services; passenger transport by vehicles via e-services; airport taxi, and families and ladies taxi services; and in safe hands taxi services. It also provides DTC My Driver service that allows trained and competent drivers to interested parties for an agreed period. In addition, the company offers hourly limousine rental services; and operates DTC application. Dubai Taxi Company P.J.S.C. was incorporated in 1994 and is based in Dubai, the United Arab Emirates.",
+ "market_cap": 5467922944,
+ "price": 2.19,
+ "dividend_yield": 2.59,
+ "employees": null,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 2474161168.0,
+  "2024": 2196607262.0,
+  "2023": 1953512802.0,
+  "2022": 1759630830.0
+ },
+ "net_income": {
+  "2025": 356070843.0,
+  "2024": 331280243.0,
+  "2023": 345325089.0,
+  "2022": 224375493.0
+ },
+ "operating_income": {
+  "2025": 426952557.0,
+  "2024": 375255314.0,
+  "2023": 324962643.0,
+  "2022": 181370493.0
+ },
+ "ebitda": {
+  "2025": 663811729.0,
+  "2024": 597937890.0,
+  "2023": 496476715.0,
+  "2022": 322643270.0
+ },
+ "total_debt": {
+  "2025": 1001419553.0,
+  "2024": 1001501159.0,
+  "2023": 997012750.0,
+  "2022": 0.0
+ },
+ "cash": {
+  "2025": 259870611.0,
+  "2024": 336071609.0,
+  "2023": 295590340.0,
+  "2022": 235101944.0
+ },
+ "equity": {
+  "2025": 474828036.0,
+  "2024": 410578252.0,
+  "2023": 307704969.0,
+  "2022": 400000000.0
+ }
+}

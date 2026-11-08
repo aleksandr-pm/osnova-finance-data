@@ -1,0 +1,55 @@
+{
+ "ticker": "KO",
+ "name": "The Coca-Cola Company",
+ "currency": "USD",
+ "sector": "Consumer Defensive",
+ "industry": "Beverages - Non-Alcoholic",
+ "summary": "The Coca-Cola Company, a beverage company, manufactures and sells various nonalcoholic beverages in the United States and internationally. The company provides Trademark Coca-Cola, sparkling soft drinks and flavors; water, sports, coffee, and tea; juice, value-added dairy, and plant-based beverages; and emerging beverages. It also offers beverage concentrates and syrups, as well as fountain syrups to fountain retailers comprising restaurants and convenience stores. The company sells its products under the Coca-Cola, Diet Coke/Coca-Cola Light, Coca-Cola Zero Sugar, caffeine free Diet Coke, Cherry Coke, Fanta, Sprite, Simply, Fanta Orange, Fanta Zero Orange, Fanta Zero Sugar, Fanta Apple, Sprite Zero Sugar, Simply Orange, Simply Apple, Simply Grapefruit, Fresca, Schweppes, Thums Up, Aquarius, Ayataka, BODYARMOR, Ciel, Costa, Crystal, Dasani, Fuze Tea, Georgia, glacéau smartwater, glacéau vitaminwater, Gold Peak, I LOHAS, Powerade, Topo Chico, Core Power, Del Valle, fairlife, innocent, Maaza, Minute Maid, Minute Maid Pulpy, Santa Clara, and dogadan brands. It operates through a network of independent bottling partners, distributors, wholesalers, and retailers, as well as through bottling and distribution operators. The Coca-Cola Company was founded in 1886 and is headquartered in Atlanta, Georgia.",
+ "market_cap": 411562999808,
+ "price": 95.67,
+ "dividend_yield": 2.22,
+ "employees": 65900,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 47941000000.0,
+  "2024": 47061000000.0,
+  "2023": 45754000000.0,
+  "2022": 43004000000.0
+ },
+ "net_income": {
+  "2025": 13107000000.0,
+  "2024": 10631000000.0,
+  "2023": 10714000000.0,
+  "2022": 9542000000.0
+ },
+ "operating_income": {
+  "2025": 14911000000.0,
+  "2024": 14022000000.0,
+  "2023": 13098000000.0,
+  "2022": 12042000000.0
+ },
+ "ebitda": {
+  "2025": 18702000000.0,
+  "2024": 15817000000.0,
+  "2023": 15607000000.0,
+  "2022": 13828000000.0
+ },
+ "total_debt": {
+  "2025": 45492000000.0,
+  "2024": 44522000000.0,
+  "2023": 42064000000.0,
+  "2022": 39149000000.0
+ },
+ "cash": {
+  "2025": 10270000000.0,
+  "2024": 10828000000.0,
+  "2023": 9366000000.0,
+  "2022": 9519000000.0
+ },
+ "equity": {
+  "2025": 32169000000.0,
+  "2024": 24856000000.0,
+  "2023": 25941000000.0,
+  "2022": 24105000000.0
+ }
+}

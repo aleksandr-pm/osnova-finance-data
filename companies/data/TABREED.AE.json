@@ -1,0 +1,55 @@
+{
+ "ticker": "TABREED.AE",
+ "name": "National Central Cooling Company PJSC",
+ "currency": "AED",
+ "sector": "Utilities",
+ "industry": "Utilities - Regulated Water",
+ "summary": "National Central Cooling Company PJSC, together with its subsidiaries, supplies chilled water in the United Arab Emirates, Saudi Arabia, Egypt, Oman, Bahrain, India, and internationally. The company operates in two segments, Chilled Water and Value Chain Business. It constructs, owns, assembles, installs, operates, and maintains cooling and conditioning systems; and distributes and sells chilled water for use in district cooling technologies. The company also engages in the operation and maintenance of plants; construction of secondary networks; manufacturing of pre-insulated pipes; and provision of design and supervision consultancy. In addition, it is involved in water treatment; supervision; billing and collection of chilled water charges; and building energy efficiency services. The company was incorporated in 1998 and is headquartered in Abu Dhabi, the United Arab Emirates.",
+ "market_cap": 6259596288,
+ "price": 2.2,
+ "dividend_yield": 5.23,
+ "employees": null,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 2456325000.0,
+  "2024": 2431622000.0,
+  "2023": 2415475000.0,
+  "2022": 2216156000.0
+ },
+ "net_income": {
+  "2025": 465344000.0,
+  "2024": 570219000.0,
+  "2023": 431141000.0,
+  "2022": 600188000.0
+ },
+ "operating_income": {
+  "2025": 791852000.0,
+  "2024": 793082000.0,
+  "2023": 805744000.0,
+  "2022": 801898000.0
+ },
+ "ebitda": {
+  "2025": 970634000.0,
+  "2024": 1114965000.0,
+  "2023": 1245987000.0,
+  "2022": 1088039000.0
+ },
+ "total_debt": {
+  "2025": 6500624000.0,
+  "2024": 5647682000.0,
+  "2023": 6438631000.0,
+  "2022": 7308976000.0
+ },
+ "cash": {
+  "2025": 654990000.0,
+  "2024": 1021376000.0,
+  "2023": 1508004000.0,
+  "2022": 1771401000.0
+ },
+ "equity": {
+  "2025": 6078945000.0,
+  "2024": 6343557000.0,
+  "2023": 6317527000.0,
+  "2022": 6474810000.0
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "ticker": "MASQ.AE",
+ "name": "Mashreqbank PSC",
+ "currency": "AED",
+ "sector": "Financial Services",
+ "industry": "Banks - Regional",
+ "summary": "Mashreqbank PSC provides various banking and financial services to individuals and corporates. The company operates through Wholesale, Retail, Treasury & Capital Markets, and Insurance & Others segments. The Wholesale segment offers corporate and commercial banking services, such as global financial institution and international corporate services, as well as a suite of corporate banking products, including trade finance, contracting finance, project finance, investment banking, cash management, correspondent banking, and Islamic products. The Retail segment provides current accounts, savings accounts, fixed deposits, and Mashreq Millionaire deposits; personal, mortgage, and business loans; credit with loyalty programs and debit cards, bank assurance, overdraft, priority banking, SME and private banking, wealth management, and Islamic products to individuals and small businesses, as well as investment products. The Treasury & Capital Markets segment is involved in customer flow and proprietary business; funding center management comprising transactions for foreign exchange, derivatives, margin FX, futures, hedging, investment products, domestic equities brokerage, and asset management undertaken on behalf of customers; and trading and investing activities. The Insurance & Others segment offers life, health, motor, marine cargo and hull, aviation, fire and general accident, engineering, liability, and personal lines insurance. The company also provides reinsurance, IT, asset a",
+ "market_cap": 60784775168,
+ "price": 303.0,
+ "dividend_yield": 3.37,
+ "employees": null,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 12593634000.0,
+  "2024": 13415533000.0,
+  "2023": 10723815000.0,
+  "2022": 7302293000.0
+ },
+ "net_income": {
+  "2025": 6615110000.0,
+  "2024": 8758113000.0,
+  "2023": 8589356000.0,
+  "2022": 3729315000.0
+ },
+ "operating_income": {},
+ "ebitda": {},
+ "total_debt": {
+  "2025": 15378055000.0,
+  "2024": 3982230000.0,
+  "2023": 7042311000.0,
+  "2022": 7103575000.0
+ },
+ "cash": {
+  "2025": 36008822000.0,
+  "2024": 43491226000.0,
+  "2023": 43344217000.0,
+  "2022": 31808224000.0
+ },
+ "equity": {
+  "2025": 39374170000.0,
+  "2024": 36712765000.0,
+  "2023": 30333359000.0,
+  "2022": 23599496000.0
+ }
+}

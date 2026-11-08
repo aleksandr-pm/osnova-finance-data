@@ -1,0 +1,55 @@
+{
+ "ticker": "TSLA",
+ "name": "Tesla, Inc.",
+ "currency": "USD",
+ "sector": "Consumer Cyclical",
+ "industry": "Auto Manufacturers",
+ "summary": "Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, China, and internationally. The company operates in two segments, Automotive; and Energy Generation and Storage. The company offers electric vehicles, as well as sells automotive regulatory credits; and non-warranty maintenance services and collision, automotive insurance services, as well as part sales and retail merchandise sale. It also provides sedans and sport utility vehicles through direct and used vehicle sales, a network of Tesla Superchargers, and in-app upgrades; purchase financing and leasing services; services for electric vehicles through its company-owned service locations and Tesla mobile service technicians; and vehicle limited warranties and extended service plans. In addition, the company engages in the design, manufacture, installation, sale, and leasing of solar energy generation and energy storage products, and related services to residential, commercial, and industrial customers and utilities through its website, stores, and galleries, as well as through a network of channel partners. Further, it provides services and repairs to its energy product customers, including under warranty and extended service plans; and various financing options to its residential customers; lithium-ion battery energy storage products, such as Powerwall and Megapack; energy generation products, including solar panels and solar roof;",
+ "market_cap": 1415956922368,
+ "price": 358.22,
+ "dividend_yield": 0.0,
+ "employees": 134785,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 94827000000.0,
+  "2024": 97690000000.0,
+  "2023": 96773000000.0,
+  "2022": 81462000000.0
+ },
+ "net_income": {
+  "2025": 3794000000.0,
+  "2024": 7130000000.0,
+  "2023": 14999000000.0,
+  "2022": 12583000000.0
+ },
+ "operating_income": {
+  "2025": 4849000000.0,
+  "2024": 7760000000.0,
+  "2023": 8891000000.0,
+  "2022": 13832000000.0
+ },
+ "ebitda": {
+  "2025": 11764000000.0,
+  "2024": 14708000000.0,
+  "2023": 14796000000.0,
+  "2022": 17657000000.0
+ },
+ "total_debt": {
+  "2025": 14719000000.0,
+  "2024": 13623000000.0,
+  "2023": 9573000000.0,
+  "2022": 5748000000.0
+ },
+ "cash": {
+  "2025": 16513000000.0,
+  "2024": 16139000000.0,
+  "2023": 16398000000.0,
+  "2022": 16253000000.0
+ },
+ "equity": {
+  "2025": 82137000000.0,
+  "2024": 72913000000.0,
+  "2023": 62634000000.0,
+  "2022": 44704000000.0
+ }
+}

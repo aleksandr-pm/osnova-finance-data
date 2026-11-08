@@ -1,0 +1,55 @@
+{
+ "ticker": "NVDA",
+ "name": "NVIDIA Corporation",
+ "currency": "USD",
+ "sector": "Technology",
+ "industry": "Semiconductors",
+ "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. It has a collaboration with Cisco to develop Ultra-Dense Small Form Factor Pluggable (USFP), a high-density optical module pluggable transceiver. It has a collaboration with ChipAgents to develop Build-A-Chip-Bench, a benchmark for AI agents carrying chip design tasks and The Company has a strategic alliance with MediaTek to build the next generations of AI computing platforms. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California.",
+ "market_cap": 4506795900928,
+ "price": 186.64,
+ "dividend_yield": 0.54,
+ "employees": 42000,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2026": 215938000000.0,
+  "2025": 130497000000.0,
+  "2024": 60922000000.0,
+  "2023": 26974000000.0
+ },
+ "net_income": {
+  "2026": 120067000000.0,
+  "2025": 72880000000.0,
+  "2024": 29760000000.0,
+  "2023": 4368000000.0
+ },
+ "operating_income": {
+  "2026": 130387000000.0,
+  "2025": 81453000000.0,
+  "2024": 32972000000.0,
+  "2023": 5577000000.0
+ },
+ "ebitda": {
+  "2026": 144552000000.0,
+  "2025": 86137000000.0,
+  "2024": 35583000000.0,
+  "2023": 5986000000.0
+ },
+ "total_debt": {
+  "2026": 11040000000.0,
+  "2025": 9982000000.0,
+  "2024": 11056000000.0,
+  "2023": 12031000000.0
+ },
+ "cash": {
+  "2026": 10605000000.0,
+  "2025": 8589000000.0,
+  "2024": 7280000000.0,
+  "2023": 3389000000.0
+ },
+ "equity": {
+  "2026": 157293000000.0,
+  "2025": 79327000000.0,
+  "2024": 42978000000.0,
+  "2023": 22101000000.0
+ }
+}

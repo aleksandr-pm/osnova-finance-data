@@ -1,0 +1,55 @@
+{
+ "ticker": "SBUX",
+ "name": "Starbucks Corporation",
+ "currency": "USD",
+ "sector": "Consumer Cyclical",
+ "industry": "Restaurants",
+ "summary": "Starbucks Corporation, together with its subsidiaries, operates as a roaster, marketer, and retailer of coffee internationally. The company operates through three segments: North America, International, and Channel Development. Its stores offer coffee, tea, and other beverages, roasted whole beans and ground coffees, complementary food, packaged coffees, single-serve products, and ready-to-drink beverages; and various food products, such as pastries, breakfast sandwiches, and lunch items. The company also licenses its trademarks through licensed stores, and grocery and foodservice accounts. The company offers its products under the Starbucks Coffee, Teavana, Seattle's Best Coffee, Ethos, and Starbucks Reserve brands. Starbucks Corporation was founded in 1971 and is based in Seattle, Washington.",
+ "market_cap": 120177942528,
+ "price": 105.41,
+ "dividend_yield": 2.39,
+ "employees": null,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 37184400000.0,
+  "2024": 36176200000.0,
+  "2023": 35975600000.0,
+  "2022": 32250300000.0
+ },
+ "net_income": {
+  "2025": 1856400000.0,
+  "2024": 3760900000.0,
+  "2023": 4124500000.0,
+  "2022": 3281600000.0
+ },
+ "operating_income": {
+  "2025": 3580800000.0,
+  "2024": 5107600000.0,
+  "2023": 5502900000.0,
+  "2022": 4429700000.0
+ },
+ "ebitda": {
+  "2025": 4821400000.0,
+  "2024": 7124000000.0,
+  "2023": 7402300000.0,
+  "2022": 6244200000.0
+ },
+ "total_debt": {
+  "2025": 26611500000.0,
+  "2024": 25803100000.0,
+  "2023": 24599800000.0,
+  "2022": 23804800000.0
+ },
+ "cash": {
+  "2025": 3219800000.0,
+  "2024": 3286200000.0,
+  "2023": 3551500000.0,
+  "2022": 2818400000.0
+ },
+ "equity": {
+  "2025": -8096600000.0,
+  "2024": -7448900000.0,
+  "2023": -7994800000.0,
+  "2022": -8706600000.0
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "ticker": "CBD.AE",
+ "name": "Commercial Bank of Dubai PSC",
+ "currency": "AED",
+ "sector": "Financial Services",
+ "industry": "Banks - Regional",
+ "summary": "Commercial Bank of Dubai PSC provides commercial and retail banking services in the United Arab Emirates. The company operates through Institutional Banking, Corporate Banking, Personal Banking, and Trading & Other segments. It offers saving current, saving, gold and silver, and foreign currency accounts; personal and business credit and debit cards; home, personal, and auto loan; investments, mutual funds, domestic and international transfers, and instant remittances; travel and life insurance, and pension and endowment plans; and digital and phone banking, as well as elite banking and private banking services. The company also provides business accounts, saving and deposit, and treasury services, such as foreign exchange, deposits, interest rate and commodities hedging, and bonds and sukuk; business term loans, goods finance, business installment loan, and loan against POS; payments and cash management, public sector payments, and escrow services; loan financing solutions, fixed assets finance, fleet finance, and commercial property finance; and trade finance, working capital loan, and bank overdraft services, as well as engages in corporate and institutional banking. In addition, it is involved in provision of brokerage facilities for local shares and bonds; self-owned property management services, and buying and selling of real estate; providing issuance of debt securities; transacting and negotiating derivative agreements; and technology research and development, as well",
+ "market_cap": 28896659456,
+ "price": 9.68,
+ "dividend_yield": 6.06,
+ "employees": null,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 5920025000.0,
+  "2024": 5490802000.0,
+  "2023": 4937117000.0,
+  "2022": 3803539000.0
+ },
+ "net_income": {
+  "2025": 3367874000.0,
+  "2024": 2897553000.0,
+  "2023": 2517838000.0,
+  "2022": 1692791000.0
+ },
+ "operating_income": {},
+ "ebitda": {},
+ "total_debt": {
+  "2025": 9628010000.0,
+  "2024": 9461418000.0,
+  "2023": 9588732000.0,
+  "2022": 8447965000.0
+ },
+ "cash": {
+  "2025": 24010533000.0,
+  "2024": 19376618000.0,
+  "2023": 16715172000.0,
+  "2022": 19040628000.0
+ },
+ "equity": {
+  "2025": 19422468000.0,
+  "2024": 17424609000.0,
+  "2023": 15781357000.0,
+  "2022": 13882246000.0
+ }
+}

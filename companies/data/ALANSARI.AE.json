@@ -1,0 +1,55 @@
+{
+ "ticker": "ALANSARI.AE",
+ "name": "Al Ansari Financial Services PJSC",
+ "currency": "AED",
+ "sector": "Financial Services",
+ "industry": "Capital Markets",
+ "summary": "Al Ansari Financial Services PJSC, together with its subsidiaries, operates as an integrated financial services company in the United Arab Emirates and internationally. The company operates through Money Exchange and Remittances, and Others segments. The company offers cross-border payments, foreign currency exchange services, access to the wage protection system, bill collection, pre-paid cards, and payment technology solutions. It serves retail and corporate customers. The company was founded in 1966 and is based in Dubai, the United Arab Emirates. Al Ansari Financial Services PJSC is a subsidiary of Al Ansari Holding LLC.",
+ "market_cap": 6975000064,
+ "price": 0.93,
+ "dividend_yield": 8.52,
+ "employees": null,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 1291257000.0,
+  "2024": 1148976000.0,
+  "2023": 1142616000.0,
+  "2022": 1161081000.0
+ },
+ "net_income": {
+  "2025": 400858000.0,
+  "2024": 405849000.0,
+  "2023": 495189000.0,
+  "2022": 594859000.0
+ },
+ "operating_income": {
+  "2025": 445019000.0,
+  "2024": 417608000.0,
+  "2023": 479674000.0,
+  "2022": 574790000.0
+ },
+ "ebitda": {
+  "2025": 598241000.0,
+  "2024": 549962000.0,
+  "2023": 593530000.0,
+  "2022": 664892000.0
+ },
+ "total_debt": {
+  "2025": 951682000.0,
+  "2024": 331575000.0,
+  "2023": 428072000.0,
+  "2022": 417197000.0
+ },
+ "cash": {
+  "2025": 1557343000.0,
+  "2024": 1022907000.0,
+  "2023": 1137784000.0,
+  "2022": 1051113000.0
+ },
+ "equity": {
+  "2025": 1843147000.0,
+  "2024": 1740589000.0,
+  "2023": 1801419000.0,
+  "2022": 1606230000.0
+ }
+}

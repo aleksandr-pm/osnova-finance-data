@@ -1,0 +1,55 @@
+{
+ "ticker": "MCD",
+ "name": "McDonald's Corporation",
+ "currency": "USD",
+ "sector": "Consumer Cyclical",
+ "industry": "Restaurants",
+ "summary": "McDonald's Corporation owns, operates, and franchises restaurants under the McDonald's brand in the United States and internationally. It offers food and beverages, including hamburgers and cheeseburgers, various chicken sandwiches, fries, shakes, frozen desserts, sundaes, soft serve cones, cookies, pies, soft drinks, coffee, and other beverages; and full or limited breakfast, as well as sells various other products during limited-time promotions. The company owns and operates franchised restaurants under various structures, including conventional franchise, developmental license, or affiliate. McDonald's Corporation was founded in 1940 and is based in Chicago, Illinois.",
+ "market_cap": 195163602944,
+ "price": 276.52,
+ "dividend_yield": 2.79,
+ "employees": 150000,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 26885000000.0,
+  "2024": 25920000000.0,
+  "2023": 25495000000.0,
+  "2022": 23182000000.0
+ },
+ "net_income": {
+  "2025": 8563000000.0,
+  "2024": 8223000000.0,
+  "2023": 8469000000.0,
+  "2022": 6177000000.0
+ },
+ "operating_income": {
+  "2025": 12394000000.0,
+  "2024": 11851000000.0,
+  "2023": 11747000000.0,
+  "2022": 10345000000.0
+ },
+ "ebitda": {
+  "2025": 14678000000.0,
+  "2024": 13948000000.0,
+  "2023": 13861000000.0,
+  "2022": 10903000000.0
+ },
+ "total_debt": {
+  "2025": 54814000000.0,
+  "2024": 51948000000.0,
+  "2023": 53091000000.0,
+  "2022": 48699000000.0
+ },
+ "cash": {
+  "2025": 774000000.0,
+  "2024": 1085000000.0,
+  "2023": 4579000000.0,
+  "2022": 2583800000.0
+ },
+ "equity": {
+  "2025": -1790000000.0,
+  "2024": -3796000000.0,
+  "2023": -4706000000.0,
+  "2022": -6003400000.0
+ }
+}

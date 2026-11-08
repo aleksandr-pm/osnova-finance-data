@@ -1,0 +1,55 @@
+{
+ "ticker": "ARMX.AE",
+ "name": "Aramex PJSC",
+ "currency": "AED",
+ "sector": "Industrials",
+ "industry": "Integrated Freight & Logistics",
+ "summary": "Aramex PJSC, together with its subsidiaries, invests in and operates businesses in freight, express, logistics, and supply chain management in the United Arab Emirates, the Middle East, North Africa, Turkey, East and South Africa, Europe, North America, North and South Asia, and Oceania. It operates through four segments: Courier, Freight Forwarding, Logistics, and Other Operations. The Courier segment involves the delivery of small packages to retail and wholesale customers, express delivery of small parcels, pickup and delivery shipments, and related royalty and franchise levies. The Freight Forwarding segment engages in the forwarding of loose and consolidated freight through air, land, and ocean transport; and warehousing, customer clearance, and break-bulk activities. The Logistics segment offers warehousing and related management distribution, supply chain management, inventory management, and other value-added services. The Other Operations segment provides visa services, and publication and distribution services. Aramex PJSC was founded in 1982 and is headquartered in Dubai, the United Arab Emirates.",
+ "market_cap": 2540213504,
+ "price": 1.735,
+ "dividend_yield": 0.0,
+ "employees": null,
+ "source": "Yahoo Finance",
+ "revenue": {
+  "2025": 6359946000.0,
+  "2024": 6324444000.0,
+  "2023": 5694022000.0,
+  "2022": 5926005000.0
+ },
+ "net_income": {
+  "2025": 20582000.0,
+  "2024": 141811000.0,
+  "2023": 129297000.0,
+  "2022": 165379000.0
+ },
+ "operating_income": {
+  "2025": 196302000.0,
+  "2024": 279132000.0,
+  "2023": 273348000.0,
+  "2022": 259019000.0
+ },
+ "ebitda": {
+  "2025": 550819000.0,
+  "2024": 657635000.0,
+  "2023": 643637000.0,
+  "2022": 630100000.0
+ },
+ "total_debt": {
+  "2025": 1948396000.0,
+  "2024": 1873739000.0,
+  "2023": 2067274000.0,
+  "2022": 2195245000.0
+ },
+ "cash": {
+  "2025": 565538000.0,
+  "2024": 506588000.0,
+  "2023": 567189000.0,
+  "2022": 758954000.0
+ },
+ "equity": {
+  "2025": 2557170000.0,
+  "2024": 2516541000.0,
+  "2023": 2461366000.0,
+  "2022": 2509523000.0
+ }
+}
