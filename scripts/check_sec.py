@@ -9,21 +9,19 @@ REV = ["Revenues", "RevenueFromContractWithCustomerExcludingAssessedTax", "Sales
 NI = ["NetIncomeLoss", "NetIncomeLossAvailableToCommonStockholdersBasic", "ProfitLoss"]
 
 def annual(facts, tags):
-    best = {}
+    """Годовые значения по году окончания периода. Берём записи с годовым frame (CYyyyy, его ставит SEC
+    без дублей пересчётов), по каждому году первый тег из списка, где значение есть."""
+    out = {}
     for tag in tags:
         u = facts.get("us-gaap", {}).get(tag, {}).get("units", {}).get("USD", [])
         for x in u:
-            if x.get("form") not in ("10-K", "10-K/A") or not x.get("start"):
+            fr = x.get("frame") or ""
+            if not (fr.startswith("CY") and len(fr) == 6) or not x.get("start"):
                 continue
             days = (time.mktime(time.strptime(x["end"], "%Y-%m-%d")) - time.mktime(time.strptime(x["start"], "%Y-%m-%d"))) / 86400
-            if not 350 <= days <= 380:
-                continue
-            y = x["end"][:4]
-            if y not in best or x["filed"] > best[y][1]:
-                best[y] = (x["val"], x["filed"])
-        if best:
-            break
-    return {y: v for y, (v, _) in best.items()}
+            if 350 <= days <= 380:
+                out.setdefault(x["end"][:4], x["val"])
+    return out
 
 tick = requests.get("https://www.sec.gov/files/company_tickers.json", headers=UA, timeout=30).json()
 cik = {v["ticker"]: str(v["cik_str"]).zfill(10) for v in tick.values()}
