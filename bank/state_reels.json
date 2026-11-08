@@ -113,6 +113,14 @@
    "at": "2026-11-07T16:53:27.950256+00:00",
    "post": "18003097412813874",
    "music": "mixkit-driving-ambition-32.mp3"
+  },
+  {
+   "id": "cmp_mkt_sector_oil",
+   "block": "companies",
+   "fmt": "compare",
+   "at": "2026-11-08T09:28:12.375384+00:00",
+   "post": "18114123203134406",
+   "music": "nastelbom-breaking-news-news-629327.mp3"
   }
  ]
 }
