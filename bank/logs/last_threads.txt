@@ -1,20 +1,21 @@
-threads: mkt_country_cap_dk (companies, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/86e010680075/bank/cards_markets/mkt_country_cap_dk.jpg
+threads: share_exp_268 (agro, donut)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/13b0c0e78adf/bank/covers/share_exp_268.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/13b0c0e78adf/bank/cards/share_exp_268.jpg
 ---
-Самые дорогие компании Дании, ноябрь 2026:
-1. 🇩🇰 Novo Nordisk · $178 млрд
-2. 🇩🇰 DSV · $52,8 млрд
-3. 🇩🇰 Maersk · $43,8 млрд
-4. 🇩🇰 Danske Bank · $43,1 млрд
-5. 🇩🇰 Genmab · $33 млрд
-6. 🇩🇰 Novonesis · $32,3 млрд
-7. 🇩🇰 Vestas Wind Systems · $30,6 млрд
-8. 🇩🇰 Ørsted · $29,5 млрд
-9. 🇩🇰 Carlsberg · $20,4 млрд
-10. 🇩🇰 Coloplast · $17,2 млрд
-№1: Novo Nordisk, $178 млрд.
+Доли в мировом экспорте подсолнечного масла, 2024:
+1. 🇺🇦 Украина · 29,8%
+2. 🇷🇺 Россия · 22,8%
+3. 🇹🇷 Турция · 7,4%
+4. 🇳🇱 Нидерланды · 5,2%
+5. 🇭🇺 Венгрия · 4,6%
+6. 🇦🇷 Аргентина · 3,8%
+7. 🇧🇬 Болгария · 3,5%
+8. 🇫🇷 Франция · 3,4%
+9. 🇰🇿 Казахстан · 2,4%
+10. 🇪🇸 Испания · 2,3%
+Остальной мир: 30%.
 Больше в Telegram @osnovafin
 ---
-Threads: с картинкой
-Опубликовано: 18432468535147203. Осталось новых рейтингов: 185
-exit=0 2026-11-09T08:49:25Z
+Threads: текстом
+Опубликовано: 18085688699379590. Осталось новых рейтингов: 184
+exit=0 2026-11-09T09:58:02Z
