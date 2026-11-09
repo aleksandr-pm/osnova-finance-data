@@ -1,21 +1,20 @@
-threads: share_exp_564 (agro, donut)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/ca79ca84b31b/bank/covers/share_exp_564.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/ca79ca84b31b/bank/cards/share_exp_564.jpg
+threads: mkt_country_cap_ru (companies, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/b6a216e489d3/bank/cards_markets/mkt_country_cap_ru.jpg
 ---
-Доли в мировом экспорте вина, 2024:
-1. 🇫🇷 Франция · 32,5%
-2. 🇮🇹 Италия · 22,6%
-3. 🇪🇸 Испания · 8,3%
-4. 🇦🇺 Австралия · 4,5%
-5. 🇨🇱 Чили · 4,2%
-6. 🇺🇸 США · 3,2%
-7. 🇳🇿 Новая Зеландия · 3,1%
-8. 🇩🇪 Германия · 2,9%
-9. 🇵🇹 Португалия · 2,7%
-10. 🇦🇷 Аргентина · 1,8%
-Остальной мир: 28%.
+Самые дорогие компании России, ноябрь 2026:
+1. 🇷🇺 Сбербанк · $77,4 млрд
+2. 🇷🇺 Лукойл · $51,2 млрд
+3. 🇷🇺 Роснефть · $46,8 млрд
+4. 🇷🇺 Новатэк · $42,2 млрд
+5. 🇷🇺 Газпром · $32,8 млрд
+6. 🇷🇺 Норникель · $21,7 млрд
+7. 🇷🇺 Полюс · $17,7 млрд
+8. 🇷🇺 Татнефть · $16,1 млрд
+9. 🇷🇺 ФосАгро · $8,2 млрд
+10. 🇷🇺 Сургутнефтегаз · $7,7 млрд
+№1: Сбербанк, $77,4 млрд.
 Больше в Telegram @osnovafin
 ---
-Threads: с картинкой
-Опубликовано: 18128190676968446. Осталось новых рейтингов: 182
-exit=0 2026-11-09T13:06:17Z
+Threads: текстом
+Опубликовано: 17916652116519400. Осталось новых рейтингов: 181
+exit=0 2026-11-09T14:33:05Z
