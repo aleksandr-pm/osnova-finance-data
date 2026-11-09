@@ -43,7 +43,9 @@
   "USFD-2026Q3": 1793988903,
   "VRSK-2026Q3": 1793988912,
   "VTRS-2026Q3": 1793988916,
-  "ZTS-2026Q3": 1793988942
+  "ZTS-2026Q3": 1793988942,
+  "CEG-2026Q3": 1794227843,
+  "KKR-2026Q3": 1794227857
  },
  "caps": {
   "ACRE": {
@@ -1998,6 +2000,171 @@
    "cap": 5981.030035933216,
    "name": "RadNet, Inc.",
    "ind": "Health Care"
+  },
+  "AIOT": {
+   "cap": 361.067718359155,
+   "name": "Powerfleet, Inc.",
+   "ind": "Electrical Equipment"
+  },
+  "AMG": {
+   "cap": 9386.121340263053,
+   "name": "Affiliated Managers Group, Inc.",
+   "ind": "Financial Services"
+  },
+  "CECO": {
+   "cap": 2560.0872693,
+   "name": "CECO Environmental Corp.",
+   "ind": "Machinery"
+  },
+  "CEG": {
+   "cap": 88559.12833344092,
+   "name": "Constellation Energy Corp",
+   "ind": "Utilities"
+  },
+  "CEVA": {
+   "cap": 762.9753585117774,
+   "name": "Ceva, Inc.",
+   "ind": "Semiconductors"
+  },
+  "CGEN": {
+   "cap": 185.66673613793105,
+   "name": "Compugen Ltd.",
+   "ind": "Biotechnology"
+  },
+  "CNH": {
+   "cap": 14308.112053571307,
+   "name": "CNH Industrial N.V.",
+   "ind": "Machinery"
+  },
+  "EDIT": {
+   "cap": 394.7006869264705,
+   "name": "Editas Medicine, Inc.",
+   "ind": "Biotechnology"
+  },
+  "FERG": {
+   "cap": 45209.89880910675,
+   "name": "Ferguson Enterprises Inc.",
+   "ind": "Trading Companies & Distributors"
+  },
+  "FRVO": {
+   "cap": 2660.237722823034,
+   "name": "Fervo Energy Co",
+   "ind": "Utilities"
+  },
+  "HAIN": {
+   "cap": 13.595738189081228,
+   "name": "Hain Celestial Group Inc",
+   "ind": "Food Products"
+  },
+  "IMVT": {
+   "cap": 6306.053502150501,
+   "name": "Immunovant, Inc.",
+   "ind": "Biotechnology"
+  },
+  "ISPR": {
+   "cap": 89.51942953333334,
+   "name": "Ispire Technology Inc",
+   "ind": "Tobacco"
+  },
+  "KGS": {
+   "cap": 4213.004943431169,
+   "name": "Kodiak Gas Services Inc",
+   "ind": "Energy"
+  },
+  "KKR": {
+   "cap": 86603.88149889876,
+   "name": "KKR & Co Inc",
+   "ind": "Financial Services"
+  },
+  "KMDA": {
+   "cap": 417.1296146389261,
+   "name": "Kamada Ltd.",
+   "ind": "Biotechnology"
+  },
+  "LDI": {
+   "cap": 216.3855611248344,
+   "name": "loanDepot, Inc.",
+   "ind": "Financial Services"
+  },
+  "MNDY": {
+   "cap": 3717.163182659504,
+   "name": "monday.com Ltd.",
+   "ind": "Technology"
+  },
+  "NRG": {
+   "cap": 18559.483255868112,
+   "name": "NRG Energy Inc",
+   "ind": "Utilities"
+  },
+  "NRXS": {
+   "cap": 78.36045551020408,
+   "name": "Neuraxis Inc",
+   "ind": "Health Care"
+  },
+  "OFIX": {
+   "cap": 320.56563972839507,
+   "name": "Orthofix Medical Inc.",
+   "ind": "Health Care"
+  },
+  "OPAL": {
+   "cap": 253.30050195945947,
+   "name": "Opal Fuels Inc.",
+   "ind": "Energy"
+  },
+  "PRAX": {
+   "cap": 7751.147476504161,
+   "name": "Praxis Precision Medicines, Inc.",
+   "ind": "Biotechnology"
+  },
+  "SEAT": {
+   "cap": 23.494098466666667,
+   "name": "Vivid Seats Inc",
+   "ind": "Media"
+  },
+  "SGC": {
+   "cap": 214.30349945454546,
+   "name": "Superior Group of Companies Inc",
+   "ind": "Textiles, Apparel & Luxury Goods"
+  },
+  "SGI": {
+   "cap": 14774.44776162441,
+   "name": "Somnigroup International Inc.",
+   "ind": "Consumer products"
+  },
+  "SOC": {
+   "cap": 370.30829875757576,
+   "name": "Sable Offshore Corp.",
+   "ind": "Energy"
+  },
+  "TGTX": {
+   "cap": 9157.355837136945,
+   "name": "TG Therapeutics, Inc.",
+   "ind": "Biotechnology"
+  },
+  "TNXP": {
+   "cap": 81.2958550215264,
+   "name": "Tonix Pharmaceuticals Holding Corp.",
+   "ind": "Biotechnology"
+  },
+  "VFF": {
+   "cap": 305.72,
+   "name": "Village Farms International Inc",
+   "ind": "Food Products"
+  },
+  "VIA": {
+   "cap": 2974.14,
+   "name": "Via Transportation, Inc.",
+   "ind": "Technology"
+  },
+  "VRTS": {
+   "cap": 783,
+   "name": "Virtus Investment Partners, Inc.",
+   "ind": "Financial Services"
+  },
+  "WTTR": {
+   "cap": 2732.23,
+   "name": "Select Water Solutions, Inc.",
+   "ind": "Energy"
   }
  },
  "earn_done": [
@@ -2044,6 +2211,8 @@
   "USFD-2026Q3",
   "VRSK-2026Q3",
   "VTRS-2026Q3",
-  "ZTS-2026Q3"
+  "ZTS-2026Q3",
+  "CEG-2026Q3",
+  "KKR-2026Q3"
  ]
 }
