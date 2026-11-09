@@ -1,21 +1,13 @@
-threads: line_agro_prod_15 (agro, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/bbae806acc6c/bank/covers/line_agro_prod_15.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/bbae806acc6c/bank/cards/line_agro_prod_15.jpg
+threads: bil_country_ae (billionaires, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/ec84776545ad/bank/cards_markets/bil_country_ae.jpg
 ---
-Производство пшеницы: крупнейшие производители, 2000-2024:
-1. 🇨🇳 Китай · 140 млн т, +41%
-2. 🇮🇳 Индия · 113 млн т, +48%
-3. 🇷🇺 Россия · 82,6 млн т, в 2,4 раза
-4. 🇺🇸 США · 53,7 млн т, −12%
-5. 🇨🇦 Канада · 35,9 млн т, +35%
-6. 🇦🇺 Австралия · 34,1 млн т, в 1,5 раза
-7. 🇵🇰 Пакистан · 31,8 млн т, в 1,5 раза
-8. 🇫🇷 Франция · 26,6 млн т, −29%
-9. 🇺🇦 Украина · 22,4 млн т, в 2,2 раза
-10. 🇹🇷 Турция · 20,8 млн т, −1%
-Россия: производство пшеницы выросло в 2,4 раза с 2000 года.
+Самые богатые люди ОАЭ, ноябрь 2026:
+1. 🇦🇪 Павел Дуров · $6,6 млрд
+2. 🇦🇪 Абдулла аль-Гурейр с семьёй · $5,2 млрд
+3. 🇦🇪 Абдулла Аль-Футтаим с семьёй · $4,7 млрд
+№1: Павел Дуров, $6,6 млрд.
 Больше в Telegram @osnovafin
 ---
-Threads: с картинкой
-Опубликовано: 18346728214261340. Осталось новых рейтингов: 188
-exit=0 2026-11-08T22:13:23Z
+Threads: текстом
+Опубликовано: 17927985654204225. Осталось новых рейтингов: 187
+exit=0 2026-11-09T05:36:46Z
