@@ -30,5 +30,11 @@
   "caption": "📈 <b>Итоги дня 6 ноября</b>\n\nS&P 500 +0,31%, Nasdaq +1,09%, Dow Jones −0,46%\nНефть Brent −0,44%, Золото −0,94%\n\n#итогидня",
   "t": 1794002218,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-06.png"
+ },
+ {
+  "id": "chart-2026-11-09-INTC",
+  "caption": "📊 Акции <b>Intel</b> выросли на 7,71% за день\nЗа полгода: −48,66%, цена $56,28\n\n#графикдня",
+  "t": 1794230264,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-09-INTC.png"
  }
 ]
