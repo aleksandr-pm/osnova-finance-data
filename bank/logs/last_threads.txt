@@ -1,20 +1,21 @@
-threads: mkt_country_cap_ru (companies, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/b6a216e489d3/bank/cards_markets/mkt_country_cap_ru.jpg
+threads: share_exp_15 (agro, donut)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/ac7fe2f25ec9/bank/covers/share_exp_15.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/ac7fe2f25ec9/bank/cards/share_exp_15.jpg
 ---
-Самые дорогие компании России, ноябрь 2026:
-1. 🇷🇺 Сбербанк · $77,4 млрд
-2. 🇷🇺 Лукойл · $51,2 млрд
-3. 🇷🇺 Роснефть · $46,8 млрд
-4. 🇷🇺 Новатэк · $42,2 млрд
-5. 🇷🇺 Газпром · $32,8 млрд
-6. 🇷🇺 Норникель · $21,7 млрд
-7. 🇷🇺 Полюс · $17,7 млрд
-8. 🇷🇺 Татнефть · $16,1 млрд
-9. 🇷🇺 ФосАгро · $8,2 млрд
-10. 🇷🇺 Сургутнефтегаз · $7,7 млрд
-№1: Сбербанк, $77,4 млрд.
+Доли в мировом экспорте пшеницы, 2024:
+1. 🇷🇺 Россия · 18,3%
+2. 🇨🇦 Канада · 13,9%
+3. 🇺🇸 США · 11,4%
+4. 🇦🇺 Австралия · 10,6%
+5. 🇺🇦 Украина · 7,1%
+6. 🇫🇷 Франция · 7,1%
+7. 🇦🇷 Аргентина · 3,7%
+8. 🇷🇴 Румыния · 3,4%
+9. 🇩🇪 Германия · 3,3%
+10. 🇵🇱 Польша · 2,3%
+Остальной мир: 39%.
 Больше в Telegram @osnovafin
 ---
 Threads: текстом
-Опубликовано: 17916652116519400. Осталось новых рейтингов: 181
-exit=0 2026-11-09T14:33:05Z
+Опубликовано: 17994587391023969. Осталось новых рейтингов: 180
+exit=0 2026-11-09T15:58:50Z
