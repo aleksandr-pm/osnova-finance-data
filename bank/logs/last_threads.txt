@@ -1,21 +1,20 @@
-threads: line_agro_prod_236 (agro, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/ae960b61232c/bank/covers/line_agro_prod_236.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/ae960b61232c/bank/cards/line_agro_prod_236.jpg
+threads: mkt_country_cap_dk (companies, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/86e010680075/bank/cards_markets/mkt_country_cap_dk.jpg
 ---
-Производство соевых бобов: крупнейшие производители, 2000-2024:
-1. 🇧🇷 Бразилия · в 4,4 раза
-2. 🇺🇸 США · в 1,6 раза
-3. 🇦🇷 Аргентина · в 2,4 раза
-4. 🇨🇳 Китай · +34%
-5. 🇮🇳 Индия · в 2,9 раза
-6. 🇵🇾 Парагвай · в 3,7 раза
-7. 🇨🇦 Канада · в 2,8 раза
-8. 🇷🇺 Россия · в 20,5 раза
-9. 🇺🇦 Украина · в 103 раза
-10. 🇧🇴 Боливия · в 2,7 раза
-Украина: производство соевых бобов выросло в 103 раза с 2000 года.
+Самые дорогие компании Дании, ноябрь 2026:
+1. 🇩🇰 Novo Nordisk · $178 млрд
+2. 🇩🇰 DSV · $52,8 млрд
+3. 🇩🇰 Maersk · $43,8 млрд
+4. 🇩🇰 Danske Bank · $43,1 млрд
+5. 🇩🇰 Genmab · $33 млрд
+6. 🇩🇰 Novonesis · $32,3 млрд
+7. 🇩🇰 Vestas Wind Systems · $30,6 млрд
+8. 🇩🇰 Ørsted · $29,5 млрд
+9. 🇩🇰 Carlsberg · $20,4 млрд
+10. 🇩🇰 Coloplast · $17,2 млрд
+№1: Novo Nordisk, $178 млрд.
 Больше в Telegram @osnovafin
 ---
-Threads: текстом
-Опубликовано: 18109217510262763. Осталось новых рейтингов: 186
-exit=0 2026-11-09T06:41:55Z
+Threads: с картинкой
+Опубликовано: 18432468535147203. Осталось новых рейтингов: 185
+exit=0 2026-11-09T08:49:25Z
