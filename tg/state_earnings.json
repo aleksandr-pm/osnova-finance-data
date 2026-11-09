@@ -2235,6 +2235,21 @@
    "cap": 1228.189212,
    "name": "Uniti Group Inc (Delaware)",
    "ind": "Telecommunication"
+  },
+  "HRTX": {
+   "cap": 55.626725097119895,
+   "name": "Heron Therapeutics Inc",
+   "ind": "Biotechnology"
+  },
+  "TLS": {
+   "cap": 360.2313036047431,
+   "name": "Telos Corp",
+   "ind": "Technology"
+  },
+  "WHF": {
+   "cap": 171.17,
+   "name": "WhiteHorse Finance Inc",
+   "ind": "Financial Services"
   }
  },
  "earn_done": [
