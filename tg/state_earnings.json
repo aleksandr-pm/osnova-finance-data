@@ -1968,6 +1968,36 @@
    "cap": 55.50810318367347,
    "name": "Global Self Storage Inc",
    "ind": "Real Estate"
+  },
+  "CTEV": {
+   "cap": 384.8768656460545,
+   "name": "Claritev Corp",
+   "ind": "Health Care"
+  },
+  "DOLE": {
+   "cap": 1311.0881540361534,
+   "name": "Dole PLC",
+   "ind": "Food Products"
+  },
+  "EVGO": {
+   "cap": 575.5637370662984,
+   "name": "EVgo Inc",
+   "ind": "Retail"
+  },
+  "MRT": {
+   "cap": 178.10843692610837,
+   "name": "Marti Technologies Inc",
+   "ind": "Road & Rail"
+  },
+  "NESR": {
+   "cap": 2013.0011255132622,
+   "name": "National Energy Services Reunited Corp.",
+   "ind": "Energy"
+  },
+  "RDNT": {
+   "cap": 5981.030035933216,
+   "name": "RadNet, Inc.",
+   "ind": "Health Care"
   }
  },
  "earn_done": [
