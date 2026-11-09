@@ -1,13 +1,21 @@
-threads: bil_country_ae (billionaires, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/ec84776545ad/bank/cards_markets/bil_country_ae.jpg
+threads: line_agro_prod_236 (agro, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/ae960b61232c/bank/covers/line_agro_prod_236.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/ae960b61232c/bank/cards/line_agro_prod_236.jpg
 ---
-Самые богатые люди ОАЭ, ноябрь 2026:
-1. 🇦🇪 Павел Дуров · $6,6 млрд
-2. 🇦🇪 Абдулла аль-Гурейр с семьёй · $5,2 млрд
-3. 🇦🇪 Абдулла Аль-Футтаим с семьёй · $4,7 млрд
-№1: Павел Дуров, $6,6 млрд.
+Производство соевых бобов: крупнейшие производители, 2000-2024:
+1. 🇧🇷 Бразилия · в 4,4 раза
+2. 🇺🇸 США · в 1,6 раза
+3. 🇦🇷 Аргентина · в 2,4 раза
+4. 🇨🇳 Китай · +34%
+5. 🇮🇳 Индия · в 2,9 раза
+6. 🇵🇾 Парагвай · в 3,7 раза
+7. 🇨🇦 Канада · в 2,8 раза
+8. 🇷🇺 Россия · в 20,5 раза
+9. 🇺🇦 Украина · в 103 раза
+10. 🇧🇴 Боливия · в 2,7 раза
+Украина: производство соевых бобов выросло в 103 раза с 2000 года.
 Больше в Telegram @osnovafin
 ---
 Threads: текстом
-Опубликовано: 17927985654204225. Осталось новых рейтингов: 187
-exit=0 2026-11-09T05:36:46Z
+Опубликовано: 18109217510262763. Осталось новых рейтингов: 186
+exit=0 2026-11-09T06:41:55Z
