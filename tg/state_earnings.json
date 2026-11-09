@@ -2165,6 +2165,76 @@
    "cap": 2732.23,
    "name": "Select Water Solutions, Inc.",
    "ind": "Energy"
+  },
+  "BCAX": {
+   "cap": 572.3959138751406,
+   "name": "Bicara Therapeutics Inc",
+   "ind": "Biotechnology"
+  },
+  "DCTH": {
+   "cap": 518.0530034062078,
+   "name": "Delcath Systems Inc",
+   "ind": "Health Care"
+  },
+  "FFBW": {
+   "cap": 64.15461685714286,
+   "name": "Ffbw Inc",
+   "ind": "Banking"
+  },
+  "GCMG": {
+   "cap": 2567.347950050653,
+   "name": "GCM Grosvenor Inc.",
+   "ind": "Financial Services"
+  },
+  "GSL": {
+   "cap": 1406.4630547475701,
+   "name": "Global Ship Lease, Inc.",
+   "ind": "Marine"
+  },
+  "LINC": {
+   "cap": 560.2013431228245,
+   "name": "Lincoln Educational Services Corp",
+   "ind": "Diversified Consumer Services"
+  },
+  "MPAA": {
+   "cap": 199.17733161436672,
+   "name": "Motorcar Parts of America Inc",
+   "ind": "Auto Components"
+  },
+  "MREO": {
+   "cap": 48.380399,
+   "name": "Mereo BioPharma Group PLC",
+   "ind": "Biotechnology"
+  },
+  "OCUL": {
+   "cap": 1448.3666702240896,
+   "name": "Ocular Therapeutix, Inc.",
+   "ind": "Pharmaceuticals"
+  },
+  "QTRX": {
+   "cap": 136.9134302220395,
+   "name": "Quanterix Corporation",
+   "ind": "Life Sciences Tools & Services"
+  },
+  "SPRB": {
+   "cap": 133.78530422119715,
+   "name": "Spruce Biosciences, Inc.",
+   "ind": "Biotechnology"
+  },
+  "TPB": {
+   "cap": 1320.8229824829543,
+   "name": "Turning Point Brands, Inc.",
+   "ind": "Tobacco"
+  },
+  "TSEOF": {
+   "cap": 0.13,
+   "name": "Trinseo PLC",
+   "ind": "Chemicals"
+  },
+  "UNIT": {
+   "cap": 1228.189212,
+   "name": "Uniti Group Inc (Delaware)",
+   "ind": "Telecommunication"
   }
  },
  "earn_done": [
