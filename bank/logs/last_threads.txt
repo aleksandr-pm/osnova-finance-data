@@ -1,21 +1,20 @@
-threads: share_exp_31 (agro, donut)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/4229d045c8a3/bank/covers/share_exp_31.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/4229d045c8a3/bank/cards/share_exp_31.jpg
+threads: mkt_sector_banks (companies, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/e4dfb03679b1/bank/cards_markets/mkt_sector_banks.jpg
 ---
-Доли в мировом экспорте риса, 2024:
-1. 🇮🇳 Индия · 37,0%
-2. 🇹🇭 Таиланд · 19,0%
-3. 🇻🇳 Вьетнам · 11,3%
-4. 🇵🇰 Пакистан · 10,9%
-5. 🇺🇸 США · 4,6%
-6. 🇮🇹 Италия · 2,8%
-7. 🇨🇳 Китай · 1,7%
-8. 🇰🇭 Камбоджа · 1,6%
-9. 🇳🇱 Нидерланды · 1,1%
-10. 🇺🇾 Уругвай · 1,0%
-Остальной мир: 17%.
+Крупнейшие банки мира по капитализации, ноябрь 2026:
+1. 🇺🇸 JPMorgan Chase · $888 млрд
+2. 🇨🇳 Строительный банк Китая · $473 млрд
+3. 🇨🇳 Сельскохозяйственный банк Китая · $386 млрд
+4. 🇨🇳 ICBC · $362 млрд
+5. 🇺🇸 Bank of America · $341 млрд
+6. 🇨🇳 Банк Китая · $336 млрд
+7. 🇬🇧 HSBC · $298 млрд
+8. 🇺🇸 Morgan Stanley · $284 млрд
+9. 🇨🇦 Royal Bank Of Canada · $278 млрд
+10. 🇺🇸 Wells Fargo · $252 млрд
+Сбербанк (Россия) на 47-м, Халык Банк (Казахстан) на 221-м месте.
 Больше в Telegram @osnovafin
 ---
 Threads: текстом
-Опубликовано: 18102145892452038. Осталось новых рейтингов: 178
-exit=0 2026-11-09T18:52:43Z
+Опубликовано: 17956706838320327. Осталось новых рейтингов: 177
+exit=0 2026-11-09T22:22:02Z
