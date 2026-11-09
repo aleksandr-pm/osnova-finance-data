@@ -1,7 +1,8 @@
 {
  "chart_used": [
   "AMD",
-  "INTC"
+  "INTC",
+  "AMAT"
  ],
  "alerts": {
   "AMD:up": "2026-11-09",
