@@ -151,5 +151,10 @@
   "caption": "📊 Акции <b>Nvidia</b> упали на 6,06% за день\nЗа полгода: −23,51%, цена $167,86\n\n#графикдня",
   "t": 1794331936,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-10-NVDA.png"
+ },
+ {
+  "id": "alert-2026-11-10-NOW-d",
+  "caption": "⚡️🔻 <b>ServiceNow</b> (NOW) −5,09% за день, $97,53\n\n#алерт",
+  "t": 1794334726
  }
 ]
