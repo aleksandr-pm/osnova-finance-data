@@ -2968,6 +2968,71 @@
    "cap": 1101.8349996919014,
    "name": "Target Hospitality Corp.",
    "ind": "Hotels, Restaurants & Leisure"
+  },
+  "AMBQ": {
+   "cap": 1106.9262517004668,
+   "name": "Ambiq Micro, Inc.",
+   "ind": "Semiconductors"
+  },
+  "ATOS": {
+   "cap": 21.255902971698113,
+   "name": "Atossa Therapeutics Inc",
+   "ind": "Biotechnology"
+  },
+  "AVNW": {
+   "cap": 245.98561161494905,
+   "name": "Aviat Networks Inc",
+   "ind": "Communications"
+  },
+  "CRBP": {
+   "cap": 68.08135077524432,
+   "name": "Corbus Pharmaceuticals Holdings, Inc.",
+   "ind": "Biotechnology"
+  },
+  "EFOI": {
+   "cap": 27.992730820544548,
+   "name": "Energy Focus Inc",
+   "ind": "Electrical Equipment"
+  },
+  "JRSH": {
+   "cap": 83.43860903114755,
+   "name": "Jerash Holdings (US) Inc",
+   "ind": "Textiles, Apparel & Luxury Goods"
+  },
+  "KULR": {
+   "cap": 75.43728768918919,
+   "name": "KULR Technology Group Inc",
+   "ind": "Electrical Equipment"
+  },
+  "MCFT": {
+   "cap": 496.59066588899805,
+   "name": "Mastercraft Boat Holdings Inc",
+   "ind": "Leisure Products"
+  },
+  "PMVP": {
+   "cap": 94.39131646825398,
+   "name": "Pmv Pharmaceuticals, Inc",
+   "ind": "Biotechnology"
+  },
+  "TLSI": {
+   "cap": 198.27021299076924,
+   "name": "TriSalus Life Sciences Inc",
+   "ind": "Biotechnology"
+  },
+  "TONX": {
+   "cap": 162.46236231751823,
+   "name": "Ton Strategy Co",
+   "ind": "Technology"
+  },
+  "WYFI": {
+   "cap": 469.12,
+   "name": "WhiteFiber Inc",
+   "ind": "Technology"
+  },
+  "XGN": {
+   "cap": 208.1,
+   "name": "Exagen Inc.",
+   "ind": "Biotechnology"
   }
  },
  "earn_done": [
