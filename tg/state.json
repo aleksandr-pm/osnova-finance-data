@@ -2,7 +2,8 @@
  "chart_used": [
   "AMD",
   "INTC",
-  "AMAT"
+  "AMAT",
+  "AVGO"
  ],
  "alerts": {
   "AMD:up": "2026-11-09",
