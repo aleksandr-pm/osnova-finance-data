@@ -1,21 +1,20 @@
-threads: wdi_tx_val_tech_cd_desc (economy, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/c17c5fc481bf/bank/covers/wdi_tx_val_tech_cd_desc.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/c17c5fc481bf/bank/cards/wdi_tx_val_tech_cd_desc.jpg
+threads: mkt_sector_insurance (companies, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/26c477560625/bank/cards_markets/mkt_sector_insurance.jpg
 ---
-Крупнейшие экспортёры высоких технологий, 2024:
-1. 🇨🇳 Китай · $857 млрд
-2. 🇭🇰 Гонконг · $422 млрд
-3. 🇩🇪 Германия · $247 млрд
-4. 🇺🇸 США · $233 млрд
-5. 🇸🇬 Сингапур · $224 млрд
-6. 🇰🇷 Южная Корея · $216 млрд
-7. 🇲🇾 Малайзия · $135 млрд
-8. 🇮🇪 Ирландия · $118 млрд
-9. 🇫🇷 Франция · $117 млрд
-10. 🇳🇱 Нидерланды · $103 млрд
-Казахстан на 35-м, Армения на 53-м месте.
+Крупнейшие страховые компании по капитализации, ноябрь 2026:
+1. 🇺🇸 UnitedHealth · $353 млрд
+2. 🇩🇪 Allianz · $192 млрд
+3. 🇨🇳 China Life · $148 млрд
+4. 🇨🇳 Ping An Insurance · $148 млрд
+5. 🇨🇭 Chubb · $139 млрд
+6. 🇺🇸 Progressive · $132 млрд
+7. 🇨🇭 Zurich Insurance Group · $114 млрд
+8. 🇫🇷 AXA · $105 млрд
+9. 🇯🇵 Tokio Marine · $104 млрд
+10. 🇭🇰 AIA · $103 млрд
+№1: UnitedHealth, $353 млрд.
 Больше в Telegram @osnovafin
 ---
-Threads: с картинкой
-Опубликовано: 18256576201309134. Осталось новых рейтингов: 170
-exit=0 2026-11-10T14:30:54Z
+Threads: текстом
+Опубликовано: 17879170950573000. Осталось новых рейтингов: 169
+exit=0 2026-11-10T15:46:16Z
