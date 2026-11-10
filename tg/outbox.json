@@ -1,11 +1,5 @@
 [
  {
-  "id": "chart-2026-11-06-AMD",
-  "caption": "📊 Акции <b>AMD</b> выросли на 8,30% за день\nЗа полгода: +3,90%, цена $437,81\n\n#графикдня",
-  "t": 1793987938,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-06-AMD.png"
- },
- {
   "id": "alert-2026-11-06-AMD-u",
   "caption": "⚡️🚀 <b>AMD</b> (AMD) +9,17% за день, $441,49\n\n#алерт",
   "t": 1793990799
@@ -156,5 +150,11 @@
   "id": "alert-2026-11-10-NOW-d",
   "caption": "⚡️🔻 <b>ServiceNow</b> (NOW) −5,09% за день, $97,53\n\n#алерт",
   "t": 1794334726
+ },
+ {
+  "id": "evening-2026-11-10",
+  "caption": "📈 <b>Итоги дня 10 ноября</b>\n\nS&P 500 −0,38%, Nasdaq −0,74%, Dow Jones −0,30%\nНефть Brent −0,56%, Золото −1,86%\n\n#итогидня",
+  "t": 1794347872,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-10.png"
  }
 ]
