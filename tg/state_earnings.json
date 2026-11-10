@@ -3043,6 +3043,11 @@
    "cap": 30.826921440000003,
    "name": "Jones Soda Co",
    "ind": "Beverages"
+  },
+  "MNDO": {
+   "cap": 17.72436,
+   "name": "Mind CTI Ltd",
+   "ind": "Technology"
   }
  },
  "earn_done": [
