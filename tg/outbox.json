@@ -110,5 +110,25 @@
   "caption": "📊 Акции <b>Broadcom</b> выросли на 8,78% за день\nЗа полгода: −25,43%, цена $319,48\n\n#графикдня",
   "t": 1794315973,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-10-AVGO.png"
+ },
+ {
+  "id": "alert-2026-11-10-AVGO-u",
+  "caption": "⚡️🚀 <b>Broadcom</b> (AVGO) +8,78% за день, $319,48\n\n#алерт",
+  "t": 1794319598
+ },
+ {
+  "id": "alert-2026-11-10-AMD-u",
+  "caption": "⚡️🚀 <b>AMD</b> (AMD) +13,26% за день, $508,58\n\n#алерт",
+  "t": 1794319598
+ },
+ {
+  "id": "alert-2026-11-10-CAT-u",
+  "caption": "⚡️🚀 <b>Caterpillar</b> (CAT) +7,21% за день, $598,88\n\n#алерт",
+  "t": 1794319598
+ },
+ {
+  "id": "alert-2026-11-10-AMAT-u",
+  "caption": "⚡️🚀 <b>Applied Materials</b> (AMAT) +11,37% за день, $370,55\n\n#алерт",
+  "t": 1794319598
  }
 ]
