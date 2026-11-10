@@ -1,7 +1,8 @@
 {
  "earn_seen": {
   "CEG-2026Q3": 1794227843,
-  "KKR-2026Q3": 1794227857
+  "KKR-2026Q3": 1794227857,
+  "OXY-2026Q3": 1794307483
  },
  "caps": {
   "ACRE": {
@@ -2206,6 +2207,561 @@
    "cap": 171.17,
    "name": "WhiteHorse Finance Inc",
    "ind": "Financial Services"
+  },
+  "AAON": {
+   "cap": 5183.8604615688055,
+   "name": "AAON, Inc.",
+   "ind": "Building"
+  },
+  "ABCL": {
+   "cap": 4050.592080176767,
+   "name": "AbCellera Biologics Inc.",
+   "ind": "Life Sciences Tools & Services"
+  },
+  "ACHR": {
+   "cap": 3703.8145440833327,
+   "name": "Archer Aviation Inc.",
+   "ind": "Aerospace & Defense"
+  },
+  "ALTG": {
+   "cap": 197.30788960539627,
+   "name": "Alta Equipment Group Inc",
+   "ind": "Trading Companies & Distributors"
+  },
+  "ALTI": {
+   "cap": 385.18026027777785,
+   "name": "AlTi Global, Inc.",
+   "ind": "Financial Services"
+  },
+  "AMCX": {
+   "cap": 367.1247485935637,
+   "name": "AMC Global Media Inc.",
+   "ind": "Media"
+  },
+  "AMRC": {
+   "cap": 1191.3364860782044,
+   "name": "Ameresco Inc",
+   "ind": "Construction"
+  },
+  "APEI": {
+   "cap": 715.4072644490344,
+   "name": "American Public Education, Inc.",
+   "ind": "Diversified Consumer Services"
+  },
+  "APPS": {
+   "cap": 1375.456979026975,
+   "name": "Digital Turbine, Inc.",
+   "ind": "Technology"
+  },
+  "ASTS": {
+   "cap": 14356.38972767801,
+   "name": "AST SpaceMobile, Inc.",
+   "ind": "Telecommunication"
+  },
+  "AVD": {
+   "cap": 24.051866602264464,
+   "name": "American Vanguard Corporation",
+   "ind": "Chemicals"
+  },
+  "AVIR": {
+   "cap": 353.70270755916476,
+   "name": "Atea Pharmaceuticals, Inc.",
+   "ind": "Pharmaceuticals"
+  },
+  "BAP": {
+   "cap": 28265.221048451695,
+   "name": "Credicorp Ltd",
+   "ind": "Banking"
+  },
+  "BCSF": {
+   "cap": 711.607548397666,
+   "name": "Bain Capital Specialty Finance Inc",
+   "ind": "Financial Services"
+  },
+  "BETR": {
+   "cap": 383.0653536486487,
+   "name": "Better Home & Finance Holding Co",
+   "ind": "Financial Services"
+  },
+  "BKKT": {
+   "cap": 209.57298900000004,
+   "name": "Bakkt Inc",
+   "ind": "Financial Services"
+  },
+  "BTGO": {
+   "cap": 599.4826838271605,
+   "name": "BitGo Holdings Inc",
+   "ind": "Financial Services"
+  },
+  "BW": {
+   "cap": 564.5775669046153,
+   "name": "Babcock & Wilcox Enterprises, Inc.",
+   "ind": "Electrical Equipment"
+  },
+  "BWIN": {
+   "cap": 4508.791611813633,
+   "name": "The Baldwin Insurance Group, Inc.",
+   "ind": "Insurance"
+  },
+  "CCAP": {
+   "cap": 340.4566272537313,
+   "name": "Crescent Capital BDC Inc",
+   "ind": "Financial Services"
+  },
+  "CHRS": {
+   "cap": 126.31998255999999,
+   "name": "Coherus Oncology Inc",
+   "ind": "Biotechnology"
+  },
+  "CNNE": {
+   "cap": 697.2380597902769,
+   "name": "Cannae Holdings Inc",
+   "ind": "Financial Services"
+  },
+  "CSQR": {
+   "cap": 2544.5010149476984,
+   "name": "Csquare Inc",
+   "ind": "Technology"
+  },
+  "CWEN": {
+   "cap": 0,
+   "name": "CWEN",
+   "ind": ""
+  },
+  "CWST": {
+   "cap": 6301.617674269014,
+   "name": "Casella Waste Systems, Inc.",
+   "ind": "Commercial Services & Supplies"
+  },
+  "DCGO": {
+   "cap": 24.926271931428577,
+   "name": "DocGo Inc.",
+   "ind": "Health Care"
+  },
+  "DFTX": {
+   "cap": 4755.246731206793,
+   "name": "Definium Therapeutics Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "DHT": {
+   "cap": 3315.0035830599613,
+   "name": "DHT Holdings, Inc.",
+   "ind": "Energy"
+  },
+  "DJT": {
+   "cap": 1128.4416169473682,
+   "name": "Trump Media & Technology Group Corp.",
+   "ind": "Media"
+  },
+  "DSP": {
+   "cap": 933.643411048657,
+   "name": "Viant Technology Inc",
+   "ind": "Technology"
+  },
+  "EQPT": {
+   "cap": 4114.2119138978205,
+   "name": "Equipmentshare.Com Inc",
+   "ind": "Trading Companies & Distributors"
+  },
+  "EQX": {
+   "cap": 14114.589252982758,
+   "name": "Equinox Gold Corp.",
+   "ind": "Metals & Mining"
+  },
+  "ETD": {
+   "cap": 512.6578192914799,
+   "name": "Ethan Allen Interiors Inc.",
+   "ind": "Consumer products"
+  },
+  "EXOD": {
+   "cap": 135.31059907616708,
+   "name": "Exodus Movement Inc",
+   "ind": "Technology"
+  },
+  "FF": {
+   "cap": 222.38701677067672,
+   "name": "FutureFuel Corp",
+   "ind": "Energy"
+  },
+  "FWRD": {
+   "cap": 596.2322400961538,
+   "name": "Forward Air Corporation",
+   "ind": "Logistics & Transportation"
+  },
+  "GAIN": {
+   "cap": 600.9134844468371,
+   "name": "Gladstone Investment Corp",
+   "ind": "Financial Services"
+  },
+  "GMRS": {
+   "cap": 608.8246450651125,
+   "name": "GMR Solutions Inc",
+   "ind": "Health Care"
+  },
+  "GRPN": {
+   "cap": 660.8110903808908,
+   "name": "Groupon, Inc.",
+   "ind": "Retail"
+  },
+  "HDRN": {
+   "cap": 49.88474170162962,
+   "name": "Hadron Energy Inc",
+   "ind": "Electrical Equipment"
+  },
+  "HFFG": {
+   "cap": 80.31240789795918,
+   "name": "Hf Foods Group Inc",
+   "ind": "Retail"
+  },
+  "HIMS": {
+   "cap": 5352.20971716,
+   "name": "Hims & Hers Health, Inc.",
+   "ind": "Health Care"
+  },
+  "HNRG": {
+   "cap": 499.24816247821786,
+   "name": "Hallador Energy Company",
+   "ind": "Utilities"
+  },
+  "HPK": {
+   "cap": 854.8209431484594,
+   "name": "Highpeak Energy Inc",
+   "ind": "Energy"
+  },
+  "HRB": {
+   "cap": 6244.696284524577,
+   "name": "H & R Block Inc",
+   "ind": "Diversified Consumer Services"
+  },
+  "HROW": {
+   "cap": 1029.791221622536,
+   "name": "Harrow, Inc.",
+   "ind": "Pharmaceuticals"
+  },
+  "HYPR": {
+   "cap": 74.95520283919386,
+   "name": "Hyperfine, Inc.",
+   "ind": "Health Care"
+  },
+  "IBO": {
+   "cap": 37.41120105609756,
+   "name": "Impact Biomedical Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "IFS": {
+   "cap": 5531.0992421746305,
+   "name": "Intercorp Financial Services Inc",
+   "ind": "Banking"
+  },
+  "IMXI": {
+   "cap": 228.7020141416894,
+   "name": "International Money Express Inc",
+   "ind": "Financial Services"
+  },
+  "INR": {
+   "cap": 835.2711205402659,
+   "name": "Infinity Natural Resources Inc",
+   "ind": "Energy"
+  },
+  "JBS": {
+   "cap": 14062.793958179485,
+   "name": "Jbs NV",
+   "ind": "Food Products"
+  },
+  "JRVR": {
+   "cap": 174.35888021850903,
+   "name": "James River Group Holdings Inc",
+   "ind": "Insurance"
+  },
+  "KLTR": {
+   "cap": 218.14824704605263,
+   "name": "Kaltura Inc",
+   "ind": "Technology"
+  },
+  "KMPR": {
+   "cap": 1953.3024835579515,
+   "name": "Kemper Corporation",
+   "ind": "Insurance"
+  },
+  "LCID": {
+   "cap": 1418.6526685714289,
+   "name": "Lucid Group, Inc.",
+   "ind": "Automobiles"
+  },
+  "LFVN": {
+   "cap": 66.59815705747127,
+   "name": "LifeVantage Corp",
+   "ind": "Consumer products"
+  },
+  "LINE": {
+   "cap": 9030.979717939686,
+   "name": "Lineage, Inc.",
+   "ind": "Real Estate"
+  },
+  "LTRX": {
+   "cap": 255.49271944820907,
+   "name": "Lantronix Inc",
+   "ind": "Communications"
+  },
+  "MAPS": {
+   "cap": 44.19046256051409,
+   "name": "WM Technology Inc",
+   "ind": "Technology"
+  },
+  "MARA": {
+   "cap": 2565.0274220598426,
+   "name": "MARA Holdings, Inc.",
+   "ind": "Technology"
+  },
+  "MLAB": {
+   "cap": 715.2639843006627,
+   "name": "Mesa Laboratories, Inc.",
+   "ind": "Life Sciences Tools & Services"
+  },
+  "MVST": {
+   "cap": 238.306726566725,
+   "name": "Microvast Holdings, Inc.",
+   "ind": "Machinery"
+  },
+  "MYO": {
+   "cap": 55.45100099173554,
+   "name": "Myomo Inc",
+   "ind": "Health Care"
+  },
+  "NGS": {
+   "cap": 374.95315368573495,
+   "name": "Natural Gas Services Group, Inc.",
+   "ind": "Energy"
+  },
+  "NHI": {
+   "cap": 3498.1362146598826,
+   "name": "National Health Investors, Inc.",
+   "ind": "Real Estate"
+  },
+  "NINE": {
+   "cap": 93.0464354516129,
+   "name": "Nine Energy Service Inc",
+   "ind": "Energy"
+  },
+  "NOVT": {
+   "cap": 5520.637536954938,
+   "name": "Novanta Inc.",
+   "ind": "Electrical Equipment"
+  },
+  "NRDY": {
+   "cap": 89.16246958266453,
+   "name": "Nerdy Inc.",
+   "ind": "Diversified Consumer Services"
+  },
+  "ONTO": {
+   "cap": 9522.366520404432,
+   "name": "Onto Innovation Inc.",
+   "ind": "Semiconductors"
+  },
+  "OSG": {
+   "cap": 237.4213057254509,
+   "name": "Octave Specialty Group Inc",
+   "ind": "Insurance"
+  },
+  "OSUR": {
+   "cap": 243.45926061627907,
+   "name": "OraSure Technologies Inc",
+   "ind": "Health Care"
+  },
+  "OXBR": {
+   "cap": 7.284841137284063,
+   "name": "Oxbridge Re Holdings Ltd",
+   "ind": "Insurance"
+  },
+  "OXY": {
+   "cap": 55739.78193036963,
+   "name": "Occidental Petroleum Corp",
+   "ind": "Energy"
+  },
+  "PAAI": {
+   "cap": 42.2639761507386,
+   "name": "Paradium.AI, Inc.",
+   "ind": "Media"
+  },
+  "PAYS": {
+   "cap": 706.341530989789,
+   "name": "Paysign Inc",
+   "ind": "Financial Services"
+  },
+  "PIII": {
+   "cap": 31.299567,
+   "name": "P3 Health Partners Inc",
+   "ind": "Health Care"
+  },
+  "PLUG": {
+   "cap": 2095.7928548275863,
+   "name": "Plug Power Inc.",
+   "ind": "Electrical Equipment"
+  },
+  "PUBM": {
+   "cap": 866.8176903099383,
+   "name": "PubMatic, Inc.",
+   "ind": "Media"
+  },
+  "QLYS": {
+   "cap": 7004.104081719133,
+   "name": "Qualys, Inc.",
+   "ind": "Technology"
+  },
+  "QMCO": {
+   "cap": 669.5759093932272,
+   "name": "Quantum Corp",
+   "ind": "Technology"
+  },
+  "QUBT": {
+   "cap": 1552.7394598167457,
+   "name": "Quantum Computing Inc.",
+   "ind": "Technology"
+  },
+  "RAIL": {
+   "cap": 145.92119998820752,
+   "name": "FreightCar America Inc",
+   "ind": "Machinery"
+  },
+  "RANI": {
+   "cap": 80.05473230120704,
+   "name": "Rani Therapeutics Holdings Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "RKLB": {
+   "cap": 35225.342320731485,
+   "name": "Rocket Lab Corp",
+   "ind": "Aerospace & Defense"
+  },
+  "RLGT": {
+   "cap": 429.39379588976385,
+   "name": "Radiant Logistics Inc",
+   "ind": "Logistics & Transportation"
+  },
+  "RNGR": {
+   "cap": 291.82324178993605,
+   "name": "Ranger Energy Services Inc",
+   "ind": "Energy"
+  },
+  "RPAY": {
+   "cap": 395.9483652022727,
+   "name": "Repay Holdings Corp",
+   "ind": "Financial Services"
+  },
+  "RXT": {
+   "cap": 693.2541396363638,
+   "name": "Rackspace Technology Inc",
+   "ind": "Technology"
+  },
+  "SANM": {
+   "cap": 8020.307749546777,
+   "name": "Sanmina Corporation",
+   "ind": "Electrical Equipment"
+  },
+  "SB": {
+   "cap": 821.8776922925456,
+   "name": "Safe Bulkers, Inc.",
+   "ind": "Marine"
+  },
+  "SCM": {
+   "cap": 207.90353709766165,
+   "name": "Stellus Capital Investment Corp",
+   "ind": "Financial Services"
+  },
+  "SECZ": {
+   "cap": 1137.961837869253,
+   "name": "Securitize Corp",
+   "ind": "Financial Services"
+  },
+  "SENS": {
+   "cap": 518.1657384866123,
+   "name": "Senseonics Holdings Inc",
+   "ind": "Health Care"
+  },
+  "SIGA": {
+   "cap": 234.23006721935485,
+   "name": "SIGA Technologies Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "SKYD": {
+   "cap": 43866.9525470412,
+   "name": "Skydance Corporation",
+   "ind": "Media"
+  },
+  "SMC": {
+   "cap": 567.8140379977885,
+   "name": "Summit Midstream Corp",
+   "ind": "Energy"
+  },
+  "TDW": {
+   "cap": 3535.6775376620044,
+   "name": "Tidewater Inc.",
+   "ind": "Energy"
+  },
+  "THRY": {
+   "cap": 56.88205834893617,
+   "name": "Thryv Holdings Inc",
+   "ind": "Technology"
+  },
+  "TRVI": {
+   "cap": 2192.7032482672716,
+   "name": "Trevi Therapeutics, Inc.",
+   "ind": "Pharmaceuticals"
+  },
+  "TTD": {
+   "cap": 7011.55687274478,
+   "name": "The Trade Desk, Inc.",
+   "ind": "Media"
+  },
+  "TTEC": {
+   "cap": 65.81008067391305,
+   "name": "TTEC Holdings Inc (Texas)",
+   "ind": "Professional Services"
+  },
+  "TTWO": {
+   "cap": 40176.48585,
+   "name": "Take-Two Interactive Software, Inc.",
+   "ind": "Media"
+  },
+  "USAR": {
+   "cap": 3608.24,
+   "name": "USA Rare Earth, Inc.",
+   "ind": "Metals & Mining"
+  },
+  "WBTN": {
+   "cap": 1203.76,
+   "name": "Webtoon Entertainment Inc",
+   "ind": "Media"
+  },
+  "WGS": {
+   "cap": 2059.54,
+   "name": "GeneDx Holdings Corp.",
+   "ind": "Health Care"
+  },
+  "XENE": {
+   "cap": 3622.8,
+   "name": "Xenon Pharmaceuticals Inc.",
+   "ind": "Biotechnology"
+  },
+  "ZETA": {
+   "cap": 7824.09,
+   "name": "Zeta Global Holdings Corp.",
+   "ind": "Technology"
+  },
+  "ZIP": {
+   "cap": 345.35,
+   "name": "Ziprecruiter Inc",
+   "ind": "Media"
+  },
+  "ZNTL": {
+   "cap": 185.55,
+   "name": "Zentalis Pharmaceuticals, Inc.",
+   "ind": "Biotechnology"
+  },
+  "ZYME": {
+   "cap": 2016.3,
+   "name": "Zymeworks Inc.",
+   "ind": "Biotechnology"
   }
  },
  "earn_done": [
@@ -2254,6 +2810,7 @@
   "VTRS-2026Q3",
   "ZTS-2026Q3",
   "CEG-2026Q3",
-  "KKR-2026Q3"
+  "KKR-2026Q3",
+  "OXY-2026Q3"
  ]
 }
