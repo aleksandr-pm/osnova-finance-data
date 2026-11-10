@@ -2762,6 +2762,41 @@
    "cap": 2016.3,
    "name": "Zymeworks Inc.",
    "ind": "Biotechnology"
+  },
+  "AP": {
+   "cap": 123.95172224108661,
+   "name": "Ampco-Pittsburgh Corp",
+   "ind": "Metals & Mining"
+  },
+  "ATAT": {
+   "cap": 4936.199184,
+   "name": "Atour Lifestyle Holdings Limited",
+   "ind": "Hotels, Restaurants & Leisure"
+  },
+  "KUST": {
+   "cap": 2.2253463797468354,
+   "name": "Kustom Entertainment Inc",
+   "ind": "Electrical Equipment"
+  },
+  "MXCT": {
+   "cap": 134.16805896825394,
+   "name": "MaxCyte Inc",
+   "ind": "Life Sciences Tools & Services"
+  },
+  "ONON": {
+   "cap": 12361.350879322805,
+   "name": "On Holding AG",
+   "ind": "Textiles, Apparel & Luxury Goods"
+  },
+  "WIX": {
+   "cap": 3225.34,
+   "name": "Wix.com Ltd.",
+   "ind": "Technology"
+  },
+  "FCUV": {
+   "cap": 2.7496332583637892,
+   "name": "Focus Universal Inc",
+   "ind": "Electrical Equipment"
   }
  },
  "earn_done": [
