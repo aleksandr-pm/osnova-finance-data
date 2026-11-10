@@ -145,5 +145,11 @@
   "id": "alert-2026-11-10-SHOP-d",
   "caption": "⚡️🔻 <b>Shopify</b> (SHOP) −5,17% за день, $144,2\n\n#алерт",
   "t": 1794331798
+ },
+ {
+  "id": "chart-2026-11-10-NVDA",
+  "caption": "📊 Акции <b>Nvidia</b> упали на 6,06% за день\nЗа полгода: −23,51%, цена $167,86\n\n#графикдня",
+  "t": 1794331936,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-10-NVDA.png"
  }
 ]

@@ -3,7 +3,8 @@
   "AMD",
   "INTC",
   "AMAT",
-  "AVGO"
+  "AVGO",
+  "NVDA"
  ],
  "alerts": {
   "AVGO:up": "2026-11-10",
