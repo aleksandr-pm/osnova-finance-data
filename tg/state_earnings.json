@@ -3048,6 +3048,361 @@
    "cap": 17.72436,
    "name": "Mind CTI Ltd",
    "ind": "Technology"
+  },
+  "AII": {
+   "cap": 543.9618450000002,
+   "name": "American Integrity Insurance Group Inc",
+   "ind": "Insurance"
+  },
+  "AIRG": {
+   "cap": 56.46200799999999,
+   "name": "Airgain Inc",
+   "ind": "Electrical Equipment"
+  },
+  "AMNF": {
+   "cap": 378.9970670000001,
+   "name": "Armanino Foods Of Distinction Inc",
+   "ind": "Food Products"
+  },
+  "AMPX": {
+   "cap": 1390.68764,
+   "name": "Amprius Technologies Inc",
+   "ind": "Electrical Equipment"
+  },
+  "ANGX": {
+   "cap": 689.130856,
+   "name": "Angel Studios, Inc.",
+   "ind": "Media"
+  },
+  "ATEX": {
+   "cap": 1584.0784149999997,
+   "name": "Anterix Inc.",
+   "ind": "Telecommunication"
+  },
+  "ATRO": {
+   "cap": 2533.654145,
+   "name": "Astronics Corporation",
+   "ind": "Aerospace & Defense"
+  },
+  "AVR": {
+   "cap": 579.110986,
+   "name": "Anteris Technologies Global Corp",
+   "ind": "Health Care"
+  },
+  "AZTA": {
+   "cap": 1793.953824,
+   "name": "Azenta, Inc.",
+   "ind": "Life Sciences Tools & Services"
+  },
+  "BEEP": {
+   "cap": 97.88099300000002,
+   "name": "Mobile Infrastructure Corp",
+   "ind": "Commercial Services & Supplies"
+  },
+  "BGS": {
+   "cap": 216.193297,
+   "name": "B&G Foods Inc",
+   "ind": "Food Products"
+  },
+  "BNGO": {
+   "cap": 16.216317,
+   "name": "Bionano Genomics, Inc.",
+   "ind": "Life Sciences Tools & Services"
+  },
+  "BODI": {
+   "cap": 32.854169,
+   "name": "Beachbody Company, Inc",
+   "ind": "Diversified Consumer Services"
+  },
+  "BRCB": {
+   "cap": 555.806754,
+   "name": "Black Rock Coffee Bar, Inc.",
+   "ind": "Hotels, Restaurants & Leisure"
+  },
+  "BV": {
+   "cap": 1097.310017,
+   "name": "BrightView Holdings, Inc.",
+   "ind": "Commercial Services & Supplies"
+  },
+  "CAPR": {
+   "cap": 572.6690589999998,
+   "name": "Capricor Therapeutics, Inc.",
+   "ind": "Biotechnology"
+  },
+  "CARL": {
+   "cap": 438.2089879999999,
+   "name": "Carlsmed, Inc.",
+   "ind": "Health Care"
+  },
+  "CLFD": {
+   "cap": 414.9898089999999,
+   "name": "Clearfield Inc",
+   "ind": "Communications"
+  },
+  "CPIX": {
+   "cap": 80.45928600000002,
+   "name": "Cumberland Pharmaceuticals Inc.",
+   "ind": "Pharmaceuticals"
+  },
+  "CRWV": {
+   "cap": 27014.261709000002,
+   "name": "CoreWeave, Inc.",
+   "ind": "Technology"
+  },
+  "DLPN": {
+   "cap": 12.838323,
+   "name": "Dolphin Entertainment Inc",
+   "ind": "Media"
+  },
+  "DXYN": {
+   "cap": 4.922164999999999,
+   "name": "Dixie Group Inc",
+   "ind": "Consumer products"
+  },
+  "ELMD": {
+   "cap": 224.248504,
+   "name": "Electromed Inc",
+   "ind": "Health Care"
+  },
+  "EML": {
+   "cap": 163.978458,
+   "name": "Eastern Company",
+   "ind": "Machinery"
+  },
+  "EPM": {
+   "cap": 143.88660899999996,
+   "name": "Evolution Petroleum Corp",
+   "ind": "Energy"
+  },
+  "EVLV": {
+   "cap": 862.1604889999999,
+   "name": "Evolv Technologies Holdings, Inc.",
+   "ind": "Electrical Equipment"
+  },
+  "FAC": {
+   "cap": 478.393869,
+   "name": "Factorial Energy Inc",
+   "ind": "Electrical Equipment"
+  },
+  "FLD": {
+   "cap": 25.272757,
+   "name": "Fold Holdings Inc",
+   "ind": "Financial Services"
+  },
+  "FLY": {
+   "cap": 4069.606899,
+   "name": "Firefly Aerospace Inc.",
+   "ind": "Aerospace & Defense"
+  },
+  "FRNM": {
+   "cap": 1135.712807,
+   "name": "Freenome, Inc.",
+   "ind": "Biotechnology"
+  },
+  "GENK": {
+   "cap": 49.55799999999999,
+   "name": "GEN Restaurant Group Inc",
+   "ind": "Hotels, Restaurants & Leisure"
+  },
+  "GEVO": {
+   "cap": 363.438553,
+   "name": "Gevo, Inc.",
+   "ind": "Energy"
+  },
+  "GO": {
+   "cap": 1374.301942,
+   "name": "Grocery Outlet Holding Corp.",
+   "ind": "Retail"
+  },
+  "GROV": {
+   "cap": 46.971152,
+   "name": "Grove Collaborative Holdings Inc",
+   "ind": "Retail"
+  },
+  "GRWG": {
+   "cap": 92.505107,
+   "name": "GrowGeneration Corp",
+   "ind": "Retail"
+  },
+  "HYLN": {
+   "cap": 560.7952699999998,
+   "name": "Hyliion Holdings Corp",
+   "ind": "Electrical Equipment"
+  },
+  "IBIO": {
+   "cap": 48.37858200000001,
+   "name": "iBio Inc",
+   "ind": "Biotechnology"
+  },
+  "IPM": {
+   "cap": 15.270382,
+   "name": "Intelligent Protection Management Corp",
+   "ind": "Technology"
+  },
+  "KOPN": {
+   "cap": 628.249424,
+   "name": "Kopin Corp",
+   "ind": "Semiconductors"
+  },
+  "KRMD": {
+   "cap": 149.135243,
+   "name": "KORU Medical Systems Inc",
+   "ind": "Health Care"
+  },
+  "KURA": {
+   "cap": 673.4318859999998,
+   "name": "Kura Oncology, Inc.",
+   "ind": "Biotechnology"
+  },
+  "LMRI": {
+   "cap": 1342.1674129999997,
+   "name": "Lumexa Imaging Holdings, Inc.",
+   "ind": "Health Care"
+  },
+  "LPA": {
+   "cap": 74.491789,
+   "name": "Logistic Properties of The Americas",
+   "ind": "Real Estate"
+  },
+  "LPTH": {
+   "cap": 561.410742,
+   "name": "LightPath Technologies Inc",
+   "ind": "Electrical Equipment"
+  },
+  "MCHX": {
+   "cap": 57.64676899999999,
+   "name": "Marchex Inc",
+   "ind": "Media"
+  },
+  "MDAI": {
+   "cap": 49.24294,
+   "name": "Spectral AI Inc",
+   "ind": "Health Care"
+  },
+  "MRCY": {
+   "cap": 4845.958918,
+   "name": "Mercury Systems Inc",
+   "ind": "Aerospace & Defense"
+  },
+  "NLST": {
+   "cap": 2366.540474,
+   "name": "Netlist Inc",
+   "ind": "Electrical Equipment"
+  },
+  "NN": {
+   "cap": 1505.784374,
+   "name": "NextNav Inc.",
+   "ind": "Technology"
+  },
+  "NRGV": {
+   "cap": 658.2592190000001,
+   "name": "Energy Vault Holdings, Inc.",
+   "ind": "Electrical Equipment"
+  },
+  "OIG": {
+   "cap": 916.0501700000001,
+   "name": "Orion180 Insurance Group Inc.",
+   "ind": "Insurance"
+  },
+  "PRKR": {
+   "cap": 8.626804,
+   "name": "ParkerVision Inc",
+   "ind": "Communications"
+  },
+  "QMLS": {
+   "cap": 104.72515599999998,
+   "name": "QumulusAI Inc",
+   "ind": "Technology"
+  },
+  "QTI": {
+   "cap": 33.51764,
+   "name": "QT Imaging Holdings Inc",
+   "ind": "Health Care"
+  },
+  "RDNW": {
+   "cap": 218.07199999999997,
+   "name": "RideNow Group Inc",
+   "ind": "Retail"
+  },
+  "REED": {
+   "cap": 14.821358,
+   "name": "Reed's Inc",
+   "ind": "Beverages"
+  },
+  "REZI": {
+   "cap": 3044.539885,
+   "name": "Resideo Technologies, Inc.",
+   "ind": "Building"
+  },
+  "RGTI": {
+   "cap": 4332.318064,
+   "name": "Rigetti Computing, Inc.",
+   "ind": "Semiconductors"
+  },
+  "SATL": {
+   "cap": 609.578747,
+   "name": "Satellogic Inc.",
+   "ind": "Aerospace & Defense"
+  },
+  "SEER": {
+   "cap": 93.02498500000002,
+   "name": "Seer, Inc.",
+   "ind": "Life Sciences Tools & Services"
+  },
+  "SKYH": {
+   "cap": 888.9453789999999,
+   "name": "Sky Harbour Group Corporation",
+   "ind": "Transportation Infrastructure"
+  },
+  "SND": {
+   "cap": 167.476301,
+   "name": "Smart Sand Inc",
+   "ind": "Energy"
+  },
+  "SONO": {
+   "cap": 2012.180556,
+   "name": "Sonos, Inc.",
+   "ind": "Consumer products"
+  },
+  "SPIR": {
+   "cap": 384.287662,
+   "name": "Spire Global, Inc.",
+   "ind": "Professional Services"
+  },
+  "STUB": {
+   "cap": 2235.226264,
+   "name": "Stubhub Holdings, Inc",
+   "ind": "Media"
+  },
+  "STXS": {
+   "cap": 114.23048300000002,
+   "name": "Stereotaxis Inc",
+   "ind": "Health Care"
+  },
+  "SUJA": {
+   "cap": 402.472629,
+   "name": "Suja Life Inc",
+   "ind": "Food Products"
+  },
+  "SUNS": {
+   "cap": 93.597271,
+   "name": "Sunrise Realty Trust Inc",
+   "ind": "Real Estate"
+  },
+  "SWAG": {
+   "cap": 24.604259000000003,
+   "name": "Stran & Company Inc",
+   "ind": "Media"
+  },
+  "TELA": {
+   "cap": 39.03099199999999,
+   "name": "TELA Bio Inc",
+   "ind": "Health Care"
+  },
+  "USIO": {
+   "cap": 83.21,
+   "name": "Usio, Inc.",
+   "ind": "Financial Services"
   }
  },
  "earn_done": [
