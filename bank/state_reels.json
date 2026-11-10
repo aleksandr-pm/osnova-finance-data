@@ -169,6 +169,21 @@
    "at": "2026-11-10T13:50:12.221121+00:00",
    "post": "18073113938779490",
    "music": "mixkit-driving-ambition-32.mp3"
+  },
+  {
+   "id": "bil_ind_finance",
+   "block": "billionaires",
+   "fmt": "bars",
+   "post": "failed",
+   "at": "2026-11-10T17:06:59.707549+00:00"
+  },
+  {
+   "id": "cmp_mkt_sector_retail",
+   "block": "companies",
+   "fmt": "compare",
+   "at": "2026-11-10T17:08:04.291819+00:00",
+   "post": "18120507494277348",
+   "music": "nastelbom-breaking-news-news-629327.mp3"
   }
  ]
 }
