@@ -1,21 +1,20 @@
-threads: share_exp_572 (agro, donut)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/30fed7a31c0e/bank/covers/share_exp_572.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/30fed7a31c0e/bank/cards/share_exp_572.jpg
+threads: mkt_country_cap_fr (companies, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/30dbd1b32f9d/bank/cards_markets/mkt_country_cap_fr.jpg
 ---
-Доли в мировом экспорте авокадо, 2024:
-1. 🇲🇽 Мексика · 39,1%
-2. 🇳🇱 Нидерланды · 15,6%
-3. 🇵🇪 Перу · 12,9%
-4. 🇪🇸 Испания · 5,0%
-5. 🇮🇱 Израиль · 3,7%
-6. 🇨🇴 Колумбия · 3,2%
-7. 🇨🇱 Чили · 3,0%
-8. 🇰🇪 Кения · 2,4%
-9. 🇲🇦 Марокко · 2,3%
-10. 🇿🇦 ЮАР · 2,1%
-Остальной мир: 24%.
+Самые дорогие компании Франции, ноябрь 2026:
+1. 🇫🇷 L'Oréal · $269 млрд
+2. 🇫🇷 LVMH · $225 млрд
+3. 🇫🇷 TotalEnergies · $193 млрд
+4. 🇫🇷 Hermès · $160 млрд
+5. 🇫🇷 Schneider Electric · $151 млрд
+6. 🇫🇷 Safran · $137 млрд
+7. 🇫🇷 Air Liquide · $135 млрд
+8. 🇫🇷 BNP Paribas · $113 млрд
+9. 🇫🇷 Sanofi · $113 млрд
+10. 🇫🇷 AXA · $105 млрд
+№1: L'Oréal, $269 млрд.
 Больше в Telegram @osnovafin
 ---
-Threads: текстом
-Опубликовано: 18194170774361268. Осталось новых рейтингов: 174
-exit=0 2026-11-10T07:49:08Z
+Threads: с картинкой
+Опубликовано: 18110638142338169. Осталось новых рейтингов: 173
+exit=0 2026-11-10T09:54:34Z
