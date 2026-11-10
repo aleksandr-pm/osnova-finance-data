@@ -1,20 +1,21 @@
-threads: mkt_country_cap_fr (companies, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/30dbd1b32f9d/bank/cards_markets/mkt_country_cap_fr.jpg
+threads: cis_fi_res_totl_cd (cis, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/fdf40dee420d/bank/covers/cis_fi_res_totl_cd.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/fdf40dee420d/bank/cards/cis_fi_res_totl_cd.jpg
 ---
-Самые дорогие компании Франции, ноябрь 2026:
-1. 🇫🇷 L'Oréal · $269 млрд
-2. 🇫🇷 LVMH · $225 млрд
-3. 🇫🇷 TotalEnergies · $193 млрд
-4. 🇫🇷 Hermès · $160 млрд
-5. 🇫🇷 Schneider Electric · $151 млрд
-6. 🇫🇷 Safran · $137 млрд
-7. 🇫🇷 Air Liquide · $135 млрд
-8. 🇫🇷 BNP Paribas · $113 млрд
-9. 🇫🇷 Sanofi · $113 млрд
-10. 🇫🇷 AXA · $105 млрд
-№1: L'Oréal, $269 млрд.
+Страны бывшего СССР: резервы, включая золото, 2025:
+1. 🇰🇿 Казахстан · $66,1 млрд
+2. 🇺🇿 Узбекистан · $66 млрд
+3. 🇺🇦 Украина · $57,3 млрд
+4. 🇧🇾 Беларусь · $14,5 млрд
+5. 🇦🇿 Азербайджан · $13,6 млрд
+6. 🇰🇬 Киргизия · $8,6 млрд
+7. 🇱🇹 Литва · $7,1 млрд
+8. 🇬🇪 Грузия · $6,2 млрд
+9. 🇱🇻 Латвия · $6,1 млрд
+10. 🇲🇩 Молдова · $6 млрд
+Казахстан: резервы $66,1 млрд, №1.
 Больше в Telegram @osnovafin
 ---
-Threads: с картинкой
-Опубликовано: 18110638142338169. Осталось новых рейтингов: 173
-exit=0 2026-11-10T09:54:34Z
+Threads: текстом
+Опубликовано: 18142243624537990. Осталось новых рейтингов: 172
+exit=0 2026-11-10T11:25:30Z
