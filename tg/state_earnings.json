@@ -3033,6 +3033,16 @@
    "cap": 208.1,
    "name": "Exagen Inc.",
    "ind": "Biotechnology"
+  },
+  "ACCS": {
+   "cap": 12.89801436123348,
+   "name": "ACCESS Newswire Inc",
+   "ind": "Technology"
+  },
+  "JSDA": {
+   "cap": 30.826921440000003,
+   "name": "Jones Soda Co",
+   "ind": "Beverages"
   }
  },
  "earn_done": [
