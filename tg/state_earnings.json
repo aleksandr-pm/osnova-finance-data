@@ -2,7 +2,8 @@
  "earn_seen": {
   "CEG-2026Q3": 1794227843,
   "KKR-2026Q3": 1794227857,
-  "OXY-2026Q3": 1794307483
+  "OXY-2026Q3": 1794307483,
+  "TDG-2026Q4": 1794313927
  },
  "caps": {
   "ACRE": {
@@ -2797,6 +2798,176 @@
    "cap": 2.7496332583637892,
    "name": "Focus Universal Inc",
    "ind": "Electrical Equipment"
+  },
+  "ALH": {
+   "cap": 4778.889876775221,
+   "name": "Alliance Laundry Holdings Inc.",
+   "ind": "Machinery"
+  },
+  "AUTL": {
+   "cap": 340.679398,
+   "name": "Autolus Therapeutics PLC",
+   "ind": "Biotechnology"
+  },
+  "BRSL": {
+   "cap": 1841.8399292222223,
+   "name": "Brightstar Lottery PLC",
+   "ind": "Hotels, Restaurants & Leisure"
+  },
+  "BTDR": {
+   "cap": 1796.4806079384875,
+   "name": "Bitdeer Technologies Group",
+   "ind": "Technology"
+  },
+  "CALC": {
+   "cap": 10.344862246323526,
+   "name": "CalciMedica Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "COAG": {
+   "cap": 1999.745715373317,
+   "name": "Hemab Therapeutics Holdings Inc",
+   "ind": "Biotechnology"
+  },
+  "ETOR": {
+   "cap": 1889.1561309899869,
+   "name": "eToro Group Ltd.",
+   "ind": "Financial Services"
+  },
+  "GILT": {
+   "cap": 583.8847928595271,
+   "name": "Gilat Satellite Networks Ltd.",
+   "ind": "Communications"
+  },
+  "HBIO": {
+   "cap": 41.38045266746412,
+   "name": "Harvard Bioscience Inc",
+   "ind": "Life Sciences Tools & Services"
+  },
+  "HQ": {
+   "cap": 745.3544269729022,
+   "name": "Horizon Quantum Holdings Ltd",
+   "ind": "Technology"
+  },
+  "HUMA": {
+   "cap": 126.45368961535029,
+   "name": "Humacyte Inc",
+   "ind": "Biotechnology"
+  },
+  "IMSR": {
+   "cap": 317.6999947183098,
+   "name": "Terrestrial Energy Inc",
+   "ind": "Construction"
+  },
+  "IRD": {
+   "cap": 349.42244540669867,
+   "name": "Opus Genetics Inc",
+   "ind": "Biotechnology"
+  },
+  "JBI": {
+   "cap": 649.434346448276,
+   "name": "Janus International Group, Inc.",
+   "ind": "Building"
+  },
+  "LAR": {
+   "cap": 716.6159754983279,
+   "name": "Lithium Argentina AG",
+   "ind": "Metals & Mining"
+  },
+  "LEGN": {
+   "cap": 4534.205325,
+   "name": "Legend Biotech Corporation",
+   "ind": "Biotechnology"
+  },
+  "LNSR": {
+   "cap": 67.0808196440367,
+   "name": "LENSAR Inc",
+   "ind": "Health Care"
+  },
+  "LQDA": {
+   "cap": 4284.790627911036,
+   "name": "Liquidia Corporation",
+   "ind": "Pharmaceuticals"
+  },
+  "MASS": {
+   "cap": 475.75092950852274,
+   "name": "908 Devices Inc.",
+   "ind": "Electrical Equipment"
+  },
+  "MRDN": {
+   "cap": 103.98857301843317,
+   "name": "Meridian Holdings Inc",
+   "ind": "Media"
+  },
+  "OLMA": {
+   "cap": 643.9824173315144,
+   "name": "Olema Pharmaceuticals, Inc.",
+   "ind": "Biotechnology"
+  },
+  "PDYN": {
+   "cap": 174.65833337086093,
+   "name": "Palladyne AI Corp",
+   "ind": "Machinery"
+  },
+  "PEPG": {
+   "cap": 165.53023983400809,
+   "name": "PepGen Inc.",
+   "ind": "Biotechnology"
+  },
+  "PLX": {
+   "cap": 207.06911216929132,
+   "name": "Protalix BioTherapeutics, Inc.",
+   "ind": "Biotechnology"
+  },
+  "QBTS": {
+   "cap": 4354.317535883895,
+   "name": "D-Wave Quantum Inc.",
+   "ind": "Technology"
+  },
+  "REFI": {
+   "cap": 227.00336886363635,
+   "name": "Chicago Atlantic Real Estate Finance Inc",
+   "ind": "Real Estate"
+  },
+  "SBH": {
+   "cap": 1824.6984098530856,
+   "name": "Sally Beauty Holdings, Inc.",
+   "ind": "Retail"
+  },
+  "SE": {
+   "cap": 45891.209885,
+   "name": "Sea Ltd",
+   "ind": "Retail"
+  },
+  "SRRK": {
+   "cap": 6278.03091362058,
+   "name": "Scholar Rock Holding Corporation",
+   "ind": "Biotechnology"
+  },
+  "TDG": {
+   "cap": 67373.79132704964,
+   "name": "TransDigm Group Incorporated",
+   "ind": "Aerospace & Defense"
+  },
+  "UONEK": {
+   "cap": 17.427271,
+   "name": "Urban One Inc",
+   "ind": "Media"
+  },
+  "VG": {
+   "cap": 36976.37,
+   "name": "Venture Global, Inc.",
+   "ind": "Energy"
+  },
+  "IHRT": {
+   "cap": 321.008231,
+   "name": "iHeartMedia, Inc.",
+   "ind": "Media"
+  },
+  "TH": {
+   "cap": 1101.8349996919014,
+   "name": "Target Hospitality Corp.",
+   "ind": "Hotels, Restaurants & Leisure"
   }
  },
  "earn_done": [
@@ -2846,6 +3017,7 @@
   "ZTS-2026Q3",
   "CEG-2026Q3",
   "KKR-2026Q3",
-  "OXY-2026Q3"
+  "OXY-2026Q3",
+  "TDG-2026Q4"
  ]
 }
