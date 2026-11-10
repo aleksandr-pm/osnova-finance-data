@@ -1,1 +1,26 @@
-[]
+[
+ {
+  "id": "2026-11-10-USD-Core CPI m/m",
+  "t": 1794317400,
+  "country": "USD",
+  "flag": "🇺🇸",
+  "title": "Core CPI m/m",
+  "name_ru": "Базовая инфляция (CPI), м/м",
+  "forecast": "0.2%",
+  "previous": "0.3%",
+  "forecast_ru": "0,2%",
+  "previous_ru": "0,3%"
+ },
+ {
+  "id": "2026-11-10-USD-CPI m/m",
+  "t": 1794317400,
+  "country": "USD",
+  "flag": "🇺🇸",
+  "title": "CPI m/m",
+  "name_ru": "Инфляция (CPI), м/м",
+  "forecast": "0.3%",
+  "previous": "0.6%",
+  "forecast_ru": "0,3%",
+  "previous_ru": "0,6%"
+ }
+]
