@@ -3468,6 +3468,31 @@
    "cap": 163.5,
    "name": "Valens Semiconductor Ltd",
    "ind": "Semiconductors"
+  },
+  "EDRY": {
+   "cap": 111.22373185955786,
+   "name": "EuroDry Ltd",
+   "ind": "Marine"
+  },
+  "INKT": {
+   "cap": 51.08105139096648,
+   "name": "Mink Therapeutics Inc",
+   "ind": "Biotechnology"
+  },
+  "PYPD": {
+   "cap": 128.1672365432692,
+   "name": "PolyPid Ltd",
+   "ind": "Pharmaceuticals"
+  },
+  "RDCM": {
+   "cap": 172.615749,
+   "name": "Radcom Ltd",
+   "ind": "Technology"
+  },
+  "RUM": {
+   "cap": 2533.589980167323,
+   "name": "RUM Group Inc.",
+   "ind": "Media"
   }
  },
  "earn_done": [
