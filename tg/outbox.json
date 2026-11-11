@@ -1,10 +1,5 @@
 [
  {
-  "id": "alert-2026-11-07-AMD-u",
-  "caption": "⚡️🚀 <b>AMD</b> (AMD) +11,21% за день, $449,72\n\n#алерт",
-  "t": 1793996941
- },
- {
   "id": "alert-2026-11-07-INTC-u",
   "caption": "⚡️🚀 <b>Intel</b> (INTC) +8,78% за день, $56,83\n\n#алерт",
   "t": 1793996941
@@ -158,5 +153,10 @@
   "caption": "📊 Акции <b>Strategy</b> упали на 3,60% за день\nЗа полгода: −38,21%, цена $121,07\n\n#графикдня",
   "t": 1794402804,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-11-MSTR.png"
+ },
+ {
+  "id": "alert-2026-11-11-NVDA-d",
+  "caption": "⚡️🔻 <b>Nvidia</b> (NVDA) −5,47% за день, $168,89\n\n#алерт",
+  "t": 1794406317
  }
 ]
