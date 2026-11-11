@@ -1,30 +1,43 @@
-instagram: bil_ind_media (billionaires, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/792b201193af/bank/cards_markets/bil_ind_media.jpg
+instagram: share_exp_56 (agro, donut)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/e8dc38214918/bank/covers/share_exp_56.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/e8dc38214918/bank/cards/share_exp_56.jpg
 ---
-№1: Руперт Мердок с семьёй, $25,3 млрд.
+Пять стран дают 79% мирового экспорта кукурузы.
 
-Самые богатые люди из сферы медиа и развлечений, 2026 год, данные Forbes. Разрыв первого места со вторым (Дмитрий Бухман): в 1,9 раза. Учтены на 9 ноября 2026.
+Доли в мировом экспорте кукурузы, 2024 год. На пять крупнейших стран приходится 79% мирового экспорта, на все остальные 21%. Всего стран-экспортёров в данных: 138.
 
-Топ-10:
-1. 🇺🇸 Руперт Мердок с семьёй: $25,3 млрд
-2. 🇬🇧 Дмитрий Бухман: $13,5 млрд
-3. 🇬🇧 Игорь Бухман: $13,5 млрд
-4. 🇺🇸 Чарли Эрген: $13 млрд
-5. 🇨🇦 Шерри Брайдсон: $12,6 млрд
-6. 🇨🇳 Ван Нин с семьёй: $11,8 млрд
-7. 🇺🇸 Джон Мэлоун: $11,4 млрд
-8. 🇺🇸 Гейб Ньюэлл: $10,2 млрд
-9. 🇺🇸 Дэвид Геффен: $9,7 млрд
-10. 🇺🇸 Стивен Спилберг: $7,9 млрд
+Доли лидеров:
+1. 🇺🇸 США: 31,5%
+2. 🇧🇷 Бразилия: 18,0%
+3. 🇦🇷 Аргентина: 14,4%
+4. 🇺🇦 Украина: 11,1%
+5. 🇫🇷 Франция: 4,1%
+6. 🇷🇴 Румыния: 2,0%
+7. 🇿🇦 ЮАР: 1,9%
+8. 🇵🇱 Польша: 1,7%
+9. 🇭🇺 Венгрия: 1,7%
+10. 🇲🇲 Мьянма: 1,5%
 
-Кого не хватает в топе, по-вашему?
+Кто поднимется выше через 5 лет?
 
 Каждый день рынки, сделки инсайдеров из отчётов SEC и данные в Telegram @osnovafin, ссылка в профиле.
 
-Источник: Forbes Real-Time Billionaires. Не является инвестиционной рекомендацией.
+Источник: FAOSTAT, ФАО ООН. Не является инвестиционной рекомендацией.
 
-#миллиардеры #forbes #богатство #бизнес #рупертмердокссемьёй #инвестиции #финансы #статистика #инфографика #цифры #рынки
+#кукуруза #сельскоехозяйство #агро #экспорт #продовольствие #сша #инвестиции #финансы #статистика #инфографика #цифры #рынки
 ---
-Instagram: одиночный пост с графиком
-Опубликовано: 18073280264785991. Осталось новых рейтингов: 208
-exit=0 2026-11-11T07:18:20Z
+Instagram: карусель
+Traceback (most recent call last):
+  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/publish.py", line 376, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/publish.py", line 366, in main
+    pid = post_instagram(token, text, images(r) if carousel else [image_url(r)])
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/publish.py", line 326, in post_instagram
+    p = check(requests.post(f"{IG}/{uid}/media_publish", data={
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/publish.py", line 248, in check
+    raise RuntimeError(f"{what}: HTTP {resp.status_code} {json.dumps(err, ensure_ascii=False)[:400]}")
+RuntimeError: Instagram публикация: HTTP 403 {"message": "Application request limit reached", "type": "OAuthException", "is_transient": false, "code": 4, "error_subcode": 2207051, "error_user_title": "Действие заблокировано", "error_user_msg": "Для защиты нашего сообщества мы ограничиваем некоторые действия. Свяжитесь с нами, если вы считаете, что произошла ошибка.", "fbtrace_id": "A4vP2fgo2lNz6rRAH6DgaKh"}
+exit=1 2026-11-11T11:04:48Z
