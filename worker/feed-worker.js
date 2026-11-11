@@ -1,4 +1,5 @@
-// OSNOVA Finance · лента v2.5 (07.11.2026): приоритет геоэкономика, рынок США, мировые рынки; крипта не больше 10 в сутки; макроданные сразу после выхода (#макро); инсайдеры сводкой в 16:00, отдельно только покупки и сделки от $50 млн
+// OSNOVA Finance · лента v2.6 (11.11.2026): разборы компаний из tg/outbox_report.json (#разбор)
+// v2.5 (07.11.2026): приоритет геоэкономика, рынок США, мировые рынки; крипта не больше 10 в сутки; макроданные сразу после выхода (#макро); инсайдеры сводкой в 16:00, отдельно только покупки и сделки от $50 млн
 // v2.4 (07.11.2026): ссылки с отслеживанием /go, вступления по источникам, описание и закреп, «Главное за ночь»; v2.3 (06.11.2026): отчёты только карточкой Finnhub; v2.2: Sonnet без принудительного tool_choice, рыночные посты из GitHub; v2.1: без недвижимости, проверка на английский текст
 // Cloudflare Worker: сбор новостей → ИИ-редактор → проверка цифр → очередь → Telegram.
 // Привязки: DB (D1). Секреты: BOT_TOKEN, ANTHROPIC_API_KEY, FINNHUB_KEY, ADMIN_KEY.
@@ -1036,7 +1037,7 @@ const OUTBOX_URL = 'https://raw.githubusercontent.com/aleksandr-pm/osnova-financ
 async function outbox(env, now) {
   if (!env.BOT_TOKEN || !(await targetAllowed(env))) return { skipped: true };
   const box = [];
-  for (const u of [OUTBOX_URL, OUTBOX_URL.replace('outbox.json', 'outbox_earnings.json')]) {
+  for (const u of [OUTBOX_URL, OUTBOX_URL.replace('outbox.json', 'outbox_earnings.json'), OUTBOX_URL.replace('outbox.json', 'outbox_report.json')]) {
     try { const r = await fetch(u, { signal: AbortSignal.timeout(8000), cf: { cacheTtl: 30 } }); if (r.ok) box.push(...(await r.json())); } catch (e) { /* файла может не быть */ }
   }
   const done = JSON.parse(await meta(env, 'outbox_done') || '[]');

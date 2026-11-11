@@ -1,11 +1,14 @@
 name: publish-report
 on:
   schedule:
-    - cron: "27 6 * * *"    # 10:27 по Дубаю
-    - cron: "27 15 * * *"   # 19:27 по Дубаю
+    - cron: "27 6 * * *"    # 10:27 по Дубаю, @osnova_report
+    - cron: "27 15 * * *"   # 19:27 по Дубаю, @osnova_report
+    - cron: "7 9 * * *"     # 13:07 по Дубаю, @osnova_finance (разбор, вышедший в @osnova_report накануне)
+    - cron: "7 18 * * *"    # 22:07 по Дубаю, @osnova_finance
   workflow_dispatch:
     inputs:
       dry_run: { description: "yes = только нарисовать", default: "no" }
+      account: { description: "report или finance", default: "report" }
 permissions:
   contents: write
 concurrency: { group: publish-report, cancel-in-progress: false }
@@ -19,7 +22,10 @@ jobs:
       - run: pip install pillow requests
       - env:
           THREADS_TOKEN_REPORT: ${{ secrets.THREADS_TOKEN_REPORT }}
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           DRY_RUN: ${{ github.event.inputs.dry_run }}
         run: |
           git config user.name "osnova-bot"; git config user.email "osnova-bot@users.noreply.github.com"
-          python scripts/publish_report.py
+          A="${{ github.event.inputs.account }}"
+          case "${{ github.event.schedule }}" in "7 9 * * *"|"7 18 * * *") A=finance;; esac
+          python scripts/publish_report.py ${A:-report}

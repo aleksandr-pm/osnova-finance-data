@@ -357,6 +357,13 @@ def calendar():
         return False
     rows.sort(key=lambda x: x[0])
     rows = rows[:13]
+    if len(rows) < 3:  # 11.11: карточка с одним событием выглядела пустой, в такие дни только текст
+        cap = f"🗓 <b>Экономический календарь на {day_ru(today)}</b>\n\n"
+        for t, c, name, imp, fc, pv in rows:
+            tail = " · ".join(x for x in (f"прогноз {fc}" if fc else "", f"ранее {pv}" if pv else "") if x)
+            cap += f"{t.strftime('%H:%M')} {FLAGS[c][0]} {name}" + (f" ({tail})" if tail else "") + "\n"
+        cap += "\nСпокойный день: важной статистики нет.\n\nВремя по Дубаю · #календарь"
+        return push_out(f"calendar-{today.isoformat()}", None, cap)
     im, d = canvas("Календарь дня", f"{day_ru(today)}, {WD[today.weekday()]} · время по Дубаю")
     y = 300
     d.text((M, y), "ВРЕМЯ", font=font(20, 600), fill=T["sub"])

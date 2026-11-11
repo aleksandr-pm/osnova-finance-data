@@ -249,9 +249,11 @@ def check(resp, what):
     return js
 
 
-def post_threads(token, text, imgs):
-    """imgs: [] текстовый пост, [url] картинка, [url, url] карусель."""
+def post_threads(token, text, imgs, reply_to=None):
+    """imgs: [] текстовый пост, [url] картинка, [url, url] карусель. reply_to: id поста, если это ответ."""
     data = {"media_type": "TEXT", "text": text, "access_token": token}
+    if reply_to:
+        data["reply_to_id"] = reply_to
     if len(imgs) == 1:
         data.update(media_type="IMAGE", image_url=imgs[0])
     elif len(imgs) > 1:
@@ -353,6 +355,11 @@ def main():
         with_img = n % 3 == 0  # картинка в каждом третьем посте, остальные текстом
         log("Threads: " + ("с картинкой" if with_img else "текстом"))
         pid = post_threads(token, text, images(r) if with_img else [])
+        try:  # 11.11: первым ответом ссылка-приглашение в Telegram (код th), один клик до канала
+            rid = post_threads(token, "Рынки 24/7 и разборы компаний в Telegram: https://t.me/+sUoaHcDSC5NjNTQ6", [], reply_to=pid)
+            log(f"Ответ со ссылкой: {rid}")
+        except Exception as e:  # noqa: BLE001
+            log(f"Ответ со ссылкой не вышел: {e}")
     else:
         carousel = n % 4 == 2  # из 4 постов в день 1 карусель (обложка + график), 3 одиночных
         log("Instagram: " + ("карусель" if carousel else "одиночный пост с графиком"))
