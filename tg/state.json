@@ -4,7 +4,8 @@
   "INTC",
   "AMAT",
   "AVGO",
-  "NVDA"
+  "NVDA",
+  "MSTR"
  ],
  "alerts": {
   "AVGO:up": "2026-11-10",
