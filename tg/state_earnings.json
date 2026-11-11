@@ -3428,6 +3428,46 @@
    "cap": 7.915911,
    "name": "Ucloudlink Group Inc",
    "ind": "Telecommunication"
+  },
+  "AADX": {
+   "cap": 1848.0583504880735,
+   "name": "Applied Aerospace & Defense Inc",
+   "ind": "Aerospace & Defense"
+  },
+  "AEBI": {
+   "cap": 866.8282755784398,
+   "name": "Aebi Schmidt Holding AG",
+   "ind": "Machinery"
+  },
+  "CSTE": {
+   "cap": 47.04138755555555,
+   "name": "Caesarstone Ltd",
+   "ind": "Building"
+  },
+  "INMD": {
+   "cap": 763.3234330181348,
+   "name": "InMode Ltd.",
+   "ind": "Health Care"
+  },
+  "INVZ": {
+   "cap": 65.73261894230768,
+   "name": "Innoviz Technologies Ltd",
+   "ind": "Electrical Equipment"
+  },
+  "ODD": {
+   "cap": 899.6594340394008,
+   "name": "ODDITY Tech Ltd.",
+   "ind": "Consumer products"
+  },
+  "RSKD": {
+   "cap": 1119.67988,
+   "name": "Riskified Ltd",
+   "ind": "Technology"
+  },
+  "VLN": {
+   "cap": 163.5,
+   "name": "Valens Semiconductor Ltd",
+   "ind": "Semiconductors"
   }
  },
  "earn_done": [
