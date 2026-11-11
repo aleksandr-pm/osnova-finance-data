@@ -1332,10 +1332,10 @@
   "card": "cards/wdi_cm_mkt_lcap_cd_desc.png",
   "photo": {
    "source": "Pixabay",
-   "pixabay_id": 1853262,
+   "pixabay_id": 1863880,
    "query": "stock exchange trading",
-   "page": "https://pixabay.com/photos/blur-chart-computer-data-finance-1853262/",
-   "author": "Pexels"
+   "page": "https://pixabay.com/photos/stock-trading-monitor-business-1863880/",
+   "author": "3844328"
   },
   "cover": "covers/wdi_cm_mkt_lcap_cd_desc.jpg"
  },
@@ -3356,10 +3356,10 @@
   "card": "cards/fao_prod_15.png",
   "photo": {
    "source": "Pixabay",
-   "pixabay_id": 3241114,
+   "pixabay_id": 2326787,
    "query": "wheat field",
-   "page": "https://pixabay.com/photos/wheat-field-cereals-wheat-field-3241114/",
-   "author": "Candiix"
+   "page": "https://pixabay.com/photos/countryside-harvest-agriculture-2326787/",
+   "author": "TheDigitalArtist"
   },
   "cover": "covers/fao_prod_15.jpg"
  },
@@ -10317,10 +10317,10 @@
   "card": "cards/line_agro_prod_15.png",
   "photo": {
    "source": "Pixabay",
-   "pixabay_id": 2326787,
+   "pixabay_id": 3241114,
    "query": "wheat field",
-   "page": "https://pixabay.com/photos/countryside-harvest-agriculture-2326787/",
-   "author": "TheDigitalArtist"
+   "page": "https://pixabay.com/photos/wheat-field-cereals-wheat-field-3241114/",
+   "author": "Candiix"
   },
   "cover": "covers/line_agro_prod_15.jpg"
  },
@@ -37757,10 +37757,10 @@
   "card": "cards/fao_exp_661.png",
   "photo": {
    "source": "Pixabay",
-   "pixabay_id": 2427493,
+   "pixabay_id": 2475758,
    "query": "cocoa beans",
-   "page": "https://pixabay.com/photos/cocoa-beans-food-chocolate-brown-2427493/",
-   "author": "5671698"
+   "page": "https://pixabay.com/photos/chocolate-cocoa-beans-cocoa-sweets-2475758/",
+   "author": "summa"
   },
   "cover": "covers/fao_exp_661.jpg"
  },
@@ -40062,10 +40062,10 @@
   "card": "cards/fao_imp_661.png",
   "photo": {
    "source": "Pixabay",
-   "pixabay_id": 2475758,
+   "pixabay_id": 2427493,
    "query": "cocoa beans",
-   "page": "https://pixabay.com/photos/chocolate-cocoa-beans-cocoa-sweets-2475758/",
-   "author": "summa"
+   "page": "https://pixabay.com/photos/cocoa-beans-food-chocolate-brown-2427493/",
+   "author": "5671698"
   },
   "cover": "covers/fao_imp_661.jpg"
  },
