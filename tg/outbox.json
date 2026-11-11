@@ -1,22 +1,5 @@
 [
  {
-  "id": "alert-2026-11-07-INTC-u",
-  "caption": "⚡️🚀 <b>Intel</b> (INTC) +8,78% за день, $56,83\n\n#алерт",
-  "t": 1793996941
- },
- {
-  "id": "evening-2026-11-06",
-  "caption": "📈 <b>Итоги дня 6 ноября</b>\n\nS&P 500 +0,31%, Nasdaq +1,09%, Dow Jones −0,46%\nНефть Brent −0,44%, Золото −0,94%\n\n#итогидня",
-  "t": 1794002218,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-06.png"
- },
- {
-  "id": "chart-2026-11-09-INTC",
-  "caption": "📊 Акции <b>Intel</b> выросли на 7,71% за день\nЗа полгода: −48,66%, цена $56,28\n\n#графикдня",
-  "t": 1794230264,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-09-INTC.png"
- },
- {
   "id": "alert-2026-11-09-AMD-u",
   "caption": "⚡️🚀 <b>AMD</b> (AMD) +11,04% за день, $449,04\n\n#алерт",
   "t": 1794233774
@@ -158,5 +141,20 @@
   "id": "alert-2026-11-11-NVDA-d",
   "caption": "⚡️🔻 <b>Nvidia</b> (NVDA) −5,47% за день, $168,89\n\n#алерт",
   "t": 1794406317
+ },
+ {
+  "id": "alert-2026-11-11-MU-u",
+  "caption": "⚡️🚀 <b>Micron</b> (MU) +9,49% за день, $793,9\n\n#алерт",
+  "t": 1794409932
+ },
+ {
+  "id": "alert-2026-11-11-SMCI-u",
+  "caption": "⚡️🚀 <b>Super Micro</b> (SMCI) +7,11% за день, $29,76\n\n#алерт",
+  "t": 1794409932
+ },
+ {
+  "id": "alert-2026-11-11-DELL-u",
+  "caption": "⚡️🚀 <b>Dell</b> (DELL) +10,30% за день, $368,83\n\n#алерт",
+  "t": 1794409932
  }
 ]
