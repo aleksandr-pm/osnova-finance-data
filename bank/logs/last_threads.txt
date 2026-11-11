@@ -1,21 +1,19 @@
-threads: cis_ny_gdp_mktp_cd (cis, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/a7e0c3e5b122/bank/covers/cis_ny_gdp_mktp_cd.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/a7e0c3e5b122/bank/cards/cis_ny_gdp_mktp_cd.jpg
+threads: mkt_country_cap_kw (companies, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/f71846116598/bank/cards_markets/mkt_country_cap_kw.jpg
 ---
-Страны бывшего СССР: размер экономики, 2025:
-1. 🇷🇺 Россия · $2,6 трлн
-2. 🇰🇿 Казахстан · $306 млрд
-3. 🇺🇦 Украина · $214 млрд
-4. 🇺🇿 Узбекистан · $147 млрд
-5. 🇱🇹 Литва · $95,2 млрд
-6. 🇧🇾 Беларусь · $93,4 млрд
-7. 🇦🇿 Азербайджан · $75,9 млрд
-8. 🇹🇲 Туркменистан · $49,8 млрд
-9. 🇱🇻 Латвия · $48,6 млрд
-10. 🇪🇪 Эстония · $47 млрд
-Россия: ВВП $2,6 трлн, №1.
+Самые дорогие компании Кувейта, ноябрь 2026:
+1. 🇰🇼 Kuwait Finance House · $45,2 млрд
+2. 🇰🇼 National Bank of Kuwait · $25,8 млрд
+3. 🇰🇼 Boubyan Bank · $10,1 млрд
+4. 🇰🇼 Zain (Mobile Telecommunications Company) · $8,1 млрд
+5. 🇰🇼 Gulf Bank · $4,5 млрд
+6. 🇰🇼 Warba Bank · $3,9 млрд
+7. 🇰🇼 Commercial Bank of Kuwait · $3,3 млрд
+8. 🇰🇼 National Mobile Telecommunications Company · $2,7 млрд
+9. 🇰🇼 Al Ahli Bank of Kuwait · $2,5 млрд
+№1: Kuwait Finance House, $45,2 млрд.
 Больше в Telegram @osnovafin
 ---
 Threads: текстом
-Опубликовано: 18060693632800837. Осталось новых рейтингов: 166
-exit=0 2026-11-10T22:17:47Z
+Опубликовано: 17888133981506196. Осталось новых рейтингов: 165
+exit=0 2026-11-11T05:32:46Z
