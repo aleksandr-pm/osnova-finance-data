@@ -5,7 +5,8 @@
   "AMAT",
   "AVGO",
   "NVDA",
-  "MSTR"
+  "MSTR",
+  "DELL"
  ],
  "alerts": {
   "NVDA:down": "2026-11-11",
