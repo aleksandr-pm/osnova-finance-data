@@ -3493,6 +3493,106 @@
    "cap": 2533.589980167323,
    "name": "RUM Group Inc.",
    "ind": "Media"
+  },
+  "ACOG": {
+   "cap": 190.556320303551,
+   "name": "Alpha Cognition Inc",
+   "ind": "Biotechnology"
+  },
+  "AGBK": {
+   "cap": 852.2673231768628,
+   "name": "Agi Inc",
+   "ind": "Banking"
+  },
+  "ALVO": {
+   "cap": 1946.300860992828,
+   "name": "Alvotech SA",
+   "ind": "Biotechnology"
+  },
+  "AZ": {
+   "cap": 274.0647669711538,
+   "name": "A2Z Cust2Mate Solutions Corp.",
+   "ind": "Aerospace & Defense"
+  },
+  "CINT": {
+   "cap": 426.2023172236024,
+   "name": "CI&T Inc.",
+   "ind": "Technology"
+  },
+  "CURI": {
+   "cap": 138.85098990871367,
+   "name": "CuriosityStream Inc",
+   "ind": "Media"
+  },
+  "DDI": {
+   "cap": 777.988987,
+   "name": "DoubleDown Interactive Co Ltd",
+   "ind": "Media"
+  },
+  "DGII": {
+   "cap": 2564.1545961649504,
+   "name": "Digi International Inc.",
+   "ind": "Communications"
+  },
+  "ECO": {
+   "cap": 3260.7952031458312,
+   "name": "Okeanis Eco Tankers Corp",
+   "ind": "Energy"
+  },
+  "ENS": {
+   "cap": 5358.571001635102,
+   "name": "EnerSys",
+   "ind": "Electrical Equipment"
+  },
+  "EZPW": {
+   "cap": 1732.0888130232881,
+   "name": "EZCORP Inc",
+   "ind": "Financial Services"
+  },
+  "ICU": {
+   "cap": 10.100336,
+   "name": "SeaStar Medical Holding Corp",
+   "ind": "Health Care"
+  },
+  "MRMD": {
+   "cap": 27.25248351724138,
+   "name": "MariMed Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "OPRX": {
+   "cap": 180.8251359144385,
+   "name": "OptimizeRx Corporation",
+   "ind": "Health Care"
+  },
+  "OTCM": {
+   "cap": 629.7313860429036,
+   "name": "OTC Markets Group Inc",
+   "ind": "Financial Services"
+  },
+  "PLGO": {
+   "cap": 2308.120471111896,
+   "name": "Pelagos Insurance Capital Ltd",
+   "ind": "Insurance"
+  },
+  "PXLW": {
+   "cap": 37.6272253388203,
+   "name": "Pixelworks, Inc.",
+   "ind": "Technology"
+  },
+  "STRR": {
+   "cap": 33.25996869112629,
+   "name": "Star Equity Holdings Inc",
+   "ind": "Professional Services"
+  },
+  "TTEK": {
+   "cap": 10372.360042970306,
+   "name": "Tetra Tech, Inc.",
+   "ind": "Commercial Services & Supplies"
+  },
+  "XAIR": {
+   "cap": 3.73,
+   "name": "Beyond Air Inc",
+   "ind": "Health Care"
   }
  },
  "earn_done": [
