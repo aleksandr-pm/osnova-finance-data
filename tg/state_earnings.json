@@ -3413,6 +3413,21 @@
    "cap": 1.9578930809677417,
    "name": "Tofutti Brands Inc",
    "ind": "Food Products"
+  },
+  "FLNG": {
+   "cap": 1344.2742170817971,
+   "name": "FLEX LNG Ltd.",
+   "ind": "Energy"
+  },
+  "GGR": {
+   "cap": 41.661305412817555,
+   "name": "Gogoro Inc",
+   "ind": "Automobiles"
+  },
+  "UCL": {
+   "cap": 7.915911,
+   "name": "Ucloudlink Group Inc",
+   "ind": "Telecommunication"
   }
  },
  "earn_done": [
