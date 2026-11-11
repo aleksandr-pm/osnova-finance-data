@@ -1,6 +1,6 @@
 instagram: share_exp_56 (agro, donut)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/e8dc38214918/bank/covers/share_exp_56.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/e8dc38214918/bank/cards/share_exp_56.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/acb0176ba7fe/bank/covers/share_exp_56.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/acb0176ba7fe/bank/cards/share_exp_56.jpg
 ---
 Пять стран дают 79% мирового экспорта кукурузы.
 
@@ -39,5 +39,5 @@ Traceback (most recent call last):
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/publish.py", line 248, in check
     raise RuntimeError(f"{what}: HTTP {resp.status_code} {json.dumps(err, ensure_ascii=False)[:400]}")
-RuntimeError: Instagram публикация: HTTP 403 {"message": "Application request limit reached", "type": "OAuthException", "is_transient": false, "code": 4, "error_subcode": 2207051, "error_user_title": "Действие заблокировано", "error_user_msg": "Для защиты нашего сообщества мы ограничиваем некоторые действия. Свяжитесь с нами, если вы считаете, что произошла ошибка.", "fbtrace_id": "A4vP2fgo2lNz6rRAH6DgaKh"}
-exit=1 2026-11-11T11:04:48Z
+RuntimeError: Instagram публикация: HTTP 403 {"message": "Application request limit reached", "type": "OAuthException", "is_transient": false, "code": 4, "error_subcode": 2207051, "error_user_title": "Действие заблокировано", "error_user_msg": "Для защиты нашего сообщества мы ограничиваем некоторые действия. Свяжитесь с нами, если вы считаете, что произошла ошибка.", "fbtrace_id": "A07opiUMRF5rZiaEGoY7JJv"}
+exit=1 2026-11-11T14:58:05Z
