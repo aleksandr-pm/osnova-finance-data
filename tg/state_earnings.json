@@ -3403,6 +3403,16 @@
    "cap": 83.21,
    "name": "Usio, Inc.",
    "ind": "Financial Services"
+  },
+  "BDCIU": {
+   "cap": 353.37,
+   "name": "BTC Development Corp.",
+   "ind": "N/A"
+  },
+  "TOFB": {
+   "cap": 1.9578930809677417,
+   "name": "Tofutti Brands Inc",
+   "ind": "Food Products"
   }
  },
  "earn_done": [
