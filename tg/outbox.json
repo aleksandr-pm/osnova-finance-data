@@ -1,10 +1,5 @@
 [
  {
-  "id": "alert-2026-11-06-AMD-u",
-  "caption": "⚡️🚀 <b>AMD</b> (AMD) +9,17% за день, $441,49\n\n#алерт",
-  "t": 1793990799
- },
- {
   "id": "alert-2026-11-06-INTC-u",
   "caption": "⚡️🚀 <b>Intel</b> (INTC) +7,97% за день, $56,42\n\n#алерт",
   "t": 1793990799
@@ -156,5 +151,11 @@
   "caption": "📈 <b>Итоги дня 10 ноября</b>\n\nS&P 500 −0,38%, Nasdaq −0,74%, Dow Jones −0,30%\nНефть Brent −0,56%, Золото −1,86%\n\n#итогидня",
   "t": 1794347872,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-10.png"
+ },
+ {
+  "id": "calendar-2026-11-11",
+  "caption": "🗓 <b>Экономический календарь на 11 ноября</b>\n\nГлавных событий нет, на графике второстепенные\n\nВремя по Дубаю · #календарь",
+  "t": 1794373141,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/calendar-2026-11-11.png"
  }
 ]
