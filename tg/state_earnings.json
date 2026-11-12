@@ -3593,6 +3593,21 @@
    "cap": 3.73,
    "name": "Beyond Air Inc",
    "ind": "Health Care"
+  },
+  "AVEX": {
+   "cap": 1537.7077284456898,
+   "name": "AEVEX Corp",
+   "ind": "Aerospace & Defense"
+  },
+  "CTVA": {
+   "cap": 8101.021902241578,
+   "name": "Corteva, Inc.",
+   "ind": "Chemicals"
+  },
+  "TISI": {
+   "cap": 91.29752576339523,
+   "name": "Team Inc",
+   "ind": "Commercial Services & Supplies"
   }
  },
  "earn_done": [
