@@ -4016,6 +4016,51 @@
    "cap": 80.72,
    "name": "Where Food Comes From Inc",
    "ind": "Professional Services"
+  },
+  "BRUN": {
+   "cap": 618.7771232676057,
+   "name": "Boost Run Inc",
+   "ind": "Technology"
+  },
+  "CMCL": {
+   "cap": 386.7015599045346,
+   "name": "Caledonia Mining Corporation PLC",
+   "ind": "Metals & Mining"
+  },
+  "DFDV": {
+   "cap": 128.76452738080496,
+   "name": "DeFi Development Corp (Nevada)",
+   "ind": "Financial Services"
+  },
+  "IPWR": {
+   "cap": 37.30666453982301,
+   "name": "Ideal Power Inc",
+   "ind": "Semiconductors"
+  },
+  "MPTI": {
+   "cap": 292.1701329512725,
+   "name": "M-Tron Industries Inc",
+   "ind": "Electrical Equipment"
+  },
+  "NSYS": {
+   "cap": 30.563835322731528,
+   "name": "Nortech Systems Inc",
+   "ind": "Electrical Equipment"
+  },
+  "ONDS": {
+   "cap": 3336.5944205924598,
+   "name": "Ondas Inc",
+   "ind": "Communications"
+  },
+  "SGA": {
+   "cap": 45.26887357793104,
+   "name": "Saga Communications Inc",
+   "ind": "Media"
+  },
+  "SPCB": {
+   "cap": 54.13750094907407,
+   "name": "Supercom Ltd",
+   "ind": "Electrical Equipment"
   }
  },
  "earn_done": [
