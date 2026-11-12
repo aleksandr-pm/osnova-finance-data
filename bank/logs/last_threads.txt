@@ -1,21 +1,22 @@
-threads: mkt_country_cap_au (companies, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/3116bcacd0aa/bank/cards_markets/mkt_country_cap_au.jpg
+threads: cis_bx_klt_dinv_cd_wd (cis, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/fece3306ef4f/bank/covers/cis_bx_klt_dinv_cd_wd.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/fece3306ef4f/bank/cards/cis_bx_klt_dinv_cd_wd.jpg
 ---
-Самые дорогие компании Австралии, ноябрь 2026:
-1. 🇦🇺 BHP Group · $203 млрд
-2. 🇦🇺 Commonwealth Bank · $194 млрд
-3. 🇦🇺 Westpac Banking · $87,9 млрд
-4. 🇦🇺 National Australia Bank · $86,3 млрд
-5. 🇦🇺 ANZ Bank · $81,6 млрд
-6. 🇦🇺 CSL · $68 млрд
-7. 🇦🇺 Macquarie Group · $65,9 млрд
-8. 🇦🇺 Wesfarmers · $64 млрд
-9. 🇦🇺 Woodside Energy · $40 млрд
-10. 🇦🇺 Telstra · $39,2 млрд
-№1: BHP Group, $203 млрд.
+Страны бывшего СССР: прямые иностранные инвестиции, 2025:
+1. 🇷🇺 Россия · $11,1 млрд
+2. 🇺🇿 Узбекистан · $4,5 млрд
+3. 🇱🇹 Литва · $3,1 млрд
+4. 🇬🇪 Грузия · $1,7 млрд
+5. 🇧🇾 Беларусь · $1,6 млрд
+6. 🇺🇦 Украина · $1,6 млрд
+7. 🇦🇲 Армения · $708 млн
+8. 🇹🇲 Туркменистан · $701 млн
+9. 🇰🇬 Киргизия · $642 млн
+10. 🇲🇩 Молдова · $460 млн
+Россия: $11,1 млрд прямых иностранных инвестиций, №1.
 Больше в Telegram @osnovafin
 ---
 Threads: текстом
-Ответ со ссылкой: 17956536045274125
-Опубликовано: 18198917050396382. Осталось новых рейтингов: 163
-exit=0 2026-11-12T06:32:41Z
+Ответ со ссылкой: 18110119199349899
+Опубликовано: 18347155969250850. Осталось новых рейтингов: 162
+exit=0 2026-11-12T17:26:39Z
