@@ -1,11 +1,5 @@
 [
  {
-  "id": "evening-2026-11-10",
-  "caption": "📈 <b>Итоги дня 10 ноября</b>\n\nS&P 500 −0,38%, Nasdaq −0,74%, Dow Jones −0,30%\nНефть Brent −0,56%, Золото −1,86%\n\n#итогидня",
-  "t": 1794347872,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-10.png"
- },
- {
   "id": "calendar-2026-11-11",
   "caption": "🗓 <b>Экономический календарь на 11 ноября</b>\n\nГлавных событий нет, на графике второстепенные\n\nВремя по Дубаю · #календарь",
   "t": 1794373141,
@@ -155,5 +149,11 @@
   "id": "alert-2026-11-12-BABA-d",
   "caption": "⚡️🔻 <b>Alibaba</b> (BABA) −7,07% за день, $94,35\n\n#алерт",
   "t": 1794496688
+ },
+ {
+  "id": "chart-2026-11-12-SMCI",
+  "caption": "📊 Акции <b>Super Micro</b> упали на 12,18% за день\nЗа полгода: −18,49%, цена $26,73\n\n#графикдня",
+  "t": 1794505002,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-12-SMCI.png"
  }
 ]
