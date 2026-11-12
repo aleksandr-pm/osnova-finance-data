@@ -1155,9 +1155,23 @@ def publish_reel(token, path, cap):
     return p["id"]
 
 
+
+def ig_paused():
+    """12.11: Instagram ограничил действия аккаунта (код 4, подкод 2207051). Пауза до даты в bank/ig_pause_until.txt."""
+    p = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "bank", "ig_pause_until.txt")
+    try:
+        until = dt.datetime.fromisoformat(open(p).read().strip())
+    except Exception:  # noqa: BLE001
+        return None
+    return until if dt.datetime.now(dt.timezone.utc) < until else None
+
+
 def main():
     args = sys.argv[1:]
     dry = "--dry-run" in args
+    if not dry and ig_paused():
+        log(f"Instagram на паузе до {ig_paused().isoformat()}, ролик не публикуется")
+        return 0
     want = args[args.index("--id") + 1] if "--id" in args else ""
     theme = args[args.index("--theme") + 1] if "--theme" in args else None
     out = args[args.index("--out") + 1] if "--out" in args else os.path.join(ROOT, "reel.mp4")

@@ -1,10 +1,10 @@
 name: reels
 
-# Reels в Instagram, 3 в день. Время в cron по UTC, Дубай = UTC+4.
+# Reels в Instagram, 2 в день (с 12.11, было 3). Время в cron по UTC, Дубай = UTC+4.
 on:
   schedule:
-    # 12:47 и 16:47 по Дубаю
-    - cron: "47 8,12 * * *"
+    # 12:47 по Дубаю
+    - cron: "47 8 * * *"
     # 20:17 по Дубаю
     - cron: "17 16 * * *"
   workflow_dispatch:

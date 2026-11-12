@@ -66,6 +66,9 @@ def query_for(r):
     return CITY.get(lead, "city skyline night"), "buildings"
 
 
+BAN = {"poppy", "poppies", "cannabis", "marijuana", "hemp", "opium", "weapon", "gun", "war", "soldier", "alcohol", "cigarette", "smoking"}
+
+
 def search(key, q, category):
     params = {"key": key, "q": q, "image_type": "photo", "safesearch": "true",
               "per_page": 30, "min_width": 1600, "category": category, "order": "popular"}
@@ -85,8 +88,14 @@ def fetch_photo(key, r, out_dir, used, log):
     q, cat = query_for(r)
     hits = search(key, q, cat) or search(key, q.split()[0] + " " + q.split()[-1], "")
     time.sleep(0.8)  # лимит Pixabay: 100 запросов в минуту
+    must = q.split()[0].lower()  # 12.11: на «corn field» пришли маки. Ключевое слово запроса обязано быть в тегах фото
     for h in hits:
         if h["id"] in used:
+            continue
+        tags = {t.strip().lower() for t in (h.get("tags") or "").split(",")}
+        if BAN & {w for t in tags for w in t.split()}:
+            continue
+        if cat != "buildings" and not any(must in t for t in tags):
             continue
         url = h.get("largeImageURL")
         if not url:

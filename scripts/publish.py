@@ -329,9 +329,23 @@ def post_instagram(token, caption, imgs):
     return p["id"]
 
 
+
+def ig_paused():
+    """12.11: Instagram ограничил действия аккаунта (код 4, подкод 2207051). Пауза до даты в bank/ig_pause_until.txt."""
+    p = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "bank", "ig_pause_until.txt")
+    try:
+        until = dt.datetime.fromisoformat(open(p).read().strip())
+    except Exception:  # noqa: BLE001
+        return None
+    return until if dt.datetime.now(dt.timezone.utc) < until else None
+
+
 def main():
     platform = sys.argv[1]
     dry = "--dry-run" in sys.argv
+    if platform == "instagram" and not dry and ig_paused():
+        log(f"Instagram на паузе до {ig_paused().isoformat()}")
+        return 0
     with open(os.path.join(BANK, "rankings.json"), encoding="utf-8") as f:
         rankings = json.load(f)
     extra = os.path.join(BANK, "rankings_markets.json")
@@ -363,7 +377,14 @@ def main():
     else:
         carousel = n % 4 == 2  # из 4 постов в день 1 карусель (обложка + график), 3 одиночных
         log("Instagram: " + ("карусель" if carousel else "одиночный пост с графиком"))
-        pid = post_instagram(token, text, images(r) if carousel else [image_url(r)])
+        try:
+            pid = post_instagram(token, text, images(r) if carousel else [image_url(r)])
+        except RuntimeError:
+            # 12.11: Instagram ответил ошибкой на media_publish, но пост вышел; повтор дал 5 одинаковых постов.
+            # Рейтинг помечается как использованный, второй попытки с ним не будет.
+            st["posted"].append({"id": r["id"], "block": r["block"], "type": r.get("type", "bars"), "at": now().isoformat(), "post": "error"})
+            save_state(platform, st)
+            raise
     st["posted"].append({"id": r["id"], "block": r["block"], "type": r.get("type", "bars"),
                          "at": now().isoformat(), "post": pid})
     save_state(platform, st)

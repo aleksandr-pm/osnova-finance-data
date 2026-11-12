@@ -6,10 +6,8 @@ on:
     # Threads @osnova_finance, рейтинги 2 в день: 09:37 и 20:37 (Дубай). С 11.11 вместо 12: медиана 14 просмотров на рейтинг.
     # Ещё 2 поста в день (13:07 и 22:07) это разборы компаний из workflow publish-report.
     - cron: "37 5,16 * * *"
-    # Instagram, 4 в день: 10:13 14:13 18:13 (Дубай)
-    - cron: "13 6,10,14 * * *"
-    # Instagram: 21:43 (Дубай)
-    - cron: "43 17 * * *"
+    # Instagram, 1 пост в день: 18:13 (Дубай). С 12.11 вместо 4: Instagram ограничил действия аккаунта
+    - cron: "13 14 * * *"
   workflow_dispatch:
     inputs:
       platform:
@@ -46,7 +44,7 @@ jobs:
         run: |
           S="${{ github.event.schedule }}"
           if [ -n "${{ inputs.platform }}" ]; then P="${{ inputs.platform }}";
-          elif [ "$S" = "13 6,10,14 * * *" ] || [ "$S" = "43 17 * * *" ]; then P=instagram;
+          elif [ "$S" = "13 14 * * *" ]; then P=instagram;
           else P=threads; fi
           echo "platform=$P" >> "$GITHUB_OUTPUT"
           if [ "${{ inputs.dry_run }}" = "yes" ]; then echo "flag=--dry-run" >> "$GITHUB_OUTPUT"; fi

@@ -41851,15 +41851,7 @@
   "hook_text": "Пять стран дают 79% мирового экспорта кукурузы",
   "threads": "Пять стран дают 79% мирового экспорта кукурузы.\n\nДоли в мировом экспорте кукурузы · 2024\n1. 🇺🇸 США · 31,5%\n2. 🇧🇷 Бразилия · 18,0%\n3. 🇦🇷 Аргентина · 14,4%\n4. 🇺🇦 Украина · 11,1%\n5. 🇫🇷 Франция · 4,1%\n\nКто удивил в этом списке?\n\nРынки и данные 24/7 в Telegram @osnovafin, ссылка в профиле.\nFAOSTAT · #данные",
   "threads_len": 303,
-  "card": "cards/share_exp_56.png",
-  "photo": {
-   "source": "Pixabay",
-   "pixabay_id": 8147823,
-   "query": "corn field",
-   "page": "https://pixabay.com/photos/poppy-poppy-flowers-flower-nature-8147823/",
-   "author": "BernhardJaeck"
-  },
-  "cover": "covers/share_exp_56.jpg"
+  "card": "cards/share_exp_56.png"
  },
  {
   "id": "share_exp_31",
