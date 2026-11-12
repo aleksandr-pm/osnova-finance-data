@@ -3608,6 +3608,71 @@
    "cap": 91.29752576339523,
    "name": "Team Inc",
    "ind": "Commercial Services & Supplies"
+  },
+  "BLTE": {
+   "cap": 6303.396151,
+   "name": "Belite Bio, Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "CMDB": {
+   "cap": 480.92650826687424,
+   "name": "Costamare Bulkers Holdings Ltd",
+   "ind": "Marine"
+  },
+  "EPC": {
+   "cap": 1343.4918405994597,
+   "name": "Edgewell Personal Care Company",
+   "ind": "Consumer products"
+  },
+  "EYE": {
+   "cap": 1430.3638901267752,
+   "name": "National Vision Holdings, Inc.",
+   "ind": "Retail"
+  },
+  "FENC": {
+   "cap": 373.1145966805293,
+   "name": "Fennec Pharmaceuticals Inc.",
+   "ind": "Biotechnology"
+  },
+  "JG": {
+   "cap": 34.523042,
+   "name": "Aurora Mobile Ltd",
+   "ind": "Technology"
+  },
+  "KPLT": {
+   "cap": 948.6124440225697,
+   "name": "Katapult Holdings, Inc.",
+   "ind": "Financial Services"
+  },
+  "LASE": {
+   "cap": 36.687355887634595,
+   "name": "Laser Photonics Corp",
+   "ind": "Machinery"
+  },
+  "RMTI": {
+   "cap": 28.535693023255817,
+   "name": "Rockwell Medical Inc",
+   "ind": "Health Care"
+  },
+  "STDN": {
+   "cap": 1953.75333504,
+   "name": "Standard Nuclear Inc",
+   "ind": "Energy"
+  },
+  "TE": {
+   "cap": 637.9325746811594,
+   "name": "T1 Energy Inc.",
+   "ind": "Semiconductors"
+  },
+  "XE": {
+   "cap": 4441.58,
+   "name": "X-Energy Inc",
+   "ind": "Electrical Equipment"
+  },
+  "YETI": {
+   "cap": 3186.69,
+   "name": "YETI Holdings, Inc.",
+   "ind": "Leisure Products"
   }
  },
  "earn_done": [
