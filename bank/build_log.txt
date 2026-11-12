@@ -1,6 +1,10 @@
 WDI: стран 217
   wdi_ny_gdp_mktp_cd_desc: 2025, стран 186
-  wdi_ny_gdp_mktp_pp_cd_desc: 2025, стран 185
+  HTTP 502 https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.PP.CD?format=json&per_page=20000&date=2000:2025
+  HTTP 502 https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.PP.CD?format=json&per_page=20000&date=2000:2025
+  HTTP 502 https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.PP.CD?format=json&per_page=20000&date=2000:2025
+  HTTP 502 https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.PP.CD?format=json&per_page=20000&date=2000:2025
+  WDI NY.GDP.MKTP.PP.CD: нет свежего года (None)
   wdi_ny_gdp_pcap_cd_desc: 2025, стран 151
   wdi_ny_gdp_mktp_kd_zg_desc: 2025, стран 151
   wdi_sl_uem_totl_zs_desc: 2025, стран 154
@@ -8,11 +12,17 @@ WDI: стран 217
   wdi_ny_gns_ictr_zs_desc: 2024, стран 129
   wdi_gc_tax_totl_gd_zs_desc: 2023, стран 97
   wdi_fi_res_totl_cd_desc: 2025, стран 132
-  wdi_cm_mkt_lcap_cd_desc: 2025, стран 68
+  HTTP 502 https://api.worldbank.org/v2/country/all/indicator/CM.MKT.LCAP.CD?format=json&per_page=20000&date=2000:2025
+  HTTP 502 https://api.worldbank.org/v2/country/all/indicator/CM.MKT.LCAP.CD?format=json&per_page=20000&date=2000:2025
+  HTTP 502 https://api.worldbank.org/v2/country/all/indicator/CM.MKT.LCAP.CD?format=json&per_page=20000&date=2000:2025
+  HTTP 502 https://api.worldbank.org/v2/country/all/indicator/CM.MKT.LCAP.CD?format=json&per_page=20000&date=2000:2025
+  WDI CM.MKT.LCAP.CD: нет свежего года (None)
   wdi_bx_klt_dinv_cd_wd_desc: 2025, стран 200
   wdi_bx_trf_pwkr_cd_dt_desc: 2025, стран 132
   wdi_bm_trf_pwkr_cd_dt_desc: 2025, стран 135
   wdi_bx_trf_pwkr_dt_gd_zs_desc: 2025, стран 111
+  HTTP 502 https://api.worldbank.org/v2/country/all/indicator/NE.EXP.GNFS.CD?format=json&per_page=20000&date=2000:2025
+  HTTP 502 https://api.worldbank.org/v2/country/all/indicator/NE.EXP.GNFS.CD?format=json&per_page=20000&date=2000:2025
   wdi_ne_exp_gnfs_cd_desc: 2025, стран 138
   wdi_tx_val_tech_cd_desc: 2024, стран 126
   wdi_bn_cab_xoka_gd_zs_desc: 2025, стран 115
@@ -181,7 +191,7 @@ FAO TCL: строк после фильтра 55124
   line_cis_ny_gdp_mktp_cd: 2005-2025, линий 5
   line_cis_bx_trf_pwkr_cd_dt: 2005-2025, линий 5
   line_cis_fi_res_totl_cd: 2005-2025, линий 5
-Итого рейтингов: 125
-Обложки: 125 из 125
-По блокам: agro 92, cis 12, economy 13, money 8
-exit=0 2026-11-11T05:50:59Z
+Итого рейтингов: 123
+Обложки: 123 из 123
+По блокам: agro 92, cis 12, economy 12, money 7
+exit=0 2026-11-12T13:32:54Z
