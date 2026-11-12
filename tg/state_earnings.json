@@ -1,7 +1,10 @@
 {
  "earn_seen": {
   "OXY-2026Q3": 1794307483,
-  "TDG-2026Q4": 1794313927
+  "TDG-2026Q4": 1794313927,
+  "AMAT-2026Q4": 1794525238,
+  "CSCO-2027Q1": 1794525259,
+  "NU-2026Q3": 1794525318
  },
  "caps": {
   "ACRE": {
@@ -4271,6 +4274,551 @@
    "cap": 48304.99,
    "name": "Vylor Inc.",
    "ind": "Food Products"
+  },
+  "ALMS": {
+   "cap": 835.0121471873111,
+   "name": "Alumis Inc.",
+   "ind": "Pharmaceuticals"
+  },
+  "ALMU": {
+   "cap": 145.4413808113731,
+   "name": "Aeluma Inc",
+   "ind": "Semiconductors"
+  },
+  "AMAT": {
+   "cap": 302013.96039944043,
+   "name": "Applied Materials Inc",
+   "ind": "Semiconductors"
+  },
+  "AMPG": {
+   "cap": 72.90834216470589,
+   "name": "Amplitech Group Inc",
+   "ind": "Electrical Equipment"
+  },
+  "ANDG": {
+   "cap": 7508.082288535845,
+   "name": "Andersen Group Inc",
+   "ind": "Professional Services"
+  },
+  "ARWR": {
+   "cap": 6678.511463056727,
+   "name": "Arrowhead Pharmaceuticals, Inc.",
+   "ind": "Biotechnology"
+  },
+  "AVX": {
+   "cap": 41.54695420985011,
+   "name": "AVAX One Technology Ltd",
+   "ind": "Food Products"
+  },
+  "BCDA": {
+   "cap": 12.736257872192688,
+   "name": "BioCardia Inc",
+   "ind": "Biotechnology"
+  },
+  "BCHT": {
+   "cap": 30.909512613636362,
+   "name": "Birchtech Corp",
+   "ind": "Commercial Services & Supplies"
+  },
+  "BEAT": {
+   "cap": 22.736891204379567,
+   "name": "HeartBeam, Inc.",
+   "ind": "Health Care"
+  },
+  "BLNE": {
+   "cap": 20.718391755494945,
+   "name": "Beeline Holdings Inc",
+   "ind": "Financial Services"
+  },
+  "BOLT": {
+   "cap": 11.500279936102237,
+   "name": "Bolt Biotherapeutics, Inc.",
+   "ind": "Biotechnology"
+  },
+  "BSEM": {
+   "cap": 24.36712334693878,
+   "name": "Biostem Technologies Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "BUDA": {
+   "cap": 85.83032384722222,
+   "name": "Buda Juice Inc",
+   "ind": "Food Products"
+  },
+  "CBRS": {
+   "cap": 22461.07407824669,
+   "name": "Cerebras Systems Inc",
+   "ind": "Semiconductors"
+  },
+  "CBUS": {
+   "cap": 82.54327717241382,
+   "name": "Cibus Inc",
+   "ind": "Biotechnology"
+  },
+  "CDXS": {
+   "cap": 101.32021385548956,
+   "name": "Codexis, Inc.",
+   "ind": "Life Sciences Tools & Services"
+  },
+  "CRIS": {
+   "cap": 3.6869344513947593,
+   "name": "Curis Inc",
+   "ind": "Biotechnology"
+  },
+  "CRWS": {
+   "cap": 25.60948412955465,
+   "name": "Crown Crafts Inc",
+   "ind": "Textiles, Apparel & Luxury Goods"
+  },
+  "CSCO": {
+   "cap": 405646.74088745005,
+   "name": "Cisco Systems Inc",
+   "ind": "Communications"
+  },
+  "CTSO": {
+   "cap": 17.299545168539325,
+   "name": "Cytosorbents Corp",
+   "ind": "Health Care"
+  },
+  "CV": {
+   "cap": 333.628918,
+   "name": "CapsoVision Inc",
+   "ind": "Health Care"
+  },
+  "CVSI": {
+   "cap": 2.088919143907563,
+   "name": "CV Sciences Inc",
+   "ind": "Consumer products"
+  },
+  "CWD": {
+   "cap": 4.2556313165702795,
+   "name": "CaliberCos Inc",
+   "ind": "Financial Services"
+  },
+  "DERM": {
+   "cap": 126.72752970720722,
+   "name": "Journey Medical Corp",
+   "ind": "Pharmaceuticals"
+  },
+  "DFLI": {
+   "cap": 3.9905406100990097,
+   "name": "Dragonfly Energy Holdings Corp",
+   "ind": "Electrical Equipment"
+  },
+  "DLO": {
+   "cap": 4018.3667366131804,
+   "name": "DLocal Limited",
+   "ind": "Financial Services"
+  },
+  "DMAC": {
+   "cap": 505.8229970579711,
+   "name": "DiaMedica Therapeutics Inc",
+   "ind": "Biotechnology"
+  },
+  "DMRC": {
+   "cap": 204.48628101562497,
+   "name": "Digimarc Corporation",
+   "ind": "Technology"
+  },
+  "DYAI": {
+   "cap": 14.026302633247424,
+   "name": "Dyadic International Inc",
+   "ind": "Biotechnology"
+  },
+  "ELTP": {
+   "cap": 254.2042022,
+   "name": "Elite Pharmaceuticals Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "ENSC": {
+   "cap": 7.751587261316302,
+   "name": "Ensysce Biosciences Inc",
+   "ind": "Biotechnology"
+  },
+  "FDMT": {
+   "cap": 673.4268993487298,
+   "name": "4D Molecular Therapeutics Inc",
+   "ind": "Biotechnology"
+  },
+  "FLO": {
+   "cap": 1347.6248969824003,
+   "name": "Flowers Foods Inc",
+   "ind": "Food Products"
+  },
+  "GCTS": {
+   "cap": 139.33413837735847,
+   "name": "GCT Semiconductor Holding Inc",
+   "ind": "Semiconductors"
+  },
+  "GEMI": {
+   "cap": 349.85389591544117,
+   "name": "Gemini Space Station Inc",
+   "ind": "Financial Services"
+  },
+  "GUTS": {
+   "cap": 11.552477628574671,
+   "name": "Fractyl Health, Inc.",
+   "ind": "Health Care"
+  },
+  "HAWK": {
+   "cap": 1450.869866347313,
+   "name": "HawkEye 360 Inc",
+   "ind": "Aerospace & Defense"
+  },
+  "HIT": {
+   "cap": 35.08611254155496,
+   "name": "Health In Tech Inc",
+   "ind": "Insurance"
+  },
+  "HQI": {
+   "cap": 256.941492909863,
+   "name": "Hirequest Inc",
+   "ind": "Professional Services"
+  },
+  "HTFL": {
+   "cap": 5200.696388669035,
+   "name": "Heartflow, Inc",
+   "ind": "Health Care"
+  },
+  "ICCC": {
+   "cap": 93.77368257605497,
+   "name": "ImmuCell Corp",
+   "ind": "Biotechnology"
+  },
+  "IDN": {
+   "cap": 45.90417011392405,
+   "name": "Intellicheck Inc",
+   "ind": "Technology"
+  },
+  "INLX": {
+   "cap": 16.496628188630492,
+   "name": "Intellinetics, Inc.",
+   "ind": "Technology"
+  },
+  "INTR": {
+   "cap": 1731.4207549280397,
+   "name": "Inter & Co Inc",
+   "ind": "Banking"
+  },
+  "INTZ": {
+   "cap": 12.99113627559727,
+   "name": "Intrusion Inc",
+   "ind": "Technology"
+  },
+  "INV": {
+   "cap": 14.045878786982247,
+   "name": "Innventure Inc",
+   "ind": "Financial Services"
+  },
+  "INVE": {
+   "cap": 63.705098875939846,
+   "name": "INVE Technologies Inc",
+   "ind": "Electrical Equipment"
+  },
+  "JCAP": {
+   "cap": 1106.590056647442,
+   "name": "Jefferson Capital Inc",
+   "ind": "Financial Services"
+  },
+  "KLC": {
+   "cap": 249.47835778971958,
+   "name": "Kindercare Learning Companies Inc",
+   "ind": "Diversified Consumer Services"
+  },
+  "KOD": {
+   "cap": 6762.915571125618,
+   "name": "Kodiak Sciences Inc.",
+   "ind": "Biotechnology"
+  },
+  "LCTX": {
+   "cap": 254.1720112432432,
+   "name": "Lineage Cell Therapeutics Inc",
+   "ind": "Biotechnology"
+  },
+  "LFMD": {
+   "cap": 79.77238257584271,
+   "name": "LifeMD Inc",
+   "ind": "Health Care"
+  },
+  "LFTO": {
+   "cap": 3169.886068528301,
+   "name": "Liftoff Mobile Inc",
+   "ind": "Media"
+  },
+  "LGCY": {
+   "cap": 108.28965247674418,
+   "name": "Legacy Education Inc",
+   "ind": "Diversified Consumer Services"
+  },
+  "LSF": {
+   "cap": 32.571291276000004,
+   "name": "Laird Superfood Inc",
+   "ind": "Food Products"
+  },
+  "LVLU": {
+   "cap": 32.66417484662577,
+   "name": "Lulu's Fashion Lounge Holdings Inc",
+   "ind": "Retail"
+  },
+  "LWAY": {
+   "cap": 315.4439804243003,
+   "name": "Lifeway Foods Inc",
+   "ind": "Food Products"
+  },
+  "MRLN": {
+   "cap": 99.76400387881188,
+   "name": "Merlin Inc",
+   "ind": "Aerospace & Defense"
+  },
+  "MSAI": {
+   "cap": 7.5874289590643285,
+   "name": "MultiSensor AI Holdings Inc",
+   "ind": "Electrical Equipment"
+  },
+  "MSGM": {
+   "cap": 19.272967724137935,
+   "name": "Motorsport Games Inc",
+   "ind": "Media"
+  },
+  "NCNA": {
+   "cap": 4.050116,
+   "name": "NuCana PLC",
+   "ind": "Biotechnology"
+  },
+  "NKTR": {
+   "cap": 1281.3865166285123,
+   "name": "Nektar Therapeutics",
+   "ind": "Biotechnology"
+  },
+  "NMAX": {
+   "cap": 958.3719616459948,
+   "name": "Newsmax Inc.",
+   "ind": "Media"
+  },
+  "NPCE": {
+   "cap": 411.55147052398576,
+   "name": "NeuroPace, Inc.",
+   "ind": "Health Care"
+  },
+  "NSPR": {
+   "cap": 35.422383079125005,
+   "name": "InspireMD Inc",
+   "ind": "Health Care"
+  },
+  "NSTR": {
+   "cap": 111.57171181494664,
+   "name": "Northstar Earth & Space Enterprises, Inc.",
+   "ind": "N/A"
+  },
+  "NU": {
+   "cap": 57433.00998272063,
+   "name": "Nu Holdings Ltd.",
+   "ind": "Banking"
+  },
+  "NXL": {
+   "cap": 1.7698590440251574,
+   "name": "Nexalin Technology, Inc.",
+   "ind": "Health Care"
+  },
+  "OFRM": {
+   "cap": 430.6141533923611,
+   "name": "Once Upon A Farm PBC",
+   "ind": "Food Products"
+  },
+  "PARK": {
+   "cap": 100.38400996420481,
+   "name": "Park Dental Partners Inc",
+   "ind": "Health Care"
+  },
+  "PED": {
+   "cap": 177.71421473274594,
+   "name": "PEDEVCO Corp",
+   "ind": "Energy"
+  },
+  "PEW": {
+   "cap": 52.09121535911602,
+   "name": "GrabAGun Digital Holdings Inc",
+   "ind": "Retail"
+  },
+  "PLRX": {
+   "cap": 46.0698912654321,
+   "name": "Pliant Therapeutics, Inc.",
+   "ind": "Pharmaceuticals"
+  },
+  "PMN": {
+   "cap": 31.611119062500002,
+   "name": "ProMIS Neurosciences Inc",
+   "ind": "Biotechnology"
+  },
+  "PRME": {
+   "cap": 718.2524033581396,
+   "name": "Prime Medicine, Inc.",
+   "ind": "Biotechnology"
+  },
+  "PROP": {
+   "cap": 42.03981561830601,
+   "name": "Prairie Operating Co",
+   "ind": "Energy"
+  },
+  "QMCI": {
+   "cap": 14.02408990155605,
+   "name": "QuoteMedia Inc",
+   "ind": "Financial Services"
+  },
+  "REKR": {
+   "cap": 44.25013741109749,
+   "name": "Rekor Systems Inc",
+   "ind": "Technology"
+  },
+  "RLMD": {
+   "cap": 449.08003286230246,
+   "name": "Relmada Therapeutics Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "RMR": {
+   "cap": 504.6219394996826,
+   "name": "The RMR Group Inc.",
+   "ind": "Real Estate"
+  },
+  "ROC": {
+   "cap": 64.87243290140846,
+   "name": "Rank One Computing Corp",
+   "ind": "Technology"
+  },
+  "SHIM": {
+   "cap": 99.20597497797357,
+   "name": "Shimmick Corp",
+   "ind": "Construction"
+  },
+  "SKYX": {
+   "cap": 92.52988454011741,
+   "name": "SKYX Platforms Corp",
+   "ind": "Electrical Equipment"
+  },
+  "SLND": {
+   "cap": 35.1760634298887,
+   "name": "Southland Holdings Inc",
+   "ind": "Construction"
+  },
+  "SLSN": {
+   "cap": 63.62473367486278,
+   "name": "Solesence Inc",
+   "ind": "Chemicals"
+  },
+  "SMSI": {
+   "cap": 13.303913784482761,
+   "name": "Smith Micro Software Inc",
+   "ind": "Technology"
+  },
+  "SNAL": {
+   "cap": 20.86703932608696,
+   "name": "Snail Inc",
+   "ind": "Media"
+  },
+  "SPCE": {
+   "cap": 412.158920604878,
+   "name": "Virgin Galactic Holdings Inc",
+   "ind": "Aerospace & Defense"
+  },
+  "SPRO": {
+   "cap": 58.08924038235294,
+   "name": "Spero Therapeutics, Inc.",
+   "ind": "Biotechnology"
+  },
+  "SPRU": {
+   "cap": 27.145581592105263,
+   "name": "Spruce Power Holding Corp",
+   "ind": "Utilities"
+  },
+  "STEX": {
+   "cap": 37.40869158955677,
+   "name": "Streamex Corp",
+   "ind": "Health Care"
+  },
+  "STNE": {
+   "cap": 1888.6671599535032,
+   "name": "StoneCo Ltd.",
+   "ind": "Financial Services"
+  },
+  "TACT": {
+   "cap": 50.38341449087221,
+   "name": "TransAct Technologies Inc",
+   "ind": "Technology"
+  },
+  "TBN": {
+   "cap": 1017.3362059728033,
+   "name": "Tamboran Resources Corp",
+   "ind": "Energy"
+  },
+  "TLPH": {
+   "cap": 55.2796699,
+   "name": "Talphera Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "TMC": {
+   "cap": 1032.2569618167006,
+   "name": "TMC the metals company Inc.",
+   "ind": "Metals & Mining"
+  },
+  "TNON": {
+   "cap": 4.785948733524356,
+   "name": "Tenon Medical Inc",
+   "ind": "Health Care"
+  },
+  "UAMY": {
+   "cap": 429.551126,
+   "name": "United States Antimony Corp",
+   "ind": "Metals & Mining"
+  },
+  "VATE": {
+   "cap": 75.17,
+   "name": "Innovate Corp",
+   "ind": "Construction"
+  },
+  "VNRX": {
+   "cap": 5.87,
+   "name": "VolitionRX Ltd",
+   "ind": "Health Care"
+  },
+  "VRCA": {
+   "cap": 57.55,
+   "name": "Verrica Pharmaceuticals Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "VTSI": {
+   "cap": 29.54,
+   "name": "VirTra Inc",
+   "ind": "Aerospace & Defense"
+  },
+  "VUZI": {
+   "cap": 178.96,
+   "name": "Vuzix Corp",
+   "ind": "Electrical Equipment"
+  },
+  "WATT": {
+   "cap": 50.63,
+   "name": "Energous Corp",
+   "ind": "Electrical Equipment"
+  },
+  "WHK": {
+   "cap": 700.06,
+   "name": "Whitehawk Minerals Corp",
+   "ind": "Energy"
+  },
+  "XOS": {
+   "cap": 38.67,
+   "name": "Xos Inc",
+   "ind": "Machinery"
+  },
+  "XTIA": {
+   "cap": 40.4,
+   "name": "XTI Aerospace Inc",
+   "ind": "Technology"
+  },
+  "YSS": {
+   "cap": 868.1,
+   "name": "York Space Systems Inc",
+   "ind": "Aerospace & Defense"
   }
  },
  "earn_done": [
@@ -4321,6 +4869,9 @@
   "CEG-2026Q3",
   "KKR-2026Q3",
   "OXY-2026Q3",
-  "TDG-2026Q4"
+  "TDG-2026Q4",
+  "AMAT-2026Q4",
+  "CSCO-2027Q1",
+  "NU-2026Q3"
  ]
 }
