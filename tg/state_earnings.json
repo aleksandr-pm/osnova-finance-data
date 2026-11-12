@@ -4061,6 +4061,216 @@
    "cap": 54.13750094907407,
    "name": "Supercom Ltd",
    "ind": "Electrical Equipment"
+  },
+  "AKTS": {
+   "cap": 912.7160864876763,
+   "name": "Aktis Oncology Inc",
+   "ind": "Biotechnology"
+  },
+  "AVLN": {
+   "cap": 1321.5696138959518,
+   "name": "Avalyn Pharma Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "BKTI": {
+   "cap": 255.79074031538022,
+   "name": "BK Technologies Corp",
+   "ind": "Communications"
+  },
+  "CAEP": {
+   "cap": 1199.69,
+   "name": "Air Global PLC",
+   "ind": "Tobacco"
+  },
+  "CRDF": {
+   "cap": 57.28842034391742,
+   "name": "Cardiff Oncology, Inc.",
+   "ind": "Biotechnology"
+  },
+  "CYN": {
+   "cap": 4.1992896649423,
+   "name": "CYNGN Inc",
+   "ind": "Technology"
+  },
+  "EIKN": {
+   "cap": 331.4899963538231,
+   "name": "Eikon Therapeutics, Inc.",
+   "ind": "Biotechnology"
+  },
+  "FBYD": {
+   "cap": 666.9379744237282,
+   "name": "Falcon's Beyond Global Inc",
+   "ind": "Professional Services"
+  },
+  "GENB": {
+   "cap": 1605.6889005055593,
+   "name": "Generate Biomedicines Inc",
+   "ind": "Biotechnology"
+  },
+  "GRCE": {
+   "cap": 38.916472345013474,
+   "name": "Grace Therapeutics, Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "GTEC": {
+   "cap": 13.306618622186816,
+   "name": "Greenland Technologies Holding Corp",
+   "ind": "Machinery"
+  },
+  "IPSC": {
+   "cap": 294.24741760057475,
+   "name": "Century Therapeutics, Inc.",
+   "ind": "Biotechnology"
+  },
+  "KARD": {
+   "cap": 1346.4532001020407,
+   "name": "Kardigan Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "KPRX": {
+   "cap": 5.972922999999999,
+   "name": "Kiora Pharmaceuticals, Inc.",
+   "ind": "Pharmaceuticals"
+  },
+  "KYTX": {
+   "cap": 316.01999556640624,
+   "name": "Kyverna Therapeutics, Inc.",
+   "ind": "Biotechnology"
+  },
+  "LAC": {
+   "cap": 589.9447483050847,
+   "name": "Lithium Americas Corp.",
+   "ind": "Metals & Mining"
+  },
+  "LINK": {
+   "cap": 48.195981232037035,
+   "name": "Interlink Electronics Inc",
+   "ind": "Electrical Equipment"
+  },
+  "LIQT": {
+   "cap": 8.882737455948552,
+   "name": "LiqTech International Inc",
+   "ind": "Machinery"
+  },
+  "LUCD": {
+   "cap": 80.88093665325118,
+   "name": "Lucid Diagnostics Inc",
+   "ind": "Health Care"
+  },
+  "MGTX": {
+   "cap": 857.6639420289256,
+   "name": "MeiraGTx Holdings PLC",
+   "ind": "Biotechnology"
+  },
+  "MNPR": {
+   "cap": 489.3844853620521,
+   "name": "Monopar Therapeutics Inc.",
+   "ind": "Biotechnology"
+  },
+  "NWTG": {
+   "cap": 5.355486650485436,
+   "name": "Newton Golf Company Inc",
+   "ind": "Leisure Products"
+  },
+  "PBLS": {
+   "cap": 3422.488480542496,
+   "name": "Parabilis Medicines Inc",
+   "ind": "Biotechnology"
+  },
+  "PHVS": {
+   "cap": 2389.059358016969,
+   "name": "Pharvaris N.V.",
+   "ind": "Pharmaceuticals"
+  },
+  "PRQR": {
+   "cap": 187.69156016666665,
+   "name": "ProQR Therapeutics NV",
+   "ind": "Biotechnology"
+  },
+  "RCMT": {
+   "cap": 226.05102004623777,
+   "name": "R C M Technologies Inc",
+   "ind": "Professional Services"
+  },
+  "SHIP": {
+   "cap": 333.6902450453956,
+   "name": "Seanergy Maritime Holdings Corp",
+   "ind": "Marine"
+  },
+  "SLGL": {
+   "cap": 177.97458855520506,
+   "name": "SOL-GEL TECHNOLOGIES LTD.",
+   "ind": "Pharmaceuticals"
+  },
+  "TCRX": {
+   "cap": 11.658029331896552,
+   "name": "TScan Therapeutics Inc",
+   "ind": "Biotechnology"
+  },
+  "TOVX": {
+   "cap": 7.113366159105033,
+   "name": "Theriva Biologics Inc",
+   "ind": "Biotechnology"
+  },
+  "USEA": {
+   "cap": 24.43,
+   "name": "United Maritime Corp",
+   "ind": "Marine"
+  },
+  "UTGN": {
+   "cap": 191.97,
+   "name": "UTG Inc",
+   "ind": "Insurance"
+  },
+  "YARW": {
+   "cap": 187.81,
+   "name": "Yarrow Bioscience, Inc.",
+   "ind": "Biotechnology"
+  },
+  "BCIC": {
+   "cap": 68.56209465753426,
+   "name": "Bcp Investment Corp",
+   "ind": "Financial Services"
+  },
+  "CHAC": {
+   "cap": 185.43,
+   "name": "Xanadu Quantum Technologies Ltd",
+   "ind": "Technology"
+  },
+  "HSDT": {
+   "cap": 112.96750600000001,
+   "name": "Solana Co",
+   "ind": "Health Care"
+  },
+  "ICMB": {
+   "cap": 15.885820250768484,
+   "name": "Investcorp Credit Management BDC Inc",
+   "ind": "Financial Services"
+  },
+  "SGP": {
+   "cap": 1127.1969312038893,
+   "name": "SpyGlass Pharma, Inc.",
+   "ind": "Pharmaceuticals"
+  },
+  "TGEN": {
+   "cap": 68.04033412711763,
+   "name": "Tecogen Inc",
+   "ind": "Building"
+  },
+  "TNK": {
+   "cap": 3060.519878524056,
+   "name": "Teekay Tankers Ltd",
+   "ind": "Energy"
+  },
+  "VANI": {
+   "cap": 98.32,
+   "name": "Vivani Medical Inc",
+   "ind": "Health Care"
+  },
+  "VYLR": {
+   "cap": 48304.99,
+   "name": "Vylor Inc.",
+   "ind": "Food Products"
   }
  },
  "earn_done": [
