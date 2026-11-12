@@ -3826,6 +3826,196 @@
    "cap": 1565.33,
    "name": "Yesway Inc",
    "ind": "Retail"
+  },
+  "ABSI": {
+   "cap": 1736.7338647382146,
+   "name": "Absci Corp",
+   "ind": "Biotechnology"
+  },
+  "AENT": {
+   "cap": 233.99650140764328,
+   "name": "Alliance Entertainment Holding Corp",
+   "ind": "Distributors"
+  },
+  "AIIR": {
+   "cap": 1215.7305461558783,
+   "name": "Air Global PLC",
+   "ind": "Tobacco"
+  },
+  "ALT": {
+   "cap": 375.4191729381443,
+   "name": "Altimmune, Inc.",
+   "ind": "Biotechnology"
+  },
+  "ARX": {
+   "cap": 4315.536577820191,
+   "name": "Accelerant Holdings",
+   "ind": "Insurance"
+  },
+  "ASND": {
+   "cap": 16173.068481186952,
+   "name": "Ascendis Pharma A/S",
+   "ind": "Biotechnology"
+  },
+  "BTBT": {
+   "cap": 286.6315238018338,
+   "name": "Bit Digital, Inc.",
+   "ind": "Technology"
+  },
+  "CLBT": {
+   "cap": 3192.0316052768985,
+   "name": "Cellebrite DI Ltd",
+   "ind": "Technology"
+  },
+  "COHN": {
+   "cap": 35.51866866230121,
+   "name": "Cohen & Company Inc",
+   "ind": "Financial Services"
+  },
+  "CRMD": {
+   "cap": 413.104890670391,
+   "name": "CorMedix Inc.",
+   "ind": "Pharmaceuticals"
+  },
+  "CRTD": {
+   "cap": 30.702715030000004,
+   "name": "Creatd Inc",
+   "ind": "Media"
+  },
+  "ENVX": {
+   "cap": 555.2048085,
+   "name": "Enovix Corporation",
+   "ind": "Electrical Equipment"
+  },
+  "EROC": {
+   "cap": 1937.3026754332907,
+   "name": "ERock Inc",
+   "ind": "Electrical Equipment"
+  },
+  "EYPT": {
+   "cap": 30.743250205889627,
+   "name": "EyePoint Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "FLYX": {
+   "cap": 111.26910308108108,
+   "name": "Flyexclusive Inc",
+   "ind": "Airlines"
+  },
+  "FRMI": {
+   "cap": 1160.6800370194806,
+   "name": "Fermi Inc",
+   "ind": "Real Estate"
+  },
+  "FRMM": {
+   "cap": 38.93689517730497,
+   "name": "Forum Markets, Inc",
+   "ind": "Technology"
+  },
+  "HYPD": {
+   "cap": 42.11186293822394,
+   "name": "Hyperion DeFi Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "IMNN": {
+   "cap": 4.04077101038961,
+   "name": "Imunon Inc",
+   "ind": "Biotechnology"
+  },
+  "IXHL": {
+   "cap": 24.77563904228856,
+   "name": "Incannex Healthcare Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "LEAT": {
+   "cap": 62.814311880000005,
+   "name": "Leatt Corp",
+   "ind": "Leisure Products"
+  },
+  "LGN": {
+   "cap": 4008.5193333216857,
+   "name": "Legence Corp.",
+   "ind": "Construction"
+  },
+  "LUNR": {
+   "cap": 2788.295192504657,
+   "name": "Intuitive Machines Inc",
+   "ind": "Aerospace & Defense"
+  },
+  "LVO": {
+   "cap": 38.11877506319703,
+   "name": "LiveOne Inc",
+   "ind": "Media"
+  },
+  "MOVE": {
+   "cap": 179.84796749999998,
+   "name": "Corvex Inc",
+   "ind": "Technology"
+  },
+  "MWH": {
+   "cap": 5581.9610190087515,
+   "name": "Solv Energy Inc",
+   "ind": "Construction"
+  },
+  "NTWK": {
+   "cap": 82.35319351999999,
+   "name": "NetSol Technologies Inc",
+   "ind": "Technology"
+  },
+  "NXPL": {
+   "cap": 22.49261167065868,
+   "name": "NextPlat Corp",
+   "ind": "Telecommunication"
+  },
+  "PNBK": {
+   "cap": 106.34250262616597,
+   "name": "Patriot National Bancorp Inc",
+   "ind": "Banking"
+  },
+  "PODC": {
+   "cap": 65.04329347319347,
+   "name": "Podcastone Inc",
+   "ind": "Media"
+  },
+  "SBDS": {
+   "cap": 6.933626896551725,
+   "name": "Solo Brands Inc",
+   "ind": "Leisure Products"
+  },
+  "SES": {
+   "cap": 320.28819984211117,
+   "name": "SES AI Corporation",
+   "ind": "Electrical Equipment"
+  },
+  "SGMT": {
+   "cap": 802.5927892001836,
+   "name": "Sagimet Biosciences Inc.",
+   "ind": "Biotechnology"
+  },
+  "SPH": {
+   "cap": 1174.8050756374926,
+   "name": "Suburban Propane Partners, L.P.",
+   "ind": "Utilities"
+  },
+  "TRT": {
+   "cap": 49.88212563067609,
+   "name": "Trio-Tech International",
+   "ind": "Semiconductors"
+  },
+  "TSHA": {
+   "cap": 1392.9382897826088,
+   "name": "Taysha Gene Therapies, Inc.",
+   "ind": "Biotechnology"
+  },
+  "TWST": {
+   "cap": 9236.288776,
+   "name": "Twist Bioscience Corporation",
+   "ind": "Biotechnology"
+  },
+  "WFCF": {
+   "cap": 80.72,
+   "name": "Where Food Comes From Inc",
+   "ind": "Professional Services"
   }
  },
  "earn_done": [
