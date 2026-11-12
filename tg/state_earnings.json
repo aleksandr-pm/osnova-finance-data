@@ -1,7 +1,5 @@
 {
  "earn_seen": {
-  "CEG-2026Q3": 1794227843,
-  "KKR-2026Q3": 1794227857,
   "OXY-2026Q3": 1794307483,
   "TDG-2026Q4": 1794313927
  },
@@ -3673,6 +3671,161 @@
    "cap": 3186.69,
    "name": "YETI Holdings, Inc.",
    "ind": "Leisure Products"
+  },
+  "ACXP": {
+   "cap": 5.726186951923076,
+   "name": "Acurx Pharmaceuticals Inc",
+   "ind": "Biotechnology"
+  },
+  "ADIG": {
+   "cap": 1486.5761317640272,
+   "name": "ADI Global Distribution Inc.",
+   "ind": "Electrical Equipment"
+  },
+  "AERT": {
+   "cap": 29.28301818011257,
+   "name": "Aeries Technology Inc",
+   "ind": "Professional Services"
+  },
+  "AIRO": {
+   "cap": 172.29530760000003,
+   "name": "AIRO Group Holdings Inc",
+   "ind": "Aerospace & Defense"
+  },
+  "ALLT": {
+   "cap": 442.2487303769933,
+   "name": "Allot Ltd",
+   "ind": "Technology"
+  },
+  "AMS": {
+   "cap": 7.847,
+   "name": "American Shared Hospital Services",
+   "ind": "Health Care"
+  },
+  "ARCO": {
+   "cap": 1445.9766569606986,
+   "name": "Arcos Dorados Holdings Inc.",
+   "ind": "Hotels, Restaurants & Leisure"
+  },
+  "AVAH": {
+   "cap": 2857.4249096990143,
+   "name": "Aveanna Healthcare Holdings Inc",
+   "ind": "Health Care"
+  },
+  "BWEN": {
+   "cap": 70.49897347297296,
+   "name": "Broadwind, Inc.",
+   "ind": "Electrical Equipment"
+  },
+  "CDNL": {
+   "cap": 711.6211704267124,
+   "name": "Cardinal Infrastructure Group Inc.",
+   "ind": "Construction"
+  },
+  "DAIO": {
+   "cap": 25.78115535802469,
+   "name": "Data I/O Corp",
+   "ind": "Electrical Equipment"
+  },
+  "DPC": {
+   "cap": 4732.770796440281,
+   "name": "DPC Holdings PLC",
+   "ind": "Electrical Equipment"
+  },
+  "DRIO": {
+   "cap": 20.823899267782423,
+   "name": "DarioHealth Corp",
+   "ind": "Health Care"
+  },
+  "FIGR": {
+   "cap": 5427.700678616538,
+   "name": "Figure Technology Solutions, Inc.",
+   "ind": "Financial Services"
+  },
+  "FPS": {
+   "cap": 7479.81778131704,
+   "name": "Forgent Power Solutions, Inc.",
+   "ind": "Electrical Equipment"
+  },
+  "LIEN": {
+   "cap": 209.264803,
+   "name": "Chicago Atlantic BDC Inc",
+   "ind": "Financial Services"
+  },
+  "MBGL": {
+   "cap": 5872.840775759158,
+   "name": "Mobility Global Inc",
+   "ind": "Professional Services"
+  },
+  "MDWD": {
+   "cap": 178.42004237136786,
+   "name": "Mediwound Ltd",
+   "ind": "Pharmaceuticals"
+  },
+  "NBIS": {
+   "cap": 42053.2855287,
+   "name": "Nebius Group NV",
+   "ind": "Technology"
+  },
+  "NIQ": {
+   "cap": 6211.770791120836,
+   "name": "NIQ Global Intelligence PLC",
+   "ind": "Media"
+  },
+  "NUAI": {
+   "cap": 273.28928392270535,
+   "name": "New Era Energy & Digital Inc",
+   "ind": "Energy"
+  },
+  "OCTV": {
+   "cap": 5698.934231413084,
+   "name": "Octave Intelligence PLC",
+   "ind": "Technology"
+  },
+  "PSFE": {
+   "cap": 356.1095213005618,
+   "name": "Paysafe Ltd",
+   "ind": "Financial Services"
+  },
+  "PTHS": {
+   "cap": 36.919875259550565,
+   "name": "Pelthos Therapeutics Inc",
+   "ind": "Biotechnology"
+  },
+  "SPB": {
+   "cap": 2030.2812203755782,
+   "name": "Spectrum Brands Holdings, Inc.",
+   "ind": "Consumer products"
+  },
+  "SPMC": {
+   "cap": 117.17,
+   "name": "Sound Point Meridian Capital Inc",
+   "ind": "Financial Services"
+  },
+  "SSYS": {
+   "cap": 576.0609198109756,
+   "name": "Stratasys Ltd.",
+   "ind": "Machinery"
+  },
+  "VGZ": {
+   "cap": 363.47,
+   "name": "Vista Gold Corp",
+   "ind": "Metals & Mining"
+  },
+  "WWR": {
+   "cap": 51.41,
+   "name": "Westwater Resources Inc",
+   "ind": "Electrical Equipment"
+  },
+  "WWW": {
+   "cap": 1706.98,
+   "name": "Wolverine World Wide, Inc.",
+   "ind": "Textiles, Apparel & Luxury Goods"
+  },
+  "YSWY": {
+   "cap": 1565.33,
+   "name": "Yesway Inc",
+   "ind": "Retail"
   }
  },
  "earn_done": [
