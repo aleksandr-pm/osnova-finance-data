@@ -1,1 +1,14 @@
-[]
+[
+ {
+  "id": "2026-11-12-GBP-GDP m/m",
+  "t": 1794466800,
+  "country": "GBP",
+  "flag": "🇬🇧",
+  "title": "GDP m/m",
+  "name_ru": "ВВП, м/м",
+  "forecast": "0.0%",
+  "previous": "0.1%",
+  "forecast_ru": "0,0%",
+  "previous_ru": "0,1%"
+ }
+]
