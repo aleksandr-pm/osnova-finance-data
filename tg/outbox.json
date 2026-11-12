@@ -1,10 +1,5 @@
 [
  {
-  "id": "alert-2026-11-09-CAT-u",
-  "caption": "⚡️🚀 <b>Caterpillar</b> (CAT) +7,01% за день, $597,78\n\n#алерт",
-  "t": 1794255981
- },
- {
   "id": "alert-2026-11-09-MU-u",
   "caption": "⚡️🚀 <b>Micron</b> (MU) +7,30% за день, $740,34\n\n#алерт",
   "t": 1794255981
@@ -158,5 +153,11 @@
   "caption": "🗓 <b>Экономический календарь на 12 ноября</b>\n\nГлавное:\n11:00 🇬🇧 ВВП, м/м\n\nВремя по Дубаю · #календарь",
   "t": 1794459589,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/calendar-2026-11-12.png"
+ },
+ {
+  "id": "chart-2026-11-12-ARM",
+  "caption": "📊 Акции <b>Arm</b> выросли на 12,05% за день\nЗа полгода: −2,19%, цена $203,36\n\n#графикдня",
+  "t": 1794489400,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-12-ARM.png"
  }
 ]
