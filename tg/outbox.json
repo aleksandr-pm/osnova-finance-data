@@ -1,36 +1,5 @@
 [
  {
-  "id": "alert-2026-11-10-AMAT-u",
-  "caption": "⚡️🚀 <b>Applied Materials</b> (AMAT) +11,37% за день, $370,55\n\n#алерт",
-  "t": 1794319598
- },
- {
-  "id": "alert-2026-11-10-NVDA-d",
-  "caption": "⚡️🔻 <b>Nvidia</b> (NVDA) −5,62% за день, $168,64\n\n#алерт",
-  "t": 1794325794
- },
- {
-  "id": "alert-2026-11-10-DELL-d",
-  "caption": "⚡️🔻 <b>Dell</b> (DELL) −5,80% за день, $326,23\n\n#алерт",
-  "t": 1794331798
- },
- {
-  "id": "alert-2026-11-10-SHOP-d",
-  "caption": "⚡️🔻 <b>Shopify</b> (SHOP) −5,17% за день, $144,2\n\n#алерт",
-  "t": 1794331798
- },
- {
-  "id": "chart-2026-11-10-NVDA",
-  "caption": "📊 Акции <b>Nvidia</b> упали на 6,06% за день\nЗа полгода: −23,51%, цена $167,86\n\n#графикдня",
-  "t": 1794331936,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-10-NVDA.png"
- },
- {
-  "id": "alert-2026-11-10-NOW-d",
-  "caption": "⚡️🔻 <b>ServiceNow</b> (NOW) −5,09% за день, $97,53\n\n#алерт",
-  "t": 1794334726
- },
- {
   "id": "evening-2026-11-10",
   "caption": "📈 <b>Итоги дня 10 ноября</b>\n\nS&P 500 −0,38%, Nasdaq −0,74%, Dow Jones −0,30%\nНефть Brent −0,56%, Золото −1,86%\n\n#итогидня",
   "t": 1794347872,
@@ -156,5 +125,35 @@
   "id": "alert-2026-11-12-DELL-u",
   "caption": "⚡️🚀 <b>Dell</b> (DELL) +11,75% за день, $373,68\n\n#алерт",
   "t": 1794492942
+ },
+ {
+  "id": "alert-2026-11-12-NVDA-d",
+  "caption": "⚡️🔻 <b>Nvidia</b> (NVDA) −5,94% за день, $163,41\n\n#алерт",
+  "t": 1794496688
+ },
+ {
+  "id": "alert-2026-11-12-PANW-d",
+  "caption": "⚡️🔻 <b>Palo Alto Networks</b> (PANW) −5,08% за день, $317,48\n\n#алерт",
+  "t": 1794496688
+ },
+ {
+  "id": "alert-2026-11-12-MSTR-d",
+  "caption": "⚡️🔻 <b>Strategy</b> (MSTR) −6,88% за день, $113,93\n\n#алерт",
+  "t": 1794496688
+ },
+ {
+  "id": "alert-2026-11-12-SMCI-d",
+  "caption": "⚡️🔻 <b>Super Micro</b> (SMCI) −7,41% за день, $28,17\n\n#алерт",
+  "t": 1794496688
+ },
+ {
+  "id": "alert-2026-11-12-DELL-d",
+  "caption": "⚡️🔻 <b>Dell</b> (DELL) −5,12% за день, $354,56\n\n#алерт",
+  "t": 1794496688
+ },
+ {
+  "id": "alert-2026-11-12-BABA-d",
+  "caption": "⚡️🔻 <b>Alibaba</b> (BABA) −7,07% за день, $94,35\n\n#алерт",
+  "t": 1794496688
  }
 ]
