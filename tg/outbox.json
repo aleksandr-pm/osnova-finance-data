@@ -1,20 +1,5 @@
 [
  {
-  "id": "alert-2026-11-11-MU-u",
-  "caption": "⚡️🚀 <b>Micron</b> (MU) +9,49% за день, $793,9\n\n#алерт",
-  "t": 1794409932
- },
- {
-  "id": "alert-2026-11-11-SMCI-u",
-  "caption": "⚡️🚀 <b>Super Micro</b> (SMCI) +7,11% за день, $29,76\n\n#алерт",
-  "t": 1794409932
- },
- {
-  "id": "alert-2026-11-11-DELL-u",
-  "caption": "⚡️🚀 <b>Dell</b> (DELL) +10,30% за день, $368,83\n\n#алерт",
-  "t": 1794409932
- },
- {
   "id": "alert-2026-11-11-ORCL-u",
   "caption": "⚡️🚀 <b>Oracle</b> (ORCL) +8,59% за день, $128,11\n\n#алерт",
   "t": 1794413647
@@ -155,5 +140,20 @@
   "caption": "📊 Акции <b>Alibaba</b> упали на 7,05% за день\nЗа полгода: −35,29%, цена $94,36\n\n#графикдня",
   "t": 1794575580,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-13-BABA.png"
+ },
+ {
+  "id": "alert-2026-11-13-MSTR-d",
+  "caption": "⚡️🔻 <b>Strategy</b> (MSTR) −6,49% за день, $114,41\n\n#алерт",
+  "t": 1794579032
+ },
+ {
+  "id": "alert-2026-11-13-SMCI-d",
+  "caption": "⚡️🔻 <b>Super Micro</b> (SMCI) −11,30% за день, $26,99\n\n#алерт",
+  "t": 1794579032
+ },
+ {
+  "id": "alert-2026-11-13-BABA-d",
+  "caption": "⚡️🔻 <b>Alibaba</b> (BABA) −7,05% за день, $94,36\n\n#алерт",
+  "t": 1794579032
  }
 ]
