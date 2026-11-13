@@ -1123,6 +1123,7 @@ def render(r, out, n, theme=None):
     p.stdin.close()
     if p.wait() != 0:
         raise RuntimeError("ffmpeg: ошибка кодирования")
+    log(f"Файл: {os.path.getsize(out) / 1e6:.1f} МБ, {os.path.getsize(out) * 8 / dur / 1e6:.1f} Мбит/с в среднем")
     if LOGO_LOG:
         log("Логотипы не загрузились: " + "; ".join(LOGO_LOG[:10]))
     return os.path.basename(music)
@@ -1137,6 +1138,7 @@ def publish_reel(token, path, cap):
     }, timeout=60), "Instagram контейнер Reels")
     cid = c["id"]
     size = os.path.getsize(path)
+    log(f"Загрузка: {size / 1e6:.1f} МБ")
     with open(path, "rb") as f:
         up = requests.post(f"https://rupload.facebook.com/ig-api-upload/{IG.rsplit('/', 1)[1]}/{cid}", data=f, headers={
             "Authorization": f"OAuth {token}", "offset": "0", "file_size": str(size),
