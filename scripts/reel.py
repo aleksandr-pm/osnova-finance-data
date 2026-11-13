@@ -1208,7 +1208,7 @@ def main():
             break
         except Exception as e:  # noqa: BLE001
             log(f"Ошибка сборки {r['id']}: {e!r}")
-            if want or attempt == 2:
+            if (want and attempt >= 1) or attempt == 2:
                 raise
             st["posted"].append({"id": r["id"], "block": r["block"], "fmt": r["fmt"], "post": "failed",
                                  "at": dt.datetime.now(dt.timezone.utc).isoformat()})
@@ -1232,7 +1232,7 @@ def main():
             break
         except RuntimeError as e:
             log(f"Ошибка публикации {r['id']} (попытка {attempt + 1}): {e}")
-            if want or attempt == 2:
+            if (want and attempt >= 1) or attempt == 2:
                 raise
             if attempt == 0:
                 # 13.11: отказы шли на роликах с хэштегами людей и брендов (#илонмаск, #nestlé). Повтор без них
