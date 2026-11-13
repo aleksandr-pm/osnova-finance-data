@@ -26,20 +26,38 @@ reels: mkt_sector_food (companies, bars)
 #акции #компании #капитализация #фондовыйрынок #бизнес #nestlé #инвестиции #финансы #статистика #рейтинг #топ10 #рилс
 ---
 Загрузка: 1.6 МБ
-Ошибка публикации mkt_sector_food (попытка 1): Instagram загрузка видео: HTTP 400 {"debug_info": {"retriable": false, "type": "ProcessingFailedError", "message": "Request processing failed"}}
+Прямая загрузка не прошла ({"debug_info":{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}}), загрузка по ссылке
+[main b891945] reels: файл для загрузки по ссылке [skip ci]
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 bank/reels_tmp/1794547176.mp4
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+Ошибка публикации mkt_sector_food (попытка 1): Instagram: обработка видео не прошла {'id': '18216346195362994', 'status': 'Error: Media upload has failed with error code 2207076', 'status_code': 'ERROR'}
 Повтор с подписью без хэштегов имён и брендов
 Загрузка: 1.6 МБ
-Ошибка публикации mkt_sector_food (попытка 2): Instagram загрузка видео: HTTP 400 {"debug_info": {"retriable": false, "type": "ProcessingFailedError", "message": "Request processing failed"}}
+Прямая загрузка не прошла ({"debug_info":{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}}), загрузка по ссылке
+[main 4e409ee] reels: файл для загрузки по ссылке [skip ci]
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 bank/reels_tmp/1794547275.mp4
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+Ошибка публикации mkt_sector_food (попытка 2): Instagram: обработка видео не прошла {'id': '18216346786362994', 'status': 'Error: Media upload has failed with error code 2207076', 'status_code': 'ERROR'}
 Traceback (most recent call last):
-  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1260, in <module>
+  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1286, in <module>
     sys.exit(main())
              ^^^^^^
-  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1231, in main
+  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1257, in main
     pid = publish_reel(token, out, cap)
           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1146, in publish_reel
-    check(up, "Instagram загрузка видео")
-  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/publish.py", line 248, in check
-    raise RuntimeError(f"{what}: HTTP {resp.status_code} {json.dumps(err, ensure_ascii=False)[:400]}")
-RuntimeError: Instagram загрузка видео: HTTP 400 {"debug_info": {"retriable": false, "type": "ProcessingFailedError", "message": "Request processing failed"}}
-exit=1 2026-11-13T05:17:05Z
+  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1159, in publish_reel
+    raise RuntimeError(f"Instagram: обработка видео не прошла {s}")
+RuntimeError: Instagram: обработка видео не прошла {'id': '18216346786362994', 'status': 'Error: Media upload has failed with error code 2207076', 'status_code': 'ERROR'}
+exit=1 2026-11-13T05:22:02Z
