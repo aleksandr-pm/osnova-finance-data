@@ -4957,6 +4957,36 @@
    "cap": 202.79,
    "name": "Eagle Point Income Company",
    "ind": "N/A"
+  },
+  "ACTU": {
+   "cap": 15.950030371621622,
+   "name": "Actuate Therapeutics Inc",
+   "ind": "Biotechnology"
+  },
+  "BFRI": {
+   "cap": 13.007696770709583,
+   "name": "Biofrontera Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "INBX": {
+   "cap": 1212.5880414846429,
+   "name": "Inhibrx Biosciences Inc",
+   "ind": "Biotechnology"
+  },
+  "NYC": {
+   "cap": 17.526522521891422,
+   "name": "American Strategic Investment Co",
+   "ind": "Real Estate"
+  },
+  "ROLR": {
+   "cap": 37.852550696595095,
+   "name": "High Roller Technologies Inc",
+   "ind": "Hotels, Restaurants & Leisure"
+  },
+  "XMAX": {
+   "cap": 416.18,
+   "name": "XMax Inc",
+   "ind": "Consumer products"
   }
  },
  "earn_done": [
