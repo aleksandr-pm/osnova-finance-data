@@ -1,2 +1,40 @@
-Instagram на паузе до 2026-11-14T08:00:00+00:00, ролик не публикуется
-exit=0 2026-11-12T17:16:11Z
+Рендер bil_ind_fashion: 39.5 с, тема dark, музыка mixkit-driving-ambition-32.mp3
+reels: bil_ind_fashion (billionaires, bars)
+---
+Самые богатые люди из сферы моды и ритейла: №1 Амансио Ортега, $151 млрд. В 3,8 раза больше, чем у №10.
+
+Новые рейтинги каждый день в Telegram @osnovafin, ссылка в профиле.
+
+1. 🇪🇸 Амансио Ортега: $151 млрд
+2. 🇺🇸 Роб Уолтон с семьёй: $148 млрд
+3. 🇺🇸 Джим Уолтон с семьёй: $145 млрд
+4. 🇺🇸 Элис Уолтон: $134 млрд
+5. 🇫🇷 Бернар Арно с семьёй: $123 млрд
+6. 🇫🇷 Франсуаза Беттанкур-Майерс с семьёй: $105 млрд
+7. 🇯🇵 Тадаси Янаи с семьёй: $69,3 млрд
+8. 🇩🇪 Дитер Шварц: $60,7 млрд
+9. 🇺🇸 Лукас Уолтон: $49,7 млрд
+10. 🇫🇷 Ален Вертхаймер: $39,4 млрд
+
+Кто поднимется выше через пять лет?
+
+Каждый день рынки, сделки инсайдеров из отчётов SEC и данные в Telegram @osnovafin, ссылка в профиле.
+
+Источник: Forbes Real-Time Billionaires, на 9 ноября 2026. Не индивидуальная инвестиционная рекомендация.
+
+#миллиардеры #forbes #богатство #бизнес #успех #амансиоортега #инвестиции #финансы #статистика #рейтинг #топ10 #рилс
+---
+Ошибка публикации bil_ind_fashion (попытка 1): Instagram загрузка видео: HTTP 400 {"debug_info": {"retriable": false, "type": "ProcessingFailedError", "message": "Request processing failed"}}
+Traceback (most recent call last):
+  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1244, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1218, in main
+    pid = publish_reel(token, out, cap)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1143, in publish_reel
+    check(up, "Instagram загрузка видео")
+  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/publish.py", line 248, in check
+    raise RuntimeError(f"{what}: HTTP {resp.status_code} {json.dumps(err, ensure_ascii=False)[:400]}")
+RuntimeError: Instagram загрузка видео: HTTP 400 {"debug_info": {"retriable": false, "type": "ProcessingFailedError", "message": "Request processing failed"}}
+exit=1 2026-11-13T05:04:14Z
