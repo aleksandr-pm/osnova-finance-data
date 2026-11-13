@@ -415,7 +415,8 @@ def pick(rankings, st):
     """Вид ролика по кругу (рейтинг, линии, рейтинг, сравнение, рейтинг, гонка, рейтинг, доли).
     Блок не как у двух прошлых роликов, тема не повторяется 14 дней, рейтинг 90 дней."""
     now = dt.datetime.now(dt.timezone.utc)
-    allv = variants(rankings)
+    # 13.11: ролики «миллиардеры по отраслям» Instagram отклоняет при загрузке (3 из 4, ProcessingFailedError), в Reels не берём
+    allv = [r for r in variants(rankings) if not r["id"].startswith("bil_ind_")]
     order = {r["id"]: i for i, r in enumerate(allv)}
     by_id = {r["id"]: r for r in allv}
     recent, near = set(), set()
