@@ -1,35 +1,48 @@
-Рендер bil_country_us: 39.5 с, тема dark, музыка nastelbom-cinematic-cinematic-music-623748.mp3
-Файл: 1.4 МБ, 0.3 Мбит/с в среднем
-reels: bil_country_us (billionaires, bars)
+Рендер mkt_sector_telecom: 39.5 с, тема light, музыка vaitsez-vlog-vlog-beat-620108.mp3
+Файл: 1.5 МБ, 0.3 Мбит/с в среднем
+reels: mkt_sector_telecom (companies, bars)
 ---
-Самые богатые люди США: №1 Илон Маск, $850 млрд. Больше, чем №2, №3 и №4 вместе.
+Крупнейшие телеком-операторы по капитализации: №1 China Mobile, $224 млрд. В 2,9 раза больше, чем у №10.
 
 Новые рейтинги каждый день в Telegram @osnovafin, ссылка в профиле.
 
-1. 🇺🇸 Илон Маск: $850 млрд
-2. 🇺🇸 Джефф Безос: $378 млрд
-3. 🇺🇸 Ларри Пейдж: $237 млрд
-4. 🇺🇸 Сергей Брин: $218 млрд
-5. 🇺🇸 Марк Цукерберг: $210 млрд
-6. 🇺🇸 Майкл Делл: $195 млрд
-7. 🇺🇸 Стив Балмер: $164 млрд
-8. 🇺🇸 Дженсен Хуанг: $162 млрд
-9. 🇺🇸 Уоррен Баффетт: $162 млрд
-10. 🇺🇸 Ларри Эллисон: $155 млрд
+1. 🇨🇳 China Mobile: $224 млрд
+2. 🇺🇸 Verizon: $189 млрд
+3. 🇺🇸 T-Mobile US: $172 млрд
+4. 🇺🇸 AT&T: $146 млрд
+5. 🇩🇪 Deutsche Telekom: $139 млрд
+6. 🇮🇳 Bharti Airtel: $138 млрд
+7. 🇯🇵 SoftBank Group: $124 млрд
+8. 🇺🇸 Comcast: $86,6 млрд
+9. 🇯🇵 NTT: $83,5 млрд
+10. 🇲🇽 America Movil: $76,8 млрд
 
-Кто из списка удивил?
+Кого не хватает в этом списке?
 
 Каждый день рынки, сделки инсайдеров из отчётов SEC и данные в Telegram @osnovafin, ссылка в профиле.
 
-Источник: Forbes Real-Time Billionaires, на 9 ноября 2026. Не индивидуальная инвестиционная рекомендация.
+Источник: companiesmarketcap.com, на 9 ноября 2026. Не индивидуальная инвестиционная рекомендация.
 
-#миллиардеры #forbes #богатство #бизнес #успех #илонмаск #инвестиции #финансы #статистика #рейтинг #топ10 #рилс
+#акции #компании #капитализация #фондовыйрынок #бизнес #chinamobile #инвестиции #финансы #статистика #рейтинг #топ10 #рилс
 ---
-Загрузка: 1.4 МБ
-Ошибка публикации bil_country_us (попытка 1): Instagram загрузка видео: HTTP 400 {"debug_info": {"retriable": false, "type": "ProcessingFailedError", "message": "Request processing failed"}}
-Рендер cmp_wdi_ne_exp_gnfs_cd_desc: 14.2 с, тема dark, музыка nastelbom-cinematic-cinematic-music-623748.mp3
-Файл: 0.5 МБ, 0.3 Мбит/с в среднем
-reels (замена): cmp_wdi_ne_exp_gnfs_cd_desc (economy, compare)
-Загрузка: 0.5 МБ
-Опубликовано: 18123611647956810
-exit=0 2026-11-13T09:40:55Z
+Загрузка: 1.5 МБ
+Ошибка публикации mkt_sector_telecom (попытка 1): Instagram загрузка видео: HTTP 400 {"debug_info": {"retriable": false, "type": "ProcessingFailedError", "message": "Request processing failed"}}
+Рендер race_line_agro_prod_236: 34.2 с, тема light, музыка vaitsez-vlog-vlog-beat-620108.mp3
+Файл: 2.3 МБ, 0.5 Мбит/с в среднем
+reels (замена): race_line_agro_prod_236 (agro, race)
+Загрузка: 2.3 МБ
+Ошибка публикации race_line_agro_prod_236 (попытка 2): Instagram загрузка видео: HTTP 400 {"debug_info": {"retriable": false, "type": "ProcessingFailedError", "message": "Request processing failed"}}
+Traceback (most recent call last):
+  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1278, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1253, in main
+    pid = publish_reel(token, out, cap)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1147, in publish_reel
+    check(up, "Instagram загрузка видео")  # 13.11: загрузка по ссылке пробовалась, Instagram отклоняет те же ролики (код 2207076)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/publish.py", line 248, in check
+    raise RuntimeError(f"{what}: HTTP {resp.status_code} {json.dumps(err, ensure_ascii=False)[:400]}")
+RuntimeError: Instagram загрузка видео: HTTP 400 {"debug_info": {"retriable": false, "type": "ProcessingFailedError", "message": "Request processing failed"}}
+exit=1 2026-11-13T17:10:29Z

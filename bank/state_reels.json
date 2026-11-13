@@ -245,6 +245,13 @@
    "at": "2026-11-13T09:40:54.994762+00:00",
    "post": "18123611647956810",
    "music": "nastelbom-cinematic-cinematic-music-623748.mp3"
+  },
+  {
+   "id": "mkt_sector_telecom",
+   "block": "companies",
+   "fmt": "bars",
+   "post": "failed",
+   "at": "2026-11-13T17:09:21.189520+00:00"
   }
  ]
 }
