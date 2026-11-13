@@ -4952,6 +4952,11 @@
    "cap": 3081.8,
    "name": "Twenty One Capital Inc",
    "ind": "Financial Services"
+  },
+  "EIC": {
+   "cap": 202.79,
+   "name": "Eagle Point Income Company",
+   "ind": "N/A"
   }
  },
  "earn_done": [
