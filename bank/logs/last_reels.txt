@@ -1,63 +1,35 @@
-Рендер mkt_sector_food: 39.5 с, тема dark, музыка nastelbom-cinematic-cinematic-music-623748.mp3
-Файл: 1.6 МБ, 0.3 Мбит/с в среднем
-reels: mkt_sector_food (companies, bars)
+Рендер bil_country_us: 39.5 с, тема dark, музыка nastelbom-cinematic-cinematic-music-623748.mp3
+Файл: 1.4 МБ, 0.3 Мбит/с в среднем
+reels: bil_country_us (billionaires, bars)
 ---
-Крупнейшие производители еды по капитализации: №1 Nestlé, $268 млрд. В 1,4 раза больше, чем у №2.
+Самые богатые люди США: №1 Илон Маск, $850 млрд. Больше, чем №2, №3 и №4 вместе.
 
 Новые рейтинги каждый день в Telegram @osnovafin, ссылка в профиле.
 
-1. 🇨🇭 Nestlé: $268 млрд
-2. 🇺🇸 McDonald: $195 млрд
-3. 🇬🇧 Unilever: $142 млрд
-4. 🇺🇸 Mondelez International: $83,6 млрд
-5. 🇺🇸 DoorDash: $78,3 млрд
-6. 🇬🇧 Compass Group: $56,5 млрд
-7. 🇮🇳 Hindustan Unilever: $49,7 млрд
-8. 🇫🇷 Danone: $48,6 млрд
-9. 🇺🇸 Chipotle Mexican Grill: $43,6 млрд
-10. 🇺🇸 Yum! Brands: $43,2 млрд
+1. 🇺🇸 Илон Маск: $850 млрд
+2. 🇺🇸 Джефф Безос: $378 млрд
+3. 🇺🇸 Ларри Пейдж: $237 млрд
+4. 🇺🇸 Сергей Брин: $218 млрд
+5. 🇺🇸 Марк Цукерберг: $210 млрд
+6. 🇺🇸 Майкл Делл: $195 млрд
+7. 🇺🇸 Стив Балмер: $164 млрд
+8. 🇺🇸 Дженсен Хуанг: $162 млрд
+9. 🇺🇸 Уоррен Баффетт: $162 млрд
+10. 🇺🇸 Ларри Эллисон: $155 млрд
 
-Какую компанию вы ожидали увидеть выше?
+Кто из списка удивил?
 
 Каждый день рынки, сделки инсайдеров из отчётов SEC и данные в Telegram @osnovafin, ссылка в профиле.
 
-Источник: companiesmarketcap.com, на 9 ноября 2026. Не индивидуальная инвестиционная рекомендация.
+Источник: Forbes Real-Time Billionaires, на 9 ноября 2026. Не индивидуальная инвестиционная рекомендация.
 
-#акции #компании #капитализация #фондовыйрынок #бизнес #nestlé #инвестиции #финансы #статистика #рейтинг #топ10 #рилс
+#миллиардеры #forbes #богатство #бизнес #успех #илонмаск #инвестиции #финансы #статистика #рейтинг #топ10 #рилс
 ---
-Загрузка: 1.6 МБ
-Прямая загрузка не прошла ({"debug_info":{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}}), загрузка по ссылке
-[main b891945] reels: файл для загрузки по ссылке [skip ci]
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 bank/reels_tmp/1794547176.mp4
-error: cannot pull with rebase: You have unstaged changes.
-error: Please commit or stash them.
-error: cannot pull with rebase: You have unstaged changes.
-error: Please commit or stash them.
-error: cannot pull with rebase: You have unstaged changes.
-error: Please commit or stash them.
-Ошибка публикации mkt_sector_food (попытка 1): Instagram: обработка видео не прошла {'id': '18216346195362994', 'status': 'Error: Media upload has failed with error code 2207076', 'status_code': 'ERROR'}
-Повтор с подписью без хэштегов имён и брендов
-Загрузка: 1.6 МБ
-Прямая загрузка не прошла ({"debug_info":{"retriable":false,"type":"ProcessingFailedError","message":"Request processing failed"}}), загрузка по ссылке
-[main 4e409ee] reels: файл для загрузки по ссылке [skip ci]
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 bank/reels_tmp/1794547275.mp4
-error: cannot pull with rebase: You have unstaged changes.
-error: Please commit or stash them.
-error: cannot pull with rebase: You have unstaged changes.
-error: Please commit or stash them.
-error: cannot pull with rebase: You have unstaged changes.
-error: Please commit or stash them.
-Ошибка публикации mkt_sector_food (попытка 2): Instagram: обработка видео не прошла {'id': '18216346786362994', 'status': 'Error: Media upload has failed with error code 2207076', 'status_code': 'ERROR'}
-Traceback (most recent call last):
-  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1286, in <module>
-    sys.exit(main())
-             ^^^^^^
-  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1257, in main
-    pid = publish_reel(token, out, cap)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1159, in publish_reel
-    raise RuntimeError(f"Instagram: обработка видео не прошла {s}")
-RuntimeError: Instagram: обработка видео не прошла {'id': '18216346786362994', 'status': 'Error: Media upload has failed with error code 2207076', 'status_code': 'ERROR'}
-exit=1 2026-11-13T05:22:02Z
+Загрузка: 1.4 МБ
+Ошибка публикации bil_country_us (попытка 1): Instagram загрузка видео: HTTP 400 {"debug_info": {"retriable": false, "type": "ProcessingFailedError", "message": "Request processing failed"}}
+Рендер cmp_wdi_ne_exp_gnfs_cd_desc: 14.2 с, тема dark, музыка nastelbom-cinematic-cinematic-music-623748.mp3
+Файл: 0.5 МБ, 0.3 Мбит/с в среднем
+reels (замена): cmp_wdi_ne_exp_gnfs_cd_desc (economy, compare)
+Загрузка: 0.5 МБ
+Опубликовано: 18123611647956810
+exit=0 2026-11-13T09:40:55Z
