@@ -1114,7 +1114,8 @@ def render(r, out, n, theme=None):
         "-filter_complex", f"[1:a]atrim=0:{dur:.2f},asetpts=PTS-STARTPTS,afade=t=in:d=0.4,"
                            f"afade=t=out:st={dur - 2.5:.2f}:d=2.5,loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000[a]",
         "-map", "0:v", "-map", "[a]", "-t", f"{dur:.2f}",
-        "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", "-profile:v", "high",
+        "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-maxrate", "8M", "-bufsize", "16M",  # 13.11: Instagram отклонял ролики с пиковым битрейтом выше 25 Мбит/с
+        "-pix_fmt", "yuv420p", "-profile:v", "high",
         "-c:a", "aac", "-b:a", "128k", "-ar", "48000", "-movflags", "+faststart", out], stdin=subprocess.PIPE)
     for k in range(total):
         p.stdin.write(frame(k).tobytes())
