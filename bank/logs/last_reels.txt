@@ -1,4 +1,5 @@
-Рендер mkt_sector_food: 39.5 с, тема dark, музыка mixkit-driving-ambition-32.mp3
+Рендер mkt_sector_food: 39.5 с, тема dark, музыка nastelbom-cinematic-cinematic-music-623748.mp3
+Файл: 1.6 МБ, 0.3 Мбит/с в среднем
 reels: mkt_sector_food (companies, bars)
 ---
 Крупнейшие производители еды по капитализации: №1 Nestlé, $268 млрд. В 1,4 раза больше, чем у №2.
@@ -16,7 +17,7 @@ reels: mkt_sector_food (companies, bars)
 9. 🇺🇸 Chipotle Mexican Grill: $43,6 млрд
 10. 🇺🇸 Yum! Brands: $43,2 млрд
 
-Кто будет №1 через пять лет?
+Какую компанию вы ожидали увидеть выше?
 
 Каждый день рынки, сделки инсайдеров из отчётов SEC и данные в Telegram @osnovafin, ссылка в профиле.
 
@@ -24,9 +25,5 @@ reels: mkt_sector_food (companies, bars)
 
 #акции #компании #капитализация #фондовыйрынок #бизнес #nestlé #инвестиции #финансы #статистика #рейтинг #топ10 #рилс
 ---
-Ошибка публикации mkt_sector_food (попытка 1): Instagram загрузка видео: HTTP 400 {"debug_info": {"retriable": false, "type": "ProcessingFailedError", "message": "Request processing failed"}}
-Ошибка публикации mkt_sector_food (попытка 2): Instagram загрузка видео: HTTP 400 {"debug_info": {"retriable": false, "type": "ProcessingFailedError", "message": "Request processing failed"}}
-Рендер line_money_fi_res_totl_cd: 30.5 с, тема dark, музыка mixkit-driving-ambition-32.mp3
-reels (замена): line_money_fi_res_totl_cd (money, line)
-Опубликовано: 18473739901191594
-exit=0 2026-11-13T05:08:52Z
+Публикации нет: dry-run
+exit=0 2026-11-13T05:10:20Z
