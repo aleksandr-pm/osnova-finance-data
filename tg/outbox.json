@@ -1,17 +1,5 @@
 [
  {
-  "id": "calendar-2026-11-12",
-  "caption": "🗓 <b>Экономический календарь на 12 ноября</b>\n\nГлавное:\n11:00 🇬🇧 ВВП, м/м\n\nВремя по Дубаю · #календарь",
-  "t": 1794459589,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/calendar-2026-11-12.png"
- },
- {
-  "id": "chart-2026-11-12-ARM",
-  "caption": "📊 Акции <b>Arm</b> выросли на 12,05% за день\nЗа полгода: −2,19%, цена $203,36\n\n#графикдня",
-  "t": 1794489400,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-12-ARM.png"
- },
- {
   "id": "alert-2026-11-12-ORCL-u",
   "caption": "⚡️🚀 <b>Oracle</b> (ORCL) +8,82% за день, $128,38\n\n#алерт",
   "t": 1794492942
@@ -153,5 +141,15 @@
   "id": "alert-2026-11-13-INTC-d",
   "caption": "⚡️🔻 <b>Intel</b> (INTC) −5,93% за день, $57,57\n\n#алерт",
   "t": 1794585263
+ },
+ {
+  "id": "alert-2026-11-13-MU-d",
+  "caption": "⚡️🔻 <b>Micron</b> (MU) −5,03% за день, $758,27\n\n#алерт",
+  "t": 1794588611
+ },
+ {
+  "id": "alert-2026-11-13-HOOD-d",
+  "caption": "⚡️🔻 <b>Robinhood</b> (HOOD) −5,16% за день, $77,15\n\n#алерт",
+  "t": 1794588611
  }
 ]
