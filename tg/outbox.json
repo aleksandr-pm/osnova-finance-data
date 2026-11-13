@@ -1,10 +1,5 @@
 [
  {
-  "id": "alert-2026-11-12-ORCL-u",
-  "caption": "⚡️🚀 <b>Oracle</b> (ORCL) +8,82% за день, $128,38\n\n#алерт",
-  "t": 1794492942
- },
- {
   "id": "alert-2026-11-12-AMD-u",
   "caption": "⚡️🚀 <b>AMD</b> (AMD) +7,32% за день, $552,9\n\n#алерт",
   "t": 1794492942
@@ -151,5 +146,11 @@
   "id": "alert-2026-11-13-HOOD-d",
   "caption": "⚡️🔻 <b>Robinhood</b> (HOOD) −5,16% за день, $77,15\n\n#алерт",
   "t": 1794588611
+ },
+ {
+  "id": "chart-2026-11-13-AMD",
+  "caption": "📊 Акции <b>AMD</b> упали на 10,29% за день\nЗа полгода: +17,86%, цена $525,07\n\n#графикдня",
+  "t": 1794591393,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-13-AMD.png"
  }
 ]
