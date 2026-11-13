@@ -4907,6 +4907,51 @@
    "cap": 577.73,
    "name": "Vinci Compass Investments Ltd",
    "ind": "Financial Services"
+  },
+  "ARAI": {
+   "cap": 3.25492656779856,
+   "name": "Arrive AI Inc",
+   "ind": "Logistics & Transportation"
+  },
+  "BKYI": {
+   "cap": 5.250684919354839,
+   "name": "BIO-Key International Inc",
+   "ind": "Technology"
+  },
+  "HURA": {
+   "cap": 92.40359194078948,
+   "name": "TuHURA Biosciences Inc",
+   "ind": "Biotechnology"
+  },
+  "MITQ": {
+   "cap": 4.9850679998,
+   "name": "Moving Image Technologies Inc",
+   "ind": "Media"
+  },
+  "MLSS": {
+   "cap": 26.286880045205038,
+   "name": "Milestone Scientific Inc",
+   "ind": "Health Care"
+  },
+  "OWLT": {
+   "cap": 135.00414854347824,
+   "name": "Owlet Inc",
+   "ind": "Health Care"
+  },
+  "PAVM": {
+   "cap": 10.706533876635515,
+   "name": "PAVmed Inc",
+   "ind": "Health Care"
+  },
+  "RMIX": {
+   "cap": 596.7050027985696,
+   "name": "Suncrete, Inc",
+   "ind": "Construction"
+  },
+  "XXI": {
+   "cap": 3081.8,
+   "name": "Twenty One Capital Inc",
+   "ind": "Financial Services"
   }
  },
  "earn_done": [
