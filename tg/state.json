@@ -8,7 +8,8 @@
   "MSTR",
   "DELL",
   "ARM",
-  "SMCI"
+  "SMCI",
+  "BABA"
  ],
  "alerts": {
   "ORCL:up": "2026-11-12",
