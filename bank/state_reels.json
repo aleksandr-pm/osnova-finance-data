@@ -215,6 +215,21 @@
    "at": "2026-11-12T09:39:46.680917+00:00",
    "post": "18138847720656136",
    "music": "hot_dope-epic-4-625768.mp3"
+  },
+  {
+   "id": "mkt_sector_food",
+   "block": "companies",
+   "fmt": "bars",
+   "post": "failed",
+   "at": "2026-11-13T05:07:37.735693+00:00"
+  },
+  {
+   "id": "line_money_fi_res_totl_cd",
+   "block": "money",
+   "fmt": "line",
+   "at": "2026-11-13T05:08:52.176343+00:00",
+   "post": "18473739901191594",
+   "music": "mixkit-driving-ambition-32.mp3"
   }
  ]
 }
