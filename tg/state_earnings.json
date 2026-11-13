@@ -1,6 +1,5 @@
 {
  "earn_seen": {
-  "TDG-2026Q4": 1794313927,
   "AMAT-2026Q4": 1794525238,
   "CSCO-2027Q1": 1794525259,
   "NU-2026Q3": 1794525318
@@ -4858,6 +4857,56 @@
    "cap": 298.97866471622905,
    "name": "Sanara MedTech Inc.",
    "ind": "Health Care"
+  },
+  "MIST": {
+   "cap": 81.57107218604651,
+   "name": "Milestone Pharmaceuticals Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "NDLS": {
+   "cap": 82.04157403169015,
+   "name": "Noodles & Co",
+   "ind": "Hotels, Restaurants & Leisure"
+  },
+  "PWCM": {
+   "cap": 1.218096780623838,
+   "name": "PowerCompute Inc",
+   "ind": "Technology"
+  },
+  "SBC": {
+   "cap": 549.2026712175572,
+   "name": "SBC Medical Group Holdings Inc",
+   "ind": "Health Care"
+  },
+  "AKTX": {
+   "cap": 13.040551,
+   "name": "Akari Therapeutics PLC",
+   "ind": "Biotechnology"
+  },
+  "MDXH": {
+   "cap": 13.358433993174065,
+   "name": "MDxHealth SA",
+   "ind": "Biotechnology"
+  },
+  "NROM": {
+   "cap": 14.30588103677102,
+   "name": "Noble Roman's Inc",
+   "ind": "Hotels, Restaurants & Leisure"
+  },
+  "NUWE": {
+   "cap": 2.720807952983725,
+   "name": "Nuwellis, Inc.",
+   "ind": "Health Care"
+  },
+  "SRTS": {
+   "cap": 53.00783168914956,
+   "name": "Sensus Healthcare Inc",
+   "ind": "Health Care"
+  },
+  "VINP": {
+   "cap": 577.73,
+   "name": "Vinci Compass Investments Ltd",
+   "ind": "Financial Services"
   }
  },
  "earn_done": [
