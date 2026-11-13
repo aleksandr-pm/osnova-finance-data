@@ -1144,11 +1144,7 @@ def publish_reel(token, path, cap):
         up = requests.post(f"https://rupload.facebook.com/ig-api-upload/{IG.rsplit('/', 1)[1]}/{cid}", data=f, headers={
             "Authorization": f"OAuth {token}", "offset": "0", "file_size": str(size),
             "Content-Type": "application/octet-stream"}, timeout=600)
-    if up.status_code != 200:
-        # 13.11: часть роликов rupload отклоняет (ProcessingFailedError) при нормальном файле.
-        # Запасной путь: ролик кладётся в репозиторий, Instagram сам скачивает его по ссылке
-        log(f"Прямая загрузка не прошла ({up.text[:120]}), загрузка по ссылке")
-        cid = reel_by_url(token, uid, path, cap)
+    check(up, "Instagram загрузка видео")  # 13.11: загрузка по ссылке пробовалась, Instagram отклоняет те же ролики (код 2207076)
     for _ in range(60):  # до 10 минут на обработку
         time.sleep(10)
         s = check(requests.get(f"{IG}/{cid}", params={
@@ -1252,20 +1248,16 @@ def main():
     # 08.11: Instagram дважды отклонил один и тот же ролик (ProcessingFailedError), очередь встала.
     # Теперь: одна повторная загрузка, затем ролик помечается failed и публикуется следующий рейтинг.
     pid = None
-    for attempt in range(3):
+    for attempt in range(2):
         try:
             pid = publish_reel(token, out, cap)
             break
         except RuntimeError as e:
             log(f"Ошибка публикации {r['id']} (попытка {attempt + 1}): {e}")
-            if (want and attempt >= 1) or attempt == 2:
+            # 13.11: повтор того же ролика не помогает ни с другой подписью, ни загрузкой по ссылке, и лишние
+            # действия рискуют новым ограничением аккаунта. Сразу одна замена следующим рейтингом.
+            if want or attempt == 1:
                 raise
-            if attempt == 0:
-                # 13.11: отказы шли на роликах с хэштегами людей и брендов (#илонмаск, #nestlé). Повтор без них
-                cap = safe_caption(cap)
-                log("Повтор с подписью без хэштегов имён и брендов")
-                time.sleep(30)
-                continue
             st["posted"].append({"id": r["id"], "block": r["block"], "fmt": r["fmt"], "post": "failed",
                                  "at": dt.datetime.now(dt.timezone.utc).isoformat()})
             save_state(st)
