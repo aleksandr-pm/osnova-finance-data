@@ -1160,6 +1160,16 @@ def publish_reel(token, path, cap):
 
 
 
+SAFE_TAGS = {"#инвестиции", "#финансы", "#статистика", "#рейтинг", "#топ10", "#рилс", "#экономика", "#акции", "#бизнес",
+             "#компании", "#капитализация", "#фондовыйрынок", "#миллиардеры", "#богатство", "#агро", "#экспорт", "#ввп"}
+
+
+def safe_caption(cap):
+    """Оставляет в строке хэштегов только общие теги."""
+    lines = cap.split("\n")
+    return "\n".join(" ".join(t for t in ln.split() if t in SAFE_TAGS) if ln.startswith("#") else ln for ln in lines)
+
+
 def ig_paused():
     """12.11: Instagram ограничил действия аккаунта (код 4, подкод 2207051). Пауза до даты в bank/ig_pause_until.txt."""
     p = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "bank", "ig_pause_until.txt")
@@ -1225,6 +1235,9 @@ def main():
             if want or attempt == 2:
                 raise
             if attempt == 0:
+                # 13.11: отказы шли на роликах с хэштегами людей и брендов (#илонмаск, #nestlé). Повтор без них
+                cap = safe_caption(cap)
+                log("Повтор с подписью без хэштегов имён и брендов")
                 time.sleep(30)
                 continue
             st["posted"].append({"id": r["id"], "block": r["block"], "fmt": r["fmt"], "post": "failed",
