@@ -1,11 +1,5 @@
 [
  {
-  "id": "chart-2026-11-11-MSTR",
-  "caption": "📊 Акции <b>Strategy</b> упали на 3,60% за день\nЗа полгода: −38,21%, цена $121,07\n\n#графикдня",
-  "t": 1794402804,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-11-MSTR.png"
- },
- {
   "id": "alert-2026-11-11-NVDA-d",
   "caption": "⚡️🔻 <b>Nvidia</b> (NVDA) −5,47% за день, $168,89\n\n#алерт",
   "t": 1794406317
@@ -155,5 +149,10 @@
   "caption": "📈 <b>Итоги дня 12 ноября</b>\n\nS&P 500 −0,35%, Nasdaq −0,39%, Dow Jones −0,36%\nНефть Brent +3,24%, Золото −2,99%\n\n#итогидня",
   "t": 1794521054,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-12.png"
+ },
+ {
+  "id": "calendar-2026-11-13",
+  "caption": "🗓 <b>Экономический календарь на 13 ноября</b>\n\n17:30 🇺🇸 Базовые цены производителей (PPI), м/м (прогноз 0,3% · ранее 0,7%)\n17:30 🇺🇸 Цены производителей (PPI), м/м (прогноз 0,4% · ранее 1,3%)\n\nСпокойный день: важной статистики нет.\n\nВремя по Дубаю · #календарь",
+  "t": 1794545941
  }
 ]

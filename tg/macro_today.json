@@ -1,14 +1,26 @@
 [
  {
-  "id": "2026-11-12-GBP-GDP m/m",
-  "t": 1794466800,
-  "country": "GBP",
-  "flag": "🇬🇧",
-  "title": "GDP m/m",
-  "name_ru": "ВВП, м/м",
-  "forecast": "0.0%",
-  "previous": "0.1%",
-  "forecast_ru": "0,0%",
-  "previous_ru": "0,1%"
+  "id": "2026-11-13-USD-Core PPI m/m",
+  "t": 1794576600,
+  "country": "USD",
+  "flag": "🇺🇸",
+  "title": "Core PPI m/m",
+  "name_ru": "Базовые цены производителей (PPI), м/м",
+  "forecast": "0.3%",
+  "previous": "0.7%",
+  "forecast_ru": "0,3%",
+  "previous_ru": "0,7%"
+ },
+ {
+  "id": "2026-11-13-USD-PPI m/m",
+  "t": 1794576600,
+  "country": "USD",
+  "flag": "🇺🇸",
+  "title": "PPI m/m",
+  "name_ru": "Цены производителей (PPI), м/м",
+  "forecast": "0.4%",
+  "previous": "1.3%",
+  "forecast_ru": "0,4%",
+  "previous_ru": "1,3%"
  }
 ]
