@@ -1,22 +1,5 @@
 [
  {
-  "id": "alert-2026-11-11-AMAT-u",
-  "caption": "⚡️🚀 <b>Applied Materials</b> (AMAT) +8,05% за день, $402,51\n\n#алерт",
-  "t": 1794417671
- },
- {
-  "id": "chart-2026-11-11-DELL",
-  "caption": "📊 Акции <b>Dell</b> выросли на 14,29% за день\nЗа полгода: +54,82%, цена $382,47\n\n#графикдня",
-  "t": 1794418861,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-11-DELL.png"
- },
- {
-  "id": "evening-2026-11-11",
-  "caption": "📈 <b>Итоги дня 11 ноября</b>\n\nS&P 500 +1,31%, Nasdaq +1,60%, Dow Jones +0,49%\nНефть Brent +1,25%, Золото −0,89%\n\n#итогидня",
-  "t": 1794435577,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-11.png"
- },
- {
   "id": "calendar-2026-11-12",
   "caption": "🗓 <b>Экономический календарь на 12 ноября</b>\n\nГлавное:\n11:00 🇬🇧 ВВП, м/м\n\nВремя по Дубаю · #календарь",
   "t": 1794459589,
@@ -155,5 +138,20 @@
   "id": "alert-2026-11-13-DELL-d",
   "caption": "⚡️🔻 <b>Dell</b> (DELL) −7,47% за день, $343,45\n\n#алерт",
   "t": 1794582149
+ },
+ {
+  "id": "alert-2026-11-13-QCOM-d",
+  "caption": "⚡️🔻 <b>Qualcomm</b> (QCOM) −5,16% за день, $168\n\n#алерт",
+  "t": 1794585263
+ },
+ {
+  "id": "alert-2026-11-13-AMAT-d",
+  "caption": "⚡️🔻 <b>Applied Materials</b> (AMAT) −6,56% за день, $355,97\n\n#алерт",
+  "t": 1794585263
+ },
+ {
+  "id": "alert-2026-11-13-INTC-d",
+  "caption": "⚡️🔻 <b>Intel</b> (INTC) −5,93% за день, $57,57\n\n#алерт",
+  "t": 1794585263
  }
 ]
