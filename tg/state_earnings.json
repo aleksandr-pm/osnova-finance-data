@@ -1,6 +1,5 @@
 {
  "earn_seen": {
-  "OXY-2026Q3": 1794307483,
   "TDG-2026Q4": 1794313927,
   "AMAT-2026Q4": 1794525238,
   "CSCO-2027Q1": 1794525259,
@@ -4819,6 +4818,46 @@
    "cap": 868.1,
    "name": "York Space Systems Inc",
    "ind": "Aerospace & Defense"
+  },
+  "AFYA": {
+   "cap": 944.7055312898416,
+   "name": "Afya Limited",
+   "ind": "Diversified Consumer Services"
+  },
+  "BCG": {
+   "cap": 18.766144070796464,
+   "name": "Binah Capital Group Inc",
+   "ind": "Financial Services"
+  },
+  "DCOY": {
+   "cap": 2.516473110091743,
+   "name": "Decoy Therapeutics Inc",
+   "ind": "Biotechnology"
+  },
+  "FFR": {
+   "cap": 17.531237698571427,
+   "name": "FF EAI Robotics Ecosystem Inc.",
+   "ind": "Biotechnology"
+  },
+  "GOVX": {
+   "cap": 1.0378396111111112,
+   "name": "GeoVax Labs Inc",
+   "ind": "Biotechnology"
+  },
+  "NPWR": {
+   "cap": 170.89259348635983,
+   "name": "NET Power Inc.",
+   "ind": "Electrical Equipment"
+  },
+  "PAL": {
+   "cap": 85.84194736277603,
+   "name": "Proficient Auto Logistics, Inc.",
+   "ind": "Road & Rail"
+  },
+  "SMTI": {
+   "cap": 298.97866471622905,
+   "name": "Sanara MedTech Inc.",
+   "ind": "Health Care"
   }
  },
  "earn_done": [
