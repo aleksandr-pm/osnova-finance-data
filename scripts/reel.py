@@ -17,6 +17,7 @@ import html
 import io
 import json
 import os
+import shutil
 import subprocess
 import sys
 import time
@@ -1143,7 +1144,11 @@ def publish_reel(token, path, cap):
         up = requests.post(f"https://rupload.facebook.com/ig-api-upload/{IG.rsplit('/', 1)[1]}/{cid}", data=f, headers={
             "Authorization": f"OAuth {token}", "offset": "0", "file_size": str(size),
             "Content-Type": "application/octet-stream"}, timeout=600)
-    check(up, "Instagram загрузка видео")
+    if up.status_code != 200:
+        # 13.11: часть роликов rupload отклоняет (ProcessingFailedError) при нормальном файле.
+        # Запасной путь: ролик кладётся в репозиторий, Instagram сам скачивает его по ссылке
+        log(f"Прямая загрузка не прошла ({up.text[:120]}), загрузка по ссылке")
+        cid = reel_by_url(token, uid, path, cap)
     for _ in range(60):  # до 10 минут на обработку
         time.sleep(10)
         s = check(requests.get(f"{IG}/{cid}", params={
@@ -1168,6 +1173,27 @@ def safe_caption(cap):
     """Оставляет в строке хэштегов только общие теги."""
     lines = cap.split("\n")
     return "\n".join(" ".join(t for t in ln.split() if t in SAFE_TAGS) if ln.startswith("#") else ln for ln in lines)
+
+
+def reel_by_url(token, uid, path, cap):
+    rel = f"bank/reels_tmp/{int(time.time())}.mp4"
+    dst = os.path.join(ROOT, rel)
+    os.makedirs(os.path.dirname(dst), exist_ok=True)
+    shutil.copy(path, dst)
+    g = ["git", "-C", ROOT, "-c", "user.name=osnova-bot", "-c", "user.email=osnova-bot@users.noreply.github.com"]
+    subprocess.run(g + ["add", rel], check=True)
+    subprocess.run(g + ["commit", "-m", "reels: файл для загрузки по ссылке [skip ci]"], check=True)
+    for _ in range(3):
+        if subprocess.run(g + ["pull", "--rebase", "origin", "main"]).returncode == 0 and subprocess.run(g + ["push"]).returncode == 0:
+            break
+        time.sleep(5)
+    sha = subprocess.check_output(g + ["rev-parse", "HEAD"]).decode().strip()
+    repo = os.environ.get("GITHUB_REPOSITORY", "aleksandr-pm/osnova-finance-data")
+    time.sleep(10)
+    c = check(requests.post(f"{IG}/{uid}/media", data={
+        "media_type": "REELS", "video_url": f"https://raw.githubusercontent.com/{repo}/{sha}/{rel}", "caption": cap,
+        "share_to_feed": "true", "thumb_offset": "1500", "access_token": token}, timeout=60), "Instagram контейнер Reels по ссылке")
+    return c["id"]
 
 
 def ig_paused():
