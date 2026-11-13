@@ -25,5 +25,18 @@ reels: mkt_sector_food (companies, bars)
 
 #акции #компании #капитализация #фондовыйрынок #бизнес #nestlé #инвестиции #финансы #статистика #рейтинг #топ10 #рилс
 ---
-Публикации нет: dry-run
-exit=0 2026-11-13T05:10:20Z
+Загрузка: 1.6 МБ
+Ошибка публикации mkt_sector_food (попытка 1): Instagram загрузка видео: HTTP 400 {"debug_info": {"retriable": false, "type": "ProcessingFailedError", "message": "Request processing failed"}}
+Traceback (most recent call last):
+  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1260, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1231, in main
+    pid = publish_reel(token, out, cap)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1146, in publish_reel
+    check(up, "Instagram загрузка видео")
+  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/publish.py", line 248, in check
+    raise RuntimeError(f"{what}: HTTP {resp.status_code} {json.dumps(err, ensure_ascii=False)[:400]}")
+RuntimeError: Instagram загрузка видео: HTTP 400 {"debug_info": {"retriable": false, "type": "ProcessingFailedError", "message": "Request processing failed"}}
+exit=1 2026-11-13T05:14:10Z
