@@ -343,7 +343,7 @@ def load_rankings():
                 t = r.get("type", "bars")
                 if t not in ("bars", "line", "donut"):
                     continue
-                if t == "line" and len(r.get("series", [])) < 3:
+                if t == "line" and len(r.get("series", [])) < (2 if r.get("duel") else 3):
                     continue
                 if t != "line" and len(r.get("top", [])) < 5:
                     continue
@@ -838,6 +838,211 @@ def make_frames_line(r):
     return total, frame
 
 
+# ---------- линии v2 (14.11): по образцам «дуэль с событиями», «камера идёт за линиями» ----------
+DUEL_COL = ["#E2B8A4", "#F2EFEA", "#C08A80", "#A2646C"]  # выделенная линия всегда первая (персик), остальные светлые
+
+
+def duel_events(ser, y0r, y1r, unit):
+    """События для плашек: обгон одной страны другой, резкое годовое падение. Только из данных."""
+    ev = []
+    for a in ser:
+        for b in ser:
+            if a is b:
+                continue
+            va, vb = dict(map(tuple, a["points"])), dict(map(tuple, b["points"]))
+            yrs = [y for y in range(y0r, y1r + 1) if y in va and y in vb]
+            if len(yrs) < 3 or not vb[yrs[0]] < va[yrs[0]]:
+                continue
+            cross = next((y for y in yrs if vb[y] > va[y]), None)
+            if cross:
+                ev.append((cross, f"{cross} · {b['name']} впереди: {short(vb[cross], unit)} против {short(va[cross], unit)}", 0))
+    for x in ser:
+        pts = x["points"]
+        drops = [(b[0], b[1] / a[1] - 1) for a, b in zip(pts, pts[1:]) if a[1] > 0]
+        if drops:
+            y, ch = min(drops, key=lambda z: z[1])
+            if ch <= -0.15:
+                ev.append((y, f"{y} · {x['name']}: −{abs(ch) * 100:.0f}% за год", 1))
+    hl = next((x for x in ser if x.get("hl")), ser[0])
+    p0 = hl["points"][0][1]
+    for k in (2, 5, 10, 20):
+        y = next((yy for yy, v in hl["points"] if p0 > 0 and v >= k * p0), None)
+        if y:
+            ev.append((y, f"{y} · {hl['name']}: ×{k} к {hl['points'][0][0]} году", 2))
+    ev.sort(key=lambda e: (e[2], e[0]))  # сначала обгоны, потом падения, потом кратный рост
+    out = []
+    for y, t, _ in ev:
+        if all(abs(y - y2) >= 3 for y2, _ in out):
+            out.append((y, t))
+    return sorted(out)[:3]
+
+
+def make_frames_line2(r):
+    allr = r.get("series_all", r["series"])
+    ser = list(r["series"])
+    hl = next((x for x in ser if x.get("hl")), ser[0])
+    if len(ser) > 4:  # на экране не больше 4 линий: выделенная + крупнейшие
+        ser = [hl] + [x for x in sorted(ser, key=lambda x: -x["value"]) if x is not hl][:3]
+    ser.sort(key=lambda x: x is not hl)
+    col = {id(x): DUEL_COL[i] for i, x in enumerate(ser)}
+    unit = r["unit"]
+    y0r, y1r = r["start"], r["year"]
+    events = duel_events(ser, y0r, y1r, unit)
+    nyrs = max(1, y1r - y0r)
+    PER, PAUSE = min(1.0, 22.0 / nyrs), 1.6
+    # время → год с паузами на событиях
+    marks = [(0.0, float(y0r))]
+    tcur, ycur = 0.0, float(y0r)
+    for ey, _ in events + [(y1r, None)]:
+        tcur += (ey - ycur) * PER
+        ycur = float(ey)
+        marks.append((tcur, ycur))
+        if ey != y1r:
+            tcur += PAUSE
+            marks.append((tcur, ycur))
+    T_IN = int(1.8 * FPS)
+    T_RUN = int(tcur * FPS) + int(0.8 * FPS)
+    T_RES = int(5 * FPS)
+    total = T_IN + T_RUN + T_RES + T_END
+
+    def year_at(sec):
+        for (t0, y0), (t1, y1) in zip(marks, marks[1:]):
+            if sec <= t1:
+                return y0 if t1 == t0 else y0 + (y1 - y0) * (sec - t0) / (t1 - t0)
+        return float(y1r)
+
+    def val(x, t):
+        pts = x["points"]
+        if t <= pts[0][0]:
+            return pts[0][1]
+        for (a, b), (c, e) in zip(pts, pts[1:]):
+            if a <= t <= c:
+                return b + (e - b) * (t - a) / (c - a)
+        return pts[-1][1]
+
+    vmax_all = max(v for x in ser for _, v in x["points"])
+    kick = f"{'ДУЭЛЬ' if len(ser) == 2 else 'СРАВНЕНИЕ'} · {y0r}-{y1r}"
+
+    def head(d, t):
+        label(d, (LX, HEAD_Y), kick, 26, C["smoke"])
+        f = F(54, 600)
+        lines = wrap(d, r["title"], f, W - 2 * LX - 230)[:2]
+        y = HEAD_Y + 40
+        for l in lines:
+            d.text((LX, y), l, font=f, fill=C["ink"])
+            y += 62
+        d.text((W - LX, HEAD_Y + 36), str(int(t)), font=F(92, 600), fill=C["graphite"], anchor="ra")
+        y += 24
+        cw = (W - 2 * LX) // len(ser)
+        for i, x in enumerate(ser):
+            cx = LX + i * cw
+            d.text((cx, y), x["name"], font=fit(d, x["name"], 30, 500, cw - 20, 18), fill=col[id(x)])
+            d.text((cx, y + 40), short(val(x, t), unit), font=fit(d, short(val(x, t), unit), 50, 600, cw - 16, 26), fill=C["ink"])
+        return y + 120
+
+    def chart(im, d, t, y_top):
+        y_box = y_top
+        ev_on = next(((ey, tx) for ey, tx in events if ey <= t < ey + 2.2), None)
+        if ev_on:
+            fl = fit(d, ev_on[1], 34, 600, W - 2 * LX - 60, 22)
+            ls = wrap(d, ev_on[1], fl, W - 2 * LX - 60)[:2]
+            bh = 30 + 44 * len(ls)
+            d.rectangle([LX, y_box, W - LX, y_box + bh], fill=C["graphite"])
+            for j, l in enumerate(ls):
+                d.text((LX + 28, y_box + 18 + j * 44), l, font=fl, fill=C["bone"])
+        cy0, cy1 = y_top + 150, BOTTOM - 70
+        cx0, cx1 = LX + 140, W - LX - 170
+        x_hi = max(t, y0r + min(4, nyrs))  # камера: окно растёт вместе с линиями
+        vis = [v for x in ser for yy, v in x["points"] if yy <= t] + [val(x, t) for x in ser]
+        vmax = max(vis) * 1.15 if t < y1r else vmax_all * 1.1
+        vmin = 0
+
+        def X(yr):
+            return cx0 + (cx1 - cx0) * (yr - y0r) / max(0.001, x_hi - y0r)
+
+        def Y(v):
+            return cy1 - (cy1 - cy0) * (v - vmin) / max(1e-9, vmax - vmin)
+        for k in range(5):
+            v = vmax / 1.15 * k / 4 if t < y1r else vmax / 1.1 * k / 4
+            yy = Y(v)
+            d.line([cx0, yy, cx1 + 30, yy], fill=C["line"], width=2)
+            if k:
+                d.text((LX, yy), short(v, unit), font=F(24, 400), fill=C["smoke"], anchor="lm")
+        step = max(1, round((x_hi - y0r) / 4))
+        for yr in range(y0r, int(x_hi) + 1, step):
+            d.text((X(yr), cy1 + 14), str(yr), font=F(26, 500), fill=C["smoke"], anchor="mt")
+        # заливка под выделенной линией, как в образце «одна линия с крупной цифрой»
+        hp = [(X(a), Y(b)) for a, b in hl["points"] if a <= t] + [(X(min(t, y1r)), Y(val(hl, t)))]
+        if len(hp) >= 2:
+            ov = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+            ImageDraw.Draw(ov).polygon(hp + [(hp[-1][0], cy1), (hp[0][0], cy1)], fill=hexa(col[id(hl)], 0.16))
+            im.alpha_composite(ov)
+        heads = []
+        for x in reversed(ser):
+            pts = [(X(a), Y(b)) for a, b in x["points"] if a <= t]
+            v = val(x, t)
+            pts.append((X(min(t, y1r)), Y(v)))
+            if len(pts) >= 2:
+                d.line(pts, fill=col[id(x)], width=10 if x is hl else 7, joint="curve")
+            hx, hy = pts[-1]
+            d.ellipse([hx - 13, hy - 13, hx + 13, hy + 13], fill=col[id(x)])
+            d.ellipse([hx - 6, hy - 6, hx + 6, hy + 6], fill=C["bone"])
+            heads.append([hy, x, hx])
+        heads.sort(key=lambda h: h[0])
+        for j in range(1, len(heads)):
+            heads[j][0] = max(heads[j][0], heads[j - 1][0] + 44)
+        for hy, x, hx in heads:
+            d.text((hx + 24, hy), x["name"], font=fit(d, x["name"], 30, 600, W - hx - 30, 16), fill=col[id(x)], anchor="lm")
+
+    def result(im, d, a):
+        g = max(ser, key=lambda x: x["ratio"])
+        big = times(g["ratio"]) if g["ratio"] >= 1.5 else (f"+{(g['ratio'] - 1) * 100:.0f}%" if g["ratio"] >= 1 else f"−{(1 - g['ratio']) * 100:.0f}%")
+        d.rectangle([LX, HEAD_Y, W - LX, BOTTOM], fill=hexa(C["graphite"], a))
+        d.text((LX + 40, HEAD_Y + 60), big, font=fit(d, big, 150, 600, W - 2 * LX - 80, 60), fill=hexa(C["bone"], a))
+        yy = HEAD_Y + 260
+        for l in wrap(d, f"{g['name']}: рост с {y0r} по {y1r} год", F(46, 600), W - 2 * LX - 80)[:2]:
+            d.text((LX + 40, yy), l, font=F(46, 600), fill=hexa(C["bone"], a))
+            yy += 58
+        yy += 40
+        for x in sorted(ser, key=lambda x: -x["value"]):
+            d.text((LX + 40, yy), x["name"], font=F(38, 500), fill=hexa(C["bone"], a))
+            d.text((W - LX - 40, yy), f"{x['text']}", font=F(38, 600), fill=hexa(C["bone"], a), anchor="ra")
+            ch = x["growth"] or (f"−{(1 - x['ratio']) * 100:.0f}%" if x["ratio"] < 1 else "")
+            if ch:
+                d.text((W - LX - 40, yy + 46), f"рост {ch}" if x["growth"] else ch, font=F(28, 400), fill=hexa(C["blush"], a), anchor="ra")
+            yy += 104
+        for l in wrap(d, r["hook_text"], F(34, 400), W - 2 * LX - 80)[:3]:
+            d.text((LX + 40, yy + 20), l, font=F(34, 400), fill=hexa(C["blush"], a))
+            yy += 44
+
+    def frame(f):
+        im = Image.new("RGBA", (W, H), C["bone"])
+        d = ImageDraw.Draw(im)
+        if f < T_IN:  # обложка: крупный вывод
+            a = ease(f / 8)
+            label(d, (LX, HEAD_Y), kick, 26, C["smoke"])
+            y = HEAD_Y + 80
+            for part, accent in r["hook"]:
+                fl = F(84 if accent else 64, 600)
+                for l in wrap(d, part, fl, W - 2 * LX):
+                    d.text((LX, y), l, font=fl, fill=hexa(C["graphite"] if accent else C["ink"], a))
+                    y += int(fl.size * 1.15)
+            d.text((LX, y + 30), r["title"], font=fit(d, r["title"], 38, 400, W - 2 * LX, 22), fill=hexa(C["smoke"], a))
+        elif f < T_IN + T_RUN:
+            t = min(float(y1r), year_at((f - T_IN) / FPS))
+            yt = head(d, t)
+            chart(im, d, t, yt)
+        elif f < T_IN + T_RUN + T_RES:
+            head(d, y1r)
+            chart(im, d, y1r, head(d, y1r))
+            result(im, d, ease((f - T_IN - T_RUN) / 8))
+        else:
+            end_phase(im, d, r, f, total, kick=kick)
+        chrome(im, d, f, total, src_line(r))
+        return im.convert("RGB")
+    return total, frame
+
+
 # ---------- доли: круговая диаграмма ----------
 def make_frames_donut(r):
     segs = r["top"][:5]
@@ -1107,8 +1312,10 @@ def tracks():
 
 
 def render(r, out, n, theme=None):
-    set_theme(theme or ("dark" if n % 5 in (1, 3) else "light"))  # bone и oxblood примерно 3:2
-    total, frame = {"bars": make_frames, "line": make_frames_line, "donut": make_frames_donut,
+    if r.get("fmt") == "line":
+        theme = "dark"  # 14.11: линии по образцам на тёмном фоне
+    set_theme(theme or ("dark" if n % 5 in (1, 3) else "light"))
+    total, frame = {"bars": make_frames, "line": make_frames_line2, "donut": make_frames_donut,
                     "compare": make_frames_compare, "race": make_frames_race}[r.get("fmt", "bars")](r)
     dur = total / FPS
     music = tracks()[n % len(tracks())]
