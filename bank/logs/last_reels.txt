@@ -1,48 +1,31 @@
-Рендер mkt_sector_telecom: 39.5 с, тема light, музыка vaitsez-vlog-vlog-beat-620108.mp3
-Файл: 1.5 МБ, 0.3 Мбит/с в среднем
-reels: mkt_sector_telecom (companies, bars)
+Рендер line_agro_prod_236: 37.4 с, тема dark, музыка hot_dope-epic-4-625768.mp3
+Файл: 2.8 МБ, 0.6 Мбит/с в среднем
+reels: line_agro_prod_236 (agro, line)
 ---
-Крупнейшие телеком-операторы по капитализации: №1 China Mobile, $224 млрд. В 2,9 раза больше, чем у №10.
+Украина: производство соевых бобов выросло в 103 раза с 2000 года.
 
 Новые рейтинги каждый день в Telegram @osnovafin, ссылка в профиле.
 
-1. 🇨🇳 China Mobile: $224 млрд
-2. 🇺🇸 Verizon: $189 млрд
-3. 🇺🇸 T-Mobile US: $172 млрд
-4. 🇺🇸 AT&T: $146 млрд
-5. 🇩🇪 Deutsche Telekom: $139 млрд
-6. 🇮🇳 Bharti Airtel: $138 млрд
-7. 🇯🇵 SoftBank Group: $124 млрд
-8. 🇺🇸 Comcast: $86,6 млрд
-9. 🇯🇵 NTT: $83,5 млрд
-10. 🇲🇽 America Movil: $76,8 млрд
+Производство соевых бобов: крупнейшие производители, 2024 год и рост с 2000:
+1. 🇧🇷 Бразилия: 144 млн т, рост в 4,4 раза
+2. 🇺🇸 США: 119 млн т, рост в 1,6 раза
+3. 🇦🇷 Аргентина: 48,2 млн т, рост в 2,4 раза
+4. 🇨🇳 Китай: 20,6 млн т, рост на 34%
+5. 🇮🇳 Индия: 15,1 млн т, рост в 2,9 раза
+6. 🇵🇾 Парагвай: 11,1 млн т, рост в 3,7 раза
+7. 🇨🇦 Канада: 7,6 млн т, рост в 2,8 раза
+8. 🇷🇺 Россия: 7 млн т, рост в 20,5 раза
+9. 🇺🇦 Украина: 6,6 млн т, рост в 103 раза
+10. 🇧🇴 Боливия: 3,2 млн т, рост в 2,7 раза
 
-Кого не хватает в этом списке?
+Какая страна удивила?
 
 Каждый день рынки, сделки инсайдеров из отчётов SEC и данные в Telegram @osnovafin, ссылка в профиле.
 
-Источник: companiesmarketcap.com, на 9 ноября 2026. Не индивидуальная инвестиционная рекомендация.
+Источник: FAOSTAT, ФАО ООН, 2000-2024. Не индивидуальная инвестиционная рекомендация.
 
-#акции #компании #капитализация #фондовыйрынок #бизнес #chinamobile #инвестиции #финансы #статистика #рейтинг #топ10 #рилс
+#сельскоехозяйство #агро #экспорт #продовольствие #украина #инвестиции #финансы #статистика #рейтинг #топ10 #рилс
 ---
-Загрузка: 1.5 МБ
-Ошибка публикации mkt_sector_telecom (попытка 1): Instagram загрузка видео: HTTP 400 {"debug_info": {"retriable": false, "type": "ProcessingFailedError", "message": "Request processing failed"}}
-Рендер race_line_agro_prod_236: 34.2 с, тема light, музыка vaitsez-vlog-vlog-beat-620108.mp3
-Файл: 2.3 МБ, 0.5 Мбит/с в среднем
-reels (замена): race_line_agro_prod_236 (agro, race)
-Загрузка: 2.3 МБ
-Ошибка публикации race_line_agro_prod_236 (попытка 2): Instagram загрузка видео: HTTP 400 {"debug_info": {"retriable": false, "type": "ProcessingFailedError", "message": "Request processing failed"}}
-Traceback (most recent call last):
-  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1278, in <module>
-    sys.exit(main())
-             ^^^^^^
-  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1253, in main
-    pid = publish_reel(token, out, cap)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/reel.py", line 1147, in publish_reel
-    check(up, "Instagram загрузка видео")  # 13.11: загрузка по ссылке пробовалась, Instagram отклоняет те же ролики (код 2207076)
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/publish.py", line 248, in check
-    raise RuntimeError(f"{what}: HTTP {resp.status_code} {json.dumps(err, ensure_ascii=False)[:400]}")
-RuntimeError: Instagram загрузка видео: HTTP 400 {"debug_info": {"retriable": false, "type": "ProcessingFailedError", "message": "Request processing failed"}}
-exit=1 2026-11-13T17:10:29Z
+Загрузка: 2.8 МБ
+Опубликовано: 18357643303170388
+exit=0 2026-11-14T09:28:58Z
