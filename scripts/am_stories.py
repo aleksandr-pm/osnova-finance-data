@@ -156,7 +156,7 @@ def yf_closes(tickers, period="10d"):
         try:
             s = (df[t]["Close"] if len(tickers) > 1 else df["Close"]).dropna()
             s = s[s.index.dayofweek < 5]  # фьючерсы и валюты дают строку за выходной с той же ценой
-            s = s[s.index.normalize() <= s.index.normalize().max()]
+            s = s[~s.index.normalize().duplicated(keep="last")]  # yfinance иногда дублирует последний день
             if len(s) >= 2:
                 out[t] = s
         except Exception:  # noqa: BLE001
@@ -393,6 +393,11 @@ def probe():
         res["uae_indices"] = tv_symbols(["ADX:FADGI", "DFM:DFMGI", "DFM:DFMREI", "DFM:DFMRE", "DFM:DFMRES", "DFM:REAL ESTATE"])
     except Exception as e:  # noqa: BLE001
         res["uae_indices_error"] = str(e)
+    try:
+        b = yf_closes(["BZ=F", "GC=F", "^GSPC"])
+        res["extra_tail"] = {k: [(str(i), float(v)) for i, v in s.tail(4).items()] for k, s in b.items()}
+    except Exception as e:  # noqa: BLE001
+        res["extra_tail_error"] = str(e)
     try:
         u = us_data()
         res["us"] = {k: (v if k != "extra" else [list(x) for x in v]) for k, v in u.items()}
