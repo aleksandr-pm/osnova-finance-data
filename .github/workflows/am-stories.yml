@@ -23,6 +23,10 @@ jobs:
       - run: pip install yfinance pillow requests
       - name: Probe
         if: github.event_name == 'push'
+        env:
+          IG_TOKEN_AM: ${{ secrets.IG_TOKEN_AM }}
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID_AM: ${{ secrets.IG_USER_ID_AM }}
         run: python scripts/am_stories.py probe
       - name: Render
         run: python scripts/am_stories.py render

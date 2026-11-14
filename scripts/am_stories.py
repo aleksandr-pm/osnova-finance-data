@@ -403,6 +403,16 @@ def probe():
         res["us"] = {k: (v if k != "extra" else [list(x) for x in v]) for k, v in u.items()}
     except Exception as e:  # noqa: BLE001
         res["us_error"] = str(e)
+    token = os.environ.get("IG_TOKEN_AM") or os.environ.get("IG_TOKEN", "")
+    if token:
+        uid = os.environ.get("IG_USER_ID_AM", "") or find_uid(token)
+        res["ig_uid_found"] = bool(uid)
+        if uid:
+            for path, fields in ((uid, "username,followers_count,media_count"), (f"{uid}/content_publishing_limit", "config,quota_usage")):
+                r = requests.get(f"{IG}/{path}", params={"fields": fields, "access_token": token}, timeout=30)
+                res[f"ig_{path.split('/')[-1] if '/' in path else 'account'}"] = r.json()
+    else:
+        res["ig"] = "токена нет"
     os.makedirs(AM, exist_ok=True)
     with open(os.path.join(AM, "probe.json"), "w", encoding="utf-8") as f:
         json.dump(res, f, ensure_ascii=False, indent=1, default=str)
