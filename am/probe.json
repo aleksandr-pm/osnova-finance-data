@@ -1,0 +1,391 @@
+{
+ "at": "2026-11-14T16:13:59.422533+00:00",
+ "uae_rows": 154,
+ "uae_top_by_cap": [
+  {
+   "symbol": "ADX:IHC",
+   "ticker": "IHC",
+   "desc": "International Holding Company PJSC",
+   "close": 314,
+   "change": -0.31746031746031744,
+   "cap": 688771572266,
+   "exchange": "ADX",
+   "currency": "AED",
+   "volume": 574253
+  },
+  {
+   "symbol": "ADX:ADNOCGAS",
+   "ticker": "ADNOCGAS",
+   "desc": "ADNOC Gas plc",
+   "close": 3.44,
+   "change": 0,
+   "cap": 264024895642.00003,
+   "exchange": "ADX",
+   "currency": "AED",
+   "volume": 188363020
+  },
+  {
+   "symbol": "ADX:FAB",
+   "ticker": "FAB",
+   "desc": "First Abu Dhabi Bank",
+   "close": 21,
+   "change": -0.7561436672967871,
+   "cap": 231847403320,
+   "exchange": "ADX",
+   "currency": "AED",
+   "volume": 10889506
+  },
+  {
+   "symbol": "DFM:EMIRATESNBD",
+   "ticker": "EMIRATESNBD",
+   "desc": "Emirates NBD Bank (P.J.S.C)",
+   "close": 36,
+   "change": 0,
+   "cap": 227397550781,
+   "exchange": "DFM",
+   "currency": "AED",
+   "volume": 4083639
+  },
+  {
+   "symbol": "NASDAQDUBAI:NDAQ",
+   "ticker": "NDAQ",
+   "desc": "Nasdaq, Inc.",
+   "close": 107.12,
+   "change": 0,
+   "cap": 221442039987.99805,
+   "exchange": "NASDAQDUBAI",
+   "currency": "USD",
+   "volume": 0
+  },
+  {
+   "symbol": "ADX:ETISALAT",
+   "ticker": "ETISALAT",
+   "desc": "Emirates Telecom. Group Company (Etisalat Group) PJSC",
+   "close": 22.4,
+   "change": -0.44444444444445075,
+   "cap": 194807284182,
+   "exchange": "ADX",
+   "currency": "AED",
+   "volume": 1898700
+  },
+  {
+   "symbol": "ADX:ADCB",
+   "ticker": "ADCB",
+   "desc": "Abu Dhabi Commercial Bank",
+   "close": 17.7,
+   "change": -0.5617977528089967,
+   "cap": 139971346756,
+   "exchange": "ADX",
+   "currency": "AED",
+   "volume": 5902017
+  },
+  {
+   "symbol": "DFM:DEWA",
+   "ticker": "DEWA",
+   "desc": "Dubai Electricity & Water Authority PJSC",
+   "close": 2.75,
+   "change": 0.3649635036496272,
+   "cap": 137500000000,
+   "exchange": "DFM",
+   "currency": "AED",
+   "volume": 6042896
+  },
+  {
+   "symbol": "DFM:EMAAR",
+   "ticker": "EMAAR",
+   "desc": "Emaar Properties (P.J.S.C)",
+   "close": 12.3,
+   "change": -4.503105590062112,
+   "cap": 108716386451,
+   "exchange": "DFM",
+   "currency": "AED",
+   "volume": 29944909
+  },
+  {
+   "symbol": "ADX:ADNOCDRILL",
+   "ticker": "ADNOCDRILL",
+   "desc": "ADNOC Drilling Company PJSC",
+   "close": 5.79,
+   "change": -0.6861063464837056,
+   "cap": 92639999390,
+   "exchange": "ADX",
+   "currency": "AED",
+   "volume": 3942690
+  },
+  {
+   "symbol": "ADX:ADIB",
+   "ticker": "ADIB",
+   "desc": "Abu Dhabi Islamic Bank",
+   "close": 23.48,
+   "change": -2.166666666666665,
+   "cap": 87777278318,
+   "exchange": "ADX",
+   "currency": "AED",
+   "volume": 4064858
+  },
+  {
+   "symbol": "ADX:ALPHADHABI",
+   "ticker": "ALPHADHABI",
+   "desc": "Alpha Dhabi Holding PJSC",
+   "close": 7.06,
+   "change": -0.423131170662909,
+   "cap": 70599999428,
+   "exchange": "ADX",
+   "currency": "AED",
+   "volume": 5545120
+  },
+  {
+   "symbol": "ADX:BOROUGE",
+   "ticker": "BOROUGE",
+   "desc": "Borouge PLC",
+   "close": 2.29,
+   "change": 0.4385964912280803,
+   "cap": 68832112174,
+   "exchange": "ADX",
+   "currency": "AED",
+   "volume": 21010214
+  },
+  {
+   "symbol": "ADX:2POINTZERO",
+   "ticker": "2POINTZERO",
+   "desc": "Two Point Zero Group PJSC",
+   "close": 1.99,
+   "change": -2.9268292682926753,
+   "cap": 68781621853,
+   "exchange": "ADX",
+   "currency": "AED",
+   "volume": 9213660
+  },
+  {
+   "symbol": "ADX:ALDAR",
+   "ticker": "ALDAR",
+   "desc": "Al Dar Properties",
+   "close": 8.53,
+   "change": -0.9291521486643447,
+   "cap": 67068226636.00001,
+   "exchange": "ADX",
+   "currency": "AED",
+   "volume": 7889601
+  },
+  {
+   "symbol": "DFM:MASQ",
+   "ticker": "MASQ",
+   "desc": "Mashreqbank PSC",
+   "close": 300,
+   "change": -0.09990009990010368,
+   "cap": 60182949829,
+   "exchange": "DFM",
+   "currency": "AED",
+   "volume": 225
+  },
+  {
+   "symbol": "DFM:DU",
+   "ticker": "DU",
+   "desc": "Emirates Integrated Telecommunications Company PJSC",
+   "close": 13,
+   "change": 0.7751937984496096,
+   "cap": 58927774902,
+   "exchange": "DFM",
+   "currency": "AED",
+   "volume": 530589
+  },
+  {
+   "symbol": "DFM:EMAARDEV",
+   "ticker": "EMAARDEV",
+   "desc": "Emaar Development PJSC",
+   "close": 14.68,
+   "change": 0,
+   "cap": 58720001221,
+   "exchange": "DFM",
+   "currency": "AED",
+   "volume": 7011619
+  },
+  {
+   "symbol": "DFM:DIB",
+   "ticker": "DIB",
+   "desc": "Dubai Islamic Bank PJSC",
+   "close": 7.6,
+   "change": 0.26385224274405766,
+   "cap": 54926041694,
+   "exchange": "DFM",
+   "currency": "AED",
+   "volume": 6877940
+  },
+  {
+   "symbol": "ADX:ADNOCLS",
+   "ticker": "ADNOCLS",
+   "desc": "ADNOC Logistics & Services plc",
+   "close": 6.74,
+   "change": -0.4431314623338163,
+   "cap": 49865881725,
+   "exchange": "ADX",
+   "currency": "AED",
+   "volume": 7015166
+  },
+  {
+   "symbol": "ADX:ADNOCDIST",
+   "ticker": "ADNOCDIST",
+   "desc": "Abu Dhabi National Oil Company For Distribution",
+   "close": 3.83,
+   "change": -1.794871794871791,
+   "cap": 47874999046,
+   "exchange": "ADX",
+   "currency": "AED",
+   "volume": 6620576
+  },
+  {
+   "symbol": "ADX:MODON",
+   "ticker": "MODON",
+   "desc": "Modon Holding PSC",
+   "close": 2.79,
+   "change": -1.413427561837457,
+   "cap": 45608352794,
+   "exchange": "ADX",
+   "currency": "AED",
+   "volume": 1598843
+  },
+  {
+   "symbol": "ADX:ORDS",
+   "ticker": "ORDS",
+   "desc": "OOREDOO",
+   "close": 13.5,
+   "change": 7.827476038338661,
+   "cap": 41726013984.51106,
+   "exchange": "ADX",
+   "currency": "AED",
+   "volume": 10000
+  },
+  {
+   "symbol": "DFM:SALIK",
+   "ticker": "SALIK",
+   "desc": "Salik Company PJSC",
+   "close": 5.41,
+   "change": -2.5225225225225167,
+   "cap": 40574998856,
+   "exchange": "DFM",
+   "currency": "AED",
+   "volume": 2530586
+  },
+  {
+   "symbol": "ADX:ADPORTS",
+   "ticker": "ADPORTS",
+   "desc": "Abu Dhabi Ports Company PJSC",
+   "close": 6.12,
+   "change": 0,
+   "cap": 31137901996,
+   "exchange": "ADX",
+   "currency": "AED",
+   "volume": 25887
+  }
+ ],
+ "uae_big": 65,
+ "uae_index_candidates": [],
+ "uae_indices": {
+  "ADX:FADGI": {
+   "close": 9667.38,
+   "change": -0.59985276154362,
+   "description": "FTSE ADX General Index"
+  },
+  "DFM:DFMGI": {
+   "close": 6197.88,
+   "change": -0.5929573285644443,
+   "description": "DFM General Index"
+  },
+  "DFM:DFMREI": {
+   "close": 12253.27,
+   "change": -2.435670510073513,
+   "description": "DFM Real Estate Index"
+  }
+ },
+ "us": {
+  "day": "2026-11-13",
+  "indices": [
+   [
+    "S&P 500",
+    7561.669921875,
+    -0.40474660007389085
+   ],
+   [
+    "Nasdaq 100",
+    27943.740234375,
+    -1.2211350888027606
+   ],
+   [
+    "Dow Jones",
+    52347.55078125,
+    0.0964889970948013
+   ]
+  ],
+  "extra": [
+   [
+    "BRENT",
+    95.83999633789062,
+    95.81999969482422,
+    "usd"
+   ],
+   [
+    "UST 10 ЛЕТ",
+    5.1539998054504395,
+    5.103000164031982,
+    "yield"
+   ],
+   [
+    "ЗОЛОТО",
+    3886.300048828125,
+    3885.300048828125,
+    "usd"
+   ],
+   [
+    "EUR/USD",
+    1.1050212383270264,
+    1.1095207929611206,
+    "fx"
+   ]
+  ],
+  "gain": [
+   [
+    "Charter Communicatio",
+    4.319309188422471
+   ],
+   [
+    "Steris",
+    4.29293117818994
+   ],
+   [
+    "Global Payments",
+    4.206825016177529
+   ],
+   [
+    "Fidelity National In",
+    4.1607908313833875
+   ],
+   [
+    "Fox",
+    4.124180676047273
+   ]
+  ],
+  "lose": [
+   [
+    "Advanced Micro Devic",
+    -8.754483393650691
+   ],
+   [
+    "Dell Technologies",
+    -7.17730788713734
+   ],
+   [
+    "Cisco",
+    -6.24448839641738
+   ],
+   [
+    "Coherent",
+    -6.002243978225586
+   ],
+   [
+    "Sandisk",
+    -5.594906553632328
+   ]
+  ],
+  "universe": 503
+ }
+}
