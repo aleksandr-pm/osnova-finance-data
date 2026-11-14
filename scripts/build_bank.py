@@ -557,7 +557,7 @@ def make_duel(code, block, what, unit, isos, by_year, start=2000):
             va = dict((y, v) for y, v in a["points"]); vb = dict((y, v) for y, v in b["points"])
             if vb.get(s0, 0) < va.get(s0, 0) and vb.get(y_end, 0) > va.get(y_end, 0):
                 cross = next((y for y in years if vb.get(y, 0) > va.get(y, 0)), None)
-                if cross and (hook is None or cross < hook[2]):
+                if cross and cross >= s0 + 3 and (hook is None or cross < hook[2]):  # обгон в первые годы не интересен
                     hook, hl = (b, a, cross), b
     if hook:
         b, a, cross = hook
@@ -567,7 +567,8 @@ def make_duel(code, block, what, unit, isos, by_year, start=2000):
         hl = max(series, key=lambda x: x["ratio"])
         if hl["ratio"] <= 1:
             return None
-        hook_parts = [[f"{hl['name']}: {what} вырос" + ("ло" if what in ("население",) else "") + "", False], [hl["growth"], True], [f"с {s0} года", False]]
+        verb = {"население": "выросло", "резервы": "выросли", "переводы мигрантов": "выросли"}.get(what, "вырос")
+        hook_parts = [[f"{hl['name']}: {what} {verb}", False], [hl["growth"], True], [f"с {s0} года", False]]
         hook_text = " ".join(x[0] for x in hook_parts)
     hl["hl"] = True
     series.sort(key=lambda x: x["value"], reverse=True)
