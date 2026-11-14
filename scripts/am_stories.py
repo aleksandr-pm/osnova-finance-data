@@ -405,7 +405,7 @@ def probe():
         res["us_error"] = str(e)
     token = os.environ.get("IG_TOKEN_AM") or os.environ.get("IG_TOKEN", "")
     if token:
-        uid = os.environ.get("IG_USER_ID_AM", "") or find_uid(token)
+        uid = os.environ.get("IG_USER_ID_AM", "") or IG_UID_DEFAULT or find_uid(token)
         res["ig_uid_found"] = bool(uid)
         if uid:
             for path, fields in ((uid, "username,followers_count,media_count"), (f"{uid}/content_publishing_limit", "config,quota_usage")):
@@ -491,6 +491,7 @@ def save_state(st):
 
 BUSINESS_ID = "167573054295268"  # бизнес-портфолио «Александр Максименко»
 IG_USERNAME = "aleksandr_markets"
+IG_UID_DEFAULT = "17841475463760764"  # ID аккаунта в бизнес-портфолио (не секрет)
 
 
 def find_uid(token):
@@ -510,7 +511,7 @@ def publish():
     dry = os.environ.get("DRY_RUN", "").lower() in ("yes", "1", "true")
     live = os.path.exists(os.path.join(AM, "LIVE"))
     token = os.environ.get("IG_TOKEN_AM") or os.environ.get("IG_TOKEN", "")
-    uid = os.environ.get("IG_USER_ID_AM", "") or (find_uid(token) if token else "")
+    uid = os.environ.get("IG_USER_ID_AM", "") or IG_UID_DEFAULT
     log(f"Аккаунт {IG_USERNAME}: " + ("найден" if uid else "не найден для этого токена"))
     sha = os.environ.get("PUBLISH_SHA") or os.environ.get("GITHUB_SHA", "main")
     plan = json.load(open(os.path.join(OUT, "today.json"), encoding="utf-8"))
