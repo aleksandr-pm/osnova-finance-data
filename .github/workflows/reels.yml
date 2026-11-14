@@ -1,6 +1,7 @@
 name: reels
 
 # Reels в Instagram, 2 в день (с 12.11, было 3). Время в cron по UTC, Дубай = UTC+4.
+# С 14.11 каждый опубликованный ролик дублируется в Telegram @osnovafin полной таблицей (#рейтинг).
 on:
   schedule:
     # 12:47 по Дубаю
@@ -68,7 +69,17 @@ jobs:
           git config user.email "osnova-bot@users.noreply.github.com"
           git add bank/state_reels.json bank/logs assets/logos 2>/dev/null
           git commit -m "reels: publish [skip ci]" || echo "nothing to commit"
-          for i in 1 2 3; do git pull --rebase origin main && git push && break; sleep 5; done
+          # 14.11: опубликованный ролик дублируется в Telegram (tg/outbox_report.json), запись переносится после pull
+          for i in 1 2 3; do
+            git pull --rebase origin main || { git rebase --abort; sleep 5; continue; }
+            if [ -f tg_pending_reel.json ]; then
+              python scripts/reel.py --tg-flush
+              git add tg/outbox_report.json
+              git commit -m "reels: пост в Telegram [skip ci]" || true
+            fi
+            git push && break
+            sleep 5
+          done
 
       - name: Result
         run: exit $(cat /tmp/reel_exit)

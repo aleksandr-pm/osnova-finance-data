@@ -378,7 +378,18 @@ def save_state(st):
         json.dump(st, f, ensure_ascii=False, indent=1)
 
 
-ORDER = ["companies", "billionaires", "economy", "companies", "agro", "billionaires", "cis", "companies", "money"]
+# 14.11: по просмотрам YouTube 7-14.11 рейтинги отраслей компаний 42-68 просмотров (страховщики, ритейл, нефтегаз),
+# а СНГ, сырьё, экономика стран, резервы и миллиардеры 950-1300. Компании из Reels убраны, СНГ чаще всех.
+ORDER = ["cis", "agro", "economy", "billionaires", "cis", "money", "agro", "economy"]
+SKIP_BLOCKS = {"companies"}
+CIS_NAMES = {"Россия", "Казахстан", "Узбекистан", "Беларусь", "Азербайджан", "Армения", "Грузия", "Киргизия",
+             "Кыргызстан", "Таджикистан", "Туркменистан", "Молдова", "Литва", "Латвия", "Эстония"}
+
+
+def cis_hit(r):
+    """Есть ли в ролике страна бывшего СССР: такие ролики набирали больше просмотров."""
+    names = {x.get("name") for x in r.get("series_all", []) + r.get("series", []) + r.get("top", [])}
+    return bool(names & CIS_NAMES) or r["block"] == "cis"
 FORMATS = ["line", "columns", "race", "bignum", "slope", "line", "table", "radial", "donutyr", "line", "compare", "donut"]  # 14.11: линии и гонки главные, рейтинги-полосы Instagram отклоняет
 
 
@@ -431,7 +442,7 @@ def pick(rankings, st):
     Блок не как у двух прошлых роликов, тема не повторяется 14 дней, рейтинг 90 дней."""
     now = dt.datetime.now(dt.timezone.utc)
     # 13.11: ролики «миллиардеры по отраслям» Instagram отклоняет при загрузке (3 из 4, ProcessingFailedError), в Reels не берём
-    allv = [r for r in variants(rankings) if not r["id"].startswith("bil_ind_")]
+    allv = [r for r in variants(rankings) if not r["id"].startswith("bil_ind_") and r["block"] not in SKIP_BLOCKS]
     order = {r["id"]: i for i, r in enumerate(allv)}
     by_id = {r["id"]: r for r in allv}
     recent, near = set(), set()
@@ -464,7 +475,7 @@ def pick(rankings, st):
 
     def score(r):
         b = r["id"].removeprefix("cmp_").removeprefix("race_").removeprefix("line_")
-        return (next((v for k, v in pri.items() if b.startswith(k)), 3), order[r["id"]])
+        return (0 if cis_hit(r) else 1, next((v for k, v in pri.items() if b.startswith(k)), 3), order[r["id"]])
     return min(cand, key=score)
 
 
@@ -1779,6 +1790,68 @@ def reel_by_url(token, uid, path, cap):
     return c["id"]
 
 
+# ---------- зеркало в Telegram ----------
+# 14.11: каждый опубликованный Reel уходит в канал @osnovafin постом: карточка + полная таблица + источник, #рейтинг.
+# Ролик кладёт запись в tg_pending_reel.json, шаг Save state после git pull переносит её в tg/outbox_report.json
+# (его уже читает воркер ленты, отправка не позже 6 часов после записи).
+PENDING = os.path.join(ROOT, "tg_pending_reel.json")
+TG_OUTBOX = os.path.join(ROOT, "tg", "outbox_report.json")
+
+
+def tg_caption(r):
+    e = html.escape
+    if r["fmt"] in ("line", "race", "columns", "bignum", "radial", "table", "donutyr", "slope"):
+        head = r["hook_text"]
+        sub = f"{r['title']}, {r['year']} год и рост с {r['start']}"
+        rows = [f"{i + 1}. {x['flag']} {x['name']}: {x['text']}" + (f", рост {x['growth']}" if x.get("growth") else "")
+                for i, x in enumerate(r.get("series_all", r["series"]))]
+    elif r["fmt"] == "donut":
+        head = r["hook_text"]
+        sub = "Доли в мировом экспорте"
+        rows = [f"{x['rank']}. {x['flag']} {x['name']}: {x['text']}" for x in r.get("top10", r["top"])]
+    else:
+        top = r["top"]
+        head = f"{r['title']}: №1 {top[0]['name']}, {top[0]['text']}"
+        sub = f"Топ-{len(top)}"
+        rows = [f"{x['rank']}. {x['flag']} {x['name']}: {x['text']}" for x in top]
+    src = src_line(r).removeprefix("Источник: ")
+    tail = f"\n\nИсточник: {e(src)}\n#рейтинг"
+    cap = f"📈 <b>{e(head)}</b>\n\n<b>{e(sub)}</b>\n"
+    for row in rows:  # подпись к фото в Telegram не длиннее 1024 знаков
+        if len(cap) + len(row) + len(tail) > 1000:
+            break
+        cap += e(row) + "\n"
+    return (cap.rstrip() + tail).replace(NB, " ")
+
+
+def queue_telegram(r):
+    card = r.get("card", "")
+    jpg = os.path.splitext(card)[0] + ".jpg"
+    card = jpg if os.path.exists(os.path.join(BANK, jpg)) else card
+    repo = os.environ.get("GITHUB_REPOSITORY", "aleksandr-pm/osnova-finance-data")
+    item = {"id": "reel-" + r["id"], "t": int(time.time()), "caption": tg_caption(r)}
+    if card and os.path.exists(os.path.join(BANK, card)):
+        item["photo"] = f"https://raw.githubusercontent.com/{repo}/main/bank/{card}"
+    with open(PENDING, "w", encoding="utf-8") as f:
+        json.dump(item, f, ensure_ascii=False, indent=1)
+    log("В Telegram: " + item["id"] + (" с карточкой" if "photo" in item else " без карточки"))
+
+
+def tg_flush():
+    """Переносит ожидающий пост в tg/outbox_report.json (вызывается после git pull)."""
+    if not os.path.exists(PENDING):
+        return 0
+    item = json.load(open(PENDING, encoding="utf-8"))
+    box = json.load(open(TG_OUTBOX, encoding="utf-8")) if os.path.exists(TG_OUTBOX) else []
+    if not any(x["id"] == item["id"] for x in box):
+        box = (box + [item])[-20:]
+        with open(TG_OUTBOX, "w", encoding="utf-8") as f:
+            json.dump(box, f, ensure_ascii=False, indent=1)
+    os.remove(PENDING)
+    log("Поставлено в очередь Telegram: " + item["id"])
+    return 0
+
+
 def ig_paused():
     """12.11: Instagram ограничил действия аккаунта (код 4, подкод 2207051). Пауза до даты в bank/ig_pause_until.txt."""
     p = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "bank", "ig_pause_until.txt")
@@ -1791,6 +1864,8 @@ def ig_paused():
 
 def main():
     args = sys.argv[1:]
+    if "--tg-flush" in args:
+        return tg_flush()
     dry = "--dry-run" in args
     if not dry and ig_paused():
         log(f"Instagram на паузе до {ig_paused().isoformat()}, ролик не публикуется")
@@ -1827,6 +1902,7 @@ def main():
                 return 1
     cap = caption(r, n)
     log(f"reels: {r['id']} ({r['block']}, {r['fmt']})\n---\n{cap}\n---")
+    log("Telegram:\n" + tg_caption(r) + "\n---")
     token = os.environ.get("IG_TOKEN", "")
     if dry or not token:
         log("Публикации нет: " + ("dry-run" if dry else "токен не задан"))
@@ -1858,6 +1934,10 @@ def main():
                          "post": pid, "music": music})
     save_state(st)
     log(f"Опубликовано: {pid}")
+    try:
+        queue_telegram(r)
+    except Exception as e:  # noqa: BLE001  зеркало в Telegram не должно ломать публикацию
+        log(f"Пост в Telegram не поставлен: {e!r}")
     return 0
 
 
