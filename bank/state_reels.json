@@ -260,6 +260,14 @@
    "at": "2026-11-14T09:28:58.753367+00:00",
    "post": "18357643303170388",
    "music": "hot_dope-epic-4-625768.mp3"
+  },
+  {
+   "id": "cmp_wdi_tx_val_tech_cd_desc",
+   "block": "economy",
+   "fmt": "compare",
+   "at": "2026-11-14T16:54:25.156678+00:00",
+   "post": "17981255714918933",
+   "music": "leberch-dark-documentary-628700.mp3"
   }
  ]
 }
