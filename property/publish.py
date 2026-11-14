@@ -15,6 +15,7 @@ import requests
 
 IG = "https://graph.facebook.com/v25.0"
 USERNAME = "osnova.property"
+BUSINESS_ID = "167573054295268"  # бизнес-портфолио «Александр Максименко», как в scripts/publish.py
 HERE = os.path.dirname(os.path.abspath(__file__))
 QUEUE, STATE = os.path.join(HERE, "queue.json"), os.path.join(HERE, "state.json")
 ID_FILE, LIVE, PAUSE = os.path.join(HERE, "ig_user_id.txt"), os.path.join(HERE, "LIVE"), os.path.join(HERE, "pause_until.txt")
@@ -55,8 +56,9 @@ def find_user_id(tok):
     sc, me = get("me", tok, fields="id,name")
     log("me:", sc, json.dumps(me, ensure_ascii=False)[:300])
     sc, bz = get("me/businesses", tok, fields="id,name")
-    log("me/businesses:", sc, json.dumps(bz, ensure_ascii=False)[:500])
-    for b in (bz.get("data") or []):
+    log("me/businesses:", sc, json.dumps(bz, ensure_ascii=False)[:300])
+    biz = [{"id": BUSINESS_ID, "name": "portfolio"}] + [x for x in (bz.get("data") or []) if x["id"] != BUSINESS_ID]
+    for b in biz:
         for edge in ("owned_instagram_accounts", "instagram_accounts", "client_instagram_assets"):
             sc, d = get(f"{b['id']}/{edge}", tok, fields="id,username", limit=50)
             log(f"{b['name']}/{edge}:", sc, json.dumps(d, ensure_ascii=False)[:500])
