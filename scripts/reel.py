@@ -379,7 +379,7 @@ def save_state(st):
 
 
 ORDER = ["companies", "billionaires", "economy", "companies", "agro", "billionaires", "cis", "companies", "money"]
-FORMATS = ["line", "race", "line", "compare", "line", "donut", "race"]  # 14.11: линии и гонки главные, рейтинги-полосы Instagram отклоняет
+FORMATS = ["line", "columns", "race", "bignum", "line", "table", "radial", "compare", "line", "donut"]  # 14.11: линии и гонки главные, рейтинги-полосы Instagram отклоняет
 
 
 def compare_k(r):
@@ -403,12 +403,20 @@ def variants(rankings):
             out.append(dict(r, id="cmp_" + r["id"], fmt="compare"))
         if r["fmt"] == "line" and all(len(x.get("points", [])) >= 5 for x in r.get("series_all", [])) and len(r.get("series_all", [])) >= 6:
             out.append(dict(r, id="race_" + r["id"], fmt="race"))
+            out.append(dict(r, id="rad_" + r["id"], fmt="radial"))
+            out.append(dict(r, id="tbl_" + r["id"], fmt="table"))
+        if r["fmt"] == "line":
+            out.append(dict(r, id="col_" + r["id"], fmt="columns"))
+            if not r.get("duel"):
+                out.append(dict(r, id="one_" + r["id"], fmt="bignum"))
     return out
 
 
 def topic(r):
     """Тема для разнообразия: у сырья общий товар (пшеница в рейтинге, долях и линиях одна тема)."""
-    b = r["id"].removeprefix("cmp_").removeprefix("race_").removeprefix("line_")
+    b = r["id"]
+    for pre in ("cmp_", "race_", "rad_", "tbl_", "col_", "one_", "line_"):
+        b = b.removeprefix(pre)
     if r["block"] == "agro":
         tail = b.rsplit("_", 1)[-1]
         if tail.isdigit():
@@ -643,7 +651,7 @@ def short(v, unit):
 def src_line(r):
     if r["block"] in ("companies", "billionaires"):
         return f"Источник: {r['source_full']}, {r['note']}."
-    if r["fmt"] in ("line", "race"):
+    if r["fmt"] in ("line", "race", "columns", "bignum", "radial", "table"):
         return f"Источник: {r['source_full']}, {r['start']}-{r['year']}."
     return f"Источник: {r['source_full']}, {r['year']} год."
 
@@ -1043,6 +1051,255 @@ def make_frames_line2(r):
     return total, frame
 
 
+# ---------- новые форматы 14.11 по образцам: столбцы по годам, одна линия с крупной цифрой, радиальная, таблица по годам ----------
+def metric(r):
+    t = r["title"]
+    if ":" in t:
+        t = t.split(":")[0]
+    if t.startswith("Как росли"):
+        t = t.split(",")[-1].strip()
+    return t[:1].upper() + t[1:]
+
+
+def pts_val(pts, t):
+    if t <= pts[0][0]:
+        return pts[0][1]
+    for (a, b), (c, e) in zip(pts, pts[1:]):
+        if a <= t <= c:
+            return b + (e - b) * (t - a) / (c - a)
+    return pts[-1][1]
+
+
+def simple_head(d, kick, l1, l2, sub=None):
+    label(d, (LX, HEAD_Y), kick, 26, C["smoke"])
+    y = HEAD_Y + 40
+    for l in wrap(d, l1, F(56, 600), W - 2 * LX)[:2]:
+        d.text((LX, y), l, font=F(56, 600), fill=C["ink"])
+        y += 64
+    if l2:
+        d.text((LX, y), l2, font=fit(d, l2, 56, 600, W - 2 * LX, 30), fill=C["graphite"])
+        y += 64
+    if sub:
+        for l in wrap(d, sub, F(30, 400), W - 2 * LX)[:2]:
+            d.text((LX, y + 6), l, font=F(30, 400), fill=C["smoke"])
+            y += 38
+    return y + 24
+
+
+def growth_str(x):
+    r_ = x["ratio"]
+    return times(r_) if r_ >= 1.5 else (f"+{(r_ - 1) * 100:.0f}%" if r_ >= 1 else f"−{(1 - r_) * 100:.0f}%")
+
+
+def col_scale(vmax, unit):
+    """Подписи столбцов в одном масштабе: делитель и подпись единиц над графиком."""
+    if unit in ("usd", "usd_pc"):
+        for dv, nm in ((1e12, "трлн $"), (1e9, "млрд $"), (1e6, "млн $"), (1e3, "тыс. $")):
+            if vmax >= dv * 1.5:
+                return dv, nm
+        return 1, "$"
+    if unit == "t":
+        return (1e6, "млн т") if vmax >= 1.5e6 else (1e3, "тыс. т")
+    if unit == "num":
+        return (1e9, "млрд чел.") if vmax >= 1.5e9 else (1e6, "млн чел.")
+    return 1, ""
+
+
+def make_frames_columns(r):
+    x = next((s for s in r["series"] if s.get("hl")), r["series"][0])
+    pts = x["points"]
+    n = len(pts)
+    PER = min(1.0, 24.0 / n)
+    T_RUN, T_HOLD = int(n * PER * FPS), int(3.5 * FPS)
+    total = T_RUN + T_HOLD + T_END
+    vmax = max(v for _, v in pts) * 1.12
+    kick = f"{metric(r).upper()} · {pts[0][0]}-{pts[-1][0]}"
+    l1 = f"{x['name']}: {metric(r).lower()}"
+    l2 = f"{growth_str(x)} с {pts[0][0]} года"
+    sc_d, sc_name = col_scale(vmax, r["unit"])
+
+    def frame(f):
+        im = Image.new("RGBA", (W, H), C["bone"])
+        d = ImageDraw.Draw(im)
+        if f < T_RUN + T_HOLD:
+            y = simple_head(d, kick, l1, l2, r["source_full"])
+            k = min(n - 1, int(f / (PER * FPS)))
+            u = ease((f - k * PER * FPS) / (0.6 * PER * FPS)) if f < T_RUN else 1
+            yr, v = pts[k]
+            label(d, (LX, y), "ГОД", 24, C["smoke"])
+            d.text((W - LX, y), metric(r).upper()[:28], font=F(24, 500), fill=C["smoke"], anchor="ra")
+            d.text((LX, y + 34), str(yr), font=F(96, 600), fill=C["ink"])
+            d.text((W - LX, y + 34), short(v, r["unit"]), font=fit(d, short(v, r["unit"]), 96, 600, 560, 40), fill=C["ink"], anchor="ra")
+            cy0, cy1 = y + 220, BOTTOM - 60
+            cw = (W - 2 * LX) / n
+            for i in range(n):
+                bx = LX + i * cw
+                yy_, vv = pts[i]
+                if i <= k:
+                    hgt = (cy1 - cy0) * vv / vmax * (u if i == k else 1)
+                    fill = C["graphite"] if i == k else C["bar"]
+                    d.rectangle([bx + cw * 0.12, cy1 - hgt, bx + cw * 0.88, cy1], fill=fill)
+                    if n <= 16 or i % 2 == (n - 1) % 2 or i == k:
+                        d.text((bx + cw / 2, cy1 - hgt - 8), num1(vv / sc_d) if vv / sc_d < 100 else f"{vv / sc_d:.0f}",
+                               font=F(22 if n > 16 else 26, 600 if i == k else 500), fill=C["ink"], anchor="mb")
+                if n <= 14 or i % 3 == 0 or i == n - 1:
+                    d.text((bx + cw / 2, cy1 + 12), str(yy_)[-2:] if n > 14 else str(yy_), font=F(22, 600 if i == k else 400),
+                           fill=C["ink"] if i <= k else hexa(C["smoke"], 0.5), anchor="mt")
+            d.line([LX, cy1, W - LX, cy1], fill=C["ink"], width=2)
+            d.text((W - LX, cy0 - 50), sc_name, font=F(24, 500), fill=C["smoke"], anchor="ra")
+            if f >= T_RUN:
+                a = ease((f - T_RUN) / 8)
+                d.text((LX, cy0 - 10), f"{growth_str(x)} за {pts[-1][0] - pts[0][0]} лет", font=F(48, 600), fill=hexa(C["graphite"], a))
+        else:
+            end_phase(im, d, r, f, total, kick=kick)
+        chrome(im, d, f, total, src_line(r))
+        return im.convert("RGB")
+    return total, frame
+
+
+def make_frames_bignum(r):
+    x = max(r.get("series_all", r["series"]), key=lambda s: s["value"])  # лидер, а не выделенная линия
+    pts = x["points"]
+    y0r, y1r = pts[0][0], pts[-1][0]
+    PER = min(1.0, 22.0 / max(1, y1r - y0r))
+    T_RUN, T_HOLD = int((y1r - y0r) * PER * FPS) + FPS, int(3.5 * FPS)
+    total = T_RUN + T_HOLD + T_END
+    vmax = max(v for _, v in pts) * 1.15
+    kick = f"{metric(r).upper()} · {y0r}-{y1r}"
+
+    def frame(f):
+        im = Image.new("RGBA", (W, H), C["bone"])
+        d = ImageDraw.Draw(im)
+        if f < T_RUN + T_HOLD:
+            t = min(float(y1r), y0r + f / (PER * FPS))
+            y = simple_head(d, kick, f"{x['name']}: {metric(r).lower()}", f"{growth_str(x)} с {y0r} года", r["source_full"])
+            v = pts_val(pts, t)
+            d.text((W - LX, y + 10), short(v, r["unit"]), font=fit(d, short(v, r["unit"]), 130, 600, W - 2 * LX, 60), fill=C["graphite"], anchor="ra")
+            cx0, cx1, cy0, cy1 = LX + 110, W - LX - 40, y + 230, BOTTOM - 60
+
+            def X(yr):
+                return cx0 + (cx1 - cx0) * (yr - y0r) / max(1, y1r - y0r)
+
+            def Y(vv):
+                return cy1 - (cy1 - cy0) * vv / vmax
+            for k in range(1, 5):
+                vv = vmax / 1.15 * k / 4
+                d.line([cx0, Y(vv), cx1, Y(vv)], fill=C["line"], width=2)
+                d.text((LX, Y(vv)), short(vv, r["unit"]), font=F(22, 400), fill=C["smoke"], anchor="lm")
+            for yr in range(y0r, y1r + 1, max(1, (y1r - y0r) // 5)):
+                d.text((X(yr), cy1 + 12), str(yr), font=F(24, 500), fill=C["smoke"], anchor="mt")
+            line = [(X(a), Y(b)) for a, b in pts if a <= t] + [(X(t), Y(v))]
+            if len(line) >= 2:
+                ov = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+                ImageDraw.Draw(ov).polygon(line + [(line[-1][0], cy1), (line[0][0], cy1)], fill=hexa(C["graphite"], 0.18))
+                im.alpha_composite(ov)
+                d.line(line, fill=C["graphite"], width=8, joint="curve")
+            hx, hy = line[-1]
+            d.ellipse([hx - 12, hy - 12, hx + 12, hy + 12], fill=C["graphite"])
+            d.text((hx, hy - 24), short(v, r["unit"]), font=F(34, 600), fill=C["ink"], anchor="mb" if hx < cx1 - 80 else "rb")
+        else:
+            end_phase(im, d, r, f, total, kick=kick)
+        chrome(im, d, f, total, src_line(r))
+        return im.convert("RGB")
+    return total, frame
+
+
+def make_frames_radial(r):
+    import math
+    ents = sorted(r["series_all"], key=lambda s: -s["value"])[:8]
+    y0r, y1r = r["start"], r["year"]
+    PER = min(0.9, 20.0 / max(1, y1r - y0r))
+    T_RUN, T_HOLD = int((y1r - y0r) * PER * FPS) + FPS, int(3.5 * FPS)
+    total = T_RUN + T_HOLD + T_END
+    vmax = max(v for e in ents for _, v in e["points"])
+    kick = f"{metric(r).upper()} · {y0r}-{y1r}"
+    hl = next((e for e in ents if e.get("hl")), ents[0])
+
+    def frame(f):
+        im = Image.new("RGBA", (W, H), C["bone"])
+        d = ImageDraw.Draw(im)
+        if f < T_RUN + T_HOLD:
+            t = min(float(y1r), y0r + f / (PER * FPS))
+            y = simple_head(d, kick, metric(r), f"лидеры {y1r} года", r["source_full"])
+            CX, CY = W // 2, (y + BOTTOM) // 2 + 20
+            R0, R1 = 95, 330
+            d.ellipse([CX - R0 + 6, CY - R0 + 6, CX + R0 - 6, CY + R0 - 6], outline=C["line"], width=3)
+            d.text((CX, CY), str(int(t)), font=F(64, 600), fill=C["ink"], anchor="mm")
+            n = len(ents)
+            for i, e in enumerate(ents):
+                ang = -math.pi / 2 + 2 * math.pi * i / n
+                v = pts_val(e["points"], t) if t >= e["points"][0][0] else 0
+                L = R0 + (R1 - R0) * math.sqrt(max(0, v) / vmax)
+                wdt = 2 * math.pi * R0 / n * 0.62
+                c, s_ = math.cos(ang), math.sin(ang)
+                px, py = -s_ * wdt / 2, c * wdt / 2
+                k2 = L / R0
+                poly = [(CX + c * R0 + px, CY + s_ * R0 + py), (CX + c * R0 - px, CY + s_ * R0 - py),
+                        (CX + c * L - px * k2 * 0.9, CY + s_ * L - py * k2 * 0.9), (CX + c * L + px * k2 * 0.9, CY + s_ * L + py * k2 * 0.9)]
+                d.polygon(poly, fill=C["graphite"] if e is hl else C["bar"])
+                lx, ly = CX + c * (R1 + 60), CY + s_ * (R1 + 50)
+                anc = "mm" if abs(c) < 0.3 else ("lm" if c > 0 else "rm")
+                d.text((lx, ly - 18), e["name"], font=fit(d, e["name"], 28, 600, 220, 16), fill=C["graphite"] if e is hl else C["ink"], anchor=anc)
+                d.text((lx, ly + 16), short(v, r["unit"]) if v else "—", font=F(24, 400), fill=C["smoke"], anchor=anc)
+        else:
+            end_phase(im, d, r, f, total, kick=kick)
+        chrome(im, d, f, total, src_line(r))
+        return im.convert("RGB")
+    return total, frame
+
+
+def make_frames_table(r):
+    ents = sorted(r["series_all"], key=lambda s: -s["value"])[:10]
+    y0r, y1r = r["start"], r["year"]
+    PER = min(1.0, 22.0 / max(1, y1r - y0r))
+    T_RUN, T_HOLD = int((y1r - y0r) * PER * FPS) + FPS, int(3.5 * FPS)
+    total = T_RUN + T_HOLD + T_END
+    kick = f"РОСТ · {y0r}-{y1r}"
+
+    def growth(e, t):
+        p0 = e["points"][0][1]
+        return (pts_val(e["points"], t) / p0 - 1) * 100 if p0 > 0 else 0
+
+    def order_at(t):
+        return {id(e): i for i, e in enumerate(sorted(ents, key=lambda e: -growth(e, t)))}
+
+    def frame(f):
+        im = Image.new("RGBA", (W, H), C["bone"])
+        d = ImageDraw.Draw(im)
+        if f < T_RUN + T_HOLD:
+            t = min(float(y1r), y0r + f / (PER * FPS))
+            y = simple_head(d, kick, f"{metric(r)}:", f"кто вырос сильнее с {y0r} года", r["source_full"])
+            d.text((W - LX, y - 10), str(int(t)), font=F(110, 600), fill=C["ink"], anchor="ra")
+            y += 120
+            label(d, (LX, y), "СТРАНА", 22, C["smoke"])
+            d.text((W - LX, y), f"РОСТ К {y0r}", font=F(22, 500), fill=C["smoke"], anchor="ra")
+            y += 40
+            o0, o1 = order_at(math_floor(t)), order_at(min(y1r, math_floor(t) + 1))
+            u = ease(t - math_floor(t))
+            rowh = (BOTTOM - 40 - y) / len(ents)
+            gmax = max(abs(growth(e, t)) for e in ents) or 1
+            for e in ents:
+                pos = o0[id(e)] + (o1[id(e)] - o0[id(e)]) * u
+                yy = y + pos * rowh
+                g = growth(e, t)
+                lead = pos < 0.5
+                d.text((LX, yy + rowh * 0.32), e["name"], font=fit(d, e["name"], 32, 600, 300, 16), fill=C["graphite"] if lead else C["ink"], anchor="lm")
+                bx0, bx1 = LX + 320, W - LX - 170
+                d.rectangle([bx0, yy + rowh * 0.2, bx1, yy + rowh * 0.44], fill=C["line"])
+                if g > 0:
+                    d.rectangle([bx0, yy + rowh * 0.2, bx0 + (bx1 - bx0) * g / gmax, yy + rowh * 0.44], fill=C["graphite"] if lead else C["bar"])
+                d.text((W - LX, yy + rowh * 0.32), f"{'+' if g >= 0 else '−'}{abs(g):,.0f}%".replace(",", NB), font=F(32, 600), fill=C["ink"], anchor="rm")
+        else:
+            end_phase(im, d, r, f, total, kick=kick)
+        chrome(im, d, f, total, src_line(r))
+        return im.convert("RGB")
+    return total, frame
+
+
+def math_floor(t):
+    return int(t // 1)
+
+
 # ---------- доли: круговая диаграмма ----------
 def make_frames_donut(r):
     segs = r["top"][:5]
@@ -1280,7 +1537,7 @@ def caption(r, n):
     if r["fmt"] == "bars":
         return caption_bars(r, n)
     q = (QUESTIONS.get(r["block"]) or Q_DEFAULT)[n % 3]
-    if r["fmt"] in ("line", "race"):
+    if r["fmt"] in ("line", "race", "columns", "bignum", "radial", "table"):
         hook = r["hook_text"] + "."
         rows = f"{r['title']}, {r['year']} год и рост с {r['start']}:\n" + "\n".join(
             f"{i + 1}. {x['flag']} {x['name']}: {x['text']}" + (f", рост {x['growth']}" if x.get("growth") else "")
@@ -1312,11 +1569,11 @@ def tracks():
 
 
 def render(r, out, n, theme=None):
-    if r.get("fmt") == "line":
-        theme = "dark"  # 14.11: линии по образцам на тёмном фоне
+    theme = {"line": "dark", "bignum": "dark", "radial": "dark", "columns": "light", "table": "light"}.get(r.get("fmt"), theme)
     set_theme(theme or ("dark" if n % 5 in (1, 3) else "light"))
     total, frame = {"bars": make_frames, "line": make_frames_line2, "donut": make_frames_donut,
-                    "compare": make_frames_compare, "race": make_frames_race}[r.get("fmt", "bars")](r)
+                    "compare": make_frames_compare, "race": make_frames_race, "columns": make_frames_columns,
+                    "bignum": make_frames_bignum, "radial": make_frames_radial, "table": make_frames_table}[r.get("fmt", "bars")](r)
     dur = total / FPS
     music = tracks()[n % len(tracks())]
     log(f"Рендер {r['id']}: {dur:.1f} с, тема {'dark' if C['bone'] == DARK['bone'] else 'light'}, музыка {os.path.basename(music)}")
