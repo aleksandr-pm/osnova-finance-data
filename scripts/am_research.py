@@ -20,7 +20,12 @@ EXTRA = {"PARA": "Paramount", "WBA": "Walgreens Boots Alliance", "VFC": "VF Corp
          "WU": "Western Union", "CNC": "Centene", "BIIB": "Biogen", "INTC": "Intel", "BA": "Boeing", "MMM": "3M", "WBD": "Warner Bros. Discovery",
          "DXC": "DXC Technology", "LNC": "Lincoln National", "FOSL": "Fossil", "QRVO": "Qorvo", "ALK": "Alaska Air", "UAA": "Under Armour",
          "VIAV": "Viavi", "EL": "Estee Lauder", "PFE": "Pfizer", "VZ": "Verizon", "T": "AT&T", "KHC": "Kraft Heinz", "CVS": "CVS Health",
-         "NKE": "Nike", "F": "Ford", "UPS": "UPS", "DOW": "Dow", "SLB": "Schlumberger", "OXY": "Occidental", "APA": "APA", "HAL": "Halliburton"}
+         "NKE": "Nike", "F": "Ford", "COTY": "Coty", "PRGO": "Perrigo", "TRIP": "Tripadvisor", "SIG": "Signet Jewelers",
+         "AAP": "Advance Auto Parts", "SATS": "EchoStar", "GAP": "Gap", "FTR": "Frontier Communications", "NAVI": "Navient",
+         "MAC": "Macerich", "SLG": "SL Green", "VNO": "Vornado", "MUR": "Murphy Oil", "WYNN": "Wynn Resorts", "NWSA": "News Corp",
+         "FLR": "Fluor", "R": "Ryder", "JWN": "Nordstrom", "URBN": "Urban Outfitters", "TDC": "Teradata", "CHK": "Chesapeake",
+         "RRC": "Range Resources", "AN": "AutoNation", "PVH": "PVH", "RL": "Ralph Lauren", "TAP": "Molson Coors", "LEG": "Leggett & Platt",
+         "FMC": "FMC", "DLTR": "Dollar Tree", "MHK": "Mohawk", "WHR": "Whirlpool", "IPG": "Interpublic", "CMCSA": "Comcast", "UPS": "UPS", "DOW": "Dow", "SLB": "Schlumberger", "OXY": "Occidental", "APA": "APA", "HAL": "Halliburton"}
 
 
 def universe():
