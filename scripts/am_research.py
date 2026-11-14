@@ -83,13 +83,13 @@ def spincheck():
              "CNDT": ("2016-12-28", "2017-01-12"), "KTB": ("2019-05-20", "2019-05-30"), "PCG": ("2016-11-10", "2016-11-20")}
     for t, (a, b) in cases.items():
         raw = yf.download(t, start=a, end=b, auto_adjust=False, progress=False)
-        acts = yf.Ticker(t).actions
         out[t] = {"rows": [[str(i.date()), float(r["Close"].iloc[0] if hasattr(r["Close"], "iloc") else r["Close"]),
-                            float(r["Adj Close"].iloc[0] if hasattr(r["Adj Close"], "iloc") else r["Adj Close"])] for i, r in raw.iterrows()],
-                  "actions": [[str(i.date()), float(x["Dividends"]), float(x["Stock Splits"])] for i, x in acts.iterrows()
-                              if str(i.date()) >= "2016-11-01" and (x["Stock Splits"] or x["Dividends"] > 1)]}
+                            float(r["Adj Close"].iloc[0] if hasattr(r["Adj Close"], "iloc") else r["Adj Close"])] for i, r in raw.iterrows()]}
         last = yf.download(t, period="5d", auto_adjust=False, progress=False)
-        out[t]["last"] = float(last["Close"].iloc[-1].iloc[0]) if len(last) else None
+        try:
+            out[t]["last"] = float(last["Close"].iloc[-1].iloc[0]) if len(last) else None
+        except Exception:  # noqa: BLE001
+            out[t]["last"] = None
     json.dump(out, open(os.path.join(OUTD, "spincheck.json"), "w"), indent=1)
     print(json.dumps(out)[:3000])
 
