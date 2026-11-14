@@ -37,6 +37,7 @@ TV_UAE = "https://scanner.tradingview.com/uae/scan"
 TV_GLOBAL = "https://scanner.tradingview.com/global/scan"
 UA = {"User-Agent": "Mozilla/5.0", "Content-Type": "application/json"}
 MIN_CAP_AED = 5e9
+EXCLUDE = {"ORDS", "GFH", "SALAM_BAH", "ALSALAMBAH", "NIND", "NDAQ"}  # иностранные эмитенты на ADX/DFM (правило инструкции)
 
 # Индексы ОАЭ: (символ TradingView, подпись). Символ индекса недвижимости уточняется в probe.
 UAE_INDICES = [("ADX:FADGI", "FTSE ADX General"), ("DFM:DFMGI", "DFM General"), ("DFM:DFMREI", "DFM Real Estate")]
@@ -46,7 +47,10 @@ EXTRA_UAE = [("BZ=F", "BRENT", "usd"), ("GC=F", "ЗОЛОТО", "usd")]
 SP500_CSV = "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv"
 
 # Короткие имена компаний ОАЭ (по тикеру TradingView); остальные из описания скринера
-UAE_NAMES = {"EMAAR": "Emaar Properties", "EMAARDEV": "Emaar Development", "ALDAR": "Aldar", "FAB": "FAB", "ENBD": "Emirates NBD",
+UAE_NAMES = {"ETISALAT": "e&", "2POINTZERO": "2PointZero", "NBQ": "Bank of Umm Al Qaiwain", "ALANSARI": "Al Ansari",
+             "TABREED": "Tabreed", "ADNH": "AD National Hotels", "RAKBANK": "RAKBANK", "CBD": "Commercial Bank Dubai",
+             "AMANAT": "Amanat", "ALDAR_": "Aldar", "EMSTEEL": "Emsteel", "ESHRAQ": "Eshraq", "RAKPROP": "RAK Properties",
+             "EMAAR": "Emaar Properties", "EMAARDEV": "Emaar Development", "ALDAR": "Aldar", "FAB": "FAB", "ENBD": "Emirates NBD",
              "ADCB": "ADCB", "ADIB": "ADIB", "DIB": "Dubai Islamic Bank", "IHC": "IHC", "ADNOCGAS": "ADNOC Gas",
              "ADNOCDRILL": "ADNOC Drilling", "ADNOCDIST": "ADNOC Distribution", "ADNOCLS": "ADNOC L&S", "EAND": "e&", "DU": "du",
              "SALIK": "Salik", "PARKIN": "Parkin", "TALABAT": "Talabat", "AIRARABIA": "Air Arabia", "DEWA": "DEWA",
@@ -102,17 +106,36 @@ def uae_index_candidates():
         return [{"error": str(e)}]
 
 
+STOP = {"of", "and", "&", "the", "for", "de"}
+
+
+def shorten(name, maxc=20):
+    out = ""
+    for w in name.split():
+        if len((out + " " + w).strip()) > maxc:
+            break
+        out = (out + " " + w).strip()
+    words = out.split()
+    while words and words[-1].lower() in STOP:
+        words.pop()
+    return " ".join(words) or name[:maxc]
+
+
 def nice_name(r):
     if r["ticker"] in UAE_NAMES:
         return UAE_NAMES[r["ticker"]]
     d = (r["desc"] or r["ticker"]).replace(" PJSC", "").replace(" P.J.S.C.", "").replace(" P.J.S.C", "").replace(" COMPANY", "")
+    for suf in ("(P.J.S.C)", "(P.J.S.C.)", "PJSC", "P.J.S.C.", "PSC", "plc", "PLC", "Company", "Co."):
+        d = d.replace(suf, "")
     d = d.title() if d.isupper() else d
-    return d[:22]
+    return shorten(d.strip())
 
 
 def uae_data():
     rows = [r for r in uae_stocks() if r["close"] and r["change"] is not None]
-    big = [r for r in rows if (r["cap"] or 0) >= MIN_CAP_AED]
+    big = [r for r in rows if (r["cap"] or 0) >= MIN_CAP_AED and r["symbol"].split(":")[0] in ("ADX", "DFM")
+           and r["ticker"] not in EXCLUDE and r["currency"] == "AED"
+           and not any(w in (r["desc"] or "").upper() for w in ("BAHRAIN", "B.S.C", "QATAR", "OOREDOO", "Q.P.S.C", "K.S.C"))]
     if len(big) < 10:
         raise RuntimeError(f"ОАЭ: мало крупных бумаг ({len(big)})")
     if all(abs(r["change"]) < 1e-9 for r in big):
@@ -132,6 +155,8 @@ def yf_closes(tickers, period="10d"):
     for t in tickers:
         try:
             s = (df[t]["Close"] if len(tickers) > 1 else df["Close"]).dropna()
+            s = s[s.index.dayofweek < 5]  # фьючерсы и валюты дают строку за выходной с той же ценой
+            s = s[s.index.normalize() <= s.index.normalize().max()]
             if len(s) >= 2:
                 out[t] = s
         except Exception:  # noqa: BLE001
@@ -157,10 +182,16 @@ def sp500():
     return {}
 
 
+US_SHORT = {"Advanced Micro Devices": "AMD", "Fidelity National Information Services": "FIS", "Charter Communications": "Charter",
+            "International Business Machines": "IBM", "Alphabet (Class A)": "Alphabet", "Alphabet (Class C)": "Alphabet C",
+            "Berkshire Hathaway": "Berkshire", "JPMorgan Chase": "JPMorgan", "Thermo Fisher Scientific": "Thermo Fisher",
+            "Texas Instruments": "Texas Instruments", "Hewlett Packard Enterprise": "HPE", "Taiwan Semiconductor": "TSMC"}
+
+
 def short_us(name):
     for suf in (", Inc.", " Inc.", " Corporation", " Corp.", " Incorporated", " Company", " Co.", " plc", " Ltd.", " Holdings", " Group", " (Class A)", " (Class B)", " (Class C)"):
         name = name.replace(suf, "")
-    return name.strip()[:20]
+    return US_SHORT.get(name.strip(), shorten(name.strip()))
 
 
 def us_data():
@@ -180,6 +211,9 @@ def us_data():
     for t, label, kind in EXTRA_US:
         s = base.get(t)
         if s is None:
+            continue
+        s = s[s.index.date <= day]
+        if len(s) < 2:
             continue
         p, q = float(s.iloc[-1]), float(s.iloc[-2])
         extra.append((label, p, q, kind))
@@ -321,7 +355,7 @@ def story(theme, bg_prefix, day, kick, date, indices, gain, lose, cells, source)
         yy = y + 60
         for nm, ch in rows:
             d.line([(x, yy + rh), (x + cw, yy + rh)], fill=t["line"], width=2)
-            T(d, (x + 4, yy + rh / 2), nm, fit(d, nm, 600, 38, cw - 200), t["tx"], anchor="lm")
+            T(d, (x + 4, yy + rh / 2), nm, fit(d, nm, 600, 38, cw - 185), t["tx"], anchor="lm")
             T(d, (x + cw - 4, yy + rh / 2), pct(ch), font(700, 42), t["uptx"] if isup else t["dntx"], anchor="rm")
             yy += rh
         if not rows:
