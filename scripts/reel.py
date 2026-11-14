@@ -379,7 +379,7 @@ def save_state(st):
 
 
 ORDER = ["companies", "billionaires", "economy", "companies", "agro", "billionaires", "cis", "companies", "money"]
-FORMATS = ["line", "columns", "race", "bignum", "line", "table", "radial", "compare", "line", "donut"]  # 14.11: линии и гонки главные, рейтинги-полосы Instagram отклоняет
+FORMATS = ["line", "columns", "race", "bignum", "slope", "line", "table", "radial", "donutyr", "line", "compare", "donut"]  # 14.11: линии и гонки главные, рейтинги-полосы Instagram отклоняет
 
 
 def compare_k(r):
@@ -405,6 +405,8 @@ def variants(rankings):
             out.append(dict(r, id="race_" + r["id"], fmt="race"))
             out.append(dict(r, id="rad_" + r["id"], fmt="radial"))
             out.append(dict(r, id="tbl_" + r["id"], fmt="table"))
+            out.append(dict(r, id="dyr_" + r["id"], fmt="donutyr"))
+            out.append(dict(r, id="slp_" + r["id"], fmt="slope"))
         if r["fmt"] == "line":
             out.append(dict(r, id="col_" + r["id"], fmt="columns"))
             if not r.get("duel"):
@@ -415,7 +417,7 @@ def variants(rankings):
 def topic(r):
     """Тема для разнообразия: у сырья общий товар (пшеница в рейтинге, долях и линиях одна тема)."""
     b = r["id"]
-    for pre in ("cmp_", "race_", "rad_", "tbl_", "col_", "one_", "line_"):
+    for pre in ("cmp_", "race_", "rad_", "tbl_", "col_", "one_", "dyr_", "slp_", "line_"):
         b = b.removeprefix(pre)
     if r["block"] == "agro":
         tail = b.rsplit("_", 1)[-1]
@@ -651,7 +653,7 @@ def short(v, unit):
 def src_line(r):
     if r["block"] in ("companies", "billionaires"):
         return f"Источник: {r['source_full']}, {r['note']}."
-    if r["fmt"] in ("line", "race", "columns", "bignum", "radial", "table"):
+    if r["fmt"] in ("line", "race", "columns", "bignum", "radial", "table", "donutyr", "slope"):
         return f"Источник: {r['source_full']}, {r['start']}-{r['year']}."
     return f"Источник: {r['source_full']}, {r['year']} год."
 
@@ -1296,6 +1298,122 @@ def make_frames_table(r):
     return total, frame
 
 
+def make_frames_donutyr(r):
+    """Доли по годам (образец 07): кольцо внутри группы стран, год в центре."""
+    import math
+    ents = sorted(r["series_all"], key=lambda s: -s["value"])[:7]
+    y0r, y1r = r["start"], r["year"]
+    PER = min(0.9, 20.0 / max(1, y1r - y0r))
+    T_RUN, T_HOLD = int((y1r - y0r) * PER * FPS) + FPS, int(4 * FPS)
+    total = T_RUN + T_HOLD + T_END
+    kick = f"ДОЛИ · {y0r}-{y1r}"
+    cols = ["#5C1A23", "#17171A", "#A9786A", "#6B6462", "#C08A80", "#A2646C", "#C9C1B6"] if C["bone"] == LIGHT["bone"] \
+        else ["#E2B8A4", "#F2EFEA", "#C08A80", "#A2646C", "#D3B9B6", "#8E4A54", "#7E3A44"]
+
+    def shares(t):
+        v = [max(0, pts_val(e["points"], t)) if t >= e["points"][0][0] else 0 for e in ents]
+        tot = sum(v) or 1
+        return [x / tot for x in v]
+
+    def frame(f):
+        im = Image.new("RGBA", (W, H), C["bone"])
+        d = ImageDraw.Draw(im)
+        if f < T_RUN + T_HOLD:
+            t = min(float(y1r), y0r + f / (PER * FPS))
+            y = simple_head(d, kick, f"{metric(r)}:", f"доли {len(ents)} крупнейших", f"Доля каждой страны в сумме этих {len(ents)} стран. {r['source_full']}")
+            CX, CY, R, RI = W // 2, (y + BOTTOM) // 2 - 40, 300, 185
+            sh = shares(t)
+            SS = 2
+            img = Image.new("RGBA", ((2 * R + 8) * SS,) * 2, (0, 0, 0, 0))
+            dd = ImageDraw.Draw(img)
+            a0 = -90.0
+            mids = []
+            for i, x in enumerate(sh):
+                if x > 0:
+                    dd.pieslice([4 * SS, 4 * SS, img.width - 4 * SS, img.height - 4 * SS], a0, a0 + 360 * x, fill=cols[i])
+                mids.append(a0 + 180 * x)
+                a0 += 360 * x
+            c = img.width / 2
+            dd.ellipse([c - RI * SS, c - RI * SS, c + RI * SS, c + RI * SS], fill=C["bone"])
+            img = img.resize((img.width // SS, img.height // SS), Image.LANCZOS)
+            im.alpha_composite(img, (CX - img.width // 2, CY - img.height // 2))
+            d.text((CX, CY), str(int(t)), font=F(80, 600), fill=C["ink"], anchor="mm")
+            for i, e in enumerate(ents):
+                if sh[i] < 0.025:
+                    continue
+                ang = math.radians(mids[i])
+                lx, ly = CX + math.cos(ang) * (R + 40), CY + math.sin(ang) * (R + 34)
+                anc = "lm" if math.cos(ang) > 0.15 else ("rm" if math.cos(ang) < -0.15 else "mm")
+                d.text((lx, ly - 16), e["name"], font=fit(d, e["name"], 28, 600, 230, 16), fill=C["ink"], anchor=anc)
+                d.text((lx, ly + 16), f"{sh[i] * 100:.0f}%", font=F(26, 500), fill=C["smoke"], anchor=anc)
+            if f >= T_RUN:
+                a = ease((f - T_RUN) / 8)
+                s0, s1 = shares(y0r), shares(y1r)
+                k = max(range(len(ents)), key=lambda i: s1[i] - s0[i])
+                txt = f"{ents[k]['name']}: доля {s0[k] * 100:.0f}% в {y0r} году, {s1[k] * 100:.0f}% в {y1r}"
+                punch_box(d, a, ["Сильнее всех выросла доля", txt])
+        else:
+            end_phase(im, d, r, f, total, kick=kick)
+        chrome(im, d, f, total, src_line(r))
+        return im.convert("RGB")
+    return total, frame
+
+
+def make_frames_slope(r):
+    """Места в начале и в конце периода: кто поднялся, кто опустился."""
+    ents = [e for e in r["series_all"] if e["points"][0][0] <= r["start"] + 2][:10]
+    y0r, y1r = r["start"], r["year"]
+    first = sorted(ents, key=lambda e: -e["points"][0][1])
+    last = sorted(ents, key=lambda e: -e["points"][-1][1])
+    r0 = {id(e): i for i, e in enumerate(first)}
+    r1 = {id(e): i for i, e in enumerate(last)}
+    T_A, T_B, T_HOLD = int(2.5 * FPS), int(len(ents) * 1.3 * FPS), int(4 * FPS)
+    total = T_A + T_B + T_HOLD + T_END
+    kick = f"МЕСТА · {y0r} И {y1r}"
+    up = max(ents, key=lambda e: r0[id(e)] - r1[id(e)])
+
+    def frame(f):
+        im = Image.new("RGBA", (W, H), C["bone"])
+        d = ImageDraw.Draw(im)
+        if f < T_A + T_B + T_HOLD:
+            y = simple_head(d, kick, f"{metric(r)}:", f"кто поднялся с {y0r} года", r["source_full"])
+            d.text((LX, y), str(y0r), font=F(56, 600), fill=C["smoke"])
+            d.text((W - LX, y), str(y1r), font=F(56, 600), fill=C["ink"], anchor="ra")
+            ty = y + 90
+            rowh = (1330 - 20 - ty) / len(ents)  # ниже 1350 итоговая плашка
+            xl, xr = LX + 300, W - LX - 300
+            for e in ents:
+                ya = ty + r0[id(e)] * rowh + rowh / 2
+                d.text((xl - 20, ya), f"{r0[id(e)] + 1}. {e['name']}", font=fit(d, f"{r0[id(e)] + 1}. {e['name']}", 28, 500, 270, 14), fill=C["smoke"], anchor="rm")
+            order = sorted(ents, key=lambda e: r1[id(e)], reverse=True)
+            step = T_B / len(ents)
+            for j, e in enumerate(order):
+                u = ease((f - T_A - j * step) / (0.7 * step))
+                if u <= 0:
+                    continue
+                ya = ty + r0[id(e)] * rowh + rowh / 2
+                yb = ty + r1[id(e)] * rowh + rowh / 2
+                mv = r0[id(e)] - r1[id(e)]
+                colr = C["graphite"] if e is up else (C["ink"] if mv > 0 else C["bar"])
+                xb = xl + (xr - xl) * u
+                d.line([xl, ya, xb, ya + (yb - ya) * u], fill=colr, width=8 if e is up else 5)
+                d.ellipse([xl - 9, ya - 9, xl + 9, ya + 9], fill=colr)
+                if u >= 1:
+                    d.ellipse([xr - 9, yb - 9, xr + 9, yb + 9], fill=colr)
+                    lab = f"{r1[id(e)] + 1}. {e['name']}"
+                    d.text((xr + 20, yb - 12), lab, font=fit(d, lab, 28, 600, 270, 14), fill=colr if e is up else C["ink"], anchor="lm")
+                    tag_ = (f"+{mv}" if mv > 0 else (str(mv) if mv < 0 else "=")) + " · " + e["text"]
+                    d.text((xr + 20, yb + 18), tag_, font=fit(d, tag_, 22, 400, 270, 12), fill=C["smoke"], anchor="lm")
+            if f >= T_A + T_B:
+                a = ease((f - T_A - T_B) / 8)
+                punch_box(d, a, ["Сильнее всех поднялась", f"{up['name']}: с {r0[id(up)] + 1}-го на {r1[id(up)] + 1}-е место"])
+        else:
+            end_phase(im, d, r, f, total, kick=kick)
+        chrome(im, d, f, total, src_line(r))
+        return im.convert("RGB")
+    return total, frame
+
+
 def math_floor(t):
     return int(t // 1)
 
@@ -1537,7 +1655,7 @@ def caption(r, n):
     if r["fmt"] == "bars":
         return caption_bars(r, n)
     q = (QUESTIONS.get(r["block"]) or Q_DEFAULT)[n % 3]
-    if r["fmt"] in ("line", "race", "columns", "bignum", "radial", "table"):
+    if r["fmt"] in ("line", "race", "columns", "bignum", "radial", "table", "donutyr", "slope"):
         hook = r["hook_text"] + "."
         rows = f"{r['title']}, {r['year']} год и рост с {r['start']}:\n" + "\n".join(
             f"{i + 1}. {x['flag']} {x['name']}: {x['text']}" + (f", рост {x['growth']}" if x.get("growth") else "")
@@ -1569,11 +1687,12 @@ def tracks():
 
 
 def render(r, out, n, theme=None):
-    theme = {"line": "dark", "bignum": "dark", "radial": "dark", "columns": "light", "table": "light"}.get(r.get("fmt"), theme)
+    theme = {"line": "dark", "bignum": "dark", "radial": "dark", "columns": "light", "table": "light", "donutyr": "light", "slope": "dark"}.get(r.get("fmt"), theme)
     set_theme(theme or ("dark" if n % 5 in (1, 3) else "light"))
     total, frame = {"bars": make_frames, "line": make_frames_line2, "donut": make_frames_donut,
                     "compare": make_frames_compare, "race": make_frames_race, "columns": make_frames_columns,
-                    "bignum": make_frames_bignum, "radial": make_frames_radial, "table": make_frames_table}[r.get("fmt", "bars")](r)
+                    "bignum": make_frames_bignum, "radial": make_frames_radial, "table": make_frames_table,
+                    "donutyr": make_frames_donutyr, "slope": make_frames_slope}[r.get("fmt", "bars")](r)
     dur = total / FPS
     music = tracks()[n % len(tracks())]
     log(f"Рендер {r['id']}: {dur:.1f} с, тема {'dark' if C['bone'] == DARK['bone'] else 'light'}, музыка {os.path.basename(music)}")
