@@ -1,0 +1,34 @@
+name: property-check
+# @osnova.property: найти ID аккаунта и проверить доступ токена, без публикации (property/publish.py --check)
+on:
+  push:
+    branches: [main]
+    paths: ["property/check_request.txt"]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: property-state
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install requests
+      - name: Check
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN_PROP || secrets.IG_TOKEN }}
+          IG_USER_ID_PROP: ${{ secrets.IG_USER_ID_PROP }}
+          IG_USER_ID_FIN: ${{ secrets.IG_USER_ID }}
+        run: python property/publish.py --check || true
+      - name: Save
+        run: |
+          git config user.name "osnova-bot"
+          git config user.email "osnova-bot@users.noreply.github.com"
+          git add property/logs property/ig_user_id.txt 2>/dev/null
+          git commit -m "property: check [skip ci]" || exit 0
+          for i in 1 2 3; do git pull --rebase origin main && git push && break; sleep 5; done
