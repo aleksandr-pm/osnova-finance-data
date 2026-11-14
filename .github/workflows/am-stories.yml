@@ -1,0 +1,49 @@
+name: am-stories
+# Утренние сторис @aleksandr_markets: итоги торгов ОАЭ и США (scripts/am_stories.py)
+# Публикация только при наличии файла am/LIVE и секретов IG_USER_ID_AM + IG_TOKEN_AM (или IG_TOKEN)
+on:
+  schedule:
+    - cron: "15 4 * * 1-5"   # 08:15 Дубай, пн-пт
+  push:
+    paths: ["am/probe_request.txt"]   # проверка источников без публикации
+  workflow_dispatch:
+    inputs:
+      dry_run: { description: "yes = только нарисовать, без публикации", default: "yes" }
+permissions:
+  contents: write
+concurrency: { group: am-stories, cancel-in-progress: false }
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install yfinance pillow requests
+      - name: Probe
+        if: github.event_name == 'push'
+        run: python scripts/am_stories.py probe
+      - name: Render
+        run: python scripts/am_stories.py render
+      - name: Commit images
+        id: c
+        run: |
+          git config user.name "osnova-bot"; git config user.email "osnova-bot@users.noreply.github.com"
+          git add am; git commit -m "am: сторис ${{ github.event_name }} [skip ci]" || true
+          for i in 1 2 3; do git pull --rebase origin main && git push && break; sleep 5; done
+          echo "sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+      - name: Publish
+        if: github.event_name != 'push'
+        env:
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+          PUBLISH_SHA: ${{ steps.c.outputs.sha }}
+          IG_TOKEN_AM: ${{ secrets.IG_TOKEN_AM }}
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID_AM: ${{ secrets.IG_USER_ID_AM }}
+        run: sleep 20 && python scripts/am_stories.py publish
+      - name: Commit state
+        if: github.event_name != 'push'
+        run: |
+          git add am; git commit -m "am: состояние сторис [skip ci]" || exit 0
+          for i in 1 2 3; do git pull --rebase origin main && git push && break; sleep 5; done
