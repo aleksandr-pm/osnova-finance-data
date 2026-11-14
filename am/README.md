@@ -1,10 +1,15 @@
 # Сторис @aleksandr_markets
 
-Каждый будний день в 08:15 по Дубаю (workflow `am-stories.yml`) две сторис:
+Сторис выходят после закрытия торгов (workflow `am-stories.yml`), пн-пт:
+- ОАЭ: 15:20 по Дубаю (ADX и DFM закрываются в 15:00);
+- США: 01:30 по Дубаю (21:30 UTC), после закрытия NYSE и Nasdaq.
+В праздники сторис не выходит: ОАЭ проверяется по неизменным индексам, США по дате последних торгов.
+
+Содержание:
 1. Итоги торгов ОАЭ: FTSE ADX General, DFM General, DFM Real Estate; 5 лидеров роста и падения среди компаний дороже 5 млрд AED; Brent, золото, USD/AED.
 2. Итоги торгов США: S&P 500, Nasdaq 100, Dow Jones; 5 лидеров роста и падения среди S&P 500; Brent, UST 10 лет, золото, EUR/USD.
 
-Скрипт: `scripts/am_stories.py` (probe / render / publish).
+Скрипт: `scripts/am_stories.py` (probe / render uae|us|both / publish).
 
 Включение публикации:
 - секреты репозитория: `IG_USER_ID_AM` (числовой ID аккаунта aleksandr_markets) и `IG_TOKEN_AM` (токен системного пользователя с доступом к этому аккаунту; если не задан, берётся `IG_TOKEN`);

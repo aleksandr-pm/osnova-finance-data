@@ -3,11 +3,13 @@ name: am-stories
 # Публикация только при наличии файла am/LIVE и секретов IG_USER_ID_AM + IG_TOKEN_AM (или IG_TOKEN)
 on:
   schedule:
-    - cron: "15 4 * * 1-5"   # 08:15 Дубай, пн-пт
+    - cron: "20 11 * * 1-5"  # 15:20 Дубай, после закрытия ADX и DFM (15:00)
+    - cron: "30 21 * * 1-5"  # 01:30 Дубай (21:30 UTC), после закрытия США (зимой 21:00 UTC, летом 20:00 UTC)
   push:
     paths: ["am/probe_request.txt"]   # проверка источников без публикации
   workflow_dispatch:
     inputs:
+      market: { description: "uae / us", default: "uae" }
       dry_run: { description: "yes = только нарисовать, без публикации", default: "yes" }
 permissions:
   contents: write
@@ -28,8 +30,15 @@ jobs:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID_AM: ${{ secrets.IG_USER_ID_AM }}
         run: python scripts/am_stories.py probe
+      - name: Market
+        id: m
+        run: |
+          M="${{ github.event.inputs.market }}"
+          case "${{ github.event.schedule }}" in "20 11 * * 1-5") M=uae;; "30 21 * * 1-5") M=us;; esac
+          [ "${{ github.event_name }}" = "push" ] && M=both
+          echo "market=$M" >> $GITHUB_OUTPUT
       - name: Render
-        run: python scripts/am_stories.py render
+        run: python scripts/am_stories.py render ${{ steps.m.outputs.market }}
       - name: Commit images
         id: c
         run: |

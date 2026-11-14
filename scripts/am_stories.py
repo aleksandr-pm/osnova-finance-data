@@ -1,7 +1,7 @@
 """Утренние сторис для Instagram @aleksandr_markets: итоги торгов ОАЭ и США. v1 (14.11.2026)
 
 python scripts/am_stories.py probe     проверить источники данных, итог в am/probe.json
-python scripts/am_stories.py render    собрать данные и нарисовать сторис в am/out/, план в am/out/today.json
+python scripts/am_stories.py render uae|us|both   собрать данные и нарисовать сторис в am/out/, план в am/out/today.json
 python scripts/am_stories.py publish   опубликовать сторис из am/out/today.json (нужен коммит картинок до запуска)
 
 Данные:
@@ -420,40 +420,56 @@ def probe():
     log(json.dumps(res, ensure_ascii=False, default=str)[:3000])
 
 
-def render():
+def render(market="both"):
+    """market: uae (после закрытия ОАЭ), us (после закрытия США), both (проверка)."""
     now = dt.datetime.now(DXB)
     os.makedirs(OUT, exist_ok=True)
     plan = {"made_at": now.isoformat(), "stories": []}
-    # ОАЭ
-    try:
-        u = uae_data()
-        uday = prev_uae_day(now)
-        peg_days = (uday - PEG_START).days
-        cells = [(l, v, c, n) for l, v, c, n in extra_cells(extras_uae())] + [("USD/AED", "3,6725", f"{num(peg_days, 0)} дней без изменений", False)]
-        img = story("navy", "uae", uday, "ИТОГИ ТОРГОВ · ОАЭ", date_ru(uday), u["indices"], u["gain"], u["lose"], cells,
-                    f"Закрытие торгов ADX и DFM, {uday.strftime('%d.%m.%Y')}. Лидеры среди компаний дороже 5 млрд AED")
-        p = f"am/out/{uday.isoformat()}_uae.png"
-        img.save(os.path.join(ROOT, p))
-        plan["stories"].append({"id": f"uae-{uday.isoformat()}", "path": p})
-        log(f"ОАЭ: {p}, бумаг в выборке {u['universe']}, индексов {len(u['indices'])}")
-    except Exception as e:  # noqa: BLE001
-        log("ОАЭ не собрана:", e)
-    # США
-    try:
-        s = us_data()
-        sday = dt.date.fromisoformat(s["day"])
-        if (now.date() - sday).days > 4:
-            raise RuntimeError(f"данные устарели: {sday}")
-        img = story("stone", "us", sday, "ИТОГИ ТОРГОВ · США", date_ru(sday), s["indices"], s["gain"], s["lose"], extra_cells(s["extra"]),
-                    f"Закрытие торгов NYSE и Nasdaq, {sday.strftime('%d.%m.%Y')}. Лидеры среди компаний S&P 500")
-        p = f"am/out/{sday.isoformat()}_us.png"
-        img.save(os.path.join(ROOT, p))
-        plan["stories"].append({"id": f"us-{sday.isoformat()}", "path": p})
-        log(f"США: {p}, бумаг в выборке {s['universe']}")
-    except Exception as e:  # noqa: BLE001
-        log("США не собраны:", e)
+    last_p = os.path.join(AM, "last_close.json")
+    last = json.load(open(last_p, encoding="utf-8")) if os.path.exists(last_p) else {}
+    if market in ("uae", "both"):
+        try:
+            # после закрытия (15:00 Дубай) берём сегодняшний день; в проверочном режиме и в выходные прошлый торговый
+            uday = now.date() if (market == "uae" and now.weekday() < 5 and now.hour >= 15) else prev_uae_day(now)
+            if market == "uae" and uday != now.date():
+                raise RuntimeError("сегодня в ОАЭ не торговый день или рано")
+            u = uae_data()
+            key = [round(x[1], 2) for x in u["indices"]]
+            if market == "uae" and last.get("uae_key") == key and last.get("uae_day") != uday.isoformat():
+                raise RuntimeError("индексы те же, что в прошлый раз: похоже, биржа не работала (праздник)")
+            peg_days = (uday - PEG_START).days
+            cells = [(l, v, c, n) for l, v, c, n in extra_cells(extras_uae())] + [("USD/AED", "3,6725", f"{num(peg_days, 0)} дней без изменений", False)]
+            img = story("navy", "uae", uday, "ИТОГИ ТОРГОВ · ОАЭ", date_ru(uday), u["indices"], u["gain"], u["lose"], cells,
+                        f"Закрытие торгов ADX и DFM, {uday.strftime('%d.%m.%Y')}. Лидеры среди компаний дороже 5 млрд AED")
+            p = f"am/out/{uday.isoformat()}_uae.png"
+            img.save(os.path.join(ROOT, p))
+            plan["stories"].append({"id": f"uae-{uday.isoformat()}", "path": p})
+            if market == "uae":
+                last.update(uae_key=key, uae_day=uday.isoformat())
+            log(f"ОАЭ: {p}, бумаг в выборке {u['universe']}, индексов {len(u['indices'])}")
+        except Exception as e:  # noqa: BLE001
+            log("ОАЭ не собрана:", e)
+    if market in ("us", "both"):
+        try:
+            s = us_data()
+            sday = dt.date.fromisoformat(s["day"])
+            utc_today = dt.datetime.now(dt.timezone.utc).date()
+            if market == "us" and sday != utc_today:
+                raise RuntimeError(f"последний день в данных {sday}, сегодня {utc_today}: торгов не было или данные не обновились")
+            if (now.date() - sday).days > 4:
+                raise RuntimeError(f"данные устарели: {sday}")
+            img = story("stone", "us", sday, "ИТОГИ ТОРГОВ · США", date_ru(sday), s["indices"], s["gain"], s["lose"], extra_cells(s["extra"]),
+                        f"Закрытие торгов NYSE и Nasdaq, {sday.strftime('%d.%m.%Y')}. Лидеры среди компаний S&P 500")
+            p = f"am/out/{sday.isoformat()}_us.png"
+            img.save(os.path.join(ROOT, p))
+            plan["stories"].append({"id": f"us-{sday.isoformat()}", "path": p})
+            log(f"США: {p}, бумаг в выборке {s['universe']}")
+        except Exception as e:  # noqa: BLE001
+            log("США не собраны:", e)
     with open(os.path.join(OUT, "today.json"), "w", encoding="utf-8") as f:
         json.dump(plan, f, ensure_ascii=False, indent=1)
+    with open(last_p, "w", encoding="utf-8") as f:
+        json.dump(last, f, ensure_ascii=False, indent=1)
     # чистим картинки старше 21 дня
     cutoff = (now.date() - dt.timedelta(days=21)).isoformat()
     for fn in os.listdir(OUT):
@@ -560,4 +576,6 @@ def publish():
 
 if __name__ == "__main__":
     mode = sys.argv[1] if len(sys.argv) > 1 else "render"
-    sys.exit({"probe": probe, "render": render, "publish": publish}[mode]() or 0)
+    if mode == "render":
+        sys.exit(render(sys.argv[2] if len(sys.argv) > 2 else "both") or 0)
+    sys.exit({"probe": probe, "publish": publish}[mode]() or 0)
