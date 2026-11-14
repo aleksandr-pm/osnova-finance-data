@@ -479,11 +479,29 @@ def save_state(st):
         json.dump(st, f, ensure_ascii=False, indent=1)
 
 
+BUSINESS_ID = "167573054295268"  # бизнес-портфолио «Александр Максименко»
+IG_USERNAME = "aleksandr_markets"
+
+
+def find_uid(token):
+    """ID аккаунта по нику через бизнес-портфолио, если секрет IG_USER_ID_AM не задан."""
+    for edge in ("owned_instagram_accounts", "instagram_accounts"):
+        try:
+            r = requests.get(f"{IG}/{BUSINESS_ID}/{edge}", params={"fields": "id,username", "access_token": token}, timeout=30)
+            for a in r.json().get("data", []):
+                if a.get("username") == IG_USERNAME:
+                    return a["id"]
+        except Exception:  # noqa: BLE001
+            pass
+    return ""
+
+
 def publish():
     dry = os.environ.get("DRY_RUN", "").lower() in ("yes", "1", "true")
     live = os.path.exists(os.path.join(AM, "LIVE"))
     token = os.environ.get("IG_TOKEN_AM") or os.environ.get("IG_TOKEN", "")
-    uid = os.environ.get("IG_USER_ID_AM", "")
+    uid = os.environ.get("IG_USER_ID_AM", "") or (find_uid(token) if token else "")
+    log(f"Аккаунт {IG_USERNAME}: " + ("найден" if uid else "не найден для этого токена"))
     sha = os.environ.get("PUBLISH_SHA") or os.environ.get("GITHUB_SHA", "main")
     plan = json.load(open(os.path.join(OUT, "today.json"), encoding="utf-8"))
     st = load_state()
