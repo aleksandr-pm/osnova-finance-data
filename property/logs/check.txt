@@ -1,7 +1,10 @@
 me: 200 {"id": "122108218599540159", "name": "osnova-publisher"}
-me/businesses: 400 {"error": {"message": "(#100) Missing Permission", "type": "OAuthException", "code": 100, "fbtrace_id": "AWoLz7YuBhx3kNYUXi8SV0a"}}
+me/businesses: 400 {"error": {"message": "(#100) Missing Permission", "type": "OAuthException", "code": 100, "fbtrace_id": "AyRFEFOP6wSncU0nT_h1Cg4"}}
+portfolio/owned_instagram_accounts: 403 {"error": {"message": "(#200) Requires business_management permission to manage the object", "code": 200, "type": "OAuthException", "fbtrace_id": "AMOcwctnEoSagmZxUl7Z7IC"}}
+portfolio/instagram_accounts: 403 {"error": {"message": "(#200) Requires business_management permission to manage the object", "code": 200, "type": "OAuthException", "fbtrace_id": "AjfutI0_xRmc7Hs1YcOXm_c"}}
+portfolio/client_instagram_assets: 400 {"error": {"message": "(#10) Requires business_management permission to manage the object", "type": "OAuthException", "code": 10, "fbtrace_id": "A1L0A6ZZTtucViW_XJx9cp7"}}
 me/accounts: 200 {"data": []}
-business_discovery: 400 {"error": {"message": "(#10) Application does not have permission for this action", "type": "OAuthException", "code": 10, "fbtrace_id": "AjPyH7YpwsK2IQYjndfK0-I"}}
+business_discovery: 400 {"error": {"message": "(#10) Application does not have permission for this action", "type": "OAuthException", "code": 10, "fbtrace_id": "A-uhpYMz6CGcGrHiJgO49G8"}}
 Кандидаты: {}
 НЕТ ДОСТУПА к @osnova.property с этим токеном: аккаунт не добавлен в портфолио Meta или системному пользователю не выдан доступ «Контент»
-exit=1 2026-11-14T18:43:10.713011+00:00
+exit=1 2026-11-14T18:43:55.135017+00:00
