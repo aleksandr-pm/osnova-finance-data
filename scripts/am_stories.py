@@ -37,6 +37,7 @@ TV_UAE = "https://scanner.tradingview.com/uae/scan"
 TV_GLOBAL = "https://scanner.tradingview.com/global/scan"
 UA = {"User-Agent": "Mozilla/5.0", "Content-Type": "application/json"}
 MIN_CAP_AED = 5e9
+PEG_START = dt.date(1997, 11, 1)  # привязка дирхама 3,6725 официально с ноября 1997 (точный день не публикуется, считаем с 1-го)
 EXCLUDE = {"ORDS", "GFH", "SALAM_BAH", "ALSALAMBAH", "NIND", "NDAQ"}  # иностранные эмитенты на ADX/DFM (правило инструкции)
 
 # Индексы ОАЭ: (символ TradingView, подпись). Символ индекса недвижимости уточняется в probe.
@@ -369,7 +370,7 @@ def story(theme, bg_prefix, day, kick, date, indices, gain, lose, cells, source)
             d.rectangle([x, y, x + gw, y + 150], fill=t["tile"])
             T(d, (x + 18, y + 20), nm, font(600, 28), t["mut"])
             T(d, (x + 18, y + 64), val, fit(d, val, 700, 44, gw - 30), t["tx"])
-            T(d, (x + 18, y + 112), ch, font(600, 30), t["dntx"] if neg else t["uptx"])
+            T(d, (x + 18, y + 112), ch, fit(d, ch, 600, 30, gw - 30), t["dntx"] if neg else t["uptx"])
     disc = "Информационные материалы, не является инвестиционной рекомендацией"
     T(d, (M, H - 250), source, fit(d, source, 400, 26, W - 2 * M), t["mut"])
     T(d, (M, H - 212), disc, fit(d, disc, 400, 26, W - 2 * M), t["mut"])
@@ -427,7 +428,8 @@ def render():
     try:
         u = uae_data()
         uday = prev_uae_day(now)
-        cells = [(l, v, c, n) for l, v, c, n in extra_cells(extras_uae())] + [("USD/AED", "3,6725", "привязка", False)]
+        peg_days = (uday - PEG_START).days
+        cells = [(l, v, c, n) for l, v, c, n in extra_cells(extras_uae())] + [("USD/AED", "3,6725", f"{num(peg_days, 0)} дней без изменений", False)]
         img = story("navy", "uae", uday, "ИТОГИ ТОРГОВ · ОАЭ", date_ru(uday), u["indices"], u["gain"], u["lose"], cells,
                     f"Закрытие торгов ADX и DFM, {uday.strftime('%d.%m.%Y')}. Лидеры среди компаний дороже 5 млрд AED")
         p = f"am/out/{uday.isoformat()}_uae.png"
