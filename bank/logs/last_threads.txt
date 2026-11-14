@@ -1,21 +1,14 @@
-threads: mkt_country_cap_id (companies, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/e519716d7218/bank/cards_markets/mkt_country_cap_id.jpg
+threads: duel_ny_gdp_pcap_cd_ru_cn (economy, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/8f6001dae5ba/bank/covers/duel_ny_gdp_pcap_cd_ru_cn.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/8f6001dae5ba/bank/cards/duel_ny_gdp_pcap_cd_ru_cn.jpg
 ---
-Самые дорогие компании Индонезии, ноябрь 2026:
-1. 🇮🇩 Bank Central Asia · $36,6 млрд
-2. 🇮🇩 Bank Rakyat Indonesia · $23,8 млрд
-3. 🇮🇩 PT DCI Indonesia Tbk · $20,7 млрд
-4. 🇮🇩 Bank Mandiri · $19,4 млрд
-5. 🇮🇩 Bayan Resources · $16,3 млрд
-6. 🇮🇩 PT Amman Mineral Internasional Tbk · $14,7 млрд
-7. 🇮🇩 Astra International · $11,1 млрд
-8. 🇮🇩 Telkom Indonesia · $10,9 млрд
-9. 🇮🇩 Indoritel · $7,6 млрд
-10. 🇮🇩 Bank Negara Indonesia · $7,1 млрд
-№1: Bank Central Asia, $36,6 млрд.
+Ввп на человека: Россия и Китай, 2000-2025:
+1. 🇷🇺 Россия · $17 547, в 9,9 раза
+2. 🇨🇳 Китай · $13 862, в 14,3 раза
+Китай: ВВП на человека вырос в 14,3 раза с 2000 года.
 Больше в Telegram @osnovafin
 ---
-Threads: текстом
-Ответ со ссылкой: 18123319270944985
-Опубликовано: 18108958277365503. Осталось новых рейтингов: 159
-exit=0 2026-11-14T06:21:48Z
+Threads: с картинкой
+Ответ со ссылкой: 18120356402049796
+Опубликовано: 18351067483270138. Осталось новых рейтингов: 181
+exit=0 2026-11-14T17:13:40Z
