@@ -8735,58 +8735,6 @@
   "card": "cards_markets/bil_country_gb.png"
  },
  {
-  "id": "bil_country_ae",
-  "block": "billionaires",
-  "title": "Самые богатые люди ОАЭ",
-  "unit": "usd",
-  "year": 2026,
-  "source": "Forbes",
-  "source_full": "Forbes Real-Time Billionaires",
-  "note": "на 9 ноября 2026",
-  "countries": 3,
-  "top": [
-   {
-    "iso2": "AE",
-    "name": "Павел Дуров",
-    "value": 6620000000.0,
-    "flag": "🇦🇪",
-    "text": "$6,6 млрд",
-    "rank": 1
-   },
-   {
-    "iso2": "AE",
-    "name": "Абдулла аль-Гурейр с семьёй",
-    "value": 5174824000.0,
-    "flag": "🇦🇪",
-    "text": "$5,2 млрд",
-    "rank": 2
-   },
-   {
-    "iso2": "AE",
-    "name": "Абдулла Аль-Футтаим с семьёй",
-    "value": 4652956000.0,
-    "flag": "🇦🇪",
-    "text": "$4,7 млрд",
-    "rank": 3
-   }
-  ],
-  "cis": [],
-  "hook": [
-   [
-    "№1: Павел Дуров,",
-    false
-   ],
-   [
-    "$6,6 млрд",
-    true
-   ]
-  ],
-  "hook_text": "№1: Павел Дуров, $6,6 млрд",
-  "type": "bars",
-  "period": "ноябрь 2026",
-  "card": "cards_markets/bil_country_ae.png"
- },
- {
   "id": "bil_country_kz",
   "block": "billionaires",
   "title": "Самые богатые люди Казахстана",

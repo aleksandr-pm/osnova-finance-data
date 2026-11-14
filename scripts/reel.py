@@ -110,7 +110,11 @@ def fmt(v, unit):
         if v >= 1e6:
             return f"{k(v / 1e6)}{NB}млн т"
         return f"{k(v / 1e3)}{NB}тыс. т"
+    if unit == "usd_pc":
+        return f"${k(v)}"
     if unit == "num":
+        if v >= 1e9:
+            return f"{k(v / 1e9)}{NB}млрд чел."
         if v >= 1e6:
             return f"{k(v / 1e6)}{NB}млн чел."
         return f"{k(v / 1e3)}{NB}тыс. чел."
@@ -375,7 +379,7 @@ def save_state(st):
 
 
 ORDER = ["companies", "billionaires", "economy", "companies", "agro", "billionaires", "cis", "companies", "money"]
-FORMATS = ["bars", "line", "bars", "compare", "bars", "race", "bars", "donut"]  # чередование видов роликов
+FORMATS = ["line", "race", "line", "compare", "line", "donut", "race"]  # 14.11: линии и гонки главные, рейтинги-полосы Instagram отклоняет
 
 
 def compare_k(r):

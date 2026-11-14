@@ -160,8 +160,11 @@ def body_bars(d, r, t, y):
             d.text((x0 + 20, cy), name, font=f_name, fill=t["lead_t"] if lead else t["bar_t"], anchor="lm")
         else:
             room = x_val - 28 - (x0 + bw + 18)
-            while tw(d, name, f_name) > room and f_name.size > 20:
+            while tw(d, name, f_name) > room and f_name.size > 22:
                 f_name = font(f_name.size - 2, 500)
+            # 14.11: длинное имя наезжало на сумму. Не влезает и мелким шрифтом: обрезка с многоточием
+            while tw(d, name, f_name) > room and len(name) > 4:
+                name = name[:-2].rstrip() + "…"
             d.text((x0 + bw + 18, cy), name, font=f_name, fill=t["out_t"], anchor="lm")
         d.text((W - M, cy), row["text"], font=vf,
                fill=t["lead_v"] if lead else t["value"], anchor="rm")

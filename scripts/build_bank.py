@@ -491,6 +491,34 @@ WDI_TRENDS = [
     ("FI.RES.TOTL.CD", "cis", "Резервы, включая золото: страны бывшего СССР",
      "{G}: резервы выросли [v] с {S} года", "usd", ["RU", "KZ", "UZ", "AZ", "BY", "GE"]),
 ]
+# 14.11: дуэли стран на линиях (просьба Александра: «одна страна против другой, как растёт ВВП»)
+# код, блок, заголовок (что сравниваем), единица, страны (2-4, первая обычно лидер)
+DUELS = [
+    ("NY.GDP.MKTP.CD", "economy", "ВВП", "usd", ["US", "CN"]),
+    ("NY.GDP.MKTP.CD", "economy", "ВВП", "usd", ["JP", "CN"]),
+    ("NY.GDP.MKTP.CD", "economy", "ВВП", "usd", ["GB", "IN"]),
+    ("NY.GDP.MKTP.CD", "economy", "ВВП", "usd", ["JP", "DE"]),
+    ("NY.GDP.MKTP.CD", "economy", "ВВП", "usd", ["RU", "BR", "CA"]),
+    ("NY.GDP.MKTP.CD", "economy", "ВВП", "usd", ["SA", "AE", "QA"]),
+    ("NY.GDP.MKTP.CD", "economy", "ВВП", "usd", ["TR", "RU"]),
+    ("NY.GDP.MKTP.CD", "cis", "ВВП", "usd", ["KZ", "UZ"]),
+    ("NY.GDP.PCAP.CD", "economy", "ВВП на человека", "usd_pc", ["RU", "CN"]),
+    ("NY.GDP.PCAP.CD", "economy", "ВВП на человека", "usd_pc", ["PL", "RU"]),
+    ("NY.GDP.PCAP.CD", "economy", "ВВП на человека", "usd_pc", ["JP", "KR"]),
+    ("NY.GDP.PCAP.CD", "economy", "ВВП на человека", "usd_pc", ["AE", "SA"]),
+    ("NY.GDP.PCAP.CD", "cis", "ВВП на человека", "usd_pc", ["RU", "KZ", "BY"]),
+    ("NY.GDP.PCAP.CD", "cis", "ВВП на человека", "usd_pc", ["GE", "AM", "AZ"]),
+    ("NY.GDP.PCAP.CD", "cis", "ВВП на человека", "usd_pc", ["UZ", "KG", "TJ"]),
+    ("NE.EXP.GNFS.CD", "economy", "экспорт", "usd", ["US", "CN"]),
+    ("NE.EXP.GNFS.CD", "economy", "экспорт", "usd", ["MX", "CA"]),
+    ("NE.EXP.GNFS.CD", "economy", "экспорт", "usd", ["VN", "TH"]),
+    ("FI.RES.TOTL.CD", "money", "резервы", "usd", ["CN", "JP"]),
+    ("FI.RES.TOTL.CD", "money", "резервы", "usd", ["CH", "RU", "IN"]),
+    ("SP.POP.TOTL", "economy", "население", "num", ["CN", "IN"]),
+    ("SP.POP.TOTL", "economy", "население", "num", ["US", "ID"]),
+    ("BX.TRF.PWKR.CD.DT", "cis", "переводы мигрантов", "usd", ["UZ", "TJ", "KG"]),
+    ("CM.MKT.LCAP.CD", "money", "капитализация фондового рынка", "usd", ["US", "CN", "JP"]),
+]
 FAO_TRENDS = {
     15: "пшеницы", 56: "кукурузы", 27: "риса", 236: "соевых бобов", 656: "кофе",
     661: "какао-бобов", 257: "пальмового масла", 267: "подсолнечника", 1058: "курятины",
@@ -501,6 +529,83 @@ FAO_SHARES = {
     661: "какао-бобов", 162: "сахара-сырца", 268: "подсолнечного масла",
     257: "пальмового масла", 564: "вина", 486: "бананов", 572: "авокадо", 767: "хлопка",
 }
+
+
+def make_duel(code, block, what, unit, isos, by_year, start=2000):
+    """Линии 2-4 стран за период. Крючок: год, когда одна страна обогнала другую, иначе кто вырос сильнее."""
+    years = [y for y in sorted(by_year) if y >= start and all(k in by_year[y] for k in isos)]
+    if len(years) < 10 or years[-1] < MIN_YEAR:
+        return None
+    s0, y_end = years[0], years[-1]
+    series = []
+    for k in isos:
+        pts = [[y, by_year[y][k]] for y in range(s0, y_end + 1) if k in by_year.get(y, {})]
+        if pts[0][1] <= 0:
+            return None
+        ratio = pts[-1][1] / pts[0][1]
+        series.append({"iso2": k, "name": ru_name(k), "flag": flag(k), "points": pts, "ratio": ratio,
+                       "start": pts[0][0], "value": pts[-1][1], "text": fmt_value(pts[-1][1], unit),
+                       "growth": growth_text(ratio) if ratio > 1 else ""})
+    names = " и ".join(x["name"] for x in series) if len(series) == 2 else ", ".join(x["name"] for x in series)
+    title = f"{what.capitalize()}: {names}"
+    # обгон: пара (a, b), где b был ниже a в начале и выше в конце
+    hook, hl = None, None
+    for a in series:
+        for b in series:
+            if a is b:
+                continue
+            va = dict((y, v) for y, v in a["points"]); vb = dict((y, v) for y, v in b["points"])
+            if vb.get(s0, 0) < va.get(s0, 0) and vb.get(y_end, 0) > va.get(y_end, 0):
+                cross = next((y for y in years if vb.get(y, 0) > va.get(y, 0)), None)
+                if cross and (hook is None or cross < hook[2]):
+                    hook, hl = (b, a, cross), b
+    if hook:
+        b, a, cross = hook
+        hook_parts = [[f"{b['name']} обогнал{'а' if b['name'][-1] in 'аяь' else ''} {gen(a['name'])}:", False], [f"{cross} год", True]]
+        hook_text = f"{b['name']} обогнал{'а' if b['name'][-1] in 'аяь' else ''} {gen(a['name'])} в {cross} году"
+    else:
+        hl = max(series, key=lambda x: x["ratio"])
+        if hl["ratio"] <= 1:
+            return None
+        hook_parts = [[f"{hl['name']}: {what} вырос" + ("ло" if what in ("население",) else "") + "", False], [hl["growth"], True], [f"с {s0} года", False]]
+        hook_text = " ".join(x[0] for x in hook_parts)
+    hl["hl"] = True
+    series.sort(key=lambda x: x["value"], reverse=True)
+    for i, r in enumerate(series, 1):
+        r["rank"] = i
+    top = [dict(x, text=f"{x['text']}" + (f", рост {x['growth']}" if x["growth"] else "")) for x in series]
+    rid = ("duel_" + code.replace(".", "_") + "_" + "_".join(isos)).lower()
+    return {"id": rid, "block": block, "type": "line", "title": title, "unit": unit, "year": int(y_end),
+            "start": int(s0), "source": "World Bank", "source_full": "World Bank, World Development Indicators",
+            "note": "", "countries": len(series), "series": series, "series_all": series, "top": top, "cis": [],
+            "hook": hook_parts, "hook_text": hook_text, "duel": True}
+
+
+GEN = {"США": "США", "Китай": "Китай", "Япония": "Японию", "Великобритания": "Великобританию", "Германия": "Германию",
+       "Россия": "Россию", "Бразилия": "Бразилию", "Канада": "Канаду", "Саудовская Аравия": "Саудовскую Аравию",
+       "Турция": "Турцию", "Казахстан": "Казахстан", "Узбекистан": "Узбекистан", "Польша": "Польшу",
+       "Южная Корея": "Южную Корею", "Беларусь": "Беларусь", "Грузия": "Грузию", "Армения": "Армению",
+       "Азербайджан": "Азербайджан", "Киргизия": "Киргизию", "Таджикистан": "Таджикистан", "Мексика": "Мексику",
+       "Вьетнам": "Вьетнам", "Таиланд": "Таиланд", "Швейцария": "Швейцарию", "Индия": "Индию",
+       "Индонезия": "Индонезию", "ОАЭ": "ОАЭ", "Катар": "Катар"}
+
+
+def gen(name):
+    return GEN.get(name, name)
+
+
+def build_duels(cache, real=None):
+    out = []
+    for code, block, what, unit, isos in DUELS:
+        if code not in cache:
+            cache[code] = wdi_series(code, real or wdi_countries())
+        d = make_duel(code, block, what, unit, isos, cache[code])
+        if d:
+            out.append(d)
+            log(f"  {d['id']}: {d['start']}-{d['year']}, {d['hook_text']}")
+        else:
+            log(f"  дуэль {code} {isos}: мало данных")
+    return out
 
 
 def build_trends_wdi(cache):
@@ -602,6 +707,7 @@ def main():
     rankings += build_wdi()
     rankings += build_fao()
     rankings += build_trends_wdi(WDI_CACHE)
+    rankings += build_duels(WDI_CACHE)
     log(f"Итого рейтингов: {len(rankings)}")
     for i, r in enumerate(rankings):
         make_hook(r)

@@ -34,6 +34,13 @@ def fmt_value(v, unit):
         if a >= 1e6:
             return f"${_scaled(v / 1e6)}{NB}млн"
         return f"${_scaled(v / 1e3)}{NB}тыс."
+    if unit in ("people", "num"):
+        a = abs(v)
+        if a >= 1e9:
+            return f"{_scaled(v / 1e9)}{NB}млрд{NB}чел."
+        if a >= 1e6:
+            return f"{_scaled(v / 1e6)}{NB}млн{NB}чел."
+        return f"{_num(v, 0)}{NB}чел."
     if unit == "t":
         a = abs(v)
         if a >= 1e9:

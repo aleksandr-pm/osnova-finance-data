@@ -197,7 +197,7 @@ def billionaires():
         by.setdefault(r[1], []).append(r[:3])
     for c in ("US", "CN", "IN", "RU", "DE", "FR", "GB", "AE", "KZ", "CA", "HK", "TW", "IT", "BR", "SE", "CH", "JP", "AU", "IL", "SA", "KR"):
         rows = by.get(c, [])
-        if len(rows) >= (3 if c in ("KZ", "AE", "SA") else 10):
+        if len(rows) >= (5 if c in ("KZ", "AE", "SA") else 10):  # 14.11: карточка из 3 строк выглядела пустой
             recs.append(record(f"bil_country_{c.lower()}", "billionaires", f"Самые богатые люди {RU.get(c, c)}", rows, "usd",
                                src, full, "№1: {L}, [v]"))
     for ind, ru in FORBES_IND.items():
