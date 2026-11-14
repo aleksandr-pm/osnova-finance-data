@@ -2,11 +2,7 @@ WDI: стран 217
   wdi_ny_gdp_mktp_cd_desc: 2025, стран 186
   wdi_ny_gdp_mktp_pp_cd_desc: 2025, стран 185
   wdi_ny_gdp_pcap_cd_desc: 2025, стран 151
-  ошибка HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=120) https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=20000&date=2000:2025
-  ошибка HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=120) https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=20000&date=2000:2025
-  ошибка HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=120) https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=20000&date=2000:2025
-  ошибка HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=120) https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=20000&date=2000:2025
-  WDI NY.GDP.MKTP.KD.ZG: нет свежего года (None)
+  wdi_ny_gdp_mktp_kd_zg_desc: 2025, стран 151
   wdi_sl_uem_totl_zs_desc: 2025, стран 154
   wdi_sl_uem_totl_zs_asc: 2025, стран 154
   wdi_ny_gns_ictr_zs_desc: 2024, стран 129
@@ -27,10 +23,7 @@ WDI: стран 217
   cis_ny_gdp_pcap_cd: 2025, стран 15
   cis_ny_gdp_mktp_cd: 2025, стран 15
   cis_fp_cpi_totl_zg: 2025, стран 14
-  ошибка HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=120) https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=20000&date=2000:2025
-  ошибка HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=120) https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=20000&date=2000:2025
-  ошибка HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=120) https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=20000&date=2000:2025
-  CIS NY.GDP.MKTP.KD.ZG: нет свежего года (None)
+  cis_ny_gdp_mktp_kd_zg: 2025, стран 15
   cis_bx_trf_pwkr_dt_gd_zs: 2025, стран 13
   cis_bx_klt_dinv_cd_wd: 2025, стран 15
   cis_fi_res_totl_cd: 2025, стран 13
@@ -216,7 +209,7 @@ FAO TCL: строк после фильтра 55124
   duel_sp_pop_totl_us_id: 2000-2025, Индонезия: население выросло на 32% с 2000 года
   duel_bx_trf_pwkr_cd_dt_uz_tj_kg: 2005-2024, Узбекистан: переводы мигрантов выросли в 16,2 раза с 2005 года
   дуэль CM.MKT.LCAP.CD ['US', 'CN', 'JP']: мало данных
-Итого рейтингов: 145
-Обложки: 145 из 145
-По блокам: agro 92, cis 16, economy 28, money 9
-exit=0 2026-11-14T16:31:48Z
+Итого рейтингов: 147
+Обложки: 147 из 147
+По блокам: agro 92, cis 17, economy 29, money 9
+exit=0 2026-11-14T16:47:26Z
