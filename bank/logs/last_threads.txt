@@ -1,22 +1,21 @@
-threads: fao_prod_15 (agro, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/96a387902e9f/bank/covers/fao_prod_15.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/96a387902e9f/bank/cards/fao_prod_15.jpg
+threads: mkt_country_cap_id (companies, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/e519716d7218/bank/cards_markets/mkt_country_cap_id.jpg
 ---
-Крупнейшие производители пшеницы, 2024:
-1. 🇨🇳 Китай · 140 млн т
-2. 🇮🇳 Индия · 113 млн т
-3. 🇷🇺 Россия · 82,6 млн т
-4. 🇺🇸 США · 53,7 млн т
-5. 🇨🇦 Канада · 35,9 млн т
-6. 🇦🇺 Австралия · 34,1 млн т
-7. 🇵🇰 Пакистан · 31,8 млн т
-8. 🇫🇷 Франция · 26,6 млн т
-9. 🇺🇦 Украина · 22,4 млн т
-10. 🇹🇷 Турция · 20,8 млн т
-Казахстан на 11-м, Узбекистан на 22-м месте.
+Самые дорогие компании Индонезии, ноябрь 2026:
+1. 🇮🇩 Bank Central Asia · $36,6 млрд
+2. 🇮🇩 Bank Rakyat Indonesia · $23,8 млрд
+3. 🇮🇩 PT DCI Indonesia Tbk · $20,7 млрд
+4. 🇮🇩 Bank Mandiri · $19,4 млрд
+5. 🇮🇩 Bayan Resources · $16,3 млрд
+6. 🇮🇩 PT Amman Mineral Internasional Tbk · $14,7 млрд
+7. 🇮🇩 Astra International · $11,1 млрд
+8. 🇮🇩 Telkom Indonesia · $10,9 млрд
+9. 🇮🇩 Indoritel · $7,6 млрд
+10. 🇮🇩 Bank Negara Indonesia · $7,1 млрд
+№1: Bank Central Asia, $36,6 млрд.
 Больше в Telegram @osnovafin
 ---
 Threads: текстом
-Ответ со ссылкой: 18601598890067753
-Опубликовано: 17922822924452011. Осталось новых рейтингов: 160
-exit=0 2026-11-13T17:25:51Z
+Ответ со ссылкой: 18123319270944985
+Опубликовано: 18108958277365503. Осталось новых рейтингов: 159
+exit=0 2026-11-14T06:21:48Z
