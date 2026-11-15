@@ -142,7 +142,7 @@ def logos():
         for site in ("https://commons.wikimedia.org/w/api.php", "https://en.wikipedia.org/w/api.php"):
             time.sleep(4)
             try:
-                res = requests.get(site, params={"action": "query", "list": "search", "srsearch": page + " logo", "srnamespace": 6, "srlimit": 5,
+                res = requests.get(site, params={"action": "query", "list": "search", "srsearch": (page if key != "oia" else "Oman Investment Authority OIA") + " logo", "srnamespace": 6, "srlimit": 5,
                                                  "format": "json"}, headers=H, timeout=30).json()["query"]["search"]
                 hits = [h["title"] for h in res if "logo" in h["title"].lower()]
                 if not hits:
