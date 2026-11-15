@@ -40,5 +40,11 @@
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Dubai_Investment_Fund_Logo.png/960px-Dubai_Investment_Fund_Logo.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "bytes": 33867,
   "via": "search"
- }
+ },
+ "icd": {
+  "file": "Investment Corporation of Dubai logo.png",
+  "url": "https://upload.wikimedia.org/wikipedia/en/8/82/Investment_Corporation_of_Dubai_logo.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "bytes": 3222
+ },
+ "oia": "ошибка: 'imageinfo'"
 }
