@@ -135,6 +135,30 @@ def logos():
             rep[key] = {"file": fn, "url": url, "bytes": len(img.content)}
         except Exception as e:  # noqa: BLE001
             rep[key] = f"ошибка: {e}"
+    # запасной путь: поиск файла логотипа в Commons и en.wikipedia
+    for key, page in LOGO_PAGES.items():
+        if isinstance(rep.get(key), dict):
+            continue
+        for site in ("https://commons.wikimedia.org/w/api.php", "https://en.wikipedia.org/w/api.php"):
+            time.sleep(4)
+            try:
+                res = requests.get(site, params={"action": "query", "list": "search", "srsearch": page + " logo", "srnamespace": 6, "srlimit": 5,
+                                                 "format": "json"}, headers=H, timeout=30).json()["query"]["search"]
+                hits = [h["title"] for h in res if "logo" in h["title"].lower()]
+                if not hits:
+                    continue
+                info = requests.get(site, params={"action": "query", "titles": hits[0], "prop": "imageinfo", "iiprop": "url", "iiurlwidth": 800,
+                                                  "format": "json"}, headers=H, timeout=30).json()
+                ii = list(info["query"]["pages"].values())[0]["imageinfo"][0]
+                url = ii.get("thumburl") or ii["url"]
+                img = requests.get(url, headers=H, timeout=30)
+                ext = url.split("?")[0].rsplit(".", 1)[-1].lower()
+                with open(os.path.join(out, f"{key}.{ext}"), "wb") as f:
+                    f.write(img.content)
+                rep[key] = {"file": hits[0], "url": url, "bytes": len(img.content), "via": "search"}
+                break
+            except Exception as e:  # noqa: BLE001
+                rep[key] = f"поиск: {e}"
     json.dump(rep, open(rp, "w"), ensure_ascii=False, indent=1)
     print(json.dumps(rep, ensure_ascii=False, indent=1))
 
