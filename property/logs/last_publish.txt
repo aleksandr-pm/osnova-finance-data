@@ -1,17 +1,20 @@
-Слот reel: в очереди 6 из 9; LIVE=нет
-Следующий: r_rent_business_bay (media/r_rent_business_bay.mp4)
+Слот post: в очереди 3 из 9; LIVE=да
+Следующий: p_yield_ranking (media/p_yield_ranking.jpg)
 ---
-Business Bay office listings ask 202 AED per sq ft a year. Tenants sign at 155.
+DIP offices yield 13.1% gross. Sheikh Zayed Road yields 2.9%.
 
-Asked: 202 AED per sq ft a year, 441 listings
-Paid: 155 AED per sq ft a year, Ejari new leases 2026
-Gap: 23%
+Ejari rent divided by the price buyers paid for ready offices, 2026:
+Business Bay 8.0% (1,949 paid, 155 rent)
+JLT 7.5%
+Downtown 6.6%
+Higher yield usually means older stock or weaker resale, so check the number of ready sales first.
 
-DM RENT and get asked vs paid rents for 17 office districts and 9 warehouse areas.
+DM YIELD and get the full table for 12 office districts.
 
-Source: portal listings Nov 2026 · Ejari new leases, 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
+Source: DLD transactions / Ejari, 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
 
 #dubaioffice #dubaicommercialproperty #dubairealestate #businessbay #dubaiinvestment #officespace
 ---
-Без публикации: нет файла property/LIVE
-exit=0 2026-11-15T08:28:56.869761+00:00
+Контейнер 17923532661242274, картинка https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/a679112acea3aa95317b8512bcb5f849a4277fdd/property/media/p_yield_ranking.jpg
+Опубликовано: p_yield_ranking → 17922568146243499
+exit=0 2026-11-15T09:50:55.649334+00:00
