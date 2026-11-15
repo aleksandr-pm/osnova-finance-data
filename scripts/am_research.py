@@ -122,13 +122,18 @@ def logos():
                               headers=H, timeout=30).json()["parse"]["wikitext"]["*"]
             m = re.search(r"\|\s*logo\s*=\s*(?:\[\[)?(?:File:|Image:)?([^\n|\]]+)", wt)
             if not m:
-                rep[key] = "нет поля logo"; continue
+                rep[key] = "нет поля logo: " + " | ".join(l for l in wt.splitlines() if "logo" in l.lower() or "image" in l.lower())[:400]; continue
             fn = m.group(1).strip()
             info = requests.get("https://en.wikipedia.org/w/api.php", params={"action": "query", "titles": "File:" + fn, "prop": "imageinfo",
                                 "iiprop": "url", "iiurlwidth": 800, "format": "json"}, headers=H, timeout=30).json()
-            ii = list(info["query"]["pages"].values())[0]["imageinfo"][0]
+            pg = list(info["query"]["pages"].values())[0]
+            if "imageinfo" not in pg:
+                rep[key] = "нет файла: " + fn; continue
+            ii = pg["imageinfo"][0]
             url = ii.get("thumburl") or ii["url"]
-            img = requests.get(url, headers=H, timeout=30)
+            img = requests.get(url.split("?")[0], headers=H, timeout=30)
+            if img.content[:15].lower().startswith(b"<!doctype"):
+                rep[key] = "html вместо картинки: " + url; continue
             ext = url.split("?")[0].rsplit(".", 1)[-1].lower()
             with open(os.path.join(out, f"{key}.{ext}"), "wb") as f:
                 f.write(img.content)
@@ -151,7 +156,7 @@ def logos():
                                                   "format": "json"}, headers=H, timeout=30).json()
                 ii = list(info["query"]["pages"].values())[0]["imageinfo"][0]
                 url = ii.get("thumburl") or ii["url"]
-                img = requests.get(url, headers=H, timeout=30)
+                img = requests.get(url.split("?")[0], headers=H, timeout=30)
                 ext = url.split("?")[0].rsplit(".", 1)[-1].lower()
                 with open(os.path.join(out, f"{key}.{ext}"), "wb") as f:
                     f.write(img.content)
