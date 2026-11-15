@@ -99,6 +99,40 @@ def spincheck():
     print(json.dumps(out)[:3000])
 
 
+LOGO_PAGES = {"adia": "Abu Dhabi Investment Authority", "kia": "Kuwait Investment Authority", "pif": "Public Investment Fund",
+              "qia": "Qatar Investment Authority", "icd": "Investment Corporation of Dubai", "mubadala": "Mubadala Investment Company",
+              "lia": "Libyan Investment Authority", "oia": "Oman Investment Authority", "adfd": "Abu Dhabi Fund for Development",
+              "dif": "Dubai Investment Fund"}
+
+
+def logos():
+    """Логотипы фондов из инфобоксов Википедии (PNG 800 px) в am/research/logos/"""
+    import re
+    H = {"User-Agent": "osnova-research/1.0 (github.com/aleksandr-pm)"}
+    out = os.path.join(OUTD, "logos"); os.makedirs(out, exist_ok=True); rep = {}
+    for key, page in LOGO_PAGES.items():
+        try:
+            wt = requests.get("https://en.wikipedia.org/w/api.php", params={"action": "parse", "page": page, "prop": "wikitext", "format": "json", "redirects": 1},
+                              headers=H, timeout=30).json()["parse"]["wikitext"]["*"]
+            m = re.search(r"\|\s*logo\s*=\s*(?:\[\[)?(?:File:|Image:)?([^\n|\]]+)", wt)
+            if not m:
+                rep[key] = "нет поля logo"; continue
+            fn = m.group(1).strip()
+            info = requests.get("https://en.wikipedia.org/w/api.php", params={"action": "query", "titles": "File:" + fn, "prop": "imageinfo",
+                                "iiprop": "url", "iiurlwidth": 800, "format": "json"}, headers=H, timeout=30).json()
+            ii = list(info["query"]["pages"].values())[0]["imageinfo"][0]
+            url = ii.get("thumburl") or ii["url"]
+            img = requests.get(url, headers=H, timeout=30)
+            ext = url.rsplit(".", 1)[-1].lower()[:4]
+            with open(os.path.join(out, f"{key}.{ext}"), "wb") as f:
+                f.write(img.content)
+            rep[key] = {"file": fn, "url": url, "bytes": len(img.content)}
+        except Exception as e:  # noqa: BLE001
+            rep[key] = f"ошибка: {e}"
+    json.dump(rep, open(os.path.join(out, "report.json"), "w"), ensure_ascii=False, indent=1)
+    print(json.dumps(rep, ensure_ascii=False, indent=1))
+
+
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos}[task]()
