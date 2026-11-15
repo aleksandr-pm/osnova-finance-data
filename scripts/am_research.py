@@ -167,7 +167,92 @@ def logos():
     json.dump(rep, open(rp, "w"), ensure_ascii=False, indent=1)
     print(json.dumps(rep, ensure_ascii=False, indent=1))
 
+BUILDING_Q = {
+    "adia": ["ADIA Headquarters Abu Dhabi", "Abu Dhabi Investment Authority tower", "ADIA tower Corniche"],
+    "kia": ["Kuwait Investment Authority building", "Kuwait City skyline", "Liberation Tower Kuwait"],
+    "pif": ["PIF Tower Riyadh", "King Abdullah Financial District Riyadh", "Public Investment Fund tower"],
+    "qia": ["Qatar Investment Authority headquarters", "Doha West Bay skyline", "Doha Corniche skyline"],
+    "icd": ["ICD Brookfield Place Dubai", "Dubai International Financial Centre", "DIFC Gate Building"],
+    "mubadala": ["Mubadala Tower Abu Dhabi", "Al Maryah Island towers", "Abu Dhabi Global Market Square"],
+    "dif": ["Emirates Towers Dubai", "Dubai skyline Sheikh Zayed Road", "Dubai World Trade Centre tower"],
+    "lia": ["Tripoli Tower Libya", "Tripoli Libya skyline", "Burj al Fateh Tripoli"],
+    "oia": ["Oman Investment Authority building", "Muscat Oman city", "Muttrah Corniche Muscat"],
+    "adfd": ["Abu Dhabi Fund for Development building", "Abu Dhabi Corniche skyline", "Abu Dhabi skyline"],
+}
+
+
+def buildings():
+    """Фото зданий фондов из Wikimedia Commons (JPEG 1600 px, до 2 на запрос) в am/research/buildings/ + логотип OIA через Wikidata"""
+    import time
+    H = {"User-Agent": "osnova-research/1.0 (github.com/aleksandr-pm)"}
+    out = os.path.join(OUTD, "buildings"); os.makedirs(out, exist_ok=True)
+    rep = {}
+    api = "https://commons.wikimedia.org/w/api.php"
+    for key, qs in BUILDING_Q.items():
+        rep[key] = []; n = 0
+        for q in qs:
+            time.sleep(3)
+            try:
+                r = requests.get(api, params={"action": "query", "generator": "search", "gsrsearch": q + " filetype:bitmap", "gsrnamespace": 6,
+                                              "gsrlimit": 8, "prop": "imageinfo", "iiprop": "url|size|mime|extmetadata", "iiurlwidth": 1600,
+                                              "format": "json"}, headers=H, timeout=30).json()
+                pages = sorted(r.get("query", {}).get("pages", {}).values(), key=lambda x: x.get("index", 99))
+                got = 0
+                for pg in pages:
+                    ii = (pg.get("imageinfo") or [{}])[0]
+                    if ii.get("mime") != "image/jpeg" or ii.get("width", 0) < 1200:
+                        continue
+                    time.sleep(2)
+                    img = requests.get(ii["thumburl"].split("?")[0], headers=H, timeout=60)
+                    if img.content[:3] != b"\xff\xd8\xff":
+                        continue
+                    fn = f"{key}_{n}.jpg"; n += 1; got += 1
+                    open(os.path.join(out, fn), "wb").write(img.content)
+                    em = ii.get("extmetadata", {})
+                    rep[key].append({"f": fn, "q": q, "title": pg["title"], "w": ii["width"], "h": ii["height"],
+                                     "lic": em.get("LicenseShortName", {}).get("value"), "artist": em.get("Artist", {}).get("value", "")[:120]})
+                    if got >= 2:
+                        break
+            except Exception as e:  # noqa: BLE001
+                rep[key].append({"q": q, "err": str(e)})
+    # логотип OIA: Wikidata P154, затем ar.wikipedia
+    oia = {}
+    try:
+        time.sleep(3)
+        s = requests.get("https://www.wikidata.org/w/api.php", params={"action": "wbsearchentities", "search": "Oman Investment Authority", "language": "en",
+                                                                      "format": "json"}, headers=H, timeout=30).json()["search"]
+        oia["ids"] = [x["id"] for x in s[:3]]
+        for qid in oia["ids"]:
+            time.sleep(3)
+            ent = requests.get("https://www.wikidata.org/wiki/Special:EntityData/%s.json" % qid, headers=H, timeout=30).json()["entities"][qid]
+            cl = ent.get("claims", {}).get("P154")
+            if cl:
+                fn = cl[0]["mainsnak"]["datavalue"]["value"]
+                info = requests.get(api, params={"action": "query", "titles": "File:" + fn, "prop": "imageinfo", "iiprop": "url", "iiurlwidth": 800,
+                                                 "format": "json"}, headers=H, timeout=30).json()
+                ii = list(info["query"]["pages"].values())[0]["imageinfo"][0]
+                url = (ii.get("thumburl") or ii["url"]).split("?")[0]
+                img = requests.get(url, headers=H, timeout=30)
+                ext = url.rsplit(".", 1)[-1].lower()
+                os.makedirs(os.path.join(OUTD, "logos"), exist_ok=True)
+                open(os.path.join(OUTD, "logos", "oia." + ext), "wb").write(img.content)
+                oia["logo"] = {"qid": qid, "file": fn, "url": url}
+                break
+    except Exception as e:  # noqa: BLE001
+        oia["err"] = str(e)
+    if "logo" not in oia:
+        try:
+            time.sleep(3)
+            res = requests.get(api, params={"action": "query", "list": "search", "srsearch": "Oman Investment Authority", "srnamespace": 6, "srlimit": 10,
+                                            "format": "json"}, headers=H, timeout=30).json()["query"]["search"]
+            oia["commons_hits"] = [h["title"] for h in res]
+        except Exception as e:  # noqa: BLE001
+            oia["err2"] = str(e)
+    rep["_oia_logo"] = oia
+    json.dump(rep, open(os.path.join(out, "report.json"), "w"), ensure_ascii=False, indent=1)
+    print(json.dumps(rep, ensure_ascii=False, indent=1))
+
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings}[task]()
