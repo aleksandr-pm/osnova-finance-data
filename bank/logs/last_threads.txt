@@ -1,14 +1,21 @@
-threads: duel_ny_gdp_pcap_cd_ru_cn (economy, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/8f6001dae5ba/bank/covers/duel_ny_gdp_pcap_cd_ru_cn.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/8f6001dae5ba/bank/cards/duel_ny_gdp_pcap_cd_ru_cn.jpg
+threads: mkt_sector_airlines (companies, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/9bb7cfcee1d6/bank/cards_markets/mkt_sector_airlines.jpg
 ---
-Ввп на человека: Россия и Китай, 2000-2025:
-1. 🇷🇺 Россия · $17 547, в 9,9 раза
-2. 🇨🇳 Китай · $13 862, в 14,3 раза
-Китай: ВВП на человека вырос в 14,3 раза с 2000 года.
+Самые дорогие авиакомпании по капитализации, ноябрь 2026:
+1. 🇺🇸 Delta Air Lines · $57,4 млрд
+2. 🇺🇸 United Airlines Holdings · $36,6 млрд
+3. 🇮🇪 Ryanair · $30,7 млрд
+4. 🇪🇸 International Consolidated Airlines · $24,6 млрд
+5. 🇮🇳 IndiGo · $22,2 млрд
+6. 🇺🇸 Southwest Airlines · $21,8 млрд
+7. 🇨🇳 Air China · $19,2 млрд
+8. 🇸🇬 Singapore Airlines · $17,2 млрд
+9. 🇨🇳 China Southern Airlines · $14 млрд
+10. 🇨🇱 LATAM Airlines · $13,6 млрд
+Эйр Астана (Казахстан) на 56-м месте.
 Больше в Telegram @osnovafin
 ---
-Threads: с картинкой
-Ответ со ссылкой: 18120356402049796
-Опубликовано: 18351067483270138. Осталось новых рейтингов: 181
-exit=0 2026-11-14T17:13:40Z
+Threads: текстом
+Ответ со ссылкой: 17968017954231889
+Опубликовано: 18032791253688807. Осталось новых рейтингов: 181
+exit=0 2026-11-15T06:23:24Z
