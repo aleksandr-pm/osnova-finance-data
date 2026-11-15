@@ -1,9 +1,11 @@
 name: property-reels
-# @osnova.property (EN): 1 Reels в день из очереди property/queue.json. Ролики собираются заранее, здесь только публикация.
+# @osnova.property (EN): 2 Reels + 1 пост в день из очереди property/queue.json. Материалы собираются заранее, здесь только публикация.
 # Публикация только при наличии property/LIVE. Пауза: дата в property/pause_until.txt.
 on:
   schedule:
-    - cron: "41 14 * * *"   # 18:41 по Дубаю
+    - cron: "41 7 * * *"    # Reels 11:41 по Дубаю
+    - cron: "11 11 * * *"   # пост 15:11
+    - cron: "41 15 * * *"   # Reels 19:41
   push:
     branches: [main]
     paths: ["property/publish_request.txt"]   # разовая публикация вне расписания
@@ -13,6 +15,10 @@ on:
         description: "yes = только показать следующий ролик и подпись"
         required: true
         default: "yes"
+      slot:
+        description: "reel или post"
+        required: true
+        default: "reel"
 permissions:
   contents: write
 concurrency:
@@ -34,7 +40,10 @@ jobs:
         run: |
           ARGS=""
           if [ "${{ inputs.dry_run }}" = "yes" ]; then ARGS="--dry-run"; fi
-          if [ "${{ github.event_name }}" = "push" ]; then ARGS="--force"; fi
+          SLOT="${{ inputs.slot }}"
+          if [ "${{ github.event.schedule }}" = "11 11 * * *" ]; then SLOT=post; fi
+          if [ "${{ github.event_name }}" = "push" ]; then ARGS="--force"; SLOT=$(awk '{print $1; exit}' property/publish_request.txt); fi
+          export SLOT=${SLOT:-reel}
           set +e
           python property/publish.py $ARGS
           echo $? > /tmp/code

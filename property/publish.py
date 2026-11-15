@@ -1,4 +1,4 @@
-"""@osnova.property: автопубликация Reels из очереди (property/queue.json).
+"""@osnova.property: автопубликация Reels и постов из очереди (property/queue.json).
 
 Режимы:
   python property/publish.py --check     найти ID аккаунта osnova.property, проверить доступ и лимит, без публикации
@@ -6,7 +6,7 @@
 
 Правила (из опыта OSNOVA Finance, Instagram_autopublish_guide.md):
   * публикация только если есть файл property/LIVE и не наступила пауза property/pause_until.txt;
-  * не чаще одного ролика за 20 часов (cron GitHub опаздывает и иногда дублирует запуск);
+  * 3 слота в день: Reels 11:41 и 19:41, пост 15:11 по Дубаю; Reels не чаще раза в 5 ч, пост раз в 20 ч;
   * любая ошибка на шаге media_publish = ролик помечается использованным, повторно не отправляется;
   * отказ Instagram в обработке ролика = ролик помечается failed, в этом же запуске одна замена следующим.
 """
@@ -150,6 +150,26 @@ def publish_reel(tok, uid, item):
         raise PublishStepError(str(e))
 
 
+def publish_post(tok, uid, item):
+    repo, sha = os.environ.get("GITHUB_REPOSITORY", "aleksandr-pm/osnova-finance-data"), os.environ.get("GITHUB_SHA", "main")
+    url = f"https://raw.githubusercontent.com/{repo}/{sha}/property/{item['file']}"
+    c = check(requests.post(f"{IG}/{uid}/media", data={"image_url": url, "caption": item["caption"], "access_token": tok}, timeout=60), "контейнер поста")
+    cid = c["id"]
+    log(f"Контейнер {cid}, картинка {url}")
+    for _ in range(18):
+        time.sleep(5)
+        s = check(requests.get(f"{IG}/{cid}", params={"fields": "status_code", "access_token": tok}, timeout=30), "статус")
+        if s.get("status_code") == "FINISHED":
+            break
+        if s.get("status_code") in ("ERROR", "EXPIRED"):
+            raise ProcessingError(f"обработка не прошла: {s}")
+    try:
+        r = requests.post(f"{IG}/{uid}/media_publish", data={"creation_id": cid, "access_token": tok}, timeout=60)
+        return check(r, "media_publish")["id"]
+    except Exception as e:  # noqa: BLE001
+        raise PublishStepError(str(e))
+
+
 class ProcessingError(RuntimeError):
     pass
 
@@ -165,19 +185,21 @@ def main():
         return do_check(tok) if tok else (log("Нет токена") or 1)
     dry = "--dry-run" in args or not os.path.exists(LIVE)
     queue, st = load(QUEUE, []), load(STATE, {"posted": []})
+    slot = os.environ.get("SLOT", "reel")
     used = {p["id"] for p in st["posted"]}
-    todo = [q for q in queue if q["id"] not in used]
-    log(f"В очереди {len(todo)} из {len(queue)}; LIVE={'да' if os.path.exists(LIVE) else 'нет'}")
+    todo = [q for q in queue if q["id"] not in used and q.get("type", "reel") == slot]
+    log(f"Слот {slot}: в очереди {len(todo)} из {len(queue)}; LIVE={'да' if os.path.exists(LIVE) else 'нет'}")
     if not todo:
         log("Очередь пуста: нужны новые ролики")
         return 0
     if paused():
         log("Пауза до", open(PAUSE).read().strip())
         return 0
-    real = [p for p in st["posted"] if p.get("post") not in ("failed",)]
+    kind = {q["id"]: q.get("type", "reel") for q in queue}
+    real = [p for p in st["posted"] if p.get("post") not in ("failed",) and kind.get(p["id"], "reel") == slot]
     if real and not dry and "--force" not in args:
         gap = now() - dt.datetime.fromisoformat(real[-1]["at"])
-        if gap < dt.timedelta(hours=20):
+        if gap < dt.timedelta(hours=5 if slot == "reel" else 20):
             log(f"Пропуск: прошлый ролик {int(gap.total_seconds() // 3600)} ч назад")
             return 0
     item = todo[0]
@@ -191,7 +213,7 @@ def main():
     uid = os.environ.get("IG_USER_ID_PROP") or open(ID_FILE).read().strip()
     for attempt in range(2):
         try:
-            pid = publish_reel(tok, uid, item)
+            pid = (publish_post if item.get("type") == "post" else publish_reel)(tok, uid, item)
             st["posted"].append({"id": item["id"], "at": now().isoformat(), "post": pid})
             save_state(st)
             log(f"Опубликовано: {item['id']} → {pid}")
