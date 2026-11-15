@@ -1,0 +1,32 @@
+{
+ "adia": {
+  "file": "Abu Dhabi Investment Authority logo.svg",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Abu_Dhabi_Investment_Authority_logo.svg/960px-Abu_Dhabi_Investment_Authority_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "bytes": 11961
+ },
+ "kia": {
+  "file": "Kuwait Investment Authority logo.png",
+  "url": "https://upload.wikimedia.org/wikipedia/en/e/ee/Kuwait_Investment_Authority_logo.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "bytes": 50993
+ },
+ "pif": {
+  "file": "Public Investment Fund Logo.svg",
+  "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/6/67/Public_Investment_Fund_Logo.svg/960px-Public_Investment_Fund_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "bytes": 79847
+ },
+ "qia": {
+  "file": "Qatar Investment Authority logo.svg",
+  "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/e/eb/Qatar_Investment_Authority_logo.svg/960px-Qatar_Investment_Authority_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "bytes": 42836
+ },
+ "icd": {
+  "file": "Investment Corporation of Dubai logo.png",
+  "url": "https://upload.wikimedia.org/wikipedia/en/8/82/Investment_Corporation_of_Dubai_logo.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "bytes": 3223
+ },
+ "mubadala": "ошибка: Expecting value: line 1 column 1 (char 0)",
+ "lia": "ошибка: Expecting value: line 1 column 1 (char 0)",
+ "oia": "ошибка: Expecting value: line 1 column 1 (char 0)",
+ "adfd": "ошибка: Expecting value: line 1 column 1 (char 0)",
+ "dif": "ошибка: Expecting value: line 1 column 1 (char 0)"
+}
