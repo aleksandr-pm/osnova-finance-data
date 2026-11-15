@@ -29,12 +29,22 @@
   "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/2/2b/Mubadala_Investment_Company_logo.svg/960px-Mubadala_Investment_Company_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "bytes": 28536
  },
- "lia": "нет поля logo",
+ "lia": {
+  "file": "File:Libyaninvestmentauthority-300x123-logo.gif",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Libyaninvestmentauthority-300x123-logo.gif?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "bytes": 11036,
+  "via": "search"
+ },
  "oia": "ошибка: 'imageinfo'",
  "adfd": {
   "file": "Abu Dhabi Development Fund logo.svg",
   "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/3/34/Abu_Dhabi_Development_Fund_logo.svg/960px-Abu_Dhabi_Development_Fund_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "bytes": 29201
  },
- "dif": "нет поля logo"
+ "dif": {
+  "file": "File:Dubai Investment Fund Logo.png",
+  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Dubai_Investment_Fund_Logo.png/960px-Dubai_Investment_Fund_Logo.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "bytes": 33867,
+  "via": "search"
+ }
 }
