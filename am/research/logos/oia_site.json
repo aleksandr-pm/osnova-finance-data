@@ -1,0 +1,19 @@
+{
+ "https://www.oia.gov.om/": {
+  "status": 200,
+  "cands": [
+   "/assets/icons/oia-nav-logo.svg",
+   "/assets/icons/oia-nav-logo.svg"
+  ],
+  "saved": [
+   [
+    "https://www.oia.gov.om/assets/icons/oia-nav-logo.svg",
+    45632
+   ],
+   [
+    "https://www.oia.gov.om/assets/icons/oia-nav-logo.svg",
+    45632
+   ]
+  ]
+ }
+}
