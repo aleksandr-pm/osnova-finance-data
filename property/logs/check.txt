@@ -1,5 +1,6 @@
+token: 200 {"app_id": "1546636183889824", "type": "SYSTEM_USER", "expires_at": 0, "scopes": ["instagram_basic", "instagram_content_publish", "public_profile"], "granular_scopes": [{"scope": "instagram_basic"}, {"scope": "instagram_content_publish"}]}
 Кандидаты: {'17841467268195031': 'secret/file'}
 17841467268195031: 400 {"error": {"message": "Unsupported get request. Object with ID '17841467268195031' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api", "code": 100, "type": "GraphM
 17841467268195031/content_publishing_limit: 400 {"error": {"message": "Unsupported get request. Object with ID '17841467268195031' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api", "code": 100, "type": "GraphM
 НЕТ ДОСТУПА к @osnova.property с этим токеном: аккаунт не добавлен в портфолио Meta или системному пользователю не выдан доступ «Контент»
-exit=1 2026-11-15T07:52:57.414396+00:00
+exit=1 2026-11-15T07:53:37.431335+00:00
