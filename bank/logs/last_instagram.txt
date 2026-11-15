@@ -1,12 +1,23 @@
-Traceback (most recent call last):
-  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/publish.py", line 397, in <module>
-    sys.exit(main())
-             ^^^^^^
-  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/publish.py", line 360, in main
-    img = image_url(r)
-          ^^^^^^^^^^^^
-  File "/home/runner/work/osnova-finance-data/osnova-finance-data/scripts/publish.py", line 90, in image_url
-    return raw(r["card"].replace(".png", ".jpg"))
-               ~^^^^^^^^
-KeyError: 'card'
-exit=1 2026-11-14T14:48:28Z
+instagram: duel_ny_gdp_pcap_cd_ru_cn (economy, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/24848bb02dd1/bank/covers/duel_ny_gdp_pcap_cd_ru_cn.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/24848bb02dd1/bank/cards/duel_ny_gdp_pcap_cd_ru_cn.jpg
+---
+Китай: ВВП на человека вырос в 14,3 раза с 2000 года.
+
+Ввп на человека: Россия и Китай, 2000-2025. Самый быстрый рост: Китай, в 14,3 раза, до $13 862.
+
+Значения в 2025 году и изменение с 2000:
+1. 🇷🇺 Россия: $17 547, в 9,9 раза
+2. 🇨🇳 Китай: $13 862, в 14,3 раза
+
+Кого не хватает в топе, по-вашему?
+
+Каждый день рынки, сделки инсайдеров из отчётов SEC и данные в Telegram @osnovafin, ссылка в профиле.
+
+Источник: World Bank, World Development Indicators. Не является инвестиционной рекомендацией.
+
+#экономика #мироваяэкономика #ввп #макроэкономика #китай #инвестиции #финансы #статистика #инфографика #цифры #рынки
+---
+Instagram: одиночный пост с графиком
+Опубликовано: 18102308114452015. Осталось новых рейтингов: 229
+exit=0 2026-11-15T14:49:56Z
