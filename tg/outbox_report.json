@@ -75,5 +75,11 @@
   "t": 1794675265,
   "caption": "📈 <b>Крупнейшие экспортёры высоких технологий: №1 Китай, $857 млрд</b>\n\n<b>Топ-10</b>\n1. 🇨🇳 Китай: $857 млрд\n2. 🇭🇰 Гонконг: $422 млрд\n3. 🇩🇪 Германия: $247 млрд\n4. 🇺🇸 США: $233 млрд\n5. 🇸🇬 Сингапур: $224 млрд\n6. 🇰🇷 Южная Корея: $216 млрд\n7. 🇲🇾 Малайзия: $135 млрд\n8. 🇮🇪 Ирландия: $118 млрд\n9. 🇫🇷 Франция: $117 млрд\n10. 🇳🇱 Нидерланды: $103 млрд\n\nИсточник: World Bank, World Development Indicators, 2024 год.\n#рейтинг",
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/bank/cards/wdi_tx_val_tech_cd_desc.jpg"
+ },
+ {
+  "id": "report-alansari",
+  "t": 1794728323,
+  "caption": "📊 <b>Al Ansari: 31% выручки в прибыли</b>\n\nAl Ansari Financial Services: обмен валют и денежные переводы, одна из крупнейших таких сетей в ОАЭ\n\nВыручка: 1,29 млрд AED, +12% за год\nЧистая прибыль: 401 млн AED, −1% за год, −33% за три года\n\nПик прибыли был в 2022 году: 595 млн AED\n\n<b>Выручка · чистая прибыль по годам</b>\n2022: 1,16 млрд AED · 595 млн AED\n2023: 1,14 млрд AED · 495 млн AED\n2024: 1,15 млрд AED · 406 млн AED\n2025: 1,29 млрд AED · 401 млн AED\n\n#разбор",
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/companies/cards/alansari.jpg"
  }
 ]
