@@ -82,6 +82,9 @@ def find_user_id(tok):
 
 
 def do_check(tok):
+    sc, dbg = get("debug_token", tok, input_token=tok)
+    dd = dbg.get("data") or {}
+    log("token:", sc, json.dumps({k: dd.get(k) for k in ("app_id", "type", "expires_at", "scopes", "granular_scopes")}, ensure_ascii=False)[:1200])
     uid = os.environ.get("IG_USER_ID_PROP") or (open(ID_FILE).read().strip() if os.path.exists(ID_FILE) else "")
     cands = {uid: "secret/file"} if uid else find_user_id(tok)
     log("Кандидаты:", cands)
