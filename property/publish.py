@@ -6,7 +6,8 @@
 
 Правила (из опыта OSNOVA Finance, Instagram_autopublish_guide.md):
   * публикация только если есть файл property/LIVE и не наступила пауза property/pause_until.txt;
-  * 3 слота в день: Reels 11:41 и 19:41, пост 15:11 по Дубаю; Reels не чаще раза в 5 ч, пост раз в 20 ч;
+  * 3 слота в день, тест времени через день: набор A (Reels 11:41 и 19:41, пост 15:11) и набор B (Reels 08:41 и 21:41, пост 13:11) по Дубаю;
+  * Reels не чаще раза в 5 ч, пост раз в 20 ч;
   * любая ошибка на шаге media_publish = ролик помечается использованным, повторно не отправляется;
   * отказ Instagram в обработке ролика = ролик помечается failed, в этом же запуске одна замена следующим.
 """
@@ -189,6 +190,12 @@ def main():
     dry = "--dry-run" in args or not os.path.exists(LIVE)
     queue, st = load(QUEUE, []), load(STATE, {"posted": []})
     slot = os.environ.get("SLOT", "reel")
+    dubai = now() + dt.timedelta(hours=4)
+    today_set = "A" if dubai.timetuple().tm_yday % 2 == 0 else "B"
+    cron_set = os.environ.get("TIMESET", "")
+    if cron_set and cron_set != today_set and "--force" not in args:
+        log(f"Сегодня набор времени {today_set}, этот запуск из набора {cron_set}: пропуск")
+        return 0
     used = {p["id"] for p in st["posted"]}
     todo = [q for q in queue if q["id"] not in used and q.get("type", "reel") == slot]
     log(f"Слот {slot}: в очереди {len(todo)} из {len(queue)}; LIVE={'да' if os.path.exists(LIVE) else 'нет'}")
@@ -217,7 +224,8 @@ def main():
     for attempt in range(2):
         try:
             pid = (publish_post if item.get("type") == "post" else publish_reel)(tok, uid, item)
-            st["posted"].append({"id": item["id"], "at": now().isoformat(), "post": pid})
+            st["posted"].append({"id": item["id"], "at": now().isoformat(), "post": pid, "type": item.get("type", "reel"),
+                                 "dubai_time": (now() + dt.timedelta(hours=4)).strftime("%H:%M"), "timeset": cron_set or "manual"})
             save_state(st)
             log(f"Опубликовано: {item['id']} → {pid}")
             return 0
