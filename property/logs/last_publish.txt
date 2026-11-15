@@ -13,5 +13,5 @@ Source: portal listings Nov 2026 · Ejari new leases, 2026 YTD · osnova.propert
 
 #dubaioffice #dubaicommercialproperty #dubairealestate #businessbay #dubaiinvestment #officespace
 ---
-Без публикации: dry-run
-exit=0 2026-11-15T07:31:48.776336+00:00
+Без публикации: нет файла property/LIVE
+exit=0 2026-11-15T08:28:56.869761+00:00
