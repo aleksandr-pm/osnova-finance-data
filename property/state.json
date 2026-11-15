@@ -7,6 +7,20 @@
    "type": "post",
    "dubai_time": "13:50",
    "timeset": "B"
+  },
+  {
+   "id": "r_rent_business_bay",
+   "at": "2026-11-15T18:14:31.060273+00:00",
+   "post": "failed",
+   "err": "загрузка видео: HTTP 400 {\"debug_info\": {\"retriable\": false, \"type\": \"ProcessingFailedError\", \"message\": \"Request processing failed\"}}"
+  },
+  {
+   "id": "r_market_october",
+   "at": "2026-11-15T18:15:17.725388+00:00",
+   "post": "18128596906676292",
+   "type": "reel",
+   "dubai_time": "22:15",
+   "timeset": "B"
   }
  ]
 }
