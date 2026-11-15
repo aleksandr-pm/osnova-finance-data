@@ -109,8 +109,14 @@ def logos():
     """Логотипы фондов из инфобоксов Википедии (PNG 800 px) в am/research/logos/"""
     import re
     H = {"User-Agent": "osnova-research/1.0 (github.com/aleksandr-pm)"}
-    out = os.path.join(OUTD, "logos"); os.makedirs(out, exist_ok=True); rep = {}
+    import time
+    out = os.path.join(OUTD, "logos"); os.makedirs(out, exist_ok=True)
+    rp = os.path.join(out, "report.json")
+    rep = json.load(open(rp)) if os.path.exists(rp) else {}
     for key, page in LOGO_PAGES.items():
+        if isinstance(rep.get(key), dict):
+            continue
+        time.sleep(4)
         try:
             wt = requests.get("https://en.wikipedia.org/w/api.php", params={"action": "parse", "page": page, "prop": "wikitext", "format": "json", "redirects": 1},
                               headers=H, timeout=30).json()["parse"]["wikitext"]["*"]
@@ -123,13 +129,13 @@ def logos():
             ii = list(info["query"]["pages"].values())[0]["imageinfo"][0]
             url = ii.get("thumburl") or ii["url"]
             img = requests.get(url, headers=H, timeout=30)
-            ext = url.rsplit(".", 1)[-1].lower()[:4]
+            ext = url.split("?")[0].rsplit(".", 1)[-1].lower()
             with open(os.path.join(out, f"{key}.{ext}"), "wb") as f:
                 f.write(img.content)
             rep[key] = {"file": fn, "url": url, "bytes": len(img.content)}
         except Exception as e:  # noqa: BLE001
             rep[key] = f"ошибка: {e}"
-    json.dump(rep, open(os.path.join(out, "report.json"), "w"), ensure_ascii=False, indent=1)
+    json.dump(rep, open(rp, "w"), ensure_ascii=False, indent=1)
     print(json.dumps(rep, ensure_ascii=False, indent=1))
 
 
