@@ -2,4 +2,4 @@
 17841467268195031: 400 {"error": {"message": "Unsupported get request. Object with ID '17841467268195031' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api", "code": 100, "type": "GraphM
 17841467268195031/content_publishing_limit: 400 {"error": {"message": "Unsupported get request. Object with ID '17841467268195031' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api", "code": 100, "type": "GraphM
 НЕТ ДОСТУПА к @osnova.property с этим токеном: аккаунт не добавлен в портфолио Meta или системному пользователю не выдан доступ «Контент»
-exit=1 2026-11-15T07:51:40.003338+00:00
+exit=1 2026-11-15T07:52:57.414396+00:00
