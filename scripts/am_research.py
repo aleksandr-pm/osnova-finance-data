@@ -181,7 +181,36 @@ BUILDING_Q = {
 }
 
 
-def buildings():
+def extra():
+    """Добор: точечные фото ADIA/Mubadala/ICD и логотип OIA с сайта фонда"""
+    global BUILDING_Q
+    BUILDING_Q = {"adia": ["ADIA Headquarters", "Abu Dhabi Investment Authority", "ADIA building Corniche Abu Dhabi"],
+                  "mubadala": ["Mubadala Tower", "Al Sila Tower", "Al Maryah Island", "Sowwah Square Abu Dhabi"],
+                  "icd": ["The Gate Dubai", "Gate Village DIFC", "DIFC Dubai gate"]}
+    buildings(tag="extra")
+    import re, time
+    H = {"User-Agent": "Mozilla/5.0 (osnova-research)"}
+    rep = {}
+    for site in ("https://www.oia.gov.om/", "https://oia.gov.om/", "https://www.oia.om/"):
+        try:
+            time.sleep(2)
+            r = requests.get(site, headers=H, timeout=30); html = r.text
+            cands = re.findall(r'(?:src|href)=["\']([^"\']*logo[^"\']*\.(?:svg|png|jpg|webp))', html, re.I)
+            rep[site] = {"status": r.status_code, "cands": cands[:10]}
+            for i, c in enumerate(cands[:4]):
+                u = requests.compat.urljoin(r.url, c)
+                im = requests.get(u, headers=H, timeout=30)
+                ext = u.rsplit(".", 1)[-1].lower()
+                open(os.path.join(OUTD, "logos", f"oia_site{i}.{ext}"), "wb").write(im.content)
+                rep[site].setdefault("saved", []).append([u, len(im.content)])
+            if cands: break
+        except Exception as e:  # noqa: BLE001
+            rep[site] = str(e)
+    json.dump(rep, open(os.path.join(OUTD, "logos", "oia_site.json"), "w"), ensure_ascii=False, indent=1)
+    print(rep)
+
+
+def buildings(tag="report"):
     """Фото зданий фондов из Wikimedia Commons (JPEG 1600 px, до 2 на запрос) в am/research/buildings/ + логотип OIA через Wikidata"""
     import time
     H = {"User-Agent": "osnova-research/1.0 (github.com/aleksandr-pm)"}
@@ -249,10 +278,10 @@ def buildings():
         except Exception as e:  # noqa: BLE001
             oia["err2"] = str(e)
     rep["_oia_logo"] = oia
-    json.dump(rep, open(os.path.join(out, "report.json"), "w"), ensure_ascii=False, indent=1)
+    json.dump(rep, open(os.path.join(out, tag + ".json"), "w"), ensure_ascii=False, indent=1)
     print(json.dumps(rep, ensure_ascii=False, indent=1))
 
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra}[task]()
