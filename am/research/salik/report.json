@@ -1,0 +1,38 @@
+{
+ "price_rows": 850,
+ "last": [
+  "2026-11-13",
+  5.409999847412109
+ ],
+ "tv": {
+  "totalCount": 1,
+  "data": [
+   {
+    "s": "DFM:SALIK",
+    "d": [
+     5.41,
+     40574998856,
+     null,
+     -13.71610845295055,
+     -14.803149606299204,
+     125.41666666666667,
+     27.88659793814433
+    ]
+   }
+  ]
+ },
+ "wiki_logo_field": null,
+ "commons": [
+  "File:سالك لتاجير السيارات.png",
+  "File:18November2005.pdf",
+  "File:Experiments and observations on the cortex salicis latifoliae, or broad-leafed willow bark ... with general observations ... on ... the cinchona, etc. General history ... or the salix la (IA b33088585).pdf",
+  "File:Efraim susie reisner, História no Museu da Pessoa (46742).pdf",
+  "File:II. Manuel Palaiologos’un Selaniklilere Tavsiye Söylevi 1383-1387 Osmanlı Selanik Kuşatmasına Dair Bir Metin.pdf",
+  "File:Milliyet 1934 kanunuevvel 25.pdf",
+  "File:Lingua universal Esperanto,Zamenhof Ferreira 1893.djvu"
+ ],
+ "site": {
+  "status": 403,
+  "cands": []
+ }
+}
