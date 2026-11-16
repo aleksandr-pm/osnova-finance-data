@@ -1,21 +1,5 @@
 [
  {
-  "id": "chart-2026-11-13-BABA",
-  "caption": "📊 Акции <b>Alibaba</b> упали на 7,05% за день\nЗа полгода: −35,29%, цена $94,36\n\n#графикдня",
-  "t": 1794575580,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-13-BABA.png"
- },
- {
-  "id": "alert-2026-11-13-MSTR-d",
-  "caption": "⚡️🔻 <b>Strategy</b> (MSTR) −6,49% за день, $114,41\n\n#алерт",
-  "t": 1794579032
- },
- {
-  "id": "alert-2026-11-13-SMCI-d",
-  "caption": "⚡️🔻 <b>Super Micro</b> (SMCI) −11,30% за день, $26,99\n\n#алерт",
-  "t": 1794579032
- },
- {
   "id": "alert-2026-11-13-BABA-d",
   "caption": "⚡️🔻 <b>Alibaba</b> (BABA) −7,05% за день, $94,36\n\n#алерт",
   "t": 1794579032
@@ -153,5 +137,20 @@
   "id": "alert-2026-11-16-ORCL-d",
   "caption": "⚡️🔻 <b>Oracle</b> (ORCL) −5,03% за день, $119,04\n\n#алерт",
   "t": 1794859056
+ },
+ {
+  "id": "alert-2026-11-16-CAT-d",
+  "caption": "⚡️🔻 <b>Caterpillar</b> (CAT) −5,18% за день, $569,1\n\n#алерт",
+  "t": 1794862192
+ },
+ {
+  "id": "alert-2026-11-16-AMAT-d",
+  "caption": "⚡️🔻 <b>Applied Materials</b> (AMAT) −5,21% за день, $351,2\n\n#алерт",
+  "t": 1794862192
+ },
+ {
+  "id": "alert-2026-11-16-ASML-d",
+  "caption": "⚡️🔻 <b>ASML</b> (ASML) −5,45% за день, $1 414\n\n#алерт",
+  "t": 1794862192
  }
 ]
