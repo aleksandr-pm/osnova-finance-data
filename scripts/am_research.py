@@ -266,6 +266,33 @@ def salik():
     print(rep)
 
 
+def sobha():
+    """Фото проектов Sobha (Commons) + логотип"""
+    global BUILDING_Q
+    BUILDING_Q = {"sobha": ["Sobha Hartland Dubai", "Sobha Realty", "Sobha One Dubai", "Mohammed Bin Rashid City Dubai", "Ras Al Khor Dubai skyline"]}
+    buildings(tag="sobha")
+    import re, time
+    H = {"User-Agent": "osnova-research/1.0 (github.com/aleksandr-pm)"}; out = os.path.join(OUTD, "buildings"); rep = {}
+    try:
+        wt = requests.get("https://en.wikipedia.org/w/api.php", params={"action": "parse", "page": "Sobha Realty", "prop": "wikitext", "format": "json", "redirects": 1}, headers=H, timeout=30).json()
+        wt = wt.get("parse", {}).get("wikitext", {}).get("*", "")
+        m = re.search(r"\|\s*logo\s*=\s*(?:\[\[)?(?:File:|Image:)?([^\n|\]]+)", wt); rep["field"] = m.group(1).strip() if m else None
+        cands = [rep["field"]] if rep["field"] else []
+        time.sleep(3)
+        res = requests.get("https://commons.wikimedia.org/w/api.php", params={"action": "query", "list": "search", "srsearch": "Sobha logo", "srnamespace": 6, "srlimit": 10, "format": "json"}, headers=H, timeout=30).json()["query"]["search"]
+        rep["commons"] = [x["title"] for x in res]; cands += [x["title"][5:] for x in res if "sobha" in x["title"].lower()]
+        for i, fn in enumerate(cands[:3]):
+            time.sleep(3)
+            for site in ("https://en.wikipedia.org/w/api.php", "https://commons.wikimedia.org/w/api.php"):
+                pg = list(requests.get(site, params={"action": "query", "titles": "File:" + fn, "prop": "imageinfo", "iiprop": "url", "iiurlwidth": 1000, "format": "json"}, headers=H, timeout=30).json()["query"]["pages"].values())[0]
+                if "imageinfo" in pg:
+                    u = (pg["imageinfo"][0].get("thumburl") or pg["imageinfo"][0]["url"]).split("?")[0]
+                    open(os.path.join(out, f"sobha_logo{i}." + u.rsplit(".", 1)[-1].lower()), "wb").write(requests.get(u, headers=H, timeout=30).content); rep.setdefault("logos", []).append(u); break
+    except Exception as e:  # noqa: BLE001
+        rep["err"] = str(e)
+    json.dump(rep, open(os.path.join(out, "sobha_logo.json"), "w"), indent=1); print(rep)
+
+
 def buildings(tag="report"):
     """Фото зданий фондов из Wikimedia Commons (JPEG 1600 px, до 2 на запрос) в am/research/buildings/ + логотип OIA через Wikidata"""
     import time
@@ -296,7 +323,7 @@ def buildings(tag="report"):
                     em = ii.get("extmetadata", {})
                     rep[key].append({"f": fn, "q": q, "title": pg["title"], "w": ii["width"], "h": ii["height"],
                                      "lic": em.get("LicenseShortName", {}).get("value"), "artist": em.get("Artist", {}).get("value", "")[:120]})
-                    if got >= 2:
+                    if got >= (3 if tag == "sobha" else 2):
                         break
             except Exception as e:  # noqa: BLE001
                 rep[key].append({"q": q, "err": str(e)})
@@ -340,4 +367,4 @@ def buildings(tag="report"):
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha}[task]()
