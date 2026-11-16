@@ -1,15 +1,21 @@
-threads: duel_ny_gdp_pcap_cd_ru_kz_by (cis, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/482d6b3d52c6/bank/covers/duel_ny_gdp_pcap_cd_ru_kz_by.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/482d6b3d52c6/bank/cards/duel_ny_gdp_pcap_cd_ru_kz_by.jpg
+threads: mkt_country_earn_ae (companies, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/b3bf538ebcaa/bank/cards_markets/mkt_country_earn_ae.jpg
 ---
-Ввп на человека: Россия, Казахстан, Беларусь, 2000-2025:
-1. 🇷🇺 Россия · $17 547, в 9,9 раза
-2. 🇰🇿 Казахстан · $14 692, в 12,5 раза
-3. 🇧🇾 Беларусь · $10 279, в 8,1 раза
-Казахстан: ВВП на человека вырос в 12,5 раза с 2000 года.
+Самые прибыльные компании ОАЭ, ноябрь 2026:
+1. 🇦🇪 Emirates NBD Bank · $8,4 млрд
+2. 🇦🇪 DEWA · $3,3 млрд
+3. 🇦🇪 Dubai Islamic Bank · $2,4 млрд
+4. 🇦🇪 Mashreqbank · $2,4 млрд
+5. 🇦🇪 International Holding Company · $2,3 млрд
+6. 🇦🇪 du · $1,5 млрд
+7. 🇦🇪 Commercial Bank of Dubai · $1,1 млрд
+8. 🇦🇪 TECOM Group · $613 млн
+9. 🇦🇪 Amlak Finance · $594 млн
+10. 🇦🇪 Salik · $525 млн
+Emirates NBD Bank: прибыль $8,4 млрд за год.
 Больше в Telegram @osnovafin
 ---
-Threads: текстом
-Ответ со ссылкой: 18389779747237629
-Опубликовано: 18094586837207168. Осталось новых рейтингов: 180
-exit=0 2026-11-15T17:13:46Z
+Threads: с картинкой
+Ответ со ссылкой: 18150577723563463
+Опубликовано: 18644949796011245. Осталось новых рейтингов: 179
+exit=0 2026-11-16T07:08:25Z
