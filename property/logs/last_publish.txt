@@ -1,20 +1,18 @@
-Слот post: в очереди 2 из 9; LIVE=да
-Следующий: p_rent_asked_paid (media/p_rent_asked_paid.jpg)
+Слот reel: в очереди 3 из 9; LIVE=да
+Следующий: r_rent_barsha_heights (media/r_rent_barsha_heights.mp4)
 ---
-Dubai office tenants pay 22% to 53% less than listings ask.
+Barsha Heights office listings ask 274 AED per sq ft a year. Tenants sign at 134.
 
-Asked vs paid, AED per sq ft a year:
-Deira 131 vs 62
-Barsha Heights 274 vs 134
-Business Bay 202 vs 155
-Internet City 230 vs 180
+Asked: 274 AED per sq ft a year, 62 listings
+Paid: 134 AED per sq ft a year, Ejari new leases 2026
+Gap: 51%, the widest of the big office districts
 
-Negotiating a lease? Start from what was signed, not what is listed. DM RENT and get all 17 districts.
+DM RENT and get asked vs paid rents for 17 office districts.
 
 Source: portal listings Nov 2026 · Ejari new leases, 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
 
 #dubaioffice #dubaicommercialproperty #dubairealestate #businessbay #dubaiinvestment #officespace
 ---
-Контейнер 17923799373242274, картинка https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/9d860ffa156bb8c91cd819fb97870f65ee2548c3/property/media/p_rent_asked_paid.jpg
-Опубликовано: p_rent_asked_paid → 17968531479227412
-exit=0 2026-11-16T12:19:40.372665+00:00
+Контейнер 17923854099242274, загрузка 1.1 МБ
+Опубликовано: r_rent_barsha_heights → 18155823175543701
+exit=0 2026-11-16T16:56:51.349663+00:00
