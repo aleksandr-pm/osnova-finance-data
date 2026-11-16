@@ -1,5 +1,5 @@
 {
- "at": "2026-11-15T20:24:00.951752+00:00",
+ "at": "2026-11-16T20:36:56.002299+00:00",
  "followers": 0,
  "media": [
   {
@@ -22,13 +22,52 @@
    "timeset": "B",
    "dubai_time": "22:15",
    "at": "2026-11-15T18:15:17.725388+00:00",
-   "likes": 0,
+   "likes": 1,
    "comments": 0,
    "permalink": "https://www.instagram.com/reel/DfxZnmAoKoy/"
+  },
+  {
+   "id": "r_yield_districts",
+   "post": "18179146363450623",
+   "type": "reel",
+   "word": "YIELD",
+   "timeset": "A",
+   "dubai_time": "14:06",
+   "at": "2026-11-16T10:06:06.559550+00:00",
+   "likes": 1,
+   "comments": 0,
+   "permalink": "https://www.instagram.com/reel/DfzGcFjjZWh/"
+  },
+  {
+   "id": "p_rent_asked_paid",
+   "post": "17968531479227412",
+   "type": "post",
+   "word": "RENT",
+   "timeset": "A",
+   "dubai_time": "16:19",
+   "at": "2026-11-16T12:19:40.372273+00:00",
+   "likes": 1,
+   "comments": 0,
+   "permalink": "https://www.instagram.com/p/DfzVxnbDGgR/"
+  },
+  {
+   "id": "r_rent_barsha_heights",
+   "post": "18155823175543701",
+   "type": "reel",
+   "word": "RENT",
+   "timeset": "A",
+   "dubai_time": "20:56",
+   "at": "2026-11-16T16:56:51.348957+00:00",
+   "likes": 0,
+   "comments": 0,
+   "permalink": "https://www.instagram.com/reel/Dfz1b6RkrQd/"
   }
  ],
  "notes": [
   "p_yield_ranking: статистика охватов недоступна ((#10) Application does not have permission for this action)",
-  "r_market_october: статистика охватов недоступна ((#10) Application does not have permission for this action)"
+  "r_market_october: статистика охватов недоступна ((#10) Application does not have permission for this action)",
+  "r_yield_districts: статистика охватов недоступна ((#10) Application does not have permission for this action)",
+  "p_rent_asked_paid: статистика охватов недоступна ((#10) Application does not have permission for this action)",
+  "r_rent_barsha_heights: статистика охватов недоступна ((#10) Application does not have permission for this action)"
  ]
 }
