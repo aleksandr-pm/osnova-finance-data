@@ -21,6 +21,14 @@
    "type": "reel",
    "dubai_time": "22:15",
    "timeset": "B"
+  },
+  {
+   "id": "r_yield_districts",
+   "at": "2026-11-16T10:06:06.559550+00:00",
+   "post": "18179146363450623",
+   "type": "reel",
+   "dubai_time": "14:06",
+   "timeset": "A"
   }
  ]
 }
