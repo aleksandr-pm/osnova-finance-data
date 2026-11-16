@@ -1,21 +1,2 @@
-Слот reel: в очереди 6 из 9; LIVE=да
-Следующий: r_rent_business_bay (media/r_rent_business_bay.mp4)
----
-Business Bay office listings ask 202 AED per sq ft a year. Tenants sign at 155.
-
-Asked: 202 AED per sq ft a year, 441 listings
-Paid: 155 AED per sq ft a year, Ejari new leases 2026
-Gap: 23%
-
-DM RENT and get asked vs paid rents for 17 office districts and 9 warehouse areas.
-
-Source: portal listings Nov 2026 · Ejari new leases, 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
-
-#dubaioffice #dubaicommercialproperty #dubairealestate #businessbay #dubaiinvestment #officespace
----
-Контейнер 17923634577242274, загрузка 1.2 МБ
-Ролик r_rent_business_bay не принят: загрузка видео: HTTP 400 {"debug_info": {"retriable": false, "type": "ProcessingFailedError", "message": "Request processing failed"}}
-Замена: r_market_october
-Контейнер 17923634697242274, загрузка 1.5 МБ
-Опубликовано: r_market_october → 18128596906676292
-exit=0 2026-11-15T18:15:17.725810+00:00
+Сегодня набор времени A, этот запуск из набора B: пропуск
+exit=0 2026-11-16T05:54:52.658925+00:00
