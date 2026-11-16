@@ -293,6 +293,21 @@ def sobha():
     json.dump(rep, open(os.path.join(out, "sobha_logo.json"), "w"), indent=1); print(rep)
 
 
+def sobhasite():
+    import re
+    out = os.path.join(OUTD, "buildings"); rep = {}
+    for u in ("https://sobharealty.com/", "https://www.sobharealty.com/"):
+        try:
+            r = requests.get(u, headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36", "Accept-Language": "en"}, timeout=40)
+            svgs = re.findall(r"<svg[^>]*width=\"126\"[\s\S]*?</svg>", r.text)
+            rep[u] = [r.status_code, len(r.text), len(svgs)]
+            if svgs:
+                open(os.path.join(out, "sobha_logo.svg"), "w").write(svgs[0]); break
+        except Exception as e:  # noqa: BLE001
+            rep[u] = str(e)
+    json.dump(rep, open(os.path.join(out, "sobhasite.json"), "w")); print(rep)
+
+
 def buildings(tag="report"):
     """Фото зданий фондов из Wikimedia Commons (JPEG 1600 px, до 2 на запрос) в am/research/buildings/ + логотип OIA через Wikidata"""
     import time
@@ -367,4 +382,4 @@ def buildings(tag="report"):
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite}[task]()
