@@ -1,45 +1,5 @@
 [
  {
-  "id": "alert-2026-11-12-SMCI-u",
-  "caption": "⚡️🚀 <b>Super Micro</b> (SMCI) +9,50% за день, $30,43\n\n#алерт",
-  "t": 1794492942
- },
- {
-  "id": "alert-2026-11-12-ARM-u",
-  "caption": "⚡️🚀 <b>Arm</b> (ARM) +12,05% за день, $203,36\n\n#алерт",
-  "t": 1794492942
- },
- {
-  "id": "alert-2026-11-12-DELL-u",
-  "caption": "⚡️🚀 <b>Dell</b> (DELL) +11,75% за день, $373,68\n\n#алерт",
-  "t": 1794492942
- },
- {
-  "id": "alert-2026-11-12-NVDA-d",
-  "caption": "⚡️🔻 <b>Nvidia</b> (NVDA) −5,94% за день, $163,41\n\n#алерт",
-  "t": 1794496688
- },
- {
-  "id": "alert-2026-11-12-PANW-d",
-  "caption": "⚡️🔻 <b>Palo Alto Networks</b> (PANW) −5,08% за день, $317,48\n\n#алерт",
-  "t": 1794496688
- },
- {
-  "id": "alert-2026-11-12-MSTR-d",
-  "caption": "⚡️🔻 <b>Strategy</b> (MSTR) −6,88% за день, $113,93\n\n#алерт",
-  "t": 1794496688
- },
- {
-  "id": "alert-2026-11-12-SMCI-d",
-  "caption": "⚡️🔻 <b>Super Micro</b> (SMCI) −7,41% за день, $28,17\n\n#алерт",
-  "t": 1794496688
- },
- {
-  "id": "alert-2026-11-12-DELL-d",
-  "caption": "⚡️🔻 <b>Dell</b> (DELL) −5,12% за день, $354,56\n\n#алерт",
-  "t": 1794496688
- },
- {
   "id": "alert-2026-11-12-BABA-d",
   "caption": "⚡️🔻 <b>Alibaba</b> (BABA) −7,07% за день, $94,35\n\n#алерт",
   "t": 1794496688
@@ -154,5 +114,45 @@
   "caption": "📊 Акции <b>Micron</b> упали на 7,36% за день\nЗа полгода: +5,81%, цена $721,1\n\n#графикдня",
   "t": 1794841839,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-16-MU.png"
+ },
+ {
+  "id": "alert-2026-11-16-INTC-d",
+  "caption": "⚡️🔻 <b>Intel</b> (INTC) −6,26% за день, $55,92\n\n#алерт",
+  "t": 1794844168
+ },
+ {
+  "id": "alert-2026-11-16-MU-d",
+  "caption": "⚡️🔻 <b>Micron</b> (MU) −5,98% за день, $731,78\n\n#алерт",
+  "t": 1794844168
+ },
+ {
+  "id": "alert-2026-11-16-COIN-d",
+  "caption": "⚡️🔻 <b>Coinbase</b> (COIN) −6,60% за день, $119,22\n\n#алерт",
+  "t": 1794844168
+ },
+ {
+  "id": "alert-2026-11-16-MSTR-d",
+  "caption": "⚡️🔻 <b>Strategy</b> (MSTR) −7,07% за день, $103,72\n\n#алерт",
+  "t": 1794844168
+ },
+ {
+  "id": "alert-2026-11-16-SMCI-d",
+  "caption": "⚡️🔻 <b>Super Micro</b> (SMCI) −5,24% за день, $25,46\n\n#алерт",
+  "t": 1794844168
+ },
+ {
+  "id": "alert-2026-11-16-ARM-d",
+  "caption": "⚡️🔻 <b>Arm</b> (ARM) −7,03% за день, $177,13\n\n#алерт",
+  "t": 1794844168
+ },
+ {
+  "id": "alert-2026-11-16-DELL-d",
+  "caption": "⚡️🔻 <b>Dell</b> (DELL) −5,55% за день, $325,42\n\n#алерт",
+  "t": 1794844168
+ },
+ {
+  "id": "alert-2026-11-16-TSM-d",
+  "caption": "⚡️🔻 <b>TSMC</b> (TSM) −5,95% за день, $374,99\n\n#алерт",
+  "t": 1794844168
  }
 ]
