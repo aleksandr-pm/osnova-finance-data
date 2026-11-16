@@ -105,5 +105,11 @@
   "t": 1794824852,
   "caption": "📈 <b>Россия обогнала Канаду в 2008 году</b>\n\n<b>Ввп: Россия, Бразилия, Канада, 2025 год и рост с 2000</b>\n1. 🇷🇺 Россия: $2,6 трлн, рост в 9,9 раза\n2. 🇨🇦 Канада: $2,3 трлн, рост в 3,1 раза\n3. 🇧🇷 Бразилия: $2,3 трлн, рост в 3,5 раза\n\nИсточник: World Bank, World Development Indicators, 2000-2025.\n#рейтинг",
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/bank/cards/duel_ny_gdp_mktp_cd_ru_br_ca.jpg"
+ },
+ {
+  "id": "report-mattel",
+  "t": 1794848041,
+  "caption": "📊 <b>Mattel: выручка стоит на месте четыре года</b>\n\nMattel выпускает Barbie, Hot Wheels и Fisher-Price\n\nВыручка: $5,35 млрд, −1% за год, −2% за три года\nЧистая прибыль: $398 млн, −27%\n\nФильм «Барби» в 2023 году выручку компании почти не сдвинул: $5,44 млрд против $5,44 млрд годом раньше\n\n<b>Выручка · чистая прибыль по годам</b>\n2022: $5,43 млрд · $394 млн\n2023: $5,44 млрд · $214 млн\n2024: $5,38 млрд · $542 млн\n2025: $5,35 млрд · $398 млн\n\n#разбор",
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/companies/cards/mattel.jpg"
  }
 ]
