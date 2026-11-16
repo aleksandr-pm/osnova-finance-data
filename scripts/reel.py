@@ -1911,25 +1911,31 @@ def main():
     # 08.11: Instagram дважды отклонил один и тот же ролик (ProcessingFailedError), очередь встала.
     # Теперь: одна повторная загрузка, затем ролик помечается failed и публикуется следующий рейтинг.
     pid = None
-    for attempt in range(2):
-        try:
-            pid = publish_reel(token, out, cap)
+    # 16.11: сбой загрузки на rupload случайный: col_duel_ny_gdp_mktp_cd_ru_br_ca 15.11 отклонён, 16.11 тот же файл прошёл.
+    # Загрузка не публикует, поэтому повтор безопасен: до 3 попыток одного ролика с паузой 90 с, потом одна замена.
+    for swap in range(2):
+        for attempt in range(3):
+            try:
+                pid = publish_reel(token, out, cap)
+                break
+            except RuntimeError as e:
+                log(f"Ошибка публикации {r['id']} (попытка {attempt + 1}): {e}")
+                if "загрузка видео" not in str(e) or attempt == 2:
+                    break
+                time.sleep(90)
+        if pid or want or swap == 1:
             break
-        except RuntimeError as e:
-            log(f"Ошибка публикации {r['id']} (попытка {attempt + 1}): {e}")
-            # 13.11: повтор того же ролика не помогает ни с другой подписью, ни загрузкой по ссылке, и лишние
-            # действия рискуют новым ограничением аккаунта. Сразу одна замена следующим рейтингом.
-            if want or attempt == 1:
-                raise
-            st["posted"].append({"id": r["id"], "block": r["block"], "fmt": r["fmt"], "post": "failed",
-                                 "at": dt.datetime.now(dt.timezone.utc).isoformat()})
-            save_state(st)
-            r = pick(rankings, st)
-            if not r:
-                raise
-            music = render(r, out, n, theme)
-            cap = caption(r, n)
-            log(f"reels (замена): {r['id']} ({r['block']}, {r['fmt']})")
+        st["posted"].append({"id": r["id"], "block": r["block"], "fmt": r["fmt"], "post": "failed",
+                             "at": dt.datetime.now(dt.timezone.utc).isoformat()})
+        save_state(st)
+        r = pick(rankings, st)
+        if not r:
+            break
+        music = render(r, out, n, theme)
+        cap = caption(r, n)
+        log(f"reels (замена): {r['id']} ({r['block']}, {r['fmt']})")
+    if not pid:
+        raise RuntimeError("Reels: Instagram не принял ролик и замену")
     st["posted"].append({"id": r["id"], "block": r["block"], "fmt": r["fmt"], "at": dt.datetime.now(dt.timezone.utc).isoformat(),
                          "post": pid, "music": music})
     save_state(st)
