@@ -283,6 +283,14 @@
    "fmt": "line",
    "post": "failed",
    "at": "2026-11-15T16:55:43.830405+00:00"
+  },
+  {
+   "id": "col_duel_ny_gdp_mktp_cd_ru_br_ca",
+   "block": "economy",
+   "fmt": "columns",
+   "at": "2026-11-16T10:27:32.583509+00:00",
+   "post": "18041140931848239",
+   "music": "nastelbom-cinematic-cinematic-music-623748.mp3"
   }
  ]
 }
