@@ -1,24 +1,24 @@
-Threads @osnova_finance {"views": 2037, "likes": 32, "replies": 2, "reposts": 0, "followers_count": 7}
-  постов за 7 дней: 69, просмотров по постам: 1583, медиана: 14
-     322  Резервы, включая золото: страны бывшего СССР, 2005-2025: 1. 
-      86  Больше всего денег мигранты отправляют из этих стран, 2025: 
-      84  Самые дорогие компании мира по капитализации, ноябрь 2026: 1
-      83  Крупнейшие экспортёры высоких технологий, 2024: 1. 🇨🇳 Китай 
-      80  Производство пшеницы: крупнейшие производители, 2000-2024: 1
-Threads @osnova_report {"views": 3672, "likes": 24, "replies": 5, "reposts": 0, "followers_count": 82}
-  постов за 7 дней: 11, просмотров по постам: 3580, медиана: 249
-    1020  WD-40 продаёт смазку в синем баллончике больше 70 лет. Сами 
-     476  Лоукостер из Шарджи за три года увеличил выручку почти в 1,5
-     326  Каждый раз, когда машина в Дубае проезжает под рамкой Salik,
-     321  Премиальная сеть супермаркетов Spinneys за три года увеличил
-     282  Dubai Taxi возит пассажиров в Дубае: такси, лимузины, автобу
-Instagram @osnova_finance {"id": "17841410889815757", "followers_count": 7, "media_count": 76}
-  публикаций за 7 дней: 36, просмотров: 0
-       0 FEED   Киргизия: резервы выросли в 14 раз с 2005 года.  Р {"ошибка": "(#10) Application does not have permission for this action"}
-       0 REELS  Крупнейшие ритейлеры по капитализации: №1 Amazon,  {"ошибка": "(#10) Application does not have permission for this action"}
-       0 FEED   №1: SAP, $269 млрд.  Самые дорогие компании Герман {"ошибка": "(#10) Application does not have permission for this action"}
-       0 REELS  Ирландия: экспорт вырос в 6 раз с 2005 года.  Новы {"ошибка": "(#10) Application does not have permission for this action"}
-       0 FEED   Швейцария: резервы выросли в 18,7 раза с 2005 года {"ошибка": "(#10) Application does not have permission for this action"}
-       0 REELS  Крупнейшие фондовые рынки по капитализации компани {"ошибка": "(#10) Application does not have permission for this action"}
-       0 FEED   №1: Вячеслав Ким, $7,8 млрд.  Самые богатые люди К {"ошибка": "(#10) Application does not have permission for this action"}
-       0 FEED   Пять стран дают 61% мирового экспорта какао-бобов. {"ошибка": "(#10) Application does not have permission for this action"}
+Threads @osnova_finance {"views": 1200, "likes": 2, "replies": 1, "reposts": 0, "followers_count": 7}
+  постов за 7 дней: 42, просмотров по постам: 868, медиана: 5
+     295  Ввп на человека: Россия, Казахстан, Беларусь, 2000-2025: 1. 
+     116  Ввп на человека: Россия и Китай, 2000-2025: 1. 🇷🇺 Россия · $
+     101  Крупнейшие экспортёры высоких технологий, 2024: 1. 🇨🇳 Китай 
+      50  Доли в мировом экспорте риса, 2024: 1. 🇮🇳 Индия · 37,0% 2. 🇹
+      42  Крупнейший банк Дубая. Работает в ОАЭ, Саудовской Аравии, Ег
+Threads @osnova_report {"views": 3067, "likes": 13, "replies": 2, "reposts": 0, "followers_count": 82}
+  постов за 7 дней: 14, просмотров по постам: 1610, медиана: 110
+     241  DEWA снабжает Дубай электричеством и водой. Компания государ
+     239  TKO Group объединила рестлинг WWE и бои UFC в 2023 году. Зар
+     185  Crocs продаёт пластиковые сабо и с 2022 года обувь HEYDUDE  
+     147  Tootsie Roll Industries выпускает конфеты Tootsie Roll, Char
+     123  Commercial Bank of Dubai обслуживает компании и частных клие
+Instagram @osnova_finance {"id": "17841410889815757", "followers_count": 15, "media_count": 94}
+  публикаций за 7 дней: 24, просмотров: 0
+       0 FEED   Китай: ВВП на человека вырос в 14,3 раза с 2000 го {"ошибка": "(#10) Application does not have permission for this action"}
+       0 REELS  Узбекистан: переводы мигрантов выросли в 20,6 раза {"ошибка": "(#10) Application does not have permission for this action"}
+       0 REELS  Крупнейшие экспортёры высоких технологий: №1 Китай {"ошибка": "(#10) Application does not have permission for this action"}
+       0 REELS  Украина: производство соевых бобов выросло в 103 р {"ошибка": "(#10) Application does not have permission for this action"}
+       0 REELS  Крупнейшие экспортёры товаров и услуг: №1 Китай, $ {"ошибка": "(#10) Application does not have permission for this action"}
+       0 REELS  Швейцария: резервы выросли в 18,7 раза с 2005 года {"ошибка": "(#10) Application does not have permission for this action"}
+       0 REELS  Пять стран дают 83% мирового экспорта риса. На ост {"ошибка": "(#10) Application does not have permission for this action"}
+       0 REELS  Узбекистан: экономика выросла в 10,3 раза с 2005 г {"ошибка": "(#10) Application does not have permission for this action"}
