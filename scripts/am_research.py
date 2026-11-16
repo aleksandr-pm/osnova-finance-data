@@ -210,6 +210,62 @@ def extra():
     print(rep)
 
 
+def salik():
+    """Цена акции Salik (DFM) с IPO + логотип из Википедии"""
+    import yfinance as yf, time, re
+    out = os.path.join(OUTD, "salik"); os.makedirs(out, exist_ok=True)
+    rep = {}
+    for t in ("SALIK.AE",):
+        try:
+            h = yf.Ticker(t).history(period="max", interval="1d", auto_adjust=False)
+            h = h[["Close", "Volume"]]; h.index = h.index.strftime("%Y-%m-%d")
+            h.to_csv(os.path.join(out, "price.csv")); rep["price_rows"] = len(h); rep["last"] = [h.index[-1], float(h["Close"].iloc[-1])]
+        except Exception as e:  # noqa: BLE001
+            rep["yf_err"] = str(e)
+    try:
+        sc = requests.post("https://scanner.tradingview.com/uae/scan", json={"symbols": {"tickers": ["DFM:SALIK"]},
+                           "columns": ["close", "market_cap_basic", "dividend_yield_recent", "Perf.Y", "Perf.YTD", "Perf.All", "price_earnings_ttm"]}, timeout=30).json()
+        rep["tv"] = sc
+    except Exception as e:  # noqa: BLE001
+        rep["tv_err"] = str(e)
+    H = {"User-Agent": "osnova-research/1.0 (github.com/aleksandr-pm)"}
+    try:
+        wt = requests.get("https://en.wikipedia.org/w/api.php", params={"action": "parse", "page": "Salik (road toll)", "prop": "wikitext", "format": "json", "redirects": 1},
+                          headers=H, timeout=30).json()["parse"]["wikitext"]["*"]
+        m = re.search(r"\|\s*(?:logo|image)\s*=\s*(?:\[\[)?(?:File:|Image:)?([^\n|\]]+)", wt)
+        rep["wiki_logo_field"] = m.group(1).strip() if m else None
+        cands = [m.group(1).strip()] if m else []
+        time.sleep(3)
+        res = requests.get("https://commons.wikimedia.org/w/api.php", params={"action": "query", "list": "search", "srsearch": "Salik logo", "srnamespace": 6, "srlimit": 10, "format": "json"},
+                           headers=H, timeout=30).json()["query"]["search"]
+        rep["commons"] = [x["title"] for x in res]
+        cands += [x["title"].replace("File:", "") for x in res if "salik" in x["title"].lower()]
+        for i, fn in enumerate(cands[:3]):
+            time.sleep(3)
+            for site in ("https://en.wikipedia.org/w/api.php", "https://commons.wikimedia.org/w/api.php"):
+                info = requests.get(site, params={"action": "query", "titles": "File:" + fn, "prop": "imageinfo", "iiprop": "url", "iiurlwidth": 1000, "format": "json"}, headers=H, timeout=30).json()
+                pg = list(info["query"]["pages"].values())[0]
+                if "imageinfo" in pg:
+                    u = (pg["imageinfo"][0].get("thumburl") or pg["imageinfo"][0]["url"]).split("?")[0]
+                    open(os.path.join(out, f"logo{i}." + u.rsplit(".", 1)[-1].lower()), "wb").write(requests.get(u, headers=H, timeout=30).content)
+                    rep.setdefault("logos", []).append([fn, u]); break
+    except Exception as e:  # noqa: BLE001
+        rep["logo_err"] = str(e)
+    for site in ("https://www.salik.ae/en", "https://www.salik.ae/"):
+        try:
+            r = requests.get(site, headers={"User-Agent": "Mozilla/5.0"}, timeout=30)
+            c = re.findall(r'(?:src|href)=["\']([^"\']*logo[^"\']*\.(?:svg|png|webp|jpg))', r.text, re.I)
+            rep["site"] = {"status": r.status_code, "cands": c[:8]}
+            for i, cc in enumerate(c[:3]):
+                u = requests.compat.urljoin(r.url, cc)
+                open(os.path.join(out, f"site{i}." + u.rsplit(".", 1)[-1].lower()), "wb").write(requests.get(u, headers={"User-Agent": "Mozilla/5.0"}, timeout=30).content)
+            if c: break
+        except Exception as e:  # noqa: BLE001
+            rep["site_err"] = str(e)
+    json.dump(rep, open(os.path.join(out, "report.json"), "w"), ensure_ascii=False, indent=1, default=str)
+    print(rep)
+
+
 def buildings(tag="report"):
     """Фото зданий фондов из Wikimedia Commons (JPEG 1600 px, до 2 на запрос) в am/research/buildings/ + логотип OIA через Wikidata"""
     import time
@@ -284,4 +340,4 @@ def buildings(tag="report"):
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik}[task]()
