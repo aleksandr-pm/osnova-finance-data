@@ -4983,6 +4983,61 @@
    "cap": 416.18,
    "name": "XMax Inc",
    "ind": "Consumer products"
+  },
+  "ARMK": {
+   "cap": 14219.934428144768,
+   "name": "Aramark",
+   "ind": "Hotels, Restaurants & Leisure"
+  },
+  "BIDU": {
+   "cap": 25935.580196851086,
+   "name": "Baidu, Inc.",
+   "ind": "Media"
+  },
+  "BXDC": {
+   "cap": 1679.8469197444108,
+   "name": "Blackstone Digital Infrastructure Trust Inc",
+   "ind": "Real Estate"
+  },
+  "EP": {
+   "cap": 102.75778597500002,
+   "name": "Empire Petroleum Corp",
+   "ind": "Energy"
+  },
+  "IQ": {
+   "cap": 861.767095,
+   "name": "iQIYI Inc",
+   "ind": "Media"
+  },
+  "NIU": {
+   "cap": 138.831874,
+   "name": "NIU Technologies",
+   "ind": "Automobiles"
+  },
+  "POWW": {
+   "cap": 265.77952226754394,
+   "name": "Outdoor Holding Company.",
+   "ind": "Retail"
+  },
+  "TOYO": {
+   "cap": 192.23526881606765,
+   "name": "TOYO Co., Ltd",
+   "ind": "Semiconductors"
+  },
+  "XPEV": {
+   "cap": 8708.4,
+   "name": "Xpeng Inc",
+   "ind": "Automobiles"
+  },
+  "XTND": {
+   "cap": 383.66,
+   "name": "Xtend AI Robotics, Inc",
+   "ind": "Construction"
+  },
+  "XXII": {
+   "cap": 1.34,
+   "name": "22nd Century Group, Inc.",
+   "ind": "Tobacco"
   }
  },
  "earn_done": [
