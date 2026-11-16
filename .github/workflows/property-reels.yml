@@ -3,13 +3,12 @@ name: property-reels
 # Публикация только при наличии property/LIVE. Пауза: дата в property/pause_until.txt.
 on:
   schedule:
-    # Тест времени: набор A и набор B чередуются по дням (чётный/нечётный день года по Дубаю)
-    - cron: "41 7 * * *"    # A: Reels 11:41 по Дубаю
-    - cron: "11 11 * * *"   # A: пост 15:11
-    - cron: "41 15 * * *"   # A: Reels 19:41
-    - cron: "41 4 * * *"    # B: Reels 08:41
-    - cron: "11 9 * * *"    # B: пост 13:11
-    - cron: "41 17 * * *"   # B: Reels 21:41
+    # 4 Reels в день (по Дубаю 09:11, 13:11, 17:41, 21:11) и 1 пост (15:41). Лучшие слоты выберем по статистике.
+    - cron: "11 5 * * *"
+    - cron: "11 9 * * *"
+    - cron: "41 13 * * *"
+    - cron: "11 17 * * *"
+    - cron: "41 11 * * *"   # пост
   push:
     branches: [main]
     paths: ["property/publish_request.txt"]   # разовая публикация вне расписания
@@ -45,12 +44,7 @@ jobs:
           ARGS=""
           if [ "${{ inputs.dry_run }}" = "yes" ]; then ARGS="--dry-run"; fi
           SLOT="${{ inputs.slot }}"
-          case "${{ github.event.schedule }}" in
-            "41 7 * * *"|"41 15 * * *") SLOT=reel; export TIMESET=A ;;
-            "11 11 * * *") SLOT=post; export TIMESET=A ;;
-            "41 4 * * *"|"41 17 * * *") SLOT=reel; export TIMESET=B ;;
-            "11 9 * * *") SLOT=post; export TIMESET=B ;;
-          esac
+          if [ "${{ github.event.schedule }}" = "41 11 * * *" ]; then SLOT=post; elif [ -n "${{ github.event.schedule }}" ]; then SLOT=reel; fi
           if [ "${{ github.event_name }}" = "push" ]; then ARGS="--force"; SLOT=$(awk '{print $1; exit}' property/publish_request.txt); fi
           export SLOT=${SLOT:-reel}
           set +e

@@ -6,8 +6,7 @@
 
 Правила (из опыта OSNOVA Finance, Instagram_autopublish_guide.md):
   * публикация только если есть файл property/LIVE и не наступила пауза property/pause_until.txt;
-  * 3 слота в день, тест времени через день: набор A (Reels 11:41 и 19:41, пост 15:11) и набор B (Reels 08:41 и 21:41, пост 13:11) по Дубаю;
-  * Reels не чаще раза в 5 ч, пост раз в 20 ч;
+  * 4 Reels в день (09:11, 13:11, 17:41, 21:11 по Дубаю) и 1 пост (15:41); Reels не чаще раза в 2,5 ч, пост раз в 20 ч;
   * любая ошибка на шаге media_publish = ролик помечается использованным, повторно не отправляется;
   * отказ Instagram в обработке ролика = ролик помечается failed, в этом же запуске одна замена следующим.
 """
@@ -209,7 +208,7 @@ def main():
     real = [p for p in st["posted"] if p.get("post") not in ("failed",) and kind.get(p["id"], "reel") == slot]
     if real and not dry and "--force" not in args:
         gap = now() - dt.datetime.fromisoformat(real[-1]["at"])
-        if gap < dt.timedelta(hours=5 if slot == "reel" else 20):
+        if gap < dt.timedelta(hours=2.5 if slot == "reel" else 20):
             log(f"Пропуск: прошлый ролик {int(gap.total_seconds() // 3600)} ч назад")
             return 0
     item = todo[0]
