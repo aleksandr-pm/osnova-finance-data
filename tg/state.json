@@ -10,7 +10,8 @@
   "ARM",
   "SMCI",
   "BABA",
-  "AMD"
+  "AMD",
+  "MU"
  ],
  "alerts": {
   "MSTR:down": "2026-11-13",
