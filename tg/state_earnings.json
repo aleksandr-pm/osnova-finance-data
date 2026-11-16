@@ -5298,6 +5298,161 @@
    "cap": 18.491688283939396,
    "name": "Cocrystal Pharma Inc",
    "ind": "Pharmaceuticals"
+  },
+  "ACM": {
+   "cap": 9213.377165772908,
+   "name": "AECOM",
+   "ind": "Construction"
+  },
+  "AYTU": {
+   "cap": 20.363761076966295,
+   "name": "Aytu Biopharma Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "BAER": {
+   "cap": 14.903603716992187,
+   "name": "Bridger Aerospace Group Holdings Inc",
+   "ind": "Commercial Services & Supplies"
+  },
+  "BOF": {
+   "cap": 38.40176748768474,
+   "name": "BranchOut Food Inc",
+   "ind": "Food Products"
+  },
+  "BRFH": {
+   "cap": 8.682470633913042,
+   "name": "Barfresh Food Group Inc",
+   "ind": "Food Products"
+  },
+  "CEPL": {
+   "cap": 86.3151465037594,
+   "name": "Capstone Energy+ Inc",
+   "ind": "Electrical Equipment"
+  },
+  "DARE": {
+   "cap": 12.881282293124432,
+   "name": "Dare Bioscience Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "DUOT": {
+   "cap": 149.65173040298507,
+   "name": "Duos Technologies Group Inc",
+   "ind": "Technology"
+  },
+  "EMAT": {
+   "cap": 489.7809689505512,
+   "name": "Evolution Metals & Technologies Corp",
+   "ind": "Metals & Mining"
+  },
+  "ENTA": {
+   "cap": 312.806815545041,
+   "name": "Enanta Pharmaceuticals Inc",
+   "ind": "Biotechnology"
+  },
+  "FFAI": {
+   "cap": 2.2508021380222103,
+   "name": "Faraday Future Intelligent Electric Inc",
+   "ind": "Automobiles"
+  },
+  "FIRY": {
+   "cap": 167.69198360903226,
+   "name": "Firy Inc",
+   "ind": "Media"
+  },
+  "GETY": {
+   "cap": 7.92,
+   "name": "Getty Images Holdings Inc",
+   "ind": "Media"
+  },
+  "GFUZ": {
+   "cap": 329.54565280310374,
+   "name": "General Fusion Group Ltd",
+   "ind": "Electrical Equipment"
+  },
+  "INFQ": {
+   "cap": 1854.6883419540095,
+   "name": "Infleqtion Inc",
+   "ind": "Technology"
+  },
+  "KITT": {
+   "cap": 1.8481520719602977,
+   "name": "Nauticus Robotics Inc",
+   "ind": "Machinery"
+  },
+  "KYNB": {
+   "cap": 13.625303668604653,
+   "name": "Kyntra Bio, Inc.",
+   "ind": "Biotechnology"
+  },
+  "OMER": {
+   "cap": 1250.5080958447684,
+   "name": "Omeros Corporation",
+   "ind": "Pharmaceuticals"
+  },
+  "PAGS": {
+   "cap": 2186.8321865062658,
+   "name": "PagSeguro Digital Ltd",
+   "ind": "Financial Services"
+  },
+  "PARA": {
+   "cap": 0.05752614038461539,
+   "name": "Parabolic Technologies, Inc.",
+   "ind": "Technology"
+  },
+  "POCI": {
+   "cap": 57.05851724665392,
+   "name": "Precision Optics Corporation Inc",
+   "ind": "Health Care"
+  },
+  "POWL": {
+   "cap": 5576.9147481574055,
+   "name": "Powell Industries Inc",
+   "ind": "Electrical Equipment"
+  },
+  "RCAT": {
+   "cap": 546.7326566827105,
+   "name": "Red Cat Holdings Inc",
+   "ind": "Aerospace & Defense"
+  },
+  "RSSS": {
+   "cap": 67.18771062686568,
+   "name": "Research Solutions Inc",
+   "ind": "Technology"
+  },
+  "SHAZ": {
+   "cap": 687.2482590757979,
+   "name": "SharonAI Holdings Inc",
+   "ind": "Technology"
+  },
+  "SLNH": {
+   "cap": 101.88794294188617,
+   "name": "Soluna Holdings Inc",
+   "ind": "Technology"
+  },
+  "STEM": {
+   "cap": 18.724017462053567,
+   "name": "Stem, Inc.",
+   "ind": "Electrical Equipment"
+  },
+  "TMS": {
+   "cap": 355.90726716826,
+   "name": "Teamshares Inc.",
+   "ind": "Financial Services"
+  },
+  "TRAK": {
+   "cap": 132.79415601086066,
+   "name": "ReposiTrak Inc",
+   "ind": "Technology"
+  },
+  "XBP": {
+   "cap": 31.37,
+   "name": "XBP Global Holdings Inc",
+   "ind": "Financial Services"
+  },
+  "YALA": {
+   "cap": 833.54,
+   "name": "Yalla Group Limited",
+   "ind": "Media"
   }
  },
  "earn_done": [
