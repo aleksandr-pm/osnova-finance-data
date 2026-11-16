@@ -1,2 +1,20 @@
-Сегодня набор времени A, этот запуск из набора B: пропуск
-exit=0 2026-11-16T10:42:47.279586+00:00
+Слот post: в очереди 2 из 9; LIVE=да
+Следующий: p_rent_asked_paid (media/p_rent_asked_paid.jpg)
+---
+Dubai office tenants pay 22% to 53% less than listings ask.
+
+Asked vs paid, AED per sq ft a year:
+Deira 131 vs 62
+Barsha Heights 274 vs 134
+Business Bay 202 vs 155
+Internet City 230 vs 180
+
+Negotiating a lease? Start from what was signed, not what is listed. DM RENT and get all 17 districts.
+
+Source: portal listings Nov 2026 · Ejari new leases, 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
+
+#dubaioffice #dubaicommercialproperty #dubairealestate #businessbay #dubaiinvestment #officespace
+---
+Контейнер 17923799373242274, картинка https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/9d860ffa156bb8c91cd819fb97870f65ee2548c3/property/media/p_rent_asked_paid.jpg
+Опубликовано: p_rent_asked_paid → 17968531479227412
+exit=0 2026-11-16T12:19:40.372665+00:00
