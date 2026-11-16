@@ -1,20 +1,2 @@
-Слот reel: в очереди 4 из 9; LIVE=да
-Следующий: r_yield_districts (media/r_yield_districts.mp4)
----
-13.1% gross. The highest office yield in Dubai is in DIP, not Downtown.
-
-Gross yield = Ejari rent ÷ price paid for ready offices, 2026:
-DIP 13.1%
-Arjan 10.6%
-Business Bay 8.0%
-Sheikh Zayed Road 2.9%
-
-DM YIELD and get yields for 12 office districts and 12 retail districts.
-
-Source: DLD transactions / Ejari, 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
-
-#dubaioffice #dubaicommercialproperty #dubairealestate #businessbay #dubaiinvestment #officespace
----
-Контейнер 17923775577242274, загрузка 1.4 МБ
-Опубликовано: r_yield_districts → 18179146363450623
-exit=0 2026-11-16T10:06:06.560150+00:00
+Сегодня набор времени A, этот запуск из набора B: пропуск
+exit=0 2026-11-16T10:42:47.279586+00:00
