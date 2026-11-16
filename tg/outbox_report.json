@@ -99,5 +99,11 @@
   "t": 1794820603,
   "caption": "📊 <b>Tabreed: 2,46 млрд дирхамов на холоде</b>\n\nTabreed охлаждает здания централизованно через сети труб в ОАЭ и других странах Залива\n\nВыручка: 2,46 млрд AED, +1% за год, +11% за три года\nЧистая прибыль: 465 млн AED, −18%\n\nДолг 6,5 млрд AED, больше собственного капитала 6,1 млрд AED\n\n<b>Выручка · чистая прибыль по годам</b>\n2022: 2,22 млрд AED · 600 млн AED\n2023: 2,42 млрд AED · 431 млн AED\n2024: 2,43 млрд AED · 570 млн AED\n2025: 2,46 млрд AED · 465 млн AED\n\n#разбор",
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/companies/cards/tabreed.jpg"
+ },
+ {
+  "id": "reel-col_duel_ny_gdp_mktp_cd_ru_br_ca",
+  "t": 1794824852,
+  "caption": "📈 <b>Россия обогнала Канаду в 2008 году</b>\n\n<b>Ввп: Россия, Бразилия, Канада, 2025 год и рост с 2000</b>\n1. 🇷🇺 Россия: $2,6 трлн, рост в 9,9 раза\n2. 🇨🇦 Канада: $2,3 трлн, рост в 3,1 раза\n3. 🇧🇷 Бразилия: $2,3 трлн, рост в 3,5 раза\n\nИсточник: World Bank, World Development Indicators, 2000-2025.\n#рейтинг",
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/bank/cards/duel_ny_gdp_mktp_cd_ru_br_ca.jpg"
  }
 ]
