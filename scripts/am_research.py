@@ -308,6 +308,35 @@ def sobhasite():
     json.dump(rep, open(os.path.join(out, "sobhasite.json"), "w")); print(rep)
 
 
+def sobhaimgs():
+    import re, time
+    out = os.path.join(OUTD, "sobha_imgs"); os.makedirs(out, exist_ok=True); rep = {"pages": {}, "files": []}
+    UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36"}
+    urls = []
+    for pg in ("https://sobharealty.com/", "https://sobharealty.com/sobha-hartland", "https://sobharealty.com/sobha-hartland-ii", "https://sobharealty.com/sobha-one",
+               "https://sobharealty.com/projects", "https://sobharealty.com/about-us"):
+        try:
+            r = requests.get(pg, headers=UA, timeout=40); found = re.findall(r'(/sites/default/files/[^"\'\s)]+?\.(?:jpg|jpeg|webp|png))', r.text, re.I)
+            rep["pages"][pg] = [r.status_code, len(found)]
+            for f in found:
+                if any(k in f.lower() for k in ("logo", "icon", "ico_", "svg")): continue
+                if f not in urls: urls.append(f)
+        except Exception as e:  # noqa: BLE001
+            rep["pages"][pg] = str(e)
+        time.sleep(1)
+    n = 0
+    for f in urls:
+        if n >= 40: break
+        try:
+            b = requests.get("https://sobharealty.com" + f, headers=UA, timeout=40).content
+            if len(b) < 60000: continue
+            ext = f.rsplit(".", 1)[-1].lower(); fn = f"s{n:02d}.{ext}"; open(os.path.join(out, fn), "wb").write(b)
+            rep["files"].append([fn, f, len(b)]); n += 1
+        except Exception as e:  # noqa: BLE001
+            rep["files"].append([f, str(e)])
+    json.dump(rep, open(os.path.join(out, "report.json"), "w"), indent=1); print(rep["pages"], n)
+
+
 def buildings(tag="report"):
     """Фото зданий фондов из Wikimedia Commons (JPEG 1600 px, до 2 на запрос) в am/research/buildings/ + логотип OIA через Wikidata"""
     import time
@@ -382,4 +411,4 @@ def buildings(tag="report"):
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs}[task]()
