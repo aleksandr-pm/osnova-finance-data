@@ -5148,6 +5148,156 @@
    "cap": 39.31,
    "name": "Xtant Medical Holdings Inc",
    "ind": "Health Care"
+  },
+  "ADGM": {
+   "cap": 1.5548948704663215,
+   "name": "Adagio Medical Holdings Inc",
+   "ind": "Health Care"
+  },
+  "ALXO": {
+   "cap": 134.4328872475,
+   "name": "ALX Oncology Holdings Inc",
+   "ind": "Biotechnology"
+  },
+  "APMD": {
+   "cap": 691.0708757919623,
+   "name": "Apnimed Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "APVO": {
+   "cap": 1.041960014139034,
+   "name": "Aptevo Therapeutics Inc",
+   "ind": "Biotechnology"
+  },
+  "CDZI": {
+   "cap": 274.110478903481,
+   "name": "Cadiz Inc",
+   "ind": "Utilities"
+  },
+  "CMCT": {
+   "cap": 14.737463927855712,
+   "name": "Creative Media & Community Trust Corporation",
+   "ind": "Real Estate"
+  },
+  "CNSP": {
+   "cap": 4.3843474048442905,
+   "name": "CNS Pharmaceuticals Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "ELOX": {
+   "cap": 49.28516267224335,
+   "name": "Eloxx Pharmaceuticals Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "ESLA": {
+   "cap": 20.05251521789883,
+   "name": "Estrella Immunopharma Inc",
+   "ind": "Biotechnology"
+  },
+  "HCWB": {
+   "cap": 1.745674429181218,
+   "name": "HCW Biologics Inc",
+   "ind": "Biotechnology"
+  },
+  "IAM": {
+   "cap": 547.4791976793894,
+   "name": "Iambic Therapeutics, Inc.",
+   "ind": "Biotechnology"
+  },
+  "IDR": {
+   "cap": 277.74929227028485,
+   "name": "Idaho Strategic Resources Inc",
+   "ind": "Metals & Mining"
+  },
+  "IVVD": {
+   "cap": 164.85856659302527,
+   "name": "Invivyd, Inc.",
+   "ind": "Biotechnology"
+  },
+  "JFB": {
+   "cap": 383.66,
+   "name": "Xtend AI Robotics, Inc",
+   "ind": "Construction"
+  },
+  "JSPR": {
+   "cap": 15.705591947368422,
+   "name": "Jasper Therapeutics, Inc.",
+   "ind": "Biotechnology"
+  },
+  "LRMR": {
+   "cap": 318.92060668874166,
+   "name": "Larimar Therapeutics, Inc.",
+   "ind": "Biotechnology"
+  },
+  "LXEO": {
+   "cap": 268.0178239703833,
+   "name": "Lexeo Therapeutics, Inc.",
+   "ind": "Biotechnology"
+  },
+  "MPLT": {
+   "cap": 400.14516910344827,
+   "name": "MapLight Therapeutics, Inc.",
+   "ind": "Biotechnology"
+  },
+  "NMRA": {
+   "cap": 76.94337342737235,
+   "name": "Neumora Therapeutics Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "NXGL": {
+   "cap": 11.398541847938144,
+   "name": "Nexgel Inc",
+   "ind": "Health Care"
+  },
+  "ODYS": {
+   "cap": 35.970255909213485,
+   "name": "Odysight.AI Inc",
+   "ind": "Health Care"
+  },
+  "PDCC": {
+   "cap": 51.25,
+   "name": "Pearl Diver Credit Company Inc",
+   "ind": "N/A"
+  },
+  "PRLD": {
+   "cap": 269.735776115942,
+   "name": "Prelude Therapeutics Incorporated",
+   "ind": "Biotechnology"
+  },
+  "RNTX": {
+   "cap": 35.714550222785725,
+   "name": "Rein Therapeutics Inc",
+   "ind": "Biotechnology"
+  },
+  "RPID": {
+   "cap": 36.88733866175116,
+   "name": "Rapid Micro Biosystems, Inc.",
+   "ind": "Life Sciences Tools & Services"
+  },
+  "SCNX": {
+   "cap": 4.829961875517242,
+   "name": "Scienture Holdings Inc",
+   "ind": "Health Care"
+  },
+  "TIL": {
+   "cap": 39.1320023930921,
+   "name": "Instil Bio, Inc.",
+   "ind": "Biotechnology"
+  },
+  "TOMZ": {
+   "cap": 18.48365016535433,
+   "name": "TOMI Environmental Solutions Inc",
+   "ind": "Commercial Services & Supplies"
+  },
+  "UNCY": {
+   "cap": 104.178662,
+   "name": "Unicycive Therapeutics Inc",
+   "ind": "Biotechnology"
+  },
+  "COCP": {
+   "cap": 18.491688283939396,
+   "name": "Cocrystal Pharma Inc",
+   "ind": "Pharmaceuticals"
   }
  },
  "earn_done": [
