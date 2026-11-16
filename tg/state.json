@@ -11,7 +11,8 @@
   "SMCI",
   "BABA",
   "AMD",
-  "MU"
+  "MU",
+  "MSTR"
  ],
  "alerts": {
   "INTC:down": "2026-11-16",

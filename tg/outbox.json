@@ -1,11 +1,5 @@
 [
  {
-  "id": "chart-2026-11-12-SMCI",
-  "caption": "📊 Акции <b>Super Micro</b> упали на 12,18% за день\nЗа полгода: −18,49%, цена $26,73\n\n#графикдня",
-  "t": 1794505002,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-12-SMCI.png"
- },
- {
   "id": "evening-2026-11-12",
   "caption": "📈 <b>Итоги дня 12 ноября</b>\n\nS&P 500 −0,35%, Nasdaq −0,39%, Dow Jones −0,36%\nНефть Brent +3,24%, Золото −2,99%\n\n#итогидня",
   "t": 1794521054,
@@ -154,5 +148,11 @@
   "id": "alert-2026-11-16-HOOD-d",
   "caption": "⚡️🔻 <b>Robinhood</b> (HOOD) −6,00% за день, $73,19\n\n#алерт",
   "t": 1794848405
+ },
+ {
+  "id": "chart-2026-11-16-MSTR",
+  "caption": "📊 Акции <b>Strategy</b> упали на 7,62% за день\nЗа полгода: −38,10%, цена $103,14\n\n#графикдня",
+  "t": 1794851161,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-16-MSTR.png"
  }
 ]
