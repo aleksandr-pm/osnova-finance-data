@@ -106,9 +106,10 @@ class Reel:
     def cta(self, d, t):
         a = ease(t / 0.25)
         ring(d, W / 2, 600, 70, SAND, a, 24)
-        T(d, (W / 2, 840), "DM " + self.c["word"], fit(d, "DM " + self.c["word"], W - 2 * M, 190, 100), SAND, a, "mm")
-        T(d, (W / 2, 990), self.c.get("cta_line", "for the full table"), font(500, 60), WHITE, ease((t - 0.2) / 0.3), "mm")
-        T(d, (W / 2, 1130), "osnova.property", font(600, 64), SAND, ease((t - 0.4) / 0.3), "mm")
+        T(d, (W / 2, 790), "Full data on", font(500, 56), WHITE, a, "mm")
+        T(d, (W / 2, 900), "osnova.property", fit(d, "osnova.property", W - 2 * M, 120, 80), SAND, a, "mm")
+        T(d, (W / 2, 1010), "link in bio", font(500, 56), WHITE, ease((t - 0.2) / 0.3), "mm")
+        T(d, (W / 2, 1160), "or comment " + self.c["word"], font(600, 60), SAND, ease((t - 0.45) / 0.3), "mm")
         T(d, (W / 2, SAFE_B - 20), DISC, font(400, 26), (184, 194, 207), ease((t - 0.4) / 0.3), "mm")
 
 
@@ -188,7 +189,7 @@ def post(c, out):
             T(d, (x0 + wa + 12, yy + bh / 2), fmt(a_), font(500, 26), SLATE, 1, "lm")
             d.rectangle([x0, yy + bh + 6, x0 + wp, yy + 2 * bh + 6], fill=NAVY)
             T(d, (x0 + wp + 12, yy + bh * 1.5 + 6), fmt(p_), font(600, 28), NAVY, 1, "lm")
-    T(d, (m, PH - 140), f"DM {c['word']} for the full table", font(600, 34), NAVY)
+    T(d, (m, PH - 140), f"Full data: osnova.property · link in bio · or comment {c['word']}", fit(d, f"Full data: osnova.property · link in bio · or comment {c['word']}", PW - 2 * m, 30, 22), NAVY)
     T(d, (m, PH - 84), c["src"], fit(d, c["src"], PW - 2 * m, 24, 18, 400), SLATE)
     T(d, (m, PH - 50), DISC, font(500, 22), STONE)
     img.save(out, quality=95)

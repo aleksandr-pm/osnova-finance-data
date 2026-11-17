@@ -37,9 +37,10 @@ def cta(d,t,word="DATA",line="for the full table"):
     d.rectangle([0,0,W,H],fill=MID+(int(255*min(1,t/0.2)),))
     a=ease(t/0.25); cx=W/2; r=70
     d.ellipse([cx-r,600-r,cx+r,600+r],outline=SAND+(int(255*a),),width=24)
-    s_="DM "+word; T(d,(cx,840),s_,fitf(d,s_,600,190,W-2*M,100),SAND,a,anchor="mm")
-    T(d,(cx,990),line,font(500,60),WHITE,ease((t-0.2)/0.3),anchor="mm")
-    T(d,(cx,1130),"osnova.property",font(600,64),SAND,ease((t-0.4)/0.3),anchor="mm")
+    T(d,(cx,790),"Full data on",font(500,56),WHITE,a,anchor="mm")
+    T(d,(cx,900),"osnova.property",fitf(d,"osnova.property",600,120,W-2*M,80),SAND,a,anchor="mm")
+    T(d,(cx,1010),"link in bio",font(500,56),WHITE,ease((t-0.2)/0.3),anchor="mm")
+    T(d,(cx,1160),"or comment "+word,font(600,60),SAND,ease((t-0.45)/0.3),anchor="mm")
     T(d,(cx,H-270),DISC,font(400,26),GREY,ease((t-0.4)/0.3),anchor="mm")
 CTA=120
 
