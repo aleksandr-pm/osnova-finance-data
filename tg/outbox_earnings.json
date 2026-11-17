@@ -46,5 +46,11 @@
   "caption": "📊 <b>Home Depot</b> (HD), отчёт за 3 кв. 2027 фин. года\n\nВыручка: $43,4 млрд · прогноз $44,08 млрд ❌\nПрибыль на акцию: $3,86 · прогноз $3,95 ❌\n\n#отчёт",
   "t": 1794915538,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/earn-HD-2027Q3.png"
+ },
+ {
+  "id": "earn-DIS-2026Q4",
+  "caption": "📊 <b>Disney</b> (DIS), отчёт за 4 кв. 2026 фин. года\n\nВыручка: $25,95 млрд · прогноз $25,43 млрд ✅\nПрибыль на акцию: $1,77 · прогноз $1,69 ✅\n\n#отчёт",
+  "t": 1794918780,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/earn-DIS-2026Q4.png"
  }
 ]

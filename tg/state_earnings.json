@@ -1,6 +1,7 @@
 {
  "earn_seen": {
-  "HD-2027Q3": 1794915538
+  "HD-2027Q3": 1794915538,
+  "DIS-2026Q4": 1794918780
  },
  "caps": {
   "ACRE": {
@@ -5680,6 +5681,61 @@
    "cap": 22.99,
    "name": "Venhub Global, Inc.",
    "ind": "Machinery"
+  },
+  "DIS": {
+   "cap": 204957.73590401196,
+   "name": "The Walt Disney Company",
+   "ind": "Media"
+  },
+  "ELTK": {
+   "cap": 39.652881185567004,
+   "name": "Eltek Ltd",
+   "ind": "Electrical Equipment"
+  },
+  "ENR": {
+   "cap": 1666.891802441774,
+   "name": "Energizer Holdings, Inc.",
+   "ind": "Consumer products"
+  },
+  "FUBO": {
+   "cap": 806.9643129511228,
+   "name": "FuboTV Inc.",
+   "ind": "Media"
+  },
+  "MFP": {
+   "cap": 1964.3586089172777,
+   "name": "Midera Food Processing Inc",
+   "ind": "Machinery"
+  },
+  "ONEW": {
+   "cap": 151.65712625,
+   "name": "OneWater Marine Inc",
+   "ind": "Retail"
+  },
+  "OPRA": {
+   "cap": 1404.894684,
+   "name": "Opera Ltd",
+   "ind": "Technology"
+  },
+  "SMWB": {
+   "cap": 685.0362063161857,
+   "name": "Similarweb Ltd.",
+   "ind": "Technology"
+  },
+  "SR": {
+   "cap": 5254.300486686177,
+   "name": "Spire Inc",
+   "ind": "Utilities"
+  },
+  "VIK": {
+   "cap": 39067.43,
+   "name": "Viking Holdings Ltd",
+   "ind": "Hotels, Restaurants & Leisure"
+  },
+  "AIMD": {
+   "cap": 9.937522731707315,
+   "name": "Ainos Inc",
+   "ind": "Technology"
   }
  },
  "earn_done": [
@@ -5734,6 +5790,7 @@
   "AMAT-2026Q4",
   "CSCO-2027Q1",
   "NU-2026Q3",
-  "HD-2027Q3"
+  "HD-2027Q3",
+  "DIS-2026Q4"
  ]
 }
