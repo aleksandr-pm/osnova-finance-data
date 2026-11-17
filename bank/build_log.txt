@@ -5,15 +5,19 @@ WDI: стран 217
   wdi_ny_gdp_mktp_kd_zg_desc: 2025, стран 151
   wdi_sl_uem_totl_zs_desc: 2025, стран 154
   wdi_sl_uem_totl_zs_asc: 2025, стран 154
+  ошибка HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=120) https://api.worldbank.org/v2/country/all/indicator/NY.GNS.ICTR.ZS?format=json&per_page=20000&date=2000:2025
   wdi_ny_gns_ictr_zs_desc: 2024, стран 129
   wdi_gc_tax_totl_gd_zs_desc: 2023, стран 97
   wdi_fi_res_totl_cd_desc: 2025, стран 132
   wdi_cm_mkt_lcap_cd_desc: 2025, стран 68
+  ошибка HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=120) https://api.worldbank.org/v2/country/all/indicator/BX.KLT.DINV.CD.WD?format=json&per_page=20000&date=2000:2025
   wdi_bx_klt_dinv_cd_wd_desc: 2025, стран 200
   wdi_bx_trf_pwkr_cd_dt_desc: 2025, стран 132
   wdi_bm_trf_pwkr_cd_dt_desc: 2025, стран 135
   wdi_bx_trf_pwkr_dt_gd_zs_desc: 2025, стран 111
   wdi_ne_exp_gnfs_cd_desc: 2025, стран 138
+  ошибка HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=120) https://api.worldbank.org/v2/country/all/indicator/TX.VAL.TECH.CD?format=json&per_page=20000&date=2000:2025
+  ошибка HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=120) https://api.worldbank.org/v2/country/all/indicator/TX.VAL.TECH.CD?format=json&per_page=20000&date=2000:2025
   wdi_tx_val_tech_cd_desc: 2024, стран 126
   wdi_bn_cab_xoka_gd_zs_desc: 2025, стран 115
   cis_ny_gdp_pcap_cd: 2025, стран 15
@@ -208,4 +212,4 @@ FAO TCL: строк после фильтра 55124
 Итого рейтингов: 149
 Обложки: 149 из 149
 По блокам: agro 92, cis 17, economy 29, money 11
-exit=0 2026-11-16T17:11:43Z
+exit=0 2026-11-17T15:40:30Z
