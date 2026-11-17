@@ -480,15 +480,22 @@ def chart():
 
 def alerts():
     idx = [t for t, _, _ in INDICES]
+    # только во время торговой сессии в Нью-Йорке (9:45-16:15). До открытия последняя дневная свеча вчерашняя,
+    # и вчерашнее падение выходило повторно с сегодняшней датой (17.11: AMD, ARM, MU и др.)
+    ny = dt.datetime.now(ZoneInfo("America/New_York"))
+    if ny.weekday() >= 5 or not (dt.time(9, 45) <= ny.time() <= dt.time(16, 15)):
+        print("алерты: рынок США закрыт"); return False
+    today = ny.date().isoformat()
     data = closes(idx + BIG, period="5d")
-    # торговый день по Нью-Йорку: в полночь по Дубаю день не меняется, алерт по бумаге выходит один раз
-    today = dt.datetime.now(ZoneInfo("America/New_York")).date().isoformat()
     st = load(STATE, {})
     sent = st.get("alerts", {})
     sent = {k: v for k, v in sent.items() if v == today}
     names = {t: n for t, n, _ in INDICES}
     out = 0
     for t, s in data.items():
+        # свеча должна быть сегодняшней, сравнение строго с закрытием предыдущего торгового дня
+        if str(s.index[-1])[:10] != today or str(s.index[-2])[:10] >= today:
+            continue
         p, c, _ = last_change(s)
         is_idx = t in names
         if not (c <= -5 or (c >= 7 and not is_idx) or (is_idx and c >= 5)):
