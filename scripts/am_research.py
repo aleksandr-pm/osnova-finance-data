@@ -369,6 +369,60 @@ def mcap():
     json.dump(rep, open(os.path.join(out, "report.json"), "w"), indent=1, default=str); print(rep)
 
 
+def tv_hist(symbol, n=200, interval="1M"):
+    """Месячная история с TradingView через их websocket (как график на сайте)"""
+    import websocket, random, string, re as _re
+    def msg(func, params):
+        b = json.dumps({"m": func, "p": params}, separators=(",", ":")); return "~m~%d~m~%s" % (len(b), b)
+    rid = lambda p: p + "".join(random.choice(string.ascii_lowercase) for _ in range(12))
+    ws = websocket.create_connection("wss://data.tradingview.com/socket.io/websocket", header=["Origin: https://www.tradingview.com"], timeout=20)
+    cs = rid("cs_")
+    for m in (msg("set_auth_token", ["unauthorized_user_token"]), msg("chart_create_session", [cs, ""]),
+              msg("resolve_symbol", [cs, "symbol_1", '={"symbol":"%s","adjustment":"splits"}' % symbol]),
+              msg("create_series", [cs, "s1", "s1", "symbol_1", interval, n])):
+        ws.send(m)
+    raw = ""
+    for _ in range(200):
+        r = ws.recv()
+        if _re.match(r"~m~\d+~m~~h~\d+", r): ws.send(r); continue
+        raw += r
+        if "series_completed" in r or "symbol_error" in r: break
+    ws.close()
+    rows = []
+    for part in _re.split(r"~m~\d+~m~", raw):
+        if '"timescale_update"' in part or '"du"' in part:
+            try:
+                js = json.loads(part)
+                for blk in js["p"][1].values():
+                    for it in blk.get("s", []): rows.append(it["v"])
+            except Exception:  # noqa: BLE001
+                pass
+    import datetime as _dt
+    seen = {}
+    for v in rows: seen[_dt.datetime.utcfromtimestamp(v[0]).strftime("%Y-%m-%d")] = v[4]
+    return sorted(seen.items())
+
+
+def mcap_tv():
+    import subprocess, sys as _s
+    subprocess.run([_s.executable, "-m", "pip", "install", "-q", "websocket-client"], check=False)
+    out = os.path.join(OUTD, "mcap"); os.makedirs(out, exist_ok=True); rep = {}
+    for k, sym in {"ALDAR": "ADX:ALDAR", "FAB": "ADX:FAB", "EAND": "ADX:EAND", "EMAAR": "DFM:EMAAR", "ENBD": "DFM:EMIRATESNBD", "DU": "DFM:DU"}.items():
+        try:
+            rows = tv_hist(sym)
+            with open(os.path.join(out, k + "_tv.csv"), "w") as fh:
+                fh.write("Date,Close\n"); [fh.write(f"{d},{c}\n") for d, c in rows]
+            rep[k] = [len(rows), rows[0] if rows else None, rows[-1] if rows else None]
+        except Exception as e:  # noqa: BLE001
+            rep[k] = str(e)
+    try:
+        rep["scan"] = requests.post("https://scanner.tradingview.com/uae/scan", json={"symbols": {"tickers": ["ADX:EAND", "ADX:ALDAR", "ADX:FAB"]},
+                                    "columns": ["close", "market_cap_basic", "total_shares_outstanding_fundamental"]}, timeout=30).json()
+    except Exception as e:  # noqa: BLE001
+        rep["scan_err"] = str(e)
+    json.dump(rep, open(os.path.join(out, "report_tv.json"), "w"), indent=1, default=str); print(rep)
+
+
 def buildings(tag="report"):
     """Фото зданий фондов из Wikimedia Commons (JPEG 1600 px, до 2 на запрос) в am/research/buildings/ + логотип OIA через Wikidata"""
     import time
@@ -443,4 +497,4 @@ def buildings(tag="report"):
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv}[task]()
