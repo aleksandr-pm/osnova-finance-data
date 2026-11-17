@@ -1,10 +1,5 @@
 [
  {
-  "id": "alert-2026-11-16-SMCI-d",
-  "caption": "⚡️🔻 <b>Super Micro</b> (SMCI) −5,24% за день, $25,46\n\n#алерт",
-  "t": 1794844168
- },
- {
   "id": "alert-2026-11-16-ARM-d",
   "caption": "⚡️🔻 <b>Arm</b> (ARM) −7,03% за день, $177,13\n\n#алерт",
   "t": 1794844168
@@ -152,5 +147,10 @@
   "caption": "📊 Акции <b>Salesforce</b> упали на 9,74% за день\nЗа полгода: +8,08%, цена $193,99\n\n#графикдня",
   "t": 1794937464,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-17-CRM.png"
+ },
+ {
+  "id": "alert-2026-11-17-UNH-d",
+  "caption": "⚡️🔻 <b>UnitedHealth</b> (UNH) −5,80% за день, $388,14\n\n#алерт",
+  "t": 1794947369
  }
 ]
