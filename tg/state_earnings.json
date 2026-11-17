@@ -1,7 +1,8 @@
 {
  "earn_seen": {
   "HD-2027Q3": 1794915538,
-  "DIS-2026Q4": 1794918780
+  "DIS-2026Q4": 1794918780,
+  "NVDA-2027Q3": 1794958337
  },
  "caps": {
   "ACRE": {
@@ -5756,6 +5757,66 @@
    "cap": 429.7368258700522,
    "name": "Euroseas Ltd",
    "ind": "Marine"
+  },
+  "AIRE": {
+   "cap": 2.111929,
+   "name": "reAlpha Tech Corp",
+   "ind": "Technology"
+  },
+  "AUNA": {
+   "cap": 342.680038,
+   "name": "Auna SA",
+   "ind": "Health Care"
+  },
+  "CAAP": {
+   "cap": 3979.9193559999994,
+   "name": "Corporacion America Airports SA",
+   "ind": "Transportation Infrastructure"
+  },
+  "DLB": {
+   "cap": 5728.783427,
+   "name": "Dolby Laboratories, Inc.",
+   "ind": "Technology"
+  },
+  "GBDC": {
+   "cap": 3219.679503,
+   "name": "Golub Capital BDC Inc",
+   "ind": "Financial Services"
+  },
+  "GLAD": {
+   "cap": 432.65726400000005,
+   "name": "Gladstone Capital Corp",
+   "ind": "Financial Services"
+  },
+  "IIIV": {
+   "cap": 504.856154,
+   "name": "I3 Verticals, Inc.",
+   "ind": "Technology"
+  },
+  "IRIX": {
+   "cap": 12.081146999999998,
+   "name": "IRIDEX Corp",
+   "ind": "Health Care"
+  },
+  "LTRN": {
+   "cap": 5.809939,
+   "name": "Lantern Pharma Inc",
+   "ind": "Biotechnology"
+  },
+  "LZB": {
+   "cap": 1281.688599,
+   "name": "La-Z-Boy Inc",
+   "ind": "Consumer products"
+  },
+  "NVDA": {
+   "cap": 3762973.985291,
+   "name": "NVIDIA Corporation",
+   "ind": "Semiconductors"
+  },
+  "FEAM": {
+   "cap": 78.919449,
+   "name": "5E Advanced Materials, Inc.",
+   "ind": "Metals & Mining"
   }
  },
  "earn_done": [
@@ -5811,6 +5872,7 @@
   "CSCO-2027Q1",
   "NU-2026Q3",
   "HD-2027Q3",
-  "DIS-2026Q4"
+  "DIS-2026Q4",
+  "NVDA-2027Q3"
  ]
 }
