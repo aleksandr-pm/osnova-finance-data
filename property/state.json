@@ -77,6 +77,14 @@
    "type": "reel",
    "dubai_time": "18:38",
    "timeset": "manual"
+  },
+  {
+   "id": "r_aed1m_buys",
+   "at": "2026-11-17T18:03:41.323088+00:00",
+   "post": "18124070128975343",
+   "type": "reel",
+   "dubai_time": "22:03",
+   "timeset": "manual"
   }
  ]
 }

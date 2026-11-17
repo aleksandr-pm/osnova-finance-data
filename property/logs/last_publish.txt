@@ -1,22 +1,21 @@
-Слот reel: в очереди 18 из 28; LIVE=да
-Следующий: db_office_price_line (media/db_office_price_line.mp4)
+Слот reel: в очереди 17 из 28; LIVE=да
+Следующий: r_aed1m_buys (media/r_aed1m_buys.mp4)
 ---
-From 558 to 1,766 AED per sq ft. Dubai office prices since the Aug 2020 low.
+AED 1 million buys 214 sq ft of ready office in Downtown Dubai. In DIP it buys 1,377.
 
-Median sale price of ready offices, all Dubai, 3-month rolling:
-2015: around 1,160 AED
-Aug 2020: 558 AED, the low
-Mar 2023: back above 1,000
-Apr 2026: 1,766 AED, the record
+Median price paid for ready offices, 2026:
+Downtown 4,674 AED per sq ft
+Business Bay 1,949
+JLT 1,703
+Silicon Oasis 1,049
+DIP 726
 
-Where do you think the line goes next?
+Cheaper districts also yield more: DIP 13.1% gross vs Downtown 6.6%. Full data on osnova.property, link in bio. Or comment PRICE and we will send you prices paid by district.
 
-Full data on osnova.property, link in bio. Or comment PRICE and we will send you prices paid by district.
-
-Source: Dubai Land Department (DLD) sales transactions, ready office units, monthly median AED per sq ft, Jan 2015 to Sep 2026. Market statistics for information only. Not an offer to buy, sell or lease property, and not investment advice.
+Source: DLD ready office sales, median AED/sq ft, 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
 
 #dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace
 ---
-Контейнер 17924055093242274, загрузка 6.3 МБ
-Опубликовано: db_office_price_line → 18121437628797394
-exit=0 2026-11-17T14:38:58.734149+00:00
+Контейнер 17924100624242274, загрузка 1.1 МБ
+Опубликовано: r_aed1m_buys → 18124070128975343
+exit=0 2026-11-17T18:03:41.323796+00:00
