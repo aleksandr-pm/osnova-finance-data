@@ -45,6 +45,14 @@
    "type": "reel",
    "dubai_time": "20:56",
    "timeset": "A"
+  },
+  {
+   "id": "r_uae_wealth",
+   "at": "2026-11-17T06:04:32.640374+00:00",
+   "post": "18645659260024363",
+   "type": "reel",
+   "dubai_time": "10:04",
+   "timeset": "manual"
   }
  ]
 }

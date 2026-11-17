@@ -1,18 +1,20 @@
-Слот reel: в очереди 3 из 9; LIVE=да
-Следующий: r_rent_barsha_heights (media/r_rent_barsha_heights.mp4)
+Слот reel: в очереди 20 из 28; LIVE=да
+Следующий: r_uae_wealth (media/r_uae_wealth.mp4)
 ---
-Barsha Heights office listings ask 274 AED per sq ft a year. Tenants sign at 134.
+$2.65 trillion. That is how much the UAE holds in sovereign funds, 4.4 times its annual GDP.
 
-Asked: 274 AED per sq ft a year, 62 listings
-Paid: 134 AED per sq ft a year, Ejari new leases 2026
-Gap: 51%, the widest of the big office districts
+ADIA alone manages $1.2 trillion, #4 in the world
+Seven UAE funds sit in the global top 25
+As one block, UAE funds would rank #1 globally, ahead of Norway
 
-DM RENT and get asked vs paid rents for 17 office districts.
+Why it matters for property: Mubadala, ICD and Dubai Holding hold large real estate portfolios and are not forced sellers.
 
-Source: portal listings Nov 2026 · Ejari new leases, 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
+DM WEALTH and get the full breakdown.
 
-#dubaioffice #dubaicommercialproperty #dubairealestate #businessbay #dubaiinvestment #officespace
+Source: Global SWF ranking, April 2026 · osnova.property. Market statistics, not an offer or investment advice.
+
+#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace #uae #sovereignwealth #abudhabi
 ---
-Контейнер 17923854099242274, загрузка 1.1 МБ
-Опубликовано: r_rent_barsha_heights → 18155823175543701
-exit=0 2026-11-16T16:56:51.349663+00:00
+Контейнер 17923971735242274, загрузка 1.0 МБ
+Опубликовано: r_uae_wealth → 18645659260024363
+exit=0 2026-11-17T06:04:32.641035+00:00
