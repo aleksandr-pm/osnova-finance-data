@@ -13,7 +13,8 @@
   "AMD",
   "MU",
   "MSTR",
-  "HOOD"
+  "HOOD",
+  "CRM"
  ],
  "alerts": {
   "AMD:down": "2026-11-17",
