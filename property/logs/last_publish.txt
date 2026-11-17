@@ -1,18 +1,22 @@
-Слот post: в очереди 1 из 28; LIVE=да
-Следующий: p_market_october (media/p_market_october.jpg)
+Слот reel: в очереди 18 из 28; LIVE=да
+Следующий: db_office_price_line (media/db_office_price_line.mp4)
 ---
-422 office sales in Dubai in October, flat on September.
+From 558 to 1,766 AED per sq ft. Dubai office prices since the Aug 2020 low.
 
-Median paid: 2,134 AED per sq ft, ready 1,949
-Value: AED 1.83bn
-Year to date: 4,332 office sales worth AED 22.61bn, 64% off-plan
+Median sale price of ready offices, all Dubai, 3-month rolling:
+2015: around 1,160 AED
+Aug 2020: 558 AED, the low
+Mar 2023: back above 1,000
+Apr 2026: 1,766 AED, the record
 
-Full data on osnova.property, link in bio. Or comment MARKET and we will send you the October report with districts and the most traded buildings.
+Where do you think the line goes next?
 
-Source: DLD transactions / Ejari, 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
+Full data on osnova.property, link in bio. Or comment PRICE and we will send you prices paid by district.
 
-#dubaioffice #dubaicommercialproperty #dubairealestate #businessbay #dubaiinvestment #officespace
+Source: Dubai Land Department (DLD) sales transactions, ready office units, monthly median AED per sq ft, Jan 2015 to Sep 2026. Market statistics for information only. Not an offer to buy, sell or lease property, and not investment advice.
+
+#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace
 ---
-Контейнер 17924028894242274, картинка https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/91a5383fce2203e8067b0df7b9362f9ee55e06a6/property/media/p_market_october.jpg
-Опубликовано: p_market_october → 17920101630264569
-exit=0 2026-11-17T12:32:16.347510+00:00
+Контейнер 17924055093242274, загрузка 6.3 МБ
+Опубликовано: db_office_price_line → 18121437628797394
+exit=0 2026-11-17T14:38:58.734149+00:00
