@@ -65417,10 +65417,10 @@
   "card": "cards/duel_ny_gdp_mktp_cd_jp_cn.png",
   "photo": {
    "source": "Pixabay",
-   "pixabay_id": 7094961,
+   "pixabay_id": 673087,
    "query": "shanghai skyline",
-   "page": "https://pixabay.com/photos/china-city-shanghai-bund-7094961/",
-   "author": "Media_Breeze"
+   "page": "https://pixabay.com/photos/buildings-illuminated-city-673087/",
+   "author": "hbieser"
   },
   "cover": "covers/duel_ny_gdp_mktp_cd_jp_cn.jpg"
  },
@@ -71339,10 +71339,10 @@
   "card": "cards/duel_ny_gdp_pcap_cd_ru_cn.png",
   "photo": {
    "source": "Pixabay",
-   "pixabay_id": 673087,
+   "pixabay_id": 7094961,
    "query": "shanghai skyline",
-   "page": "https://pixabay.com/photos/buildings-illuminated-city-673087/",
-   "author": "hbieser"
+   "page": "https://pixabay.com/photos/china-city-shanghai-bund-7094961/",
+   "author": "Media_Breeze"
   },
   "cover": "covers/duel_ny_gdp_pcap_cd_ru_cn.jpg"
  },
