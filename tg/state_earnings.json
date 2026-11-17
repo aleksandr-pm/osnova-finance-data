@@ -1,5 +1,7 @@
 {
- "earn_seen": {},
+ "earn_seen": {
+  "HD-2027Q3": 1794915538
+ },
  "caps": {
   "ACRE": {
    "cap": 188.63578552706554,
@@ -5573,6 +5575,111 @@
    "cap": 16.45,
    "name": "Zeo Energy Corp.",
    "ind": "Electrical Equipment"
+  },
+  "AS": {
+   "cap": 16931.02112723447,
+   "name": "Amer Sports Inc",
+   "ind": "Textiles, Apparel & Luxury Goods"
+  },
+  "HD": {
+   "cap": 346707.1279140051,
+   "name": "The Home Depot, Inc.",
+   "ind": "Retail"
+  },
+  "HUYA": {
+   "cap": 490.987122,
+   "name": "HUYA Inc",
+   "ind": "Media"
+  },
+  "LUXE": {
+   "cap": 1468.245256,
+   "name": "LuxExperience BV",
+   "ind": "Retail"
+  },
+  "OCSL": {
+   "cap": 1059.6688588248355,
+   "name": "Oaktree Specialty Lending Corp",
+   "ind": "Financial Services"
+  },
+  "TME": {
+   "cap": 13043.237154846922,
+   "name": "Tencent Music Entertainment Group",
+   "ind": "Media"
+  },
+  "ASPI": {
+   "cap": 236.09643440229885,
+   "name": "ASP Isotopes Inc.",
+   "ind": "Chemicals"
+  },
+  "CEPF": {
+   "cap": 590.359511,
+   "name": "Cantor Equity Partners IV, Inc.",
+   "ind": "N/A"
+  },
+  "CEPV": {
+   "cap": 325.84749499022485,
+   "name": "Cantor Equity Partners V Inc",
+   "ind": "N/A"
+  },
+  "CNRD": {
+   "cap": 196.951882,
+   "name": "Conrad Industries Inc",
+   "ind": "Machinery"
+  },
+  "FKWL": {
+   "cap": 22.625817989847715,
+   "name": "Franklin Wireless Corp",
+   "ind": "Communications"
+  },
+  "GTBP": {
+   "cap": 7.285819352150537,
+   "name": "GT Biopharma Inc",
+   "ind": "Biotechnology"
+  },
+  "JTAI": {
+   "cap": 2.874476549397591,
+   "name": "Jet.AI Inc",
+   "ind": "Airlines"
+  },
+  "KRAQ": {
+   "cap": 432.9749879880359,
+   "name": "KRAKacquisition Corp",
+   "ind": "N/A"
+  },
+  "MAMO": {
+   "cap": 38.7302466288792,
+   "name": "Massimo Group",
+   "ind": "Automobiles"
+  },
+  "MODD": {
+   "cap": 18.137435624365484,
+   "name": "Modular Medical Inc",
+   "ind": "Health Care"
+  },
+  "ONFO": {
+   "cap": 2.021892074887024,
+   "name": "Onfolio Holdings Inc",
+   "ind": "Media"
+  },
+  "OTLC": {
+   "cap": 6.1306715606060616,
+   "name": "Oncotelic Therapeutics Inc",
+   "ind": "Biotechnology"
+  },
+  "SNTI": {
+   "cap": 4.235773428571428,
+   "name": "Senti Biosciences Holdings Inc",
+   "ind": "Biotechnology"
+  },
+  "TGL": {
+   "cap": 22.278372,
+   "name": "Treasure Global Inc",
+   "ind": "Media"
+  },
+  "VHUB": {
+   "cap": 22.99,
+   "name": "Venhub Global, Inc.",
+   "ind": "Machinery"
   }
  },
  "earn_done": [
@@ -5626,6 +5733,7 @@
   "TDG-2026Q4",
   "AMAT-2026Q4",
   "CSCO-2027Q1",
-  "NU-2026Q3"
+  "NU-2026Q3",
+  "HD-2027Q3"
  ]
 }
