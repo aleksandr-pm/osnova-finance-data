@@ -61,6 +61,14 @@
    "type": "reel",
    "dubai_time": "14:11",
    "timeset": "manual"
+  },
+  {
+   "id": "p_market_october",
+   "at": "2026-11-17T12:32:16.347031+00:00",
+   "post": "17920101630264569",
+   "type": "post",
+   "dubai_time": "16:32",
+   "timeset": "manual"
   }
  ]
 }
