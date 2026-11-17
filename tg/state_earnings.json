@@ -5736,6 +5736,21 @@
    "cap": 9.937522731707315,
    "name": "Ainos Inc",
    "ind": "Technology"
+  },
+  "GFF": {
+   "cap": 4527.659957212627,
+   "name": "Griffon Corporation",
+   "ind": "Building"
+  },
+  "KLAR": {
+   "cap": 5167.951753112319,
+   "name": "Klarna Group PLC",
+   "ind": "Financial Services"
+  },
+  "PULM": {
+   "cap": 4.857538379844961,
+   "name": "Pulmatrix Inc",
+   "ind": "Pharmaceuticals"
   }
  },
  "earn_done": [
