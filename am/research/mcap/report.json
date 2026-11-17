@@ -1,0 +1,77 @@
+{
+ "ALDAR": {
+  "err": "'Index' object has no attribute 'strftime'"
+ },
+ "EMAAR": {
+  "rows": 143,
+  "first": "2015-01-01",
+  "shares": 8838789849,
+  "mcap": null,
+  "currency": "AED"
+ },
+ "FAB": {
+  "err": "'Index' object has no attribute 'strftime'"
+ },
+ "ENBD": {
+  "rows": 143,
+  "first": "2015-01-01",
+  "shares": 6316598253,
+  "mcap": null,
+  "currency": "AED"
+ },
+ "DU": {
+  "rows": 143,
+  "first": "2015-01-01",
+  "shares": 4532905989,
+  "mcap": null,
+  "currency": "AED"
+ },
+ "EAND": {
+  "err": "'Index' object has no attribute 'strftime'"
+ },
+ "tv": {
+  "totalCount": 5,
+  "data": [
+   {
+    "s": "ADX:ALDAR",
+    "d": [
+     8.62,
+     67854492575,
+     7862630000
+    ]
+   },
+   {
+    "s": "DFM:EMAAR",
+    "d": [
+     12.46,
+     108716386451,
+     8838730257
+    ]
+   },
+   {
+    "s": "ADX:FAB",
+    "d": [
+     21.56,
+     230522551750,
+     11047600000
+    ]
+   },
+   {
+    "s": "DFM:EMIRATESNBD",
+    "d": [
+     36.08,
+     226386895964,
+     6316600000
+    ]
+   },
+   {
+    "s": "DFM:DU",
+    "d": [
+     12.96,
+     58927774902,
+     4532910000
+    ]
+   }
+  ]
+ }
+}
