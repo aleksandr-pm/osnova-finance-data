@@ -12,7 +12,8 @@
   "BABA",
   "AMD",
   "MU",
-  "MSTR"
+  "MSTR",
+  "HOOD"
  ],
  "alerts": {
   "INTC:down": "2026-11-16",
