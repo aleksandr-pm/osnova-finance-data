@@ -337,6 +337,38 @@ def sobhaimgs():
     json.dump(rep, open(os.path.join(out, "report.json"), "w"), indent=1); print(rep["pages"], n)
 
 
+def mcap():
+    """Месячные цены и число акций для гонки капитализаций"""
+    import yfinance as yf
+    out = os.path.join(OUTD, "mcap"); os.makedirs(out, exist_ok=True); rep = {}
+    T = {"ALDAR": "ALDAR.AD", "EMAAR": "EMAAR.AE", "FAB": "FAB.AD", "ENBD": "EMIRATESNBD.AE", "DU": "DU.AE", "EAND": "EAND.AD"}
+    for k, t in T.items():
+        try:
+            tk = yf.Ticker(t)
+            h = tk.history(start="2015-01-01", interval="1mo", auto_adjust=False)[["Close"]]
+            h.index = h.index.strftime("%Y-%m-%d"); h.to_csv(os.path.join(out, k + ".csv"))
+            info = {"rows": len(h), "first": h.index[0] if len(h) else None}
+            try:
+                fi = tk.fast_info; info["shares"] = fi.get("shares"); info["mcap"] = fi.get("market_cap"); info["currency"] = fi.get("currency")
+            except Exception as e:  # noqa: BLE001
+                info["fi_err"] = str(e)
+            try:
+                sf = tk.get_shares_full(start="2015-01-01")
+                if sf is not None and len(sf):
+                    sf.index = sf.index.strftime("%Y-%m-%d"); sf.to_csv(os.path.join(out, k + "_shares.csv"))
+            except Exception as e:  # noqa: BLE001
+                info["sf_err"] = str(e)
+            rep[k] = info
+        except Exception as e:  # noqa: BLE001
+            rep[k] = {"err": str(e)}
+    try:
+        rep["tv"] = requests.post("https://scanner.tradingview.com/uae/scan", json={"symbols": {"tickers": ["ADX:ALDAR", "DFM:EMAAR", "ADX:FAB", "DFM:EMIRATESNBD", "DFM:DU", "ADX:EAND"]},
+                                  "columns": ["close", "market_cap_basic", "total_shares_outstanding_fundamental"]}, timeout=30).json()
+    except Exception as e:  # noqa: BLE001
+        rep["tv_err"] = str(e)
+    json.dump(rep, open(os.path.join(out, "report.json"), "w"), indent=1, default=str); print(rep)
+
+
 def buildings(tag="report"):
     """Фото зданий фондов из Wikimedia Commons (JPEG 1600 px, до 2 на запрос) в am/research/buildings/ + логотип OIA через Wikidata"""
     import time
@@ -411,4 +443,4 @@ def buildings(tag="report"):
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap}[task]()
