@@ -1,15 +1,21 @@
-threads: duel_ny_gdp_mktp_cd_sa_ae_qa (economy, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/928bc72cb971/bank/covers/duel_ny_gdp_mktp_cd_sa_ae_qa.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/928bc72cb971/bank/cards/duel_ny_gdp_mktp_cd_sa_ae_qa.jpg
+threads: bil_country_il (billionaires, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/a7926429e8d6/bank/cards_markets/bil_country_il.jpg
 ---
-Ввп: Саудовская Аравия, ОАЭ, Катар, 2000-2024:
-1. 🇸🇦 Саудовская Аравия · $1,3 трлн, в 6,6 раза
-2. 🇦🇪 ОАЭ · $552 млрд, в 5,3 раза
-3. 🇶🇦 Катар · $216 млрд, в 12,2 раза
-Катар: ВВП вырос в 12,2 раза с 2000 года.
+Самые богатые люди Израиля, ноябрь 2026:
+1. 🇮🇱 Идан Офер · $34,2 млрд
+2. 🇮🇱 Эяль Офер · $33,5 млрд
+3. 🇮🇱 Майкл Федерман с семьёй · $8,8 млрд
+4. 🇮🇱 Юрий Мильнер · $8,7 млрд
+5. 🇮🇱 Тедди Саги · $7,1 млрд
+6. 🇮🇱 Арнон Милчен · $6,5 млрд
+7. 🇮🇱 Шари Арисон · $6 млрд
+8. 🇮🇱 Шауль Шани · $5,2 млрд
+9. 🇮🇱 Аркадий Волож · $4,4 млрд
+10. 🇮🇱 Гиль Шведь · $4,3 млрд
+№1: Идан Офер, $34,2 млрд.
 Больше в Telegram @osnovafin
 ---
 Threads: текстом
-Ответ со ссылкой: 18649299553035867
-Опубликовано: 18127351582903130. Осталось новых рейтингов: 178
-exit=0 2026-11-16T17:42:29Z
+Ответ со ссылкой: 18123397822970465
+Опубликовано: 18110916857626779. Осталось новых рейтингов: 177
+exit=0 2026-11-17T06:32:31Z
