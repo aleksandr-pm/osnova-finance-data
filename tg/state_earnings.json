@@ -5453,6 +5453,126 @@
    "cap": 833.54,
    "name": "Yalla Group Limited",
    "ind": "Media"
+  },
+  "AMCI": {
+   "cap": 21.020512119638827,
+   "name": "AMC Robotics Corp",
+   "ind": "Electrical Equipment"
+  },
+  "API": {
+   "cap": 370.302537,
+   "name": "Agora Inc",
+   "ind": "Technology"
+  },
+  "ATPC": {
+   "cap": 1.2307699606299212,
+   "name": "Agape ATP Corp",
+   "ind": "Health Care"
+  },
+  "BCAB": {
+   "cap": 3.319839185897436,
+   "name": "Bioatla Inc",
+   "ind": "Biotechnology"
+  },
+  "BTOC": {
+   "cap": 4.7147751791907515,
+   "name": "Armlogi Holding Corp",
+   "ind": "Road & Rail"
+  },
+  "CNTB": {
+   "cap": 40.492481584465445,
+   "name": "Connect Biopharma Holdings Ltd",
+   "ind": "Biotechnology"
+  },
+  "CNTN": {
+   "cap": 130.6774307836257,
+   "name": "Canton Strategic Holdings Inc",
+   "ind": "Biotechnology"
+  },
+  "CSAI": {
+   "cap": 1.1349778169014086,
+   "name": "Cloudastructure Inc",
+   "ind": "Technology"
+  },
+  "GNLX": {
+   "cap": 86.87104343163539,
+   "name": "Genelux Corporation",
+   "ind": "Biotechnology"
+  },
+  "GRML": {
+   "cap": 47.90079445983379,
+   "name": "Greenland Mines Ltd",
+   "ind": "Biotechnology"
+  },
+  "GWAV": {
+   "cap": 5.9649673684210525,
+   "name": "Greenwave Technology Solutions, Inc.",
+   "ind": "Commercial Services & Supplies"
+  },
+  "IDAI": {
+   "cap": 12.847935152941176,
+   "name": "T Stamp Inc",
+   "ind": "Technology"
+  },
+  "IMDX": {
+   "cap": 60.867165841121505,
+   "name": "Insight Molecular Diagnostics Inc",
+   "ind": "Biotechnology"
+  },
+  "LCFY": {
+   "cap": 1.5291970621468922,
+   "name": "Locafy Ltd",
+   "ind": "Technology"
+  },
+  "LONA": {
+   "cap": 30.431972783861667,
+   "name": "LeonaBio Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "NFEGP": {
+   "cap": 60.389977,
+   "name": "New Fortress Energy Inc.",
+   "ind": "Energy"
+  },
+  "NIXX": {
+   "cap": 4.6890135591748106,
+   "name": "Nixxy Inc",
+   "ind": "Professional Services"
+  },
+  "NKLR": {
+   "cap": 226.5268654072398,
+   "name": "Terra Innovatum Global NV",
+   "ind": "Electrical Equipment"
+  },
+  "NXTS": {
+   "cap": 1.1828848144796378,
+   "name": "Nexentis Technologies Inc",
+   "ind": "Chemicals"
+  },
+  "ORIC": {
+   "cap": 779.4679901882951,
+   "name": "ORIC Pharmaceuticals, Inc.",
+   "ind": "Biotechnology"
+  },
+  "QCLS": {
+   "cap": 2.628938242502419,
+   "name": "Q/C Technologies Inc",
+   "ind": "Pharmaceuticals"
+  },
+  "SDOT": {
+   "cap": 6.4716956515426505,
+   "name": "Sadot Group Inc",
+   "ind": "Food Products"
+  },
+  "SMID": {
+   "cap": 107.41826627737227,
+   "name": "Smith-Midland Corp",
+   "ind": "Construction"
+  },
+  "ZEO": {
+   "cap": 16.45,
+   "name": "Zeo Energy Corp.",
+   "ind": "Electrical Equipment"
   }
  },
  "earn_done": [
