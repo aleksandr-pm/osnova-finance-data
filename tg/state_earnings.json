@@ -3,7 +3,8 @@
   "HD-2027Q3": 1794915538,
   "DIS-2026Q4": 1794918780,
   "NVDA-2027Q3": 1794958337,
-  "LOW-2027Q3": 1795002524
+  "LOW-2027Q3": 1795002524,
+  "TGT-2027Q3": 1795006292
  },
  "caps": {
   "ACRE": {
@@ -5843,6 +5844,36 @@
    "cap": 261.54,
    "name": "ZKH Group Ltd",
    "ind": "Trading Companies & Distributors"
+  },
+  "BLSH": {
+   "cap": 2896.323399854177,
+   "name": "Bullish",
+   "ind": "Financial Services"
+  },
+  "BRBR": {
+   "cap": 1280.2229861744074,
+   "name": "BellRing Brands, Inc.",
+   "ind": "Consumer products"
+  },
+  "JJSF": {
+   "cap": 1692.5537442556083,
+   "name": "J&J Snack Foods Corp",
+   "ind": "Food Products"
+  },
+  "KRNT": {
+   "cap": 711.525810478393,
+   "name": "Kornit Digital Ltd.",
+   "ind": "Machinery"
+  },
+  "TGT": {
+   "cap": 72473.96430578973,
+   "name": "Target Corp",
+   "ind": "Retail"
+  },
+  "ZIM": {
+   "cap": 3424.02,
+   "name": "ZIM Integrated Shipping Services Ltd",
+   "ind": "Marine"
   }
  },
  "earn_done": [
@@ -5900,6 +5931,7 @@
   "HD-2027Q3",
   "DIS-2026Q4",
   "NVDA-2027Q3",
-  "LOW-2027Q3"
+  "LOW-2027Q3",
+  "TGT-2027Q3"
  ]
 }
