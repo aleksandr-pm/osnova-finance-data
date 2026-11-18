@@ -1,24 +1,15 @@
 WDI: стран 217
   wdi_ny_gdp_mktp_cd_desc: 2025, стран 186
-  HTTP 502 https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.PP.CD?format=json&per_page=20000&date=2000:2025
-  HTTP 502 https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.PP.CD?format=json&per_page=20000&date=2000:2025
-  HTTP 502 https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.PP.CD?format=json&per_page=20000&date=2000:2025
-  HTTP 502 https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.PP.CD?format=json&per_page=20000&date=2000:2025
-  WDI NY.GDP.MKTP.PP.CD: нет свежего года (None)
+  wdi_ny_gdp_mktp_pp_cd_desc: 2025, стран 185
   wdi_ny_gdp_pcap_cd_desc: 2025, стран 151
   wdi_ny_gdp_mktp_kd_zg_desc: 2025, стран 151
   wdi_sl_uem_totl_zs_desc: 2025, стран 154
   wdi_sl_uem_totl_zs_asc: 2025, стран 154
   wdi_ny_gns_ictr_zs_desc: 2024, стран 129
-  HTTP 502 https://api.worldbank.org/v2/country/all/indicator/GC.TAX.TOTL.GD.ZS?format=json&per_page=20000&date=2000:2025
-  HTTP 502 https://api.worldbank.org/v2/country/all/indicator/GC.TAX.TOTL.GD.ZS?format=json&per_page=20000&date=2000:2025
-  HTTP 502 https://api.worldbank.org/v2/country/all/indicator/GC.TAX.TOTL.GD.ZS?format=json&per_page=20000&date=2000:2025
-  HTTP 502 https://api.worldbank.org/v2/country/all/indicator/GC.TAX.TOTL.GD.ZS?format=json&per_page=20000&date=2000:2025
-  WDI GC.TAX.TOTL.GD.ZS: нет свежего года (None)
+  wdi_gc_tax_totl_gd_zs_desc: 2023, стран 97
   wdi_fi_res_totl_cd_desc: 2025, стран 132
   wdi_cm_mkt_lcap_cd_desc: 2025, стран 68
   wdi_bx_klt_dinv_cd_wd_desc: 2025, стран 200
-  ошибка HTTPSConnectionPool(host='api.worldbank.org', port=443): Read timed out. (read timeout=120) https://api.worldbank.org/v2/country/all/indicator/BX.TRF.PWKR.CD.DT?format=json&per_page=20000&date=2000:2025
   wdi_bx_trf_pwkr_cd_dt_desc: 2025, стран 132
   wdi_bm_trf_pwkr_cd_dt_desc: 2025, стран 135
   wdi_bx_trf_pwkr_dt_gd_zs_desc: 2025, стран 111
@@ -214,7 +205,7 @@ FAO TCL: строк после фильтра 55124
   duel_sp_pop_totl_us_id: 2000-2025, Индонезия: население выросло на 32% с 2000 года
   duel_bx_trf_pwkr_cd_dt_uz_tj_kg: 2005-2024, Узбекистан: переводы мигрантов выросли в 16,2 раза с 2005 года
   duel_cm_mkt_lcap_cd_us_cn_jp: 2003-2025, Китай обогнал Японию в 2007 году
-Итого рейтингов: 147
-Обложки: 147 из 147
-По блокам: agro 92, cis 17, economy 27, money 11
-exit=0 2026-11-18T06:50:31Z
+Итого рейтингов: 149
+Обложки: 149 из 149
+По блокам: agro 92, cis 17, economy 29, money 11
+exit=0 2026-11-18T09:27:00Z
