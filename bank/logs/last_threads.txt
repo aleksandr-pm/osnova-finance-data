@@ -1,15 +1,21 @@
-threads: duel_bx_trf_pwkr_cd_dt_uz_tj_kg (cis, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/292189e854bc/bank/covers/duel_bx_trf_pwkr_cd_dt_uz_tj_kg.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/292189e854bc/bank/cards/duel_bx_trf_pwkr_cd_dt_uz_tj_kg.jpg
+threads: mkt_country_cap_sg (companies, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/e4b319ee1fa9/bank/cards_markets/mkt_country_cap_sg.jpg
 ---
-Переводы мигрантов: Узбекистан, Таджикистан, Киргизия, 2005-2024:
-1. 🇺🇿 Узбекистан · $16,6 млрд, в 16,2 раза
-2. 🇹🇯 Таджикистан · $6,8 млрд, в 12,1 раза
-3. 🇰🇬 Киргизия · $3,2 млрд, в 10,2 раза
-Узбекистан: переводы мигрантов выросли в 16,2 раза с 2005 года.
+Самые дорогие компании Сингапура, ноябрь 2026:
+1. 🇸🇬 DBS Group · $155 млрд
+2. 🇸🇬 OCBC Bank · $97,6 млрд
+3. 🇸🇬 Singtel · $52,1 млрд
+4. 🇸🇬 UOB · $47,5 млрд
+5. 🇸🇬 Sea · $46,4 млрд
+6. 🇸🇬 Flex · $25,8 млрд
+7. 🇸🇬 ST Engineering · $22,6 млрд
+8. 🇸🇬 Singapore Exchange · $17,2 млрд
+9. 🇸🇬 Singapore Airlines · $17,2 млрд
+10. 🇸🇬 Wilmar International · $14,5 млрд
+№1: DBS Group, $155 млрд.
 Больше в Telegram @osnovafin
 ---
-Threads: с картинкой
-Ответ со ссылкой: 18115062269160194
-Опубликовано: 18175906762413922. Осталось новых рейтингов: 176
-exit=0 2026-11-17T17:33:58Z
+Threads: текстом
+Ответ со ссылкой: 18134412283834973
+Опубликовано: 18012626720777105. Осталось новых рейтингов: 175
+exit=0 2026-11-18T06:34:42Z
