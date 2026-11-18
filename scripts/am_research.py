@@ -423,6 +423,25 @@ def mcap_tv():
     json.dump(rep, open(os.path.join(out, "report_tv.json"), "w"), indent=1, default=str); print(rep)
 
 
+def reit():
+    import subprocess, sys as _s
+    subprocess.run([_s.executable, "-m", "pip", "install", "-q", "websocket-client"], check=False)
+    out = os.path.join(OUTD, "mcap"); rep = {}
+    try:
+        rep["scan"] = requests.post("https://scanner.tradingview.com/uae/scan", json={"symbols": {"tickers": ["DFM:DUBAIRESI"]},
+                                    "columns": ["close", "market_cap_basic", "total_shares_outstanding_fundamental", "dividend_yield_recent", "Perf.YTD", "price_book_ratio"]}, timeout=30).json()
+    except Exception as e:  # noqa: BLE001
+        rep["scan_err"] = str(e)
+    try:
+        rows = tv_hist("DFM:DUBAIRESI", n=400, interval="1D")
+        with open(os.path.join(out, "DUBAIRESI_tv.csv"), "w") as fh:
+            fh.write("Date,Close\n"); [fh.write(f"{d},{c}\n") for d, c in rows]
+        rep["hist"] = [len(rows), rows[0] if rows else None, rows[-1] if rows else None]
+    except Exception as e:  # noqa: BLE001
+        rep["hist_err"] = str(e)
+    json.dump(rep, open(os.path.join(out, "reit.json"), "w"), indent=1, default=str); print(rep)
+
+
 def buildings(tag="report"):
     """Фото зданий фондов из Wikimedia Commons (JPEG 1600 px, до 2 на запрос) в am/research/buildings/ + логотип OIA через Wikidata"""
     import time
@@ -497,4 +516,4 @@ def buildings(tag="report"):
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit}[task]()
