@@ -2,7 +2,8 @@
  "earn_seen": {
   "HD-2027Q3": 1794915538,
   "DIS-2026Q4": 1794918780,
-  "NVDA-2027Q3": 1794958337
+  "NVDA-2027Q3": 1794958337,
+  "LOW-2027Q3": 1795002524
  },
  "caps": {
   "ACRE": {
@@ -5817,6 +5818,31 @@
    "cap": 78.919449,
    "name": "5E Advanced Materials, Inc.",
    "ind": "Metals & Mining"
+  },
+  "CSHR": {
+   "cap": 415.107611081081,
+   "name": "Coinshares PLC",
+   "ind": "Financial Services"
+  },
+  "GLBE": {
+   "cap": 6686.782046804979,
+   "name": "Global-E Online Ltd.",
+   "ind": "Retail"
+  },
+  "LOW": {
+   "cap": 123689.96436463833,
+   "name": "Lowe's Companies Inc",
+   "ind": "Retail"
+  },
+  "PONY": {
+   "cap": 1885.1915723469301,
+   "name": "Pony AI Inc",
+   "ind": "Technology"
+  },
+  "ZKH": {
+   "cap": 261.54,
+   "name": "ZKH Group Ltd",
+   "ind": "Trading Companies & Distributors"
   }
  },
  "earn_done": [
@@ -5873,6 +5899,7 @@
   "NU-2026Q3",
   "HD-2027Q3",
   "DIS-2026Q4",
-  "NVDA-2027Q3"
+  "NVDA-2027Q3",
+  "LOW-2027Q3"
  ]
 }
