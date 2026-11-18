@@ -1,11 +1,5 @@
 [
  {
-  "id": "chart-2026-11-16-MSTR",
-  "caption": "📊 Акции <b>Strategy</b> упали на 7,62% за день\nЗа полгода: −38,10%, цена $103,14\n\n#графикдня",
-  "t": 1794851161,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-16-MSTR.png"
- },
- {
   "id": "alert-2026-11-16-AMD-d",
   "caption": "⚡️🔻 <b>AMD</b> (AMD) −5,14% за день, $506,59\n\n#алерт",
   "t": 1794852183
@@ -155,5 +149,10 @@
   "id": "alert-2026-11-18-PANW-u",
   "caption": "⚡️🚀 <b>Palo Alto Networks</b> (PANW) +7,19% за день, $331,54\n\n#алерт",
   "t": 1795015072
+ },
+ {
+  "id": "alert-2026-11-18-UNH-d",
+  "caption": "⚡️🔻 <b>UnitedHealth</b> (UNH) −6,80% за день, $363,2\n\n#алерт",
+  "t": 1795019056
  }
 ]
