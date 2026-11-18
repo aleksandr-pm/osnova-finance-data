@@ -1,0 +1,2160 @@
+{
+ "DFM": {
+  "totalCount": 64,
+  "data": [
+   {
+    "s": "DFM:EMIRATESNBD",
+    "d": [
+     "EMIRATESNBD",
+     "Emirates NBD Bank (P.J.S.C)",
+     226386895964,
+     "Finance",
+     36.18,
+     "stock",
+     18234394.38
+    ]
+   },
+   {
+    "s": "DFM:DEWA",
+    "d": [
+     "DEWA",
+     "Dubai Electricity & Water Authority PJSC",
+     138499999046,
+     "Utilities",
+     2.82,
+     "stock",
+     9251599.379999999
+    ]
+   },
+   {
+    "s": "DFM:EMAAR",
+    "d": [
+     "EMAAR",
+     "Emaar Properties (P.J.S.C)",
+     108716386451,
+     "Finance",
+     12.42,
+     "stock",
+     171113283.54
+    ]
+   },
+   {
+    "s": "DFM:MASQ",
+    "d": [
+     "MASQ",
+     "Mashreqbank PSC",
+     59179900665,
+     "Finance",
+     302,
+     "stock",
+     1208
+    ]
+   },
+   {
+    "s": "DFM:DU",
+    "d": [
+     "DU",
+     "Emirates Integrated Telecommunications Company PJSC",
+     58927774902,
+     "Communications",
+     12.9,
+     "stock",
+     3469558.2
+    ]
+   },
+   {
+    "s": "DFM:EMAARDEV",
+    "d": [
+     "EMAARDEV",
+     "Emaar Development PJSC",
+     58799999237,
+     "Finance",
+     14.7,
+     "stock",
+     193854030.29999998
+    ]
+   },
+   {
+    "s": "DFM:DIB",
+    "d": [
+     "DIB",
+     "Dubai Islamic Bank PJSC",
+     55721024851,
+     "Finance",
+     7.75,
+     "stock",
+     6412319
+    ]
+   },
+   {
+    "s": "DFM:SALIK",
+    "d": [
+     "SALIK",
+     "Salik Company PJSC",
+     40874998569,
+     "Transportation",
+     5.43,
+     "stock",
+     8166410.489999999
+    ]
+   },
+   {
+    "s": "DFM:CBD",
+    "d": [
+     "CBD",
+     "Commercial Bank of Dubai(PSC)",
+     29254881136,
+     "Finance",
+     9.8,
+     "stock",
+     63700.00000000001
+    ]
+   },
+   {
+    "s": "DFM:TALABAT",
+    "d": [
+     "TALABAT",
+     "Talabat Holding Plc",
+     27713007211,
+     "Transportation",
+     1.19,
+     "stock",
+     28559690.599999998
+    ]
+   },
+   {
+    "s": "DFM:AIRARABIA",
+    "d": [
+     "AIRARABIA",
+     "Air Arabia PJSC",
+     23566836876,
+     "Transportation",
+     5.03,
+     "stock",
+     2382052.0700000003
+    ]
+   },
+   {
+    "s": "DFM:PARKIN",
+    "d": [
+     "PARKIN",
+     "Parkin Co. PJSC",
+     20309999943,
+     "Consumer Services",
+     6.68,
+     "stock",
+     2694578.4
+    ]
+   },
+   {
+    "s": "DFM:TECOM",
+    "d": [
+     "TECOM",
+     "TECOM Group PJSC",
+     17749999762,
+     "Finance",
+     3.47,
+     "stock",
+     53264.5
+    ]
+   },
+   {
+    "s": "DFM:DUBAIRESI",
+    "d": [
+     "DUBAIRESI",
+     "Dubai Residential REIT",
+     16509999752,
+     "Finance",
+     1.26,
+     "stock",
+     336567.42
+    ]
+   },
+   {
+    "s": "DFM:EMPOWER",
+    "d": [
+     "EMPOWER",
+     "Emirates Central Cooling Systems Corporation PJSC",
+     15899999142,
+     "Utilities",
+     1.575,
+     "stock",
+     266370.3
+    ]
+   },
+   {
+    "s": "DFM:DIC",
+    "d": [
+     "DIC",
+     "Dubai Investment (P.J.S.C)",
+     15817512778,
+     "Non-Energy Minerals",
+     3.74,
+     "stock",
+     892981.1000000001
+    ]
+   },
+   {
+    "s": "DFM:DFM",
+    "d": [
+     "DFM",
+     "Dubai Financial Market (DFM) - PJSC",
+     10554406869,
+     "Finance",
+     1.34,
+     "stock",
+     3131015.8600000003
+    ]
+   },
+   {
+    "s": "DFM:DIP",
+    "d": [
+     "DIP",
+     "DIP Holding PLC",
+     10064410062,
+     "Miscellaneous",
+     1.16,
+     "stock",
+     4515744.279999999
+    ]
+   },
+   {
+    "s": "DFM:ETIHADENERGY",
+    "d": [
+     "ETIHADENERGY",
+     "Etihad Energy Holding P.J.S.C.",
+     9347759509,
+     "Transportation",
+     2.77,
+     "stock",
+     79687728.41
+    ]
+   },
+   {
+    "s": "DFM:GFH",
+    "d": [
+     "GFH",
+     "GFH Bank B.S.C.",
+     7014542906.018539,
+     "Finance",
+     1.625,
+     "stock",
+     671853
+    ]
+   },
+   {
+    "s": "DFM:ALANSARI",
+    "d": [
+     "ALANSARI",
+     "Al Ansari Financial Services PJSC",
+     6983798966,
+     "Commercial Services",
+     0.93,
+     "stock",
+     25636.38
+    ]
+   },
+   {
+    "s": "DFM:SALAM",
+    "d": [
+     "SALAM",
+     "Al Salam Bank B.S.C.",
+     6616491960.515707,
+     "Finance",
+     2.04,
+     "stock",
+     1803217.2
+    ]
+   },
+   {
+    "s": "DFM:TABREED",
+    "d": [
+     "TABREED",
+     "National Central Cooling Co. (P.S.C.) (Tabreed)",
+     6544123155,
+     "Utilities",
+     2.27,
+     "stock",
+     112494.39
+    ]
+   },
+   {
+    "s": "DFM:ALEC",
+    "d": [
+     "ALEC",
+     "ALEC Holdings PJSC",
+     6449999809,
+     "Consumer Durables",
+     1.295,
+     "stock",
+     891970.1
+    ]
+   },
+   {
+    "s": "DFM:DTC",
+    "d": [
+     "DTC",
+     "Dubai Taxi Co. PJSC",
+     5699999928,
+     "Transportation",
+     2.29,
+     "stock",
+     373485.26
+    ]
+   },
+   {
+    "s": "DFM:MKHZN",
+    "d": [
+     "MKHZN",
+     "Agility Public Warehousing Co. K.S.C.",
+     5077285030.089017,
+     "Transportation",
+     1.875,
+     "stock",
+     9851.25
+    ]
+   },
+   {
+    "s": "DFM:SPINNEYS",
+    "d": [
+     "SPINNEYS",
+     "Spinneys 1961 Holding plc",
+     4464000034,
+     "Retail Trade",
+     1.245,
+     "stock",
+     537803.895
+    ]
+   },
+   {
+    "s": "DFM:AMANAT",
+    "d": [
+     "AMANAT",
+     "Amanat Holdings PJSC",
+     3982912169,
+     "Finance",
+     1.61,
+     "stock",
+     753014.7100000001
+    ]
+   },
+   {
+    "s": "DFM:AJMANBANK",
+    "d": [
+     "AJMANBANK",
+     "Ajman Bank PJSC",
+     3717543201,
+     "Finance",
+     1.37,
+     "stock",
+     170248.53
+    ]
+   },
+   {
+    "s": "DFM:SUKOON",
+    "d": [
+     "SUKOON",
+     "Sukoon Insurance PJSC",
+     3653408488,
+     "Finance",
+     7.91,
+     "stock",
+     0
+    ]
+   },
+   {
+    "s": "DFM:UNIONCOOP",
+    "d": [
+     "UNIONCOOP",
+     "Union Coop",
+     3648241293,
+     "Retail Trade",
+     2.11,
+     "stock",
+     86336.98
+    ]
+   },
+   {
+    "s": "DFM:DEYAAR",
+    "d": [
+     "DEYAAR",
+     "Deyaar Development (P.J.S.C)",
+     3334388207,
+     "Finance",
+     0.758,
+     "stock",
+     795156.402
+    ]
+   },
+   {
+    "s": "DFM:TAALEEM",
+    "d": [
+     "TAALEEM",
+     "Taaleem Holdings PJSC",
+     3192735353,
+     "Consumer Services",
+     3.26,
+     "stock",
+     214644.91999999998
+    ]
+   },
+   {
+    "s": "DFM:IFA",
+    "d": [
+     "IFA",
+     "International Financial Advisors Holding K.P.S.C.",
+     2834538052.7381744,
+     "Finance",
+     5.95,
+     "stock",
+     0
+    ]
+   },
+   {
+    "s": "DFM:DRC",
+    "d": [
+     "DRC",
+     "Dubai Refreshment Company P.J.S.C",
+     2700000000,
+     "Consumer Non-Durables",
+     30,
+     "stock",
+     10500
+    ]
+   },
+   {
+    "s": "DFM:ARMX",
+    "d": [
+     "ARMX",
+     "Aramex PJSC",
+     2628059568,
+     "Transportation",
+     1.78,
+     "stock",
+     60156.88
+    ]
+   },
+   {
+    "s": "DFM:UPP",
+    "d": [
+     "UPP",
+     "Union Properties (P.J.S.C)",
+     2582303095,
+     "Finance",
+     0.606,
+     "stock",
+     3922563.462
+    ]
+   },
+   {
+    "s": "DFM:NCC",
+    "d": [
+     "NCC",
+     "National Cement Company PSC",
+     1829879904,
+     "Non-Energy Minerals",
+     5.1,
+     "stock",
+     0
+    ]
+   },
+   {
+    "s": "DFM:AMLAK",
+    "d": [
+     "AMLAK",
+     "Amlak Finance PJSC",
+     1800000072,
+     "Finance",
+     1.19,
+     "stock",
+     936660.8999999999
+    ]
+   },
+   {
+    "s": "DFM:DIN",
+    "d": [
+     "DIN",
+     "Dubai Insurance CompanyPSC",
+     1689999962,
+     "Finance",
+     16.9,
+     "stock",
+     0
+    ]
+   },
+   {
+    "s": "DFM:ALRAMZ",
+    "d": [
+     "ALRAMZ",
+     "Al Ramz Corporation Investment & Development PJSC",
+     1148737760,
+     "Finance",
+     2.21,
+     "stock",
+     22.1
+    ]
+   },
+   {
+    "s": "DFM:SALAMA",
+    "d": [
+     "SALAMA",
+     "Islamic Arab Insurance Co. (Salama)",
+     1131569168,
+     "Finance",
+     1.35,
+     "stock",
+     722858.8500000001
+    ]
+   },
+   {
+    "s": "DFM:NGI",
+    "d": [
+     "NGI",
+     "National General Insurance Co (P.J.S.C)",
+     951758662,
+     "Finance",
+     5.77,
+     "stock",
+     0
+    ]
+   },
+   {
+    "s": "DFM:SHUAA",
+    "d": [
+     "SHUAA",
+     "Shuaa Capital (P.S.C)",
+     801326014,
+     "Finance",
+     0.211,
+     "stock",
+     1674791.611
+    ]
+   },
+   {
+    "s": "DFM:AMCREIT",
+    "d": [
+     "AMCREIT",
+     "Al Mal Capital REIT",
+     746793329,
+     "Finance",
+     1.075,
+     "stock",
+     2015.625
+    ]
+   },
+   {
+    "s": "DFM:DSI",
+    "d": [
+     "DSI",
+     "Drake & Scull International (P J S C)",
+     730484031,
+     "Industrial Services",
+     0.255,
+     "stock",
+     1318371.675
+    ]
+   },
+   {
+    "s": "DFM:ITHMR",
+    "d": [
+     "ITHMR",
+     "Ithmaar Holding BSC",
+     567481114,
+     "Finance",
+     0.192,
+     "stock",
+     102750.144
+    ]
+   },
+   {
+    "s": "DFM:ERC",
+    "d": [
+     "ERC",
+     "Emirates Reem Investments PJSC",
+     529386600.00000006,
+     "Consumer Non-Durables",
+     1.605,
+     "stock",
+     391928.16
+    ]
+   },
+   {
+    "s": "DFM:EIBANK",
+    "d": [
+     "EIBANK",
+     "Emirates Investment Bank PJSC",
+     520000000,
+     "Finance",
+     52,
+     "stock",
+     0
+    ]
+   },
+   {
+    "s": "DFM:BHMCAPITAL",
+    "d": [
+     "BHMCAPITAL",
+     "BHM Capital Financial Services P.S.C",
+     459079768,
+     "Finance",
+     0.999,
+     "stock",
+     35964
+    ]
+   },
+   {
+    "s": "DFM:MAZAYA",
+    "d": [
+     "MAZAYA",
+     "Al-Mazaya Holding Co. SAKC",
+     420189187.56786585,
+     "Finance",
+     0.919,
+     "stock",
+     0
+    ]
+   },
+   {
+    "s": "DFM:DNIR",
+    "d": [
+     "DNIR",
+     "Dubai National Insurance & Reinsurance Co. (P.S.C.)",
+     416955015,
+     "Finance",
+     3.43,
+     "stock",
+     10633
+    ]
+   },
+   {
+    "s": "DFM:NIH",
+    "d": [
+     "NIH",
+     "National International Co. (Holding) (K.S.C.)",
+     406693340.2876481,
+     "Process Industries",
+     2.24,
+     "stock",
+     0
+    ]
+   },
+   {
+    "s": "DFM:TAKAFUL_EM",
+    "d": [
+     "TAKAFUL_EM",
+     "Takaful Emarat - Insurance (PSC)",
+     358108398,
+     "Finance",
+     1.685,
+     "stock",
+     236014.58000000002
+    ]
+   },
+   {
+    "s": "DFM:UFC",
+    "d": [
+     "UFC",
+     "United Foods Co. PSC",
+     317625000,
+     "Consumer Non-Durables",
+     10.98,
+     "stock",
+     1361.52
+    ]
+   },
+   {
+    "s": "DFM:WATANIA",
+    "d": [
+     "WATANIA",
+     "Watania International Holding PJSC",
+     223994532,
+     "Finance",
+     0.84,
+     "stock",
+     2812854.2399999998
+    ]
+   },
+   {
+    "s": "DFM:SUKOONTAKAFL",
+    "d": [
+     "SUKOONTAKAFL",
+     "Sukoon Takaful PJSC",
+     206360005,
+     "Finance",
+     1.34,
+     "stock",
+     21440
+    ]
+   },
+   {
+    "s": "DFM:UNIKAI",
+    "d": [
+     "UNIKAI",
+     "Unikai Foods PJSC",
+     167404706,
+     "Consumer Non-Durables",
+     4.31,
+     "stock",
+     0
+    ]
+   },
+   {
+    "s": "DFM:ALFIRDOUS",
+    "d": [
+     "ALFIRDOUS",
+     "Al Firdous Holdings PJSC",
+     161399996,
+     "Consumer Services",
+     0.265,
+     "stock",
+     108201.09000000001
+    ]
+   },
+   {
+    "s": "DFM:AMAN",
+    "d": [
+     "AMAN",
+     "Dubai Islamic Insurance & Reinsurance Co.",
+     127548749,
+     "Finance",
+     0.568,
+     "stock",
+     2198766.056
+    ]
+   },
+   {
+    "s": "DFM:EKTTITAB",
+    "d": [
+     "EKTTITAB",
+     "Ekttitab Holding Co. (S.A.K.)",
+     108073728.67873171,
+     "Finance",
+     0.365,
+     "stock",
+     124209.5
+    ]
+   },
+   {
+    "s": "DFM:ALSALAMSUDAN",
+    "d": [
+     "ALSALAMSUDAN",
+     "Al Salam Bank Sudan",
+     59424752,
+     "Finance",
+     0.494,
+     "stock",
+     33669.064
+    ]
+   },
+   {
+    "s": "DFM:CHAE",
+    "d": [
+     "CHAE",
+     "Lunate S&P UAE UCITS ETF Accum Shs -A- AED",
+     null,
+     "Miscellaneous",
+     7.76,
+     "fund",
+     16544.32
+    ]
+   },
+   {
+    "s": "DFM:CHAESHIN",
+    "d": [
+     "CHAESHIN",
+     "Lunate S&P UAE Shariah ETF Units -B-",
+     null,
+     "Miscellaneous",
+     7.56,
+     "fund",
+     21916.44
+    ]
+   }
+  ]
+ },
+ "ADX": {
+  "totalCount": 115,
+  "data": [
+   {
+    "s": "ADX:IHC",
+    "d": [
+     "IHC",
+     "International Holding Company PJSC",
+     688771572266,
+     "Health Services",
+     313,
+     "stock",
+     59877526
+    ]
+   },
+   {
+    "s": "ADX:ADNOCGAS",
+    "d": [
+     "ADNOCGAS",
+     "ADNOC Gas plc",
+     262489868667.99997,
+     "Energy Minerals",
+     3.38,
+     "stock",
+     57201994.46
+    ]
+   },
+   {
+    "s": "ADX:FAB",
+    "d": [
+     "FAB",
+     "First Abu Dhabi Bank",
+     230522551750,
+     "Finance",
+     22.32,
+     "stock",
+     109755051.12
+    ]
+   },
+   {
+    "s": "ADX:ETISALAT",
+    "d": [
+     "ETISALAT",
+     "Emirates Telecom. Group Company (Etisalat Group) PJSC",
+     195503023831,
+     "Communications",
+     22.92,
+     "stock",
+     15221424.120000001
+    ]
+   },
+   {
+    "s": "ADX:ADCB",
+    "d": [
+     "ADCB",
+     "Abu Dhabi Commercial Bank",
+     140445821654,
+     "Finance",
+     18.22,
+     "stock",
+     35063041.72
+    ]
+   },
+   {
+    "s": "ADX:ADNOCDRILL",
+    "d": [
+     "ADNOCDRILL",
+     "ADNOC Drilling Company PJSC",
+     93760002136,
+     "Industrial Services",
+     5.88,
+     "stock",
+     15470485.799999999
+    ]
+   },
+   {
+    "s": "ADX:ADIB",
+    "d": [
+     "ADIB",
+     "Abu Dhabi Islamic Bank",
+     87104367875,
+     "Finance",
+     23.98,
+     "stock",
+     59754155.34
+    ]
+   },
+   {
+    "s": "ADX:ALPHADHABI",
+    "d": [
+     "ALPHADHABI",
+     "Alpha Dhabi Holding PJSC",
+     70999999046,
+     "Industrial Services",
+     7.47,
+     "stock",
+     725467202.1
+    ]
+   },
+   {
+    "s": "ADX:2POINTZERO",
+    "d": [
+     "2POINTZERO",
+     "Two Point Zero Group PJSC",
+     70509801650,
+     "Commercial Services",
+     2.08,
+     "stock",
+     5199165.92
+    ]
+   },
+   {
+    "s": "ADX:BOROUGE",
+    "d": [
+     "BOROUGE",
+     "Borouge PLC",
+     69132688801,
+     "Process Industries",
+     2.31,
+     "stock",
+     8925059.22
+    ]
+   },
+   {
+    "s": "ADX:ALDAR",
+    "d": [
+     "ALDAR",
+     "Al Dar Properties",
+     67854492575,
+     "Finance",
+     8.78,
+     "stock",
+     146695133.72
+    ]
+   },
+   {
+    "s": "ADX:ADNOCLS",
+    "d": [
+     "ADNOCLS",
+     "ADNOC Logistics & Services plc",
+     50827687444,
+     "Transportation",
+     7.23,
+     "stock",
+     58680313.980000004
+    ]
+   },
+   {
+    "s": "ADX:ADNOCDIST",
+    "d": [
+     "ADNOCDIST",
+     "Abu Dhabi National Oil Company For Distribution",
+     47999998927,
+     "Retail Trade",
+     3.82,
+     "stock",
+     10318244.02
+    ]
+   },
+   {
+    "s": "ADX:MODON",
+    "d": [
+     "MODON",
+     "Modon Holding PSC",
+     45608352794,
+     "Finance",
+     2.82,
+     "stock",
+     3698283.36
+    ]
+   },
+   {
+    "s": "ADX:ORDS",
+    "d": [
+     "ORDS",
+     "OOREDOO",
+     41635907169.43147,
+     "Communications",
+     12.84,
+     "stock",
+     155068.68
+    ]
+   },
+   {
+    "s": "ADX:ADPORTS",
+    "d": [
+     "ADPORTS",
+     "Abu Dhabi Ports Company PJSC",
+     31137901996,
+     "Transportation",
+     6.16,
+     "stock",
+     37908.64
+    ]
+   },
+   {
+    "s": "ADX:PUREHEALTH",
+    "d": [
+     "PUREHEALTH",
+     "Pure Health Holding PJSC",
+     27333334291,
+     "Health Services",
+     2.61,
+     "stock",
+     12531703.59
+    ]
+   },
+   {
+    "s": "ADX:AMR",
+    "d": [
+     "AMR",
+     "Americana Restaurants International PLC",
+     21852133174.075924,
+     "Consumer Services",
+     2.67,
+     "stock",
+     6922057.77
+    ]
+   },
+   {
+    "s": "ADX:PRESIGHT",
+    "d": [
+     "PRESIGHT",
+     "Presight AI Holding PLC",
+     20527769925,
+     "Technology Services",
+     3.62,
+     "stock",
+     3555871.7
+    ]
+   },
+   {
+    "s": "ADX:RAKBANK",
+    "d": [
+     "RAKBANK",
+     "The National Bank of Ras Al Khaimah",
+     20114945068,
+     "Finance",
+     10.04,
+     "stock",
+     572.28
+    ]
+   },
+   {
+    "s": "ADX:NMDC",
+    "d": [
+     "NMDC",
+     "NMDC Group PJSC",
+     18998541870,
+     "Industrial Services",
+     22.54,
+     "stock",
+     1925749.98
+    ]
+   },
+   {
+    "s": "ADX:FERTIGLB",
+    "d": [
+     "FERTIGLB",
+     "Fertiglobe plc",
+     18511942277,
+     "Process Industries",
+     2.24,
+     "stock",
+     835580.4800000001
+    ]
+   },
+   {
+    "s": "ADX:AGILITY",
+    "d": [
+     "AGILITY",
+     "Agility Global PLC",
+     15432462699,
+     "Transportation",
+     1.6,
+     "stock",
+     2802849.6
+    ]
+   },
+   {
+    "s": "ADX:NMDCENR",
+    "d": [
+     "NMDCENR",
+     "NMDC Energy P.J.S.C.",
+     13050000668,
+     "Industrial Services",
+     2.61,
+     "stock",
+     596985.2999999999
+    ]
+   },
+   {
+    "s": "ADX:SIB",
+    "d": [
+     "SIB",
+     "Sharjah Islamic Bank",
+     12757906571,
+     "Finance",
+     2.96,
+     "stock",
+     15685336
+    ]
+   },
+   {
+    "s": "ADX:NBF",
+    "d": [
+     "NBF",
+     "National Bank of Fujairah",
+     12360175075,
+     "Finance",
+     4.79,
+     "stock",
+     479
+    ]
+   },
+   {
+    "s": "ADX:APEX",
+    "d": [
+     "APEX",
+     "APEX INVESTMENT P.S.C",
+     11014905887,
+     "Non-Energy Minerals",
+     3.12,
+     "stock",
+     477122.88
+    ]
+   },
+   {
+    "s": "ADX:SPACE42",
+    "d": [
+     "SPACE42",
+     "SPACE42 PLC",
+     10714286865,
+     "Technology Services",
+     2.31,
+     "stock",
+     32727047.43
+    ]
+   },
+   {
+    "s": "ADX:LULU",
+    "d": [
+     "LULU",
+     "Lulu Retail Holdings PLC",
+     10019038411,
+     "Retail Trade",
+     0.982,
+     "stock",
+     4276316.382
+    ]
+   },
+   {
+    "s": "ADX:EMSTEEL",
+    "d": [
+     "EMSTEEL",
+     "EMSTEEL BUILDING MATERIALS PJSC",
+     8699499869,
+     "Non-Energy Minerals",
+     1.26,
+     "stock",
+     3681838.44
+    ]
+   },
+   {
+    "s": "ADX:BURJEEL",
+    "d": [
+     "BURJEEL",
+     "BURJEEL HOLDINGS PLC",
+     7026930739,
+     "Health Services",
+     1.38,
+     "stock",
+     11191783.44
+    ]
+   },
+   {
+    "s": "ADX:GFH",
+    "d": [
+     "GFH",
+     "GFH Bank B.S.C.",
+     7014542906.018539,
+     "Finance",
+     1.64,
+     "stock",
+     14786.24
+    ]
+   },
+   {
+    "s": "ADX:ADAVIATION",
+    "d": [
+     "ADAVIATION",
+     "Abu Dhabi Aviation Co.",
+     6624594836,
+     "Transportation",
+     6,
+     "stock",
+     787752
+    ]
+   },
+   {
+    "s": "ADX:ORAS",
+    "d": [
+     "ORAS",
+     "Orascom Construction PLC",
+     6514299021,
+     "Industrial Services",
+     57.55,
+     "stock",
+     328437.85
+    ]
+   },
+   {
+    "s": "ADX:ALEFEDT",
+    "d": [
+     "ALEFEDT",
+     "Alef Education Holding plc",
+     6481999993,
+     "Consumer Services",
+     0.938,
+     "stock",
+     178824.072
+    ]
+   },
+   {
+    "s": "ADX:INB",
+    "d": [
+     "INB",
+     "Invest Bank",
+     6276886245,
+     "Finance",
+     1.89,
+     "stock",
+     166439.06999999998
+    ]
+   },
+   {
+    "s": "ADX:ADNH",
+    "d": [
+     "ADNH",
+     "Abu Dhabi National Hotels Co.",
+     6073199916,
+     "Consumer Services",
+     0.482,
+     "stock",
+     103210.66
+    ]
+   },
+   {
+    "s": "ADX:NBQ",
+    "d": [
+     "NBQ",
+     "National Bank of Umm Al Qaiwain",
+     5720000267,
+     "Finance",
+     2.93,
+     "stock",
+     4556.150000000001
+    ]
+   },
+   {
+    "s": "ADX:DANA",
+    "d": [
+     "DANA",
+     "DANA GAS PJSC",
+     5666252580,
+     "Energy Minerals",
+     0.812,
+     "stock",
+     5546249.884000001
+    ]
+   },
+   {
+    "s": "ADX:UAB",
+    "d": [
+     "UAB",
+     "United Arab Bank",
+     4331356225,
+     "Finance",
+     1.38,
+     "stock",
+     124.19999999999999
+    ]
+   },
+   {
+    "s": "ADX:ADNIC",
+    "d": [
+     "ADNIC",
+     "Abu Dhabi National Insurance Company",
+     4115399880,
+     "Finance",
+     7.29,
+     "stock",
+     52138.08
+    ]
+   },
+   {
+    "s": "ADX:EMOBILITY",
+    "d": [
+     "EMOBILITY",
+     "Emirates Mobility Company",
+     3921869690,
+     "Consumer Services",
+     3.68,
+     "stock",
+     685190.24
+    ]
+   },
+   {
+    "s": "ADX:WAHA",
+    "d": [
+     "WAHA",
+     "Waha Capital Company",
+     3804697581,
+     "Finance",
+     2,
+     "stock",
+     413622
+    ]
+   },
+   {
+    "s": "ADX:BOS",
+    "d": [
+     "BOS",
+     "Bank of Sharjah",
+     3520000052,
+     "Finance",
+     1.64,
+     "stock",
+     643631.12
+    ]
+   },
+   {
+    "s": "ADX:ESG",
+    "d": [
+     "ESG",
+     "ESG EMIRATES STALLIONS GROUP P.J.S.C",
+     3164999962,
+     "Commercial Services",
+     13.14,
+     "stock",
+     7279.56
+    ]
+   },
+   {
+    "s": "ADX:ADID",
+    "d": [
+     "ADID",
+     "Abu Dhabi National Co. for Building Materials",
+     3149999857,
+     "Non-Energy Minerals",
+     2.09,
+     "stock",
+     1129220.73
+    ]
+   },
+   {
+    "s": "ADX:NCTH",
+    "d": [
+     "NCTH",
+     "National Corporation for Tourism & Hotels",
+     3134784500,
+     "Consumer Services",
+     1.44,
+     "stock",
+     52344
+    ]
+   },
+   {
+    "s": "ADX:PHX",
+    "d": [
+     "PHX",
+     "PHOENIX GROUP  PLC",
+     3115144135,
+     "Technology Services",
+     0.505,
+     "stock",
+     409698.925
+    ]
+   },
+   {
+    "s": "ADX:ASM",
+    "d": [
+     "ASM",
+     "Al Seer Marine Supplies & Equipment Company P.J.S.C",
+     3089999914,
+     "Consumer Durables",
+     3.13,
+     "stock",
+     4467483.43
+    ]
+   },
+   {
+    "s": "ADX:ICAP",
+    "d": [
+     "ICAP",
+     "Investcorp Capital PLC",
+     3002357686,
+     "Finance",
+     1.37,
+     "stock",
+     271090.12
+    ]
+   },
+   {
+    "s": "ADX:RAKPROP",
+    "d": [
+     "RAKPROP",
+     "RAK Properties",
+     2948936035,
+     "Finance",
+     0.99,
+     "stock",
+     3690043.83
+    ]
+   },
+   {
+    "s": "ADX:GHITHA",
+    "d": [
+     "GHITHA",
+     "GHITHA HOLDING P.J.S.C.",
+     2647936076,
+     "Distribution Services",
+     10.88,
+     "stock",
+     116535.68000000001
+    ]
+   },
+   {
+    "s": "ADX:AGTHIA",
+    "d": [
+     "AGTHIA",
+     "AGTHIA Group",
+     2576583350,
+     "Process Industries",
+     3.13,
+     "stock",
+     584508.72
+    ]
+   },
+   {
+    "s": "ADX:RAKCEC",
+    "d": [
+     "RAKCEC",
+     "RAK Ceramics PJSC",
+     2374952232,
+     "Producer Manufacturing",
+     2.38,
+     "stock",
+     1459825.3599999999
+    ]
+   },
+   {
+    "s": "ADX:MAIR",
+    "d": [
+     "MAIR",
+     "MAIR GROUP - P.J.S.C.",
+     2275337565,
+     "Finance",
+     1.05,
+     "stock",
+     597683.1
+    ]
+   },
+   {
+    "s": "ADX:ANAN",
+    "d": [
+     "ANAN",
+     "ANAN INVESTMENT HOLDING P.J.S.C",
+     2258687667,
+     "Finance",
+     0.899,
+     "stock",
+     1476126.5350000001
+    ]
+   },
+   {
+    "s": "ADX:E7",
+    "d": [
+     "E7",
+     "E7 Group PJSC",
+     1859302514,
+     "Finance",
+     0.93,
+     "stock",
+     248454.15000000002
+    ]
+   },
+   {
+    "s": "ADX:INVICTUS",
+    "d": [
+     "INVICTUS",
+     "Invictus Investment Company PLC",
+     1847999973,
+     "Distribution Services",
+     1.64,
+     "stock",
+     541.1999999999999
+    ]
+   },
+   {
+    "s": "ADX:ADSB",
+    "d": [
+     "ADSB",
+     "Abu Dhabi Ship Building Co.",
+     1780732756,
+     "Producer Manufacturing",
+     8.37,
+     "stock",
+     57292.649999999994
+    ]
+   },
+   {
+    "s": "ADX:ESHRAQ",
+    "d": [
+     "ESHRAQ",
+     "ESHRAQ INVESTMENTS P.J.S.C",
+     1676708092,
+     "Finance",
+     0.62,
+     "stock",
+     2721760.32
+    ]
+   },
+   {
+    "s": "ADX:GMPC",
+    "d": [
+     "GMPC",
+     "Gulf Medical Projects Company",
+     1607507083,
+     "Health Services",
+     2.3,
+     "stock",
+     2.3
+    ]
+   },
+   {
+    "s": "ADX:CBI",
+    "d": [
+     "CBI",
+     "Commercial Bank International",
+     1563644710,
+     "Finance",
+     0.9,
+     "stock",
+     27
+    ]
+   },
+   {
+    "s": "ADX:ALPHADATA",
+    "d": [
+     "ALPHADATA",
+     "Alpha Data PJSC",
+     1406266444,
+     "Technology Services",
+     1.44,
+     "stock",
+     859939.2
+    ]
+   },
+   {
+    "s": "ADX:ADNHC",
+    "d": [
+     "ADNHC",
+     "A D N H Catering plc",
+     1339527615,
+     "Consumer Services",
+     0.608,
+     "stock",
+     90262.46399999999
+    ]
+   },
+   {
+    "s": "ADX:PALMS",
+    "d": [
+     "PALMS",
+     "PALMS SPORTS PrJSC",
+     1166999960,
+     "Consumer Services",
+     7.78,
+     "stock",
+     46.68
+    ]
+   },
+   {
+    "s": "ADX:JULPHAR",
+    "d": [
+     "JULPHAR",
+     "Gulf Pharmaceutical Industries",
+     1097466380,
+     "Health Technology",
+     0.952,
+     "stock",
+     347686.584
+    ]
+   },
+   {
+    "s": "ADX:EIC",
+    "d": [
+     "EIC",
+     "Emirates Insurance Co.",
+     1057500029,
+     "Finance",
+     7.05,
+     "stock",
+     78247.95
+    ]
+   },
+   {
+    "s": "ADX:SCIDC",
+    "d": [
+     "SCIDC",
+     "Sharjah Cement and Industrial Development Co.",
+     869802865,
+     "Non-Energy Minerals",
+     1.43,
+     "stock",
+     415417.86
+    ]
+   },
+   {
+    "s": "ADX:MANAZEL",
+    "d": [
+     "MANAZEL",
+     "Manazel PJSC",
+     831999981,
+     "Finance",
+     0.319,
+     "stock",
+     2655913.931
+    ]
+   },
+   {
+    "s": "ADX:SUDATEL",
+    "d": [
+     "SUDATEL",
+     "Sudatel Telecommunications Group Company Limited",
+     727674154,
+     "Communications",
+     0.524,
+     "stock",
+     130931.356
+    ]
+   },
+   {
+    "s": "ADX:AWNIC",
+    "d": [
+     "AWNIC",
+     "Al Wathba National Insurance Co.",
+     637559984,
+     "Finance",
+     3.08,
+     "stock",
+     154
+    ]
+   },
+   {
+    "s": "ADX:TKFL",
+    "d": [
+     "TKFL",
+     "Abu Dhabi National Takaful Co.",
+     598499980,
+     "Finance",
+     5.7,
+     "stock",
+     6822.900000000001
+    ]
+   },
+   {
+    "s": "ADX:EASYLEASE",
+    "d": [
+     "EASYLEASE",
+     "Easy Lease Motorcycle Rental PJSC",
+     592800007,
+     "Consumer Services",
+     19.72,
+     "stock",
+     2760.7999999999997
+    ]
+   },
+   {
+    "s": "ADX:ABNIC",
+    "d": [
+     "ABNIC",
+     "Al Buhaira National Insurance Company",
+     587499976,
+     "Finance",
+     2.35,
+     "stock",
+     629565
+    ]
+   },
+   {
+    "s": "ADX:GCEM",
+    "d": [
+     "GCEM",
+     "Gulf Cement Co.",
+     582978712,
+     "Non-Energy Minerals",
+     1.41,
+     "stock",
+     434.28
+    ]
+   },
+   {
+    "s": "ADX:ALAIN",
+    "d": [
+     "ALAIN",
+     "Al Ain Alahlia Insurance Co.",
+     577800007,
+     "Finance",
+     38.52,
+     "stock",
+     38520
+    ]
+   },
+   {
+    "s": "ADX:FH",
+    "d": [
+     "FH",
+     "Finance House",
+     576876596,
+     "Finance",
+     2.02,
+     "stock",
+     40804
+    ]
+   },
+   {
+    "s": "ADX:QIC",
+    "d": [
+     "QIC",
+     "Umm Al Qaiwain General Investment Co. P.S.C",
+     500939998,
+     "Finance",
+     1.38,
+     "stock",
+     3022.2
+    ]
+   },
+   {
+    "s": "ADX:KICO",
+    "d": [
+     "KICO",
+     "AL KHALEEJ Investment",
+     469349978,
+     "Finance",
+     4.26,
+     "stock",
+     6432.599999999999
+    ]
+   },
+   {
+    "s": "ADX:RAKWCT",
+    "d": [
+     "RAKWCT",
+     "RAK Co. for White Cement & Construction Materials",
+     463145394,
+     "Non-Energy Minerals",
+     0.926,
+     "stock",
+     0.926
+    ]
+   },
+   {
+    "s": "ADX:FBI",
+    "d": [
+     "FBI",
+     "Fujairah Building Industries P.S.C",
+     428360648,
+     "Non-Energy Minerals",
+     3.15,
+     "stock",
+     94.5
+    ]
+   },
+   {
+    "s": "ADX:RPM",
+    "d": [
+     "RPM",
+     "Response Plus Holding PrJSC",
+     398000002,
+     "Health Services",
+     2,
+     "stock",
+     124
+    ]
+   },
+   {
+    "s": "ADX:RAKNIC",
+    "d": [
+     "RAKNIC",
+     "Ras Alkhaima National Insurance Co.",
+     360186758,
+     "Finance",
+     2.97,
+     "stock",
+     29.700000000000003
+    ]
+   },
+   {
+    "s": "ADX:UNION",
+    "d": [
+     "UNION",
+     "Union Insurance Company",
+     329999983,
+     "Finance",
+     1.32,
+     "stock",
+     36732.96
+    ]
+   },
+   {
+    "s": "ADX:HAYAH",
+    "d": [
+     "HAYAH",
+     "Hayah Insurance Company P.J.S.C",
+     253999996,
+     "Finance",
+     1.26,
+     "stock",
+     37.8
+    ]
+   },
+   {
+    "s": "ADX:ARAM",
+    "d": [
+     "ARAM",
+     "Aram Group",
+     220923034,
+     "Finance",
+     3,
+     "stock",
+     49431
+    ]
+   },
+   {
+    "s": "ADX:RAPCO",
+    "d": [
+     "RAPCO",
+     "RAPCO Investment PJSC",
+     217641598,
+     "Process Industries",
+     2.3,
+     "stock",
+     16155.199999999999
+    ]
+   },
+   {
+    "s": "ADX:FCI",
+    "d": [
+     "FCI",
+     "Fujairah Cement Industries",
+     142346132,
+     "Non-Energy Minerals",
+     0.399,
+     "stock",
+     19951.995000000003
+    ]
+   },
+   {
+    "s": "ADX:IH",
+    "d": [
+     "IH",
+     "Insurance House",
+     141795273,
+     "Finance",
+     1.25,
+     "stock",
+     168.75
+    ]
+   },
+   {
+    "s": "ADX:USVALUE",
+    "d": [
+     "USVALUE",
+     "Lunate S&P US Shariah Value ETF",
+     null,
+     "Miscellaneous",
+     5.5,
+     "fund",
+     82.5
+    ]
+   },
+   {
+    "s": "ADX:KWTI",
+    "d": [
+     "KWTI",
+     "Lunate S&P Kuwait Shariah ETF",
+     null,
+     "Miscellaneous",
+     3.94,
+     "fund",
+     1524.78
+    ]
+   },
+   {
+    "s": "ADX:SUKUK",
+    "d": [
+     "SUKUK",
+     "Lunate JP Morgan Global Sukuk ETF",
+     null,
+     "Miscellaneous",
+     3.6,
+     "fund",
+     521107.2
+    ]
+   },
+   {
+    "s": "ADX:USGRWTH",
+    "d": [
+     "USGRWTH",
+     "Lunate S&P US Shariah Growth ETF",
+     null,
+     "Miscellaneous",
+     8.53,
+     "fund",
+     22502.14
+    ]
+   },
+   {
+    "s": "ADX:SAUDIA",
+    "d": [
+     "SAUDIA",
+     "Lunate S&P KSA Shariah ETF",
+     null,
+     "Miscellaneous",
+     3.17,
+     "fund",
+     4187.57
+    ]
+   },
+   {
+    "s": "ADX:KDEF",
+    "d": [
+     "KDEF",
+     "PLUS Korea Defense Industry Index ETF",
+     null,
+     "Miscellaneous",
+     113.2,
+     "fund",
+     3396
+    ]
+   },
+   {
+    "s": "ADX:LUXURY",
+    "d": [
+     "LUXURY",
+     "Boreas S&P Absolute Luxury UCITS ETF - AED",
+     null,
+     "Miscellaneous",
+     1.6,
+     "fund",
+     363.20000000000005
+    ]
+   },
+   {
+    "s": "ADX:UAEA",
+    "d": [
+     "UAEA",
+     "Lunate S&P UAE Shariah ETF",
+     null,
+     "Miscellaneous",
+     9.33,
+     "fund",
+     37002.78
+    ]
+   },
+   {
+    "s": "ADX:AIPOWR",
+    "d": [
+     "AIPOWR",
+     "Boreas S&P AI Data, Power & Infrastructure UCITS ETF - AED (Dist) AED",
+     null,
+     "Miscellaneous",
+     2.17,
+     "fund",
+     2189.5299999999997
+    ]
+   },
+   {
+    "s": "ADX:GCCDIV",
+    "d": [
+     "GCCDIV",
+     "Lunate Solactive GCC Shariah Dividend ETF",
+     null,
+     "Miscellaneous",
+     3.55,
+     "fund",
+     3390.25
+    ]
+   },
+   {
+    "s": "ADX:UAED",
+    "d": [
+     "UAED",
+     "Lunate S&P UAE UCITS ETF",
+     null,
+     "Miscellaneous",
+     6.27,
+     "fund",
+     6464.37
+    ]
+   },
+   {
+    "s": "ADX:BONDAE",
+    "d": [
+     "BONDAE",
+     "Lunate JP Morgan UAE Bond UCITS ETF",
+     null,
+     "Miscellaneous",
+     3.56,
+     "fund",
+     94987.92
+    ]
+   },
+   {
+    "s": "ADX:USTBILL",
+    "d": [
+     "USTBILL",
+     "Lunate iBOXX US Treasury Bill ETF",
+     null,
+     "Miscellaneous",
+     9.42,
+     "fund",
+     8007
+    ]
+   },
+   {
+    "s": "ADX:QUANTM",
+    "d": [
+     "QUANTM",
+     "Chimera UCITS ICAV - Boreas Solactive Quantum Computing UCITS ETF Unhedged AED",
+     null,
+     "Miscellaneous",
+     1.66,
+     "fund",
+     219113.36
+    ]
+   },
+   {
+    "s": "ADX:KRBN",
+    "d": [
+     "KRBN",
+     "KraneShares Global Carbon Strategy ETF",
+     null,
+     "Miscellaneous",
+     126.6,
+     "fund",
+     1266
+    ]
+   },
+   {
+    "s": "ADX:PKSTN",
+    "d": [
+     "PKSTN",
+     "Lunate S&P Pakistan UCITS ETF",
+     null,
+     "Miscellaneous",
+     11.78,
+     "fund",
+     235.6
+    ]
+   },
+   {
+    "s": "ADX:KWEB",
+    "d": [
+     "KWEB",
+     "KraneShares CSI China Internet ETF",
+     null,
+     "Miscellaneous",
+     80.75,
+     "fund",
+     646
+    ]
+   },
+   {
+    "s": "ADX:TURKI",
+    "d": [
+     "TURKI",
+     "Lunate S&P Turkey Shariah ETF",
+     null,
+     "Miscellaneous",
+     5.76,
+     "fund",
+     5.76
+    ]
+   },
+   {
+    "s": "ADX:KWIN",
+    "d": [
+     "KWIN",
+     "KraneShares Wahed Alternative Income Index ETF",
+     null,
+     "Miscellaneous",
+     95.45,
+     "fund",
+     1909
+    ]
+   },
+   {
+    "s": "ADX:GRMNY",
+    "d": [
+     "GRMNY",
+     "Lunate S&P Germany UCITS ETF",
+     null,
+     "Miscellaneous",
+     4.8,
+     "fund",
+     1036.8
+    ]
+   },
+   {
+    "s": "ADX:CHHK",
+    "d": [
+     "CHHK",
+     "Lunate S&P China HK Shariah ETF",
+     null,
+     "Miscellaneous",
+     3.4,
+     "fund",
+     1795.2
+    ]
+   },
+   {
+    "s": "ADX:JPANI",
+    "d": [
+     "JPANI",
+     "Lunate S&P Japan UCITS ETF",
+     null,
+     "Miscellaneous",
+     5.19,
+     "fund",
+     40430.100000000006
+    ]
+   },
+   {
+    "s": "ADX:INDI",
+    "d": [
+     "INDI",
+     "Lunate S&P India Shariah ETF",
+     null,
+     "Miscellaneous",
+     3.1,
+     "fund",
+     310
+    ]
+   },
+   {
+    "s": "ADX:KMCA",
+    "d": [
+     "KMCA",
+     "PLUS Korea Manufacturing Core Alliance Index ETF",
+     null,
+     "Miscellaneous",
+     50.3,
+     "fund",
+     3973.7
+    ]
+   },
+   {
+    "s": "ADX:CHADX15",
+    "d": [
+     "CHADX15",
+     "Lunate FTSE ADX 15 ETF",
+     null,
+     "Miscellaneous",
+     3.69,
+     "fund",
+     22394.61
+    ]
+   },
+   {
+    "s": "ADX:AGIX",
+    "d": [
+     "AGIX",
+     "KraneShares Public-Private AI & Technology ETF",
+     null,
+     "Miscellaneous",
+     138.5,
+     "fund",
+     19944
+    ]
+   }
+  ]
+ }
+}
