@@ -4,7 +4,8 @@
   "DIS-2026Q4": 1794918780,
   "NVDA-2027Q3": 1794958337,
   "LOW-2027Q3": 1795002524,
-  "TGT-2027Q3": 1795006292
+  "TGT-2027Q3": 1795006292,
+  "TJX-2027Q3": 1795010775
  },
  "caps": {
   "ACRE": {
@@ -5874,6 +5875,26 @@
    "cap": 3424.02,
    "name": "ZIM Integrated Shipping Services Ltd",
    "ind": "Marine"
+  },
+  "GLNG": {
+   "cap": 4282.073873338971,
+   "name": "Golar LNG Limited",
+   "ind": "Energy"
+  },
+  "ICCM": {
+   "cap": 2.84451604341534,
+   "name": "Icecure Medical Ltd",
+   "ind": "Health Care"
+  },
+  "JMIA": {
+   "cap": 624.085072,
+   "name": "Jumia Technologies AG",
+   "ind": "Retail"
+  },
+  "TJX": {
+   "cap": 142831.61978331223,
+   "name": "The TJX Companies, Inc.",
+   "ind": "Retail"
   }
  },
  "earn_done": [
@@ -5932,6 +5953,7 @@
   "DIS-2026Q4",
   "NVDA-2027Q3",
   "LOW-2027Q3",
-  "TGT-2027Q3"
+  "TGT-2027Q3",
+  "TJX-2027Q3"
  ]
 }
