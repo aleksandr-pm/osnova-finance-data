@@ -525,6 +525,20 @@ def logos3():
     json.dump(rep, open(os.path.join(out, "report3.json"), "w"), indent=1); print(rep)
 
 
+def dl():
+    import time
+    H = {"User-Agent": "osnova-research/1.0 (github.com/aleksandr-pm; contact via github)"}
+    out = os.path.join(OUTD, "sitelogos"); rep = {}
+    for k, u in {"DIB": 'https://upload.wikimedia.org/wikipedia/en/8/8e/Dubai-Islamic-Bank-Logo.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled', "DU": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Du_Solid_Brandmark_RGB.png/800px-Du_Solid_Brandmark_RGB.png"}.items():
+        for attempt in range(4):
+            time.sleep(12)
+            b = requests.get(u, headers=H, timeout=40)
+            if b.status_code == 200 and not b.content[:20].lower().startswith(b"<!doctype"):
+                open(os.path.join(out, k + "_ok.png"), "wb").write(b.content); rep[k] = [u, len(b.content)]; break
+            rep[k] = [u, b.status_code]
+    json.dump(rep, open(os.path.join(out, "dl.json"), "w"), indent=1); print(rep)
+
+
 def buildings(tag="report"):
     """Фото зданий фондов из Wikimedia Commons (JPEG 1600 px, до 2 на запрос) в am/research/buildings/ + логотип OIA через Wikidata"""
     import time
@@ -599,4 +613,4 @@ def buildings(tag="report"):
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl}[task]()
