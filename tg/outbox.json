@@ -1,10 +1,5 @@
 [
  {
-  "id": "alert-2026-11-16-AMAT-d",
-  "caption": "⚡️🔻 <b>Applied Materials</b> (AMAT) −5,21% за день, $351,2\n\n#алерт",
-  "t": 1794862192
- },
- {
   "id": "alert-2026-11-16-ASML-d",
   "caption": "⚡️🔻 <b>ASML</b> (ASML) −5,45% за день, $1 414\n\n#алерт",
   "t": 1794862192
@@ -155,5 +150,11 @@
   "id": "alert-2026-11-18-MSTR-d",
   "caption": "⚡️🔻 <b>Strategy</b> (MSTR) −5,91% за день, $90,79\n\n#алерт",
   "t": 1795033775
+ },
+ {
+  "id": "evening-2026-11-18",
+  "caption": "📈 <b>Итоги дня 18 ноября</b>\n\nS&P 500 −0,23%, Nasdaq +0,42%, Dow Jones −1,11%\nНефть Brent −4,80%, Золото −3,53%\n\n#итогидня",
+  "t": 1795039720,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-18.png"
  }
 ]
