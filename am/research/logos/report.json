@@ -46,16 +46,16 @@
   "url": "https://upload.wikimedia.org/wikipedia/en/8/82/Investment_Corporation_of_Dubai_logo.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
   "bytes": 45963
  },
- "oia": "нет файла: ",
+ "oia": "\u043d\u0435\u0442 \u0444\u0430\u0439\u043b\u0430: ",
  "x_EMAAR": {
   "file": "Emaar logo.svg",
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Emaar_logo.svg/960px-Emaar_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "bytes": 12238
  },
- "x_ENBD": "поиск: Expecting value: line 1 column 1 (char 0)",
- "x_DEWA": "поиск: Expecting value: line 1 column 1 (char 0)",
- "x_DIB": "поиск: Expecting value: line 1 column 1 (char 0)",
- "x_DU": "поиск: Expecting value: line 1 column 1 (char 0)",
+ "x_ENBD": "\u043f\u043e\u0438\u0441\u043a: Expecting value: line 1 column 1 (char 0)",
+ "x_DEWA": "\u043f\u043e\u0438\u0441\u043a: Expecting value: line 1 column 1 (char 0)",
+ "x_DIB": "\u043f\u043e\u0438\u0441\u043a: Expecting value: line 1 column 1 (char 0)",
+ "x_DU": "\u043f\u043e\u0438\u0441\u043a: Expecting value: line 1 column 1 (char 0)",
  "x_AIRARABIA": {
   "file": "File:Air Arabia logo 2018.svg",
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Air_Arabia_logo_2018.svg/960px-Air_Arabia_logo_2018.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -68,28 +68,16 @@
   "bytes": 3397,
   "via": "search"
  },
- "x_PARKIN": {
-  "file": "File:Toronto Transit Commission rapid transit logo 1946.svg",
-  "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Toronto_Transit_Commission_rapid_transit_logo_1946.svg/960px-Toronto_Transit_Commission_rapid_transit_logo_1946.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "bytes": 29298,
-  "via": "search"
- },
- "x_IHC": {
-  "file": "File:JTA HOLDING LOGO.png",
-  "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/JTA_HOLDING_LOGO.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-  "bytes": 3397,
-  "via": "search"
- },
- "x_ADNOCGAS": "ошибка: Expecting value: line 1 column 1 (char 0)",
- "x_FAB": "поиск: Expecting value: line 1 column 1 (char 0)",
- "x_EAND": "поиск: Expecting value: line 1 column 1 (char 0)",
- "x_ALDAR": "поиск: Expecting value: line 1 column 1 (char 0)",
+ "x_ADNOCGAS": "\u043e\u0448\u0438\u0431\u043a\u0430: Expecting value: line 1 column 1 (char 0)",
+ "x_FAB": "\u043f\u043e\u0438\u0441\u043a: Expecting value: line 1 column 1 (char 0)",
+ "x_EAND": "\u043f\u043e\u0438\u0441\u043a: Expecting value: line 1 column 1 (char 0)",
+ "x_ALDAR": "\u043f\u043e\u0438\u0441\u043a: Expecting value: line 1 column 1 (char 0)",
  "x_ADCB": {
   "file": "Abu Dhabi Commercial Bank logo.svg",
   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Abu_Dhabi_Commercial_Bank_logo.svg/960px-Abu_Dhabi_Commercial_Bank_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "bytes": 49907
  },
- "x_ADNOCDRILL": "поиск: Expecting value: line 1 column 1 (char 0)",
+ "x_ADNOCDRILL": "\u043f\u043e\u0438\u0441\u043a: Expecting value: line 1 column 1 (char 0)",
  "x_ADNOCDIST": {
   "file": "ADNOC Distribution logo.svg",
   "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/4/40/ADNOC_Distribution_logo.svg/960px-ADNOC_Distribution_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -100,5 +88,5 @@
   "url": "https://thumb.wikimedia.org/wikipedia/en/thumb/1/1c/Abu_Dhabi_National_Oil_Company_logo.svg/960px-Abu_Dhabi_National_Oil_Company_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "bytes": 32284
  },
- "x_ADIB": "поиск: Expecting value: line 1 column 1 (char 0)"
+ "x_ADIB": "\u043f\u043e\u0438\u0441\u043a: Expecting value: line 1 column 1 (char 0)"
 }

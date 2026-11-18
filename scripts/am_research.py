@@ -116,7 +116,7 @@ def logos():
     for key, page in LOGO_PAGES.items():
         if isinstance(rep.get(key), dict):
             continue
-        time.sleep(4)
+        time.sleep(9)
         try:
             wt = requests.get("https://en.wikipedia.org/w/api.php", params={"action": "parse", "page": page, "prop": "wikitext", "format": "json", "redirects": 1},
                               headers=H, timeout=30).json()["parse"]["wikitext"]["*"]
@@ -446,8 +446,8 @@ def exch():
     """Логотипы крупнейших компаний DFM и ADX + сводка по биржам из скринера TradingView"""
     global LOGO_PAGES
     LOGO_PAGES = {"x_EMAAR": "Emaar Properties", "x_ENBD": "Emirates NBD", "x_DEWA": "Dubai Electricity and Water Authority", "x_DIB": "Dubai Islamic Bank",
-                  "x_DU": "Du (company)", "x_AIRARABIA": "Air Arabia", "x_TALABAT": "Talabat", "x_PARKIN": "Parkin Company",
-                  "x_IHC": "International Holding Company", "x_ADNOCGAS": "ADNOC Gas", "x_FAB": "First Abu Dhabi Bank", "x_EAND": "e& (company)",
+                  "x_DU": "Du (telecommunications company)", "x_AIRARABIA": "Air Arabia", "x_TALABAT": "Talabat", "x_PARKIN": "Parkin (company)",
+                  "x_IHC": "International Holding Company (UAE)", "x_ADNOCGAS": "ADNOC Gas", "x_FAB": "First Abu Dhabi Bank", "x_EAND": "e& (company)",
                   "x_ALDAR": "Aldar Properties", "x_ADCB": "Abu Dhabi Commercial Bank", "x_ADNOCDRILL": "ADNOC Drilling", "x_ADNOCDIST": "ADNOC Distribution",
                   "x_ADNOC": "ADNOC", "x_ADIB": "Abu Dhabi Islamic Bank"}
     logos()
