@@ -1,0 +1,63 @@
+{
+ "DEWA": [
+  {
+   "u": "https://www.dewa.gov.ae/en",
+   "status": 200,
+   "len": 312061,
+   "imgs": [],
+   "svgs": 0
+  },
+  {
+   "u": "https://www.dewa.gov.ae/en/investor-relations",
+   "status": 200,
+   "len": 259407,
+   "imgs": [],
+   "svgs": 0
+  }
+ ],
+ "DU": [
+  {
+   "u": "https://www.du.ae/",
+   "status": 200,
+   "len": 196753,
+   "imgs": [],
+   "svgs": 0
+  },
+  {
+   "u": "https://www.du.ae/personal",
+   "status": 200,
+   "len": 196753,
+   "imgs": [],
+   "svgs": 0
+  }
+ ],
+ "EAND": [
+  {
+   "u": "https://www.eand.com/en/index.html",
+   "status": 200,
+   "len": 31653,
+   "imgs": [
+    "/content/dam/eand/logo/etisalat-logo-ver-red-en-1912x536.svg",
+    "/content/dam/eand/logo/etisalat-logo-ver-white-en-1912x536.svg",
+    "/content/dam/eand/logo/etisalat-logo-ver-white-en-1912x536.svg"
+   ],
+   "svgs": 0
+  }
+ ],
+ "IHC": [
+  {
+   "u": "https://www.ihcuae.com/",
+   "status": 200,
+   "len": 383451,
+   "imgs": [],
+   "svgs": 0
+  },
+  {
+   "u": "https://ihcuae.com/en",
+   "status": 200,
+   "len": 68169,
+   "imgs": [],
+   "svgs": 0
+  }
+ ]
+}
