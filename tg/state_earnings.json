@@ -5,7 +5,8 @@
   "NVDA-2027Q3": 1794958337,
   "LOW-2027Q3": 1795002524,
   "TGT-2027Q3": 1795006292,
-  "TJX-2027Q3": 1795010775
+  "TJX-2027Q3": 1795010775,
+  "PANW-2027Q1": 1795044721
  },
  "caps": {
   "ACRE": {
@@ -5895,6 +5896,76 @@
    "cap": 142831.61978331223,
    "name": "The TJX Companies, Inc.",
    "ind": "Retail"
+  },
+  "AZIO": {
+   "cap": 7.879473,
+   "name": "Azio AI Holdings Inc",
+   "ind": "Automobiles"
+  },
+  "BEEM": {
+   "cap": 14.706008999999998,
+   "name": "Beam Global",
+   "ind": "Electrical Equipment"
+  },
+  "BORR": {
+   "cap": 981.0705859999999,
+   "name": "Borr Drilling Limited",
+   "ind": "Energy"
+  },
+  "CPA": {
+   "cap": 5488.171307,
+   "name": "Copa Holdings, S.A.",
+   "ind": "Airlines"
+  },
+  "KLIC": {
+   "cap": 3427.556902,
+   "name": "Kulicke and Soffa Industries Inc",
+   "ind": "Semiconductors"
+  },
+  "NJR": {
+   "cap": 5616.250818,
+   "name": "New Jersey Resources Corp",
+   "ind": "Utilities"
+  },
+  "P": {
+   "cap": 33919.20354899999,
+   "name": "Everpure Inc",
+   "ind": "Technology"
+  },
+  "PANW": {
+   "cap": 253237.87715399996,
+   "name": "Palo Alto Networks, Inc.",
+   "ind": "Technology"
+  },
+  "PCYO": {
+   "cap": 258.56475,
+   "name": "Pure Cycle Corp",
+   "ind": "Utilities"
+  },
+  "RRGB": {
+   "cap": 154.25460799999996,
+   "name": "Red Robin Gourmet Burgers Inc",
+   "ind": "Hotels, Restaurants & Leisure"
+  },
+  "SBLK": {
+   "cap": 3041.5202660000004,
+   "name": "Star Bulk Carriers Corp.",
+   "ind": "Marine"
+  },
+  "SNEX": {
+   "cap": 6623.065029999999,
+   "name": "StoneX Group Inc",
+   "ind": "Financial Services"
+  },
+  "UTI": {
+   "cap": 1247.36,
+   "name": "Universal Technical Institute, Inc.",
+   "ind": "Diversified Consumer Services"
+  },
+  "WWD": {
+   "cap": 17988.31,
+   "name": "Woodward, Inc.",
+   "ind": "Aerospace & Defense"
   }
  },
  "earn_done": [
@@ -5954,6 +6025,7 @@
   "NVDA-2027Q3",
   "LOW-2027Q3",
   "TGT-2027Q3",
-  "TJX-2027Q3"
+  "TJX-2027Q3",
+  "PANW-2027Q1"
  ]
 }
