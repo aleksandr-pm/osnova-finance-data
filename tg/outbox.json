@@ -1,10 +1,5 @@
 [
  {
-  "id": "alert-2026-11-16-CAT-d",
-  "caption": "⚡️🔻 <b>Caterpillar</b> (CAT) −5,18% за день, $569,1\n\n#алерт",
-  "t": 1794862192
- },
- {
   "id": "alert-2026-11-16-AMAT-d",
   "caption": "⚡️🔻 <b>Applied Materials</b> (AMAT) −5,21% за день, $351,2\n\n#алерт",
   "t": 1794862192
@@ -155,5 +150,10 @@
   "caption": "📊 Акции <b>UnitedHealth</b> упали на 8,17% за день\nЗа полгода: −8,56%, цена $357,65\n\n#графикдня",
   "t": 1795023622,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-18-UNH.png"
+ },
+ {
+  "id": "alert-2026-11-18-MSTR-d",
+  "caption": "⚡️🔻 <b>Strategy</b> (MSTR) −5,91% за день, $90,79\n\n#алерт",
+  "t": 1795033775
  }
 ]
