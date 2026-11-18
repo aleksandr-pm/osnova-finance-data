@@ -1,10 +1,5 @@
 [
  {
-  "id": "alert-2026-11-16-HOOD-d",
-  "caption": "⚡️🔻 <b>Robinhood</b> (HOOD) −6,00% за день, $73,19\n\n#алерт",
-  "t": 1794848405
- },
- {
   "id": "chart-2026-11-16-MSTR",
   "caption": "📊 Акции <b>Strategy</b> упали на 7,62% за день\nЗа полгода: −38,10%, цена $103,14\n\n#графикдня",
   "t": 1794851161,
@@ -155,5 +150,10 @@
   "caption": "📊 Акции <b>Intuit</b> упали на 7,17% за день\nЗа полгода: −20,43%, цена $320,79\n\n#графикдня",
   "t": 1795007979,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-18-INTU.png"
+ },
+ {
+  "id": "alert-2026-11-18-PANW-u",
+  "caption": "⚡️🚀 <b>Palo Alto Networks</b> (PANW) +7,19% за день, $331,54\n\n#алерт",
+  "t": 1795015072
  }
 ]
