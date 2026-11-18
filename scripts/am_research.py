@@ -491,6 +491,40 @@ def sitelogos():
     json.dump(rep, open(os.path.join(out, "report.json"), "w"), indent=1); print(rep)
 
 
+def logos3():
+    import re, time
+    H = {"User-Agent": "osnova-research/1.0 (github.com/aleksandr-pm)"}
+    UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36"}
+    out = os.path.join(OUTD, "sitelogos"); rep = {}
+    try:
+        b = requests.get("https://www.dewa.gov.ae/-/media/Images/Header-and-Footer/Header/dewalogo2xhome.ashx", headers=UA, timeout=40)
+        open(os.path.join(out, "DEWA_home.png"), "wb").write(b.content); rep["DEWA"] = [b.status_code, b.headers.get("content-type"), len(b.content)]
+    except Exception as e:  # noqa: BLE001
+        rep["DEWA"] = str(e)
+    for key, titles in {"DU": ["Emirates Integrated Telecommunications Company", "Du (Emirati company)", "Du (telecom)"],
+                        "IHC": ["International Holding Company PJSC", "International Holding Company (Abu Dhabi)", "International Holding Co"]}.items():
+        rep[key] = []
+        for t in titles:
+            time.sleep(6)
+            try:
+                js = requests.get("https://en.wikipedia.org/w/api.php", params={"action": "parse", "page": t, "prop": "wikitext", "format": "json", "redirects": 1}, headers=H, timeout=30).json()
+                if "parse" not in js: rep[key].append([t, "нет страницы"]); continue
+                wt = js["parse"]["wikitext"]["*"]
+                m = re.search(r"\|\s*logo\s*=\s*(?:\[\[)?(?:File:|Image:)?([^\n|\]]+)", wt)
+                if not m: rep[key].append([t, "нет logo"]); continue
+                fn = m.group(1).strip(); time.sleep(4)
+                for site in ("https://en.wikipedia.org/w/api.php", "https://commons.wikimedia.org/w/api.php"):
+                    pg = list(requests.get(site, params={"action": "query", "titles": "File:" + fn, "prop": "imageinfo", "iiprop": "url", "iiurlwidth": 800, "format": "json"}, headers=H, timeout=30).json()["query"]["pages"].values())[0]
+                    if "imageinfo" in pg:
+                        u = (pg["imageinfo"][0].get("thumburl") or pg["imageinfo"][0]["url"]).split("?")[0]
+                        open(os.path.join(out, f"{key}_wiki." + u.rsplit(".", 1)[-1].lower()), "wb").write(requests.get(u, headers=H, timeout=30).content)
+                        rep[key].append([t, fn, u]); break
+                if rep[key] and len(rep[key][-1]) == 3: break
+            except Exception as e:  # noqa: BLE001
+                rep[key].append([t, str(e)])
+    json.dump(rep, open(os.path.join(out, "report3.json"), "w"), indent=1); print(rep)
+
+
 def buildings(tag="report"):
     """Фото зданий фондов из Wikimedia Commons (JPEG 1600 px, до 2 на запрос) в am/research/buildings/ + логотип OIA через Wikidata"""
     import time
@@ -565,4 +599,4 @@ def buildings(tag="report"):
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3}[task]()
