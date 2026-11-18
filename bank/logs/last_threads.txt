@@ -1,21 +1,14 @@
-threads: mkt_country_cap_sg (companies, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/e4b319ee1fa9/bank/cards_markets/mkt_country_cap_sg.jpg
+threads: duel_ny_gdp_pcap_cd_pl_ru (economy, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/954a898533e4/bank/covers/duel_ny_gdp_pcap_cd_pl_ru.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/954a898533e4/bank/cards/duel_ny_gdp_pcap_cd_pl_ru.jpg
 ---
-Самые дорогие компании Сингапура, ноябрь 2026:
-1. 🇸🇬 DBS Group · $155 млрд
-2. 🇸🇬 OCBC Bank · $97,6 млрд
-3. 🇸🇬 Singtel · $52,1 млрд
-4. 🇸🇬 UOB · $47,5 млрд
-5. 🇸🇬 Sea · $46,4 млрд
-6. 🇸🇬 Flex · $25,8 млрд
-7. 🇸🇬 ST Engineering · $22,6 млрд
-8. 🇸🇬 Singapore Exchange · $17,2 млрд
-9. 🇸🇬 Singapore Airlines · $17,2 млрд
-10. 🇸🇬 Wilmar International · $14,5 млрд
-№1: DBS Group, $155 млрд.
+Ввп на человека: Польша и Россия, 2000-2025:
+1. 🇵🇱 Польша · $28 420, в 6,3 раза
+2. 🇷🇺 Россия · $17 547, в 9,9 раза
+Россия: ВВП на человека вырос в 9,9 раза с 2000 года.
 Больше в Telegram @osnovafin
 ---
 Threads: текстом
-Ответ со ссылкой: 18134412283834973
-Опубликовано: 18012626720777105. Осталось новых рейтингов: 175
-exit=0 2026-11-18T06:34:42Z
+Ответ со ссылкой: 18079146203460273
+Опубликовано: 18177710116457836. Осталось новых рейтингов: 174
+exit=0 2026-11-18T17:30:32Z
