@@ -529,9 +529,9 @@ def dl():
     import time
     H = {"User-Agent": "osnova-research/1.0 (github.com/aleksandr-pm; contact via github)"}
     out = os.path.join(OUTD, "sitelogos"); rep = {}
-    for k, u in {"DIB": "https://upload.wikimedia.org/wikipedia/en/8/8e/Dubai-Islamic-Bank-Logo.png", "DU": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Du_Solid_Brandmark_RGB.png"}.items():
-        for attempt in range(4):
-            time.sleep(45)
+    for k, u in {"DIB": "https://upload.wikimedia.org/wikipedia/en/8/8e/Dubai-Islamic-Bank-Logo.png", "ENBD": "https://upload.wikimedia.org/wikipedia/commons/3/39/Emirates_NBD_Logo.jpg", "TALABAT": "https://upload.wikimedia.org/wikipedia/commons/2/26/Talabat-logo.png"}.items():
+        for attempt in range(6):
+            time.sleep(40)
             b = requests.get(u, headers=H, timeout=40)
             if b.status_code == 200 and not b.content[:20].lower().startswith(b"<!doctype"):
                 open(os.path.join(out, k + "_ok.png"), "wb").write(b.content); rep[k] = [u, len(b.content)]; break
