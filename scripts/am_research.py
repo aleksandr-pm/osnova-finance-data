@@ -465,6 +465,32 @@ def exch():
     print({k: (v.get("totalCount") if isinstance(v, dict) else v) for k, v in rep.items()})
 
 
+def sitelogos():
+    import re, time
+    UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36", "Accept-Language": "en"}
+    out = os.path.join(OUTD, "sitelogos"); os.makedirs(out, exist_ok=True); rep = {}
+    sites = {"DEWA": ["https://www.dewa.gov.ae/en", "https://www.dewa.gov.ae/en/investor-relations"], "DU": ["https://www.du.ae/", "https://www.du.ae/personal"],
+             "EAND": ["https://www.eand.com/en/index.html", "https://www.eand.com/"], "IHC": ["https://www.ihcuae.com/", "https://ihcuae.com/en"]}
+    for k, urls in sites.items():
+        rep[k] = []
+        for u in urls:
+            try:
+                r = requests.get(u, headers=UA, timeout=40); html = r.text
+                svgs = [m for m in re.findall(r"<svg[\s\S]*?</svg>", html) if "logo" in m[:400].lower()][:3]
+                imgs = re.findall(r'(?:src|href|content)=["\']([^"\']*logo[^"\']*\.(?:svg|png|webp|jpg)[^"\']*)', html, re.I)[:8]
+                rep[k].append({"u": u, "status": r.status_code, "len": len(html), "imgs": imgs, "svgs": len(svgs)})
+                for i, sv in enumerate(svgs): open(os.path.join(out, f"{k}_inline{i}.svg"), "w").write(sv)
+                for i, im in enumerate(imgs[:5]):
+                    full = requests.compat.urljoin(r.url, im.split("?")[0])
+                    b = requests.get(full, headers=UA, timeout=30).content
+                    open(os.path.join(out, f"{k}_{i}." + full.rsplit(".", 1)[-1].lower()[:4]), "wb").write(b)
+                if imgs or svgs: break
+            except Exception as e:  # noqa: BLE001
+                rep[k].append({"u": u, "err": str(e)})
+            time.sleep(2)
+    json.dump(rep, open(os.path.join(out, "report.json"), "w"), indent=1); print(rep)
+
+
 def buildings(tag="report"):
     """Фото зданий фондов из Wikimedia Commons (JPEG 1600 px, до 2 на запрос) в am/research/buildings/ + логотип OIA через Wikidata"""
     import time
@@ -539,4 +565,4 @@ def buildings(tag="report"):
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos}[task]()
