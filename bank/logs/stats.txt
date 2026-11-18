@@ -1,24 +1,24 @@
-Threads @osnova_finance {"views": 1200, "likes": 2, "replies": 1, "reposts": 0, "followers_count": 7}
-  постов за 7 дней: 42, просмотров по постам: 868, медиана: 5
-     295  Ввп на человека: Россия, Казахстан, Беларусь, 2000-2025: 1. 
+Threads @osnova_finance {"views": 1618, "likes": 5, "replies": 1, "reposts": 0, "followers_count": 7}
+  постов за 7 дней: 28, просмотров по постам: 1500, медиана: 8
+     835  Переводы мигрантов: Узбекистан, Таджикистан, Киргизия, 2005-
+     303  Ввп на человека: Россия, Казахстан, Беларусь, 2000-2025: 1. 
      116  Ввп на человека: Россия и Китай, 2000-2025: 1. 🇷🇺 Россия · $
-     101  Крупнейшие экспортёры высоких технологий, 2024: 1. 🇨🇳 Китай 
-      50  Доли в мировом экспорте риса, 2024: 1. 🇮🇳 Индия · 37,0% 2. 🇹
       42  Крупнейший банк Дубая. Работает в ОАЭ, Саудовской Аравии, Ег
-Threads @osnova_report {"views": 3067, "likes": 13, "replies": 2, "reposts": 0, "followers_count": 82}
-  постов за 7 дней: 14, просмотров по постам: 1610, медиана: 110
-     241  DEWA снабжает Дубай электричеством и водой. Компания государ
-     239  TKO Group объединила рестлинг WWE и бои UFC в 2023 году. Зар
-     185  Crocs продаёт пластиковые сабо и с 2022 года обувь HEYDUDE  
+      32  WD-40 продаёт смазку в синем баллончике больше 70 лет. Сами 
+Threads @osnova_report {"views": 1136, "likes": 9, "replies": 1, "reposts": 0, "followers_count": 82}
+  постов за 7 дней: 14, просмотров по постам: 985, медиана: 75
      147  Tootsie Roll Industries выпускает конфеты Tootsie Roll, Char
      123  Commercial Bank of Dubai обслуживает компании и частных клие
-Instagram @osnova_finance {"id": "17841410889815757", "followers_count": 15, "media_count": 94}
-  публикаций за 7 дней: 24, просмотров: 0
+     110  Mashreq старейший частный банк ОАЭ, основан в 1967 году  Выр
+     102  Крупнейший исламский банк ОАЭ. Работает без процентов: доход
+      99  Почти все пиццерии Domino's работают по франшизе, компания з
+Instagram @osnova_finance {"id": "17841410889815757", "followers_count": 20, "media_count": 102}
+  публикаций за 7 дней: 16, просмотров: 0
+       0 REELS  Россия: производство курятины выросло в 7,2 раза с {"ошибка": "(#10) Application does not have permission for this action"}
+       0 FEED   Катар: ВВП вырос в 12,2 раза с 2000 года.  Ввп: Са {"ошибка": "(#10) Application does not have permission for this action"}
+       0 REELS  Пакистан: переводы мигрантов выросли в 9,5 раза с  {"ошибка": "(#10) Application does not have permission for this action"}
+       0 REELS  Киргизия: резервы выросли в 14 раз с 2005 года.  Н {"ошибка": "(#10) Application does not have permission for this action"}
+       0 FEED   №1: Мириам Адельсон с семьёй, $32,1 млрд.  Самые б {"ошибка": "(#10) Application does not have permission for this action"}
+       0 REELS  Россия обогнала Канаду в 2008 году.  Новые рейтинг {"ошибка": "(#10) Application does not have permission for this action"}
        0 FEED   Китай: ВВП на человека вырос в 14,3 раза с 2000 го {"ошибка": "(#10) Application does not have permission for this action"}
        0 REELS  Узбекистан: переводы мигрантов выросли в 20,6 раза {"ошибка": "(#10) Application does not have permission for this action"}
-       0 REELS  Крупнейшие экспортёры высоких технологий: №1 Китай {"ошибка": "(#10) Application does not have permission for this action"}
-       0 REELS  Украина: производство соевых бобов выросло в 103 р {"ошибка": "(#10) Application does not have permission for this action"}
-       0 REELS  Крупнейшие экспортёры товаров и услуг: №1 Китай, $ {"ошибка": "(#10) Application does not have permission for this action"}
-       0 REELS  Швейцария: резервы выросли в 18,7 раза с 2005 года {"ошибка": "(#10) Application does not have permission for this action"}
-       0 REELS  Пять стран дают 83% мирового экспорта риса. На ост {"ошибка": "(#10) Application does not have permission for this action"}
-       0 REELS  Узбекистан: экономика выросла в 10,3 раза с 2005 г {"ошибка": "(#10) Application does not have permission for this action"}
