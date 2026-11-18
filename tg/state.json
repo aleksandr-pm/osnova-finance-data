@@ -14,7 +14,8 @@
   "MU",
   "MSTR",
   "HOOD",
-  "CRM"
+  "CRM",
+  "INTU"
  ],
  "alerts": {
   "AMD:down": "2026-11-17",
