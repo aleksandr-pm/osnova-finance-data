@@ -442,6 +442,29 @@ def reit():
     json.dump(rep, open(os.path.join(out, "reit.json"), "w"), indent=1, default=str); print(rep)
 
 
+def exch():
+    """Логотипы крупнейших компаний DFM и ADX + сводка по биржам из скринера TradingView"""
+    global LOGO_PAGES
+    LOGO_PAGES = {"x_EMAAR": "Emaar Properties", "x_ENBD": "Emirates NBD", "x_DEWA": "Dubai Electricity and Water Authority", "x_DIB": "Dubai Islamic Bank",
+                  "x_DU": "Du (company)", "x_AIRARABIA": "Air Arabia", "x_TALABAT": "Talabat", "x_PARKIN": "Parkin Company",
+                  "x_IHC": "International Holding Company", "x_ADNOCGAS": "ADNOC Gas", "x_FAB": "First Abu Dhabi Bank", "x_EAND": "e& (company)",
+                  "x_ALDAR": "Aldar Properties", "x_ADCB": "Abu Dhabi Commercial Bank", "x_ADNOCDRILL": "ADNOC Drilling", "x_ADNOCDIST": "ADNOC Distribution",
+                  "x_ADNOC": "ADNOC", "x_ADIB": "Abu Dhabi Islamic Bank"}
+    logos()
+    out = os.path.join(OUTD, "exch"); os.makedirs(out, exist_ok=True); rep = {}
+    for ex in ("DFM", "ADX"):
+        try:
+            r = requests.post("https://scanner.tradingview.com/uae/scan", json={
+                "filter": [{"left": "exchange", "operation": "equal", "right": ex}], "markets": ["uae"],
+                "columns": ["name", "description", "market_cap_basic", "sector", "close", "type", "Value.Traded"],
+                "sort": {"sortBy": "market_cap_basic", "sortOrder": "desc"}, "range": [0, 400]}, timeout=40).json()
+            rep[ex] = r
+        except Exception as e:  # noqa: BLE001
+            rep[ex] = str(e)
+    json.dump(rep, open(os.path.join(out, "scan.json"), "w"), indent=1, default=str)
+    print({k: (v.get("totalCount") if isinstance(v, dict) else v) for k, v in rep.items()})
+
+
 def buildings(tag="report"):
     """Фото зданий фондов из Wikimedia Commons (JPEG 1600 px, до 2 на запрос) в am/research/buildings/ + логотип OIA через Wikidata"""
     import time
@@ -516,4 +539,4 @@ def buildings(tag="report"):
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch}[task]()
