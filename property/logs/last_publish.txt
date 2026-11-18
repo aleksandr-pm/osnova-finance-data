@@ -1,20 +1,21 @@
-Слот reel: в очереди 14 из 28; LIVE=да
-Следующий: r_lumena_alta_top (media/r_lumena_alta_top.mp4)
+Слот reel: в очереди 13 из 28; LIVE=да
+Следующий: db_office_rent_race (media/db_office_rent_race.mp4)
 ---
-6,122 AED per sq ft. Lumena Alta by Omniyat is the most expensive office project traded in Dubai in 2026.
++187%. That's how much office rents grew in one Dubai area since 2020.
 
-Median price paid, 2026:
-Lumena Alta, Business Bay: 6,122 AED per sq ft, 155 sales
-HQ by ROVE: 4,699
-Shahrukhz by Danube: 4,135
-Ready office, all Dubai: 1,764
+Median new-lease rent per sq ft a year, 12 areas, 2020 to 2025:
+Downtown: 110 to 316 AED (+187%)
+Business Bay: 63 to 168 AED (+167%)
+The Greens: 100 to 266 AED (+166%)
 
-Full data on osnova.property, link in bio. Or comment REVIEW and we will send you our review of Lumena Alta and other office projects.
+Is your office lease up for renewal next year?
 
-Source: DLD transactions, office sales 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
+Full data on osnova.property, link in bio. Or comment RENT and we will send you rents by district.
 
-#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace #omniyat #businessbay
+Source: Ejari new lease contracts (DLD), office units, median annual rent AED per sq ft, 2016–2025. Market statistics for information only. Not an offer to buy, sell or lease property, and not investment advice.
+
+#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace
 ---
-Контейнер 17924280531242274, загрузка 2.0 МБ
-Опубликовано: r_lumena_alta_top → 18113992082227179
-exit=0 2026-11-18T14:34:09.569777+00:00
+Контейнер 17924318094242274, загрузка 9.5 МБ
+Опубликовано: db_office_rent_race → 17991617552874652
+exit=0 2026-11-18T17:59:19.681980+00:00
