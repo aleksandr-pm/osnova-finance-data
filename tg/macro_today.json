@@ -1,26 +1,14 @@
 [
  {
-  "id": "2026-11-17-USD-Core Retail Sales m/m",
-  "t": 1794922200,
-  "country": "USD",
-  "flag": "🇺🇸",
-  "title": "Core Retail Sales m/m",
-  "name_ru": "Базовые розничные продажи, м/м",
-  "forecast": "0.4%",
-  "previous": "0.9%",
-  "forecast_ru": "0,4%",
-  "previous_ru": "0,9%"
- },
- {
-  "id": "2026-11-17-USD-Retail Sales m/m",
-  "t": 1794922200,
-  "country": "USD",
-  "flag": "🇺🇸",
-  "title": "Retail Sales m/m",
-  "name_ru": "Розничные продажи, м/м",
-  "forecast": "0.1%",
-  "previous": "0.8%",
-  "forecast_ru": "0,1%",
-  "previous_ru": "0,8%"
+  "id": "2026-11-18-GBP-CPI y/y",
+  "t": 1794985200,
+  "country": "GBP",
+  "flag": "🇬🇧",
+  "title": "CPI y/y",
+  "name_ru": "Инфляция (CPI), г/г",
+  "forecast": "3.6%",
+  "previous": "3.5%",
+  "forecast_ru": "3,6%",
+  "previous_ru": "3,5%"
  }
 ]

@@ -1,10 +1,5 @@
 [
  {
-  "id": "alert-2026-11-16-DELL-d",
-  "caption": "⚡️🔻 <b>Dell</b> (DELL) −5,55% за день, $325,42\n\n#алерт",
-  "t": 1794844168
- },
- {
   "id": "alert-2026-11-16-TSM-d",
   "caption": "⚡️🔻 <b>TSMC</b> (TSM) −5,95% за день, $374,99\n\n#алерт",
   "t": 1794844168
@@ -153,5 +148,11 @@
   "caption": "📈 <b>Итоги дня 17 ноября</b>\n\nS&P 500 −1,03%, Nasdaq −0,74%, Dow Jones −1,64%\nНефть Brent +0,68%, Золото −0,03%\n\n#итогидня",
   "t": 1794953556,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-17.png"
+ },
+ {
+  "id": "calendar-2026-11-18",
+  "caption": "🗓 <b>Экономический календарь на 18 ноября</b>\n\nГлавное:\n11:00 🇬🇧 Инфляция (CPI), г/г\n23:00 🇺🇸 Протокол заседания ФРС\n\nВремя по Дубаю · #календарь",
+  "t": 1794978044,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/calendar-2026-11-18.png"
  }
 ]
