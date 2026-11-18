@@ -1,21 +1,21 @@
-Слот reel: в очереди 17 из 28; LIVE=да
-Следующий: r_aed1m_buys (media/r_aed1m_buys.mp4)
+Слот reel: в очереди 16 из 28; LIVE=да
+Следующий: alt_metro_ranked (media/alt_metro_ranked.mp4)
 ---
-AED 1 million buys 214 sq ft of ready office in Downtown Dubai. In DIP it buys 1,377.
+Emirates Towers 4,359 AED per sq ft. Rashidiya 1,463. Same metro, 3x the office price.
 
-Median price paid for ready offices, 2026:
-Downtown 4,674 AED per sq ft
-Business Bay 1,949
-JLT 1,703
-Silicon Oasis 1,049
-DIP 726
+Median office price by nearest metro station:
+Emirates Towers 4,359 (111 deals)
+Creek 2,862
+Burj Khalifa / Dubai Mall 2,380 (1,236 deals)
+Business Bay 1,746 (2,471 deals, the deepest market)
+Rashidiya 1,463
 
-Cheaper districts also yield more: DIP 13.1% gross vs Downtown 6.6%. Full data on osnova.property, link in bio. Or comment PRICE and we will send you prices paid by district.
+Which station is your office near? Full data on osnova.property, link in bio. Or comment PRICE and we will send you prices paid by district.
 
-Source: DLD ready office sales, median AED/sq ft, 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
+Source: DLD registered sales matched to nearest metro station · osnova.property. Market statistics, not an offer or investment advice.
 
 #dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace
 ---
-Контейнер 17924100624242274, загрузка 1.1 МБ
-Опубликовано: r_aed1m_buys → 18124070128975343
-exit=0 2026-11-17T18:03:41.323796+00:00
+Контейнер 17924194005242274, загрузка 4.1 МБ
+Опубликовано: alt_metro_ranked → 18458452738124590
+exit=0 2026-11-18T06:08:41.717228+00:00

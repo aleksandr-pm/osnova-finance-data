@@ -85,6 +85,14 @@
    "type": "reel",
    "dubai_time": "22:03",
    "timeset": "manual"
+  },
+  {
+   "id": "alt_metro_ranked",
+   "at": "2026-11-18T06:08:41.716455+00:00",
+   "post": "18458452738124590",
+   "type": "reel",
+   "dubai_time": "10:08",
+   "timeset": "manual"
   }
  ]
 }
