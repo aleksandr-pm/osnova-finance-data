@@ -1,21 +1,18 @@
-Слот reel: в очереди 16 из 28; LIVE=да
-Следующий: alt_metro_ranked (media/alt_metro_ranked.mp4)
+Слот reel: в очереди 15 из 28; LIVE=да
+Следующий: r_offplan_premium (media/r_offplan_premium.mp4)
 ---
-Emirates Towers 4,359 AED per sq ft. Rashidiya 1,463. Same metro, 3x the office price.
++90%. Off-plan offices in Dubai sell for almost twice the price of ready ones per sq ft.
 
-Median office price by nearest metro station:
-Emirates Towers 4,359 (111 deals)
-Creek 2,862
-Burj Khalifa / Dubai Mall 2,380 (1,236 deals)
-Business Bay 1,746 (2,471 deals, the deepest market)
-Rashidiya 1,463
+Off-plan: 3,354 AED per sq ft paid
+Ready: 1,764 AED per sq ft paid
+Off-plan share of office sales in 2026: 64%
 
-Which station is your office near? Full data on osnova.property, link in bio. Or comment PRICE and we will send you prices paid by district.
+Part of the gap is location, part is the payment plan. Full data on osnova.property, link in bio. Or comment CHECK and we will send you the guide to checking any office price against DLD.
 
-Source: DLD registered sales matched to nearest metro station · osnova.property. Market statistics, not an offer or investment advice.
+Source: DLD transactions / Ejari, 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
 
-#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace
+#dubaioffice #dubaicommercialproperty #dubairealestate #businessbay #dubaiinvestment #officespace
 ---
-Контейнер 17924194005242274, загрузка 4.1 МБ
-Опубликовано: alt_metro_ranked → 18458452738124590
-exit=0 2026-11-18T06:08:41.717228+00:00
+Контейнер 17924229561242274, загрузка 1.7 МБ
+Опубликовано: r_offplan_premium → 17967433503217454
+exit=0 2026-11-18T10:08:49.527572+00:00
