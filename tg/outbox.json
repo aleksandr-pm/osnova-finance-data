@@ -1,10 +1,5 @@
 [
  {
-  "id": "alert-2026-11-16-ASML-d",
-  "caption": "⚡️🔻 <b>ASML</b> (ASML) −5,45% за день, $1 414\n\n#алерт",
-  "t": 1794862192
- },
- {
   "id": "evening-2026-11-16",
   "caption": "📈 <b>Итоги дня 16 ноября</b>\n\nS&P 500 −1,92%, Nasdaq −2,49%, Dow Jones −1,41%\nНефть Brent −4,15%, Золото −0,72%\n\n#итогидня",
   "t": 1794866773,
@@ -156,5 +151,11 @@
   "caption": "📈 <b>Итоги дня 18 ноября</b>\n\nS&P 500 −0,23%, Nasdaq +0,42%, Dow Jones −1,11%\nНефть Brent −4,80%, Золото −3,53%\n\n#итогидня",
   "t": 1795039720,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-18.png"
+ },
+ {
+  "id": "calendar-2026-11-19",
+  "caption": "🗓 <b>Экономический календарь на 19 ноября</b>\n\nГлавное:\n04:30 🇦🇺 Уровень безработицы\n\nВремя по Дубаю · #календарь",
+  "t": 1795064799,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/calendar-2026-11-19.png"
  }
 ]
