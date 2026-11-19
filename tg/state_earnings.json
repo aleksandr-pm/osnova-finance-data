@@ -8,7 +8,8 @@
   "TJX-2027Q3": 1795010775,
   "PANW-2027Q1": 1795044721,
   "BABA-2027Q2": 1795088742,
-  "NTES-2026Q3": 1795088745
+  "NTES-2026Q3": 1795088745,
+  "WMT-2027Q3": 1795092763
  },
  "caps": {
   "ACRE": {
@@ -6013,6 +6014,41 @@
    "cap": 8684.25,
    "name": "Full Truck Alliance Co. Ltd.",
    "ind": "Road & Rail"
+  },
+  "ARBE": {
+   "cap": 50.74353937934509,
+   "name": "Arbe Robotics Ltd",
+   "ind": "Electrical Equipment"
+  },
+  "EVAX": {
+   "cap": 23.185798,
+   "name": "Evaxion A/S",
+   "ind": "Biotechnology"
+  },
+  "LQDT": {
+   "cap": 1377.651262901489,
+   "name": "Liquidity Services Inc",
+   "ind": "Commercial Services & Supplies"
+  },
+  "MANU": {
+   "cap": 3777.56153777214,
+   "name": "Manchester United PLC",
+   "ind": "Media"
+  },
+  "MMS": {
+   "cap": 3416.867474964746,
+   "name": "Maximus, Inc.",
+   "ind": "Professional Services"
+  },
+  "VVV": {
+   "cap": 4119.77,
+   "name": "Valvoline Inc.",
+   "ind": "Retail"
+  },
+  "WMT": {
+   "cap": 979897,
+   "name": "Walmart Inc.",
+   "ind": "Retail"
   }
  },
  "earn_done": [
@@ -6075,6 +6111,7 @@
   "TJX-2027Q3",
   "PANW-2027Q1",
   "BABA-2027Q2",
-  "NTES-2026Q3"
+  "NTES-2026Q3",
+  "WMT-2027Q3"
  ]
 }
