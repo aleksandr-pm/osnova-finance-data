@@ -1,30 +1,23 @@
-instagram: mkt_country_cap_tr (companies, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/fc117a1e3c14/bank/cards_markets/mkt_country_cap_tr.jpg
+instagram: duel_ny_gdp_pcap_cd_pl_ru (economy, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/4fbbeaa74617/bank/covers/duel_ny_gdp_pcap_cd_pl_ru.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/4fbbeaa74617/bank/cards/duel_ny_gdp_pcap_cd_pl_ru.jpg
 ---
-№1: Aselsan, $30,5 млрд.
+Россия: ВВП на человека вырос в 9,9 раза с 2000 года.
 
-Самые дорогие компании Турции, 2026 год, данные CompaniesMarketCap. Разрыв первого места со вторым (QNB Finansbank): в 1,7 раза. Учтены на 9 ноября 2026.
+Ввп на человека: Польша и Россия, 2000-2025. Самый быстрый рост: Россия, в 9,9 раза, до $17 547.
 
-Топ-10:
-1. 🇹🇷 Aselsan: $30,5 млрд
-2. 🇹🇷 QNB Finansbank: $17,5 млрд
-3. 🇹🇷 Türkiye Petrol Rafinerileri: $13,1 млрд
-4. 🇹🇷 GarantiBank: $12,2 млрд
-5. 🇹🇷 Koç Holding: $10,5 млрд
-6. 🇹🇷 ENKA: $9,6 млрд
-7. 🇹🇷 BİM Birleşik Mağazalar: $8,9 млрд
-8. 🇹🇷 Turkish Airlines: $8,3 млрд
-9. 🇹🇷 Akbank: $7,2 млрд
-10. 🇹🇷 Türkiye Is Bankasi: $6,7 млрд
+Значения в 2025 году и изменение с 2000:
+1. 🇵🇱 Польша: $28 420, в 6,3 раза
+2. 🇷🇺 Россия: $17 547, в 9,9 раза
 
-Кого не хватает в топе, по-вашему?
+Кто поднимется выше через 5 лет?
 
 Каждый день рынки, сделки инсайдеров из отчётов SEC и данные в Telegram @osnovafin, ссылка в профиле.
 
-Источник: companiesmarketcap.com. Не является инвестиционной рекомендацией.
+Источник: World Bank, World Development Indicators. Не является инвестиционной рекомендацией.
 
-#акции #компании #капитализация #фондовыйрынок #aselsan #инвестиции #финансы #статистика #инфографика #цифры #рынки
+#экономика #мироваяэкономика #ввп #макроэкономика #россия #инвестиции #финансы #статистика #инфографика #цифры #рынки
 ---
 Instagram: одиночный пост с графиком
-Опубликовано: 18135277768747919. Осталось новых рейтингов: 226
-exit=0 2026-11-18T15:02:10Z
+Опубликовано: 18141170875628840. Осталось новых рейтингов: 225
+exit=0 2026-11-19T15:01:40Z
