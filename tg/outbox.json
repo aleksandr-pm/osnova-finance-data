@@ -1,16 +1,5 @@
 [
  {
-  "id": "chart-2026-11-17-HOOD",
-  "caption": "📊 Акции <b>Robinhood</b> упали на 7,45% за день\nЗа полгода: −6,60%, цена $72,06\n\n#графикдня",
-  "t": 1794921222,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-17-HOOD.png"
- },
- {
-  "id": "alert-2026-11-17-AMD-d",
-  "caption": "⚡️🔻 <b>AMD</b> (AMD) −5,58% за день, $504,28\n\n#алерт",
-  "t": 1794924827
- },
- {
   "id": "alert-2026-11-17-AMAT-d",
   "caption": "⚡️🔻 <b>Applied Materials</b> (AMAT) −5,47% за день, $350,25\n\n#алерт",
   "t": 1794924827
@@ -157,5 +146,15 @@
   "id": "alert-2026-11-19-PDD-u",
   "caption": "⚡️🚀 <b>PDD (Temu)</b> (PDD) +10,99% за день, $85,96\n\n#алерт",
   "t": 1795101706
+ },
+ {
+  "id": "alert-2026-11-19-UNH-d",
+  "caption": "⚡️🔻 <b>UnitedHealth</b> (UNH) −5,75% за день, $329,77\n\n#алерт",
+  "t": 1795105950
+ },
+ {
+  "id": "alert-2026-11-19-AMD-d",
+  "caption": "⚡️🔻 <b>AMD</b> (AMD) −6,94% за день, $493,36\n\n#алерт",
+  "t": 1795105950
  }
 ]
