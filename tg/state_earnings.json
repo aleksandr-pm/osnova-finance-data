@@ -6,7 +6,9 @@
   "LOW-2027Q3": 1795002524,
   "TGT-2027Q3": 1795006292,
   "TJX-2027Q3": 1795010775,
-  "PANW-2027Q1": 1795044721
+  "PANW-2027Q1": 1795044721,
+  "BABA-2027Q2": 1795088742,
+  "NTES-2026Q3": 1795088745
  },
  "caps": {
   "ACRE": {
@@ -5981,6 +5983,36 @@
    "cap": 1.61432975,
    "name": "Emmaus Life Sciences Inc",
    "ind": "Pharmaceuticals"
+  },
+  "BABA": {
+   "cap": 216676.31289993392,
+   "name": "Alibaba Group Holding Limited",
+   "ind": "Retail"
+  },
+  "DAO": {
+   "cap": 2348.756183,
+   "name": "Youdao, Inc.",
+   "ind": "Diversified Consumer Services"
+  },
+  "FUTU": {
+   "cap": 12181.498944,
+   "name": "Futu Holdings Limited",
+   "ind": "Financial Services"
+  },
+  "NTES": {
+   "cap": 77011.38509783596,
+   "name": "NetEase, Inc.",
+   "ind": "Media"
+  },
+  "RERE": {
+   "cap": 895.593862,
+   "name": "ATRenew Inc",
+   "ind": "Retail"
+  },
+  "YMM": {
+   "cap": 8684.25,
+   "name": "Full Truck Alliance Co. Ltd.",
+   "ind": "Road & Rail"
   }
  },
  "earn_done": [
@@ -6041,6 +6073,8 @@
   "LOW-2027Q3",
   "TGT-2027Q3",
   "TJX-2027Q3",
-  "PANW-2027Q1"
+  "PANW-2027Q1",
+  "BABA-2027Q2",
+  "NTES-2026Q3"
  ]
 }

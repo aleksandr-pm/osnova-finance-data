@@ -82,5 +82,17 @@
   "caption": "📊 <b>Palo Alto Networks</b> (PANW), отчёт за 1 кв. 2027 фин. года\n\nВыручка: $3,44 млрд · прогноз $3,37 млрд ✅\nПрибыль на акцию: $1,05 · прогноз $0,99 ✅\n\n#отчёт",
   "t": 1795044721,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/earn-PANW-2027Q1.png"
+ },
+ {
+  "id": "earn-BABA-2027Q2",
+  "caption": "📊 <b>Alibaba</b> (BABA), отчёт за 2 кв. 2027 фин. года\n\nВыручка: $270 млрд · прогноз $275,21 млрд ❌\nПрибыль на акцию: $8,07 · прогноз $11,39 ❌\n\n#отчёт",
+  "t": 1795088742,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/earn-BABA-2027Q2.png"
+ },
+ {
+  "id": "earn-NTES-2026Q3",
+  "caption": "📊 <b>NetEase</b> (NTES), отчёт за 3 кв. 2026 фин. года\n\nВыручка: $27,7 млрд · прогноз $30,84 млрд ❌\nПрибыль на акцию: $14,13 · прогноз $16,43 ❌\n\n#отчёт",
+  "t": 1795088745,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/earn-NTES-2026Q3.png"
  }
 ]
