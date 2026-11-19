@@ -5966,6 +5966,16 @@
    "cap": 17988.31,
    "name": "Woodward, Inc.",
    "ind": "Aerospace & Defense"
+  },
+  "JOYY": {
+   "cap": 3858.13251,
+   "name": "JOYY Inc.",
+   "ind": "Media"
+  },
+  "UGI": {
+   "cap": 8278.432766417378,
+   "name": "UGI Corporation",
+   "ind": "Utilities"
   }
  },
  "earn_done": [
