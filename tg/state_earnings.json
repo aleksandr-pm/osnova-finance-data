@@ -6049,6 +6049,21 @@
    "cap": 979897,
    "name": "Walmart Inc.",
    "ind": "Retail"
+  },
+  "NTIC": {
+   "cap": 71.41322282384107,
+   "name": "Northern Technologies International Corp",
+   "ind": "Chemicals"
+  },
+  "ROAD": {
+   "cap": 4429.770881694819,
+   "name": "Construction Partners, Inc.",
+   "ind": "Construction"
+  },
+  "WMG": {
+   "cap": 16017.62,
+   "name": "Warner Music Group Corp.",
+   "ind": "Media"
   }
  },
  "earn_done": [
