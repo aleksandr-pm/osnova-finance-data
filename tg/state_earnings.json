@@ -9,7 +9,8 @@
   "PANW-2027Q1": 1795044721,
   "BABA-2027Q2": 1795088742,
   "NTES-2026Q3": 1795088745,
-  "WMT-2027Q3": 1795092763
+  "WMT-2027Q3": 1795092763,
+  "INTU-2027Q1": 1795130778
  },
  "caps": {
   "ACRE": {
@@ -6064,6 +6065,61 @@
    "cap": 16017.62,
    "name": "Warner Music Group Corp.",
    "ind": "Media"
+  },
+  "BULL": {
+   "cap": 2535.749400278373,
+   "name": "Webull Corp",
+   "ind": "Financial Services"
+  },
+  "CLIR": {
+   "cap": 11.913701815642458,
+   "name": "ClearSign Technologies Corp",
+   "ind": "Machinery"
+  },
+  "ESE": {
+   "cap": 7051.430479937386,
+   "name": "ESCO Technologies Inc.",
+   "ind": "Machinery"
+  },
+  "ESTC": {
+   "cap": 8636.324373625104,
+   "name": "Elastic N.V.",
+   "ind": "Technology"
+  },
+  "GEOS": {
+   "cap": 42.42877493655588,
+   "name": "Geospace Technologies Corp",
+   "ind": "Energy"
+  },
+  "GLOB": {
+   "cap": 1787.6335985978897,
+   "name": "GLOBANT S.A.",
+   "ind": "Technology"
+  },
+  "GRSD": {
+   "cap": 25.508638719141324,
+   "name": "Grandstand Limited",
+   "ind": "Media"
+  },
+  "INTU": {
+   "cap": 83235.9919681401,
+   "name": "Intuit Inc.",
+   "ind": "Technology"
+  },
+  "KEYS": {
+   "cap": 49660.39174206845,
+   "name": "Keysight Technologies, Inc.",
+   "ind": "Electrical Equipment"
+  },
+  "NGVC": {
+   "cap": 608.9936001348436,
+   "name": "Natural Grocers by Vitamin Cottage Inc",
+   "ind": "Retail"
+  },
+  "POST": {
+   "cap": 3459.620325788887,
+   "name": "Post Holdings, Inc.",
+   "ind": "Food Products"
   }
  },
  "earn_done": [
@@ -6127,6 +6183,7 @@
   "PANW-2027Q1",
   "BABA-2027Q2",
   "NTES-2026Q3",
-  "WMT-2027Q3"
+  "WMT-2027Q3",
+  "INTU-2027Q1"
  ]
 }
