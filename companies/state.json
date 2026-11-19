@@ -26,7 +26,8 @@
   "amanat",
   "harley",
   "lululemon",
-  "chipotle"
+  "chipotle",
+  "livenation"
  ],
  "log": [
   {
@@ -179,6 +180,12 @@
    "post": "18001845005823288",
    "t": "2026-11-18 16:27",
    "ts": 1795019268
+  },
+  {
+   "id": "livenation",
+   "post": "18084452726354874",
+   "t": "2026-11-19 07:50",
+   "ts": 1795074643
   }
  ],
  "finance_done": [
