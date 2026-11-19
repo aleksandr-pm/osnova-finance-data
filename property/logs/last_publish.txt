@@ -1,20 +1,18 @@
-Слот reel: в очереди 12 из 28; LIVE=да
-Следующий: r_hidden_costs (media/r_hidden_costs.mp4)
+Слот reel: в очереди 11 из 28; LIVE=да
+Следующий: r_rent_al_quoz_warehouse (media/r_rent_al_quoz_warehouse.mp4)
 ---
-The price on the listing is not the cheque you write. On a AED 2M ready office the one-off bill is AED 130K, 6.5%.
+Al Quoz warehouse listings ask 100 AED per sq ft a year. Tenants sign at 55.
 
-DLD transfer fee 4%: AED 80,000
-Agent 2% + VAT: AED 42,000
-Trustee office: AED 4,410
-Mortgage registration on a 50% loan: AED 2,790
-Plus VAT 5% on commercial property if the seller is VAT-registered: another AED 100,000
+Asked: 100 AED per sq ft a year, 351 listings
+Paid: 55 AED per sq ft a year, Ejari new leases 2026
+DIP warehouses: asked 68, paid 51
 
-Full data on osnova.property, link in bio. Or comment COST and we will send you the full cost breakdown.
+Full data on osnova.property, link in bio. Or comment RENT and we will send you warehouse rents for 9 industrial areas, asked vs paid.
 
-Source: DLD fees and market practice, Nov 2026 · osnova.property. Market statistics, not an offer or investment advice.
+Source: portal listings Nov 2026 · Ejari new leases, 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
 
-#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace
+#dubaioffice #dubaicommercialproperty #dubairealestate #businessbay #dubaiinvestment #officespace
 ---
-Контейнер 17924404839242274, загрузка 0.9 МБ
-Опубликовано: r_hidden_costs → 18289898074288617
-exit=0 2026-11-19T06:07:47.091435+00:00
+Контейнер 17924439045242274, загрузка 2.3 МБ
+Опубликовано: r_rent_al_quoz_warehouse → 17914748988560886
+exit=0 2026-11-19T10:12:58.356257+00:00
