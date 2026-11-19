@@ -424,6 +424,22 @@ def dtclogo():
     json.dump(rep, open(os.path.join(out, "dtclogo.json"), "w"), indent=1); print(rep)
 
 
+def dtcimg():
+    H = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36"}
+    out = os.path.join(OUTD, "px", "img"); os.makedirs(out, exist_ok=True); rep = {}
+    base = "https://cdn.prod.website-files.com/656e39bd8b07a811ace24224/"
+    for i, f in enumerate(["656e39bd8b07a811ace24624_taxi.webp", "656e39bd8b07a811ace2453a_DTC%20md.webp", "6ae2f9b724f9b9545ad63796_5Y6A444444391.jpg",
+                           "6af5a0d37c3df613b283adda_Web-BannerQ3-2026.jpg", "69ccece33dc9e78c0796ab70_normal%20screen02.jpg", "656e39bd8b07a811ace24533_rl.webp",
+                           "656e39bd8b07a811ace24534_al.webp", "656e39bd8b07a811ace24535_ls.webp", "656e39bd8b07a811ace2462a_falt.webp", "656e39bd8b07a811ace2462c_ishh.webp"]):
+        b = requests.get(base + f, headers=H, timeout=40)
+        rep[f] = [b.status_code, len(b.content)]
+        if b.status_code == 200: open(os.path.join(out, "%02d_%s" % (i, f.split("_", 1)[1].replace("%20", "_"))), "wb").write(b.content)
+    for u in ["https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/699d5c43904ab65c6cc79e3a_website-banner---update.jpg"]:
+        b = requests.get(u, headers=H, timeout=40); rep[u] = [b.status_code, len(b.content)]
+        if b.status_code == 200: open(os.path.join(out, "99_banner.jpg"), "wb").write(b.content)
+    json.dump(rep, open(os.path.join(out, "rep.json"), "w"), indent=1); print(rep)
+
+
 def px():
     """Дневные цены и ключевые показатели для серии роликов про компании"""
     import subprocess, sys as _s
@@ -657,4 +673,4 @@ def buildings(tag="report"):
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl, "px": px, "dtclogo": dtclogo}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl, "px": px, "dtclogo": dtclogo, "dtcimg": dtcimg}[task]()
