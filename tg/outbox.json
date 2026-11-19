@@ -1,11 +1,5 @@
 [
  {
-  "id": "evening-2026-11-16",
-  "caption": "📈 <b>Итоги дня 16 ноября</b>\n\nS&P 500 −1,92%, Nasdaq −2,49%, Dow Jones −1,41%\nНефть Brent −4,15%, Золото −0,72%\n\n#итогидня",
-  "t": 1794866773,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-16.png"
- },
- {
   "id": "calendar-2026-11-17",
   "caption": "🗓 <b>Экономический календарь на 17 ноября</b>\n\n17:30 🇺🇸 Базовые розничные продажи, м/м (прогноз 0,4% · ранее 0,9%)\n17:30 🇺🇸 Розничные продажи, м/м (прогноз 0,1% · ранее 0,8%)\n\nСпокойный день: важной статистики нет.\n\nВремя по Дубаю · #календарь",
   "t": 1794891534
@@ -157,5 +151,11 @@
   "caption": "🗓 <b>Экономический календарь на 19 ноября</b>\n\nГлавное:\n04:30 🇦🇺 Уровень безработицы\n\nВремя по Дубаю · #календарь",
   "t": 1795064799,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/calendar-2026-11-19.png"
+ },
+ {
+  "id": "chart-2026-11-19-PANW",
+  "caption": "📊 Акции <b>Palo Alto Networks</b> выросли на 9,90% за день\nЗа полгода: +41,56%, цена $339,92\n\n#графикдня",
+  "t": 1795094557,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-19-PANW.png"
  }
 ]
