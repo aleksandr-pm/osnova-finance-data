@@ -1,22 +1,21 @@
-Слот reel: в очереди 10 из 28; LIVE=да
-Следующий: db_office_price_race (media/db_office_price_race.mp4)
+Слот reel: в очереди 9 из 28; LIVE=да
+Следующий: db_office_sales_value (media/db_office_sales_value.mp4)
 ---
-+220%. One Dubai office area tripled in price since 2020. Which one?
+AED 20.3 billion of Dubai offices sold in 9 months of 2026. More than any full year in DLD data since 2009.
 
-Median sale price per sq ft, ready offices, 12 areas, 2016 to 2025:
-JVC: 418 to 1,339 AED (+220%)
-The Greens: 1,000 to 3,146 AED (+215%)
-Barsha Heights: 543 to 1,650 AED (+204%)
-Downtown is still the most expensive at 5,110 AED per sq ft.
+Registered office sales in Dubai:
+2020: AED 1.0bn
+2025: AED 13.2bn
+2026, Jan to 5 Oct: AED 20.3bn, of which 80% off-plan
 
-Which area surprised you most?
+What's driving it: new supply or demand?
 
-Full data on osnova.property, link in bio. Or comment PRICE and we will send you prices paid by district.
+Full data on osnova.property, link in bio. Or comment DATA and we will send you the full research.
 
-Source: Dubai Land Department (DLD) sales transactions, ready office units, median AED per sq ft, 2016–2025. Years with under 5 deals interpolated. Market statistics for information only. Not an offer to buy, sell or lease property, and not investment advice.
+Source: Dubai Land Department (DLD) sales transactions, office units, total value by year, 2016 to 5 October 2026. Market statistics for information only. Not an offer to buy, sell or lease property, and not investment advice.
 
 #dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace
 ---
-Контейнер 17924486148242274, загрузка 8.4 МБ
-Опубликовано: db_office_price_race → 18292895533288053
-exit=0 2026-11-19T14:36:53.482042+00:00
+Контейнер 17924522982242274, загрузка 3.6 МБ
+Опубликовано: db_office_sales_value → 18036366884672730
+exit=0 2026-11-19T17:58:50.491097+00:00
