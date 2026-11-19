@@ -1,10 +1,5 @@
 [
  {
-  "id": "alert-2026-11-17-MU-d",
-  "caption": "⚡️🔻 <b>Micron</b> (MU) −7,62% за день, $719,02\n\n#алерт",
-  "t": 1794924827
- },
- {
   "id": "alert-2026-11-17-COIN-d",
   "caption": "⚡️🔻 <b>Coinbase</b> (COIN) −6,12% за день, $119,84\n\n#алерт",
   "t": 1794924827
@@ -157,5 +152,11 @@
   "id": "alert-2026-11-19-SHOP-d",
   "caption": "⚡️🔻 <b>Shopify</b> (SHOP) −5,26% за день, $132,08\n\n#алерт",
   "t": 1795120762
+ },
+ {
+  "id": "evening-2026-11-19",
+  "caption": "📈 <b>Итоги дня 19 ноября</b>\n\nS&P 500 −2,02%, Nasdaq −2,25%, Dow Jones −2,19%\nНефть Brent −2,07%, Золото −3,08%\n\n#итогидня",
+  "t": 1795126110,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-19.png"
  }
 ]
