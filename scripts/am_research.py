@@ -403,6 +403,29 @@ def tv_hist(symbol, n=200, interval="1M"):
     return sorted(seen.items())
 
 
+def px():
+    """Дневные цены и ключевые показатели для серии роликов про компании"""
+    import subprocess, sys as _s
+    subprocess.run([_s.executable, "-m", "pip", "install", "-q", "websocket-client"], check=False)
+    out = os.path.join(OUTD, "px"); os.makedirs(out, exist_ok=True); rep = {}
+    syms = ["DFM:DTC", "DFM:SALIK", "DFM:PARKIN", "DFM:TALABAT", "DFM:EMAAR", "DFM:DEWA", "DFM:AIRARABIA", "DFM:EMIRATESNBD", "ADX:ALDAR", "ADX:ADNOCGAS", "ADX:LULU", "ADX:ADNOCDRILL"]
+    for sym in syms:
+        k = sym.split(":")[1]
+        try:
+            rows = tv_hist(sym, 1500, "1D")
+            with open(os.path.join(out, k + ".csv"), "w") as fh:
+                fh.write("Date,Close\n"); [fh.write(f"{d},{c}\n") for d, c in rows]
+            rep[k] = [len(rows), rows[0] if rows else None, rows[-1] if rows else None]
+        except Exception as e:  # noqa: BLE001
+            rep[k] = str(e)
+    cols = ["close", "market_cap_basic", "dividend_yield_recent", "price_earnings_ttm", "total_debt", "total_revenue", "net_income", "total_shares_outstanding_fundamental", "description", "sector"]
+    try:
+        rep["scan"] = {"cols": cols, "data": requests.post("https://scanner.tradingview.com/uae/scan", json={"symbols": {"tickers": syms}, "columns": cols}, timeout=30).json()}
+    except Exception as e:  # noqa: BLE001
+        rep["scan_err"] = str(e)
+    json.dump(rep, open(os.path.join(out, "report.json"), "w"), indent=1, default=str); print({k: v for k, v in rep.items() if k != "scan"})
+
+
 def mcap_tv():
     import subprocess, sys as _s
     subprocess.run([_s.executable, "-m", "pip", "install", "-q", "websocket-client"], check=False)
@@ -613,4 +636,4 @@ def buildings(tag="report"):
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl, "px": px}[task]()
