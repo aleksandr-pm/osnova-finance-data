@@ -403,6 +403,27 @@ def tv_hist(symbol, n=200, interval="1M"):
     return sorted(seen.items())
 
 
+def dtclogo():
+    import re as _re
+    H = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36"}
+    out = os.path.join(OUTD, "px"); os.makedirs(out, exist_ok=True); rep = {}
+    for site in ("https://www.dubaitaxi.ae/en", "https://www.dubaitaxi.ae/", "https://ir.dubaitaxi.ae/"):
+        try:
+            h = requests.get(site, headers=H, timeout=30).text
+            open(os.path.join(out, "dtc_home_%d.html" % len(rep)), "w").write(h)
+            cands = sorted(set(_re.findall(r'(?:src|href|data-src)=["\']([^"\']*(?:logo|Logo|LOGO)[^"\']*)["\']', h)))
+            rep[site] = cands[:30]
+            for i, c in enumerate(cands[:12]):
+                u = requests.compat.urljoin(site, c)
+                b = requests.get(u, headers=H, timeout=30)
+                if b.status_code == 200 and len(b.content) > 300:
+                    ext = (c.split("?")[0].rsplit(".", 1)[-1] or "bin")[:4]
+                    open(os.path.join(out, "dtclogo_%d_%d.%s" % (len(rep), i, ext)), "wb").write(b.content)
+        except Exception as e:  # noqa: BLE001
+            rep[site] = str(e)
+    json.dump(rep, open(os.path.join(out, "dtclogo.json"), "w"), indent=1); print(rep)
+
+
 def px():
     """Дневные цены и ключевые показатели для серии роликов про компании"""
     import subprocess, sys as _s
@@ -636,4 +657,4 @@ def buildings(tag="report"):
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl, "px": px}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl, "px": px, "dtclogo": dtclogo}[task]()
