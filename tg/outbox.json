@@ -1,10 +1,5 @@
 [
  {
-  "id": "alert-2026-11-17-INTC-d",
-  "caption": "⚡️🔻 <b>Intel</b> (INTC) −7,02% за день, $55,47\n\n#алерт",
-  "t": 1794924827
- },
- {
   "id": "alert-2026-11-17-MU-d",
   "caption": "⚡️🔻 <b>Micron</b> (MU) −7,62% за день, $719,02\n\n#алерт",
   "t": 1794924827
@@ -157,5 +152,10 @@
   "caption": "📊 Акции <b>PDD (Temu)</b> выросли на 12,42% за день\nЗа полгода: −10,58%, цена $87,04\n\n#графикдня",
   "t": 1795109978,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-19-PDD.png"
+ },
+ {
+  "id": "alert-2026-11-19-SHOP-d",
+  "caption": "⚡️🔻 <b>Shopify</b> (SHOP) −5,26% за день, $132,08\n\n#алерт",
+  "t": 1795120762
  }
 ]
