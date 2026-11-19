@@ -1,18 +1,3 @@
-Слот reel: в очереди 11 из 28; LIVE=да
-Следующий: r_rent_al_quoz_warehouse (media/r_rent_al_quoz_warehouse.mp4)
----
-Al Quoz warehouse listings ask 100 AED per sq ft a year. Tenants sign at 55.
-
-Asked: 100 AED per sq ft a year, 351 listings
-Paid: 55 AED per sq ft a year, Ejari new leases 2026
-DIP warehouses: asked 68, paid 51
-
-Full data on osnova.property, link in bio. Or comment RENT and we will send you warehouse rents for 9 industrial areas, asked vs paid.
-
-Source: portal listings Nov 2026 · Ejari new leases, 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
-
-#dubaioffice #dubaicommercialproperty #dubairealestate #businessbay #dubaiinvestment #officespace
----
-Контейнер 17924439045242274, загрузка 2.3 МБ
-Опубликовано: r_rent_al_quoz_warehouse → 17914748988560886
-exit=0 2026-11-19T10:12:58.356257+00:00
+Слот post: в очереди 0 из 28; LIVE=да
+Очередь пуста: нужны новые ролики
+exit=0 2026-11-19T12:39:26.698466+00:00
