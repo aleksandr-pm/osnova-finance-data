@@ -1,21 +1,20 @@
-Слот reel: в очереди 13 из 28; LIVE=да
-Следующий: db_office_rent_race (media/db_office_rent_race.mp4)
+Слот reel: в очереди 12 из 28; LIVE=да
+Следующий: r_hidden_costs (media/r_hidden_costs.mp4)
 ---
-+187%. That's how much office rents grew in one Dubai area since 2020.
+The price on the listing is not the cheque you write. On a AED 2M ready office the one-off bill is AED 130K, 6.5%.
 
-Median new-lease rent per sq ft a year, 12 areas, 2020 to 2025:
-Downtown: 110 to 316 AED (+187%)
-Business Bay: 63 to 168 AED (+167%)
-The Greens: 100 to 266 AED (+166%)
+DLD transfer fee 4%: AED 80,000
+Agent 2% + VAT: AED 42,000
+Trustee office: AED 4,410
+Mortgage registration on a 50% loan: AED 2,790
+Plus VAT 5% on commercial property if the seller is VAT-registered: another AED 100,000
 
-Is your office lease up for renewal next year?
+Full data on osnova.property, link in bio. Or comment COST and we will send you the full cost breakdown.
 
-Full data on osnova.property, link in bio. Or comment RENT and we will send you rents by district.
-
-Source: Ejari new lease contracts (DLD), office units, median annual rent AED per sq ft, 2016–2025. Market statistics for information only. Not an offer to buy, sell or lease property, and not investment advice.
+Source: DLD fees and market practice, Nov 2026 · osnova.property. Market statistics, not an offer or investment advice.
 
 #dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace
 ---
-Контейнер 17924318094242274, загрузка 9.5 МБ
-Опубликовано: db_office_rent_race → 17991617552874652
-exit=0 2026-11-18T17:59:19.681980+00:00
+Контейнер 17924404839242274, загрузка 0.9 МБ
+Опубликовано: r_hidden_costs → 18289898074288617
+exit=0 2026-11-19T06:07:47.091435+00:00

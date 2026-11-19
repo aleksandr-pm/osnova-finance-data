@@ -117,6 +117,14 @@
    "type": "reel",
    "dubai_time": "21:59",
    "timeset": "manual"
+  },
+  {
+   "id": "r_hidden_costs",
+   "at": "2026-11-19T06:07:47.090699+00:00",
+   "post": "18289898074288617",
+   "type": "reel",
+   "dubai_time": "10:07",
+   "timeset": "manual"
   }
  ]
 }
