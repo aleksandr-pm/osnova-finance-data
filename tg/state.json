@@ -17,7 +17,8 @@
   "CRM",
   "INTU",
   "UNH",
-  "PANW"
+  "PANW",
+  "PDD"
  ],
  "alerts": {
   "PDD:up": "2026-11-19",
