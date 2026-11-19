@@ -1,0 +1,31 @@
+{
+ "https://www.dubaitaxi.ae/en": [
+  "https://cdn.prod.website-files.com/654b70c58d46776baf4b5ec8/654b7fb0ecfaedf0651ef836_logo%20fav.webp",
+  "https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/656e39bd8b07a811ace2422c_logo.webp",
+  "https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/656e39bd8b07a811ace2422f_logo%20fav.png",
+  "https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/656e39bd8b07a811ace24230_logo%20webclip.png",
+  "https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/656e39bd8b07a811ace242cf_JAM_Est_Logo_logo_20200726141436.webp",
+  "https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/656e39bd8b07a811ace242d0_Al-Futtaim-logo-FCDAD671B6-seeklogo.webp",
+  "https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/656e39bd8b07a811ace242d1_noon-com-logo-3D35F15324-seeklogo.webp",
+  "https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/656e39bd8b07a811ace242d3_global-village-logo-6A33BF3C24-seeklogo.webp",
+  "https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/656e39bd8b07a811ace242d4_atlantis-the-palm-logo-vector.webp",
+  "https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/656e39bd8b07a811ace242d5_Eti-New-logo.webp",
+  "https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/656e39bd8b07a811ace242dc_logo.webp",
+  "https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/656e39bd8b07a811ace242e9_DTC_logo_AW.webp"
+ ],
+ "https://www.dubaitaxi.ae/": [
+  "https://cdn.prod.website-files.com/654b70c58d46776baf4b5ec8/654b7fb0ecfaedf0651ef836_logo%20fav.webp",
+  "https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/656e39bd8b07a811ace2422c_logo.webp",
+  "https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/656e39bd8b07a811ace2422f_logo%20fav.png",
+  "https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/656e39bd8b07a811ace24230_logo%20webclip.png",
+  "https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/656e39bd8b07a811ace242cf_JAM_Est_Logo_logo_20200726141436.webp",
+  "https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/656e39bd8b07a811ace242d0_Al-Futtaim-logo-FCDAD671B6-seeklogo.webp",
+  "https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/656e39bd8b07a811ace242d1_noon-com-logo-3D35F15324-seeklogo.webp",
+  "https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/656e39bd8b07a811ace242d3_global-village-logo-6A33BF3C24-seeklogo.webp",
+  "https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/656e39bd8b07a811ace242d4_atlantis-the-palm-logo-vector.webp",
+  "https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/656e39bd8b07a811ace242d5_Eti-New-logo.webp",
+  "https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/656e39bd8b07a811ace242dc_logo.webp",
+  "https://cdn.prod.website-files.com/656e39bd8b07a811ace241f7/656e39bd8b07a811ace242e9_DTC_logo_AW.webp"
+ ],
+ "https://ir.dubaitaxi.ae/": "HTTPSConnectionPool(host='ir.dubaitaxi.ae', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='ir.dubaitaxi.ae', port=443): Failed to resolve 'ir.dubaitaxi.ae' ([Errno -2] Name or service not known)\"))"
+}
