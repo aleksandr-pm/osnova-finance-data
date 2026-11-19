@@ -1,14 +1,21 @@
-threads: duel_ny_gdp_pcap_cd_pl_ru (economy, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/954a898533e4/bank/covers/duel_ny_gdp_pcap_cd_pl_ru.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/954a898533e4/bank/cards/duel_ny_gdp_pcap_cd_pl_ru.jpg
+threads: bil_country_se (billionaires, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/853a8067a3dd/bank/cards_markets/bil_country_se.jpg
 ---
-Ввп на человека: Польша и Россия, 2000-2025:
-1. 🇵🇱 Польша · $28 420, в 6,3 раза
-2. 🇷🇺 Россия · $17 547, в 9,9 раза
-Россия: ВВП на человека вырос в 9,9 раза с 2000 года.
+Самые богатые люди Швеции, ноябрь 2026:
+1. 🇸🇪 Стефан Перссон · $21,8 млрд
+2. 🇸🇪 Даниэль Эк · $13,5 млрд
+3. 🇸🇪 Антония Аксон Юнсон с семьёй · $13 млрд
+4. 🇸🇪 Мартин Лоренцон · $12,9 млрд
+5. 🇸🇪 Финн Раусинг · $11,4 млрд
+6. 🇸🇪 Йорн Раусинг · $11,4 млрд
+7. 🇸🇪 Кирстен Раусинг · $11,4 млрд
+8. 🇸🇪 Карл Беннет · $9,3 млрд
+9. 🇸🇪 Фредрик Паульсен · $7,4 млрд
+10. 🇸🇪 Карл Дуглас · $6,3 млрд
+№1: Стефан Перссон, $21,8 млрд.
 Больше в Telegram @osnovafin
 ---
-Threads: текстом
-Ответ со ссылкой: 18079146203460273
-Опубликовано: 18177710116457836. Осталось новых рейтингов: 174
-exit=0 2026-11-18T17:30:32Z
+Threads: с картинкой
+Ответ со ссылкой: 17940941181123321
+Опубликовано: 18127695817918926. Осталось новых рейтингов: 173
+exit=0 2026-11-19T06:29:54Z
