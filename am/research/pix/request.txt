@@ -1,10 +1,12 @@
-video|parking garage|3
-video|parking lot aerial|2
-video|dubai cars traffic|3
-video|toll road highway|2
-video|coca cola|3
-video|soda bottles factory|2
-video|burger restaurant|3
-video|fast food drive thru|2
-video|hamburger fries|2
-video|dividends money|2
+video|car park|4
+video|parking lot cars|4
+video|parking meter|2
+video|hamburger|4
+video|french fries|3
+video|fast food restaurant|3
+video|cola glass ice|3
+video|bottling plant|3
+video|soda cans|2
+video|counting money|3
+video|stock market chart|3
+video|highway traffic night|3

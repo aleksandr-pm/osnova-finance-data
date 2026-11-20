@@ -13,8 +13,9 @@ for ln in lines:
     kind, q, n = (ln.split("|") + ["3"])[:3]; n = int(n)
     slug = re.sub(r"[^a-z0-9]+", "_", q.lower()).strip("_")
     if kind == "video":
-        r = requests.get("https://pixabay.com/api/videos/", params={"key": KEY, "q": q, "per_page": 50, "safesearch": "true"}, timeout=30).json()
-        hits = sorted(r.get("hits", []), key=lambda h: (h["videos"]["large"]["height"] > h["videos"]["large"]["width"], h.get("likes", 0)), reverse=True)[:n]
+        r = requests.get("https://pixabay.com/api/videos/", params={"key": KEY, "q": q, "per_page": 20, "safesearch": "true"}, timeout=30).json()
+        top = r.get("hits", [])[:max(n * 2, 6)]
+        hits = sorted(top, key=lambda h: h["videos"]["large"]["height"] > h["videos"]["large"]["width"], reverse=True)[:n]
         for i, h in enumerate(hits):
             v = h["videos"]["large"] if h["videos"]["large"]["url"] else h["videos"]["medium"]
             fn = f"{slug}_{i + 1}.mp4"
