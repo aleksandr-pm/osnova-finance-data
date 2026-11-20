@@ -165,6 +165,14 @@
    "type": "reel",
    "dubai_time": "14:09",
    "timeset": "manual"
+  },
+  {
+   "id": "r_cash_buyers",
+   "at": "2026-11-20T14:35:31.968980+00:00",
+   "post": "17882174196631505",
+   "type": "reel",
+   "dubai_time": "18:35",
+   "timeset": "manual"
   }
  ]
 }
