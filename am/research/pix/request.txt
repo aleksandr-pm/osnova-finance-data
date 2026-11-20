@@ -1,6 +1,8 @@
-video|shopping cart warehouse|3
-video|iphone|3
-video|cardboard boxes delivery|3
-video|data center|3
-video|contactless payment|3
-video|credit card terminal|2
+video|coffee shop|3
+video|latte art|2
+video|sports car|3
+video|red sports car|2
+video|garage tools|3
+video|rusty|2
+video|arena crowd|3
+video|boxing ring|2
