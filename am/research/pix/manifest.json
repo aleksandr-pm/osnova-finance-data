@@ -1,115 +1,142 @@
 [
  {
-  "file": "parking_garage_1.mp4",
-  "q": "parking garage",
-  "w": 2160,
-  "h": 3840,
-  "sec": 30,
-  "user": "46031972",
-  "page": "https://pixabay.com/videos/id-266987/"
- },
- {
-  "file": "parking_garage_2.mp4",
-  "q": "parking garage",
-  "w": 2160,
-  "h": 3840,
-  "sec": 8,
-  "user": "iddea_photo",
-  "page": "https://pixabay.com/videos/id-237643/"
- },
- {
-  "file": "parking_garage_3.mp4",
-  "q": "parking garage",
-  "w": 1920,
-  "h": 1080,
-  "sec": 13,
-  "user": "SYG_Anime",
-  "page": "https://pixabay.com/videos/id-58142/"
- },
- {
-  "file": "parking_lot_aerial_1.mp4",
-  "q": "parking lot aerial",
-  "w": 2160,
-  "h": 3840,
-  "sec": 30,
-  "user": "46031972",
-  "page": "https://pixabay.com/videos/id-266987/"
- },
- {
-  "file": "parking_lot_aerial_2.mp4",
-  "q": "parking lot aerial",
-  "w": 1920,
-  "h": 1080,
-  "sec": 25,
-  "user": "bellergy",
-  "page": "https://pixabay.com/videos/id-2119/"
- },
- {
-  "file": "dubai_cars_traffic_1.mp4",
-  "q": "dubai cars traffic",
-  "w": 1440,
-  "h": 2560,
-  "sec": 25,
-  "user": "engrahmad2653",
-  "page": "https://pixabay.com/videos/id-296958/"
- },
- {
-  "file": "dubai_cars_traffic_2.mp4",
-  "q": "dubai cars traffic",
-  "w": 1080,
-  "h": 1920,
-  "sec": 12,
-  "user": "UreñaFilms",
-  "page": "https://pixabay.com/videos/id-136554/"
- },
- {
-  "file": "dubai_cars_traffic_3.mp4",
-  "q": "dubai cars traffic",
-  "w": 1080,
-  "h": 1920,
-  "sec": 18,
-  "user": "Matthias_Groeneveld",
-  "page": "https://pixabay.com/videos/id-187050/"
- },
- {
-  "file": "toll_road_highway_1.mp4",
-  "q": "toll road highway",
-  "w": 1080,
-  "h": 1920,
-  "sec": 39,
-  "user": "RaniRamli",
-  "page": "https://pixabay.com/videos/id-147595/"
- },
- {
-  "file": "toll_road_highway_2.mp4",
-  "q": "toll road highway",
-  "w": 2160,
-  "h": 3840,
-  "sec": 32,
-  "user": "Matthias_Groeneveld",
-  "page": "https://pixabay.com/videos/id-136462/"
- },
- {
-  "file": "coca_cola_1.mp4",
-  "q": "coca cola",
-  "w": 1080,
-  "h": 1936,
-  "sec": 5,
-  "user": "freestock_video",
-  "page": "https://pixabay.com/videos/id-293265/"
- },
- {
-  "file": "coca_cola_2.mp4",
-  "q": "coca cola",
+  "file": "car_park_1.mp4",
+  "q": "car park",
   "w": 3840,
   "h": 2160,
-  "sec": 50,
-  "user": "TPMotion",
-  "page": "https://pixabay.com/videos/id-79908/"
+  "sec": 40,
+  "user": "daniloriba",
+  "page": "https://pixabay.com/videos/id-53141/"
  },
  {
-  "file": "coca_cola_3.mp4",
-  "q": "coca cola",
+  "file": "car_park_2.mp4",
+  "q": "car park",
+  "w": 1920,
+  "h": 1080,
+  "sec": 17,
+  "user": "caelan",
+  "page": "https://pixabay.com/videos/id-46343/"
+ },
+ {
+  "file": "car_park_3.mp4",
+  "q": "car park",
+  "w": 3840,
+  "h": 2160,
+  "sec": 26,
+  "user": "Oleh_1977",
+  "page": "https://pixabay.com/videos/id-248777/"
+ },
+ {
+  "file": "car_park_4.mp4",
+  "q": "car park",
+  "w": 3840,
+  "h": 2160,
+  "sec": 13,
+  "user": "Oleh_1977",
+  "page": "https://pixabay.com/videos/id-248773/"
+ },
+ {
+  "file": "parking_lot_cars_1.mp4",
+  "q": "parking lot cars",
+  "w": 1080,
+  "h": 1920,
+  "sec": 28,
+  "user": "u_asgdjntiig",
+  "page": "https://pixabay.com/videos/id-188537/"
+ },
+ {
+  "file": "parking_lot_cars_2.mp4",
+  "q": "parking lot cars",
+  "w": 0,
+  "h": 0,
+  "sec": 9,
+  "user": "flegmatik95",
+  "page": "https://pixabay.com/videos/id-1137/"
+ },
+ {
+  "file": "parking_lot_cars_3.mp4",
+  "q": "parking lot cars",
+  "w": 0,
+  "h": 0,
+  "sec": 8,
+  "user": "flegmatik95",
+  "page": "https://pixabay.com/videos/id-1136/"
+ },
+ {
+  "file": "parking_lot_cars_4.mp4",
+  "q": "parking lot cars",
+  "w": 1920,
+  "h": 1080,
+  "sec": 5,
+  "user": "Preditorcuts",
+  "page": "https://pixabay.com/videos/id-33035/"
+ },
+ {
+  "file": "parking_meter_1.mp4",
+  "q": "parking meter",
+  "w": 1920,
+  "h": 1080,
+  "sec": 10,
+  "user": "tommyvideo",
+  "page": "https://pixabay.com/videos/id-5167/"
+ },
+ {
+  "file": "parking_meter_2.mp4",
+  "q": "parking meter",
+  "w": 1920,
+  "h": 1080,
+  "sec": 24,
+  "user": "Bastien86",
+  "page": "https://pixabay.com/videos/id-27467/"
+ },
+ {
+  "file": "hamburger_1.mp4",
+  "q": "hamburger",
+  "w": 3840,
+  "h": 2160,
+  "sec": 7,
+  "user": "Kaffeesüchtig",
+  "page": "https://pixabay.com/videos/id-199545/"
+ },
+ {
+  "file": "hamburger_2.mp4",
+  "q": "hamburger",
+  "w": 3840,
+  "h": 2160,
+  "sec": 5,
+  "user": "srb_films",
+  "page": "https://pixabay.com/videos/id-124821/"
+ },
+ {
+  "file": "hamburger_3.mp4",
+  "q": "hamburger",
+  "w": 1920,
+  "h": 1080,
+  "sec": 5,
+  "user": "julientromeur",
+  "page": "https://pixabay.com/videos/id-199249/"
+ },
+ {
+  "file": "hamburger_4.mp4",
+  "q": "hamburger",
+  "w": 1920,
+  "h": 1080,
+  "sec": 5,
+  "user": "julientromeur",
+  "page": "https://pixabay.com/videos/id-259141/"
+ },
+ {
+  "file": "french_fries_1.mp4",
+  "q": "french fries",
+  "w": 1920,
+  "h": 1080,
+  "sec": 8,
+  "user": "julientromeur",
+  "page": "https://pixabay.com/videos/id-154498/"
+ },
+ {
+  "file": "french_fries_2.mp4",
+  "q": "french fries",
   "w": 1920,
   "h": 1080,
   "sec": 31,
@@ -117,102 +144,192 @@
   "page": "https://pixabay.com/videos/id-11691/"
  },
  {
-  "file": "soda_bottles_factory_1.mp4",
-  "q": "soda bottles factory",
-  "w": 2160,
-  "h": 3840,
-  "sec": 40,
-  "user": "Marsel_beijing",
-  "page": "https://pixabay.com/videos/id-133507/"
+  "file": "french_fries_3.mp4",
+  "q": "french fries",
+  "w": 1920,
+  "h": 1080,
+  "sec": 18,
+  "user": "XiaosKitchen",
+  "page": "https://pixabay.com/videos/id-11674/"
  },
  {
-  "file": "soda_bottles_factory_2.mp4",
-  "q": "soda bottles factory",
+  "file": "fast_food_restaurant_1.mp4",
+  "q": "fast food restaurant",
+  "w": 1920,
+  "h": 1080,
+  "sec": 20,
+  "user": "Republica",
+  "page": "https://pixabay.com/videos/id-176/"
+ },
+ {
+  "file": "fast_food_restaurant_2.mp4",
+  "q": "fast food restaurant",
   "w": 3840,
   "h": 2160,
-  "sec": 17,
-  "user": "Kaffeesüchtig",
-  "page": "https://pixabay.com/videos/id-199788/"
+  "sec": 15,
+  "user": "padrinan",
+  "page": "https://pixabay.com/videos/id-132538/"
  },
  {
-  "file": "burger_restaurant_1.mp4",
-  "q": "burger restaurant",
-  "w": 2160,
-  "h": 3840,
-  "sec": 6,
-  "user": "kurt_BID",
-  "page": "https://pixabay.com/videos/id-227128/"
+  "file": "fast_food_restaurant_3.mp4",
+  "q": "fast food restaurant",
+  "w": 1920,
+  "h": 1080,
+  "sec": 31,
+  "user": "XiaosKitchen",
+  "page": "https://pixabay.com/videos/id-11691/"
  },
  {
-  "file": "burger_restaurant_2.mp4",
-  "q": "burger restaurant",
-  "w": 1080,
-  "h": 1920,
-  "sec": 9,
-  "user": "xBriantcx",
-  "page": "https://pixabay.com/videos/id-238826/"
+  "file": "cola_glass_ice_1.mp4",
+  "q": "cola glass ice",
+  "w": 3840,
+  "h": 2160,
+  "sec": 50,
+  "user": "TPMotion",
+  "page": "https://pixabay.com/videos/id-79908/"
  },
  {
-  "file": "burger_restaurant_3.mp4",
-  "q": "burger restaurant",
-  "w": 1080,
-  "h": 1881,
-  "sec": 20,
-  "user": "MozoMozo",
-  "page": "https://pixabay.com/videos/id-171178/"
+  "file": "cola_glass_ice_2.mp4",
+  "q": "cola glass ice",
+  "w": 3840,
+  "h": 2160,
+  "sec": 39,
+  "user": "TPMotion",
+  "page": "https://pixabay.com/videos/id-80136/"
  },
  {
-  "file": "fast_food_drive_thru_1.mp4",
-  "q": "fast food drive thru",
-  "w": 1080,
-  "h": 1920,
+  "file": "cola_glass_ice_3.mp4",
+  "q": "cola glass ice",
+  "w": 1920,
+  "h": 1080,
+  "sec": 60,
+  "user": "TPMotion",
+  "page": "https://pixabay.com/videos/id-83155/"
+ },
+ {
+  "file": "bottling_plant_1.mp4",
+  "q": "bottling plant",
+  "w": 1920,
+  "h": 1080,
+  "sec": 18,
+  "user": "tommyvideo",
+  "page": "https://pixabay.com/videos/id-55487/"
+ },
+ {
+  "file": "bottling_plant_2.mp4",
+  "q": "bottling plant",
+  "w": 3840,
+  "h": 2160,
+  "sec": 12,
+  "user": "waterlettuce",
+  "page": "https://pixabay.com/videos/id-41849/"
+ },
+ {
+  "file": "bottling_plant_3.mp4",
+  "q": "bottling plant",
+  "w": 3840,
+  "h": 2160,
   "sec": 8,
-  "user": "u_s3x58oi3kn",
-  "page": "https://pixabay.com/videos/id-381248/"
+  "user": "LiskaRed",
+  "page": "https://pixabay.com/videos/id-373833/"
  },
  {
-  "file": "fast_food_drive_thru_2.mp4",
-  "q": "fast food drive thru",
+  "file": "soda_cans_1.mp4",
+  "q": "soda cans",
   "w": 1920,
   "h": 1080,
   "sec": 5,
-  "user": "NASA-Imagery",
-  "page": "https://pixabay.com/videos/id-5/"
+  "user": "klaatubaradanikto",
+  "page": "https://pixabay.com/videos/id-383361/"
  },
  {
-  "file": "hamburger_fries_1.mp4",
-  "q": "hamburger fries",
-  "w": 1080,
-  "h": 1920,
-  "sec": 15,
-  "user": "Amina_Salim",
-  "page": "https://pixabay.com/videos/id-141855/"
- },
- {
-  "file": "hamburger_fries_2.mp4",
-  "q": "hamburger fries",
-  "w": 1080,
-  "h": 1920,
-  "sec": 8,
-  "user": "u_s3x58oi3kn",
-  "page": "https://pixabay.com/videos/id-381248/"
- },
- {
-  "file": "dividends_money_1.mp4",
-  "q": "dividends money",
-  "w": 1920,
-  "h": 640,
-  "sec": 20,
-  "user": "Vimeo-Free-Videos",
-  "page": "https://pixabay.com/videos/id-3125/"
- },
- {
-  "file": "dividends_money_2.mp4",
-  "q": "dividends money",
+  "file": "soda_cans_2.mp4",
+  "q": "soda cans",
   "w": 3840,
   "h": 2160,
-  "sec": 23,
-  "user": "RoyBuri",
-  "page": "https://pixabay.com/videos/id-20857/"
+  "sec": 10,
+  "user": "Hideaki_AnimeTH",
+  "page": "https://pixabay.com/videos/id-342903/"
+ },
+ {
+  "file": "counting_money_1.mp4",
+  "q": "counting money",
+  "w": 1920,
+  "h": 1080,
+  "sec": 20,
+  "user": "Hassas_Arts",
+  "page": "https://pixabay.com/videos/id-50622/"
+ },
+ {
+  "file": "counting_money_2.mp4",
+  "q": "counting money",
+  "w": 1920,
+  "h": 1080,
+  "sec": 8,
+  "user": "Hassas_Arts",
+  "page": "https://pixabay.com/videos/id-50628/"
+ },
+ {
+  "file": "counting_money_3.mp4",
+  "q": "counting money",
+  "w": 1920,
+  "h": 1080,
+  "sec": 20,
+  "user": "Hassas_Arts",
+  "page": "https://pixabay.com/videos/id-59139/"
+ },
+ {
+  "file": "stock_market_chart_1.mp4",
+  "q": "stock market chart",
+  "w": 3840,
+  "h": 2160,
+  "sec": 20,
+  "user": "Dimitri_K",
+  "page": "https://pixabay.com/videos/id-166289/"
+ },
+ {
+  "file": "stock_market_chart_2.mp4",
+  "q": "stock market chart",
+  "w": 3840,
+  "h": 2160,
+  "sec": 15,
+  "user": "MuhammadAhmad10",
+  "page": "https://pixabay.com/videos/id-349089/"
+ },
+ {
+  "file": "stock_market_chart_3.mp4",
+  "q": "stock market chart",
+  "w": 3840,
+  "h": 2160,
+  "sec": 17,
+  "user": "MuhammadAhmad10",
+  "page": "https://pixabay.com/videos/id-349091/"
+ },
+ {
+  "file": "highway_traffic_night_1.mp4",
+  "q": "highway traffic night",
+  "w": 3840,
+  "h": 2160,
+  "sec": 26,
+  "user": "MagicTV",
+  "page": "https://pixabay.com/videos/id-87884/"
+ },
+ {
+  "file": "highway_traffic_night_2.mp4",
+  "q": "highway traffic night",
+  "w": 3840,
+  "h": 2160,
+  "sec": 26,
+  "user": "paulmaunders",
+  "page": "https://pixabay.com/videos/id-18083/"
+ },
+ {
+  "file": "highway_traffic_night_3.mp4",
+  "q": "highway traffic night",
+  "w": 3840,
+  "h": 2160,
+  "sec": 21,
+  "user": "MagicTV",
+  "page": "https://pixabay.com/videos/id-88921/"
  }
 ]
