@@ -1,21 +1,21 @@
-Слот reel: в очереди 9 из 28; LIVE=да
-Следующий: db_office_sales_value (media/db_office_sales_value.mp4)
+Слот reel: в очереди 8 из 28; LIVE=да
+Следующий: alt_rent_dumbbell (media/alt_rent_dumbbell.mp4)
 ---
-AED 20.3 billion of Dubai offices sold in 9 months of 2026. More than any full year in DLD data since 2009.
+Listings ask. Tenants pay less. In all 10 big office districts of Dubai.
 
-Registered office sales in Dubai:
-2020: AED 1.0bn
-2025: AED 13.2bn
-2026, Jan to 5 Oct: AED 20.3bn, of which 80% off-plan
+Office rent, AED per sq ft a year, asked vs paid (Ejari 2026):
+Downtown 422 vs 307
+Barsha Heights 274 vs 134
+Business Bay 202 vs 155
+Al Quoz 136 vs 56
+Deira 131 vs 62
 
-What's driving it: new supply or demand?
+Negotiating a lease? Start from what was signed. Full data on osnova.property, link in bio. Or comment RENT and we will send you all 17 districts.
 
-Full data on osnova.property, link in bio. Or comment DATA and we will send you the full research.
-
-Source: Dubai Land Department (DLD) sales transactions, office units, total value by year, 2016 to 5 October 2026. Market statistics for information only. Not an offer to buy, sell or lease property, and not investment advice.
+Source: portal listings Nov 2026 · Ejari new leases, 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
 
 #dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace
 ---
-Контейнер 17924522982242274, загрузка 3.6 МБ
-Опубликовано: db_office_sales_value → 18036366884672730
-exit=0 2026-11-19T17:58:50.491097+00:00
+Контейнер 17924617314242274, загрузка 4.2 МБ
+Опубликовано: alt_rent_dumbbell → 18122406877952535
+exit=0 2026-11-20T06:09:03.470628+00:00
