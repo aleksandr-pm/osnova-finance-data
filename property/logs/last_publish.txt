@@ -1,17 +1,21 @@
-Слот reel: в очереди 6 из 28; LIVE=да
-Следующий: r_cash_buyers (media/r_cash_buyers.mp4)
+Слот reel: в очереди 5 из 28; LIVE=да
+Следующий: alt_top_buildings_ranked (media/alt_top_buildings_ranked.mp4)
 ---
-Only 12% of Dubai office purchases in 2026 use a mortgage. In 2018 it was 39.4%.
+62 ready offices sold in Bay Square this year, the most of any ready building in Dubai.
 
-Mortgage share of office deals: 39.4% (2018), 28.1% (2020), 12.1% (2023), 12.0% (2026)
-Average office deal: AED 631,680 in 2020, AED 2,561,280 in 2026
+Most traded ready office buildings, 2026, median price paid:
+Bay Square, Business Bay: 62 sales, 2,800 AED per sq ft
+Tamani Arts Offices, Business Bay: 57, 2,050
+Jumeirah Business Centre 5, JLT: 39, 2,707
+The One Tower, Barsha Heights: 38, 2,040
+Burlington Tower, Business Bay: 36, 1,944
 
-Bigger cheques, more deals, less debt: a cash buyers' market. Full data on osnova.property, link in bio. Or comment DATA and we will send you the full research.
+Full data on osnova.property, link in bio. Or comment PRICE and we will send you prices paid by district and building.
 
-Source: DLD registered sales, mortgage vs cash; 2026 is Jan to Aug · osnova.property. Market statistics, not an offer or investment advice.
+Source: DLD transactions, ready office sales 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
 
 #dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace
 ---
-Контейнер 17924703705242274, загрузка 1.1 МБ
-Опубликовано: r_cash_buyers → 17882174196631505
-exit=0 2026-11-20T14:35:31.969722+00:00
+Контейнер 17924745396242274, загрузка 3.2 МБ
+Опубликовано: alt_top_buildings_ranked → 18352859188281528
+exit=0 2026-11-20T18:00:43.192799+00:00
