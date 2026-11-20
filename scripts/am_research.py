@@ -440,6 +440,61 @@ def dtcimg():
     json.dump(rep, open(os.path.join(out, "rep.json"), "w"), indent=1); print(rep)
 
 
+def series():
+    """Серия «Как зарабатывает компания»: цены (TradingView), годовая отчётность США (yfinance), логотипы (Wikidata P154)."""
+    import subprocess, sys as _s, time
+    subprocess.run([_s.executable, "-m", "pip", "install", "-q", "websocket-client"], check=False)
+    out = os.path.join(OUTD, "series"); os.makedirs(out, exist_ok=True); rep = {}
+    us = {"KO": "NYSE:KO", "MCD": "NYSE:MCD", "COST": "NASDAQ:COST", "AAPL": "NASDAQ:AAPL", "AMZN": "NASDAQ:AMZN", "V": "NYSE:V",
+          "SBUX": "NASDAQ:SBUX", "RACE": "NYSE:RACE", "WDFC": "NASDAQ:WDFC", "TKO": "NYSE:TKO"}
+    for k, sym in us.items():
+        try:
+            rows = tv_hist(sym, 600, "1W")
+            with open(os.path.join(out, k + "_w.csv"), "w") as fh:
+                fh.write("Date,Close\n"); [fh.write(f"{d},{c}\n") for d, c in rows]
+            rep["px_" + k] = [len(rows), rows[0], rows[-1]]
+        except Exception as e:  # noqa: BLE001
+            rep["px_" + k] = str(e)
+        try:
+            import yfinance as yf
+            t = yf.Ticker(k)
+            inc = t.income_stmt
+            fin = {}
+            for col in inc.columns:
+                y = str(col)[:10]
+                fin[y] = {r: (None if str(inc.loc[r, col]) == "nan" else float(inc.loc[r, col])) for r in ("Total Revenue", "Net Income", "Operating Income", "Gross Profit") if r in inc.index}
+            info = t.info
+            fin["_info"] = {f: info.get(f) for f in ("marketCap", "dividendRate", "dividendYield", "trailingPE", "currentPrice", "sharesOutstanding", "fullTimeEmployees", "longBusinessSummary")}
+            json.dump(fin, open(os.path.join(out, k + "_fin.json"), "w"), indent=1, default=str)
+            rep["fin_" + k] = "ok"
+        except Exception as e:  # noqa: BLE001
+            rep["fin_" + k] = str(e)
+    H = {"User-Agent": "osnova-research/1.0 (github.com/aleksandr-pm; research bot)"}
+    titles = {"PARKIN": "Parkin Company", "SALIK": "Salik (road toll)", "KO": "The Coca-Cola Company", "MCD": "McDonald's", "COST": "Costco",
+              "AAPL": "Apple Inc.", "AMZN": "Amazon (company)", "V": "Visa Inc.", "SBUX": "Starbucks", "RACE": "Ferrari", "WDFC": "WD-40",
+              "TKO": "TKO Group Holdings", "WWE": "WWE", "LULU": "Lulu Hypermarket", "TALABAT": "Talabat", "AIRARABIA": "Air Arabia",
+              "EMAAR": "Emaar Properties", "ENBD": "Emirates NBD", "ALDAR": "Aldar Properties", "ADNOCGAS": "ADNOC Gas", "DEWA": "Dubai Electricity and Water Authority"}
+    lg = os.path.join(out, "logos"); os.makedirs(lg, exist_ok=True)
+    for k, tt in titles.items():
+        try:
+            j = requests.get("https://en.wikipedia.org/w/api.php", params={"action": "query", "prop": "pageprops", "titles": tt, "redirects": 1, "format": "json"}, headers=H, timeout=30).json()
+            qid = list(j["query"]["pages"].values())[0].get("pageprops", {}).get("wikibase_item")
+            if not qid: rep["logo_" + k] = "no qid"; continue
+            w = requests.get(f"https://www.wikidata.org/wiki/Special:EntityData/{qid}.json", headers=H, timeout=30).json()
+            cl = w["entities"][qid]["claims"].get("P154") or w["entities"][qid]["claims"].get("P18")
+            if not cl: rep["logo_" + k] = "no P154"; continue
+            fn = cl[0]["mainsnak"]["datavalue"]["value"]
+            for att in range(4):
+                time.sleep(20)
+                b = requests.get("https://commons.wikimedia.org/wiki/Special:FilePath/" + fn.replace(" ", "_"), params={"width": 1000}, headers=H, timeout=40)
+                if b.status_code == 200 and b.content[:4] in (b"\x89PNG", b"\xff\xd8\xff\xe0", b"\xff\xd8\xff\xe1", b"\xff\xd8\xff\xdb") or (b.status_code == 200 and b.content[:3] == b"GIF"):
+                    open(os.path.join(lg, k + (".png" if b.content[:4] == b"\x89PNG" else ".jpg")), "wb").write(b.content); rep["logo_" + k] = [fn, len(b.content)]; break
+                rep["logo_" + k] = [fn, b.status_code, b.content[:15].hex()]
+        except Exception as e:  # noqa: BLE001
+            rep["logo_" + k] = str(e)
+    json.dump(rep, open(os.path.join(out, "report.json"), "w"), indent=1, default=str); print(rep)
+
+
 def px():
     """Дневные цены и ключевые показатели для серии роликов про компании"""
     import subprocess, sys as _s
@@ -673,4 +728,4 @@ def buildings(tag="report"):
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl, "px": px, "dtclogo": dtclogo, "dtcimg": dtcimg}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl, "px": px, "dtclogo": dtclogo, "dtcimg": dtcimg, "series": series}[task]()
