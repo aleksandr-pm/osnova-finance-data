@@ -1,35 +1,5 @@
 [
  {
-  "id": "alert-2026-11-17-HOOD-d",
-  "caption": "⚡️🔻 <b>Robinhood</b> (HOOD) −7,45% за день, $72,06\n\n#алерт",
-  "t": 1794924827
- },
- {
-  "id": "alert-2026-11-17-SMCI-d",
-  "caption": "⚡️🔻 <b>Super Micro</b> (SMCI) −6,85% за день, $25,03\n\n#алерт",
-  "t": 1794924827
- },
- {
-  "id": "alert-2026-11-17-ARM-d",
-  "caption": "⚡️🔻 <b>Arm</b> (ARM) −8,12% за день, $175,05\n\n#алерт",
-  "t": 1794924827
- },
- {
-  "id": "alert-2026-11-17-DELL-d",
-  "caption": "⚡️🔻 <b>Dell</b> (DELL) −6,96% за день, $320,55\n\n#алерт",
-  "t": 1794924827
- },
- {
-  "id": "alert-2026-11-17-TSM-d",
-  "caption": "⚡️🔻 <b>TSMC</b> (TSM) −6,34% за день, $373,45\n\n#алерт",
-  "t": 1794924827
- },
- {
-  "id": "alert-2026-11-17-ASML-d",
-  "caption": "⚡️🔻 <b>ASML</b> (ASML) −5,91% за день, $1 407\n\n#алерт",
-  "t": 1794924827
- },
- {
   "id": "alert-2026-11-17-CRM-d",
   "caption": "⚡️🔻 <b>Salesforce</b> (CRM) −7,42% за день, $198,88\n\n#алерт",
   "t": 1794928432
@@ -159,5 +129,35 @@
   "caption": "📊 Акции <b>AMD</b> упали на 7,72% за день\nЗа полгода: +9,30%, цена $489,19\n\n#графикдня",
   "t": 1795180705,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-20-AMD.png"
+ },
+ {
+  "id": "alert-2026-11-20-AVGO-d",
+  "caption": "⚡️🔻 <b>Broadcom</b> (AVGO) −6,86% за день, $322,89\n\n#алерт",
+  "t": 1795187901
+ },
+ {
+  "id": "alert-2026-11-20-AMD-d",
+  "caption": "⚡️🔻 <b>AMD</b> (AMD) −6,43% за день, $457,73\n\n#алерт",
+  "t": 1795187901
+ },
+ {
+  "id": "alert-2026-11-20-AMAT-d",
+  "caption": "⚡️🔻 <b>Applied Materials</b> (AMAT) −6,68% за день, $316,29\n\n#алерт",
+  "t": 1795187901
+ },
+ {
+  "id": "alert-2026-11-20-MU-d",
+  "caption": "⚡️🔻 <b>Micron</b> (MU) −8,09% за день, $634,55\n\n#алерт",
+  "t": 1795187901
+ },
+ {
+  "id": "alert-2026-11-20-ARM-d",
+  "caption": "⚡️🔻 <b>Arm</b> (ARM) −7,65% за день, $163,61\n\n#алерт",
+  "t": 1795187901
+ },
+ {
+  "id": "alert-2026-11-20-DELL-d",
+  "caption": "⚡️🔻 <b>Dell</b> (DELL) −7,15% за день, $290,19\n\n#алерт",
+  "t": 1795187901
  }
 ]
