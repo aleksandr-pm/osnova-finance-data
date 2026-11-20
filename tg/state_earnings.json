@@ -6143,6 +6143,16 @@
    "cap": 1383.61,
    "name": "WeRide Inc",
    "ind": "Auto Components"
+  },
+  "IESC": {
+   "cap": 6722.679712707619,
+   "name": "IES Holdings Inc",
+   "ind": "Construction"
+  },
+  "MOG.A": {
+   "cap": 10398.686105845432,
+   "name": "Moog Inc",
+   "ind": "Aerospace & Defense"
   }
  },
  "earn_done": [
