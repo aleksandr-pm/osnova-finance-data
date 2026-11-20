@@ -1,6 +1,5 @@
 {
  "earn_seen": {
-  "DIS-2026Q4": 1794918780,
   "NVDA-2027Q3": 1794958337,
   "LOW-2027Q3": 1795002524,
   "TGT-2027Q3": 1795006292,
@@ -6129,6 +6128,21 @@
    "cap": 1784.49171,
    "name": "RLX Technology Inc",
    "ind": "Tobacco"
+  },
+  "BJ": {
+   "cap": 13989.352375762084,
+   "name": "BJ's Wholesale Club Holdings, Inc.",
+   "ind": "Retail"
+  },
+  "FUFU": {
+   "cap": 143.3220888333333,
+   "name": "BitFuFu Inc",
+   "ind": "Technology"
+  },
+  "WRD": {
+   "cap": 1383.61,
+   "name": "WeRide Inc",
+   "ind": "Auto Components"
   }
  },
  "earn_done": [
