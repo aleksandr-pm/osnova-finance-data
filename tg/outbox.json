@@ -1,11 +1,5 @@
 [
  {
-  "id": "chart-2026-11-19-PDD",
-  "caption": "📊 Акции <b>PDD (Temu)</b> выросли на 12,42% за день\nЗа полгода: −10,58%, цена $87,04\n\n#графикдня",
-  "t": 1795109978,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-19-PDD.png"
- },
- {
   "id": "alert-2026-11-19-SHOP-d",
   "caption": "⚡️🔻 <b>Shopify</b> (SHOP) −5,26% за день, $132,08\n\n#алерт",
   "t": 1795120762
@@ -152,5 +146,10 @@
   "id": "alert-2026-11-20-SNOW-d",
   "caption": "⚡️🔻 <b>Snowflake</b> (SNOW) −5,16% за день, $254,74\n\n#алерт",
   "t": 1795203304
+ },
+ {
+  "id": "alert-2026-11-20-SHOP-d",
+  "caption": "⚡️🔻 <b>Shopify</b> (SHOP) −6,12% за день, $123,89\n\n#алерт",
+  "t": 1795206473
  }
 ]
