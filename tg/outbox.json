@@ -1,37 +1,5 @@
 [
  {
-  "id": "alert-2026-11-17-CRM-d",
-  "caption": "⚡️🔻 <b>Salesforce</b> (CRM) −7,42% за день, $198,88\n\n#алерт",
-  "t": 1794928432
- },
- {
-  "id": "alert-2026-11-17-INTU-d",
-  "caption": "⚡️🔻 <b>Intuit</b> (INTU) −5,07% за день, $328,05\n\n#алерт",
-  "t": 1794928432
- },
- {
-  "id": "alert-2026-11-17-NOW-d",
-  "caption": "⚡️🔻 <b>ServiceNow</b> (NOW) −6,86% за день, $92,55\n\n#алерт",
-  "t": 1794932383
- },
- {
-  "id": "chart-2026-11-17-CRM",
-  "caption": "📊 Акции <b>Salesforce</b> упали на 9,74% за день\nЗа полгода: +8,08%, цена $193,99\n\n#графикдня",
-  "t": 1794937464,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-17-CRM.png"
- },
- {
-  "id": "alert-2026-11-17-UNH-d",
-  "caption": "⚡️🔻 <b>UnitedHealth</b> (UNH) −5,80% за день, $388,14\n\n#алерт",
-  "t": 1794947369
- },
- {
-  "id": "evening-2026-11-17",
-  "caption": "📈 <b>Итоги дня 17 ноября</b>\n\nS&P 500 −1,03%, Nasdaq −0,74%, Dow Jones −1,64%\nНефть Brent +0,68%, Золото −0,03%\n\n#итогидня",
-  "t": 1794953556,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-17.png"
- },
- {
   "id": "calendar-2026-11-18",
   "caption": "🗓 <b>Экономический календарь на 18 ноября</b>\n\nГлавное:\n11:00 🇬🇧 Инфляция (CPI), г/г\n23:00 🇺🇸 Протокол заседания ФРС\n\nВремя по Дубаю · #календарь",
   "t": 1794978044,
@@ -159,5 +127,35 @@
   "id": "alert-2026-11-20-DELL-d",
   "caption": "⚡️🔻 <b>Dell</b> (DELL) −7,15% за день, $290,19\n\n#алерт",
   "t": 1795187901
+ },
+ {
+  "id": "alert-2026-11-20-NVDA-d",
+  "caption": "⚡️🔻 <b>Nvidia</b> (NVDA) −6,14% за день, $137,01\n\n#алерт",
+  "t": 1795191576
+ },
+ {
+  "id": "alert-2026-11-20-ORCL-d",
+  "caption": "⚡️🔻 <b>Oracle</b> (ORCL) −5,84% за день, $104,11\n\n#алерт",
+  "t": 1795191576
+ },
+ {
+  "id": "alert-2026-11-20-INTU-d",
+  "caption": "⚡️🔻 <b>Intuit</b> (INTU) −10,27% за день, $278,2\n\n#алерт",
+  "t": 1795191576
+ },
+ {
+  "id": "alert-2026-11-20-MSTR-d",
+  "caption": "⚡️🔻 <b>Strategy</b> (MSTR) −5,43% за день, $81,46\n\n#алерт",
+  "t": 1795191576
+ },
+ {
+  "id": "alert-2026-11-20-SMCI-d",
+  "caption": "⚡️🔻 <b>Super Micro</b> (SMCI) −5,83% за день, $22,45\n\n#алерт",
+  "t": 1795191576
+ },
+ {
+  "id": "alert-2026-11-20-TSM-d",
+  "caption": "⚡️🔻 <b>TSMC</b> (TSM) −6,94% за день, $327,64\n\n#алерт",
+  "t": 1795191576
  }
 ]
