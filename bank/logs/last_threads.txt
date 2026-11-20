@@ -1,21 +1,14 @@
-threads: mkt_country_earn_in (companies, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/a81834a2d415/bank/cards_markets/mkt_country_earn_in.jpg
+threads: duel_ny_gdp_mktp_cd_us_cn (economy, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/86045ea88cd7/bank/covers/duel_ny_gdp_mktp_cd_us_cn.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/86045ea88cd7/bank/cards/duel_ny_gdp_mktp_cd_us_cn.jpg
 ---
-Самые прибыльные компании Индии, ноябрь 2026:
-1. 🇮🇳 Reliance Industries · $13,8 млрд
-2. 🇮🇳 Государственный банк Индии · $13 млрд
-3. 🇮🇳 Power Finance · $12,3 млрд
-4. 🇮🇳 HDFC Bank · $9,5 млрд
-5. 🇮🇳 ICICI Bank · $8,9 млрд
-6. 🇮🇳 Oil & Natural Gas · $7,9 млрд
-7. 🇮🇳 Tata Consultancy Services · $7,5 млрд
-8. 🇮🇳 LIC · $6,7 млрд
-9. 🇮🇳 Bajaj Finserv · $6,3 млрд
-10. 🇮🇳 Vodafone Idea · $6,2 млрд
-Reliance Industries: прибыль $13,8 млрд за год.
+Ввп: США и Китай, 2000-2025:
+1. 🇺🇸 США · $30,8 трлн, в 3 раза
+2. 🇨🇳 Китай · $19,5 трлн, в 15,9 раза
+Китай: ВВП вырос в 15,9 раза с 2000 года.
 Больше в Telegram @osnovafin
 ---
-Threads: текстом
-Ответ со ссылкой: 18017064336001242
-Опубликовано: 18146053423613198. Осталось новых рейтингов: 171
-exit=0 2026-11-20T06:32:11Z
+Threads: с картинкой
+Ответ со ссылкой: 17910785943598866
+Опубликовано: 18289335346295352. Осталось новых рейтингов: 170
+exit=0 2026-11-20T17:29:48Z
