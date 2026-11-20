@@ -1,11 +1,10 @@
 commons
-2026-11-20T06:42:03Z
-McDonald's restaurant exterior|4
-McDonald's Big Mac|2
-McDonald's drive-thru|2
-McDonald's restaurant interior|2
-Coca-Cola bottling plant|2
-Coca-Cola bottles|2
-Coca-Cola truck|1
-Dubai parking|3
-Salik toll gate|2
+2026-11-20T07:09:34Z
+Lulu Hypermarket|4
+Talabat delivery|3
+food delivery rider Dubai|2
+Air Arabia Airbus|4
+Sharjah International Airport|2
+Burj Khalifa|3
+Dubai Mall|3
+Dubai Creek Harbour|2

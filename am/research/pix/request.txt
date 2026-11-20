@@ -1,9 +1,8 @@
-photo|parking garage|4
-photo|parking lot|3
-photo|parking sign|2
-photo|mcdonalds|5
-photo|big mac burger|3
-photo|drive thru|2
-photo|coca cola bottle|4
-photo|coca cola truck|2
-photo|dubai road|3
+video|supermarket|3
+video|grocery shopping|2
+video|food delivery|3
+video|delivery scooter|2
+video|airplane takeoff|3
+video|airport|2
+video|skyscraper construction|3
+video|luxury apartment|2
