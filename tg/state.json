@@ -18,7 +18,8 @@
   "INTU",
   "UNH",
   "PANW",
-  "PDD"
+  "PDD",
+  "AMD"
  ],
  "alerts": {
   "PDD:up": "2026-11-19",
