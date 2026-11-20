@@ -495,6 +495,25 @@ def series():
     json.dump(rep, open(os.path.join(out, "report.json"), "w"), indent=1, default=str); print(rep)
 
 
+def logos4():
+    import re as _re
+    H = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36"}
+    out = os.path.join(OUTD, "series", "sitelogos"); os.makedirs(out, exist_ok=True); rep = {}
+    for k, site in {"PARKIN": "https://www.parkin.ae/", "ENBD": "https://www.emiratesnbd.com/en", "ADNOCGAS": "https://www.adnocgas.ae/"}.items():
+        try:
+            h = requests.get(site, headers=H, timeout=30).text
+            open(os.path.join(out, k + ".html"), "w").write(h)
+            c = sorted(set(_re.findall(r'(?:src|href|data-src)=["\']([^"\']*(?:logo|Logo|LOGO)[^"\']*\.(?:svg|png|webp|jpg)[^"\']*)["\']', h)))
+            rep[k] = c[:15]
+            for i, u in enumerate(c[:8]):
+                b = requests.get(requests.compat.urljoin(site, u), headers=H, timeout=30)
+                if b.status_code == 200 and len(b.content) > 300:
+                    open(os.path.join(out, f"{k}_{i}.{u.split('?')[0].rsplit('.', 1)[-1][:4]}"), "wb").write(b.content)
+        except Exception as e:  # noqa: BLE001
+            rep[k] = str(e)
+    json.dump(rep, open(os.path.join(out, "rep.json"), "w"), indent=1); print(rep)
+
+
 def px():
     """Дневные цены и ключевые показатели для серии роликов про компании"""
     import subprocess, sys as _s
@@ -728,4 +747,4 @@ def buildings(tag="report"):
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl, "px": px, "dtclogo": dtclogo, "dtcimg": dtcimg, "series": series}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl, "px": px, "dtclogo": dtclogo, "dtcimg": dtcimg, "series": series, "logos4": logos4}[task]()
