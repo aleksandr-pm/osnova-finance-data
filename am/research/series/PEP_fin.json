@@ -1,0 +1,42 @@
+{
+ "2025-12-31": {
+  "Total Revenue": 93925000000.0,
+  "Net Income": 8240000000.0,
+  "Operating Income": 13491000000.0,
+  "Gross Profit": 50859000000.0
+ },
+ "2024-12-31": {
+  "Total Revenue": 91854000000.0,
+  "Net Income": 9578000000.0,
+  "Operating Income": 12920000000.0,
+  "Gross Profit": 50110000000.0
+ },
+ "2023-12-31": {
+  "Total Revenue": 91471000000.0,
+  "Net Income": 9074000000.0,
+  "Operating Income": 12913000000.0,
+  "Gross Profit": 49590000000.0
+ },
+ "2022-12-31": {
+  "Total Revenue": 86392000000.0,
+  "Net Income": 8910000000.0,
+  "Operating Income": 11357000000.0,
+  "Gross Profit": 45816000000.0
+ },
+ "2021-12-31": {
+  "Total Revenue": null,
+  "Net Income": null,
+  "Operating Income": null,
+  "Gross Profit": null
+ },
+ "_info": {
+  "marketCap": 189421010944,
+  "dividendRate": 5.92,
+  "dividendYield": 4.26,
+  "trailingPE": 17.484278,
+  "currentPrice": 139.0,
+  "sharesOutstanding": 1362741092,
+  "fullTimeEmployees": 306000,
+  "longBusinessSummary": "PepsiCo, Inc. engages in the manufacture, marketing, distribution, and sale of various beverages and convenient foods worldwide. The company operates through six segments: PepsiCo Foods North America; PepsiCo Beverages North America; International Beverages Franchise; Europe, Middle East and Africa; Latin America Foods; and Asia Pacific Foods. It offers cereals, chips, dips, granola bars, oatmeal, pasta, rice, and syrups and mixes; refrigerated dips and spreads; beverage concentrates, fountain syrups, and finished goods; and ready-to-drink tea and coffee products. The company also provides SodaStream sparkling water makers and related products, as well as various dairy products under the Agusha, Chudo, and Domik v Derevne brands. It serves wholesale and other distributors, foodservice customers, grocery stores, drug stores, convenience stores, discount/dollar stores, mass merchandisers, membership stores, hard discounters, e-commerce retailers and authorized independent bottlers, and others through a network of direct-store-delivery, customer warehouse, and distributor networks, as well as directly to consumers through e-commerce platforms and retailers. PepsiCo, Inc. was founded in 1898 and is based in Purchase, New York."
+ }
+}
