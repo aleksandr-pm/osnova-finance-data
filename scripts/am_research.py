@@ -445,7 +445,10 @@ def series():
     import subprocess, sys as _s, time
     subprocess.run([_s.executable, "-m", "pip", "install", "-q", "websocket-client"], check=False)
     out = os.path.join(OUTD, "series"); os.makedirs(out, exist_ok=True); rep = {}
-    us = {"KO": "NYSE:KO", "MCD": "NYSE:MCD", "COST": "NASDAQ:COST", "AAPL": "NASDAQ:AAPL", "AMZN": "NASDAQ:AMZN", "V": "NYSE:V",
+    extra = [l.strip() for l in open(os.path.join(OUTD, "request.txt"), encoding="utf-8").read().splitlines()[2:] if ":" in l]
+    if extra:
+        us = {x.split(":")[1]: x for x in extra}
+    else: us = {"KO": "NYSE:KO", "MCD": "NYSE:MCD", "COST": "NASDAQ:COST", "AAPL": "NASDAQ:AAPL", "AMZN": "NASDAQ:AMZN", "V": "NYSE:V",
           "SBUX": "NASDAQ:SBUX", "RACE": "NYSE:RACE", "WDFC": "NASDAQ:WDFC", "TKO": "NYSE:TKO"}
     for k, sym in us.items():
         try:
@@ -474,6 +477,7 @@ def series():
               "AAPL": "Apple Inc.", "AMZN": "Amazon (company)", "V": "Visa Inc.", "SBUX": "Starbucks", "RACE": "Ferrari", "WDFC": "WD-40",
               "TKO": "TKO Group Holdings", "WWE": "WWE", "LULU": "Lulu Hypermarket", "TALABAT": "Talabat", "AIRARABIA": "Air Arabia",
               "EMAAR": "Emaar Properties", "ENBD": "Emirates NBD", "ALDAR": "Aldar Properties", "ADNOCGAS": "ADNOC Gas", "DEWA": "Dubai Electricity and Water Authority"}
+    if extra: titles = {}
     lg = os.path.join(out, "logos"); os.makedirs(lg, exist_ok=True)
     for k, tt in titles.items():
         try:

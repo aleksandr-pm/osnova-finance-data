@@ -1,8 +1,5 @@
-video|coffee shop|3
-video|latte art|2
-video|sports car|3
-video|red sports car|2
-video|garage tools|3
-video|rusty|2
-video|arena crowd|3
-video|boxing ring|2
+video|soda cans|2
+video|cola pouring|3
+video|potato chips|2
+video|credit card payment|3
+video|online shopping|2
