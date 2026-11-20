@@ -1,6 +1,5 @@
 {
  "earn_seen": {
-  "HD-2027Q3": 1794915538,
   "DIS-2026Q4": 1794918780,
   "NVDA-2027Q3": 1794958337,
   "LOW-2027Q3": 1795002524,
@@ -6120,6 +6119,16 @@
    "cap": 3459.620325788887,
    "name": "Post Holdings, Inc.",
    "ind": "Food Products"
+  },
+  "FRO": {
+   "cap": 9962.374484795091,
+   "name": "Frontline PLC",
+   "ind": "Energy"
+  },
+  "RLX": {
+   "cap": 1784.49171,
+   "name": "RLX Technology Inc",
+   "ind": "Tobacco"
   }
  },
  "earn_done": [
