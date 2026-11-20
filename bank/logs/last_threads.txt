@@ -1,14 +1,21 @@
-threads: duel_ny_gdp_mktp_cd_kz_uz (cis, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/bbea2b36751c/bank/covers/duel_ny_gdp_mktp_cd_kz_uz.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/bbea2b36751c/bank/cards/duel_ny_gdp_mktp_cd_kz_uz.jpg
+threads: mkt_country_earn_in (companies, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/a81834a2d415/bank/cards_markets/mkt_country_earn_in.jpg
 ---
-Ввп: Казахстан и Узбекистан, 2000-2025:
-1. 🇰🇿 Казахстан · $306 млрд, в 16,7 раза
-2. 🇺🇿 Узбекистан · $147 млрд, в 10,7 раза
-Казахстан: ВВП вырос в 16,7 раза с 2000 года.
+Самые прибыльные компании Индии, ноябрь 2026:
+1. 🇮🇳 Reliance Industries · $13,8 млрд
+2. 🇮🇳 Государственный банк Индии · $13 млрд
+3. 🇮🇳 Power Finance · $12,3 млрд
+4. 🇮🇳 HDFC Bank · $9,5 млрд
+5. 🇮🇳 ICICI Bank · $8,9 млрд
+6. 🇮🇳 Oil & Natural Gas · $7,9 млрд
+7. 🇮🇳 Tata Consultancy Services · $7,5 млрд
+8. 🇮🇳 LIC · $6,7 млрд
+9. 🇮🇳 Bajaj Finserv · $6,3 млрд
+10. 🇮🇳 Vodafone Idea · $6,2 млрд
+Reliance Industries: прибыль $13,8 млрд за год.
 Больше в Telegram @osnovafin
 ---
 Threads: текстом
-Ответ со ссылкой: 18104580317644941
-Опубликовано: 18381191407241507. Осталось новых рейтингов: 172
-exit=0 2026-11-19T17:29:15Z
+Ответ со ссылкой: 18017064336001242
+Опубликовано: 18146053423613198. Осталось новых рейтингов: 171
+exit=0 2026-11-20T06:32:11Z
