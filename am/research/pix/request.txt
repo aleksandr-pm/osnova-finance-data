@@ -1,8 +1,6 @@
-video|bank cards payment|3
-video|atm cash|2
-video|gas plant|3
-video|lng tanker ship|2
-video|solar panels|3
-video|power lines electricity|3
-video|light switch|2
-video|abu dhabi|3
+video|shopping cart warehouse|3
+video|iphone|3
+video|cardboard boxes delivery|3
+video|data center|3
+video|contactless payment|3
+video|credit card terminal|2

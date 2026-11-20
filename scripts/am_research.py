@@ -522,6 +522,13 @@ def commons():
     qs = [l.strip() for l in open(os.path.join(OUTD, "request.txt"), encoding="utf-8").read().splitlines()[2:] if "|" in l]
     for ln in qs:
         q, n = ln.split("|"); n = int(n)
+        if q.startswith("file:"):  # прямой файл (логотип SVG и т.п.) в PNG 1200 px
+            fn = q[5:]; time.sleep(10)
+            b = requests.get("https://commons.wikimedia.org/wiki/Special:FilePath/" + fn.replace(" ", "_"), params={"width": 1200}, headers=H, timeout=60)
+            if b.status_code == 200 and b.content[:4] == b"\x89PNG":
+                open(os.path.join(out, "file_" + "".join(ch if ch.isalnum() else "_" for ch in fn)[:40] + ".png"), "wb").write(b.content); rep.append({"file": fn, "license": "logo"})
+            else: rep.append({"file": fn, "error": b.status_code})
+            continue
         j = requests.get("https://commons.wikimedia.org/w/api.php", params={"action": "query", "generator": "search", "gsrsearch": q + " filetype:bitmap", "gsrnamespace": 6,
                          "gsrlimit": 25, "prop": "imageinfo", "iiprop": "url|size|extmetadata", "iiurlwidth": 1600, "format": "json"}, headers=H, timeout=40).json()
         pages = sorted(j.get("query", {}).get("pages", {}).values(), key=lambda p: p.get("index", 99))

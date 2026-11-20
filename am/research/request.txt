@@ -1,11 +1,11 @@
 commons
-2026-11-20T07:19:01Z
-Emirates NBD headquarters|2
-Aldar headquarters|2
-Yas Island|2
-Saadiyat Island|2
-Ruwais|2
-ADNOC|3
-Mohammed bin Rashid Al Maktoum Solar Park|3
-Dubai Electricity and Water Authority|2
-Jebel Ali power station|2
+2026-11-20T07:27:36Z
+file:Visa Inc. logo (2021–present).svg|1
+Costco warehouse|3
+Costco store interior|2
+Apple Park|2
+Apple Store|3
+Amazon fulfillment center|2
+Amazon delivery van|2
+data center servers|2
+Visa card|2
