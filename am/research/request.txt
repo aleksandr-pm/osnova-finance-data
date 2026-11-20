@@ -1,10 +1,11 @@
 commons
-2026-11-20T07:09:34Z
-Lulu Hypermarket|4
-Talabat delivery|3
-food delivery rider Dubai|2
-Air Arabia Airbus|4
-Sharjah International Airport|2
-Burj Khalifa|3
-Dubai Mall|3
-Dubai Creek Harbour|2
+2026-11-20T07:19:01Z
+Emirates NBD headquarters|2
+Aldar headquarters|2
+Yas Island|2
+Saadiyat Island|2
+Ruwais|2
+ADNOC|3
+Mohammed bin Rashid Al Maktoum Solar Park|3
+Dubai Electricity and Water Authority|2
+Jebel Ali power station|2

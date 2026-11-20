@@ -1,8 +1,8 @@
-video|supermarket|3
-video|grocery shopping|2
-video|food delivery|3
-video|delivery scooter|2
-video|airplane takeoff|3
-video|airport|2
-video|skyscraper construction|3
-video|luxury apartment|2
+video|bank cards payment|3
+video|atm cash|2
+video|gas plant|3
+video|lng tanker ship|2
+video|solar panels|3
+video|power lines electricity|3
+video|light switch|2
+video|abu dhabi|3
