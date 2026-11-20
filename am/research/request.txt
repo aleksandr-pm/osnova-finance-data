@@ -1,2 +1,11 @@
-logos4
-2026-11-20T06:11:42Z
+commons
+2026-11-20T06:42:03Z
+McDonald's restaurant exterior|4
+McDonald's Big Mac|2
+McDonald's drive-thru|2
+McDonald's restaurant interior|2
+Coca-Cola bottling plant|2
+Coca-Cola bottles|2
+Coca-Cola truck|1
+Dubai parking|3
+Salik toll gate|2

@@ -514,6 +514,33 @@ def logos4():
     json.dump(rep, open(os.path.join(out, "rep.json"), "w"), indent=1); print(rep)
 
 
+def commons():
+    """Фото со свободной лицензией с Wikimedia Commons по запросам из строк 3+ request.txt (запрос|кол-во)"""
+    import time
+    H = {"User-Agent": "osnova-research/1.0 (github.com/aleksandr-pm; research bot)"}
+    out = os.path.join(OUTD, "commons"); os.makedirs(out, exist_ok=True); rep = []
+    qs = [l.strip() for l in open(os.path.join(OUTD, "request.txt"), encoding="utf-8").read().splitlines()[2:] if "|" in l]
+    for ln in qs:
+        q, n = ln.split("|"); n = int(n)
+        j = requests.get("https://commons.wikimedia.org/w/api.php", params={"action": "query", "generator": "search", "gsrsearch": q + " filetype:bitmap", "gsrnamespace": 6,
+                         "gsrlimit": 25, "prop": "imageinfo", "iiprop": "url|size|extmetadata", "iiurlwidth": 1600, "format": "json"}, headers=H, timeout=40).json()
+        pages = sorted(j.get("query", {}).get("pages", {}).values(), key=lambda p: p.get("index", 99))
+        got = 0
+        for pg in pages:
+            ii = pg.get("imageinfo", [{}])[0]
+            if ii.get("width", 0) < 1200: continue
+            md = ii.get("extmetadata", {}); lic = md.get("LicenseShortName", {}).get("value", "")
+            if not any(x in lic for x in ("CC BY", "CC0", "Public domain", "CC-BY")): continue
+            time.sleep(8)
+            b = requests.get(ii.get("thumburl") or ii["url"], headers=H, timeout=60)
+            if b.status_code != 200 or b.content[:3] != b"\xff\xd8\xff": continue
+            slug = "".join(ch if ch.isalnum() else "_" for ch in q.lower())[:30]
+            fn = f"{slug}_{got + 1}.jpg"; open(os.path.join(out, fn), "wb").write(b.content); got += 1
+            rep.append({"file": fn, "title": pg["title"], "license": lic, "author": md.get("Artist", {}).get("value", "")[:120]})
+            if got >= n: break
+    json.dump(rep, open(os.path.join(out, "manifest.json"), "w"), indent=1, ensure_ascii=False); print(len(rep))
+
+
 def px():
     """Дневные цены и ключевые показатели для серии роликов про компании"""
     import subprocess, sys as _s
@@ -747,4 +774,4 @@ def buildings(tag="report"):
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl, "px": px, "dtclogo": dtclogo, "dtcimg": dtcimg, "series": series, "logos4": logos4}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl, "px": px, "dtclogo": dtclogo, "dtcimg": dtcimg, "series": series, "logos4": logos4, "commons": commons}[task]()
