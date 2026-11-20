@@ -4,7 +4,7 @@ video|dubai cars traffic|3
 video|toll road highway|2
 video|coca cola|3
 video|soda bottles factory|2
-video|mcdonalds|3
-video|burger restaurant|2
+video|burger restaurant|3
 video|fast food drive thru|2
-# 2026-11-20T06:09:57Z
+video|hamburger fries|2
+video|dividends money|2

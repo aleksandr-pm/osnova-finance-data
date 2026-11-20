@@ -4,6 +4,8 @@
 import os, json, re, subprocess, requests
 
 KEY = os.environ["PIXABAY_KEY"]
+import imageio_ffmpeg
+FF = imageio_ffmpeg.get_ffmpeg_exe()
 OUT = "pix_out"; os.makedirs(OUT, exist_ok=True)
 lines = [l.strip() for l in open("am/research/pix/request.txt", encoding="utf-8") if "|" in l]
 man = []
@@ -20,7 +22,7 @@ for ln in lines:
             try:
                 open(raw, "wb").write(requests.get(v["url"], timeout=180).content)
                 # вертикаль 1080x1920, до 12 сек, без звука: файлы маленькие, ветка не раздувается
-                subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", raw, "-t", "12", "-an", "-vf",
+                subprocess.run([FF, "-y", "-loglevel", "error", "-i", raw, "-t", "12", "-an", "-vf",
                                 "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30",
                                 "-c:v", "libx264", "-preset", "veryfast", "-crf", "22", "-pix_fmt", "yuv420p", os.path.join(OUT, fn)], check=True)
                 os.remove(raw)
