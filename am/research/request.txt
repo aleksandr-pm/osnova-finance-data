@@ -1,6 +1,8 @@
-series
-2026-11-20T07:54:37Z
-NASDAQ:PEP
-NYSE:MA
-NYSE:HD
-NYSE:LOW
+commons
+2026-11-20T07:56:24Z
+file:Pepsi logo (2023).svg|1
+file:PepsiCo logo.svg|1
+file:Mastercard-logo.svg|1
+file:Mastercard 2019 logo.svg|1
+Pepsi bottles|2
+Mastercard card|1
