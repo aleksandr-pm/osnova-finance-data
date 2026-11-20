@@ -1,6 +1,6 @@
 """Pixabay: видео и фото для вставок в ролики @aleksandr_markets.
 Запрос: am/research/pix/request.txt, строки вида  video|dubai traffic|3  или  photo|coca cola|2
-Файлы уходят в артефакт сборки (не в git), в git только manifest.json с авторами и ссылками."""
+Файлы уходят в ветку pix-cache (перезаписывается), в git только manifest.json с авторами и ссылками."""
 import os, json, re, requests
 
 KEY = os.environ["PIXABAY_KEY"]

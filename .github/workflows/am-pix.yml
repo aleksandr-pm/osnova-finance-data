@@ -1,5 +1,5 @@
 name: am-pix
-# Видео и фото Pixabay для роликов @aleksandr_markets (scripts/am_pix.py). Файлы в артефакте на 3 дня.
+# Видео и фото Pixabay для роликов @aleksandr_markets (scripts/am_pix.py). Файлы в ветке pix-cache (перезаписывается).
 on:
   push:
     paths: ["am/research/pix/request.txt"]
@@ -17,8 +17,10 @@ jobs:
       - run: python scripts/am_pix.py
         env:
           PIXABAY_KEY: ${{ secrets.PIXABAY_KEY }}
-      - uses: actions/upload-artifact@v4
-        with: { name: pix, path: pix_out, retention-days: 3 }
+      - name: files to orphan branch pix-cache (force, no history on main)
+        run: |
+          cd pix_out && git init -q -b pix-cache && git config user.name "osnova-bot" && git config user.email "osnova-bot@users.noreply.github.com"
+          git add -A && git commit -qm "pix cache" && git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" pix-cache
       - run: |
           git config user.name "osnova-bot"; git config user.email "osnova-bot@users.noreply.github.com"
           git add am/research/pix/manifest.json; git commit -m "am: pix manifest [skip ci]" || exit 0
