@@ -1,226 +1,182 @@
 [
  {
-  "file": "parking_garage_1.jpg",
-  "q": "parking garage",
-  "w": 4288,
-  "h": 2848,
-  "user": "wal_172619",
-  "page": "https://pixabay.com/photos/multi-storey-car-park-automobile-7921955/"
+  "file": "supermarket_1.mp4",
+  "q": "supermarket",
+  "w": 2560,
+  "h": 1440,
+  "sec": 6,
+  "user": "RafterJr72",
+  "page": "https://pixabay.com/videos/id-21117/"
  },
  {
-  "file": "parking_garage_2.jpg",
-  "q": "parking garage",
-  "w": 4032,
-  "h": 3024,
-  "user": "DAVID_UNDERLAND",
-  "page": "https://pixabay.com/photos/architecture-building-grey-4877146/"
+  "file": "supermarket_2.mp4",
+  "q": "supermarket",
+  "w": 1280,
+  "h": 720,
+  "sec": 18,
+  "user": "Buvrix27",
+  "page": "https://pixabay.com/videos/id-1735/"
  },
  {
-  "file": "parking_garage_3.jpg",
-  "q": "parking garage",
-  "w": 6000,
-  "h": 4000,
-  "user": "opollophotography",
-  "page": "https://pixabay.com/photos/property-house-real-estate-court-7046997/"
+  "file": "supermarket_3.mp4",
+  "q": "supermarket",
+  "w": 1920,
+  "h": 1080,
+  "sec": 14,
+  "user": "Coverr-Free-Footage",
+  "page": "https://pixabay.com/videos/id-4730/"
  },
  {
-  "file": "parking_garage_4.jpg",
-  "q": "parking garage",
-  "w": 3916,
-  "h": 5874,
-  "user": "LifeOfDapo",
-  "page": "https://pixabay.com/photos/multi-storey-parking-garage-building-7228120/"
+  "file": "grocery_shopping_1.mp4",
+  "q": "grocery shopping",
+  "w": 2160,
+  "h": 3840,
+  "sec": 10,
+  "user": "GSA_Épicerie_Du_Monde",
+  "page": "https://pixabay.com/videos/id-358890/"
  },
  {
-  "file": "parking_lot_1.jpg",
-  "q": "parking lot",
-  "w": 4548,
-  "h": 2979,
-  "user": "Pexels",
-  "page": "https://pixabay.com/photos/brick-wall-empty-lighted-night-1834446/"
+  "file": "grocery_shopping_2.mp4",
+  "q": "grocery shopping",
+  "w": 1920,
+  "h": 1080,
+  "sec": 6,
+  "user": "julientromeur",
+  "page": "https://pixabay.com/videos/id-137247/"
  },
  {
-  "file": "parking_lot_2.jpg",
-  "q": "parking lot",
-  "w": 4123,
-  "h": 2320,
-  "user": "harutmovsisyan",
-  "page": "https://pixabay.com/photos/parking-space-man-city-person-1487891/"
+  "file": "food_delivery_1.mp4",
+  "q": "food delivery",
+  "w": 1920,
+  "h": 1080,
+  "sec": 17,
+  "user": "GreenCardShow",
+  "page": "https://pixabay.com/videos/id-11323/"
  },
  {
-  "file": "parking_lot_3.jpg",
-  "q": "parking lot",
-  "w": 4500,
-  "h": 3000,
-  "user": "blickpixel",
-  "page": "https://pixabay.com/photos/multi-storey-car-park-park-level-502960/"
+  "file": "food_delivery_2.mp4",
+  "q": "food delivery",
+  "w": 1920,
+  "h": 1080,
+  "sec": 27,
+  "user": "whitesession",
+  "page": "https://pixabay.com/videos/id-11991/"
  },
  {
-  "file": "parking_sign_1.jpg",
-  "q": "parking sign",
-  "w": 6000,
-  "h": 4000,
-  "user": "geralt",
-  "page": "https://pixabay.com/photos/charging-station-electric-gas-station-4636710/"
+  "file": "food_delivery_3.mp4",
+  "q": "food delivery",
+  "w": 1920,
+  "h": 1080,
+  "sec": 30,
+  "user": "Nova2000",
+  "page": "https://pixabay.com/videos/id-148288/"
  },
  {
-  "file": "parking_sign_2.jpg",
-  "q": "parking sign",
-  "w": 6000,
-  "h": 4000,
-  "user": "planet_fox",
-  "page": "https://pixabay.com/photos/park-parking-ticket-symbol-4934356/"
+  "file": "delivery_scooter_1.mp4",
+  "q": "delivery scooter",
+  "w": 1080,
+  "h": 1920,
+  "sec": 54,
+  "user": "Matthias_Groeneveld",
+  "page": "https://pixabay.com/videos/id-250847/"
  },
  {
-  "file": "mcdonalds_1.jpg",
-  "q": "mcdonalds",
-  "w": 2201,
-  "h": 1467,
-  "user": "12019",
-  "page": "https://pixabay.com/photos/lake-mcdonald-glacier-national-park-1733307/"
+  "file": "delivery_scooter_2.mp4",
+  "q": "delivery scooter",
+  "w": 3840,
+  "h": 2160,
+  "sec": 7,
+  "user": "pixzel_studio",
+  "page": "https://pixabay.com/videos/id-377123/"
  },
  {
-  "file": "mcdonalds_2.jpg",
-  "q": "mcdonalds",
-  "w": 5033,
-  "h": 3510,
-  "user": "Anestiev",
-  "page": "https://pixabay.com/photos/night-traffic-bulgaria-burgas-city-2070798/"
+  "file": "airplane_takeoff_1.mp4",
+  "q": "airplane takeoff",
+  "w": 0,
+  "h": 0,
+  "sec": 15,
+  "user": "Vimeo-Free-Videos",
+  "page": "https://pixabay.com/videos/id-428/"
  },
  {
-  "file": "mcdonalds_3.jpg",
-  "q": "mcdonalds",
-  "w": 2199,
-  "h": 946,
-  "user": "12019",
-  "page": "https://pixabay.com/photos/lake-mcdonald-glacier-national-park-1733308/"
+  "file": "airplane_takeoff_2.mp4",
+  "q": "airplane takeoff",
+  "w": 1920,
+  "h": 1080,
+  "sec": 16,
+  "user": "Vimeo-Free-Videos",
+  "page": "https://pixabay.com/videos/id-160/"
  },
  {
-  "file": "mcdonalds_4.jpg",
-  "q": "mcdonalds",
-  "w": 2201,
-  "h": 1467,
-  "user": "12019",
-  "page": "https://pixabay.com/photos/lake-mcdonald-glacier-national-park-1874262/"
+  "file": "airplane_takeoff_3.mp4",
+  "q": "airplane takeoff",
+  "w": 0,
+  "h": 0,
+  "sec": 18,
+  "user": "Vimeo-Free-Videos",
+  "page": "https://pixabay.com/videos/id-431/"
  },
  {
-  "file": "mcdonalds_5.jpg",
-  "q": "mcdonalds",
-  "w": 2201,
-  "h": 1467,
-  "user": "12019",
-  "page": "https://pixabay.com/photos/lake-mcdonald-glacier-national-park-1876373/"
+  "file": "airport_1.mp4",
+  "q": "airport",
+  "w": 1920,
+  "h": 1080,
+  "sec": 11,
+  "user": "Joker911",
+  "page": "https://pixabay.com/videos/id-36510/"
  },
  {
-  "file": "big_mac_burger_1.jpg",
-  "q": "big mac burger",
-  "w": 4945,
-  "h": 3397,
-  "user": "SylwesterL",
-  "page": "https://pixabay.com/photos/hamburger-sandwich-chicken-healthy-8026582/"
+  "file": "airport_2.mp4",
+  "q": "airport",
+  "w": 1920,
+  "h": 1080,
+  "sec": 20,
+  "user": "Life-Of-Vids",
+  "page": "https://pixabay.com/videos/id-3593/"
  },
  {
-  "file": "big_mac_burger_2.jpg",
-  "q": "big mac burger",
-  "w": 3000,
-  "h": 1928,
-  "user": "StartupStockPhotos",
-  "page": "https://pixabay.com/photos/typing-computer-man-workspace-work-849806/"
+  "file": "skyscraper_construction_1.mp4",
+  "q": "skyscraper construction",
+  "w": 3840,
+  "h": 2160,
+  "sec": 19,
+  "user": "fokus_media",
+  "page": "https://pixabay.com/videos/id-206315/"
  },
  {
-  "file": "big_mac_burger_3.jpg",
-  "q": "big mac burger",
-  "w": 6016,
-  "h": 4016,
-  "user": "Pexels",
-  "page": "https://pixabay.com/photos/man-computer-screen-desktop-imac-1839500/"
+  "file": "skyscraper_construction_2.mp4",
+  "q": "skyscraper construction",
+  "w": 1920,
+  "h": 1080,
+  "sec": 15,
+  "user": "chuduyen215",
+  "page": "https://pixabay.com/videos/id-42923/"
  },
  {
-  "file": "drive_thru_1.jpg",
-  "q": "drive thru",
-  "w": 6784,
-  "h": 3816,
-  "user": "trent_garverick",
-  "page": "https://pixabay.com/photos/restaurant-in-n-out-burger-night-5467806/"
+  "file": "skyscraper_construction_3.mp4",
+  "q": "skyscraper construction",
+  "w": 1920,
+  "h": 1080,
+  "sec": 16,
+  "user": "chuduyen215",
+  "page": "https://pixabay.com/videos/id-42926/"
  },
  {
-  "file": "drive_thru_2.jpg",
-  "q": "drive thru",
-  "w": 6000,
-  "h": 4000,
-  "user": "michaelform",
-  "page": "https://pixabay.com/photos/wendys-wendy-fast-food-4010578/"
+  "file": "luxury_apartment_1.mp4",
+  "q": "luxury apartment",
+  "w": 2160,
+  "h": 3840,
+  "sec": 10,
+  "user": "doktorkleinmusic",
+  "page": "https://pixabay.com/videos/id-299949/"
  },
  {
-  "file": "coca_cola_bottle_1.jpg",
-  "q": "coca cola bottle",
-  "w": 2048,
-  "h": 1420,
-  "user": "DWilliam",
-  "page": "https://pixabay.com/photos/drink-coca-cola-soda-glass-cold-647063/"
- },
- {
-  "file": "coca_cola_bottle_2.jpg",
-  "q": "coca cola bottle",
-  "w": 7087,
-  "h": 2059,
-  "user": "maja7777",
-  "page": "https://pixabay.com/photos/bottles-isolated-transparent-bottle-3006387/"
- },
- {
-  "file": "coca_cola_bottle_3.jpg",
-  "q": "coca cola bottle",
-  "w": 7087,
-  "h": 2059,
-  "user": "Carlosgmenezo",
-  "page": "https://pixabay.com/photos/bottles-colors-crystal-container-2898144/"
- },
- {
-  "file": "coca_cola_bottle_4.jpg",
-  "q": "coca cola bottle",
-  "w": 1897,
-  "h": 2844,
-  "user": "12019",
-  "page": "https://pixabay.com/photos/oakville-california-sign-143980/"
- },
- {
-  "file": "coca_cola_truck_1.jpg",
-  "q": "coca cola truck",
-  "w": 5184,
-  "h": 3456,
-  "user": "monokiss",
-  "page": "https://pixabay.com/photos/car-van-automobile-old-car-3408969/"
- },
- {
-  "file": "coca_cola_truck_2.jpg",
-  "q": "coca cola truck",
-  "w": 4293,
-  "h": 3150,
-  "user": "USA-Reiseblogger",
-  "page": "https://pixabay.com/photos/prague-europe-czech-republic-city-1783049/"
- },
- {
-  "file": "dubai_road_1.jpg",
-  "q": "dubai road",
-  "w": 6000,
-  "h": 4000,
-  "user": "enjoytheworld",
-  "page": "https://pixabay.com/photos/dubai-emirates-burj-khalifa-skyline-4044183/"
- },
- {
-  "file": "dubai_road_2.jpg",
-  "q": "dubai road",
-  "w": 5184,
-  "h": 3456,
-  "user": "hariskhan488",
-  "page": "https://pixabay.com/photos/desert-sand-dunes-dubai-native-6826299/"
- },
- {
-  "file": "dubai_road_3.jpg",
-  "q": "dubai road",
-  "w": 4951,
-  "h": 3301,
-  "user": "katetrysh",
-  "page": "https://pixabay.com/photos/jumeirah-lake-towers-dubai-city-uae-9000167/"
+  "file": "luxury_apartment_2.mp4",
+  "q": "luxury apartment",
+  "w": 3840,
+  "h": 2160,
+  "sec": 10,
+  "user": "nuwaus",
+  "page": "https://pixabay.com/videos/id-211152/"
  }
 ]
