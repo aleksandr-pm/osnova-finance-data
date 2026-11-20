@@ -1,12 +1,9 @@
-video|car park|4
-video|parking lot cars|4
-video|parking meter|2
-video|hamburger|4
-video|french fries|3
-video|fast food restaurant|3
-video|cola glass ice|3
-video|bottling plant|3
-video|soda cans|2
-video|counting money|3
-video|stock market chart|3
-video|highway traffic night|3
+photo|parking garage|4
+photo|parking lot|3
+photo|parking sign|2
+photo|mcdonalds|5
+photo|big mac burger|3
+photo|drive thru|2
+photo|coca cola bottle|4
+photo|coca cola truck|2
+photo|dubai road|3
