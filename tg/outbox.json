@@ -1,38 +1,5 @@
 [
  {
-  "id": "calendar-2026-11-18",
-  "caption": "🗓 <b>Экономический календарь на 18 ноября</b>\n\nГлавное:\n11:00 🇬🇧 Инфляция (CPI), г/г\n23:00 🇺🇸 Протокол заседания ФРС\n\nВремя по Дубаю · #календарь",
-  "t": 1794978044,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/calendar-2026-11-18.png"
- },
- {
-  "id": "chart-2026-11-18-INTU",
-  "caption": "📊 Акции <b>Intuit</b> упали на 7,17% за день\nЗа полгода: −20,43%, цена $320,79\n\n#графикдня",
-  "t": 1795007979,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-18-INTU.png"
- },
- {
-  "id": "alert-2026-11-18-PANW-u",
-  "caption": "⚡️🚀 <b>Palo Alto Networks</b> (PANW) +7,19% за день, $331,54\n\n#алерт",
-  "t": 1795015072
- },
- {
-  "id": "alert-2026-11-18-UNH-d",
-  "caption": "⚡️🔻 <b>UnitedHealth</b> (UNH) −6,80% за день, $363,2\n\n#алерт",
-  "t": 1795019056
- },
- {
-  "id": "alert-2026-11-18-CRWD-u",
-  "caption": "⚡️🚀 <b>CrowdStrike</b> (CRWD) +7,99% за день, $237,12\n\n#алерт",
-  "t": 1795022976
- },
- {
-  "id": "chart-2026-11-18-UNH",
-  "caption": "📊 Акции <b>UnitedHealth</b> упали на 8,17% за день\nЗа полгода: −8,56%, цена $357,65\n\n#графикдня",
-  "t": 1795023622,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-18-UNH.png"
- },
- {
   "id": "alert-2026-11-18-MSTR-d",
   "caption": "⚡️🔻 <b>Strategy</b> (MSTR) −5,91% за день, $90,79\n\n#алерт",
   "t": 1795033775
@@ -157,5 +124,35 @@
   "id": "alert-2026-11-20-TSM-d",
   "caption": "⚡️🔻 <b>TSMC</b> (TSM) −6,94% за день, $327,64\n\n#алерт",
   "t": 1795191576
+ },
+ {
+  "id": "alert-2026-11-20-TSLA-d",
+  "caption": "⚡️🔻 <b>Tesla</b> (TSLA) −5,83% за день, $352,59\n\n#алерт",
+  "t": 1795195310
+ },
+ {
+  "id": "alert-2026-11-20-TXN-d",
+  "caption": "⚡️🔻 <b>Texas Instruments</b> (TXN) −5,36% за день, $270,42\n\n#алерт",
+  "t": 1795195310
+ },
+ {
+  "id": "alert-2026-11-20-GS-d",
+  "caption": "⚡️🔻 <b>Goldman Sachs</b> (GS) −5,47% за день, $801,18\n\n#алерт",
+  "t": 1795195310
+ },
+ {
+  "id": "alert-2026-11-20-INTC-d",
+  "caption": "⚡️🔻 <b>Intel</b> (INTC) −5,24% за день, $52,8\n\n#алерт",
+  "t": 1795195310
+ },
+ {
+  "id": "alert-2026-11-20-HOOD-d",
+  "caption": "⚡️🔻 <b>Robinhood</b> (HOOD) −6,37% за день, $64,27\n\n#алерт",
+  "t": 1795195310
+ },
+ {
+  "id": "alert-2026-11-20-ASML-d",
+  "caption": "⚡️🔻 <b>ASML</b> (ASML) −6,17% за день, $1 273\n\n#алерт",
+  "t": 1795195310
  }
 ]
