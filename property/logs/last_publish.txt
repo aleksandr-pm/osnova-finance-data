@@ -1,20 +1,3 @@
-Слот reel: в очереди 7 из 28; LIVE=да
-Следующий: r_jebel_ali_zero (media/r_jebel_ali_zero.mp4)
----
-Zero office sales until June. 341 by September. Downtown Jebel Ali became a new office district in four months.
-
-Registered office sales, 2026:
-Jan to May: 0
-June 26, July 109, August 100, September 106
-Median price paid: 2,000 AED per sq ft
-Off-plan share: 100%, mostly RAW District by Imtiaz and Samana Business Hub
-
-Full data on osnova.property, link in bio. Or comment PRICE and we will send you prices paid by district.
-
-Source: DLD registered sales, office units, Jan to Sep 2026 · osnova.property. Market statistics, not an offer or investment advice.
-
-#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace #jebelali
----
-Контейнер 17924655087242274, загрузка 1.1 МБ
-Опубликовано: r_jebel_ali_zero → 18132836005699062
-exit=0 2026-11-20T10:09:17.038128+00:00
+Слот post: в очереди 0 из 28; LIVE=да
+Очередь пуста: нужны новые ролики
+exit=0 2026-11-20T12:37:11.607318+00:00
