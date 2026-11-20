@@ -1,0 +1,197 @@
+{
+ "px_KO": [
+  600,
+  [
+   "2015-05-26",
+   40.96
+  ],
+  [
+   "2026-11-16",
+   96.09
+  ]
+ ],
+ "fin_KO": "ok",
+ "px_MCD": [
+  600,
+  [
+   "2015-05-26",
+   95.93
+  ],
+  [
+   "2026-11-16",
+   272.35
+  ]
+ ],
+ "fin_MCD": "ok",
+ "px_COST": [
+  600,
+  [
+   "2015-05-26",
+   142.59
+  ],
+  [
+   "2026-11-16",
+   1093.83
+  ]
+ ],
+ "fin_COST": "ok",
+ "px_AAPL": [
+  600,
+  [
+   "2015-05-26",
+   32.57
+  ],
+  [
+   "2026-11-16",
+   349.21
+  ]
+ ],
+ "fin_AAPL": "ok",
+ "px_AMZN": [
+  600,
+  [
+   "2015-05-26",
+   21.4615
+  ],
+  [
+   "2026-11-16",
+   257.37
+  ]
+ ],
+ "fin_AMZN": "ok",
+ "px_V": [
+  600,
+  [
+   "2015-05-26",
+   68.68
+  ],
+  [
+   "2026-11-16",
+   402.25
+  ]
+ ],
+ "fin_V": "ok",
+ "px_SBUX": [
+  600,
+  [
+   "2015-05-26",
+   51.96
+  ],
+  [
+   "2026-11-16",
+   104.47
+  ]
+ ],
+ "fin_SBUX": "ok",
+ "px_RACE": [
+  579,
+  [
+   "2015-10-19",
+   56.38
+  ],
+  [
+   "2026-11-16",
+   405.44
+  ]
+ ],
+ "fin_RACE": "ok",
+ "px_WDFC": [
+  600,
+  [
+   "2015-05-26",
+   84.37
+  ],
+  [
+   "2026-11-16",
+   220.18
+  ]
+ ],
+ "fin_WDFC": "ok",
+ "px_TKO": [
+  600,
+  [
+   "2015-05-26",
+   14.3
+  ],
+  [
+   "2026-11-16",
+   181.47
+  ]
+ ],
+ "fin_TKO": "ok",
+ "logo_PARKIN": "no qid",
+ "logo_SALIK": [
+  "Salik's Al Garhoud Bridge Toll Gate.jpg",
+  84094
+ ],
+ "logo_KO": [
+  "The Coca-Cola Company (2020).svg",
+  21749
+ ],
+ "logo_MCD": [
+  "McDonald's with slogan 2020.svg",
+  57464
+ ],
+ "logo_COST": [
+  "Costco Wholesale logo 2010-10-26.svg",
+  68138
+ ],
+ "logo_AAPL": [
+  "Apple logo black.svg",
+  28395
+ ],
+ "logo_AMZN": [
+  "Amazon logo.svg",
+  41449
+ ],
+ "logo_V": [
+  "Visa Inc. logo (1992\u20131999).svg",
+  37427
+ ],
+ "logo_SBUX": [
+  "Starbucks coffee wordmark.png",
+  9379
+ ],
+ "logo_RACE": [
+  "Ferrari wordmark.svg",
+  13853
+ ],
+ "logo_WDFC": [
+  "WD-40 logo.svg",
+  36065
+ ],
+ "logo_TKO": [
+  "TKO Group Holdings Logo 2024.svg",
+  240747
+ ],
+ "logo_WWE": [
+  "WWE Official Logo.svg",
+  97720
+ ],
+ "logo_LULU": [
+  "Lulu Logo.png",
+  18899
+ ],
+ "logo_TALABAT": [
+  "Talabat logo.svg",
+  13865
+ ],
+ "logo_AIRARABIA": [
+  "Air Arabia Logo.svg",
+  53286
+ ],
+ "logo_EMAAR": [
+  "Emaar logo.svg",
+  34220
+ ],
+ "logo_ENBD": "no P154",
+ "logo_ALDAR": [
+  "Aldar logo.png",
+  3058
+ ],
+ "logo_ADNOCGAS": "no qid",
+ "logo_DEWA": [
+  "Logo of DEWA.png",
+  16952
+ ]
+}

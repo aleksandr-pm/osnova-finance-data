@@ -1,0 +1,42 @@
+{
+ "2026-09-30": {
+  "Total Revenue": 37910600000.0,
+  "Net Income": 2526700000.0,
+  "Operating Income": 4084900000.0,
+  "Gross Profit": 8485600000.0
+ },
+ "2025-09-30": {
+  "Total Revenue": 37184400000.0,
+  "Net Income": 1856400000.0,
+  "Operating Income": 3580800000.0,
+  "Gross Profit": 8467300000.0
+ },
+ "2024-09-30": {
+  "Total Revenue": 36176200000.0,
+  "Net Income": 3760900000.0,
+  "Operating Income": 5107600000.0,
+  "Gross Profit": 9709100000.0
+ },
+ "2023-09-30": {
+  "Total Revenue": 35975600000.0,
+  "Net Income": 4124500000.0,
+  "Operating Income": 5502900000.0,
+  "Gross Profit": 9846200000.0
+ },
+ "2022-09-30": {
+  "Total Revenue": null,
+  "Net Income": null,
+  "Operating Income": null,
+  "Gross Profit": null
+ },
+ "_info": {
+  "marketCap": 119106248704,
+  "dividendRate": 2.52,
+  "dividendYield": 2.31,
+  "trailingPE": 49.278305,
+  "currentPrice": 104.47,
+  "sharesOutstanding": 1140100000,
+  "fullTimeEmployees": 306000,
+  "longBusinessSummary": "Starbucks Corporation, together with its subsidiaries, operates as a roaster, marketer, and retailer of coffee internationally. The company operates through three segments: North America, International, and Channel Development. Its stores offer coffee, tea, and other beverages, roasted whole beans and ground coffees, complementary food, packaged coffees, single-serve products, and ready-to-drink beverages; and various food products, such as pastries, breakfast sandwiches, and lunch items. The company also licenses its trademarks through licensed stores, and grocery and foodservice accounts. The company offers its products under the Starbucks Coffee, Teavana, Ethos, and Starbucks Reserve brands. Starbucks Corporation was founded in 1971 and is based in Seattle, Washington."
+ }
+}

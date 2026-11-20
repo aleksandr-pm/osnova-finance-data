@@ -1,0 +1,42 @@
+{
+ "2025-12-31": {
+  "Total Revenue": 4735151000.0,
+  "Net Income": 195403000.0,
+  "Operating Income": 835015000.0,
+  "Gross Profit": 2831998000.0
+ },
+ "2024-12-31": {
+  "Total Revenue": 4884241000.0,
+  "Net Income": 9408000.0,
+  "Operating Income": 30946000.0,
+  "Gross Profit": 2260384000.0
+ },
+ "2023-12-31": {
+  "Total Revenue": 3224796000.0,
+  "Net Income": 223476000.0,
+  "Operating Income": 397309000.0,
+  "Gross Profit": 1648037000.0
+ },
+ "2022-12-31": {
+  "Total Revenue": 1140147000.0,
+  "Net Income": 387275000.0,
+  "Operating Income": 544387000.0,
+  "Gross Profit": 814561000.0
+ },
+ "2021-12-31": {
+  "Total Revenue": null,
+  "Net Income": null,
+  "Operating Income": null,
+  "Gross Profit": null
+ },
+ "_info": {
+  "marketCap": 34225033216,
+  "dividendRate": 3.16,
+  "dividendYield": 1.66,
+  "trailingPE": 48.651474,
+  "currentPrice": 181.47,
+  "sharesOutstanding": 72440231,
+  "fullTimeEmployees": 4000,
+  "longBusinessSummary": "TKO Group Holdings, Inc. operates as a sports and entertainment company. The company operates through three segments: UFC, WWE and IMG. The UFC segment distributes programming content; ticket sales and site fees associated with the business's global live events; partnerships and marketing; and consumer products licensing agreements of UFC-branded products. The WWE segment consists of media rights fees associated with the distribution of its programming content; ticket sales and site fees associated with the business's global live events; partnerships and marketing; and consumer products licensing agreements of WWE-branded products. The IMG segment specializing in media rights management and sales, multi-channel content production and distribution, brand partnerships, strategic consulting, digital services, and event management. This segment also offers hospitality business, offering ticketing, curated guest experiences, live event production and travel management services. It is also involved in the merchandising of video games, apparel, equipment, trading cards, memorabilia, digital goods, and toys. In addition, the company engages in the sponsorships and advertising business, which offers sale of in-venue and in-broadcast advertising assets, content product integration, and digital impressions. The company was incorporated in 2023 and is based in New York, New York. TKO Group Holdings, Inc. is a subsidiary of WME Group, Inc."
+ }
+}

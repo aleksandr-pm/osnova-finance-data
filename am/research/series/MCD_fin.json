@@ -1,0 +1,36 @@
+{
+ "2025-12-31": {
+  "Total Revenue": 26885000000.0,
+  "Net Income": 8563000000.0,
+  "Operating Income": 12394000000.0,
+  "Gross Profit": 15434000000.0
+ },
+ "2024-12-31": {
+  "Total Revenue": 25920000000.0,
+  "Net Income": 8223000000.0,
+  "Operating Income": 11851000000.0,
+  "Gross Profit": 14710000000.0
+ },
+ "2023-12-31": {
+  "Total Revenue": 25495000000.0,
+  "Net Income": 8469000000.0,
+  "Operating Income": 11747000000.0,
+  "Gross Profit": 14564000000.0
+ },
+ "2022-12-31": {
+  "Total Revenue": 23182000000.0,
+  "Net Income": 6177000000.0,
+  "Operating Income": 10345000000.0,
+  "Gross Profit": 13207000000.0
+ },
+ "_info": {
+  "marketCap": 192220479488,
+  "dividendRate": 7.72,
+  "dividendYield": 2.82,
+  "trailingPE": 21.411163,
+  "currentPrice": 272.35,
+  "sharesOutstanding": 705784744,
+  "fullTimeEmployees": 150000,
+  "longBusinessSummary": "McDonald's Corporation owns, operates, and franchises restaurants under the McDonald's brand in the United States and internationally. It offers food and beverages, including hamburgers and cheeseburgers, various chicken sandwiches, fries, shakes, frozen desserts, sundaes, soft serve cones, cookies, pies, soft drinks, coffee, and other beverages; and full or limited breakfast, as well as sells various other products during limited-time promotions. The company owns and operates franchised restaurants under various structures, including conventional franchise, developmental license, or affiliate. McDonald's Corporation was founded in 1940 and is based in Chicago, Illinois."
+ }
+}

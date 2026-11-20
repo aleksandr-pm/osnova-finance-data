@@ -1,0 +1,36 @@
+{
+ "2025-12-31": {
+  "Total Revenue": 716924000000.0,
+  "Net Income": 77670000000.0,
+  "Operating Income": 79975000000.0,
+  "Gross Profit": 360510000000.0
+ },
+ "2024-12-31": {
+  "Total Revenue": 637959000000.0,
+  "Net Income": 59248000000.0,
+  "Operating Income": 68593000000.0,
+  "Gross Profit": 311671000000.0
+ },
+ "2023-12-31": {
+  "Total Revenue": 574785000000.0,
+  "Net Income": 30425000000.0,
+  "Operating Income": 36852000000.0,
+  "Gross Profit": 270046000000.0
+ },
+ "2022-12-31": {
+  "Total Revenue": 513983000000.0,
+  "Net Income": -2722000000.0,
+  "Operating Income": 12248000000.0,
+  "Gross Profit": 225152000000.0
+ },
+ "_info": {
+  "marketCap": 2782977327104,
+  "dividendRate": null,
+  "dividendYield": 0.0,
+  "trailingPE": 20.805983,
+  "currentPrice": 257.37,
+  "sharesOutstanding": 10813138306,
+  "fullTimeEmployees": 1638000,
+  "longBusinessSummary": "Amazon.com, Inc. engages in the retail sale of consumer products, advertising, and subscriptions service through online and physical stores in North America and internationally. The company operates through three segments: North America, International, and Amazon Web Services (AWS). It also manufactures and sells electronic devices, including Kindle, fire tablets, fire TVs, echo, ring, blink, and eero; and develops and produces media content. In addition, the company offers programs that enable sellers to sell their products in its stores; and programs that allow authors, independent publishers, musicians, filmmakers, Twitch streamers, skill and app developers, and others to publish and sell content. Further, it provides compute, storage, Artificial intelligence, database, analytics, machine learning, and other services, as well as advertising services through programs, such as sponsored ads, display, and video advertising. Additionally, the company offers Amazon Prime, a membership program. The company's products offered through its stores include merchandise and content purchased for resale and products offered by third-party sellers. It serves consumers, sellers, developers, enterprises, content creators, advertisers, and employees. The company was incorporated in 1994 and is headquartered in Seattle, Washington."
+ }
+}
