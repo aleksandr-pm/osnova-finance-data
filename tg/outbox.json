@@ -1,10 +1,5 @@
 [
  {
-  "id": "alert-2026-11-18-MSTR-d",
-  "caption": "⚡️🔻 <b>Strategy</b> (MSTR) −5,91% за день, $90,79\n\n#алерт",
-  "t": 1795033775
- },
- {
   "id": "evening-2026-11-18",
   "caption": "📈 <b>Итоги дня 18 ноября</b>\n\nS&P 500 −0,23%, Nasdaq +0,42%, Dow Jones −1,11%\nНефть Brent −4,80%, Золото −3,53%\n\n#итогидня",
   "t": 1795039720,
@@ -154,5 +149,11 @@
   "id": "alert-2026-11-20-ASML-d",
   "caption": "⚡️🔻 <b>ASML</b> (ASML) −6,17% за день, $1 273\n\n#алерт",
   "t": 1795195310
+ },
+ {
+  "id": "chart-2026-11-20-MU",
+  "caption": "📊 Акции <b>Micron</b> упали на 12,13% за день\nЗа полгода: −17,21%, цена $606,02\n\n#графикдня",
+  "t": 1795196455,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-20-MU.png"
  }
 ]
