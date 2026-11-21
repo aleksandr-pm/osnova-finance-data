@@ -1,14 +1,21 @@
-threads: duel_ny_gdp_mktp_cd_us_cn (economy, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/86045ea88cd7/bank/covers/duel_ny_gdp_mktp_cd_us_cn.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/86045ea88cd7/bank/cards/duel_ny_gdp_mktp_cd_us_cn.jpg
+threads: bil_country_ch (billionaires, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/7db6ed84ff1d/bank/cards_markets/bil_country_ch.jpg
 ---
-Ввп: США и Китай, 2000-2025:
-1. 🇺🇸 США · $30,8 трлн, в 3 раза
-2. 🇨🇳 Китай · $19,5 трлн, в 15,9 раза
-Китай: ВВП вырос в 15,9 раза с 2000 года.
+Самые богатые люди Швейцарии, ноябрь 2026:
+1. 🇨🇭 Джанлуиджи Апонте · $44,6 млрд
+2. 🇨🇭 Рафаэла Апонте-Диамант · $44,6 млрд
+3. 🇨🇭 Иван Глазенберг · $12,7 млрд
+4. 🇨🇭 Эрнесто Бертарелли · $11,5 млрд
+5. 🇨🇭 Магдалена Мартулло-Блохер · $11,4 млрд
+6. 🇨🇭 Томас Шмидхайни · $10,1 млрд
+7. 🇨🇭 Рахель Блохер · $9 млрд
+8. 🇨🇭 Гийом Пуза · $7,8 млрд
+9. 🇨🇭 Дона Бертарелли · $7,4 млрд
+10. 🇨🇭 Рудольф Маг · $6,5 млрд
+№1: Джанлуиджи Апонте, $44,6 млрд.
 Больше в Telegram @osnovafin
 ---
-Threads: с картинкой
-Ответ со ссылкой: 17910785943598866
-Опубликовано: 18289335346295352. Осталось новых рейтингов: 170
-exit=0 2026-11-20T17:29:48Z
+Threads: текстом
+Ответ со ссылкой: 18352148143250164
+Опубликовано: 17959384083266538. Осталось новых рейтингов: 169
+exit=0 2026-11-21T06:28:09Z
