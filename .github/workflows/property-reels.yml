@@ -3,12 +3,10 @@ name: property-reels
 # Публикация только при наличии property/LIVE. Пауза: дата в property/pause_until.txt.
 on:
   schedule:
-    # 4 Reels в день (по Дубаю 09:11, 13:11, 17:41, 21:11) и 1 пост (15:41). Лучшие слоты выберем по статистике.
+    # 3 Reels в день (по Дубаю 09:11, 15:41, 21:11)
     - cron: "11 5 * * *"
-    - cron: "11 9 * * *"
-    - cron: "41 13 * * *"
+    - cron: "41 11 * * *"
     - cron: "11 17 * * *"
-    - cron: "41 11 * * *"   # пост
   push:
     branches: [main]
     paths: ["property/publish_request.txt"]   # разовая публикация вне расписания
@@ -44,7 +42,7 @@ jobs:
           ARGS=""
           if [ "${{ inputs.dry_run }}" = "yes" ]; then ARGS="--dry-run"; fi
           SLOT="${{ inputs.slot }}"
-          if [ "${{ github.event.schedule }}" = "41 11 * * *" ]; then SLOT=post; elif [ -n "${{ github.event.schedule }}" ]; then SLOT=reel; fi
+          if [ -n "${{ github.event.schedule }}" ]; then SLOT=reel; fi
           if [ "${{ github.event_name }}" = "push" ]; then ARGS="--force"; SLOT=$(awk '{print $1; exit}' property/publish_request.txt); fi
           export SLOT=${SLOT:-reel}
           set +e

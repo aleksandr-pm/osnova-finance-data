@@ -71,7 +71,8 @@ def race(c):
         for r,i in enumerate(order): tgt[i]=r
         pos=list(map(float,tgt)) if pos is None else [p+(t-p)*0.16 for p,t in zip(pos,tgt)]
         m=max(v); sc=m if sc is None else sc+(m-sc)*0.12; POS.append(pos[:]); SC.append(sc)
-    b=c["base_idx"]; G=sorted([(n,S[n][b],S[n][-1]) for n in NAMES],key=lambda r:-(r[2]/r[1]))
+    if not c.get("summary"): SUM=0
+    b=c.get("base_idx",0); G=sorted([(n,S[n][b],S[n][-1]) for n in NAMES],key=lambda r:-(r[2]/max(r[1],1e-9)))
     def draw(d,fi):
         if fi>=HOOK+RACE+HOLD: return summ(d,(fi-HOOK-RACE-HOLD)/FPS)
         t=fi/FPS; a=ease(t/0.3); head(d,a,c["kick"],c["title"],c["sub"])
