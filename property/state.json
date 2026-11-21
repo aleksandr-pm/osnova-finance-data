@@ -189,6 +189,14 @@
    "type": "reel",
    "dubai_time": "09:59",
    "timeset": "manual"
+  },
+  {
+   "id": "r_dubai_vs_abudhabi",
+   "at": "2026-11-21T09:53:16.226627+00:00",
+   "post": "18212165806374753",
+   "type": "reel",
+   "dubai_time": "13:53",
+   "timeset": "manual"
   }
  ]
 }

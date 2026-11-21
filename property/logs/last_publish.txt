@@ -1,18 +1,18 @@
-Слот reel: в очереди 4 из 28; LIVE=да
-Следующий: r_sports_city (media/r_sports_city.mp4)
+Слот reel: в очереди 3 из 28; LIVE=да
+Следующий: r_dubai_vs_abudhabi (media/r_dubai_vs_abudhabi.mp4)
 ---
-Sports City office prices are up 5.2x since 2020, the most in Dubai. Its office rent is down 62% over ten years, also the most.
+25,000 AED per sq m in Dubai. 13,500 in Abu Dhabi. The gap is close to 100%, the widest on record.
 
-Price, 2020 low to now: 453 to 2,374 AED per sq ft
-Rent, 10-year change: −62%
-Whole market rent over the same span: −18%
+2003 to 2008: the two moved together, both near 18,000 at the 2008 peak
+2009 to 2020: a gap of a few thousand dirhams either way
+2021 to 2026: Dubai breaks away
 
-When price and rent move in opposite directions this long, one of them is wrong. Full data on osnova.property, link in bio. Or comment DATA and we will send you the full research.
+Abu Dhabi is building fast: Aldar and Mubadala just committed AED 60bn to Al Maryah Island. Full data on osnova.property, link in bio. Or comment DATA and we will send you the full research.
 
-Source: DLD prices, Ejari rents · osnova.property. Market statistics, not an offer or investment advice.
+Source: BIS, local agents, UBS via OSNOVA Analytics. Market statistics, not an offer or investment advice.
 
-#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace #sportscity
+#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace #abudhabi #uae
 ---
-Контейнер 17924849463242274, загрузка 1.2 МБ
-Опубликовано: r_sports_city → 18118259381136437
-exit=0 2026-11-21T05:59:22.822483+00:00
+Контейнер 17924881416242274, загрузка 2.0 МБ
+Опубликовано: r_dubai_vs_abudhabi → 18212165806374753
+exit=0 2026-11-21T09:53:16.230909+00:00
