@@ -1,21 +1,18 @@
-Слот reel: в очереди 5 из 28; LIVE=да
-Следующий: alt_top_buildings_ranked (media/alt_top_buildings_ranked.mp4)
+Слот reel: в очереди 4 из 28; LIVE=да
+Следующий: r_sports_city (media/r_sports_city.mp4)
 ---
-62 ready offices sold in Bay Square this year, the most of any ready building in Dubai.
+Sports City office prices are up 5.2x since 2020, the most in Dubai. Its office rent is down 62% over ten years, also the most.
 
-Most traded ready office buildings, 2026, median price paid:
-Bay Square, Business Bay: 62 sales, 2,800 AED per sq ft
-Tamani Arts Offices, Business Bay: 57, 2,050
-Jumeirah Business Centre 5, JLT: 39, 2,707
-The One Tower, Barsha Heights: 38, 2,040
-Burlington Tower, Business Bay: 36, 1,944
+Price, 2020 low to now: 453 to 2,374 AED per sq ft
+Rent, 10-year change: −62%
+Whole market rent over the same span: −18%
 
-Full data on osnova.property, link in bio. Or comment PRICE and we will send you prices paid by district and building.
+When price and rent move in opposite directions this long, one of them is wrong. Full data on osnova.property, link in bio. Or comment DATA and we will send you the full research.
 
-Source: DLD transactions, ready office sales 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
+Source: DLD prices, Ejari rents · osnova.property. Market statistics, not an offer or investment advice.
 
-#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace
+#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace #sportscity
 ---
-Контейнер 17924745396242274, загрузка 3.2 МБ
-Опубликовано: alt_top_buildings_ranked → 18352859188281528
-exit=0 2026-11-20T18:00:43.192799+00:00
+Контейнер 17924849463242274, загрузка 1.2 МБ
+Опубликовано: r_sports_city → 18118259381136437
+exit=0 2026-11-21T05:59:22.822483+00:00
