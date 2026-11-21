@@ -1,19 +1,21 @@
-Слот reel: в очереди 2 из 28; LIVE=да
-Следующий: r_retail_vs_office (media/r_retail_vs_office.mp4)
+Слот reel: в очереди 1 из 28; LIVE=да
+Следующий: r_offplan_share (media/r_offplan_share.mp4)
 ---
-A Dubai shop bought in 2010 is up 3.6x. An office bought the same year took 14 years just to break even.
+In 2021 almost no one bought Dubai offices off-plan: 0.1% of sales. In 2026 it is 65%.
 
-Median price, AED per sq ft:
-Shops: 829 (2010) to 3,000 (2026)
-Offices: 1,123 (2010), 650 (2020), 2,386 (2026)
-A 2020 office buyer is up 3.7x on the same median
+Off-plan share of office sales:
+2015: 21%
+2021: 0.1%
+2024: 6%
+2025: 31%
+2026, Jan to Aug: 64.9%
 
-Entry point decides the return. Full data on osnova.property, link in bio. Or comment DATA and we will send you the full research.
+Off-plan used to be the discount. Now it is the premium. Full data on osnova.property, link in bio. Or comment DATA and we will send you the full research.
 
-Source: DLD registered sales, office and shop units; 2026 to 23 Oct · osnova.property. Market statistics, not an offer or investment advice.
+Source: DLD registered sales, office units; 2026 is Jan to Aug · osnova.property. Market statistics, not an offer or investment advice.
 
-#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace #dubairetail
+#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace #offplan
 ---
-Контейнер 17924942217242274, загрузка 1.5 МБ
-Опубликовано: r_retail_vs_office → 17986488776903915
-exit=0 2026-11-21T14:29:44.463246+00:00
+Контейнер 17924986608242274, загрузка 1.2 МБ
+Опубликовано: r_offplan_share → 18155529619554032
+exit=0 2026-11-21T17:46:59.074851+00:00
