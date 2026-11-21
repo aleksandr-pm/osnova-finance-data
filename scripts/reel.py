@@ -180,7 +180,8 @@ def set_theme(name):
                 else ["#17171A", "#5C1A23", "#A9786A", "#6B6462", "#C9C1B6"])
     C["rest"] = "#7E3A44" if name == "dark" else "#DDD7CE"
     ICON.update(ring=ring(48, C["graphite"]), tg_m=tg(60, C["bone"], C["graphite"]),
-                tg_cta=tg(72, C["bone"], C["graphite"]), tg_huge=tg(220, C["bone"], C["graphite"]))
+                tg_cta=tg(72, C["bone"], C["graphite"]), tg_huge=tg(220, C["bone"], C["graphite"]),
+                tg_end=tg(96, C["bone"], C["graphite"]), ring_cta=ring(72, C["bone"]))
     flag.cache_clear()
     tile.cache_clear()
 
@@ -582,7 +583,7 @@ def caption_bars(r, n):
             seen.add(h)
             tags.append(h)
     return "\n\n".join([
-        hook, CTA_TOP, rows, q, CTA_TEXT,
+        hook, CTA_TOP.format(n + 1), rows, q, CTA_TEXT,
         f"Источник: {r['source_full']}" + (f", {r['note']}" if r["block"] in ("companies", "billionaires") else f", {r['year']} год")
         + ". Не индивидуальная инвестиционная рекомендация.",
         " ".join(tags[:12]),
@@ -601,13 +602,19 @@ SRC_Y2 = 1508
 ROWH = 1490
 
 
+# 21.11: подписчиков на площадках почти нет (YouTube 24, TikTok 10 при 18 тыс. и 5 тыс. просмотров), а ролики звали
+# только в Telegram на «сделки инсайдеров», хотя смотрят графики экономики стран. Теперь серия с номером выпуска и
+# призыв подписаться там, где смотрят; Telegram в финальном кадре как канал новостей рынков.
+EPISODE = {"n": 0}
+
+
 def chrome(im, d, n, total, src):
     d.rectangle([0, 0, int(W * n / (total - 1)), 8], fill=C["graphite"])
     y0, y1 = TOP_CTA
     d.rectangle([LX, y0, W - LX, y1], fill=C["graphite"])
-    im.alpha_composite(ICON["tg_cta"], (LX + 26, (y0 + y1) // 2 - 36))
-    d.text((LX + 122, y0 + 42), "Подписывайтесь в Telegram", font=F(32, 500), fill=C["blush"], anchor="lm")
-    d.text((LX + 122, y0 + 96), "@osnovafin", font=F(62, 600), fill=C["bone"], anchor="lm")
+    im.alpha_composite(ICON["ring_cta"], (LX + 26, (y0 + y1) // 2 - 36))
+    d.text((LX + 122, y0 + 42), f"Выпуск №{EPISODE['n']} · подписывайтесь", font=F(32, 500), fill=C["blush"], anchor="lm")
+    d.text((LX + 122, y0 + 96), "Экономика в графиках", font=F(58, 600), fill=C["bone"], anchor="lm")
     ff = F(22, 400)
     d.text((LX, SRC_Y2), src, font=ff, fill=C["smoke"])
     d.text((LX, SRC_Y2 + 28), "Не индивидуальная инвестиционная рекомендация.", font=ff, fill=C["smoke"])
@@ -616,12 +623,13 @@ def chrome(im, d, n, total, src):
 def end_card(im, d, a):
     d.rectangle([0, TOP_CTA[1] + 10, W, BOTTOM], fill=hexa(C["bone"], a))
     d.rectangle([LX, TOP_CTA[1] + 40, W - LX, BOTTOM], fill=hexa(C["graphite"], a))
-    im.alpha_composite(fade(ICON["tg_huge"], a), ((W - 220) // 2, 470))
-    d.text((W / 2, 820), "@osnovafin", font=F(130, 600), fill=hexa(C["bone"], a), anchor="mm")
-    d.text((W / 2, 930), "Telegram · OSNOVA Finance", font=F(40, 400), fill=hexa(C["blush"], a), anchor="mm")
-    for i, l in enumerate(["Подписывайтесь:", "рейтинги, сделки инсайдеров,", "новости рынков каждый день"]):
-        d.text((W / 2, 1080 + i * 72), l, font=F(50, 600 if i < 2 else 400),
-               fill=hexa(C["bone"] if i < 2 else C["blush"], a), anchor="mm")
+    d.text((W / 2, 520), "Подписывайтесь", font=F(96, 600), fill=hexa(C["bone"], a), anchor="mm")
+    for i, l in enumerate(["новый график об экономике", "стран каждый день"]):
+        d.text((W / 2, 640 + i * 66), l, font=F(48, 400), fill=hexa(C["blush"], a), anchor="mm")
+    d.rectangle([LX + 80, 860, W - LX - 80, 862], fill=hexa(C["blush"], a))
+    im.alpha_composite(fade(ICON["tg_end"], a), ((W - 96) // 2, 930))
+    d.text((W / 2, 1110), "@osnovafin", font=F(96, 600), fill=hexa(C["bone"], a), anchor="mm")
+    d.text((W / 2, 1200), "Новости рынков 24/7 в Telegram", font=F(40, 400), fill=hexa(C["blush"], a), anchor="mm")
 
 
 def draw_header(d, r, kick=None, sub=None, title=None):
@@ -1658,8 +1666,8 @@ def tags_for(r, lead):
     return " ".join(tags[:12])
 
 
-CTA_TOP = "Новые рейтинги каждый день в Telegram @osnovafin, ссылка в профиле."
-CTA_TEXT = "Каждый день рынки, сделки инсайдеров из отчётов SEC и данные в Telegram @osnovafin, ссылка в профиле."
+CTA_TOP = "Экономика в графиках, выпуск №{}. Подписывайтесь: новый график каждый день."
+CTA_TEXT = "Новости рынков 24/7 на русском в Telegram @osnovafin, ссылка в профиле."
 
 
 def caption(r, n):
@@ -1686,7 +1694,7 @@ def caption(r, n):
         lead = top[0]["name"]
         q = "Кто, по-вашему, догонит №1?"
     src = src_line(r).replace("Источник: ", "Источник: ", 1)
-    return "\n\n".join([hook, CTA_TOP, rows, q, CTA_TEXT, src + " Не индивидуальная инвестиционная рекомендация.",
+    return "\n\n".join([hook, CTA_TOP.format(n + 1), rows, q, CTA_TEXT, src + " Не индивидуальная инвестиционная рекомендация.",
                         tags_for(r, lead)]).replace(NB, " ")
 
 
@@ -1698,6 +1706,7 @@ def tracks():
 
 
 def render(r, out, n, theme=None):
+    EPISODE["n"] = n + 1
     theme = {"line": "dark", "bignum": "dark", "radial": "dark", "columns": "light", "table": "light", "donutyr": "light", "slope": "dark"}.get(r.get("fmt"), theme)
     set_theme(theme or ("dark" if n % 5 in (1, 3) else "light"))
     total, frame = {"bars": make_frames, "line": make_frames_line2, "donut": make_frames_donut,
