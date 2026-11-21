@@ -1,24 +1,24 @@
-Threads @osnova_finance {"views": 1618, "likes": 5, "replies": 1, "reposts": 0, "followers_count": 7}
-  постов за 7 дней: 28, просмотров по постам: 1500, медиана: 8
-     835  Переводы мигрантов: Узбекистан, Таджикистан, Киргизия, 2005-
-     303  Ввп на человека: Россия, Казахстан, Беларусь, 2000-2025: 1. 
-     116  Ввп на человека: Россия и Китай, 2000-2025: 1. 🇷🇺 Россия · $
-      42  Крупнейший банк Дубая. Работает в ОАЭ, Саудовской Аравии, Ег
-      32  WD-40 продаёт смазку в синем баллончике больше 70 лет. Сами 
-Threads @osnova_report {"views": 1136, "likes": 9, "replies": 1, "reposts": 0, "followers_count": 82}
-  постов за 7 дней: 14, просмотров по постам: 985, медиана: 75
-     147  Tootsie Roll Industries выпускает конфеты Tootsie Roll, Char
-     123  Commercial Bank of Dubai обслуживает компании и частных клие
-     110  Mashreq старейший частный банк ОАЭ, основан в 1967 году  Выр
-     102  Крупнейший исламский банк ОАЭ. Работает без процентов: доход
-      99  Почти все пиццерии Domino's работают по франшизе, компания з
-Instagram @osnova_finance {"id": "17841410889815757", "followers_count": 20, "media_count": 102}
-  публикаций за 7 дней: 16, просмотров: 0
-       0 REELS  Россия: производство курятины выросло в 7,2 раза с {"ошибка": "(#10) Application does not have permission for this action"}
-       0 FEED   Катар: ВВП вырос в 12,2 раза с 2000 года.  Ввп: Са {"ошибка": "(#10) Application does not have permission for this action"}
-       0 REELS  Пакистан: переводы мигрантов выросли в 9,5 раза с  {"ошибка": "(#10) Application does not have permission for this action"}
-       0 REELS  Киргизия: резервы выросли в 14 раз с 2005 года.  Н {"ошибка": "(#10) Application does not have permission for this action"}
-       0 FEED   №1: Мириам Адельсон с семьёй, $32,1 млрд.  Самые б {"ошибка": "(#10) Application does not have permission for this action"}
-       0 REELS  Россия обогнала Канаду в 2008 году.  Новые рейтинг {"ошибка": "(#10) Application does not have permission for this action"}
-       0 FEED   Китай: ВВП на человека вырос в 14,3 раза с 2000 го {"ошибка": "(#10) Application does not have permission for this action"}
-       0 REELS  Узбекистан: переводы мигрантов выросли в 20,6 раза {"ошибка": "(#10) Application does not have permission for this action"}
+Threads @osnova_finance {"views": 1891, "likes": 4, "replies": 2, "reposts": 0, "followers_count": 7}
+  постов за 7 дней: 28, просмотров по постам: 1640, медиана: 13
+     953  Переводы мигрантов: Узбекистан, Таджикистан, Киргизия, 2005-
+     304  Ввп на человека: Россия, Казахстан, Беларусь, 2000-2025: 1. 
+      59  Ввп на человека: Польша и Россия, 2000-2025: 1. 🇵🇱 Польша · 
+      54  Ввп: Казахстан и Узбекистан, 2000-2025: 1. 🇰🇿 Казахстан · $3
+      43  Крупнейший банк Дубая. Работает в ОАЭ, Саудовской Аравии, Ег
+Threads @osnova_report {"views": 986, "likes": 7, "replies": 2, "reposts": 0, "followers_count": 82}
+  постов за 7 дней: 14, просмотров по постам: 701, медиана: 53
+      90  Hershey крупнейший производитель шоколада в США. Какао за по
+      82  Chipotle сама управляет всеми своими ресторанами, без франча
+      79  Duolingo зарабатывает на подписках Super и Max, бесплатная в
+      75  Al Ansari Financial Services: обмен валют и денежные перевод
+      57  Tabreed охлаждает здания централизованно через сети труб в О
+Instagram @osnova_finance {"id": "17841410889815757", "followers_count": 21, "media_count": 118}
+  публикаций за 7 дней: 22, просмотров: 0
+       0 REELS  Армения обогнала Азербайджан в 2004 году.  Новые р {"ошибка": "(#10) Application does not have permission for this action"}
+       0 FEED   Китай: ВВП вырос в 15,9 раза с 2000 года.  Ввп: СШ {"ошибка": "(#10) Application does not have permission for this action"}
+       0 REELS  Пять стран дают 70% мирового экспорта подсолнечног {"ошибка": "(#10) Application does not have permission for this action"}
+       0 REELS  Самые богатые люди из сферы телекома: №1 Карлос Сл {"ошибка": "(#10) Application does not have permission for this action"}
+       0 FEED   №1: Уоррен Баффетт, $162 млрд.  Самые богатые люди {"ошибка": "(#10) Application does not have permission for this action"}
+       0 REELS  Казахстан: ВВП на человека вырос в 12,5 раза с 200 {"ошибка": "(#10) Application does not have permission for this action"}
+       0 REELS  Китай: ВВП на человека вырос в 14,3 раза с 2000 го {"ошибка": "(#10) Application does not have permission for this action"}
+       0 FEED   Россия: ВВП на человека вырос в 9,9 раза с 2000 го {"ошибка": "(#10) Application does not have permission for this action"}
