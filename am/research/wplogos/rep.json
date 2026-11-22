@@ -1,12 +1,52 @@
 {
- "BRK": "name 'time' is not defined",
- "GOOGL": "name 'time' is not defined",
- "SAMSUNG": "name 'time' is not defined",
- "TSMC": "name 'time' is not defined",
- "TOYOTA": "name 'time' is not defined",
- "HYNIX": "name 'time' is not defined",
- "META": "name 'time' is not defined",
- "VW": "name 'time' is not defined",
- "TENCENT": "name 'time' is not defined",
- "APPLE": "name 'time' is not defined"
+ "BRK": [
+  "Berkshire Hathaway.svg",
+  200,
+  "png"
+ ],
+ "GOOGL": [
+  "Alphabet Inc Logo 2015.svg",
+  200,
+  "png"
+ ],
+ "SAMSUNG": [
+  "Samsung Black icon.svg",
+  200,
+  "png"
+ ],
+ "TSMC": [
+  "Tsmc.svg",
+  200,
+  "png"
+ ],
+ "TOYOTA": [
+  "Toyota.svg",
+  200,
+  "png"
+ ],
+ "HYNIX": [
+  "SK Hynix.svg",
+  200,
+  "png"
+ ],
+ "META": [
+  "Meta Platforms Inc. logo.svg",
+  200,
+  "png"
+ ],
+ "VW": [
+  "Volkswagen Group Logo 2023.svg",
+  200,
+  "png"
+ ],
+ "TENCENT": [
+  "Tencent logo 2017.svg",
+  200,
+  "png"
+ ],
+ "APPLE": [
+  "Apple logo black.svg",
+  200,
+  "png"
+ ]
 }
