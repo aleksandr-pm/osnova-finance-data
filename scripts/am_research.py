@@ -827,7 +827,47 @@ def brkcash():
     json.dump(rep, open(os.path.join(out, "report.json"), "w"), indent=1)
     print(json.dumps(rep, indent=1))
 
+def cashtop():
+    """Топ компаний мира по деньгам: наличные + краткосрочные вложения, последний квартал (yfinance)."""
+    import yfinance as yf
+    out = os.path.join(OUTD, "cashtop"); os.makedirs(out, exist_ok=True)
+    tick = ["BRK-B", "GOOGL", "MSFT", "AAPL", "AMZN", "META", "NVDA", "TSM", "AVGO", "ORCL", "TSLA", "NFLX", "CSCO", "JNJ", "PFE", "MRK", "LLY",
+            "ABBV", "UNH", "WMT", "XOM", "CVX", "COST", "BABA", "PDD", "JD", "BIDU", "QCOM", "INTC", "AMD", "ADBE", "CRM", "NVO", "ASML", "SAP",
+            "TM", "SONY", "7203.T", "6758.T", "9984.T", "005930.KS", "000660.KS", "0700.HK", "9988.HK", "1810.HK", "3690.HK", "1211.HK", "2222.SR",
+            "ROG.SW", "NESN.SW", "NOVN.SW", "MC.PA", "TTE", "SHEL", "BP", "AZN", "GSK", "VOW3.DE", "MBG.DE", "BMW.DE", "SIE.DE", "DTE.DE",
+            "RELIANCE.NS", "TCS.NS", "VALE", "PBR", "BHP", "RIO", "GM", "F", "IBM", "TXN", "KO", "PEP", "PG", "MCD", "DIS", "T", "VZ", "CMCSA",
+            "HD", "NKE", "V", "MA", "UBER", "PLTR", "ARM", "601857.SS", "600519.SS", "0941.HK", "0883.HK", "2318.HK"]
+    fx = {}
+    rows = []
+    for t in tick:
+        try:
+            tk = yf.Ticker(t)
+            bs = tk.quarterly_balance_sheet
+            if bs is None or bs.empty: rows.append({"t": t, "err": "no bs"}); continue
+            col = bs.columns[0]; r = {"t": t, "date": str(col)[:10]}
+            for k in ["Cash Cash Equivalents And Short Term Investments", "Cash And Cash Equivalents", "Other Short Term Investments", "Total Assets"]:
+                if k in bs.index:
+                    v = bs.loc[k, col]
+                    r[k] = None if v != v else float(v)
+            inf = tk.info; cur = inf.get("financialCurrency") or inf.get("currency") or "USD"
+            r.update(cur=cur, name=inf.get("longName") or inf.get("shortName"), sector=inf.get("sector"), industry=inf.get("industry"), mcap=inf.get("marketCap"),
+                     mcur=inf.get("currency"))
+            if cur != "USD":
+                if cur not in fx:
+                    h = yf.Ticker(f"{cur}USD=X").history(period="5d")["Close"]
+                    fx[cur] = float(h.iloc[-1]) if len(h) else None
+                r["fx"] = fx[cur]
+            rows.append(r); time.sleep(0.3)
+        except Exception as e:  # noqa: BLE001
+            rows.append({"t": t, "err": str(e)})
+    for r in rows:
+        c = r.get("Cash Cash Equivalents And Short Term Investments") or r.get("Cash And Cash Equivalents")
+        if c and (r.get("cur") == "USD" or r.get("fx")): r["cash_usd_bn"] = round(c * (r.get("fx") or 1) / 1e9, 1)
+    rows.sort(key=lambda r: -(r.get("cash_usd_bn") or 0))
+    json.dump(rows, open(os.path.join(out, "cashtop.json"), "w"), ensure_ascii=False, indent=1)
+    for r in rows[:30]: print(r.get("t"), r.get("name"), r.get("cash_usd_bn"), r.get("date"), r.get("sector"))
+
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl, "px": px, "dtclogo": dtclogo, "dtcimg": dtcimg, "series": series, "logos4": logos4, "commons": commons, "brkcash": brkcash}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl, "px": px, "dtclogo": dtclogo, "dtcimg": dtcimg, "series": series, "logos4": logos4, "commons": commons, "brkcash": brkcash, "cashtop": cashtop}[task]()
