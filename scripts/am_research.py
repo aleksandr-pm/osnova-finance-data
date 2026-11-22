@@ -782,7 +782,52 @@ def buildings(tag="report"):
     json.dump(rep, open(os.path.join(out, tag + ".json"), "w"), ensure_ascii=False, indent=1)
     print(json.dumps(rep, ensure_ascii=False, indent=1))
 
+def brkcash():
+    """Деньги Berkshire: SEC XBRL (2009+), годовые отчёты PDF (1994-2010), страницы-агрегаторы."""
+    import io, re as _re
+    out = os.path.join(OUTD, "brkcash"); os.makedirs(out, exist_ok=True)
+    UA = {"User-Agent": os.environ.get("SEC_UA", "OSNOVA Finance research bot (github.com/aleksandr-pm)")}
+    rep = {}
+    try:
+        f = requests.get("https://data.sec.gov/api/xbrl/companyfacts/CIK0001067983.json", headers=UA, timeout=60).json()
+        keep = {}
+        for ns, d in f.get("facts", {}).items():
+            for tag, v in d.items():
+                if _re.search(r"Cash|Treasur|ShortTerm", tag):
+                    keep[ns + ":" + tag] = [{"end": x["end"], "val": x["val"], "form": x.get("form"), "fy": x.get("fy"), "fp": x.get("fp")}
+                                            for x in v.get("units", {}).get("USD", []) if not x.get("start")]
+        json.dump(keep, open(os.path.join(out, "sec_facts.json"), "w"))
+        rep["sec_tags"] = list(keep)
+    except Exception as e:  # noqa: BLE001
+        rep["sec_err"] = str(e)
+    for u in ["https://usmacro.com/indicator/brka_cash", "https://www.macrotrends.net/stocks/charts/BRK.A/berkshire-hathaway/cash-on-hand"]:
+        try:
+            r = requests.get(u, headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36"}, timeout=40)
+            open(os.path.join(out, u.split("/")[2] + ".html"), "w").write(r.text); rep[u] = r.status_code
+        except Exception as e:  # noqa: BLE001
+            rep[u] = str(e)
+    from pypdf import PdfReader
+    for y in range(1994, 2011):
+        hits = []
+        for u in [f"https://www.berkshirehathaway.com/{y}ar/{y}ar.pdf", f"https://www.berkshirehathaway.com/{y}ar/{y}.pdf"]:
+            try:
+                r = requests.get(u, headers=UA, timeout=90)
+                if r.status_code != 200 or r.content[:4] != b"%PDF":
+                    continue
+                rd = PdfReader(io.BytesIO(r.content))
+                for i, pg in enumerate(rd.pages):
+                    t = pg.extract_text() or ""
+                    for ln in t.splitlines():
+                        if _re.search(r"[Cc]ash and cash equivalents|[Cc]ash equivalents|Treasury [Bb]ills|billion of cash|cash and equivalents", ln):
+                            hits.append(f"p{i+1}: {ln.strip()}")
+                rep[str(y)] = u; break
+            except Exception as e:  # noqa: BLE001
+                rep[str(y) + "_err"] = str(e)
+        open(os.path.join(out, f"ar{y}.txt"), "w").write("\n".join(hits))
+    json.dump(rep, open(os.path.join(out, "report.json"), "w"), indent=1)
+    print(json.dumps(rep, indent=1))
+
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl, "px": px, "dtclogo": dtclogo, "dtcimg": dtcimg, "series": series, "logos4": logos4, "commons": commons}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl, "px": px, "dtclogo": dtclogo, "dtcimg": dtcimg, "series": series, "logos4": logos4, "commons": commons, "brkcash": brkcash}[task]()
