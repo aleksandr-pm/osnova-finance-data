@@ -1,15 +1,21 @@
-threads: duel_ny_gdp_pcap_cd_uz_kg_tj (cis, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/da224510ed64/bank/covers/duel_ny_gdp_pcap_cd_uz_kg_tj.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/da224510ed64/bank/cards/duel_ny_gdp_pcap_cd_uz_kg_tj.jpg
+threads: mkt_country_cap_hk (companies, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/4cd71ca94877/bank/cards_markets/mkt_country_cap_hk.jpg
 ---
-Ввп на человека: Узбекистан, Киргизия, Таджикистан, 2000-2025:
-1. 🇺🇿 Узбекистан · $3 968, в 7,1 раза
-2. 🇰🇬 Киргизия · $3 081, в 11 раз
-3. 🇹🇯 Таджикистан · $1 637, в 12 раз
-Таджикистан: ВВП на человека вырос в 12 раз с 2000 года.
+Самые дорогие компании Гонконга, ноябрь 2026:
+1. 🇭🇰 AIA · $103 млрд
+2. 🇭🇰 Bank of China (Hong Kong) · $68,3 млрд
+3. 🇭🇰 Hong Kong Exchanges & Clearing · $62,2 млрд
+4. 🇭🇰 Swire Pacific · $52,2 млрд
+5. 🇭🇰 Zijin Gold International Company · $47,7 млрд
+6. 🇭🇰 Jardine Matheson · $43,9 млрд
+7. 🇭🇰 CK Hutchison Holdings · $34,5 млрд
+8. 🇭🇰 Techtronic Industries · $32,8 млрд
+9. 🇭🇰 Lenovo · $30,5 млрд
+10. 🇭🇰 MTR · $27,4 млрд
+№1: AIA, $103 млрд.
 Больше в Telegram @osnovafin
 ---
-Threads: текстом
-Ответ со ссылкой: 17957703000038824
-Опубликовано: 17918727843537594. Осталось новых рейтингов: 168
-exit=0 2026-11-21T17:17:05Z
+Threads: с картинкой
+Ответ со ссылкой: 17978286576177365
+Опубликовано: 18141901675654161. Осталось новых рейтингов: 167
+exit=0 2026-11-22T06:25:56Z
