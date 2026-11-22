@@ -1,0 +1,33 @@
+p22: It’s important for you to understand that 95% of the $86 billion of “cash and equivalents” (which in my
+p22: mind includes U.S. Treasury Bills) shown on our balance sheet are held by entities in the United States and,
+p36: Cash and cash equivalents and U.S. Treasury Bills:
+p36: Cash and cash equivalents ........................................................................................ $ 23,581 $ 56,612
+p36: U.S. Treasury Bills ................................................................................................. 47,338 4,569
+p36: Total cash, cash equivalents and U.S. Treasury Bills ............................................ 70,919 61,181
+p36: Cash and cash equivalents ................................................................................................ 3,939 3,437
+p36: Cash and cash equivalents and U.S. Treasury Bills:
+p36: Cash and cash equivalents ........................................................................................ 528 7,112
+p36: U.S. Treasury Bills ................................................................................................. 10,984 —
+p36: Total cash, cash equivalents and U.S. Treasury Bills ............................................ 11,512 7,112
+p40: Purchases of U.S. Treasury Bills and fixed maturity securities ............................. (96,568) (17,891) (12,562)
+p40: Sales of U.S. Treasury Bills and fixed maturity securities ................................... 18,757 2,471 2,038
+p40: Redemptions and maturities of U.S. Treasury Bills and fixed maturity securities ..... 26,177 14,656 10,285
+p40: Increase (decrease) in cash and cash equivalents ....................................................... (39,113) 7,128 14,126
+p40: Cash and cash equivalents at beginning of year ......................................................... 67,161 60,033 45,907
+p40: Cash and cash equivalents at end of year * ........................................................... $ 28,048 $ 67,161 $ 60,033
+p40: * Cash and cash equivalents at end of year are comprised of the following:
+p41: (c) Cash and cash equivalents and U.S Treasury Bills
+p41: Cash equivalents consist of demand deposit and money market accounts, U.S. Treasury Bills with a maturity of three
+p41: 2016, we acquired significant amounts of U.S. Treasury Bills with maturity dates more than three months from their
+p41: purchase dates. In prior years, such investments were not material and were classified as cash equivalents. We believe
+p41: that in substance these U.S. Treasury Bills are like cash as they are readily convertible to known amounts of cash and
+p41: that, notwithstanding our view of the substance of such instruments, these U.S. Treasury Bills technically do not meet a
+p41: “bright line” definition of cash equivalents under GAAP. Accordingly, we are now presenting all U.S. Treasury Bills
+p47: Cash and cash equivalents .................................................................................................... $ 250 $ 1,807
+p68: shown according to the fair value hierarchy (in millions). The carrying values of cash and cash equivalents, U.S. Treasury Bills,
+p71: would reduce the total value of Berkshire’s consolidated cash, cash equivalents and U.S. Treasury Bills holdings below $20 billion.
+p87: equivalents and U.S. Treasury Bills earning very low yields, although such yields in 2016 were higher than in 2015. We believe
+p87: Cash, cash equivalents and U.S. Treasury Bills ............................................................................ $ 48,888 $ 43,762
+p99: equivalents and U.S. Treasury Bills of $70.9 billion, and investments (excluding our investment in Kraft Heinz) of $158.3 billion.
+p99: types of property held for lease, and cash, cash equivalents, U.S. Treasury Bills and other investments. In September 2016, a
+p100: reduces the total amount of Berkshire’s consolidated cash, cash equivalents and U.S. Treasury Bills holdings below $20 billion.

@@ -1,0 +1,15 @@
+p6: (“PCC”), a business that we purchased a month ago for more than $32 billion of cash. PCC fits perfectly
+p38: Cash and cash equivalents ........................................................... $ 61,181 $ 57,974
+p38: Cash and cash equivalents ........................................................... 3,437 3,001
+p38: Cash and cash equivalents ........................................................... 7,112 2,294
+p42: Increase in cash and cash equivalents ................................................ 8,461 15,083 1,194
+p42: Cash and cash equivalents at beginning of year ........................................ 63,269 48,186 46,992
+p42: Cash and cash equivalents at end of year * .......................................... $71,730 $ 63,269 $ 48,186
+p42: * Cash and cash equivalents at end of year are comprised of the following:
+p43: (c) Cash and cash equivalents
+p43: Cash equivalents consist of funds invested in U.S. Treasury Bills, money market accounts, demand deposits and other
+p64: shown according to the fair value hierarchy (in millions). The carrying values of cash and cash equivalents, receivables and
+p84: Cash and cash equivalents ............................................................... $ 43,762 $ 42,760
+p96: At December 31, 2015, insurance and other businesses held cash and cash equivalents of $61.2 billion, and investments
+p97: approximately $5.5 billion since December 31, 2014, primarily due to an increase in cash and cash equivalents. Finance assets
+p115: The first component of value is our investments: stocks, bonds and cash equivalents. At yearend these totaled

@@ -1,0 +1,14 @@
+p30: Cash and cash equivalents ..................................................................................... $ 42,358 $ 33,513
+p30: Cash and cash equivalents ..................................................................................... 2,570 2,246
+p30: Cash and cash equivalents ..................................................................................... 2,064 1,540
+p33: Increase (decrease) in cash and cash equivalents ....................................... 9,693 (928) 7,669
+p33: Cash and cash equivalents at beginning of year ........................................ 37,299 38,227 30,558
+p33: Cash and cash equivalents at end of year * .......................................... $46,992 $ 37,299 $ 38,227
+p33: * Cash and cash equivalents at end of year are comprised of the following:
+p34: (c) Cash and cash equivalents
+p34: Cash equivalents consist of funds invested in U.S. Treasury Bills, money market accounts, demand deposits and other
+p54: and cash equivalents, accounts receivable and accounts payable, accruals and other liabilities are considered to be reasonable
+p74: cash and cash equivalents.
+p74: Cash and cash equivalents ............................................................... $ 26,458 $ 21,571
+p86: and cash equivalents, other fixed maturity and equity investments, were approximately $25.4 billion as of December 31, 2012
+p106: The first component of value is our investments: stocks, bonds and cash equivalents. At yearend these totaled $158 billion

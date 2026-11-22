@@ -1,0 +1,35 @@
+p9: Treasury Bills – loads of Treasury Bills – that protected us from having to rely on funding sources such as bank lines
+p11: $116.0 billion in cash and U.S. Treasury Bills (whose average maturity was 88 days), up from $86.4 billion at yearend
+p71: partly offset by an increase in interest income. We continue to hold significant amounts of cash and cash equivalents and U.S. Treasury
+p71: Cash, cash equivalents and U.S. Treasury Bills .................................................. $ 73,285 $ 48,888
+p84: At December 31, 2017, our insurance and other businesses held cash, cash equivalents and U.S. Treasury Bills of
+p84: cash, cash equivalents and U.S. Treasury Bills. Finance and financial products liabilities declined $3.0 billion to approximately
+p84: reduces the total amount of Berkshire’s consolidated cash, cash equivalents and U.S. Treasury Bills holdings below $20 billion. There
+p94: Cash and cash equivalents ........................................................ $ 25,460 $ 23,581
+p94: Short-term investments in U.S. Treasury Bills ........................................ 78,515 47,338
+p94: Cash and cash equivalents ........................................................ 2,910 3,939
+p94: Cash and cash equivalents ........................................................ 3,213 528
+p94: Short-term investments in U.S. Treasury Bills ........................................ 5,856 10,984
+p98: Purchases of U.S. Treasury Bills and fixed maturity securities .................. (158,492) (96,568) (17,891)
+p98: Sales of U.S. Treasury Bills and fixed maturity securities ..................... 49,327 18,757 2,471
+p98: Redemptions and maturities of U.S. Treasury Bills and fixed maturity securities . . . 86,727 26,177 14,656
+p98: Increase (decrease) in cash and cash equivalents .................................. 3,535 (39,113) 7,128
+p98: Cash and cash equivalents at beginning of year ................................... 28,048 67,161 60,033
+p98: Cash and cash equivalents at end of year * .................................... $ 31,583 $ 28,048 $ 67,161
+p98: * Cash and cash equivalents at end of year are comprised of the following:
+p99: (c) Cash and cash equivalents and Short-term investments in U.S. Treasury Bills
+p99: Cash equivalents consist of demand deposit and money market accounts and investments with maturities of three months
+p99: or less when purchased. Short-term investments in U.S. Treasury Bills have remaining maturities exceeding three months
+p99: at the time of purchase and are stated at amortized cost. Our aggregate investments in U.S. Treasury Bills at December 31,
+p99: 2017 were $90.1 billion, which consisted of $5.7 billion included in cash and cash equivalents and $84.4 billion included
+p99: in short-term investments in U.S. Treasury Bills in our Consolidated Balance Sheet.
+p105: Cash and cash equivalents ................................................................... $ 250 $ 1,807
+p124: shown according to the fair value hierarchy (in millions). The carrying values of cash and cash equivalents, U.S. Treasury Bills,
+p127: equivalents and U.S. Treasury Bills holdings below $20 billion. The repurchase program does not obligate Berkshire to repurchase any
+p138: Cash and cash equivalents ........................................................... $ 4,039 $ 3,221
+p138: Short-term investments in U.S. Treasury Bills ........................................... 13,132 8,220
+p139: Purchases of U.S. Treasury Bills ............................................. (19,663) (9,350) —
+p139: Sales and maturities of U.S. Treasury Bills ..................................... 14,847 1,145 —
+p139: Increase (decrease) in cash and cash equivalents ................................ 818 (7,388) 1,160
+p139: Cash and cash equivalents at beginning of year ................................. 3,221 10,609 9,449
+p139: Cash and cash equivalents at end of year ...................................... $ 4,039 $ 3,221 $10,609

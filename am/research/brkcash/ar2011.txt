@@ -1,0 +1,18 @@
+p20: period, continuous rolling of U.S. Treasury bills produced 5.7% annually. That sounds satisfactory. But
+p20: Accommodating this need, we primarily hold U.S. Treasury bills, the only investment that can be
+p28: Cash and cash equivalents ..................................................................................... $ 33,513 $ 34,767
+p28: Cash and cash equivalents ..................................................................................... 2,246 2,557
+p28: Cash and cash equivalents ..................................................................................... 1,540 903
+p31: Increase (decrease) in cash and cash equivalents ....................................... (928) 7,669 5,019
+p31: Cash and cash equivalents at beginning of year ........................................ 38,227 30,558 25,539
+p31: Cash and cash equivalents at end of year * .......................................... $37,299 $ 38,227 $ 30,558
+p31: * Cash and cash equivalents at end of year are comprised of the following:
+p32: (c) Cash and cash equivalents
+p32: Cash equivalents consist of funds invested in U.S. Treasury Bills, money market accounts, demand deposits and other
+p39: Cash and cash equivalents ................... $ 893
+p53: cash and cash equivalents, accounts receivable and accounts payable, accruals and other liabilities are deemed to be reasonable
+p70: Investment income consists of interest and dividends earned on cash equivalents and investments of our insurance
+p71: Cash and cash equivalents ............................................................... $ 21,571 $ 24,818
+p80: cash equivalents of $33.5 billion. These assets are held predominantly in our insurance businesses.
+p81: maturity securities, other investments and cash and cash equivalents were approximately $25.0 billion as of December 31, 2011
+p101: The first component of value is our investments: stocks, bonds and cash equivalents. At yearend these totaled
