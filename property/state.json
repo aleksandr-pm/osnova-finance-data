@@ -221,6 +221,14 @@
    "type": "reel",
    "dubai_time": "10:00",
    "timeset": "manual"
+  },
+  {
+   "id": "b2_quiz_prices",
+   "at": "2026-11-22T12:25:17.310401+00:00",
+   "post": "18219885196347991",
+   "type": "reel",
+   "dubai_time": "16:25",
+   "timeset": "manual"
   }
  ]
 }

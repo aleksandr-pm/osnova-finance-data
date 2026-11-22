@@ -1,22 +1,20 @@
-Слот reel: в очереди 15 из 43; LIVE=да
-Следующий: b2_race_bb_towers (media/b2_race_bb_towers.mp4)
+Слот reel: в очереди 14 из 43; LIVE=да
+Следующий: b2_quiz_prices (media/b2_quiz_prices.mp4)
 ---
-4,365 AED per sq ft. The Opus by Omniyat is the most expensive of the ten most traded office towers in Business Bay.
+3 questions on Dubai office prices. How many did you get?
 
-Median price paid, 2020 to 2025:
-The Binary by Omniyat: 657 to 3,174 (x4.8)
-B2B Tower: 728 to 2,295
-Tamani Arts: 720 to 2,035, the most traded tower with 1,045 deals since 2018
-Park Lane: 705 to 1,710
+1. Ready office in Business Bay: 1,949 AED per sq ft paid in 2026
+2. Downtown office rent: 307 AED per sq ft a year by Ejari, listings ask 422
+3. Off-plan share of office sales in 2026: 64%
 
-Same district, 2.5x difference between towers.
+Write your score in the comments.
 
 Full data on osnova.property, link in bio. Or comment PRICE and we will send it to you.
 
-Source: Dubai Land Department sales, office units, OSNOVA aggregates, 2018–2025. Years with under 5 deals interpolated. Market statistics, not an offer or investment advice.
+Source: DLD transactions and Ejari leases, 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
 
-#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace #businessbay
+#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace
 ---
-Контейнер 17925093534242274, загрузка 9.1 МБ
-Опубликовано: b2_race_bb_towers → 18098943530147397
-exit=0 2026-11-22T06:00:47.798618+00:00
+Контейнер 17925153687242274, загрузка 5.5 МБ
+Опубликовано: b2_quiz_prices → 18219885196347991
+exit=0 2026-11-22T12:25:17.311287+00:00
