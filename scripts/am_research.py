@@ -807,7 +807,7 @@ def brkcash():
         except Exception as e:  # noqa: BLE001
             rep[u] = str(e)
     from pypdf import PdfReader
-    for y in range(1994, 2011):
+    for y in range(int(os.environ.get("Y0", 2011)), int(os.environ.get("Y1", 2018))):
         hits = []
         for u in [f"https://www.berkshirehathaway.com/{y}ar/{y}ar.pdf", f"https://www.berkshirehathaway.com/{y}ar/{y}.pdf"]:
             try:
