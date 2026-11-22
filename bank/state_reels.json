@@ -379,6 +379,14 @@
    "at": "2026-11-21T17:00:40.438439+00:00",
    "post": "18143305420628435",
    "music": "leberch-dark-documentary-628700.mp3"
+  },
+  {
+   "id": "col_duel_fi_res_totl_cd_ch_ru_in",
+   "block": "money",
+   "fmt": "columns",
+   "at": "2026-11-22T09:32:04.812558+00:00",
+   "post": "18434438638149289",
+   "music": "mixkit-driving-ambition-32.mp3"
   }
  ]
 }
