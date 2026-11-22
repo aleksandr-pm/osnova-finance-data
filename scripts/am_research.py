@@ -867,7 +867,30 @@ def cashtop():
     json.dump(rows, open(os.path.join(out, "cashtop.json"), "w"), ensure_ascii=False, indent=1)
     for r in rows[:30]: print(r.get("t"), r.get("name"), r.get("cash_usd_bn"), r.get("date"), r.get("sector"))
 
+def wplogos():
+    """Логотипы из инфобоксов Википедии: строки 3+ request.txt = КЛЮЧ|Название статьи"""
+    import re as _re
+    H = {"User-Agent": "osnova-research/1.0 (github.com/aleksandr-pm; research bot)"}
+    out = os.path.join(OUTD, "wplogos"); os.makedirs(out, exist_ok=True); rep = {}
+    for ln in open(os.path.join(OUTD, "request.txt"), encoding="utf-8").read().splitlines()[2:]:
+        if "|" not in ln: continue
+        k, page = ln.split("|", 1)
+        try:
+            wt = requests.get("https://en.wikipedia.org/w/api.php", params={"action": "parse", "page": page, "prop": "wikitext", "format": "json", "redirects": 1},
+                              headers=H, timeout=30).json()["parse"]["wikitext"]["*"]
+            m = _re.search(r"\|\s*logo\s*=\s*(?:\[\[(?:File|Image):)?\s*([^|\]\n{}]+\.(?:svg|png|jpg))", wt, _re.I)
+            if not m: rep[k] = "no logo field"; continue
+            fn = m.group(1).strip(); time.sleep(4)
+            b = requests.get("https://commons.wikimedia.org/wiki/Special:FilePath/" + fn.replace(" ", "_"), params={"width": 1200}, headers=H, timeout=60)
+            if b.status_code != 200:
+                b = requests.get("https://en.wikipedia.org/wiki/Special:FilePath/" + fn.replace(" ", "_"), params={"width": 1200}, headers=H, timeout=60)
+            ext = "png" if b.content[:4] == b"\x89PNG" else "jpg" if b.content[:3] == b"\xff\xd8\xff" else "bin"
+            open(os.path.join(out, f"{k}.{ext}"), "wb").write(b.content); rep[k] = [fn, b.status_code, ext]
+        except Exception as e:  # noqa: BLE001
+            rep[k] = str(e)
+    json.dump(rep, open(os.path.join(out, "rep.json"), "w"), indent=1); print(rep)
+
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl, "px": px, "dtclogo": dtclogo, "dtcimg": dtcimg, "series": series, "logos4": logos4, "commons": commons, "brkcash": brkcash, "cashtop": cashtop}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl, "px": px, "dtclogo": dtclogo, "dtcimg": dtcimg, "series": series, "logos4": logos4, "commons": commons, "brkcash": brkcash, "cashtop": cashtop, "wplogos": wplogos}[task]()
