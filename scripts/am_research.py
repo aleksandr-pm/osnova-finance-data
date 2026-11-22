@@ -869,7 +869,7 @@ def cashtop():
 
 def wplogos():
     """Логотипы из инфобоксов Википедии: строки 3+ request.txt = КЛЮЧ|Название статьи"""
-    import re as _re
+    import re as _re, time
     H = {"User-Agent": "osnova-research/1.0 (github.com/aleksandr-pm; research bot)"}
     out = os.path.join(OUTD, "wplogos"); os.makedirs(out, exist_ok=True); rep = {}
     for ln in open(os.path.join(OUTD, "request.txt"), encoding="utf-8").read().splitlines()[2:]:
