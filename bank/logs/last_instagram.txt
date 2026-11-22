@@ -1,23 +1,30 @@
-instagram: duel_ny_gdp_mktp_cd_us_cn (economy, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/dd6f64a29dca/bank/covers/duel_ny_gdp_mktp_cd_us_cn.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/dd6f64a29dca/bank/cards/duel_ny_gdp_mktp_cd_us_cn.jpg
+instagram: mkt_sector_beverages (companies, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/f95179cca238/bank/cards_markets/mkt_sector_beverages.jpg
 ---
-Китай: ВВП вырос в 15,9 раза с 2000 года.
+№1: Coca-Cola, $412 млрд.
 
-Ввп: США и Китай, 2000-2025. Самый быстрый рост: Китай, в 15,9 раза, до $19,5 трлн.
+Крупнейшие производители напитков по капитализации, 2026 год, данные CompaniesMarketCap. Разрыв первого места со вторым (Kweichow Moutai): в 1,5 раза. Учтены на 9 ноября 2026.
 
-Значения в 2025 году и изменение с 2000:
-1. 🇺🇸 США: $30,8 трлн, в 3 раза
-2. 🇨🇳 Китай: $19,5 трлн, в 15,9 раза
+Топ-10:
+1. 🇺🇸 Coca-Cola: $412 млрд
+2. 🇨🇳 Kweichow Moutai: $271 млрд
+3. 🇺🇸 Pepsico: $193 млрд
+4. 🇧🇪 Anheuser-Busch Inbev: $165 млрд
+5. 🇺🇸 Starbucks: $120 млрд
+6. 🇺🇸 Monster Beverage: $89,5 млрд
+7. 🇨🇳 Nongfu Spring: $64 млрд
+8. 🇬🇧 Diageo: $55,6 млрд
+9. 🇳🇱 Heineken: $52,4 млрд
+10. 🇬🇧 Coca-Cola European Partners: $51 млрд
 
-Кого не хватает в топе, по-вашему?
+Кто поднимется выше через 5 лет?
 
 Каждый день рынки, сделки инсайдеров из отчётов SEC и данные в Telegram @osnovafin, ссылка в профиле.
 
-Источник: World Bank, World Development Indicators. Не является инвестиционной рекомендацией.
+Источник: companiesmarketcap.com. Не является инвестиционной рекомендацией.
 
-#экономика #мироваяэкономика #ввп #макроэкономика #китай #инвестиции #финансы #статистика #инфографика #цифры #рынки
+#акции #компании #капитализация #фондовыйрынок #cocacola #инвестиции #финансы #статистика #инфографика #цифры #рынки
 ---
-Instagram: карусель
-Опубликовано: 18188431831421414. Осталось новых рейтингов: 223
-exit=0 2026-11-21T14:56:51Z
+Instagram: одиночный пост с графиком
+Опубликовано: 18113158301349515. Осталось новых рейтингов: 222
+exit=0 2026-11-22T14:54:52Z
