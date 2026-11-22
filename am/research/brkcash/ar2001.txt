@@ -1,0 +1,10 @@
+p23: Cash and cash equivalents................................................................................................... $    5,313 $    5,263
+p25: Increase (decrease) in cash and cash equivalents ....................................... 894 1,146 (10,031)
+p25: Cash and cash equivalents at beginning of year...............................................     5,604     4,458   14,489
+p25: Cash and cash equivalents at end of year *.................................................. $  6,498 $  5,604 $  4,458
+p25: * Cash and cash equivalents at end of year are comprised of the following:
+p27: (c) Cash equivalents
+p27: Cash equivalents consist of funds invested in money market accounts and in investments with a maturity of
+p35: Cash and cash equivalents................................................................................................................ $  1,185 $     341
+p43: Government Corporations and agencies and cash equivalents and equity securities.
+p60: compared to $77.1 billion at December 31, 2000, including approximately $5.3 billion in cash and cash equivalents

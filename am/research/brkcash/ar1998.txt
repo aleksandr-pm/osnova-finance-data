@@ -1,0 +1,15 @@
+p4: ownership of investments (including cash and equivalents but excluding securities held in our financial product s
+p14: At yearend, we held more than $15 billion in cash equivalents (including high-grade securities due in less
+p23: Cash and cash equivalents .............................................. $  13,582 $  1,002
+p25: Increase (decrease) in cash and cash equivalents ................. 13,431 (292) (1,394)
+p25: Cash and cash equivalents at beginning of year .....................    1,058  1,350  2,744
+p25: Cash and cash equivalents at end of year * ...................... $14,489 $1,058 $1,350
+p25: * Cash and cash equivalents at end of year are comprised of the following:
+p27: (c) Cash equivalents
+p27: Cash equivalents consist of funds invested in money market accounts and in investments with a maturity of
+p33: Cash and cash equivalents .................................................. $16,907 $16,56
+p39: The carrying values of cash and cash equivalents, receivables and accounts payable, accruals and other liabilities are
+p68: Cash and cash equivalents ................................................. 13,081 516
+p70: Cash and cash equivalents ................................................. $  281 $  103
+p71: Cash and cash equivalents .................................................. $16,907 $1,256
+p72: Cash and cash equivalents ................................................... $     220 $  383

@@ -1,0 +1,18 @@
+{
+ "sec_err": "Expecting value: line 1 column 1 (char 0)",
+ "https://usmacro.com/indicator/brka_cash": 200,
+ "https://www.macrotrends.net/stocks/charts/BRK.A/berkshire-hathaway/cash-on-hand": 403,
+ "1998": "https://www.berkshirehathaway.com/1998ar/1998ar.pdf",
+ "1999": "https://www.berkshirehathaway.com/1999ar/1999ar.pdf",
+ "2000": "https://www.berkshirehathaway.com/2000ar/2000ar.pdf",
+ "2001": "https://www.berkshirehathaway.com/2001ar/2001ar.pdf",
+ "2002": "https://www.berkshirehathaway.com/2002ar/2002ar.pdf",
+ "2003": "https://www.berkshirehathaway.com/2003ar/2003ar.pdf",
+ "2004": "https://www.berkshirehathaway.com/2004ar/2004ar.pdf",
+ "2005": "https://www.berkshirehathaway.com/2005ar/2005ar.pdf",
+ "2006": "https://www.berkshirehathaway.com/2006ar/2006ar.pdf",
+ "2007": "https://www.berkshirehathaway.com/2007ar/2007ar.pdf",
+ "2008": "https://www.berkshirehathaway.com/2008ar/2008ar.pdf",
+ "2009": "https://www.berkshirehathaway.com/2009ar/2009ar.pdf",
+ "2010": "https://www.berkshirehathaway.com/2010ar/2010ar.pdf"
+}

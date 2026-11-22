@@ -1,0 +1,13 @@
+p25: Cash and cash equivalents............................................................................................... $    5,263 $    3,835
+p27: Increase (decrease) in cash and cash equivalents ..................................... 1,146 (10,031) 13,431
+p27: Cash and cash equivalents at beginning of year.............................................   4,458 14,489   1,058
+p27: Cash and cash equivalents at end of year * ............................................... $5,604 $4,458 $14,489
+p27: * Cash and cash equivalents at end of year are comprised of the following:
+p29: (c) Cash equivalents
+p29: Cash equivalents consist of funds invested in money market accounts and in investments with a maturity of
+p36: Cash and cash equivalents ....................................................................................................... $     341 $     623
+p42: adjusted market rates of similar instruments. The carrying values of cash and cash equivalents, receivables and accounts
+p70: Cash and cash equivalents.................................................................................................... 4,700 2,981
+p72: Cash and cash equivalents................................................................................................... $   400 $   370
+p73: Cash and cash equivalents ..................................................................................................... $     341 $     623
+p74: Cash and cash equivalents..................................................................................................... $     163 $    484

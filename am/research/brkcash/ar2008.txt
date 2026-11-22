@@ -1,0 +1,18 @@
+p18: Clinging to cash equivalents or long-term government bonds at present yields is almost certainly a
+p29: Cash and cash equivalents ...................................................................... $ 24,302 $ 37,703
+p29: Cash and cash equivalents ...................................................................... 280 1,178
+p29: Cash and cash equivalents ...................................................................... 957 5,448
+p31: Increase (decrease) in cash and cash equivalents ................................. (18,790) 586 (1,275)
+p31: Cash and cash equivalents at beginning of year ...................................... 44,329 43,743 45,018
+p31: Cash and cash equivalents at end of year * ....................................... $25,539 $ 44,329 $ 43,743
+p31: * Cash and cash equivalents at end of year are comprised of the following:
+p33: (c) Cash and cash equivalents
+p33: Cash equivalents consist of funds invested in U.S. Treasury Bills, money market accounts and in other investments
+p33: with a maturity of three months or less when purchased. Cash and cash equivalents exclude amounts where
+p39: Cash and cash equivalents .....................$ 217 Accounts payable and other liabilities .......... $ 1,040
+p52: following table (in millions). The carrying values of cash and cash equivalents, accounts receivable and accounts payable,
+p70: Investment income consists of interest earned on cash equivalents and fixed maturity investments and dividends earned on
+p70: reflecting lower levels of related fixed maturity investments and generally lower interest rates applicable to cash equivalents and
+p71: Cash and cash equivalents ..................................................... $ 18,845 $ 28,257 $ 34,590
+p78: (including cash and cash equivalents of $24.3 billion) and $141.2 billion at December 31, 2007 (including cash and cash
+p78: finance receivables, fixed maturity securities and cash and cash equivalents. Liabilities were $30.7 billion as of December 31,

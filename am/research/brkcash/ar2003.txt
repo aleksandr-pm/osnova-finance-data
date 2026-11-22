@@ -1,0 +1,12 @@
+p5: interest rates we earned on our large holdings of cash equivalents (a condition that will not last).  All
+p27: Cash and cash equivalents.............................................................................................. $  31,262 $  10,283
+p27: Cash and cash equivalents.............................................................................................. 4,695 2,465
+p29: Increase in cash and cash equivalents......................................................... 23,209 6,250 894
+p29: Cash and cash equivalents at beginning of year...............................................   12,748     6,498     5,604
+p29: Cash and cash equivalents at end of year *.................................................. $35,957 $12,748 $  6,498
+p29: * Cash and cash equivalents at end of year are comprised of the following:
+p31: (c) Cash equivalents
+p31: Cash equivalents consist of funds invested in U.S.  Treasury Bills, money market accounts, and in other
+p46: adjusted market rates of similar instru ments.  The carrying values of cash and cash equivalents, accounts receivable and
+p59: are generally U.S. Government, municipal and mortgage-backed securities and short-term cash equivalents. As of
+p63: (including $31.3 billion in cash and cash equivalents) and totaled $80.5 billion at December 31, 2002.  During 2003,

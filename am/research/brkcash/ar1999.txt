@@ -1,0 +1,14 @@
+p5: column lists our per-share ownership of investments (including cash and equivalents but excluding assets held in our
+p23: Cash and cash equivalents .............................................. $    3,835 $  13,582
+p25: Increase (decrease) in cash and cash equivalents ................. (10,031) 13,431 (292)
+p25: Cash and cash equivalents at beginning of year ..................... 14,489    1,058  1,350
+p25: Cash and cash equivalents at end of year * ...................... $4,458 $14,489 $1,058
+p25: * Cash and cash equivalents at end of year are comprised of the following:
+p27: (c) Cash equivalents
+p27: Cash equivalents consist of funds invested in money market accounts and in investments with a maturity of
+p33: Cash and cash equivalents .................................................... $     623 $     907
+p39: The carrying values of cash and cash equivalents, receivables and accounts payable, accruals and other liabilities are
+p66: Cash and cash equivalents ................................................. 2,981 13,081
+p68: Cash and cash equivalents ................................................. $   370 $   281
+p69: Cash and cash equivalents .................................................. $     623 $     907
+p70: Cash and cash equivalents ................................................. $     484 $     220

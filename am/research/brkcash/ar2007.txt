@@ -1,0 +1,13 @@
+p26: Cash and cash equivalents .................................................................................... $  37,703 $  37 ,977
+p26: Cash and cash equivalents .................................................................................... 1,178 343
+p26: Cash and cash equivalents .................................................................................... 5,448 5 ,423
+p28: Increase (decrease) in cash and cash equivalents .......................................  58 6 (1,275) 1,233
+p28: Cash and cash equivalents at beginning of year...............................................    43,743   45,018   43,427
+p28: Cash and cash equivalents at end of year *..................................................  $44,329 $43,743  $44,660
+p28: * Cash and cash equivalents at end of year are comprised of the following:
+p30: (c) Cash and cash equivalents
+p30: Cash equivalents consist of funds invested in U.S. Treasury Bills, money market accounts and in other investments with
+p30: a maturity of three months or less when purchased. Cash and cash equivalents exclude amounts where availability is
+p43: rates of similar instruments.  The carryi ng values of cash and cash equivalents, acc ounts receivable and accounts payable, accr uals
+p56: Cash and cash equivalents............................................................................................... $  28,257 $  34,590 $  38,814
+p61: equivalents of $38.9 billion) and $125.2 b illion at December 31, 2006 (including cash and cash equivalents of $38.3 billion).
