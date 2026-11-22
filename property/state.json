@@ -229,6 +229,14 @@
    "type": "reel",
    "dubai_time": "16:25",
    "timeset": "manual"
+  },
+  {
+   "id": "b2_rank_expensive",
+   "at": "2026-11-22T17:47:01.548181+00:00",
+   "post": "18120982138798849",
+   "type": "reel",
+   "dubai_time": "21:47",
+   "timeset": "manual"
   }
  ]
 }

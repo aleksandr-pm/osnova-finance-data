@@ -1,20 +1,23 @@
-Слот reel: в очереди 14 из 43; LIVE=да
-Следующий: b2_quiz_prices (media/b2_quiz_prices.mp4)
+Слот reel: в очереди 13 из 43; LIVE=да
+Следующий: b2_rank_expensive (media/b2_rank_expensive.mp4)
 ---
-3 questions on Dubai office prices. How many did you get?
+5,855 AED per sq ft. ENARA by Omniyat was the most expensive office building traded in Dubai in 2025.
 
-1. Ready office in Business Bay: 1,949 AED per sq ft paid in 2026
-2. Downtown office rent: 307 AED per sq ft a year by Ejari, listings ask 422
-3. Off-plan share of office sales in 2026: 64%
+Median price paid, buildings with 10+ deals in 2025:
+ENARA by Omniyat 5,855
+HQ by ROVE 4,565
+The Opus by Omniyat 4,365
+Almas Tower, JLT 4,000
+Burj Capital 3,769
 
-Write your score in the comments.
+8 of the top 12 are in Business Bay.
 
 Full data on osnova.property, link in bio. Or comment PRICE and we will send it to you.
 
-Source: DLD transactions and Ejari leases, 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
+Source: Dubai Land Department sales, office units, OSNOVA aggregates, 2025, buildings with 10+ deals. Market statistics, not an offer or investment advice.
 
-#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace
+#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace #businessbay #omniyat
 ---
-Контейнер 17925153687242274, загрузка 5.5 МБ
-Опубликовано: b2_quiz_prices → 18219885196347991
-exit=0 2026-11-22T12:25:17.311287+00:00
+Контейнер 17925221082242274, загрузка 4.2 МБ
+Опубликовано: b2_rank_expensive → 18120982138798849
+exit=0 2026-11-22T17:47:01.548971+00:00
