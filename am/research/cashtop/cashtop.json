@@ -1,0 +1,1760 @@
+[
+ {
+  "t": "BRK-B",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 377435000000.0,
+  "Cash And Cash Equivalents": 40700000000.0,
+  "Other Short Term Investments": 336735000000.0,
+  "Total Assets": 1303907000000.0,
+  "cur": "USD",
+  "name": "Berkshire Hathaway Inc.",
+  "sector": "Financial Services",
+  "industry": "Insurance - Diversified",
+  "mcap": 1210976043008,
+  "mcur": "USD",
+  "cash_usd_bn": 377.4
+ },
+ {
+  "t": "GOOGL",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 265098000000.0,
+  "Cash And Cash Equivalents": 56334000000.0,
+  "Other Short Term Investments": 208764000000.0,
+  "Total Assets": 1003312000000.0,
+  "cur": "USD",
+  "name": "Alphabet Inc.",
+  "sector": "Communication Services",
+  "industry": "Internet Content & Information",
+  "mcap": 3261475323904,
+  "mcur": "USD",
+  "cash_usd_bn": 265.1
+ },
+ {
+  "t": "005930.KS",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 214822882000000.0,
+  "Cash And Cash Equivalents": 90800375000000.0,
+  "Other Short Term Investments": 124022507000000.0,
+  "Total Assets": 791841881000000.0,
+  "cur": "KRW",
+  "name": "Samsung Electronics Co., Ltd.",
+  "sector": "Technology",
+  "industry": "Consumer Electronics",
+  "mcap": 1192333924106240,
+  "mcur": "KRW",
+  "fx": 0.0007429199758917093,
+  "cash_usd_bn": 159.6
+ },
+ {
+  "t": "2318.HK",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 1025601000000.0,
+  "Cash And Cash Equivalents": 1025601000000.0,
+  "Total Assets": 14455313000000.0,
+  "cur": "CNY",
+  "name": "Ping An Insurance (Group) Company of China, Ltd.",
+  "sector": "Financial Services",
+  "industry": "Insurance - Life",
+  "mcap": 899949789184,
+  "mcur": "HKD",
+  "fx": 0.1500983089208603,
+  "cash_usd_bn": 153.9
+ },
+ {
+  "t": "TSM",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 4094652764000.0,
+  "Cash And Cash Equivalents": 3621893991000.0,
+  "Other Short Term Investments": 472758773000.0,
+  "Total Assets": 10052887514000.0,
+  "cur": "TWD",
+  "name": "Taiwan Semiconductor Manufacturing Company Limited",
+  "sector": "Technology",
+  "industry": "Semiconductors",
+  "mcap": 1652980711424,
+  "mcur": "USD",
+  "fx": 0.03033612295985222,
+  "cash_usd_bn": 124.2
+ },
+ {
+  "t": "AMZN",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 114226000000.0,
+  "Cash And Cash Equivalents": 55783000000.0,
+  "Other Short Term Investments": 58443000000.0,
+  "Total Assets": 1243390000000.0,
+  "cur": "USD",
+  "name": "Amazon.com, Inc.",
+  "sector": "Consumer Cyclical",
+  "industry": "Internet Retail",
+  "mcap": 2668898811904,
+  "mcur": "USD",
+  "cash_usd_bn": 114.2
+ },
+ {
+  "t": "TM",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 14226496000000.0,
+  "Cash And Cash Equivalents": 9484484000000.0,
+  "Other Short Term Investments": 4742012000000.0,
+  "Total Assets": 101980759000000.0,
+  "cur": "JPY",
+  "name": "Toyota Motor Corporation",
+  "sector": "Consumer Cyclical",
+  "industry": "Auto Manufacturers",
+  "mcap": 243511279616,
+  "mcur": "USD",
+  "fx": 0.006261466071009636,
+  "cash_usd_bn": 89.1
+ },
+ {
+  "t": "7203.T",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 14226496000000.0,
+  "Cash And Cash Equivalents": 9484484000000.0,
+  "Other Short Term Investments": 4742012000000.0,
+  "Total Assets": 101980759000000.0,
+  "cur": "JPY",
+  "name": "Toyota Motor Corporation",
+  "sector": "Consumer Cyclical",
+  "industry": "Auto Manufacturers",
+  "mcap": 38869793767424,
+  "mcur": "JPY",
+  "fx": 0.006261466071009636,
+  "cash_usd_bn": 89.1
+ },
+ {
+  "t": "000660.KS",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 114464951000000.0,
+  "Cash And Cash Equivalents": 38324414000000.0,
+  "Other Short Term Investments": 76140537000000.0,
+  "Total Assets": 391800038000000.0,
+  "cur": "KRW",
+  "name": "SK hynix Inc.",
+  "sector": "Technology",
+  "industry": "Semiconductors",
+  "mcap": 784857894486016,
+  "mcur": "KRW",
+  "fx": 0.0007429199758917093,
+  "cash_usd_bn": 85.0
+ },
+ {
+  "t": "META",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 82449000000.0,
+  "Cash And Cash Equivalents": 11222000000.0,
+  "Other Short Term Investments": 71227000000.0,
+  "Total Assets": 478836000000.0,
+  "cur": "USD",
+  "name": "Meta Platforms, Inc.",
+  "sector": "Communication Services",
+  "industry": "Internet Content & Information",
+  "mcap": 1433642336256,
+  "mcur": "USD",
+  "cash_usd_bn": 82.4
+ },
+ {
+  "t": "VOW3.DE",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 72367000000.0,
+  "Cash And Cash Equivalents": 39283000000.0,
+  "Other Short Term Investments": 33084000000.0,
+  "Total Assets": 661414000000.0,
+  "cur": "EUR",
+  "name": "Volkswagen AG",
+  "sector": "Consumer Cyclical",
+  "industry": "Auto Manufacturers",
+  "mcap": 31391109120,
+  "mcur": "EUR",
+  "fx": 1.0969723463058472,
+  "cash_usd_bn": 79.4
+ },
+ {
+  "t": "0700.HK",
+  "date": "2026-06-30",
+  "Cash Cash Equivalents And Short Term Investments": 461955000000.0,
+  "Cash And Cash Equivalents": 206930000000.0,
+  "Other Short Term Investments": 255025000000.0,
+  "Total Assets": 2159394000000.0,
+  "cur": "CNY",
+  "name": "Tencent Holdings Limited",
+  "sector": "Communication Services",
+  "industry": "Internet Content & Information",
+  "mcap": 3097584992256,
+  "mcur": "HKD",
+  "fx": 0.1500983089208603,
+  "cash_usd_bn": 69.3
+ },
+ {
+  "t": "PDD",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 455380000000.0,
+  "Cash And Cash Equivalents": 125518000000.0,
+  "Other Short Term Investments": 329862000000.0,
+  "Total Assets": 687968000000.0,
+  "cur": "CNY",
+  "name": "PDD Holdings Inc.",
+  "sector": "Consumer Cyclical",
+  "industry": "Internet Retail",
+  "mcap": 119109820416,
+  "mcur": "USD",
+  "fx": 0.1500983089208603,
+  "cash_usd_bn": 68.4
+ },
+ {
+  "t": "2222.SR",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 247142000000.0,
+  "Cash And Cash Equivalents": 143518000000.0,
+  "Other Short Term Investments": 103624000000.0,
+  "Total Assets": 2769253000000.0,
+  "cur": "SAR",
+  "name": "Saudi Arabian Oil Company",
+  "sector": "Energy",
+  "industry": "Oil & Gas Integrated",
+  "mcap": 6352488366080,
+  "mcur": "SAR",
+  "fx": 0.2665529251098633,
+  "cash_usd_bn": 65.9
+ },
+ {
+  "t": "MSFT",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 64294000000.0,
+  "Cash And Cash Equivalents": 20281000000.0,
+  "Other Short Term Investments": 44013000000.0,
+  "Total Assets": 779403000000.0,
+  "cur": "USD",
+  "name": "Microsoft Corporation",
+  "sector": "Technology",
+  "industry": "Software - Infrastructure",
+  "mcap": 3598139523072,
+  "mcur": "USD",
+  "cash_usd_bn": 64.3
+ },
+ {
+  "t": "BABA",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 427241000000.0,
+  "Cash And Cash Equivalents": 192143000000.0,
+  "Other Short Term Investments": 235098000000.0,
+  "Total Assets": 2137085000000.0,
+  "cur": "CNY",
+  "name": "Alibaba Group Holding Limited",
+  "sector": "Consumer Cyclical",
+  "industry": "Internet Retail",
+  "mcap": 201706373120,
+  "mcur": "USD",
+  "fx": 0.1500983089208603,
+  "cash_usd_bn": 64.1
+ },
+ {
+  "t": "9988.HK",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 427241000000.0,
+  "Cash And Cash Equivalents": 192143000000.0,
+  "Other Short Term Investments": 235098000000.0,
+  "Total Assets": 2137085000000.0,
+  "cur": "CNY",
+  "name": "Alibaba Group Holding Limited",
+  "sector": "Consumer Cyclical",
+  "industry": "Internet Retail",
+  "mcap": 1658828357632,
+  "mcur": "HKD",
+  "fx": 0.1500983089208603,
+  "cash_usd_bn": 64.1
+ },
+ {
+  "t": "NVDA",
+  "date": "2026-07-31",
+  "Cash Cash Equivalents And Short Term Investments": 62469000000.0,
+  "Cash And Cash Equivalents": 22443000000.0,
+  "Other Short Term Investments": 40026000000.0,
+  "Total Assets": 320272000000.0,
+  "cur": "USD",
+  "name": "NVIDIA Corporation",
+  "sector": "Technology",
+  "industry": "Semiconductors",
+  "mcap": 3031172907008,
+  "mcur": "USD",
+  "cash_usd_bn": 62.5
+ },
+ {
+  "t": "9984.T",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 9560069000000.0,
+  "Cash And Cash Equivalents": 7432165000000.0,
+  "Other Short Term Investments": 2127904000000.0,
+  "Total Assets": 69387194000000.0,
+  "cur": "JPY",
+  "name": "SoftBank Group Corp.",
+  "sector": "Communication Services",
+  "industry": "Telecom Services",
+  "mcap": 17240402427904,
+  "mcur": "JPY",
+  "fx": 0.006261466071009636,
+  "cash_usd_bn": 59.9
+ },
+ {
+  "t": "AAPL",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 56722000000.0,
+  "Cash And Cash Equivalents": 36305000000.0,
+  "Other Short Term Investments": 20417000000.0,
+  "Total Assets": 404548000000.0,
+  "cur": "USD",
+  "name": "Apple Inc.",
+  "sector": "Technology",
+  "industry": "Consumer Electronics",
+  "mcap": 4978144444416,
+  "mcur": "USD",
+  "cash_usd_bn": 56.7
+ },
+ {
+  "t": "INTC",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 54005000000.0,
+  "Cash And Cash Equivalents": 21846000000.0,
+  "Other Short Term Investments": 32159000000.0,
+  "Total Assets": 228574000000.0,
+  "cur": "USD",
+  "name": "Intel Corporation",
+  "sector": "Technology",
+  "industry": "Semiconductors",
+  "mcap": 272553181184,
+  "mcur": "USD",
+  "cash_usd_bn": 54.0
+ },
+ {
+  "t": "0941.HK",
+  "date": "2026-06-30",
+  "Cash Cash Equivalents And Short Term Investments": 331738000000.0,
+  "Cash And Cash Equivalents": 102438000000.0,
+  "Other Short Term Investments": 229300000000.0,
+  "Total Assets": 2156804000000.0,
+  "cur": "CNY",
+  "name": "China Mobile Limited",
+  "sector": "Communication Services",
+  "industry": "Telecom Services",
+  "mcap": 1735779942400,
+  "mcur": "HKD",
+  "fx": 0.1500983089208603,
+  "cash_usd_bn": 49.8
+ },
+ {
+  "t": "0883.HK",
+  "date": "2026-06-30",
+  "Cash Cash Equivalents And Short Term Investments": 326270000000.0,
+  "Cash And Cash Equivalents": 161700000000.0,
+  "Other Short Term Investments": 164570000000.0,
+  "Total Assets": 1202503000000.0,
+  "cur": "CNY",
+  "name": "CNOOC Limited",
+  "sector": "Energy",
+  "industry": "Oil & Gas E&P",
+  "mcap": 1031400062976,
+  "mcur": "HKD",
+  "fx": 0.1500983089208603,
+  "cash_usd_bn": 49.0
+ },
+ {
+  "t": "601857.SS",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 313967000000.0,
+  "Cash And Cash Equivalents": 305646000000.0,
+  "Other Short Term Investments": 8321000000.0,
+  "Total Assets": 3106379000000.0,
+  "cur": "CNY",
+  "name": "PetroChina Company Limited",
+  "sector": "Energy",
+  "industry": "Oil & Gas Integrated",
+  "mcap": 2419537477632,
+  "mcur": "CNY",
+  "fx": 0.1500983089208603,
+  "cash_usd_bn": 47.1
+ },
+ {
+  "t": "TSLA",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 45216000000.0,
+  "Cash And Cash Equivalents": 17853000000.0,
+  "Other Short Term Investments": 27363000000.0,
+  "Total Assets": 157517000000.0,
+  "cur": "USD",
+  "name": "Tesla, Inc.",
+  "sector": "Consumer Cyclical",
+  "industry": "Auto Manufacturers",
+  "mcap": 1366942810112,
+  "mcur": "USD",
+  "cash_usd_bn": 45.2
+ },
+ {
+  "t": "BP",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 43053000000.0,
+  "Cash And Cash Equivalents": 42993000000.0,
+  "Other Short Term Investments": 60000000.0,
+  "Total Assets": 303721000000.0,
+  "cur": "USD",
+  "name": "BP p.l.c.",
+  "sector": "Energy",
+  "industry": "Oil & Gas Integrated",
+  "mcap": 110109130752,
+  "mcur": "USD",
+  "cash_usd_bn": 43.1
+ },
+ {
+  "t": "TTE",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 37803000000.0,
+  "Cash And Cash Equivalents": 34208000000.0,
+  "Other Short Term Investments": 3595000000.0,
+  "Total Assets": 341928000000.0,
+  "cur": "USD",
+  "name": "TotalEnergies SE",
+  "sector": "Energy",
+  "industry": "Oil & Gas Integrated",
+  "mcap": 186636926976,
+  "mcur": "USD",
+  "cash_usd_bn": 37.8
+ },
+ {
+  "t": "ORCL",
+  "date": "2026-08-31",
+  "Cash Cash Equivalents And Short Term Investments": 37077000000.0,
+  "Cash And Cash Equivalents": 36369000000.0,
+  "Other Short Term Investments": 708000000.0,
+  "Total Assets": 303259000000.0,
+  "cur": "USD",
+  "name": "Oracle Corporation",
+  "sector": "Technology",
+  "industry": "Software - Infrastructure",
+  "mcap": 315480899584,
+  "mcur": "USD",
+  "cash_usd_bn": 37.1
+ },
+ {
+  "t": "SHEL",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 36425000000.0,
+  "Cash And Cash Equivalents": 36425000000.0,
+  "Total Assets": 420574000000.0,
+  "cur": "USD",
+  "name": "Shell plc",
+  "sector": "Energy",
+  "industry": "Oil & Gas Integrated",
+  "mcap": 264137392128,
+  "mcur": "USD",
+  "cash_usd_bn": 36.4
+ },
+ {
+  "t": "RELIANCE.NS",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 3279970000000.0,
+  "Cash And Cash Equivalents": 1817230000000.0,
+  "Other Short Term Investments": 1462740000000.0,
+  "Total Assets": 22750330000000.0,
+  "cur": "INR",
+  "name": "Reliance Industries Limited",
+  "sector": "Energy",
+  "industry": "Oil & Gas Refining & Marketing",
+  "mcap": null,
+  "mcur": "INR",
+  "fx": 0.0107921427115798,
+  "cash_usd_bn": 35.4
+ },
+ {
+  "t": "F",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 34107000000.0,
+  "Cash And Cash Equivalents": 22275000000.0,
+  "Other Short Term Investments": 11832000000.0,
+  "Total Assets": 292484000000.0,
+  "cur": "USD",
+  "name": "Ford Motor Company",
+  "sector": "Consumer Cyclical",
+  "industry": "Auto Manufacturers",
+  "mcap": 44604239872,
+  "mcur": "USD",
+  "cash_usd_bn": 34.1
+ },
+ {
+  "t": "JD",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 204497000000.0,
+  "Cash And Cash Equivalents": 82637000000.0,
+  "Other Short Term Investments": 121860000000.0,
+  "Total Assets": 714612000000.0,
+  "cur": "CNY",
+  "name": "JD.com, Inc.",
+  "sector": "Consumer Cyclical",
+  "industry": "Internet Retail",
+  "mcap": 33627449344,
+  "mcur": "USD",
+  "fx": 0.1500983089208603,
+  "cash_usd_bn": 30.7
+ },
+ {
+  "t": "UNH",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 28549000000.0,
+  "Cash And Cash Equivalents": 25845000000.0,
+  "Other Short Term Investments": 2704000000.0,
+  "Total Assets": 312782000000.0,
+  "cur": "USD",
+  "name": "UnitedHealth Group Incorporated",
+  "sector": "Healthcare",
+  "industry": "Healthcare Plans",
+  "mcap": 304513286144,
+  "mcur": "USD",
+  "cash_usd_bn": 28.5
+ },
+ {
+  "t": "BIDU",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 186344000000.0,
+  "Cash And Cash Equivalents": 31013000000.0,
+  "Other Short Term Investments": 155331000000.0,
+  "Total Assets": 472388000000.0,
+  "cur": "CNY",
+  "name": "Baidu, Inc.",
+  "sector": "Communication Services",
+  "industry": "Internet Content & Information",
+  "mcap": 21067134976,
+  "mcur": "USD",
+  "fx": 0.1500983089208603,
+  "cash_usd_bn": 28.0
+ },
+ {
+  "t": "GM",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 27805000000.0,
+  "Cash And Cash Equivalents": 23196000000.0,
+  "Other Short Term Investments": 4609000000.0,
+  "Total Assets": 289183000000.0,
+  "cur": "USD",
+  "name": "General Motors Company",
+  "sector": "Consumer Cyclical",
+  "industry": "Auto Manufacturers",
+  "mcap": 66395774976,
+  "mcur": "USD",
+  "cash_usd_bn": 27.8
+ },
+ {
+  "t": "MBG.DE",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 23934000000.0,
+  "Cash And Cash Equivalents": 13714000000.0,
+  "Other Short Term Investments": 10220000000.0,
+  "Total Assets": 256417000000.0,
+  "cur": "EUR",
+  "name": "Mercedes-Benz Group AG",
+  "sector": "Consumer Cyclical",
+  "industry": "Auto Manufacturers",
+  "mcap": 35710119936,
+  "mcur": "EUR",
+  "fx": 1.0969723463058472,
+  "cash_usd_bn": 26.3
+ },
+ {
+  "t": "SIE.DE",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 23524000000.0,
+  "Cash And Cash Equivalents": 12906000000.0,
+  "Other Short Term Investments": 10618000000.0,
+  "Total Assets": 169866000000.0,
+  "cur": "EUR",
+  "name": "Siemens Aktiengesellschaft",
+  "sector": "Industrials",
+  "industry": "Specialty Industrial Machinery",
+  "mcap": 194607284224,
+  "mcur": "EUR",
+  "fx": 1.0969723463058472,
+  "cash_usd_bn": 25.8
+ },
+ {
+  "t": "3690.HK",
+  "date": "2026-06-30",
+  "Cash Cash Equivalents And Short Term Investments": 168314170000.0,
+  "Cash And Cash Equivalents": 104716797000.0,
+  "Other Short Term Investments": 63597373000.0,
+  "Total Assets": 384681689000.0,
+  "cur": "CNY",
+  "name": "Meituan",
+  "sector": "Consumer Cyclical",
+  "industry": "Internet Retail",
+  "mcap": 410427424768,
+  "mcur": "HKD",
+  "fx": 0.1500983089208603,
+  "cash_usd_bn": 25.3
+ },
+ {
+  "t": "AVGO",
+  "date": "2026-07-31",
+  "Cash Cash Equivalents And Short Term Investments": 23975000000.0,
+  "Cash And Cash Equivalents": 23975000000.0,
+  "Total Assets": 188148000000.0,
+  "cur": "USD",
+  "name": "Broadcom Inc.",
+  "sector": "Technology",
+  "industry": "Semiconductors",
+  "mcap": 1453140738048,
+  "mcur": "USD",
+  "cash_usd_bn": 24.0
+ },
+ {
+  "t": "BMW.DE",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 21089000000.0,
+  "Cash And Cash Equivalents": 19278000000.0,
+  "Other Short Term Investments": 1811000000.0,
+  "Total Assets": 274668000000.0,
+  "cur": "EUR",
+  "name": "Bayerische Motoren Werke Aktiengesellschaft",
+  "sector": "Consumer Cyclical",
+  "industry": "Auto Manufacturers",
+  "mcap": 31602006016,
+  "mcur": "EUR",
+  "fx": 1.0969723463058472,
+  "cash_usd_bn": 23.1
+ },
+ {
+  "t": "COST",
+  "date": "2026-08-31",
+  "Cash Cash Equivalents And Short Term Investments": 21301000000.0,
+  "Cash And Cash Equivalents": 20207000000.0,
+  "Other Short Term Investments": 1094000000.0,
+  "Total Assets": 89045000000.0,
+  "cur": "USD",
+  "name": "Costco Wholesale Corporation",
+  "sector": "Consumer Defensive",
+  "industry": "Discount Stores",
+  "mcap": 488395014144,
+  "mcur": "USD",
+  "cash_usd_bn": 21.3
+ },
+ {
+  "t": "BHP",
+  "date": "2026-06-30",
+  "Cash Cash Equivalents And Short Term Investments": 18602000000.0,
+  "Cash And Cash Equivalents": 18445000000.0,
+  "Other Short Term Investments": 157000000.0,
+  "Total Assets": 121387000000.0,
+  "cur": "USD",
+  "name": "BHP Group Limited",
+  "sector": "Basic Materials",
+  "industry": "Other Industrial Metals & Mining",
+  "mcap": 170736418816,
+  "mcur": "USD",
+  "cash_usd_bn": 18.6
+ },
+ {
+  "t": "1810.HK",
+  "date": "2026-06-30",
+  "Cash Cash Equivalents And Short Term Investments": 121723553000.0,
+  "Cash And Cash Equivalents": 37252369000.0,
+  "Other Short Term Investments": 84471184000.0,
+  "Total Assets": 516040794000.0,
+  "cur": "CNY",
+  "name": "Xiaomi Corporation",
+  "sector": "Technology",
+  "industry": "Consumer Electronics",
+  "mcap": 711082967040,
+  "mcur": "HKD",
+  "fx": 0.1500983089208603,
+  "cash_usd_bn": 18.3
+ },
+ {
+  "t": "JNJ",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 17228000000.0,
+  "Cash And Cash Equivalents": 16910000000.0,
+  "Other Short Term Investments": 318000000.0,
+  "Total Assets": 197425000000.0,
+  "cur": "USD",
+  "name": "Johnson & Johnson",
+  "sector": "Healthcare",
+  "industry": "Drug Manufacturers - General",
+  "mcap": 651105206272,
+  "mcur": "USD",
+  "cash_usd_bn": 17.2
+ },
+ {
+  "t": "KO",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 16595000000.0,
+  "Cash And Cash Equivalents": 13454000000.0,
+  "Other Short Term Investments": 3141000000.0,
+  "Total Assets": 107950000000.0,
+  "cur": "USD",
+  "name": "The Coca-Cola Company",
+  "sector": "Consumer Defensive",
+  "industry": "Beverages - Non-Alcoholic",
+  "mcap": 417241497600,
+  "mcur": "USD",
+  "cash_usd_bn": 16.6
+ },
+ {
+  "t": "CSCO",
+  "date": "2026-10-31",
+  "Cash Cash Equivalents And Short Term Investments": 15845000000.0,
+  "Cash And Cash Equivalents": 7778000000.0,
+  "Other Short Term Investments": 8067000000.0,
+  "Total Assets": 129458000000.0,
+  "cur": "USD",
+  "name": "Cisco Systems, Inc.",
+  "sector": "Technology",
+  "industry": "Communication Equipment",
+  "mcap": 357343494144,
+  "mcur": "USD",
+  "cash_usd_bn": 15.8
+ },
+ {
+  "t": "AMD",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 15776000000.0,
+  "Cash And Cash Equivalents": 7404000000.0,
+  "Other Short Term Investments": 8372000000.0,
+  "Total Assets": 94812000000.0,
+  "cur": "USD",
+  "name": "Advanced Micro Devices, Inc.",
+  "sector": "Technology",
+  "industry": "Semiconductors",
+  "mcap": 702393286656,
+  "mcur": "USD",
+  "cash_usd_bn": 15.8
+ },
+ {
+  "t": "PG",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 15365000000.0,
+  "Cash And Cash Equivalents": 15365000000.0,
+  "Total Assets": 133132000000.0,
+  "cur": "USD",
+  "name": "The Procter & Gamble Company",
+  "sector": "Consumer Defensive",
+  "industry": "Household & Personal Products",
+  "mcap": 392562900992,
+  "mcur": "USD",
+  "cash_usd_bn": 15.4
+ },
+ {
+  "t": "PFE",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 14272000000.0,
+  "Cash And Cash Equivalents": 1824000000.0,
+  "Other Short Term Investments": 12448000000.0,
+  "Total Assets": 204544000000.0,
+  "cur": "USD",
+  "name": "Pfizer Inc.",
+  "sector": "Healthcare",
+  "industry": "Drug Manufacturers - General",
+  "mcap": 156175990784,
+  "mcur": "USD",
+  "cash_usd_bn": 14.3
+ },
+ {
+  "t": "V",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 14083000000.0,
+  "Cash And Cash Equivalents": 12938000000.0,
+  "Other Short Term Investments": 1145000000.0,
+  "Total Assets": 94360000000.0,
+  "cur": "USD",
+  "name": "Visa Inc.",
+  "sector": "Financial Services",
+  "industry": "Credit Services",
+  "mcap": 749809041408,
+  "mcur": "USD",
+  "cash_usd_bn": 14.1
+ },
+ {
+  "t": "ASML",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 12735100000.0,
+  "Cash And Cash Equivalents": 8030900000.0,
+  "Other Short Term Investments": 4704200000.0,
+  "Total Assets": 58981200000.0,
+  "cur": "EUR",
+  "name": "ASML Holding N.V.",
+  "sector": "Technology",
+  "industry": "Semiconductor Equipment & Materials",
+  "mcap": 488023621632,
+  "mcur": "USD",
+  "fx": 1.0969723463058472,
+  "cash_usd_bn": 14.0
+ },
+ {
+  "t": "DTE.DE",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 12491000000.0,
+  "Cash And Cash Equivalents": 8220000000.0,
+  "Other Short Term Investments": 4271000000.0,
+  "Total Assets": 293468000000.0,
+  "cur": "EUR",
+  "name": "Deutsche Telekom AG",
+  "sector": "Communication Services",
+  "industry": "Telecom Services",
+  "mcap": 125973962752,
+  "mcur": "EUR",
+  "fx": 1.0969723463058472,
+  "cash_usd_bn": 13.7
+ },
+ {
+  "t": "MC.PA",
+  "date": "2026-06-30",
+  "Cash Cash Equivalents And Short Term Investments": 12202000000.0,
+  "Cash And Cash Equivalents": 6803000000.0,
+  "Other Short Term Investments": 5399000000.0,
+  "Total Assets": 141769000000.0,
+  "cur": "EUR",
+  "name": "LVMH Moët Hennessy - Louis Vuitton, Société Européenne",
+  "sector": "Consumer Cyclical",
+  "industry": "Luxury Goods",
+  "mcap": 187396194304,
+  "mcur": "EUR",
+  "fx": 1.0969723463058472,
+  "cash_usd_bn": 13.4
+ },
+ {
+  "t": "CVX",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 12804000000.0,
+  "Cash And Cash Equivalents": 12804000000.0,
+  "Other Short Term Investments": 0.0,
+  "Total Assets": 333786000000.0,
+  "cur": "USD",
+  "name": "Chevron Corporation",
+  "sector": "Energy",
+  "industry": "Oil & Gas Integrated",
+  "mcap": 406582722560,
+  "mcur": "USD",
+  "cash_usd_bn": 12.8
+ },
+ {
+  "t": "SONY",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 2041451000000.0,
+  "Cash And Cash Equivalents": 2009334000000.0,
+  "Other Short Term Investments": 32117000000.0,
+  "Total Assets": 16667715000000.0,
+  "cur": "JPY",
+  "name": "Sony Group Corporation",
+  "sector": "Technology",
+  "industry": "Consumer Electronics",
+  "mcap": 159053053952,
+  "mcur": "USD",
+  "fx": 0.006261466071009636,
+  "cash_usd_bn": 12.8
+ },
+ {
+  "t": "6758.T",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 2041451000000.0,
+  "Cash And Cash Equivalents": 2009334000000.0,
+  "Other Short Term Investments": 32117000000.0,
+  "Total Assets": 16667715000000.0,
+  "cur": "JPY",
+  "name": "Sony Group Corporation",
+  "sector": "Technology",
+  "industry": "Consumer Electronics",
+  "mcap": 25131430707200,
+  "mcur": "JPY",
+  "fx": 0.006261466071009636,
+  "cash_usd_bn": 12.8
+ },
+ {
+  "t": "XOM",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 12153000000.0,
+  "Cash And Cash Equivalents": 12153000000.0,
+  "Total Assets": 470917000000.0,
+  "cur": "USD",
+  "name": "ExxonMobil Holdings Corporation",
+  "sector": "Energy",
+  "industry": "Oil & Gas Integrated",
+  "mcap": 652634816512,
+  "mcur": "USD",
+  "cash_usd_bn": 12.2
+ },
+ {
+  "t": "SAP",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 10997000000.0,
+  "Cash And Cash Equivalents": 9364000000.0,
+  "Other Short Term Investments": 1633000000.0,
+  "Total Assets": 76336000000.0,
+  "cur": "EUR",
+  "name": "SAP SE",
+  "sector": "Technology",
+  "industry": "Software - Application",
+  "mcap": 229605851136,
+  "mcur": "USD",
+  "fx": 1.0969723463058472,
+  "cash_usd_bn": 12.1
+ },
+ {
+  "t": "WMT",
+  "date": "2026-07-31",
+  "Cash Cash Equivalents And Short Term Investments": 11529000000.0,
+  "Cash And Cash Equivalents": 11529000000.0,
+  "Total Assets": 293914000000.0,
+  "cur": "USD",
+  "name": "Walmart Inc.",
+  "sector": "Consumer Defensive",
+  "industry": "Discount Stores",
+  "mcap": 1018236174336,
+  "mcur": "USD",
+  "cash_usd_bn": 11.5
+ },
+ {
+  "t": "CRM",
+  "date": "2026-07-31",
+  "Cash Cash Equivalents And Short Term Investments": 11403000000.0,
+  "Cash And Cash Equivalents": 8310000000.0,
+  "Other Short Term Investments": 3093000000.0,
+  "Total Assets": 109620000000.0,
+  "cur": "USD",
+  "name": "Salesforce, Inc.",
+  "sector": "Technology",
+  "industry": "Software - Application",
+  "mcap": 148650262528,
+  "mcur": "USD",
+  "cash_usd_bn": 11.4
+ },
+ {
+  "t": "PEP",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 11163000000.0,
+  "Cash And Cash Equivalents": 10675000000.0,
+  "Other Short Term Investments": 488000000.0,
+  "Total Assets": 111976000000.0,
+  "cur": "USD",
+  "name": "PepsiCo, Inc.",
+  "sector": "Consumer Defensive",
+  "industry": "Beverages - Non-Alcoholic",
+  "mcap": 191519621120,
+  "mcur": "USD",
+  "cash_usd_bn": 11.2
+ },
+ {
+  "t": "IBM",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 11058000000.0,
+  "Cash And Cash Equivalents": 9233000000.0,
+  "Other Short Term Investments": 1825000000.0,
+  "Total Assets": 155011000000.0,
+  "cur": "USD",
+  "name": "International Business Machines Corporation",
+  "sector": "Technology",
+  "industry": "Information Technology Services",
+  "mcap": 212122927104,
+  "mcur": "USD",
+  "cash_usd_bn": 11.1
+ },
+ {
+  "t": "ABBV",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 10774000000.0,
+  "Cash And Cash Equivalents": 10774000000.0,
+  "Other Short Term Investments": null,
+  "Total Assets": 147680000000.0,
+  "cur": "USD",
+  "name": "AbbVie Inc.",
+  "sector": "Healthcare",
+  "industry": "Drug Manufacturers - General",
+  "mcap": 505891782656,
+  "mcur": "USD",
+  "cash_usd_bn": 10.8
+ },
+ {
+  "t": "1211.HK",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 71723452000.0,
+  "Cash And Cash Equivalents": 30988011000.0,
+  "Other Short Term Investments": 40735441000.0,
+  "Total Assets": 948941409000.0,
+  "cur": "CNY",
+  "name": "BYD Company Limited",
+  "sector": "Consumer Cyclical",
+  "industry": "Auto Manufacturers",
+  "mcap": 568457232384,
+  "mcur": "HKD",
+  "fx": 0.1500983089208603,
+  "cash_usd_bn": 10.8
+ },
+ {
+  "t": "T",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 10767000000.0,
+  "Cash And Cash Equivalents": 10767000000.0,
+  "Total Assets": 445871000000.0,
+  "cur": "USD",
+  "name": "AT&T Inc.",
+  "sector": "Communication Services",
+  "industry": "Telecom Services",
+  "mcap": 150290726912,
+  "mcur": "USD",
+  "cash_usd_bn": 10.8
+ },
+ {
+  "t": "PLTR",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 10561531000.0,
+  "Cash And Cash Equivalents": 3619414000.0,
+  "Other Short Term Investments": 6942117000.0,
+  "Total Assets": 13412976000.0,
+  "cur": "USD",
+  "name": "Palantir Technologies Inc.",
+  "sector": "Technology",
+  "industry": "Software - Infrastructure",
+  "mcap": 345738838016,
+  "mcur": "USD",
+  "cash_usd_bn": 10.6
+ },
+ {
+  "t": "MA",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 10464000000.0,
+  "Cash And Cash Equivalents": 10147000000.0,
+  "Other Short Term Investments": 317000000.0,
+  "Total Assets": 58149000000.0,
+  "cur": "USD",
+  "name": "Mastercard Incorporated",
+  "sector": "Financial Services",
+  "industry": "Credit Services",
+  "mcap": 544999112704,
+  "mcur": "USD",
+  "cash_usd_bn": 10.5
+ },
+ {
+  "t": "UBER",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 10068000000.0,
+  "Cash And Cash Equivalents": 9558000000.0,
+  "Other Short Term Investments": 510000000.0,
+  "Total Assets": 71067000000.0,
+  "cur": "USD",
+  "name": "Uber Technologies, Inc.",
+  "sector": "Technology",
+  "industry": "Software - Application",
+  "mcap": 129599275008,
+  "mcur": "USD",
+  "cash_usd_bn": 10.1
+ },
+ {
+  "t": "MRK",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 9650000000.0,
+  "Cash And Cash Equivalents": 9550000000.0,
+  "Other Short Term Investments": 100000000.0,
+  "Total Assets": 132773000000.0,
+  "cur": "USD",
+  "name": "Merck & Co., Inc.",
+  "sector": "Healthcare",
+  "industry": "Drug Manufacturers - General",
+  "mcap": 329652666368,
+  "mcur": "USD",
+  "cash_usd_bn": 9.7
+ },
+ {
+  "t": "RIO",
+  "date": "2026-06-30",
+  "Cash Cash Equivalents And Short Term Investments": 9507000000.0,
+  "Cash And Cash Equivalents": 8913000000.0,
+  "Other Short Term Investments": 594000000.0,
+  "Total Assets": 133500000000.0,
+  "cur": "USD",
+  "name": "Rio Tinto Group",
+  "sector": "Basic Materials",
+  "industry": "Other Industrial Metals & Mining",
+  "mcap": 118295150592,
+  "mcur": "USD",
+  "cash_usd_bn": 9.5
+ },
+ {
+  "t": "NOVN.SW",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 8975000000.0,
+  "Cash And Cash Equivalents": 8870000000.0,
+  "Other Short Term Investments": 105000000.0,
+  "Total Assets": 117149000000.0,
+  "cur": "USD",
+  "name": "Novartis AG",
+  "sector": "Healthcare",
+  "industry": "Drug Manufacturers - General",
+  "mcap": 241290559488,
+  "mcur": "CHF",
+  "cash_usd_bn": 9.0
+ },
+ {
+  "t": "NKE",
+  "date": "2026-08-31",
+  "Cash Cash Equivalents And Short Term Investments": 8368000000.0,
+  "Cash And Cash Equivalents": 6903000000.0,
+  "Other Short Term Investments": 1465000000.0,
+  "Total Assets": 37794000000.0,
+  "cur": "USD",
+  "name": "NIKE, Inc.",
+  "sector": "Consumer Cyclical",
+  "industry": "Footwear & Accessories",
+  "mcap": 48896364544,
+  "mcur": "USD",
+  "cash_usd_bn": 8.4
+ },
+ {
+  "t": "NFLX",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 8222953000.0,
+  "Cash And Cash Equivalents": 8194275000.0,
+  "Other Short Term Investments": 28678000.0,
+  "Total Assets": 58681954000.0,
+  "cur": "USD",
+  "name": "Netflix, Inc.",
+  "sector": "Communication Services",
+  "industry": "Entertainment",
+  "mcap": 232951873536,
+  "mcur": "USD",
+  "cash_usd_bn": 8.2
+ },
+ {
+  "t": "AZN",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 8166000000.0,
+  "Cash And Cash Equivalents": 7936000000.0,
+  "Other Short Term Investments": 230000000.0,
+  "Total Assets": 119922000000.0,
+  "cur": "USD",
+  "name": "AstraZeneca PLC",
+  "sector": "Healthcare",
+  "industry": "Drug Manufacturers - General",
+  "mcap": 270402502656,
+  "mcur": "USD",
+  "cash_usd_bn": 8.2
+ },
+ {
+  "t": "TXN",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 8142000000.0,
+  "Cash And Cash Equivalents": 4211000000.0,
+  "Other Short Term Investments": 3931000000.0,
+  "Total Assets": 36839000000.0,
+  "cur": "USD",
+  "name": "Texas Instruments Incorporated",
+  "sector": "Technology",
+  "industry": "Semiconductors",
+  "mcap": 241006919680,
+  "mcur": "USD",
+  "cash_usd_bn": 8.1
+ },
+ {
+  "t": "QCOM",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 7681000000.0,
+  "Cash And Cash Equivalents": 4636000000.0,
+  "Other Short Term Investments": 3045000000.0,
+  "Total Assets": 60829000000.0,
+  "cur": "USD",
+  "name": "QUALCOMM Incorporated",
+  "sector": "Technology",
+  "industry": "Semiconductors",
+  "mcap": 160435798016,
+  "mcur": "USD",
+  "cash_usd_bn": 7.7
+ },
+ {
+  "t": "CMCSA",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 7596000000.0,
+  "Cash And Cash Equivalents": 7596000000.0,
+  "Total Assets": 257769000000.0,
+  "cur": "USD",
+  "name": "Comcast Corporation",
+  "sector": "Communication Services",
+  "industry": "Telecom Services",
+  "mcap": 88420057088,
+  "mcur": "USD",
+  "cash_usd_bn": 7.6
+ },
+ {
+  "t": "600519.SS",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 49926813769.81,
+  "Cash And Cash Equivalents": 49926813769.81,
+  "Total Assets": 318304891882.72,
+  "cur": "CNY",
+  "name": "Kweichow Moutai Co., Ltd.",
+  "sector": "Consumer Defensive",
+  "industry": "Beverages - Wineries & Distilleries",
+  "mcap": null,
+  "mcur": "CNY",
+  "fx": 0.1500983089208603,
+  "cash_usd_bn": 7.5
+ },
+ {
+  "t": "NESN.SW",
+  "date": "2026-06-30",
+  "Cash Cash Equivalents And Short Term Investments": 6134000000.0,
+  "Cash And Cash Equivalents": 3551000000.0,
+  "Other Short Term Investments": 2583000000.0,
+  "Total Assets": 128384000000.0,
+  "cur": "CHF",
+  "name": "Nestlé S.A.",
+  "sector": "Consumer Defensive",
+  "industry": "Packaged Foods",
+  "mcap": 220053422080,
+  "mcur": "CHF",
+  "fx": 1.1846938133239746,
+  "cash_usd_bn": 7.3
+ },
+ {
+  "t": "NVO",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 46352000000.0,
+  "Cash And Cash Equivalents": 44151000000.0,
+  "Other Short Term Investments": 2201000000.0,
+  "Total Assets": 599160000000.0,
+  "cur": "DKK",
+  "name": "Novo Nordisk A/S",
+  "sector": "Healthcare",
+  "industry": "Drug Manufacturers - General",
+  "mcap": 166686162944,
+  "mcur": "USD",
+  "fx": 0.14675021171569824,
+  "cash_usd_bn": 6.8
+ },
+ {
+  "t": "DIS",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 6679000000.0,
+  "Cash And Cash Equivalents": 6679000000.0,
+  "Total Assets": 206138000000.0,
+  "cur": "USD",
+  "name": "The Walt Disney Company",
+  "sector": "Communication Services",
+  "industry": "Entertainment",
+  "mcap": 201513353216,
+  "mcur": "USD",
+  "cash_usd_bn": 6.7
+ },
+ {
+  "t": "TCS.NS",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 571290000000.0,
+  "Cash And Cash Equivalents": 51060000000.0,
+  "Other Short Term Investments": 520230000000.0,
+  "Total Assets": 1907820000000.0,
+  "cur": "INR",
+  "name": "Tata Consultancy Services Limited",
+  "sector": "Technology",
+  "industry": "Information Technology Services",
+  "mcap": null,
+  "mcur": "INR",
+  "fx": 0.0107921427115798,
+  "cash_usd_bn": 6.2
+ },
+ {
+  "t": "ADBE",
+  "date": "2026-08-31",
+  "Cash Cash Equivalents And Short Term Investments": 5639000000.0,
+  "Cash And Cash Equivalents": 4359000000.0,
+  "Other Short Term Investments": 1280000000.0,
+  "Total Assets": 29981000000.0,
+  "cur": "USD",
+  "name": "Adobe Inc.",
+  "sector": "Technology",
+  "industry": "Software - Application",
+  "mcap": 84732731392,
+  "mcur": "USD",
+  "cash_usd_bn": 5.6
+ },
+ {
+  "t": "LLY",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 4885000000.0,
+  "Cash And Cash Equivalents": 4885000000.0,
+  "Other Short Term Investments": null,
+  "Total Assets": 148072000000.0,
+  "cur": "USD",
+  "name": "Eli Lilly and Company",
+  "sector": "Healthcare",
+  "industry": "Drug Manufacturers - General",
+  "mcap": 1199931523072,
+  "mcur": "USD",
+  "cash_usd_bn": 4.9
+ },
+ {
+  "t": "VZ",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 4495000000.0,
+  "Cash And Cash Equivalents": 4495000000.0,
+  "Total Assets": 415522000000.0,
+  "cur": "USD",
+  "name": "Verizon Communications Inc.",
+  "sector": "Communication Services",
+  "industry": "Telecom Services",
+  "mcap": 192640925696,
+  "mcur": "USD",
+  "cash_usd_bn": 4.5
+ },
+ {
+  "t": "GSK",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 2962000000.0,
+  "Cash And Cash Equivalents": 2934000000.0,
+  "Other Short Term Investments": 28000000.0,
+  "Total Assets": 71699000000.0,
+  "cur": "GBP",
+  "name": "GSK plc",
+  "sector": "Healthcare",
+  "industry": "Drug Manufacturers - General",
+  "mcap": 95733465088,
+  "mcur": "USD",
+  "fx": 1.3081814050674438,
+  "cash_usd_bn": 3.9
+ },
+ {
+  "t": "ARM",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 3621000000.0,
+  "Cash And Cash Equivalents": 3251000000.0,
+  "Other Short Term Investments": 370000000.0,
+  "Total Assets": 11414000000.0,
+  "cur": "USD",
+  "name": "Arm Holdings plc",
+  "sector": "Technology",
+  "industry": "Semiconductors",
+  "mcap": 162853994496,
+  "mcur": "USD",
+  "cash_usd_bn": 3.6
+ },
+ {
+  "t": "HD",
+  "date": "2026-07-31",
+  "Cash Cash Equivalents And Short Term Investments": 2085000000.0,
+  "Cash And Cash Equivalents": 2085000000.0,
+  "Total Assets": 109384000000.0,
+  "cur": "USD",
+  "name": "The Home Depot, Inc.",
+  "sector": "Consumer Cyclical",
+  "industry": "Home Improvement Retail",
+  "mcap": 338256691200,
+  "mcur": "USD",
+  "cash_usd_bn": 2.1
+ },
+ {
+  "t": "PBR",
+  "date": "2026-06-30",
+  "Cash Cash Equivalents And Short Term Investments": 10386000000.0,
+  "Cash And Cash Equivalents": 6483000000.0,
+  "Other Short Term Investments": 3903000000.0,
+  "Total Assets": 247077000000.0,
+  "cur": "BRL",
+  "name": "Petróleo Brasileiro S.A. - Petrobras",
+  "sector": "Energy",
+  "industry": "Oil & Gas Integrated",
+  "mcap": 103174307840,
+  "mcur": "USD",
+  "fx": 0.16810113191604614,
+  "cash_usd_bn": 1.7
+ },
+ {
+  "t": "MCD",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 1193000000.0,
+  "Cash And Cash Equivalents": 1193000000.0,
+  "Total Assets": 60657000000.0,
+  "cur": "USD",
+  "name": "McDonald's Corporation",
+  "sector": "Consumer Cyclical",
+  "industry": "Restaurants",
+  "mcap": 192848625664,
+  "mcur": "USD",
+  "cash_usd_bn": 1.2
+ },
+ {
+  "t": "VALE",
+  "date": "2026-09-30",
+  "Cash Cash Equivalents And Short Term Investments": 5036000000.0,
+  "Cash And Cash Equivalents": 4841000000.0,
+  "Other Short Term Investments": 195000000.0,
+  "Total Assets": 88440000000.0,
+  "cur": "BRL",
+  "name": "Vale S.A.",
+  "sector": "Basic Materials",
+  "industry": "Other Industrial Metals & Mining",
+  "mcap": 40387194880,
+  "mcur": "USD",
+  "fx": 0.16810113191604614,
+  "cash_usd_bn": 0.8
+ },
+ {
+  "t": "BRK-B",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "GOOGL",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "MSFT",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "AAPL",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "AMZN",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "META",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "NVDA",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "TSM",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "AVGO",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "ORCL",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "TSLA",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "NFLX",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "CSCO",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "JNJ",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "PFE",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "MRK",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "LLY",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "ABBV",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "UNH",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "WMT",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "XOM",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "CVX",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "COST",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "BABA",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "PDD",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "JD",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "BIDU",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "QCOM",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "INTC",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "AMD",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "ADBE",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "CRM",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "NVO",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "ASML",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "SAP",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "TM",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "SONY",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "7203.T",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "6758.T",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "9984.T",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "005930.KS",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "000660.KS",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "0700.HK",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "9988.HK",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "1810.HK",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "3690.HK",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "1211.HK",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "2222.SR",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "ROG.SW",
+  "err": "no bs"
+ },
+ {
+  "t": "NESN.SW",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "NOVN.SW",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "MC.PA",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "TTE",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "SHEL",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "BP",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "AZN",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "GSK",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "VOW3.DE",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "MBG.DE",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "BMW.DE",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "SIE.DE",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "DTE.DE",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "RELIANCE.NS",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "TCS.NS",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "VALE",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "PBR",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "BHP",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "RIO",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "GM",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "F",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "IBM",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "TXN",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "KO",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "PEP",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "PG",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "MCD",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "DIS",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "T",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "VZ",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "CMCSA",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "HD",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "NKE",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "V",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "MA",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "UBER",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "PLTR",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "ARM",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "601857.SS",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "600519.SS",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "0941.HK",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "0883.HK",
+  "err": "name 'time' is not defined"
+ },
+ {
+  "t": "2318.HK",
+  "err": "name 'time' is not defined"
+ }
+]
