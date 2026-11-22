@@ -213,6 +213,14 @@
    "type": "reel",
    "dubai_time": "21:46",
    "timeset": "manual"
+  },
+  {
+   "id": "b2_race_bb_towers",
+   "at": "2026-11-22T06:00:47.797687+00:00",
+   "post": "18098943530147397",
+   "type": "reel",
+   "dubai_time": "10:00",
+   "timeset": "manual"
   }
  ]
 }

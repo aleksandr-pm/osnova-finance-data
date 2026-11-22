@@ -1,21 +1,22 @@
-Слот reel: в очереди 1 из 28; LIVE=да
-Следующий: r_offplan_share (media/r_offplan_share.mp4)
+Слот reel: в очереди 15 из 43; LIVE=да
+Следующий: b2_race_bb_towers (media/b2_race_bb_towers.mp4)
 ---
-In 2021 almost no one bought Dubai offices off-plan: 0.1% of sales. In 2026 it is 65%.
+4,365 AED per sq ft. The Opus by Omniyat is the most expensive of the ten most traded office towers in Business Bay.
 
-Off-plan share of office sales:
-2015: 21%
-2021: 0.1%
-2024: 6%
-2025: 31%
-2026, Jan to Aug: 64.9%
+Median price paid, 2020 to 2025:
+The Binary by Omniyat: 657 to 3,174 (x4.8)
+B2B Tower: 728 to 2,295
+Tamani Arts: 720 to 2,035, the most traded tower with 1,045 deals since 2018
+Park Lane: 705 to 1,710
 
-Off-plan used to be the discount. Now it is the premium. Full data on osnova.property, link in bio. Or comment DATA and we will send you the full research.
+Same district, 2.5x difference between towers.
 
-Source: DLD registered sales, office units; 2026 is Jan to Aug · osnova.property. Market statistics, not an offer or investment advice.
+Full data on osnova.property, link in bio. Or comment PRICE and we will send it to you.
 
-#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace #offplan
+Source: Dubai Land Department sales, office units, OSNOVA aggregates, 2018–2025. Years with under 5 deals interpolated. Market statistics, not an offer or investment advice.
+
+#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace #businessbay
 ---
-Контейнер 17924986608242274, загрузка 1.2 МБ
-Опубликовано: r_offplan_share → 18155529619554032
-exit=0 2026-11-21T17:46:59.074851+00:00
+Контейнер 17925093534242274, загрузка 9.1 МБ
+Опубликовано: b2_race_bb_towers → 18098943530147397
+exit=0 2026-11-22T06:00:47.798618+00:00
