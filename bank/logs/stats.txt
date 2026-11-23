@@ -1,24 +1,24 @@
-Threads @osnova_finance {"views": 1891, "likes": 4, "replies": 2, "reposts": 0, "followers_count": 7}
-  постов за 7 дней: 28, просмотров по постам: 1640, медиана: 13
+Threads @osnova_finance {"views": 2025, "likes": 5, "replies": 2, "reposts": 0, "followers_count": 7}
+  постов за 7 дней: 28, просмотров по постам: 1501, медиана: 10
      953  Переводы мигрантов: Узбекистан, Таджикистан, Киргизия, 2005-
-     304  Ввп на человека: Россия, Казахстан, Беларусь, 2000-2025: 1. 
+     190  Ввп на человека: Узбекистан, Киргизия, Таджикистан, 2000-202
       59  Ввп на человека: Польша и Россия, 2000-2025: 1. 🇵🇱 Польша · 
       54  Ввп: Казахстан и Узбекистан, 2000-2025: 1. 🇰🇿 Казахстан · $3
-      43  Крупнейший банк Дубая. Работает в ОАЭ, Саудовской Аравии, Ег
-Threads @osnova_report {"views": 986, "likes": 7, "replies": 2, "reposts": 0, "followers_count": 82}
-  постов за 7 дней: 14, просмотров по постам: 701, медиана: 53
-      90  Hershey крупнейший производитель шоколада в США. Какао за по
+      30  Mattel выпускает Barbie, Hot Wheels и Fisher-Price  Выручка:
+Threads @osnova_report {"views": 922, "likes": 4, "replies": 2, "reposts": 0, "followers_count": 82}
+  постов за 7 дней: 13, просмотров по постам: 653, медиана: 53
       82  Chipotle сама управляет всеми своими ресторанами, без франча
       79  Duolingo зарабатывает на подписках Super и Max, бесплатная в
-      75  Al Ansari Financial Services: обмен валют и денежные перевод
+      74  Copart продаёт на онлайн-аукционах битые и списанные машины,
+      62  Cintas сдаёт компаниям в аренду униформу, коврики и обслужив
       57  Tabreed охлаждает здания централизованно через сети труб в О
-Instagram @osnova_finance {"id": "17841410889815757", "followers_count": 21, "media_count": 118}
-  публикаций за 7 дней: 22, просмотров: 0
+Instagram @osnova_finance {"id": "17841410889815757", "followers_count": 25, "media_count": 122}
+  публикаций за 7 дней: 21, просмотров: 0
+       0 REELS  Россия: производство пшеницы выросло в 2,4 раза с  {"ошибка": "(#10) Application does not have permission for this action"}
+       0 FEED   №1: Coca-Cola, $412 млрд.  Крупнейшие производител {"ошибка": "(#10) Application does not have permission for this action"}
+       0 REELS  Россия: резервы выросли в 22 раза с 2000 года.  Эк {"ошибка": "(#10) Application does not have permission for this action"}
        0 REELS  Армения обогнала Азербайджан в 2004 году.  Новые р {"ошибка": "(#10) Application does not have permission for this action"}
        0 FEED   Китай: ВВП вырос в 15,9 раза с 2000 года.  Ввп: СШ {"ошибка": "(#10) Application does not have permission for this action"}
        0 REELS  Пять стран дают 70% мирового экспорта подсолнечног {"ошибка": "(#10) Application does not have permission for this action"}
        0 REELS  Самые богатые люди из сферы телекома: №1 Карлос Сл {"ошибка": "(#10) Application does not have permission for this action"}
        0 FEED   №1: Уоррен Баффетт, $162 млрд.  Самые богатые люди {"ошибка": "(#10) Application does not have permission for this action"}
-       0 REELS  Казахстан: ВВП на человека вырос в 12,5 раза с 200 {"ошибка": "(#10) Application does not have permission for this action"}
-       0 REELS  Китай: ВВП на человека вырос в 14,3 раза с 2000 го {"ошибка": "(#10) Application does not have permission for this action"}
-       0 FEED   Россия: ВВП на человека вырос в 9,9 раза с 2000 го {"ошибка": "(#10) Application does not have permission for this action"}
