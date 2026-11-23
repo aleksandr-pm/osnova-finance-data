@@ -1,11 +1,5 @@
 [
  {
-  "id": "evening-2026-11-20",
-  "caption": "📈 <b>Итоги дня 20 ноября</b>\n\nS&P 500 −3,70%, Nasdaq −5,28%, Dow Jones −1,93%\nНефть Brent −2,28%, Золото −4,00%\n\n#итогидня",
-  "t": 1795212406,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-20.png"
- },
- {
   "id": "calendar-2026-11-23",
   "caption": "🗓 <b>Экономический календарь на 23 ноября</b>\n\nГлавных событий нет, на графике второстепенные\n\nВремя по Дубаю · #календарь",
   "t": 1795411195,
@@ -152,5 +146,10 @@
   "caption": "📊 Акции <b>Nvidia</b> выросли на 31,56% за день\nЗа полгода: −23,08%, цена $165,26\n\n#графикдня",
   "t": 1795455671,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-23-NVDA.png"
+ },
+ {
+  "id": "alert-2026-11-23-META-u",
+  "caption": "⚡️🚀 <b>Meta</b> (META) +7,20% за день, $601,23\n\n#алерт",
+  "t": 1795466177
  }
 ]
