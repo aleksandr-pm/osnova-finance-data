@@ -1,20 +1,19 @@
-Слот reel: в очереди 11 из 43; LIVE=да
-Следующий: b2_wh_dumbbell (media/b2_wh_dumbbell.mp4)
+Слот reel: в очереди 10 из 43; LIVE=да
+Следующий: b2_count_growth (media/b2_count_growth.mp4)
 ---
-Al Quoz warehouse listings ask 100 AED per sq ft a year. Tenants sign at 55.
+Top 10 Dubai office districts by price growth, 2020 to 2025 (ready offices, DLD):
+1. JVC: +220%
+2. The Greens: +215%
+3. Barsha Heights: +204%
+4. Downtown: +184%
+5. JLT: +162%
 
-Warehouse rent, asked vs paid (Ejari 2026):
-Al Quoz 100 vs 55
-DIP 68 vs 51
-Industrial City 62 vs 50
-Jebel Ali and JAFZA 49 vs 50, the only area where listings match leases
+Full data on osnova.property, link in bio. Or comment PRICE and we will send it to you.
 
-Full data on osnova.property, link in bio. Or comment RENT and we will send it to you.
+Source: Dubai Land Department sales, office units, OSNOVA aggregates, ready offices, 2020 vs 2025. Market statistics, not an offer or investment advice.
 
-Source: portal listings Nov 2026 · Ejari new leases, 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
-
-#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace #warehouse
+#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace
 ---
-Контейнер 17925385506242274, загрузка 4.7 МБ
-Опубликовано: b2_wh_dumbbell → 18118405940180137
-exit=0 2026-11-23T12:41:00.952556+00:00
+Контейнер 17925452412242274, загрузка 6.7 МБ
+Опубликовано: b2_count_growth → 17898768555613606
+exit=0 2026-11-23T18:03:55.433178+00:00
