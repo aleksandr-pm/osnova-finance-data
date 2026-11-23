@@ -1,21 +1,14 @@
-threads: mkt_country_cap_es (companies, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/a34a3b43d8d8/bank/cards_markets/mkt_country_cap_es.jpg
+threads: duel_ne_exp_gnfs_cd_vn_th (economy, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/9805a445c37b/bank/covers/duel_ne_exp_gnfs_cd_vn_th.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/9805a445c37b/bank/cards/duel_ne_exp_gnfs_cd_vn_th.jpg
 ---
-Самые дорогие компании Испании, ноябрь 2026:
-1. 🇪🇸 Inditex · $198 млрд
-2. 🇪🇸 Iberdrola · $165 млрд
-3. 🇪🇸 Santander · $160 млрд
-4. 🇪🇸 Banco Bilbao Vizcaya Argentaria · $128 млрд
-5. 🇪🇸 CaixaBank · $87,3 млрд
-6. 🇪🇸 Endesa · $48,1 млрд
-7. 🇪🇸 Aena · $45,5 млрд
-8. 🇪🇸 Ferrovial · $41,7 млрд
-9. 🇪🇸 Repsol · $33,1 млрд
-10. 🇪🇸 Naturgy · $30,5 млрд
-№1: Inditex, $198 млрд.
+Экспорт: Вьетнам и Таиланд, 2000-2025:
+1. 🇻🇳 Вьетнам · $506 млрд, в 30,1 раза
+2. 🇹🇭 Таиланд · $411 млрд, в 5 раз
+Вьетнам обогнал Таиланд в 2020 году.
 Больше в Telegram @osnovafin
 ---
-Threads: текстом
-Ответ со ссылкой: 17956913523317845
-Опубликовано: 18032765570924383. Осталось новых рейтингов: 165
-exit=0 2026-11-23T06:41:33Z
+Threads: с картинкой
+Ответ со ссылкой: 18128202004931939
+Опубликовано: 18170997139483547. Осталось новых рейтингов: 164
+exit=0 2026-11-23T17:29:56Z
