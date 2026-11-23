@@ -1,10 +1,5 @@
 [
  {
-  "id": "alert-2026-11-20-SHOP-d",
-  "caption": "⚡️🔻 <b>Shopify</b> (SHOP) −6,12% за день, $123,89\n\n#алерт",
-  "t": 1795206473
- },
- {
   "id": "evening-2026-11-20",
   "caption": "📈 <b>Итоги дня 20 ноября</b>\n\nS&P 500 −3,70%, Nasdaq −5,28%, Dow Jones −1,93%\nНефть Brent −2,28%, Золото −4,00%\n\n#итогидня",
   "t": 1795212406,
@@ -151,5 +146,11 @@
   "id": "alert-2026-11-23-GOOGL-u",
   "caption": "⚡️🚀 <b>Alphabet</b> (GOOGL) +7,02% за день, $283,9\n\n#алерт",
   "t": 1795455401
+ },
+ {
+  "id": "chart-2026-11-23-NVDA",
+  "caption": "📊 Акции <b>Nvidia</b> выросли на 31,56% за день\nЗа полгода: −23,08%, цена $165,26\n\n#графикдня",
+  "t": 1795455671,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-23-NVDA.png"
  }
 ]
