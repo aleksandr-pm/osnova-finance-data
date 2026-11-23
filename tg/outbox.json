@@ -1,11 +1,5 @@
 [
  {
-  "id": "evening-2026-11-19",
-  "caption": "📈 <b>Итоги дня 19 ноября</b>\n\nS&P 500 −2,02%, Nasdaq −2,25%, Dow Jones −2,19%\nНефть Brent −2,07%, Золото −3,08%\n\n#итогидня",
-  "t": 1795126110,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-19.png"
- },
- {
   "id": "calendar-2026-11-20",
   "caption": "🗓 <b>Экономический календарь на 20 ноября</b>\n\n12:15 🇪🇺 Выступление главы ЕЦБ (Lagarde)\n19:00 🇺🇸 Настроения потребителей (Мичиган), итог (прогноз 51,7 · ранее 51,0)\n\nСпокойный день: важной статистики нет.\n\nВремя по Дубаю · #календарь",
   "t": 1795150930
@@ -152,5 +146,11 @@
   "caption": "📈 <b>Итоги дня 20 ноября</b>\n\nS&P 500 −3,70%, Nasdaq −5,28%, Dow Jones −1,93%\nНефть Brent −2,28%, Золото −4,00%\n\n#итогидня",
   "t": 1795212406,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-20.png"
+ },
+ {
+  "id": "calendar-2026-11-23",
+  "caption": "🗓 <b>Экономический календарь на 23 ноября</b>\n\nГлавных событий нет, на графике второстепенные\n\nВремя по Дубаю · #календарь",
+  "t": 1795411195,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/calendar-2026-11-23.png"
  }
 ]
