@@ -1,5 +1,7 @@
 {
- "earn_seen": {},
+ "earn_seen": {
+  "HPE-2026Q4": 1795476814
+ },
  "caps": {
   "ACRE": {
    "cap": 188.63578552706554,
@@ -6173,6 +6175,111 @@
    "cap": 25.159832964980545,
    "name": "Brand Engagement Network Inc",
    "ind": "Technology"
+  },
+  "A": {
+   "cap": 49750.572942000006,
+   "name": "Agilent Technologies Inc",
+   "ind": "Life Sciences Tools & Services"
+  },
+  "AMTM": {
+   "cap": 5046.612313156343,
+   "name": "Amentum Holdings, Inc.",
+   "ind": "Professional Services"
+  },
+  "CENT": {
+   "cap": 2577.7289550839714,
+   "name": "Central Garden & Pet Co",
+   "ind": "Consumer products"
+  },
+  "CMP": {
+   "cap": 830.3816897934614,
+   "name": "Compass Minerals International, Inc.",
+   "ind": "Metals & Mining"
+  },
+  "DAC": {
+   "cap": 2649.710952692372,
+   "name": "Danaos Corporation",
+   "ind": "Marine"
+  },
+  "EPSN": {
+   "cap": 143.24228137083333,
+   "name": "Epsilon Energy Ltd",
+   "ind": "Energy"
+  },
+  "FLNC": {
+   "cap": 723.2485876248555,
+   "name": "Fluence Energy Inc",
+   "ind": "Electrical Equipment"
+  },
+  "FMHS": {
+   "cap": 2.388244,
+   "name": "Farmhouse Inc",
+   "ind": "Beverages"
+  },
+  "HPE": {
+   "cap": 62045.700859475444,
+   "name": "Hewlett Packard Enterprise Company",
+   "ind": "Technology"
+  },
+  "J": {
+   "cap": 18087.73176164211,
+   "name": "Jacobs Solutions Inc",
+   "ind": "Professional Services"
+  },
+  "LIMN": {
+   "cap": 3.304291601593626,
+   "name": "Liminatus Pharma Inc",
+   "ind": "Biotechnology"
+  },
+  "LOCL": {
+   "cap": 17.057985571642686,
+   "name": "Local Bounti Corp",
+   "ind": "Food Products"
+  },
+  "MITI": {
+   "cap": 0.72,
+   "name": "Mitesco Inc",
+   "ind": "Technology"
+  },
+  "PFLT": {
+   "cap": 610.6861704034942,
+   "name": "PennantPark Floating Rate Capital Ltd",
+   "ind": "Financial Services"
+  },
+  "PNNT": {
+   "cap": 182.17611282287825,
+   "name": "PennantPark Investment Corporation",
+   "ind": "Financial Services"
+  },
+  "SMTC": {
+   "cap": 9684.399548795616,
+   "name": "Semtech Corporation",
+   "ind": "Semiconductors"
+  },
+  "SOBR": {
+   "cap": 0.17777707317073174,
+   "name": "Sobr Safe Inc",
+   "ind": "Electrical Equipment"
+  },
+  "SOWG": {
+   "cap": 48.34224716417721,
+   "name": "Sow Good Inc",
+   "ind": "Food Products"
+  },
+  "SYM": {
+   "cap": 22141.728,
+   "name": "Symbotic Inc.",
+   "ind": "Machinery"
+  },
+  "TUYA": {
+   "cap": 965.79067686284,
+   "name": "Tuya Inc.",
+   "ind": "Technology"
+  },
+  "ZM": {
+   "cap": 27865.34,
+   "name": "Zoom Communications, Inc.",
+   "ind": "Technology"
   }
  },
  "earn_done": [
@@ -6237,6 +6344,7 @@
   "BABA-2027Q2",
   "NTES-2026Q3",
   "WMT-2027Q3",
-  "INTU-2027Q1"
+  "INTU-2027Q1",
+  "HPE-2026Q4"
  ]
 }
