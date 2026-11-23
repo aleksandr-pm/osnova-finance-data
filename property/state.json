@@ -245,6 +245,14 @@
    "type": "reel",
    "dubai_time": "10:10",
    "timeset": "manual"
+  },
+  {
+   "id": "b2_wh_dumbbell",
+   "at": "2026-11-23T12:41:00.951771+00:00",
+   "post": "18118405940180137",
+   "type": "reel",
+   "dubai_time": "16:41",
+   "timeset": "manual"
   }
  ]
 }

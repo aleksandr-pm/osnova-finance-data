@@ -1,20 +1,20 @@
-Слот reel: в очереди 12 из 43; LIVE=да
-Следующий: b2_slope_price (media/b2_slope_price.mp4)
+Слот reel: в очереди 11 из 43; LIVE=да
+Следующий: b2_wh_dumbbell (media/b2_wh_dumbbell.mp4)
 ---
-Office prices per sq ft, 2020 vs 2025, ready offices (DLD):
-Downtown: 1,800 to 5,110 (+184%)
-The Greens: 1,000 to 3,146 (+215%)
-Dubai Marina: 1,400 to 2,547 (+82%)
-Business Bay: 748 to 1,820 (+143%)
-Barsha Heights: 543 to 1,650 (+204%)
-JLT: 544 to 1,425 (+162%)
+Al Quoz warehouse listings ask 100 AED per sq ft a year. Tenants sign at 55.
 
-Full data on osnova.property, link in bio. Or comment PRICE and we will send it to you.
+Warehouse rent, asked vs paid (Ejari 2026):
+Al Quoz 100 vs 55
+DIP 68 vs 51
+Industrial City 62 vs 50
+Jebel Ali and JAFZA 49 vs 50, the only area where listings match leases
 
-Source: Dubai Land Department sales, office units, OSNOVA aggregates, ready offices, 2020 and 2025. Market statistics, not an offer or investment advice.
+Full data on osnova.property, link in bio. Or comment RENT and we will send it to you.
 
-#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace
+Source: portal listings Nov 2026 · Ejari new leases, 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
+
+#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace #warehouse
 ---
-Контейнер 17925325677242274, загрузка 5.0 МБ
-Опубликовано: b2_slope_price → 18031676105935880
-exit=0 2026-11-23T06:10:05.397307+00:00
+Контейнер 17925385506242274, загрузка 4.7 МБ
+Опубликовано: b2_wh_dumbbell → 18118405940180137
+exit=0 2026-11-23T12:41:00.952556+00:00
