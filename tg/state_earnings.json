@@ -6148,6 +6148,26 @@
    "cap": 109.14603096774195,
    "name": "Dynagas LNG Partners LP",
    "ind": "Energy"
+  },
+  "SOAR": {
+   "cap": 9.340281382978723,
+   "name": "SOAR AI, Inc.",
+   "ind": "Airlines"
+  },
+  "THCH": {
+   "cap": 32.036527962085316,
+   "name": "TH International Ltd",
+   "ind": "Hotels, Restaurants & Leisure"
+  },
+  "VNET": {
+   "cap": 1249.25,
+   "name": "VNET Group, Inc.",
+   "ind": "Technology"
+  },
+  "ZEPP": {
+   "cap": 18.61,
+   "name": "Zepp Health Corporation",
+   "ind": "Electrical Equipment"
   }
  },
  "earn_done": [
