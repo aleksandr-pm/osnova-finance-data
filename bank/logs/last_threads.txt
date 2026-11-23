@@ -1,14 +1,21 @@
-threads: duel_sp_pop_totl_us_id (economy, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/e98d0985ff16/bank/covers/duel_sp_pop_totl_us_id.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/e98d0985ff16/bank/cards/duel_sp_pop_totl_us_id.jpg
+threads: mkt_country_cap_es (companies, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/a34a3b43d8d8/bank/cards_markets/mkt_country_cap_es.jpg
 ---
-Население: США и Индонезия, 2000-2025:
-1. 🇺🇸 США · 342 млн чел., +21%
-2. 🇮🇩 Индонезия · 286 млн чел., +32%
-Индонезия: население выросло на 32% с 2000 года.
+Самые дорогие компании Испании, ноябрь 2026:
+1. 🇪🇸 Inditex · $198 млрд
+2. 🇪🇸 Iberdrola · $165 млрд
+3. 🇪🇸 Santander · $160 млрд
+4. 🇪🇸 Banco Bilbao Vizcaya Argentaria · $128 млрд
+5. 🇪🇸 CaixaBank · $87,3 млрд
+6. 🇪🇸 Endesa · $48,1 млрд
+7. 🇪🇸 Aena · $45,5 млрд
+8. 🇪🇸 Ferrovial · $41,7 млрд
+9. 🇪🇸 Repsol · $33,1 млрд
+10. 🇪🇸 Naturgy · $30,5 млрд
+№1: Inditex, $198 млрд.
 Больше в Telegram @osnovafin
 ---
 Threads: текстом
-Ответ со ссылкой: 18117027368153977
-Опубликовано: 18049872152835981. Осталось новых рейтингов: 166
-exit=0 2026-11-22T17:17:27Z
+Ответ со ссылкой: 17956913523317845
+Опубликовано: 18032765570924383. Осталось новых рейтингов: 165
+exit=0 2026-11-23T06:41:33Z
