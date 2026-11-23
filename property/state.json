@@ -237,6 +237,14 @@
    "type": "reel",
    "dubai_time": "21:47",
    "timeset": "manual"
+  },
+  {
+   "id": "b2_slope_price",
+   "at": "2026-11-23T06:10:05.396521+00:00",
+   "post": "18031676105935880",
+   "type": "reel",
+   "dubai_time": "10:10",
+   "timeset": "manual"
   }
  ]
 }
