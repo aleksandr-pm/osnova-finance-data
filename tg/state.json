@@ -1,6 +1,5 @@
 {
  "chart_used": [
-  "INTC",
   "AMAT",
   "AVGO",
   "NVDA",
@@ -19,7 +18,8 @@
   "PANW",
   "PDD",
   "AMD",
-  "MU"
+  "MU",
+  "ARM"
  ],
  "alerts": {
   "AVGO:down": "2026-11-20",
