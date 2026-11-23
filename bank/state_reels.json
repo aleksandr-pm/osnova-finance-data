@@ -395,6 +395,14 @@
    "at": "2026-11-22T17:00:20.683131+00:00",
    "post": "18110364596197290",
    "music": "nastelbom-breaking-news-news-629327.mp3"
+  },
+  {
+   "id": "one_line_economy_ny_gdp_mktp_cd",
+   "block": "economy",
+   "fmt": "bignum",
+   "at": "2026-11-23T09:59:46.683511+00:00",
+   "post": "18136222885689184",
+   "music": "nastelbom-cinematic-cinematic-music-623748.mp3"
   }
  ]
 }
