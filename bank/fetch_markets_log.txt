@@ -1,28 +1,28 @@
-cmc_all 200 785050 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Apple","AAPL","4
-cmc_revenue 200 777453 CSV "Rank","Name","Symbol","revenue_ttm","price (USD)","country" | "1","Amazon","AMZN"
-cmc_earnings 200 774667 CSV "Rank","Name","Symbol","earnings_ttm","price (USD)","country" | "1","Alphabet (Goo
-cmc_employees 200 714400 CSV "Rank","Name","Symbol","employees_count","price (USD)","country" | "1","Walmart","
-cmc_dividend 200 725956 CSV "Rank","Name","Symbol","dividend_yield_ttm","price (USD)","country" | "1","Elme Co
-cmc_pe 200 754538 CSV "Rank","Name","Symbol","pe_ratio_ttm","price (USD)","country" | "1","Stem, Inc","S
-cmc_tech 200 72956 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Apple","AAPL","4
-cmc_banks 200 51892 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","JPMorgan Chase",
+cmc_all 200 785010 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Apple","AAPL","4
+cmc_revenue 200 777820 CSV "Rank","Name","Symbol","revenue_ttm","price (USD)","country" | "1","Amazon","AMZN"
+cmc_earnings 200 775075 CSV "Rank","Name","Symbol","earnings_ttm","price (USD)","country" | "1","Alphabet (Goo
+cmc_employees 200 714671 CSV "Rank","Name","Symbol","employees_count","price (USD)","country" | "1","Walmart","
+cmc_dividend 200 726142 CSV "Rank","Name","Symbol","dividend_yield_ttm","price (USD)","country" | "1","Elme Co
+cmc_pe 200 754987 CSV "Rank","Name","Symbol","pe_ratio_ttm","price (USD)","country" | "1","Deep Value Dr
+cmc_tech 200 73152 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Apple","AAPL","4
+cmc_banks 200 52081 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","JPMorgan Chase",
 cmc_oil 200 29081 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Saudi Aramco","2
-cmc_semis 200 11316 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","NVIDIA","NVDA","
-cmc_pharma 200 51511 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Eli Lilly","LLY"
-cmc_auto 200 3766 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Tesla","TSLA","1
-cmc_airlines 200 4657 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Delta Air Lines"
-cmc_insurance 200 22052 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","UnitedHealth","U
-cmc_food 200 25621 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Nestlé","NESN.SW
-cmc_retail 200 25669 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Amazon","AMZN","
-cmc_telecom 200 14074 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","China Mobile","0
-cmc_mining 200 22234 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","BHP Group","BHP"
+cmc_semis 200 11361 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","NVIDIA","NVDA","
+cmc_pharma 200 51566 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Eli Lilly","LLY"
+cmc_auto 200 3767 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Tesla","TSLA","1
+cmc_airlines 200 4662 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Delta Air Lines"
+cmc_insurance 200 22031 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","UnitedHealth","U
+cmc_food 200 25742 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Nestlé","NESN.SW
+cmc_retail 200 25736 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Amazon","AMZN","
+cmc_telecom 200 14222 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","China Mobile","0
+cmc_mining 200 22202 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","BHP Group","BHP"
 cmc_luxury 404 32094 NOT CSV <!DOCTYPE html> | <html lang="en-US"> | <head> | <title>Error 404: Page not found</tit
-cmc_crypto 404 32094 NOT CSV <!DOCTYPE html> | <html lang="en-US"> | <head> | <title>Error 404: Page not found</tit
-cmc_ai 200 5219 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Apple","AAPL","4
+cmc_crypto 404 32093 NOT CSV <!DOCTYPE html> | <html lang="en-US"> | <head> | <title>Error 404: Page not found</tit
+cmc_ai 200 5282 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Apple","AAPL","4
 cmc_defense 404 32094 NOT CSV <!DOCTYPE html> | <html lang="en-US"> | <head> | <title>Error 404: Page not found</tit
-cmc_beverages 200 8268 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Coca-Cola","KO",
+cmc_beverages 200 8275 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Coca-Cola","KO",
 cmc_sports 404 32094 NOT CSV <!DOCTYPE html> | <html lang="en-US"> | <head> | <title>Error 404: Page not found</tit
-cmc_gaming 200 14742 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Microsoft","MSFT
-cmc_realestate 200 49417 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Welltower","WELL
-bloomberg 403 427  {"appId": "PX8FCGYgk4", "jsClientSrc": "/8FCGYgk4/init.js", "firstPartyEnabled": true, "vid": "", "uuid": "0ba21076-dbe
-forbes_rtb 200 949995 {"personList":{"personsLists":[{"uri":"elon-musk","rank":1,"finalWorth":849734.216,"finalWorthBillions":849.734216000000
+cmc_gaming 200 14739 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Microsoft","MSFT
+cmc_realestate 200 49413 CSV "Rank","Name","Symbol","marketcap","price (USD)","country" | "1","Welltower","WELL
+bloomberg 403 427  {"appId": "PX8FCGYgk4", "jsClientSrc": "/8FCGYgk4/init.js", "firstPartyEnabled": true, "vid": "", "uuid": "b9e9519c-e6e
+forbes_rtb 200 950126 {"personList":{"personsLists":[{"uri":"elon-musk","rank":1,"finalWorth":811673.765,"finalWorthBillions":811.673765,"pers
