@@ -1,11 +1,5 @@
 [
  {
-  "id": "calendar-2026-11-23",
-  "caption": "🗓 <b>Экономический календарь на 23 ноября</b>\n\nГлавных событий нет, на графике второстепенные\n\nВремя по Дубаю · #календарь",
-  "t": 1795411195,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/calendar-2026-11-23.png"
- },
- {
   "id": "chart-2026-11-23-ARM",
   "caption": "📊 Акции <b>Arm</b> упали на 14,09% за день\nЗа полгода: −48,97%, цена $152,2\n\n#графикдня",
   "t": 1795440357,
@@ -151,5 +145,11 @@
   "id": "alert-2026-11-23-META-u",
   "caption": "⚡️🚀 <b>Meta</b> (META) +7,20% за день, $601,23\n\n#алерт",
   "t": 1795466177
+ },
+ {
+  "id": "evening-2026-11-23",
+  "caption": "📈 <b>Итоги дня 23 ноября</b>\n\nS&P 500 +4,73%, Nasdaq +6,51%, Dow Jones +3,01%\nНефть Brent −6,32%, Золото +3,39%\n\n#итогидня",
+  "t": 1795471844,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-23.png"
  }
 ]
