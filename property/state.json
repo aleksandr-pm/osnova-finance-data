@@ -261,6 +261,14 @@
    "type": "reel",
    "dubai_time": "22:03",
    "timeset": "manual"
+  },
+  {
+   "id": "b2_race_deals",
+   "at": "2026-11-24T06:05:14.542920+00:00",
+   "post": "18145824910524224",
+   "type": "reel",
+   "dubai_time": "10:05",
+   "timeset": "manual"
   }
  ]
 }

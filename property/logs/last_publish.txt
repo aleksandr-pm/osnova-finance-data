@@ -1,19 +1,22 @@
-Слот reel: в очереди 10 из 43; LIVE=да
-Следующий: b2_count_growth (media/b2_count_growth.mp4)
+Слот reel: в очереди 9 из 43; LIVE=да
+Следующий: b2_race_deals (media/b2_race_deals.mp4)
 ---
-Top 10 Dubai office districts by price growth, 2020 to 2025 (ready offices, DLD):
-1. JVC: +220%
-2. The Greens: +215%
-3. Barsha Heights: +204%
-4. Downtown: +184%
-5. JLT: +162%
+1,430 office deals in Business Bay in 2025. JLT is second with 1,092.
 
-Full data on osnova.property, link in bio. Or comment PRICE and we will send it to you.
+Registered office sales by district:
+Business Bay: 447 (2020) to 1,430 (2025)
+JLT: 294 to 1,092
+Motor City: 9 to 321
+JVC: 8 to 271
 
-Source: Dubai Land Department sales, office units, OSNOVA aggregates, ready offices, 2020 vs 2025. Market statistics, not an offer or investment advice.
+The new names on the list are Motor City, JVC and Sports City: off-plan towers moved the market out of the core.
 
-#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace
+Full data on osnova.property, link in bio. Or comment DATA and we will send it to you.
+
+Source: Dubai Land Department sales, office units, OSNOVA aggregates, 2016–2025. Market statistics, not an offer or investment advice.
+
+#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace #businessbay #jlt
 ---
-Контейнер 17925452412242274, загрузка 6.7 МБ
-Опубликовано: b2_count_growth → 17898768555613606
-exit=0 2026-11-23T18:03:55.433178+00:00
+Контейнер 17925556113242274, загрузка 7.6 МБ
+Опубликовано: b2_race_deals → 18145824910524224
+exit=0 2026-11-24T06:05:14.543500+00:00
