@@ -6280,6 +6280,16 @@
    "cap": 27865.34,
    "name": "Zoom Communications, Inc.",
    "ind": "Technology"
+  },
+  "ALCO": {
+   "cap": 260.98496299183336,
+   "name": "Alico Inc",
+   "ind": "Food Products"
+  },
+  "SURG": {
+   "cap": 7.639929750943396,
+   "name": "Surgepays Inc",
+   "ind": "Telecommunication"
   }
  },
  "earn_done": [
