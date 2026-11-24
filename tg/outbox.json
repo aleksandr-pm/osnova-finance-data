@@ -1,11 +1,5 @@
 [
  {
-  "id": "chart-2026-11-23-ARM",
-  "caption": "📊 Акции <b>Arm</b> упали на 14,09% за день\nЗа полгода: −48,97%, цена $152,2\n\n#графикдня",
-  "t": 1795440357,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-23-ARM.png"
- },
- {
   "id": "alert-2026-11-23-GSPC-u",
   "caption": "⚡️🚀 Индекс <b>S&P 500</b> +5,38% за день, 7 282\n\n#алерт",
   "t": 1795448282
@@ -151,5 +145,10 @@
   "caption": "📈 <b>Итоги дня 23 ноября</b>\n\nS&P 500 +4,73%, Nasdaq +6,51%, Dow Jones +3,01%\nНефть Brent −6,32%, Золото +3,39%\n\n#итогидня",
   "t": 1795471844,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-23.png"
+ },
+ {
+  "id": "calendar-2026-11-24",
+  "caption": "🗓 <b>Экономический календарь на 24 ноября</b>\n\n19:00 🇺🇸 Доверие потребителей (Conference Board) (прогноз 92,4 · ранее 91,7)\n\nСпокойный день: важной статистики нет.\n\nВремя по Дубаю · #календарь",
+  "t": 1795496911
  }
 ]
