@@ -1,21 +1,14 @@
-threads: bil_country_cn (billionaires, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/fc1a07879c4c/bank/cards_markets/bil_country_cn.jpg
+threads: duel_fi_res_totl_cd_cn_jp (money, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/163488b6d437/bank/covers/duel_fi_res_totl_cd_cn_jp.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/163488b6d437/bank/cards/duel_fi_res_totl_cd_cn_jp.jpg
 ---
-Самые богатые люди Китая, ноябрь 2026:
-1. 🇨🇳 Чжан Имин · $84 млрд
-2. 🇨🇳 Чжун Шаньшань · $64,8 млрд
-3. 🇨🇳 Лян Вэньфэн · $59,3 млрд
-4. 🇨🇳 Хэ Сянцзянь с семьёй · $40,1 млрд
-5. 🇨🇳 Ма Хуатэн · $38,1 млрд
-6. 🇨🇳 Уильям Дин · $34,6 млрд
-7. 🇨🇳 Колин Хуан · $29,5 млрд
-8. 🇨🇳 Chen Tianshi · $24,1 млрд
-9. 🇨🇳 Джек Ма · $23,7 млрд
-10. 🇨🇳 Чэнь Цзяньхуа · $23,4 млрд
-№1: Чжан Имин, $84 млрд.
+Резервы: Китай и Япония, 2000-2025:
+1. 🇨🇳 Китай · $3,7 трлн, в 21,8 раза
+2. 🇯🇵 Япония · $1,4 трлн, в 3,8 раза
+Китай обогнал Японию в 2006 году.
 Больше в Telegram @osnovafin
 ---
 Threads: текстом
-Ответ со ссылкой: 18043742807849681
-Опубликовано: 17897717331614319. Осталось новых рейтингов: 163
-exit=0 2026-11-24T06:26:43Z
+Ответ со ссылкой: 18361921306221891
+Опубликовано: 17958271905037552. Осталось новых рейтингов: 162
+exit=0 2026-11-24T17:28:21Z
