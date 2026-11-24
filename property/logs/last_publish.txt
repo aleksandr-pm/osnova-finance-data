@@ -1,22 +1,23 @@
-Слот reel: в очереди 9 из 43; LIVE=да
-Следующий: b2_race_deals (media/b2_race_deals.mp4)
+Слот reel: в очереди 8 из 43; LIVE=да
+Следующий: b2_rank_shop_yield (media/b2_rank_shop_yield.mp4)
 ---
-1,430 office deals in Business Bay in 2025. JLT is second with 1,092.
+16.4% gross yield on shops in Liwan. 5.1% in Al Jaddaf.
 
-Registered office sales by district:
-Business Bay: 447 (2020) to 1,430 (2025)
-JLT: 294 to 1,092
-Motor City: 9 to 321
-JVC: 8 to 271
+Shop gross yield = Ejari rent ÷ price paid for ready shops, 2026:
+Liwan 16.4%
+Dubai Marina 10.8%
+Arjan 10.0%
+JVC 9.5%
+Business Bay 7.2%
 
-The new names on the list are Motor City, JVC and Sports City: off-plan towers moved the market out of the core.
+Gross, before service charge and vacancy.
 
-Full data on osnova.property, link in bio. Or comment DATA and we will send it to you.
+Full data on osnova.property, link in bio. Or comment YIELD and we will send it to you.
 
-Source: Dubai Land Department sales, office units, OSNOVA aggregates, 2016–2025. Market statistics, not an offer or investment advice.
+Source: DLD ready shop sales and Ejari new leases, 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
 
-#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace #businessbay #jlt
+#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace #dubairetail
 ---
-Контейнер 17925556113242274, загрузка 7.6 МБ
-Опубликовано: b2_race_deals → 18145824910524224
-exit=0 2026-11-24T06:05:14.543500+00:00
+Контейнер 17925627000242274, загрузка 3.5 МБ
+Опубликовано: b2_rank_shop_yield → 18458106886134321
+exit=0 2026-11-24T12:42:26.349650+00:00

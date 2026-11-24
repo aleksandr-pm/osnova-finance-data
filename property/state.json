@@ -269,6 +269,14 @@
    "type": "reel",
    "dubai_time": "10:05",
    "timeset": "manual"
+  },
+  {
+   "id": "b2_rank_shop_yield",
+   "at": "2026-11-24T12:42:26.348770+00:00",
+   "post": "18458106886134321",
+   "type": "reel",
+   "dubai_time": "16:42",
+   "timeset": "manual"
   }
  ]
 }
