@@ -2,7 +2,9 @@
  "earn_seen": {
   "HPE-2026Q4": 1795476814,
   "ADI-2026Q4": 1795524859,
-  "MDT-2027Q2": 1795524866
+  "MDT-2027Q2": 1795524866,
+  "ADSK-2027Q3": 1795563702,
+  "DELL-2027Q3": 1795563705
  },
  "caps": {
   "ACRE": {
@@ -6387,6 +6389,51 @@
    "cap": 1.9698810000000002,
    "name": "Omniq Corp",
    "ind": "Technology"
+  },
+  "ADSK": {
+   "cap": 54528.1003913551,
+   "name": "Autodesk, Inc.",
+   "ind": "Technology"
+  },
+  "AMBA": {
+   "cap": 2134.216055967422,
+   "name": "Ambarella, Inc.",
+   "ind": "Semiconductors"
+  },
+  "CLSK": {
+   "cap": 1273.8127532151898,
+   "name": "CleanSpark, Inc.",
+   "ind": "Technology"
+  },
+  "DELL": {
+   "cap": 212940.05345199996,
+   "name": "Dell Technologies Inc",
+   "ind": "Technology"
+  },
+  "HPQ": {
+   "cap": 25466.577945533565,
+   "name": "HP Inc",
+   "ind": "Technology"
+  },
+  "NOAH": {
+   "cap": 419.97888434208,
+   "name": "Noah Holdings Limited",
+   "ind": "Financial Services"
+  },
+  "NTNX": {
+   "cap": 15319.37193163916,
+   "name": "Nutanix, Inc.",
+   "ind": "Technology"
+  },
+  "QFIN": {
+   "cap": 562.5522520596301,
+   "name": "Qfin Holdings, Inc.",
+   "ind": "Financial Services"
+  },
+  "WDAY": {
+   "cap": 47674.62,
+   "name": "Workday, Inc.",
+   "ind": "Technology"
   }
  },
  "earn_done": [
@@ -6454,6 +6501,8 @@
   "INTU-2027Q1",
   "HPE-2026Q4",
   "ADI-2026Q4",
-  "MDT-2027Q2"
+  "MDT-2027Q2",
+  "ADSK-2027Q3",
+  "DELL-2027Q3"
  ]
 }

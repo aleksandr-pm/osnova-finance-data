@@ -124,5 +124,17 @@
   "caption": "📊 <b>Medtronic</b> (MDT), отчёт за 2 кв. 2027 фин. года\n\nВыручка: $9,36 млрд · прогноз $9,58 млрд ❌\nПрибыль на акцию: $1,34 · прогноз $1,34 ➖\n\n#отчёт",
   "t": 1795524866,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/earn-MDT-2027Q2.png"
+ },
+ {
+  "id": "earn-ADSK-2027Q3",
+  "caption": "📊 <b>Autodesk</b> (ADSK), отчёт за 3 кв. 2027 фин. года\n\nВыручка: $2,16 млрд · прогноз $2,18 млрд ❌\nПрибыль на акцию: $3,20 · прогноз $3,13 ✅\n\n#отчёт",
+  "t": 1795563702,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/earn-ADSK-2027Q3.png"
+ },
+ {
+  "id": "earn-DELL-2027Q3",
+  "caption": "📊 <b>Dell</b>, отчёт за 3 кв. 2027 фин. года\n\nВыручка: $54,94 млрд · прогноз $50,3 млрд ✅\nПрибыль на акцию: $9,45 · прогноз $6,75 ✅\n\n#отчёт",
+  "t": 1795563705,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/earn-DELL-2027Q3.png"
  }
 ]
