@@ -6295,6 +6295,36 @@
    "cap": 190.27,
    "name": "Z Squared Inc (Delaware)",
    "ind": "Technology"
+  },
+  "BILI": {
+   "cap": 4437.36061679778,
+   "name": "Bilibili Inc",
+   "ind": "Media"
+  },
+  "BZUN": {
+   "cap": 160.37841162322,
+   "name": "Baozun Inc",
+   "ind": "Retail"
+  },
+  "FLX": {
+   "cap": 100.036317,
+   "name": "BingEx Ltd",
+   "ind": "Logistics & Transportation"
+  },
+  "KC": {
+   "cap": 1759.96095518838,
+   "name": "Kingsoft Cloud Holdings Ltd",
+   "ind": "Technology"
+  },
+  "SHOE": {
+   "cap": 385.73834092005603,
+   "name": "Shoe Station Group Inc",
+   "ind": "Retail"
+  },
+  "VIPS": {
+   "cap": 6185.88,
+   "name": "Vipshop Holdings Limited",
+   "ind": "Retail"
   }
  },
  "earn_done": [
