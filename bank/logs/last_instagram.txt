@@ -1,23 +1,30 @@
-instagram: duel_sp_pop_totl_us_id (economy, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/005a1d9cc120/bank/covers/duel_sp_pop_totl_us_id.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/005a1d9cc120/bank/cards/duel_sp_pop_totl_us_id.jpg
+instagram: mkt_country_cap_jp (companies, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/8a6455f9fc0e/bank/cards_markets/mkt_country_cap_jp.jpg
 ---
-Индонезия: население выросло на 32% с 2000 года.
+№1: Toyota, $244 млрд.
 
-Население: США и Индонезия, 2000-2025. Самый быстрый рост: Индонезия, на 32%, до 286 млн чел..
+Самые дорогие компании Японии, 2026 год, данные CompaniesMarketCap. Разрыв первого места со вторым (Mitsubishi UFJ Financial): в 1,2 раза. Учтены на 23 ноября 2026.
 
-Значения в 2025 году и изменение с 2000:
-1. 🇺🇸 США: 342 млн чел., +21%
-2. 🇮🇩 Индонезия: 286 млн чел., +32%
+Топ-10:
+1. 🇯🇵 Toyota: $244 млрд
+2. 🇯🇵 Mitsubishi UFJ Financial: $210 млрд
+3. 🇯🇵 Sony: $159 млрд
+4. 🇯🇵 Fast Retailing: $159 млрд
+5. 🇯🇵 Recruit: $147 млрд
+6. 🇯🇵 Sumitomo Mitsui Financial Group: $136 млрд
+7. 🇯🇵 Hitachi: $133 млрд
+8. 🇯🇵 Tokyo Electron: $118 млрд
+9. 🇯🇵 Mitsubishi: $112 млрд
+10. 🇯🇵 Advantest: $110 млрд
 
-Кто удивил в этом списке?
+Кого не хватает в топе, по-вашему?
 
 Каждый день рынки, сделки инсайдеров из отчётов SEC и данные в Telegram @osnovafin, ссылка в профиле.
 
-Источник: World Bank, World Development Indicators. Не является инвестиционной рекомендацией.
+Источник: companiesmarketcap.com. Не является инвестиционной рекомендацией.
 
-#экономика #мироваяэкономика #ввп #макроэкономика #индонезия #инвестиции #финансы #статистика #инфографика #цифры #рынки
+#акции #компании #капитализация #фондовыйрынок #toyota #инвестиции #финансы #статистика #инфографика #цифры #рынки
 ---
 Instagram: одиночный пост с графиком
-Опубликовано: 18401086843203922. Осталось новых рейтингов: 221
-exit=0 2026-11-23T15:12:43Z
+Опубликовано: 17965194141253523. Осталось новых рейтингов: 220
+exit=0 2026-11-24T15:08:59Z
