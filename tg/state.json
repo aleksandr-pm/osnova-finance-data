@@ -1,6 +1,5 @@
 {
  "chart_used": [
-  "AVGO",
   "NVDA",
   "MSTR",
   "DELL",
@@ -19,7 +18,8 @@
   "AMD",
   "MU",
   "ARM",
-  "NVDA"
+  "NVDA",
+  "DELL"
  ],
  "alerts": {
   "^GSPC:up": "2026-11-23",
