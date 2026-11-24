@@ -1,6 +1,8 @@
 {
  "earn_seen": {
-  "HPE-2026Q4": 1795476814
+  "HPE-2026Q4": 1795476814,
+  "ADI-2026Q4": 1795524859,
+  "MDT-2027Q2": 1795524866
  },
  "caps": {
   "ACRE": {
@@ -6325,6 +6327,56 @@
    "cap": 6185.88,
    "name": "Vipshop Holdings Limited",
    "ind": "Retail"
+  },
+  "ADI": {
+   "cap": 183529.17517707485,
+   "name": "Analog Devices, Inc.",
+   "ind": "Semiconductors"
+  },
+  "BBY": {
+   "cap": 20343.58693664114,
+   "name": "Best Buy Co., Inc.",
+   "ind": "Retail"
+  },
+  "DLTR": {
+   "cap": 26099.375276478684,
+   "name": "Dollar Tree Inc",
+   "ind": "Retail"
+  },
+  "DY": {
+   "cap": 6586.248351821989,
+   "name": "Dycom Industries Inc",
+   "ind": "Construction"
+  },
+  "ITRN": {
+   "cap": 923.9413610614448,
+   "name": "Ituran Location and Control Ltd",
+   "ind": "Communications"
+  },
+  "MDT": {
+   "cap": 128837.99767843506,
+   "name": "Medtronic PLC",
+   "ind": "Health Care"
+  },
+  "MMED": {
+   "cap": 4702.764399111493,
+   "name": "MiniMed Group Inc",
+   "ind": "Health Care"
+  },
+  "MOV": {
+   "cap": 482.37065023703957,
+   "name": "Movado Group Inc",
+   "ind": "Textiles, Apparel & Luxury Goods"
+  },
+  "SJM": {
+   "cap": 14183.981216230699,
+   "name": "The J. M. Smucker Company",
+   "ind": "Food Products"
+  },
+  "TITN": {
+   "cap": 488.30757797888384,
+   "name": "Titan Machinery Inc",
+   "ind": "Trading Companies & Distributors"
   }
  },
  "earn_done": [
@@ -6390,6 +6442,8 @@
   "NTES-2026Q3",
   "WMT-2027Q3",
   "INTU-2027Q1",
-  "HPE-2026Q4"
+  "HPE-2026Q4",
+  "ADI-2026Q4",
+  "MDT-2027Q2"
  ]
 }

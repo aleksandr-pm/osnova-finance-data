@@ -112,5 +112,17 @@
   "caption": "📊 <b>Hewlett Packard Enterprise Company</b> (HPE), отчёт за 4 кв. 2026 фин. года\n\nВыручка: $14,55 млрд · прогноз $14,64 млрд ❌\nПрибыль на акцию: $1,43 · прогноз $1,30 ✅\n\n#отчёт",
   "t": 1795476815,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/earn-HPE-2026Q4.png"
+ },
+ {
+  "id": "earn-ADI-2026Q4",
+  "caption": "📊 <b>Analog Devices</b> (ADI), отчёт за 4 кв. 2026 фин. года\n\nВыручка: $4,37 млрд · прогноз $4,36 млрд ➖\nПрибыль на акцию: $4,06 · прогноз $3,92 ✅\n\n#отчёт",
+  "t": 1795524859,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/earn-ADI-2026Q4.png"
+ },
+ {
+  "id": "earn-MDT-2027Q2",
+  "caption": "📊 <b>Medtronic</b> (MDT), отчёт за 2 кв. 2027 фин. года\n\nВыручка: $9,36 млрд · прогноз $9,58 млрд ❌\nПрибыль на акцию: $1,34 · прогноз $1,34 ➖\n\n#отчёт",
+  "t": 1795524866,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/earn-MDT-2027Q2.png"
  }
 ]
