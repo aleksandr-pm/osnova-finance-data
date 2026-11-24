@@ -1,6 +1,5 @@
 {
  "chart_used": [
-  "NVDA",
   "MSTR",
   "DELL",
   "ARM",
@@ -19,7 +18,8 @@
   "MU",
   "ARM",
   "NVDA",
-  "DELL"
+  "DELL",
+  "TXN"
  ],
  "alerts": {
   "NVDA:down": "2026-11-24",

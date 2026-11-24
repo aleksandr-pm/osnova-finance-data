@@ -1,10 +1,5 @@
 [
  {
-  "id": "alert-2026-11-23-COIN-u",
-  "caption": "⚡️🚀 <b>Coinbase</b> (COIN) +8,97% за день, $111,12\n\n#алерт",
-  "t": 1795448282
- },
- {
   "id": "alert-2026-11-23-MSTR-u",
   "caption": "⚡️🚀 <b>Strategy</b> (MSTR) +14,09% за день, $88,76\n\n#алерт",
   "t": 1795448282
@@ -151,5 +146,11 @@
   "id": "alert-2026-11-24-HOOD-d",
   "caption": "⚡️🔻 <b>Robinhood</b> (HOOD) −5,45% за день, $63,7\n\n#алерт",
   "t": 1795538416
+ },
+ {
+  "id": "chart-2026-11-24-TXN",
+  "caption": "📊 Акции <b>Texas Instruments</b> упали на 8,92% за день\nЗа полгода: −18,37%, цена $265,22\n\n#графикдня",
+  "t": 1795541717,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-24-TXN.png"
  }
 ]
