@@ -1,21 +1,21 @@
-Слот reel: в очереди 6 из 43; LIVE=да
-Следующий: b2_multiline (media/b2_multiline.mp4)
+Слот reel: в очереди 5 из 43; LIVE=да
+Следующий: b2_rank_traded (media/b2_rank_traded.mp4)
 ---
-Downtown, Business Bay, JLT: ten years of office prices on one chart.
+356 offices sold in one building in 2025. Capital One is the most traded office building in Dubai.
 
-Median price paid for ready offices, AED per sq ft:
-Downtown: 2,876 (2016) to 5,110 (2025)
-Business Bay: 1,058 to 1,820
-JLT: 895 to 1,425
-
-All three bottomed in 2020 and broke their 2016 level only after 2023.
+Registered office sales in 2025, median price paid:
+Capital One: 356 deals, 1,829 AED per sq ft
+ASPIRZ by Danube, Sports City: 189, 2,401
+I-Rise Tower, Barsha Heights: 140, 1,829
+Tamani Arts, Business Bay: 123, 2,035
+Schon Business Park, DIP: 90, 595
 
 Full data on osnova.property, link in bio. Or comment PRICE and we will send it to you.
 
-Source: Dubai Land Department sales, office units, OSNOVA aggregates, ready offices, 2016–2025. Market statistics, not an offer or investment advice.
+Source: Dubai Land Department sales, office units, OSNOVA aggregates, 2025. Market statistics, not an offer or investment advice.
 
-#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace #businessbay #jlt
+#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace #danube
 ---
-Контейнер 17925786645242274, загрузка 6.4 МБ
-Опубликовано: b2_multiline → 17895596946447559
-exit=0 2026-11-25T06:04:48.700735+00:00
+Контейнер 17925845685242274, загрузка 4.1 МБ
+Опубликовано: b2_rank_traded → 17998627641103637
+exit=0 2026-11-25T12:43:31.442644+00:00

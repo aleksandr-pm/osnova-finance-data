@@ -293,6 +293,14 @@
    "type": "reel",
    "dubai_time": "10:04",
    "timeset": "manual"
+  },
+  {
+   "id": "b2_rank_traded",
+   "at": "2026-11-25T12:43:31.441335+00:00",
+   "post": "17998627641103637",
+   "type": "reel",
+   "dubai_time": "16:43",
+   "timeset": "manual"
   }
  ]
 }
