@@ -1,98 +1,5 @@
 [
  {
-  "id": "alert-2026-11-23-ARM-u",
-  "caption": "⚡️🚀 <b>Arm</b> (ARM) +18,76% за день, $180,76\n\n#алерт",
-  "t": 1795448282
- },
- {
-  "id": "alert-2026-11-23-DELL-u",
-  "caption": "⚡️🚀 <b>Dell</b> (DELL) +24,48% за день, $346,08\n\n#алерт",
-  "t": 1795448282
- },
- {
-  "id": "alert-2026-11-23-SHOP-u",
-  "caption": "⚡️🚀 <b>Shopify</b> (SHOP) +10,21% за день, $136,35\n\n#алерт",
-  "t": 1795448282
- },
- {
-  "id": "alert-2026-11-23-SNOW-u",
-  "caption": "⚡️🚀 <b>Snowflake</b> (SNOW) +8,69% за день, $276,96\n\n#алерт",
-  "t": 1795448282
- },
- {
-  "id": "alert-2026-11-23-TSM-u",
-  "caption": "⚡️🚀 <b>TSMC</b> (TSM) +16,27% за день, $370,55\n\n#алерт",
-  "t": 1795448282
- },
- {
-  "id": "alert-2026-11-23-ASML-u",
-  "caption": "⚡️🚀 <b>ASML</b> (ASML) +11,12% за день, $1 407\n\n#алерт",
-  "t": 1795448282
- },
- {
-  "id": "alert-2026-11-23-BABA-u",
-  "caption": "⚡️🚀 <b>Alibaba</b> (BABA) +7,04% за день, $86,79\n\n#алерт",
-  "t": 1795448282
- },
- {
-  "id": "alert-2026-11-23-GOOGL-u",
-  "caption": "⚡️🚀 <b>Alphabet</b> (GOOGL) +7,02% за день, $283,9\n\n#алерт",
-  "t": 1795455401
- },
- {
-  "id": "chart-2026-11-23-NVDA",
-  "caption": "📊 Акции <b>Nvidia</b> выросли на 31,56% за день\nЗа полгода: −23,08%, цена $165,26\n\n#графикдня",
-  "t": 1795455671,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-23-NVDA.png"
- },
- {
-  "id": "alert-2026-11-23-META-u",
-  "caption": "⚡️🚀 <b>Meta</b> (META) +7,20% за день, $601,23\n\n#алерт",
-  "t": 1795466177
- },
- {
-  "id": "evening-2026-11-23",
-  "caption": "📈 <b>Итоги дня 23 ноября</b>\n\nS&P 500 +4,73%, Nasdaq +6,51%, Dow Jones +3,01%\nНефть Brent −6,32%, Золото +3,39%\n\n#итогидня",
-  "t": 1795471844,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-23.png"
- },
- {
-  "id": "calendar-2026-11-24",
-  "caption": "🗓 <b>Экономический календарь на 24 ноября</b>\n\n19:00 🇺🇸 Доверие потребителей (Conference Board) (прогноз 92,4 · ранее 91,7)\n\nСпокойный день: важной статистики нет.\n\nВремя по Дубаю · #календарь",
-  "t": 1795496911
- },
- {
-  "id": "chart-2026-11-24-DELL",
-  "caption": "📊 Акции <b>Dell</b> выросли на 20,46% за день\nЗа полгода: +9,78%, цена $334,91\n\n#графикдня",
-  "t": 1795526554,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-24-DELL.png"
- },
- {
-  "id": "alert-2026-11-24-NVDA-d",
-  "caption": "⚡️🔻 <b>Nvidia</b> (NVDA) −7,86% за день, $152,08\n\n#алерт",
-  "t": 1795534082
- },
- {
-  "id": "alert-2026-11-24-AMD-d",
-  "caption": "⚡️🔻 <b>AMD</b> (AMD) −10,67% за день, $405,05\n\n#алерт",
-  "t": 1795534082
- },
- {
-  "id": "alert-2026-11-24-TXN-d",
-  "caption": "⚡️🔻 <b>Texas Instruments</b> (TXN) −9,21% за день, $264,36\n\n#алерт",
-  "t": 1795534082
- },
- {
-  "id": "alert-2026-11-24-AMAT-d",
-  "caption": "⚡️🔻 <b>Applied Materials</b> (AMAT) −7,65% за день, $320,33\n\n#алерт",
-  "t": 1795534082
- },
- {
-  "id": "alert-2026-11-24-INTC-d",
-  "caption": "⚡️🔻 <b>Intel</b> (INTC) −8,04% за день, $54,87\n\n#алерт",
-  "t": 1795534082
- },
- {
   "id": "alert-2026-11-24-MU-d",
   "caption": "⚡️🔻 <b>Micron</b> (MU) −11,05% за день, $629,52\n\n#алерт",
   "t": 1795534082
@@ -155,5 +62,95 @@
   "caption": "📊 Акции <b>Intel</b> упали на 8,15% за день\nЗа полгода: −55,63%, цена $54,8\n\n#графикдня",
   "t": 1795613346,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-25-INTC.png"
+ },
+ {
+  "id": "alert-2026-11-25-NVDA-d",
+  "caption": "⚡️🔻 <b>Nvidia</b> (NVDA) −7,56% за день, $143,63\n\n#алерт",
+  "t": 1795620936
+ },
+ {
+  "id": "alert-2026-11-25-AMZN-d",
+  "caption": "⚡️🔻 <b>Amazon</b> (AMZN) −5,66% за день, $238\n\n#алерт",
+  "t": 1795620936
+ },
+ {
+  "id": "alert-2026-11-25-TSLA-d",
+  "caption": "⚡️🔻 <b>Tesla</b> (TSLA) −5,11% за день, $365,04\n\n#алерт",
+  "t": 1795620936
+ },
+ {
+  "id": "alert-2026-11-25-AVGO-d",
+  "caption": "⚡️🔻 <b>Broadcom</b> (AVGO) −5,72% за день, $283,85\n\n#алерт",
+  "t": 1795620936
+ },
+ {
+  "id": "alert-2026-11-25-ORCL-d",
+  "caption": "⚡️🔻 <b>Oracle</b> (ORCL) −8,18% за день, $100,54\n\n#алерт",
+  "t": 1795620936
+ },
+ {
+  "id": "alert-2026-11-25-AMD-d",
+  "caption": "⚡️🔻 <b>AMD</b> (AMD) −8,65% за день, $377,51\n\n#алерт",
+  "t": 1795620936
+ },
+ {
+  "id": "alert-2026-11-25-AMAT-d",
+  "caption": "⚡️🔻 <b>Applied Materials</b> (AMAT) −8,54% за день, $296,11\n\n#алерт",
+  "t": 1795620936
+ },
+ {
+  "id": "alert-2026-11-25-INTC-d",
+  "caption": "⚡️🔻 <b>Intel</b> (INTC) −7,97% за день, $50,44\n\n#алерт",
+  "t": 1795620936
+ },
+ {
+  "id": "alert-2026-11-25-MU-d",
+  "caption": "⚡️🔻 <b>Micron</b> (MU) −10,28% за день, $565,05\n\n#алерт",
+  "t": 1795620936
+ },
+ {
+  "id": "alert-2026-11-25-CRWD-d",
+  "caption": "⚡️🔻 <b>CrowdStrike</b> (CRWD) −6,25% за день, $197,68\n\n#алерт",
+  "t": 1795620936
+ },
+ {
+  "id": "alert-2026-11-25-COIN-d",
+  "caption": "⚡️🔻 <b>Coinbase</b> (COIN) −5,12% за день, $97,11\n\n#алерт",
+  "t": 1795620936
+ },
+ {
+  "id": "alert-2026-11-25-MSTR-d",
+  "caption": "⚡️🔻 <b>Strategy</b> (MSTR) −7,88% за день, $71,44\n\n#алерт",
+  "t": 1795620936
+ },
+ {
+  "id": "alert-2026-11-25-ARM-d",
+  "caption": "⚡️🔻 <b>Arm</b> (ARM) −8,28% за день, $148,18\n\n#алерт",
+  "t": 1795620936
+ },
+ {
+  "id": "alert-2026-11-25-DELL-d",
+  "caption": "⚡️🔻 <b>Dell</b> (DELL) −7,24% за день, $273,91\n\n#алерт",
+  "t": 1795620936
+ },
+ {
+  "id": "alert-2026-11-25-SHOP-d",
+  "caption": "⚡️🔻 <b>Shopify</b> (SHOP) −5,00% за день, $125,69\n\n#алерт",
+  "t": 1795620936
+ },
+ {
+  "id": "alert-2026-11-25-SNOW-d",
+  "caption": "⚡️🔻 <b>Snowflake</b> (SNOW) −5,75% за день, $255,5\n\n#алерт",
+  "t": 1795620936
+ },
+ {
+  "id": "alert-2026-11-25-TSM-d",
+  "caption": "⚡️🔻 <b>TSMC</b> (TSM) −6,52% за день, $326,44\n\n#алерт",
+  "t": 1795620936
+ },
+ {
+  "id": "alert-2026-11-25-ASML-d",
+  "caption": "⚡️🔻 <b>ASML</b> (ASML) −6,37% за день, $1 251\n\n#алерт",
+  "t": 1795620936
  }
 ]
