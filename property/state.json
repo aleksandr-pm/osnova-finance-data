@@ -301,6 +301,20 @@
    "type": "reel",
    "dubai_time": "16:43",
    "timeset": "manual"
+  },
+  {
+   "id": "b2_count_cheapest",
+   "at": "2026-11-25T17:54:52.577527+00:00",
+   "post": "failed",
+   "err": "загрузка видео: HTTP 400 {\"debug_info\": {\"retriable\": false, \"type\": \"ProcessingFailedError\", \"message\": \"Request processing failed\"}}"
+  },
+  {
+   "id": "b2_race_jlt_towers",
+   "at": "2026-11-25T17:55:32.749546+00:00",
+   "post": "18121019767999843",
+   "type": "reel",
+   "dubai_time": "21:55",
+   "timeset": "manual"
   }
  ]
 }
