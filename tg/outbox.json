@@ -1,10 +1,5 @@
 [
  {
-  "id": "alert-2026-11-23-HOOD-u",
-  "caption": "⚡️🚀 <b>Robinhood</b> (HOOD) +11,39% за день, $69,25\n\n#алерт",
-  "t": 1795448282
- },
- {
   "id": "alert-2026-11-23-SMCI-u",
   "caption": "⚡️🚀 <b>Super Micro</b> (SMCI) +20,23% за день, $26,03\n\n#алерт",
   "t": 1795448282
@@ -153,5 +148,11 @@
   "caption": "📈 <b>Итоги дня 24 ноября</b>\n\nS&P 500 −0,50%, Nasdaq −1,48%, Dow Jones +0,85%\nНефть Brent −0,97%, Золото −2,64%\n\n#итогидня",
   "t": 1795558564,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-24.png"
+ },
+ {
+  "id": "calendar-2026-11-25",
+  "caption": "🗓 <b>Экономический календарь на 25 ноября</b>\n\nГлавное:\n04:30 🇦🇺 Инфляция (CPI), м/м\n04:30 🇦🇺 Инфляция (CPI), г/г\n17:30 🇺🇸 Базовый индекс цен PCE, м/м\n17:30 🇺🇸 ВВП, кв/кв\n\nВремя по Дубаю · #календарь",
+  "t": 1795583466,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/calendar-2026-11-25.png"
  }
 ]
