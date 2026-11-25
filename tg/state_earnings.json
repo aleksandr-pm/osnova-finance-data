@@ -6455,6 +6455,16 @@
    "cap": 1562.9506311028067,
    "name": "Ingles Markets, Incorporated",
    "ind": "Retail"
+  },
+  "DSX": {
+   "cap": 293.6163361222707,
+   "name": "Diana Shipping Inc",
+   "ind": "Marine"
+  },
+  "NNOX": {
+   "cap": 17.064476622253387,
+   "name": "Nano-X Imaging Ltd",
+   "ind": "Health Care"
   }
  },
  "earn_done": [
