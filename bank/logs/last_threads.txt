@@ -1,14 +1,21 @@
-threads: duel_fi_res_totl_cd_cn_jp (money, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/163488b6d437/bank/covers/duel_fi_res_totl_cd_cn_jp.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/163488b6d437/bank/cards/duel_fi_res_totl_cd_cn_jp.jpg
+threads: mkt_country_earn_us (companies, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/7750beb3fbc8/bank/cards_markets/mkt_country_earn_us.jpg
 ---
-Резервы: Китай и Япония, 2000-2025:
-1. 🇨🇳 Китай · $3,7 трлн, в 21,8 раза
-2. 🇯🇵 Япония · $1,4 трлн, в 3,8 раза
-Китай обогнал Японию в 2006 году.
+Самые прибыльные компании США, ноябрь 2026:
+1. 🇺🇸 Alphabet (Google) · $291 млрд
+2. 🇺🇸 NVIDIA · $230 млрд
+3. 🇺🇸 Microsoft · $178 млрд
+4. 🇺🇸 Apple · $158 млрд
+5. 🇺🇸 Amazon · $125 млрд
+6. 🇺🇸 Micron Technology · $99,8 млрд
+7. 🇺🇸 Berkshire Hathaway · $88,8 млрд
+8. 🇺🇸 JPMorgan Chase · $85,3 млрд
+9. 🇺🇸 Meta · $81,6 млрд
+10. 🇺🇸 Exxon Mobil · $55,7 млрд
+Alphabet (Google): прибыль $291 млрд за год.
 Больше в Telegram @osnovafin
 ---
-Threads: текстом
-Ответ со ссылкой: 18361921306221891
-Опубликовано: 17958271905037552. Осталось новых рейтингов: 162
-exit=0 2026-11-24T17:28:21Z
+Threads: с картинкой
+Ответ со ссылкой: 17994929649113469
+Опубликовано: 17998528224058104. Осталось новых рейтингов: 161
+exit=0 2026-11-25T06:27:03Z
