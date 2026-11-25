@@ -285,6 +285,14 @@
    "type": "reel",
    "dubai_time": "21:58",
    "timeset": "manual"
+  },
+  {
+   "id": "b2_multiline",
+   "at": "2026-11-25T06:04:48.699926+00:00",
+   "post": "17895596946447559",
+   "type": "reel",
+   "dubai_time": "10:04",
+   "timeset": "manual"
   }
  ]
 }

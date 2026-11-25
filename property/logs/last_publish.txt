@@ -1,20 +1,21 @@
-Слот reel: в очереди 7 из 43; LIVE=да
-Следующий: b2_quiz_districts (media/b2_quiz_districts.mp4)
+Слот reel: в очереди 6 из 43; LIVE=да
+Следующий: b2_multiline (media/b2_multiline.mp4)
 ---
-Guess the Dubai office district: 3 questions.
+Downtown, Business Bay, JLT: ten years of office prices on one chart.
 
-1. AED 1M buys the most office in DIP: 1,377 sq ft, against 214 in Downtown
-2. Highest gross office yield: DIP, 13.1%
-3. Most traded office project of 2026: Shahrukhz by Danube, 559 sales
+Median price paid for ready offices, AED per sq ft:
+Downtown: 2,876 (2016) to 5,110 (2025)
+Business Bay: 1,058 to 1,820
+JLT: 895 to 1,425
 
-Write your score in the comments.
+All three bottomed in 2020 and broke their 2016 level only after 2023.
 
-Full data on osnova.property, link in bio. Or comment YIELD and we will send it to you.
+Full data on osnova.property, link in bio. Or comment PRICE and we will send it to you.
 
-Source: DLD transactions and Ejari leases, 2026 YTD · osnova.property. Market statistics, not an offer or investment advice.
+Source: Dubai Land Department sales, office units, OSNOVA aggregates, ready offices, 2016–2025. Market statistics, not an offer or investment advice.
 
-#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace
+#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace #businessbay #jlt
 ---
-Контейнер 17925688035242274, загрузка 7.9 МБ
-Опубликовано: b2_quiz_districts → 18164660926506985
-exit=0 2026-11-24T17:58:35.077383+00:00
+Контейнер 17925786645242274, загрузка 6.4 МБ
+Опубликовано: b2_multiline → 17895596946447559
+exit=0 2026-11-25T06:04:48.700735+00:00
