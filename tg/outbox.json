@@ -1,10 +1,5 @@
 [
  {
-  "id": "alert-2026-11-24-ARM-d",
-  "caption": "⚡️🔻 <b>Arm</b> (ARM) −9,00% за день, $160,77\n\n#алерт",
-  "t": 1795534082
- },
- {
   "id": "alert-2026-11-24-DELL-d",
   "caption": "⚡️🔻 <b>Dell</b> (DELL) −12,93% за день, $291,62\n\n#алерт",
   "t": 1795534082
@@ -152,5 +147,11 @@
   "id": "alert-2026-11-25-SMCI-d",
   "caption": "⚡️🔻 <b>Super Micro</b> (SMCI) −5,61% за день, $21,35\n\n#алерт",
   "t": 1795624974
+ },
+ {
+  "id": "chart-2026-11-25-AMAT",
+  "caption": "📊 Акции <b>Applied Materials</b> упали на 7,90% за день\nЗа полгода: −34,34%, цена $298,67\n\n#графикдня",
+  "t": 1795627884,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-25-AMAT.png"
  }
 ]
