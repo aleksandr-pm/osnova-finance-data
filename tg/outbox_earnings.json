@@ -136,5 +136,11 @@
   "caption": "📊 <b>Dell</b>, отчёт за 3 кв. 2027 фин. года\n\nВыручка: $54,94 млрд · прогноз $50,3 млрд ✅\nПрибыль на акцию: $9,45 · прогноз $6,75 ✅\n\n#отчёт",
   "t": 1795563705,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/earn-DELL-2027Q3.png"
+ },
+ {
+  "id": "earn-DE-2026Q4",
+  "caption": "📊 <b>Deere &</b> (DE), отчёт за 4 кв. 2026 фин. года\n\nВыручка: $10,51 млрд · прогноз $10,68 млрд ❌\nПрибыль на акцию: $3,89 · прогноз $4,17 ❌\n\n#отчёт",
+  "t": 1795607274,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/earn-DE-2026Q4.png"
  }
 ]

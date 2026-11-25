@@ -4,7 +4,8 @@
   "ADI-2026Q4": 1795524859,
   "MDT-2027Q2": 1795524866,
   "ADSK-2027Q3": 1795563702,
-  "DELL-2027Q3": 1795563705
+  "DELL-2027Q3": 1795563705,
+  "DE-2026Q4": 1795607273
  },
  "caps": {
   "ACRE": {
@@ -6434,6 +6435,21 @@
    "cap": 47674.62,
    "name": "Workday, Inc.",
    "ind": "Technology"
+  },
+  "BZ": {
+   "cap": 6150.40314545433,
+   "name": "KANZHUN LIMITED",
+   "ind": "Professional Services"
+  },
+  "DE": {
+   "cap": 165485.2911545905,
+   "name": "Deere & Co",
+   "ind": "Machinery"
+  },
+  "YSG": {
+   "cap": 211.05,
+   "name": "Yatsen Holding Ltd",
+   "ind": "Consumer products"
   }
  },
  "earn_done": [
@@ -6503,6 +6519,7 @@
   "ADI-2026Q4",
   "MDT-2027Q2",
   "ADSK-2027Q3",
-  "DELL-2027Q3"
+  "DELL-2027Q3",
+  "DE-2026Q4"
  ]
 }
