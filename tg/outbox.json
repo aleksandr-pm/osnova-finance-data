@@ -1,10 +1,5 @@
 [
  {
-  "id": "alert-2026-11-23-SMCI-u",
-  "caption": "⚡️🚀 <b>Super Micro</b> (SMCI) +20,23% за день, $26,03\n\n#алерт",
-  "t": 1795448282
- },
- {
   "id": "alert-2026-11-23-ARM-u",
   "caption": "⚡️🚀 <b>Arm</b> (ARM) +18,76% за день, $180,76\n\n#алерт",
   "t": 1795448282
@@ -154,5 +149,11 @@
   "caption": "🗓 <b>Экономический календарь на 25 ноября</b>\n\nГлавное:\n04:30 🇦🇺 Инфляция (CPI), м/м\n04:30 🇦🇺 Инфляция (CPI), г/г\n17:30 🇺🇸 Базовый индекс цен PCE, м/м\n17:30 🇺🇸 ВВП, кв/кв\n\nВремя по Дубаю · #календарь",
   "t": 1795583466,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/calendar-2026-11-25.png"
+ },
+ {
+  "id": "chart-2026-11-25-INTC",
+  "caption": "📊 Акции <b>Intel</b> упали на 8,15% за день\nЗа полгода: −55,63%, цена $54,8\n\n#графикдня",
+  "t": 1795613346,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-25-INTC.png"
  }
 ]
