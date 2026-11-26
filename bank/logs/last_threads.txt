@@ -1,14 +1,21 @@
-threads: duel_sp_pop_totl_cn_in (economy, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/105e8eeb7356/bank/covers/duel_sp_pop_totl_cn_in.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/105e8eeb7356/bank/cards/duel_sp_pop_totl_cn_in.jpg
+threads: bil_country_it (billionaires, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/0bb83e9b1519/bank/cards_markets/bil_country_it.jpg
 ---
-Население: Китай и Индия, 2000-2025:
-1. 🇮🇳 Индия · 1,5 млрд чел., +38%
-2. 🇨🇳 Китай · 1,4 млрд чел., +11%
-Индия обогнала Китай в 2021 году.
+Самые богатые люди Италии, ноябрь 2026:
+1. 🇮🇹 Джанкарло Девазини · $89,3 млрд
+2. 🇮🇹 Джованни Ферреро · $45,4 млрд
+3. 🇮🇹 Андреа Пиньятаро · $39,7 млрд
+4. 🇮🇹 Паоло Ардоино · $38 млрд
+5. 🇮🇹 Франческо Кальтаджироне · $11,7 млрд
+6. 🇮🇹 Пьеро Феррари с семьёй · $8,1 млрд
+7. 🇮🇹 Массимилиана Ландини Алеотти с семьёй · $8 млрд
+8. 🇮🇹 Паоло Рокка · $7,4 млрд
+9. 🇮🇹 Джанфеличе Рокка · $7,4 млрд
+10. 🇮🇹 Джузеппе Де Лонги с семьёй · $6,4 млрд
+№1: Джанкарло Девазини, $89,3 млрд.
 Больше в Telegram @osnovafin
 ---
 Threads: текстом
-Ответ со ссылкой: 18227736124340220
-Опубликовано: 18121805222043324. Осталось новых рейтингов: 160
-exit=0 2026-11-25T17:25:24Z
+Ответ со ссылкой: 17921229552536323
+Опубликовано: 17911429473333238. Осталось новых рейтингов: 159
+exit=0 2026-11-26T06:26:52Z
