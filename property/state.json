@@ -315,6 +315,14 @@
    "type": "reel",
    "dubai_time": "21:55",
    "timeset": "manual"
+  },
+  {
+   "id": "b2_slope_rent",
+   "at": "2026-11-26T06:04:56.972336+00:00",
+   "post": "18107338436643427",
+   "type": "reel",
+   "dubai_time": "10:04",
+   "timeset": "manual"
   }
  ]
 }

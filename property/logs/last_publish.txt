@@ -1,22 +1,20 @@
-Слот reel: в очереди 4 из 43; LIVE=да
-Следующий: b2_count_cheapest (media/b2_count_cheapest.mp4)
+Слот reel: в очереди 2 из 43; LIVE=да
+Следующий: b2_slope_rent (media/b2_slope_rent.mp4)
 ---
-The 10 cheapest districts to buy a ready office in Dubai, median AED per sq ft, 2025:
-1. DIP: 595
-2. Silicon Oasis: 850
-3. International City: 851
-4. Sports City: 962
-5. Nad Al Shiba: 1,000
+Office rent per sq ft a year, Ejari new leases, 2020 vs 2025:
+Downtown: 110 to 316 (+187%)
+The Greens: 100 to 266 (+166%)
+Dubai Marina: 94 to 218 (+132%)
+Business Bay: 63 to 168 (+167%)
+Barsha Heights: 61 to 135 (+121%)
+JLT: 56 to 130 (+132%)
 
-Full data on osnova.property, link in bio. Or comment PRICE and we will send it to you.
+Full data on osnova.property, link in bio. Or comment RENT and we will send it to you.
 
-Source: Dubai Land Department sales, office units, OSNOVA aggregates, ready offices, 2025, districts with 10+ deals. Market statistics, not an offer or investment advice.
+Source: Ejari new lease contracts (DLD), office units, 2020 and 2025. Market statistics, not an offer or investment advice.
 
 #dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace
 ---
-Контейнер 17925910797242274, загрузка 9.1 МБ
-Ролик b2_count_cheapest не принят: загрузка видео: HTTP 400 {"debug_info": {"retriable": false, "type": "ProcessingFailedError", "message": "Request processing failed"}}
-Замена: b2_race_jlt_towers
-Контейнер 17925910971242274, загрузка 7.6 МБ
-Опубликовано: b2_race_jlt_towers → 18121019767999843
-exit=0 2026-11-25T17:55:32.750449+00:00
+Контейнер 17926021611242274, загрузка 5.9 МБ
+Опубликовано: b2_slope_rent → 18107338436643427
+exit=0 2026-11-26T06:04:56.973280+00:00
