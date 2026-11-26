@@ -890,7 +890,18 @@ def wplogos():
             rep[k] = str(e)
     json.dump(rep, open(os.path.join(out, "rep.json"), "w"), indent=1); print(rep)
 
+def wbpop():
+    """Население Индии и Китая, World Bank SP.POP.TOTL + медианный возраст UN (если есть)"""
+    out = os.path.join(OUTD, "wbpop"); os.makedirs(out, exist_ok=True); res = {}
+    for c in ["IND", "CHN"]:
+        r = requests.get(f"https://api.worldbank.org/v2/country/{c}/indicator/SP.POP.TOTL", params={"format": "json", "per_page": 200}, timeout=60).json()
+        res[c] = {x["date"]: x["value"] for x in r[1] if x["value"]}
+        r2 = requests.get(f"https://api.worldbank.org/v2/country/{c}/indicator/SP.POP.1564.TO.ZS", params={"format": "json", "per_page": 200}, timeout=60).json()
+        res[c + "_1564pct"] = {x["date"]: x["value"] for x in r2[1] if x["value"]}
+    json.dump(res, open(os.path.join(out, "pop.json"), "w"), indent=1)
+    print({k: (min(v), max(v), v.get(max(v))) for k, v in res.items()})
+
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl, "px": px, "dtclogo": dtclogo, "dtcimg": dtcimg, "series": series, "logos4": logos4, "commons": commons, "brkcash": brkcash, "cashtop": cashtop, "wplogos": wplogos}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl, "px": px, "dtclogo": dtclogo, "dtcimg": dtcimg, "series": series, "logos4": logos4, "commons": commons, "brkcash": brkcash, "cashtop": cashtop, "wplogos": wplogos, "wbpop": wbpop}[task]()

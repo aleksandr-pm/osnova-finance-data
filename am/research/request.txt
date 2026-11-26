@@ -1,12 +1,1 @@
-wplogos
-# run2
-BRK|Berkshire Hathaway
-GOOGL|Alphabet Inc.
-SAMSUNG|Samsung Electronics
-TSMC|TSMC
-TOYOTA|Toyota
-HYNIX|SK Hynix
-META|Meta Platforms
-VW|Volkswagen Group
-TENCENT|Tencent
-APPLE|Apple Inc.
+wbpop
