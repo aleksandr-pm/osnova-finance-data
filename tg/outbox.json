@@ -1,10 +1,5 @@
 [
  {
-  "id": "alert-2026-11-24-HOOD-d",
-  "caption": "⚡️🔻 <b>Robinhood</b> (HOOD) −5,45% за день, $63,7\n\n#алерт",
-  "t": 1795538416
- },
- {
   "id": "chart-2026-11-24-TXN",
   "caption": "📊 Акции <b>Texas Instruments</b> упали на 8,92% за день\nЗа полгода: −18,37%, цена $265,22\n\n#графикдня",
   "t": 1795541717,
@@ -156,5 +151,11 @@
   "caption": "📊 Акции <b>Micron</b> упали на 4,53% за день\nЗа полгода: −32,89%, цена $601,25\n\n#графикдня",
   "t": 1795714681,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-26-MU.png"
+ },
+ {
+  "id": "evening-2026-11-26",
+  "caption": "📈 <b>Итоги дня 26 ноября</b>\n\nS&P 500 −0,25%, Nasdaq −0,62%, Dow Jones +0,33%\nНефть Brent −3,04%, Золото +1,63%\n\n#итогидня",
+  "t": 1795731344,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-26.png"
  }
 ]
