@@ -1,5 +1,3 @@
-video|soda cans|2
-video|cola pouring|3
-video|potato chips|2
-video|credit card payment|3
-video|online shopping|2
+video|india crowd street|2
+video|shanghai skyline|2
+video|mumbai city|1
