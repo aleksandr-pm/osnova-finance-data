@@ -901,7 +901,27 @@ def wbpop():
     json.dump(res, open(os.path.join(out, "pop.json"), "w"), indent=1)
     print({k: (min(v), max(v), v.get(max(v))) for k, v in res.items()})
 
+def cmclogos():
+    """Логотипы с companiesmarketcap: строки 3+ request.txt = тикеры"""
+    out = os.path.join(OUTD, "cmclogos"); os.makedirs(out, exist_ok=True); rep = {}
+    H = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36", "Referer": "https://companiesmarketcap.com/"}
+    for t in open(os.path.join(OUTD, "request.txt"), encoding="utf-8").read().splitlines()[2:]:
+        t = t.strip()
+        if not t: continue
+        rep[t] = []
+        for sz in ("256", "64"):
+            for ext in ("webp", "png"):
+                try:
+                    r = requests.get(f"https://companiesmarketcap.com/img/company-logos/{sz}/{t}.{ext}", headers=H, timeout=30)
+                    if r.status_code == 200 and len(r.content) > 300:
+                        open(os.path.join(out, f"{t}_{sz}.{ext}"), "wb").write(r.content); rep[t].append(f"{sz}.{ext}"); break
+                except Exception as e:  # noqa: BLE001
+                    rep[t].append(str(e)[:60])
+            if rep[t] and rep[t][-1].startswith(sz): break
+        time.sleep(0.3)
+    json.dump(rep, open(os.path.join(out, "rep.json"), "w"), indent=1); print(rep)
+
 
 if __name__ == "__main__":
     task = sys.argv[1] if len(sys.argv) > 1 else open(os.path.join(OUTD, "request.txt")).read().split()[0]
-    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl, "px": px, "dtclogo": dtclogo, "dtcimg": dtcimg, "series": series, "logos4": logos4, "commons": commons, "brkcash": brkcash, "cashtop": cashtop, "wplogos": wplogos, "wbpop": wbpop}[task]()
+    {"losers10y": losers10y, "spincheck": spincheck, "logos": logos, "buildings": buildings, "extra": extra, "salik": salik, "sobha": sobha, "sobhasite": sobhasite, "sobhaimgs": sobhaimgs, "mcap": mcap, "mcap_tv": mcap_tv, "reit": reit, "exch": exch, "sitelogos": sitelogos, "logos3": logos3, "dl": dl, "px": px, "dtclogo": dtclogo, "dtcimg": dtcimg, "series": series, "logos4": logos4, "commons": commons, "brkcash": brkcash, "cashtop": cashtop, "wplogos": wplogos, "wbpop": wbpop, "cmclogos": cmclogos}[task]()
