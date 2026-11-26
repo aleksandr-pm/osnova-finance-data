@@ -1,30 +1,23 @@
-instagram: mkt_country_cap_jp (companies, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/8a6455f9fc0e/bank/cards_markets/mkt_country_cap_jp.jpg
+instagram: duel_ne_exp_gnfs_cd_vn_th (economy, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/ea99407f1865/bank/covers/duel_ne_exp_gnfs_cd_vn_th.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/ea99407f1865/bank/cards/duel_ne_exp_gnfs_cd_vn_th.jpg
 ---
-№1: Toyota, $244 млрд.
+Вьетнам обогнал Таиланд в 2020 году.
 
-Самые дорогие компании Японии, 2026 год, данные CompaniesMarketCap. Разрыв первого места со вторым (Mitsubishi UFJ Financial): в 1,2 раза. Учтены на 23 ноября 2026.
+Экспорт: Вьетнам и Таиланд, 2000-2025. Самый быстрый рост: Вьетнам, в 30,1 раза, до $506 млрд.
 
-Топ-10:
-1. 🇯🇵 Toyota: $244 млрд
-2. 🇯🇵 Mitsubishi UFJ Financial: $210 млрд
-3. 🇯🇵 Sony: $159 млрд
-4. 🇯🇵 Fast Retailing: $159 млрд
-5. 🇯🇵 Recruit: $147 млрд
-6. 🇯🇵 Sumitomo Mitsui Financial Group: $136 млрд
-7. 🇯🇵 Hitachi: $133 млрд
-8. 🇯🇵 Tokyo Electron: $118 млрд
-9. 🇯🇵 Mitsubishi: $112 млрд
-10. 🇯🇵 Advantest: $110 млрд
+Значения в 2025 году и изменение с 2000:
+1. 🇻🇳 Вьетнам: $506 млрд, в 30,1 раза
+2. 🇹🇭 Таиланд: $411 млрд, в 5 раз
 
-Кого не хватает в топе, по-вашему?
+Кто поднимется выше через 5 лет?
 
 Каждый день рынки, сделки инсайдеров из отчётов SEC и данные в Telegram @osnovafin, ссылка в профиле.
 
-Источник: companiesmarketcap.com. Не является инвестиционной рекомендацией.
+Источник: World Bank, World Development Indicators. Не является инвестиционной рекомендацией.
 
-#акции #компании #капитализация #фондовыйрынок #toyota #инвестиции #финансы #статистика #инфографика #цифры #рынки
+#экономика #мироваяэкономика #ввп #макроэкономика #вьетнам #инвестиции #финансы #статистика #инфографика #цифры #рынки
 ---
-Instagram: одиночный пост с графиком
-Опубликовано: 17965194141253523. Осталось новых рейтингов: 220
-exit=0 2026-11-24T15:08:59Z
+Instagram: карусель
+Опубликовано: 18048526190827256. Осталось новых рейтингов: 219
+exit=0 2026-11-26T15:10:31Z
