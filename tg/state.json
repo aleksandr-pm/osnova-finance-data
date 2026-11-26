@@ -21,27 +21,5 @@
   "AMAT",
   "ORCL"
  ],
- "alerts": {
-  "NVDA:down": "2026-11-25",
-  "AMZN:down": "2026-11-25",
-  "TSLA:down": "2026-11-25",
-  "AVGO:down": "2026-11-25",
-  "ORCL:down": "2026-11-25",
-  "AMD:down": "2026-11-25",
-  "AMAT:down": "2026-11-25",
-  "INTC:down": "2026-11-25",
-  "MU:down": "2026-11-25",
-  "CRWD:down": "2026-11-25",
-  "COIN:down": "2026-11-25",
-  "MSTR:down": "2026-11-25",
-  "ARM:down": "2026-11-25",
-  "DELL:down": "2026-11-25",
-  "SHOP:down": "2026-11-25",
-  "SNOW:down": "2026-11-25",
-  "TSM:down": "2026-11-25",
-  "ASML:down": "2026-11-25",
-  "GOOGL:down": "2026-11-25",
-  "HOOD:down": "2026-11-25",
-  "SMCI:down": "2026-11-25"
- }
+ "alerts": {}
 }
