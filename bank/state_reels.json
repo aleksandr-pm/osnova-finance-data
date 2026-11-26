@@ -451,6 +451,14 @@
    "at": "2026-11-26T09:56:28.478956+00:00",
    "post": "17990006987888977",
    "music": "nastelbom-breaking-news-news-629327.mp3"
+  },
+  {
+   "id": "cmp_wdi_ny_gdp_mktp_cd_desc",
+   "block": "economy",
+   "fmt": "compare",
+   "at": "2026-11-26T17:22:41.801289+00:00",
+   "post": "17894850219619499",
+   "music": "nastelbom-cinematic-cinematic-music-623748.mp3"
   }
  ]
 }
