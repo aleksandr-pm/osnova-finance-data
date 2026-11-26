@@ -903,6 +903,7 @@ def wbpop():
 
 def cmclogos():
     """Логотипы с companiesmarketcap: строки 3+ request.txt = тикеры"""
+    import time
     out = os.path.join(OUTD, "cmclogos"); os.makedirs(out, exist_ok=True); rep = {}
     H = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36", "Referer": "https://companiesmarketcap.com/"}
     for t in open(os.path.join(OUTD, "request.txt"), encoding="utf-8").read().splitlines()[2:]:
