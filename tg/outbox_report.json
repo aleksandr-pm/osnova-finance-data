@@ -1,11 +1,5 @@
 [
  {
-  "id": "report-roblox",
-  "t": 1795105732,
-  "caption": "📊 <b>Roblox: выручка +120% за три года, прибыли нет</b>\n\nRoblox: платформа, где игроки сами создают игры и тратят виртуальную валюту Robux\n\nВыручка: $4,89 млрд, +36% за год, +120% за три года\nЧистый убыток: $1,07 млрд\n\nКомпания в убытке каждый год из последних четырёх\n\n<b>Выручка · чистая прибыль по годам</b>\n2022: $2,23 млрд · −$924 млн\n2023: $2,8 млрд · −$1,15 млрд\n2024: $3,6 млрд · −$935 млн\n2025: $4,89 млрд · −$1,07 млрд\n\n#разбор",
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/companies/cards/roblox.jpg"
- },
- {
   "id": "reel-duel_ny_gdp_pcap_cd_ru_cn",
   "t": 1795108785,
   "caption": "📈 <b>Китай: ВВП на человека вырос в 14,3 раза с 2000 года</b>\n\n<b>Ввп на человека: Россия и Китай, 2025 год и рост с 2000</b>\n1. 🇷🇺 Россия: $17 547, рост в 9,9 раза\n2. 🇨🇳 Китай: $13 862, рост в 14,3 раза\n\nИсточник: World Bank, World Development Indicators, 2000-2025.\n#рейтинг",
@@ -118,5 +112,11 @@
   "t": 1795686988,
   "caption": "📈 <b>Китай обогнал Японию в 2006 году</b>\n\n<b>Резервы: Китай и Япония, 2025 год и рост с 2000</b>\n1. 🇨🇳 Китай: $3,7 трлн, рост в 21,8 раза\n2. 🇯🇵 Япония: $1,4 трлн, рост в 3,8 раза\n\nИсточник: World Bank, World Development Indicators, 2000-2025.\n#рейтинг",
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/bank/cards/duel_fi_res_totl_cd_cn_jp.jpg"
+ },
+ {
+  "id": "reel-cmp_wdi_ny_gdp_mktp_cd_desc",
+  "t": 1795713761,
+  "caption": "📈 <b>Крупнейшие экономики мира по ВВП: №1 США, $30,8 трлн</b>\n\n<b>Топ-10</b>\n1. 🇺🇸 США: $30,8 трлн\n2. 🇨🇳 Китай: $19,5 трлн\n3. 🇩🇪 Германия: $5,1 трлн\n4. 🇯🇵 Япония: $4,4 трлн\n5. 🇬🇧 Великобритания: $4 трлн\n6. 🇮🇳 Индия: $4 трлн\n7. 🇫🇷 Франция: $3,4 трлн\n8. 🇷🇺 Россия: $2,6 трлн\n9. 🇮🇹 Италия: $2,6 трлн\n10. 🇨🇦 Канада: $2,3 трлн\n\nИсточник: World Bank, World Development Indicators, 2025 год.\n#рейтинг",
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/bank/cards/wdi_ny_gdp_mktp_cd_desc.jpg"
  }
 ]
