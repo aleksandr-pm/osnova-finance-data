@@ -1,6 +1,5 @@
 {
  "chart_used": [
-  "SMCI",
   "BABA",
   "AMD",
   "MU",
@@ -19,7 +18,8 @@
   "TXN",
   "INTC",
   "AMAT",
-  "ORCL"
+  "ORCL",
+  "MU"
  ],
  "alerts": {}
 }

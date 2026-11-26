@@ -1,10 +1,5 @@
 [
  {
-  "id": "alert-2026-11-24-COIN-d",
-  "caption": "⚡️🔻 <b>Coinbase</b> (COIN) −5,96% за день, $102,3\n\n#алерт",
-  "t": 1795538416
- },
- {
   "id": "alert-2026-11-24-HOOD-d",
   "caption": "⚡️🔻 <b>Robinhood</b> (HOOD) −5,45% за день, $63,7\n\n#алерт",
   "t": 1795538416
@@ -155,5 +150,11 @@
   "caption": "📊 Акции <b>Oracle</b> упали на 5,13% за день\nЗа полгода: −46,19%, цена $103,88\n\n#графикдня",
   "t": 1795699626,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-26-ORCL.png"
+ },
+ {
+  "id": "chart-2026-11-26-MU",
+  "caption": "📊 Акции <b>Micron</b> упали на 4,53% за день\nЗа полгода: −32,89%, цена $601,25\n\n#графикдня",
+  "t": 1795714681,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-26-MU.png"
  }
 ]
