@@ -1,6 +1,5 @@
 {
  "chart_used": [
-  "ARM",
   "SMCI",
   "BABA",
   "AMD",
@@ -19,7 +18,8 @@
   "DELL",
   "TXN",
   "INTC",
-  "AMAT"
+  "AMAT",
+  "ORCL"
  ],
  "alerts": {
   "NVDA:down": "2026-11-25",

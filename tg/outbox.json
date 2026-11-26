@@ -1,10 +1,5 @@
 [
  {
-  "id": "alert-2026-11-24-TSM-d",
-  "caption": "⚡️🔻 <b>TSMC</b> (TSM) −5,67% за день, $343\n\n#алерт",
-  "t": 1795534082
- },
- {
   "id": "alert-2026-11-24-COIN-d",
   "caption": "⚡️🔻 <b>Coinbase</b> (COIN) −5,96% за день, $102,3\n\n#алерт",
   "t": 1795538416
@@ -154,5 +149,11 @@
   "caption": "📈 <b>Итоги дня 25 ноября</b>\n\nS&P 500 −0,25%, Nasdaq −0,62%, Dow Jones +0,33%\nНефть Brent −0,63%, Золото +1,57%\n\n#итогидня",
   "t": 1795644981,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-25.png"
+ },
+ {
+  "id": "chart-2026-11-26-ORCL",
+  "caption": "📊 Акции <b>Oracle</b> упали на 5,13% за день\nЗа полгода: −46,19%, цена $103,88\n\n#графикдня",
+  "t": 1795699626,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-26-ORCL.png"
  }
 ]
