@@ -323,6 +323,14 @@
    "type": "reel",
    "dubai_time": "10:04",
    "timeset": "manual"
+  },
+  {
+   "id": "b2_race_wh_rent",
+   "at": "2026-11-26T12:43:45.499956+00:00",
+   "post": "18107347295371200",
+   "type": "reel",
+   "dubai_time": "16:43",
+   "timeset": "manual"
   }
  ]
 }

@@ -1,20 +1,19 @@
-Слот reel: в очереди 2 из 43; LIVE=да
-Следующий: b2_slope_rent (media/b2_slope_rent.mp4)
+Слот reel: в очереди 1 из 43; LIVE=да
+Следующий: b2_race_wh_rent (media/b2_race_wh_rent.mp4)
 ---
-Office rent per sq ft a year, Ejari new leases, 2020 vs 2025:
-Downtown: 110 to 316 (+187%)
-The Greens: 100 to 266 (+166%)
-Dubai Marina: 94 to 218 (+132%)
-Business Bay: 63 to 168 (+167%)
-Barsha Heights: 61 to 135 (+121%)
-JLT: 56 to 130 (+132%)
+Warehouse rents in Dubai, median new lease per sq ft a year, 2018 to 2025:
+Al Qusais 2: 63 (2020) to 76 (2025)
+Umm Ramool: 27 (2020) to 67 (2025)
+Al Qusais 1: 42 (2020) to 65 (2025)
+Al Quoz 1: 32 (2020) to 63 (2025)
+Ras Al Khor 1: 30 (2020) to 52 (2025)
 
 Full data on osnova.property, link in bio. Or comment RENT and we will send it to you.
 
-Source: Ejari new lease contracts (DLD), office units, 2020 and 2025. Market statistics, not an offer or investment advice.
+Source: Ejari new lease contracts (DLD), warehouse units, 2018–2025. Market statistics, not an offer or investment advice.
 
-#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace
+#dubaioffice #dubaicommercialproperty #dubairealestate #dubaiinvestment #officespace #warehouse #logistics
 ---
-Контейнер 17926021611242274, загрузка 5.9 МБ
-Опубликовано: b2_slope_rent → 18107338436643427
-exit=0 2026-11-26T06:04:56.973280+00:00
+Контейнер 17926091226242274, загрузка 7.0 МБ
+Опубликовано: b2_race_wh_rent → 18107347295371200
+exit=0 2026-11-26T12:43:45.501405+00:00
