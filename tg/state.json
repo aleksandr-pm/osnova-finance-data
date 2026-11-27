@@ -1,6 +1,5 @@
 {
  "chart_used": [
-  "BABA",
   "AMD",
   "MU",
   "MSTR",
@@ -19,7 +18,8 @@
   "INTC",
   "AMAT",
   "ORCL",
-  "MU"
+  "MU",
+  "SI=F"
  ],
  "alerts": {}
 }

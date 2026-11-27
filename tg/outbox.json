@@ -1,11 +1,5 @@
 [
  {
-  "id": "chart-2026-11-24-TXN",
-  "caption": "📊 Акции <b>Texas Instruments</b> упали на 8,92% за день\nЗа полгода: −18,37%, цена $265,22\n\n#графикдня",
-  "t": 1795541717,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-24-TXN.png"
- },
- {
   "id": "evening-2026-11-24",
   "caption": "📈 <b>Итоги дня 24 ноября</b>\n\nS&P 500 −0,50%, Nasdaq −1,48%, Dow Jones +0,85%\nНефть Brent −0,97%, Золото −2,64%\n\n#итогидня",
   "t": 1795558564,
@@ -157,5 +151,11 @@
   "caption": "📈 <b>Итоги дня 26 ноября</b>\n\nS&P 500 −0,25%, Nasdaq −0,62%, Dow Jones +0,33%\nНефть Brent −3,04%, Золото +1,63%\n\n#итогидня",
   "t": 1795731344,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-26.png"
+ },
+ {
+  "id": "chart-2026-11-27-SIF",
+  "caption": "📊 <b>Серебро</b> +10,64% за день\nЗа полгода: −41,92%, цена $44,31\n\n#графикдня",
+  "t": 1795785736,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-27-SIF.png"
  }
 ]
