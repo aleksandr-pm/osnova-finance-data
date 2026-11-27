@@ -1,21 +1,15 @@
-threads: mkt_sector_pharma (companies, bars)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/c862732e8307/bank/cards_markets/mkt_sector_pharma.jpg
+threads: duel_cm_mkt_lcap_cd_us_cn_jp (money, line)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/5a22d2ff11d4/bank/covers/duel_cm_mkt_lcap_cd_us_cn_jp.jpg
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/5a22d2ff11d4/bank/cards/duel_cm_mkt_lcap_cd_us_cn_jp.jpg
 ---
-Крупнейшие фармкомпании по капитализации, ноябрь 2026:
-1. 🇺🇸 Eli Lilly · $1,2 трлн
-2. 🇺🇸 Johnson & Johnson · $651 млрд
-3. 🇺🇸 AbbVie · $506 млрд
-4. 🇨🇭 Roche · $382 млрд
-5. 🇺🇸 Merck · $330 млрд
-6. 🇨🇭 Novartis · $284 млрд
-7. 🇬🇧 AstraZeneca · $270 млрд
-8. 🇺🇸 Amgen · $236 млрд
-9. 🇺🇸 Gilead Sciences · $206 млрд
-10. 🇩🇰 Novo Nordisk · $167 млрд
-№1: Eli Lilly, $1,2 трлн.
+Капитализация фондового рынка: США, Китай, Япония, 2003-2025:
+1. 🇺🇸 США · $68,9 трлн, в 4,8 раза
+2. 🇨🇳 Китай · $15,5 трлн, в 30,2 раза
+3. 🇯🇵 Япония · $7,6 трлн, в 2,6 раза
+Китай обогнал Японию в 2007 году.
 Больше в Telegram @osnovafin
 ---
 Threads: текстом
-Ответ со ссылкой: 17959381839272998
-Опубликовано: 18081200378740143. Осталось новых рейтингов: 157
-exit=0 2026-11-27T06:30:38Z
+Ответ со ссылкой: 18137758015669392
+Опубликовано: 18152860759642274. Осталось новых рейтингов: 156
+exit=0 2026-11-27T17:31:10Z
