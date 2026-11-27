@@ -1,14 +1,21 @@
-threads: duel_ny_gdp_pcap_cd_ae_sa (economy, line)
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/991b9c37d2ca/bank/covers/duel_ny_gdp_pcap_cd_ae_sa.jpg
-https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/991b9c37d2ca/bank/cards/duel_ny_gdp_pcap_cd_ae_sa.jpg
+threads: mkt_sector_pharma (companies, bars)
+https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/c862732e8307/bank/cards_markets/mkt_sector_pharma.jpg
 ---
-Ввп на человека: ОАЭ и Саудовская Аравия, 2000-2024:
-1. 🇦🇪 ОАЭ · $50 274, в 1,7 раза
-2. 🇸🇦 Саудовская Аравия · $35 528, в 3 раза
-Саудовская Аравия: ВВП на человека вырос в 3 раза с 2000 года.
+Крупнейшие фармкомпании по капитализации, ноябрь 2026:
+1. 🇺🇸 Eli Lilly · $1,2 трлн
+2. 🇺🇸 Johnson & Johnson · $651 млрд
+3. 🇺🇸 AbbVie · $506 млрд
+4. 🇨🇭 Roche · $382 млрд
+5. 🇺🇸 Merck · $330 млрд
+6. 🇨🇭 Novartis · $284 млрд
+7. 🇬🇧 AstraZeneca · $270 млрд
+8. 🇺🇸 Amgen · $236 млрд
+9. 🇺🇸 Gilead Sciences · $206 млрд
+10. 🇩🇰 Novo Nordisk · $167 млрд
+№1: Eli Lilly, $1,2 трлн.
 Больше в Telegram @osnovafin
 ---
-Threads: с картинкой
-Ответ со ссылкой: 18112885666908876
-Опубликовано: 18223891507348664. Осталось новых рейтингов: 158
-exit=0 2026-11-26T17:31:26Z
+Threads: текстом
+Ответ со ссылкой: 17959381839272998
+Опубликовано: 18081200378740143. Осталось новых рейтингов: 157
+exit=0 2026-11-27T06:30:38Z
