@@ -1,11 +1,5 @@
 [
  {
-  "id": "chart-2026-11-25-INTC",
-  "caption": "📊 Акции <b>Intel</b> упали на 8,15% за день\nЗа полгода: −55,63%, цена $54,8\n\n#графикдня",
-  "t": 1795613346,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-25-INTC.png"
- },
- {
   "id": "alert-2026-11-25-NVDA-d",
   "caption": "⚡️🔻 <b>Nvidia</b> (NVDA) −7,56% за день, $143,63\n\n#алерт",
   "t": 1795620936
@@ -156,5 +150,11 @@
   "id": "alert-2026-11-27-MU-u",
   "caption": "⚡️🚀 <b>Micron</b> (MU) +7,60% за день, $646,95\n\n#алерт",
   "t": 1795804176
+ },
+ {
+  "id": "evening-2026-11-27",
+  "caption": "📈 <b>Итоги дня 27 ноября</b>\n\nS&P 500 +1,60%, Nasdaq +2,31%, Dow Jones +1,18%\nНефть Brent −3,98%, Золото +3,75%\n\n#итогидня",
+  "t": 1795817666,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-27.png"
  }
 ]
