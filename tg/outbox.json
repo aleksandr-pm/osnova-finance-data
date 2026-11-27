@@ -1,11 +1,5 @@
 [
  {
-  "id": "calendar-2026-11-25",
-  "caption": "🗓 <b>Экономический календарь на 25 ноября</b>\n\nГлавное:\n04:30 🇦🇺 Инфляция (CPI), м/м\n04:30 🇦🇺 Инфляция (CPI), г/г\n17:30 🇺🇸 Базовый индекс цен PCE, м/м\n17:30 🇺🇸 ВВП, кв/кв\n\nВремя по Дубаю · #календарь",
-  "t": 1795583466,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/calendar-2026-11-25.png"
- },
- {
   "id": "chart-2026-11-25-INTC",
   "caption": "📊 Акции <b>Intel</b> упали на 8,15% за день\nЗа полгода: −55,63%, цена $54,8\n\n#графикдня",
   "t": 1795613346,
@@ -157,5 +151,10 @@
   "caption": "📊 Акции <b>Shopify</b> выросли на 6,10% за день\nЗа полгода: +32,77%, цена $141,54\n\n#графикдня",
   "t": 1795801124,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-27-SHOP.png"
+ },
+ {
+  "id": "alert-2026-11-27-MU-u",
+  "caption": "⚡️🚀 <b>Micron</b> (MU) +7,60% за день, $646,95\n\n#алерт",
+  "t": 1795804176
  }
 ]
