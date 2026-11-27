@@ -1,11 +1,5 @@
 [
  {
-  "id": "evening-2026-11-24",
-  "caption": "📈 <b>Итоги дня 24 ноября</b>\n\nS&P 500 −0,50%, Nasdaq −1,48%, Dow Jones +0,85%\nНефть Brent −0,97%, Золото −2,64%\n\n#итогидня",
-  "t": 1795558564,
-  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/evening-2026-11-24.png"
- },
- {
   "id": "calendar-2026-11-25",
   "caption": "🗓 <b>Экономический календарь на 25 ноября</b>\n\nГлавное:\n04:30 🇦🇺 Инфляция (CPI), м/м\n04:30 🇦🇺 Инфляция (CPI), г/г\n17:30 🇺🇸 Базовый индекс цен PCE, м/м\n17:30 🇺🇸 ВВП, кв/кв\n\nВремя по Дубаю · #календарь",
   "t": 1795583466,
@@ -157,5 +151,11 @@
   "caption": "📊 <b>Серебро</b> +10,64% за день\nЗа полгода: −41,92%, цена $44,31\n\n#графикдня",
   "t": 1795785736,
   "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-27-SIF.png"
+ },
+ {
+  "id": "chart-2026-11-27-SHOP",
+  "caption": "📊 Акции <b>Shopify</b> выросли на 6,10% за день\nЗа полгода: +32,77%, цена $141,54\n\n#графикдня",
+  "t": 1795801124,
+  "photo": "https://raw.githubusercontent.com/aleksandr-pm/osnova-finance-data/main/tg/img/chart-2026-11-27-SHOP.png"
  }
 ]

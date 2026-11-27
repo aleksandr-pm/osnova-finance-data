@@ -1,6 +1,5 @@
 {
  "chart_used": [
-  "AMD",
   "MU",
   "MSTR",
   "HOOD",
@@ -19,7 +18,8 @@
   "AMAT",
   "ORCL",
   "MU",
-  "SI=F"
+  "SI=F",
+  "SHOP"
  ],
  "alerts": {}
 }
