@@ -629,7 +629,8 @@ def end_card(im, d, a):
     d.rectangle([LX + 80, 860, W - LX - 80, 862], fill=hexa(C["blush"], a))
     im.alpha_composite(fade(ICON["tg_end"], a), ((W - 96) // 2, 930))
     d.text((W / 2, 1110), "@osnovafin", font=F(96, 600), fill=hexa(C["bone"], a), anchor="mm")
-    d.text((W / 2, 1200), "Новости рынков 24/7 в Telegram", font=F(40, 400), fill=hexa(C["blush"], a), anchor="mm")
+    d.text((W / 2, 1200), "Полная таблица по всем странам", font=F(40, 400), fill=hexa(C["blush"], a), anchor="mm")
+    d.text((W / 2, 1256), "и новости рынков 24/7 в Telegram", font=F(40, 400), fill=hexa(C["blush"], a), anchor="mm")
 
 
 def draw_header(d, r, kick=None, sub=None, title=None):
@@ -1135,8 +1136,14 @@ def make_frames_columns(r):
     total = T_RUN + T_HOLD + T_END
     vmax = max(v for _, v in pts) * 1.12
     kick = f"{metric(r).upper()} · {pts[0][0]}-{pts[-1][0]}"
-    l1 = f"{x['name']}: {metric(r).lower()}"
-    l2 = f"{growth_str(x)} с {pts[0][0]} года"
+    # 28.11: было «Россия: ввп на человека / в 9,9 раза» (аббревиатура строчными, без глагола). Берём готовый крючок с глаголом.
+    hook = r.get("hook_text", "")
+    if hook.startswith(x["name"] + ":"):
+        l1, l2 = hook, None
+    else:
+        m = metric(r)
+        l1 = f"{x['name']}: {m if m[1:2].isupper() else m[:1].lower() + m[1:]}"
+        l2 = f"{growth_str(x)} с {pts[0][0]} года"
     sc_d, sc_name = col_scale(vmax, r["unit"])
 
     def frame(f):
@@ -1667,7 +1674,7 @@ def tags_for(r, lead):
 
 
 CTA_TOP = "Экономика в графиках, выпуск №{}. Подписывайтесь: новый график каждый день."
-CTA_TEXT = "Новости рынков 24/7 на русском в Telegram @osnovafin, ссылка в профиле."
+CTA_TEXT = "Полная таблица по всем странам и новости рынков 24/7 в Telegram @osnovafin, ссылка в профиле."  # 28.11: таблица ролика уже уходит в канал постом #рейтинг
 
 
 def caption(r, n):
